@@ -6,7 +6,7 @@ import os
 from .static.vals import DB_PATH
 
 # temporary 'categoriser' model using SpaCy similarity
-# future classifier would be through manually labeled data 
+# future classifier would be through manually labeled data
 nlp = spacy.load("en_core_web_lg")
 CANDIDATE_LABELS = [
     "contract law", "tort law", "property law", "trust law", "family law",
@@ -27,14 +27,6 @@ def get_conn_cursor():
     os.makedirs(os.path.dirname(DB_PATH), exist_ok=True)
     conn = sqlite3.connect(DB_PATH)
     return conn, conn.cursor()
-
-
-def predict_category(text: str) -> str:
-    """Predict best legal category for given text using SpaCy similarity."""
-    if not text or not text.strip():
-        return "uncategorized"
-    doc = nlp(text)
-    return max(CANDIDATE_LABELS, key=lambda label: doc.similarity(nlp(label)))
 
 
 def ensure_eval_table_exists():
@@ -77,7 +69,7 @@ def create_eval_table_from_csv(csv_path: str):
     Create (or recreate) eval_table with columns:
     prompt, gold_binary, gold_response, llm_binary, llm_response, category
     - Automatically detects True/False and converts to 1/0
-    - Predicts legal category for each prompt using SpaCy
+    - Uses 'category' column from CSV if provided, otherwise predicts using SpaCy
     """
     ensure_eval_table_exists()
 
@@ -93,12 +85,15 @@ def create_eval_table_from_csv(csv_path: str):
     for col in df.columns:
         if "prompt" in col:
             col_map["prompt"] = col
+        elif "category" in col:
+            col_map["category"] = col
         elif "gold" in col and ("answer" in col or "response" in col):
             col_map["gold_answer"] = col
         elif "llm" in col and ("answer" in col or "response" in col):
             col_map["llm_answer"] = col
 
-    if not {"prompt", "gold_answer", "llm_answer"}.issubset(col_map):
+    required = {"prompt", "gold_answer", "llm_answer"}
+    if not required.issubset(col_map):
         raise ValueError(f"Missing required columns. Found: {df.columns.tolist()}")
 
     records = []
@@ -107,9 +102,14 @@ def create_eval_table_from_csv(csv_path: str):
         gold_ans = str(row[col_map["gold_answer"]]).strip()
         llm_ans = str(row[col_map["llm_answer"]]).strip()
 
+        # category: prefer CSV-provided, otherwise predict 
+        if "category" in col_map:
+            category = str(row[col_map["category"]]).strip() 
+        else:
+            print("Dataset lacks 'category' column.")
+
         gold_binary, gold_resp = parse_answer(gold_ans)
         llm_binary, llm_resp = parse_answer(llm_ans)
-        category = predict_category(prompt)
 
         gold_binary = int(gold_binary) if gold_binary is not None else None
         llm_binary = int(llm_binary) if llm_binary is not None else None
