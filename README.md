@@ -1,8 +1,8 @@
-S3-Framework: Legal LLM Evaluation Framework
+L3-Framework: Legal LLM Evaluation Framework
 
 **Overview**
 
-S3-Framework is an open-source project designed to provide a robust, transparent, and reproducible framework for evaluating Legal Large Language Models (LLMs). The framework aims to help legal professionals, technologists, and researchers assess the performance, reliability, and compliance of LLMs in legal contexts.
+L3-Framework, formerly known as S3, is an open-source project designed to provide a robust, transparent, and reproducible framework for evaluating Legal Large Language Models (LLMs). The framework aims to help legal professionals, technologists, and researchers assess the performance, reliability, and compliance of LLMs in legal contexts.
 
 **Features**
 
@@ -13,9 +13,9 @@ S3-Framework is an open-source project designed to provide a robust, transparent
 
 **Getting Started**
 
-1. **Clone the Repository**git clone https://github.com/Legalcomplex/S3-Framework.git
+1. **Clone the Repository**git clone https://github.com/Legalcomplex/L3-Framework.git
 
-cd S3-Framework
+cd L3-Framework
 
 1. **Install Dependencies**  
    * Ensure you have Python 3.8+ installed.  
