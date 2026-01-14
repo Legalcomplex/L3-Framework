@@ -2,11 +2,10 @@ import re
 from difflib import SequenceMatcher
 from sentence_transformers import SentenceTransformer, util
 import torch
+import re
 
 # Normalize citation punctuation / formatting
-UNICODE_DASHES = "\u2012\u2013\u2014\u2015\u2212"
-
-
+UNICODE_DASHES = "\u2012\u2013\u2014\u2015\u2212"   
 def normalize_citation_text(s: str) -> str:
     """
     Normalize Unicode dash variants + punctuation for consistent citation matching.
@@ -39,9 +38,7 @@ def load_model():
         print(f"[warn] Could not load legal model: {e}. Falling back to 'paraphrase-mpnet-base-v2'.")
         return SentenceTransformer("paraphrase-mpnet-base-v2")
 
-
 model = load_model()
-
 
 def extract_citations(text: str):
     """
@@ -51,24 +48,26 @@ def extract_citations(text: str):
     if not text:
         return []
 
-    # regex patterns
+    # regex patterns 
     patterns = [
         # --- U.S. citations ---
-        r"\b\d+\s*U\.?S\.?C\.?\s*§?\s*\d+[A-Za-z\-]*",
-        r"\bPub\.?\s*L\.?\s*\d+[–\-]?\d*\b",
-        r"\b\d+\s*Stat\.?\s*\d+\b",
-        r"\b\d+\s*C\.?F\.?R\.?\s*§?\s*\d+[A-Za-z\-]*",
+        r"\b\d+\s*U\.?S\.?C\.?\s*§?\s*\d+[A-Za-z\-]*",        
+        r"\bPub\.?\s*L\.?\s*\d+[–\-]?\d*\b",                  
+        r"\b\d+\s*Stat\.?\s*\d+\b",                           
+        r"\b\d+\s*C\.?F\.?R\.?\s*§?\s*\d+[A-Za-z\-]*",        
+
         # --- U.K. citations ---
-        r"\b[A-Z][a-z]+(?:\s+[A-Z][a-z]+)*\s+Act\s+\d{4}\b",
-        r"\b\d{4}\s*Act\b",
-        r"\bS\.I\.\s*\d{4}/\d+\b",
-        r"\[\d{4}\]\s*[A-Z]{2,6}\s*\d+\b",
-        r"\b[A-Z][a-zA-Z]+\s+v\.?\s+[A-Z][a-zA-Z]+\b",
+        r"\b[A-Z][a-z]+(?:\s+[A-Z][a-z]+)*\s+Act\s+\d{4}\b",  
+        r"\b\d{4}\s*Act\b",                                   
+        r"\bS\.I\.\s*\d{4}/\d+\b",                            
+        r"\[\d{4}\]\s*[A-Z]{2,6}\s*\d+\b",                    
+        r"\b[A-Z][a-zA-Z]+\s+v\.?\s+[A-Z][a-zA-Z]+\b",        
+
         # --- EU citations ---
-        r"\bRegulation\s*\(?(?:EU|EC|EEC)\)?\s*\d{4}/\d+\b",
-        r"\bDirective\s*\d{4}/\d+/(?:EU|EC|EEC)\b",
-        r"\bDecision\s*\(?(?:EU|EC|EEC)\)?\s*\d{4}/\d+\b",
-        r"\bArticle\s*\d+\s*(?:TFEU|TEU|EC)\b",
+        r"\bRegulation\s*\(?(?:EU|EC|EEC)\)?\s*\d{4}/\d+\b",  
+        r"\bDirective\s*\d{4}/\d+/(?:EU|EC|EEC)\b",           
+        r"\bDecision\s*\(?(?:EU|EC|EEC)\)?\s*\d{4}/\d+\b",    
+        r"\bArticle\s*\d+\s*(?:TFEU|TEU|EC)\b",               
         r"\bTreaty\s+on\s+(?:the\s+Functioning\s+of\s+the\s+EU|European\s+Union)\b",
         r"\bCharter\s+of\s+Fundamental\s+Rights\s+of\s+the\s+EU\b",
     ]
@@ -102,9 +101,9 @@ def semantic_similarity(a, b, cit_score=None):
     # If citation overlap is poor, scale semantic similarity down
     if cit_score is not None:
         if cit_score < 0.3:
-            base *= 0.5  # strong penalty for mismatch
+            base *= 0.5       # strong penalty for mismatch
         elif cit_score < 0.6:
-            base *= 0.75  # mild penalty for partial match
+            base *= 0.75      # mild penalty for partial match
 
     return base
 
@@ -113,13 +112,13 @@ def citation_similarity(list1, list2):
     """Compute overlap, rewarding exact or near-number matches more heavily."""
     if not list1 or not list2:
         return 0.0
-
+    
     list1 = [normalize_citation_text(x) for x in list1]
     list2 = [normalize_citation_text(x) for x in list2]
 
     def normalize(s):
         # extract numbers and letters for comparison (Pub. L. 117–347 → 117347)
-        return re.sub(r"\D", "", s)
+        return re.sub(r'\D', '', s)
 
     total = 0
     for a in list1:
@@ -138,13 +137,8 @@ def citation_similarity(list1, list2):
 
 def remove_citations(text):
     # Mask citation-like strings before semantic encoding
-    text = re.sub(
-        r"\b(Pub\.?\s*L\.?|U\.?S\.?C\.?|Regulation|Directive|Article)\b.*?\b(\d{2,4}|§\d+)\b",
-        "[LAW]",
-        text,
-    )
+    text = re.sub(r"\b(Pub\.?\s*L\.?|U\.?S\.?C\.?|Regulation|Directive|Article)\b.*?\b(\d{2,4}|§\d+)\b", "[LAW]", text)
     return text
-
 
 def question_answer_similarity(question, answer):
     """
@@ -159,8 +153,7 @@ def question_answer_similarity(question, answer):
 
 
 def _digits(s: str) -> str:
-    return re.sub(r"\D", "", s or "")
-
+    return re.sub(r'\D', '', s or '')
 
 def _has_exact_numeric_overlap(list1, list2):
     if not list1 or not list2:
@@ -171,22 +164,24 @@ def _has_exact_numeric_overlap(list1, list2):
     return bool(nums1 & nums2)
 
 
+
+
 def legal_similarity(
     gold_answer,
     llm_answer,
     gold_binary=None,
     llm_binary=None,
     weights=None,
-    question=None,
-):
+    question=None):
     """
-    Truth-alignment gating logic (as requested):
+    Updated to implement Rule B:
 
-    - If both true (1,1): PASS, final_score = 1.0 (skip all other logic)
-    - If gold true and llm false (1,0): FAIL, final_score = 0.0 (skip all other logic)
-    - If both false (0,0): run the entire existing logic (semantic/citation/question/etc)
-    - If (0,1): not specified by request, so it falls through to existing logic
-      (change in the truth-gate section if you want hard-fail instead).
+    If truth_alignment == 1.0:
+        - If citation is close -> >= 0.85
+        - If citation is wrong -> < 0.85
+
+    Special passes:
+        - Formatting-only citation differences treated as matching
     """
 
     # TODO: default weights, make it changeable for users
@@ -194,74 +189,17 @@ def legal_similarity(
         weights = {"semantic": 0.3, "citation": 0.4, "truth": 0.3}
 
     gold_answer = gold_answer or ""
-    llm_answer = llm_answer or ""
-    question = question or ""
-
-    # -----------------------------
-    # Truth-alignment gate (NEW)
-    # -----------------------------
-    if gold_binary is not None and llm_binary is not None:
-        # both true => pass
-        if gold_binary == 1 and llm_binary == 1:
-            return {
-                "final_score": 1.0,
-                "semantic_similarity": None,
-                "citation_similarity": None,
-                "truth_alignment": 1.0,
-                "penalty": 0.0,
-                "bonus": 0.0,
-                "gold_citations": extract_citations(gold_answer),
-                "llm_citations": extract_citations(llm_answer),
-                "question_citations": extract_citations(question),
-                "q_gold_score": None,
-                "q_llm_score": None,
-                "q_ratio": None,
-                "cit_gold_llm": None,
-                "cit_q_llm": None,
-                "cit_q_gold": None,
-                "exact_gold_overlap": None,
-                "exact_q_overlap": None,
-                "title_conflict": None,
-                "truth_gate": "both_true_pass_1.0",
-            }
-
-        # gold true + llm false => fail
-        if gold_binary == 1 and llm_binary == 0:
-            return {
-                "final_score": 0.0,
-                "semantic_similarity": None,
-                "citation_similarity": None,
-                "truth_alignment": 0.0,
-                "penalty": 0.0,
-                "bonus": 0.0,
-                "gold_citations": extract_citations(gold_answer),
-                "llm_citations": extract_citations(llm_answer),
-                "question_citations": extract_citations(question),
-                "q_gold_score": None,
-                "q_llm_score": None,
-                "q_ratio": None,
-                "cit_gold_llm": None,
-                "cit_q_llm": None,
-                "cit_q_gold": None,
-                "exact_gold_overlap": None,
-                "exact_q_overlap": None,
-                "title_conflict": None,
-                "truth_gate": "gold_true_llm_false_fail_0.0",
-            }
-
-        # both false => fall through into full existing logic
-        # (gold false + llm true) => unspecified; also falls through
-
-    # --- existing logic continues unchanged below ---
+    llm_answer  = llm_answer or ""
+    question    = question or ""
 
     gold_cit = extract_citations(gold_answer)
-    llm_cit = extract_citations(llm_answer)
-    q_cit = extract_citations(question)
+    llm_cit  = extract_citations(llm_answer)
+    q_cit    = extract_citations(question)
 
     # Citation similarity
     cit_gold_llm = citation_similarity(gold_cit, llm_cit)
-    cit_q_llm = citation_similarity(q_cit, llm_cit)
-    cit_q_gold = citation_similarity(q_cit, gold_cit)
+    cit_q_llm    = citation_similarity(q_cit,  llm_cit)
+    cit_q_gold   = citation_similarity(q_cit,  gold_cit)
 
     # Citation score selection
     if llm_binary == 0:
@@ -270,23 +208,21 @@ def legal_similarity(
         cit_score = max(
             cit_gold_llm,
             cit_q_llm * 0.9,
-            (cit_q_llm + cit_q_gold) / 2,
+            (cit_q_llm + cit_q_gold) / 2
         )
 
     sem_score = semantic_similarity(
         remove_citations(gold_answer),
         remove_citations(llm_answer),
-        cit_score,
+        cit_score
     )
 
-    truth_score = (
-        float(gold_binary == llm_binary)
-        if (gold_binary is not None and llm_binary is not None)
-        else 0.0
-    )
+    truth_score = float(gold_binary == llm_binary) if (
+        gold_binary is not None and llm_binary is not None
+    ) else 0.0
 
     q_gold_score = question_answer_similarity(question, gold_answer) if question else None
-    q_llm_score = question_answer_similarity(question, llm_answer) if question else None
+    q_llm_score  = question_answer_similarity(question, llm_answer)  if question else None
     q_ratio = (q_llm_score / q_gold_score) if (q_gold_score and q_gold_score > 0) else None
 
     q_contrib = 0.0
@@ -299,18 +235,18 @@ def legal_similarity(
         contextual_semantic = 0.6 * sem_score + 0.4 * (q_llm_score or 0)
 
     provisional = (
-        weights["semantic"] * contextual_semantic
-        + weights["citation"] * cit_score
-        + weights["truth"] * truth_score
-        + q_contrib
+        weights["semantic"] * contextual_semantic +
+        weights["citation"] * cit_score +
+        weights["truth"]    * truth_score +
+        q_contrib
     )
 
     final = provisional
     penalty_val = 0.0
-    bonus_val = 0.0
+    bonus_val   = 0.0
 
     def _digits_only(s: str) -> str:
-        return re.sub(r"\D", "", normalize_citation_text(s))
+        return re.sub(r'\D', '', normalize_citation_text(s))
 
     def _has_numeric_overlap(list1, list2):
         if not list1 or not list2:
@@ -320,7 +256,7 @@ def legal_similarity(
         return bool(n1 & n2)
 
     exact_gold_overlap = _has_numeric_overlap(gold_cit, llm_cit)
-    exact_q_overlap = _has_numeric_overlap(q_cit, llm_cit)
+    exact_q_overlap    = _has_numeric_overlap(q_cit,  llm_cit)
 
     # Title/section conflict
     def _title_section(x):
