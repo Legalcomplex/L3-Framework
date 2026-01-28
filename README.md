@@ -20,7 +20,7 @@ Benchmarking AI for legal work presents unique and significant challenges, leadi
 4. **Objective vs. Subjective Tasks:** Unlike math or coding, where benchmarks can rely on objectively verifiable results, legal work often involves interpreting illogical or conflicting laws and constructing arguments based on subjective factors. Current LLM benchmarks focusing on logic or games demonstrate AI intelligence but lack practical relevance for many core legal tasks. Furthermore, AI struggles with the subjectivity inherent in law, similar to its challenges with nuanced human expression, such as high-level comedy.  
 5. **The Proficiency “Arms Race”:** Testing LLMs for proficiency on complex tasks creates a scenario where AI developers inevitably “teach to the test.” This leads to an asymmetry where AI systems, through targeted training on specific tests, can develop apparent proficiency that masks underlying deficiencies, as any test can eventually be mastered.
 
-# 3\. The S3 Methodology
+# 3\. The L3 Methodology
 
 Acknowledging these challenges, the S3 framework offers a pragmatic and transparent approach focused on essential, measurable outputs:
 
