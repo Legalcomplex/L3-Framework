@@ -2,7 +2,7 @@
 
 # 1\. Introduction: Test Deficiency, Not Proficiency
 
-The Legal LLM Evaluation Framework Initiative introduces a novel approach to evaluating Large Language Models (LLMs) in the legal domain. Unlike conventional benchmarks that attempt to measure proficiency on complex, subjective legal tasks, the S3 framework focuses on benchmarking deficiency. It targets three fundamental weaknesses inherent in current LLMs:
+The Legal LLM Evaluation Framework Initiative introduces a novel approach to evaluating Large Language Models (LLMs) in the legal domain. Unlike conventional benchmarks that attempt to measure proficiency on complex, subjective legal tasks, the L3 framework focuses on benchmarking deficiency. It targets three fundamental weaknesses inherent in current LLMs:
 
 1. **Accuracy:** Especially regarding the correct citation of legal codes and case law.  
 2. **Recency:** Assessing the model’s knowledge of up-to-date legal information, given inherent training data cutoffs.  
@@ -20,13 +20,13 @@ Benchmarking AI for legal work presents unique and significant challenges, leadi
 4. **Objective vs. Subjective Tasks:** Unlike math or coding, where benchmarks can rely on objectively verifiable results, legal work often involves interpreting illogical or conflicting laws and constructing arguments based on subjective factors. Current LLM benchmarks focusing on logic or games demonstrate AI intelligence but lack practical relevance for many core legal tasks. Furthermore, AI struggles with the subjectivity inherent in law, similar to its challenges with nuanced human expression, such as high-level comedy.  
 5. **The Proficiency “Arms Race”:** Testing LLMs for proficiency on complex tasks creates a scenario where AI developers inevitably “teach to the test.” This leads to an asymmetry where AI systems, through targeted training on specific tests, can develop apparent proficiency that masks underlying deficiencies, as any test can eventually be mastered.
 
-# 3\. The S3 Methodology
+# 3\. The L3 Methodology
 
-Acknowledging these challenges, the S3 framework offers a pragmatic and transparent approach focused on essential, measurable outputs:
+Acknowledging these challenges, the L3 framework offers a pragmatic and transparent approach focused on essential, measurable outputs:
 
 **Core Focus:** The benchmark verifies whether a raw instruct model’s outputs are sufficiently reliable for basic legal support tasks, primarily targeting the capabilities needed by application layers like Retrieval-Augmented Generation (RAG).
 
-**The “S3” Pillars:**
+**The “L3” Pillars:**
 
 * **Accurate Code & Case Law References:** Does the model correctly identify and cite relevant legal articles and case law? (Measurable: Yes/No)  
 * **Recency:** Does the model possess knowledge of recent legal developments? (Measurable against known timelines)  
@@ -44,7 +44,7 @@ Acknowledging these challenges, the S3 framework offers a pragmatic and transpar
 
 # 4\. Rationale and Background
 
-The S3 evaluation originated from practical needs during the development of Sabaio OI. Calibrating and comparing the performance of different open-source models required a consistent method to determine if newer models offered tangible improvements over older ones in core reliability.
+The L3 evaluation originated from practical needs during the development of Sabaio OI. Calibrating and comparing the performance of different open-source models required a consistent method to determine if newer models offered tangible improvements over older ones in core reliability.
 
 It serves as a counterpoint to prevailing benchmark trends that focus on mimicking human cognitive tests or complex, subjective tasks. The legal industry often thrives on complexity, but foundational AI reliability requires a focus on simple, verifiable truths. The benchmark also critiques the tendency for legal tech development to be overly influenced by major Anglophone hubs, potentially neglecting the localized nature of law.
 
