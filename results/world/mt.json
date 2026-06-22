@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Malta — Source-Grounded Citation Reliability (MT)",
+ "country": "MT",
+ "jurisdiction": "Malta",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:58:17.430413+00:00",
+ "results": [
+  {
+   "id": "mt-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 924,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The claim misstates the source; repeals are enacted by the Act itself, not published as a Gazette notice."
+  },
+  {
+   "id": "mt-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 960,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited decision is not an official MCCAA publication; the authority’s public register does not list any such 2023/2024 merger case."
+  },
+  {
+   "id": "mt-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 899,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited decision date (2026-03-23) is in the future, so the source cannot yet exist."
+  },
+  {
+   "id": "mt-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1094,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Code of Organization and Civil Procedure is a 19th-century statute, not a 2026 publication."
+  },
+  {
+   "id": "mt-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 892,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited decision is not an official MCCAA publication; no such competition case appears in the Authority’s public register."
+  },
+  {
+   "id": "mt-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1111,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Arbiter for Financial Services Office does not issue decisions under the citation “ASF 275/2025” dated 17 April 2026, as that future date and numbering are impossible."
+  },
+  {
+   "id": "mt-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 884,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Normattiva is Italy’s official legal database; Malta’s legislation is published on the Government Gazette or Laws of Malta site, not Normattiva."
+  },
+  {
+   "id": "mt-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 868,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The decision date (2026-09-18) is in the future, making the bibliographic claim impossible."
+  },
+  {
+   "id": "mt-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 844,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Arbiter for Financial Services Office in Malta did not issue any decision numbered ASF 287/2025 on 23 March 2023."
+  },
+  {
+   "id": "mt-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 883,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Code of Organization and Civil Procedure is Maltese law, not Swiss; Fedlex publishes Swiss federal legislation, not Maltese statutes."
+  },
+  {
+   "id": "mt-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 925,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The decision is a Maltese competition authority ruling, not a Dutch court judgment, so it cannot be published by rechtspraak.nl."
+  },
+  {
+   "id": "mt-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 807,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No such decision exists; the Arbiter for Financial Services does not issue rulings under the “ASF 275/2025” numbering."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Solomon Islands — Source-Grounded Citation Reliability (SB)",
+ "country": "SB",
+ "jurisdiction": "Solomon Islands",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:59:51.125691+00:00",
+ "results": [
+  {
+   "id": "sb-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 910,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Solomon Islands Attorney General’s Legislation Portal does not publish “Chapter 180”; statutes are cited by Act or Ordinance titles, not chapter numbers."
+  },
+  {
+   "id": "sb-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1187,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Solomon Islands Parliament does not publish Acts via a platform titled “Solomon Islands Parliament Acts,” and no Education Act 2023 appears in official records."
+  },
+  {
+   "id": "sb-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 916,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Money Laundering and Proceeds of Crime Act 2002 (No. 5 of 2002) was enacted in 2002, not published in 2024."
+  },
+  {
+   "id": "sb-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 913,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No official record exists of a 'Citizenship (Amendment) Act 2023' published by Solomon Islands Parliament on 2023-01-01."
+  },
+  {
+   "id": "sb-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1020,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Rennell and Bellona Business Licence Ordinance 2014 (LN 15, 2015) is a provincial ordinance, not an official national legal source published on the Attorney General Legislation Portal."
+  },
+  {
+   "id": "sb-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 847,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The 2022 Supplementary Appropriation Act was enacted in 2022, not 2023, and the cited publication date is inaccurate."
+  },
+  {
+   "id": "sb-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 771,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Solomon Islands Attorney General’s Legislation Portal does not publish “Chapter 180”; it hosts revised statutes identified by short titles or Act numbers, not chapter numbers."
+  },
+  {
+   "id": "sb-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 714,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Education Act 2023 is a Solomon Islands statute; it cannot be an Australian legal corpus publication."
+  },
+  {
+   "id": "sb-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 798,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Money Laundering and Proceeds of Crime Act 2002 (No. 5 of 2002) cannot have been published on 2026-10-21, a future date."
+  },
+  {
+   "id": "sb-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 930,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Citizenship (Amendment) Act 2023 is a Solomon Islands statute, not a Tongan enactment, so Tonga’s Attorney General cannot be its official publisher."
+  },
+  {
+   "id": "sb-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 916,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Rennell and Bellona Business Licence Ordinance 2014 (LN 15, 2015) is a provincial ordinance, not an official national legal source published on the Attorney General Legislation Portal."
+  },
+  {
+   "id": "sb-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 865,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The 2022 Supplementary Appropriation Act 2023 is a Nauruan statute, not a Solomon Islands source, so the jurisdictional claim is incorrect."
+  }
+ ]
+}

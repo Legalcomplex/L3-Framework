@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Ukraine — Source-Grounded Citation Reliability (UA)",
+ "country": "UA",
+ "jurisdiction": "Ukraine",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.4167,
+ "correct": 5,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T16:01:24.009785+00:00",
+ "results": [
+  {
+   "id": "ua-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1085,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Constitutional Court of Ukraine has not issued any decision dated 22 December 2025; that future date makes the bibliographic claim impossible."
+  },
+  {
+   "id": "ua-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1077,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Decision 134/2-2006 is not an official court ruling; ЄДРСР publishes only judicial decisions, not normative acts."
+  },
+  {
+   "id": "ua-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1080,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-02-26 is in the future, so the claimed publication cannot yet exist."
+  },
+  {
+   "id": "ua-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1087,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Supreme Court of Ukraine does not issue decisions dated 30 December 2025; that future date makes the bibliographic claim impossible."
+  },
+  {
+   "id": "ua-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1107,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. HACC decisions use case numbers like 991/13422/25, but the date 2025-12-31 is impossible as it precedes the present."
+  },
+  {
+   "id": "ua-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 839,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-05-27 is in the future, so the claimed publication cannot exist."
+  },
+  {
+   "id": "ua-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 965,
+   "verdict": true,
+   "correct": false,
+   "raw": "True. The Constitutional Court of Ukraine is the official publisher of its own decisions, including the 22 December 2022 ruling cited."
+  },
+  {
+   "id": "ua-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 944,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Decision 134/2-2006 is not a Turkish Council of State ruling; it originates from Ukrainian jurisdiction, not Danıştay."
+  },
+  {
+   "id": "ua-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 962,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Verkhovna Rada’s official database “Legislation of Ukraine” does not list any 26 February 2025 publication of that agreement."
+  },
+  {
+   "id": "ua-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1012,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '160/33992/25' cannot match a 30 December 2025 ruling because Ukrainian case numbers use the filing year, not the decision year."
+  },
+  {
+   "id": "ua-src-f05",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 896,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '133059227' does not match the case number '991/13422/25', and a 2025-12-31 date is impossible."
+  },
+  {
+   "id": "ua-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 897,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. TAR is Lithuania’s official gazette; Ukrainian legal acts are published in Ukraine’s Verkhovna Rada or National Bank sources, not TAR."
+  }
+ ]
+}

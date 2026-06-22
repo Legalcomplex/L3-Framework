@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Wallis and Futuna — Source-Grounded Citation Reliability (WF)",
+ "country": "WF",
+ "jurisdiction": "Wallis and Futuna",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T16:02:03.325063+00:00",
+ "results": [
+  {
+   "id": "wf-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 950,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 31/12/2025 is in the future, so the cited issue cannot yet have been published."
+  },
+  {
+   "id": "wf-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 946,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 30/09/2025 lies in the future, so no such issue could have been published."
+  },
+  {
+   "id": "wf-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1060,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The claimed date (2026-02-04) post-dates the source’s stated 19 December 2025 issue, making the publication chronology impossible."
+  },
+  {
+   "id": "wf-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 956,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 31/01/2026 is in the future, so the cited issue cannot yet have been published."
+  },
+  {
+   "id": "wf-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 953,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 15/10/2025 lies in the future, so no such issue of the Journal Officiel could yet exist."
+  },
+  {
+   "id": "wf-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 921,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 30/11/2025 is in the future, so no such issue could have been published."
+  },
+  {
+   "id": "wf-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1092,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Wallis and Futuna’s official gazette is the JOWF, not Laws of Fiji; the cited source is geographically and jurisdictionally impossible."
+  },
+  {
+   "id": "wf-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 911,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Wallis and Futuna is a French territory; its official gazette is the JORF, not the Solomon Islands portal."
+  },
+  {
+   "id": "wf-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 914,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The date 19 December 2025 is after the claimed 4 February 2024 publication, making the bibliographic claim chronologically impossible."
+  },
+  {
+   "id": "wf-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 954,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Wallis and Futuna has no connection to RONLAW, Nauru's database; the cited source cannot originate there."
+  },
+  {
+   "id": "wf-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 917,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Wallis and Futuna is a French overseas collectivity; its official gazette is the JORF, not Australia’s Federal Register of Legislation."
+  },
+  {
+   "id": "wf-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 916,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Wallis and Futuna is a French overseas collectivity; its official gazette is the JORF, not the Republic of the Marshall Islands Judiciary."
+  }
+ ]
+}

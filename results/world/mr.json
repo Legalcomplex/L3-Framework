@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Mauritania — Source-Grounded Citation Reliability (MR)",
+ "country": "MR",
+ "jurisdiction": "Mauritania",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:58:12.107385+00:00",
+ "results": [
+  {
+   "id": "mr-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 900,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Mauritania Courts (Juricaf) is a Francophone-African case-law database, not an official governmental publisher of Mauritanian Supreme Court decisions."
+  },
+  {
+   "id": "mr-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 889,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Mauritania Consolidated Legal Codes (MSGG) is not an official publisher; the 2018 Civil Aviation Code was issued by the Mauritanian government."
+  },
+  {
+   "id": "mr-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 990,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No official Mauritanian source records an \"Instruction 09_GR_2009\" issued by the Banque Centrale de Mauritanie in 2009."
+  },
+  {
+   "id": "mr-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1162,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Mauritania’s official supreme-court decisions are not published by “Mauritania Courts (Juricaf)”; Juricaf is an OHADA/Fondation pour le droit continental database, not an official Mauritanian s"
+  },
+  {
+   "id": "mr-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 932,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Mauritania has no official \"Consolidated Legal Codes (MSGG)\" series; the 2019 inland fisheries code was published in the Journal Officiel."
+  },
+  {
+   "id": "mr-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 814,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Loi 2011-052 is a parliamentary statute, not a Banque Centrale de Mauritanie banking regulation."
+  },
+  {
+   "id": "mr-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 815,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'MAURITANIE-COURSUPREME-20231129-422024' does not match the cited reference '42/2023'; the numbers and formatting are inconsistent."
+  },
+  {
+   "id": "mr-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 768,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Mauritania’s civil aviation code is a national statute, not a Guinea-Bissau Assembly publication."
+  },
+  {
+   "id": "mr-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 825,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Mauritania has no legal authority over Côte d'Ivoire codes; an Ivorian site cannot publish Mauritanian official sources."
+  },
+  {
+   "id": "mr-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 954,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'MAURITANIE-COURSUPREME-20240502-122025' does not match the cited decision '12/2024' of 2 May 2024."
+  },
+  {
+   "id": "mr-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 826,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Mauritania is not governed by Gambian legal sources; Law Hub Gambia publishes Gambian legislation, not Mauritanian codes."
+  },
+  {
+   "id": "mr-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 821,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Loi 2011-052 is a Mauritanian statute on debt recovery, not a Nigerian NAFDAC regulation."
+  }
+ ]
+}

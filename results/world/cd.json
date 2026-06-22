@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Democratic Republic of the Congo — Source-Grounded Citation Reliability (CD)",
+ "country": "CD",
+ "jurisdiction": "Democratic Republic of the Congo",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:53:26.788143+00:00",
+ "results": [
+  {
+   "id": "cd-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 883,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. Juricaf is the official publisher of DR Congo court decisions, including this Cour de cassation ruling."
+  },
+  {
+   "id": "cd-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 690,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such decree appears in official DRC records or the Droit Congolais portal; the cited title and date do not match verifiable legal sources."
+  },
+  {
+   "id": "cd-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 882,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier '146/2019' in LegalRDC’s DRC Constitutional Court and Cassation Decisions cannot refer to a CCJA (Abidjan) judgment involving Côte d’Ivoire."
+  },
+  {
+   "id": "cd-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 749,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The DRC Legislation Portal did not exist in 1978; the cited ordinance predates any such online source."
+  },
+  {
+   "id": "cd-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 834,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The decision date (22 December 2025) is in the future, so the source cannot yet exist."
+  },
+  {
+   "id": "cd-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 890,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No verifiable record exists of an official “Arrêté du 10 juillet 1998” issued by the Conseil national de la femme on the cited DRC portal."
+  },
+  {
+   "id": "cd-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 721,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The decision is from the Cour de cassation of the Democratic Republic of the Congo, not the Constitutional Court of Gabon."
+  },
+  {
+   "id": "cd-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 860,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The decree is from the Democratic Republic of the Congo, not Congo-Brazzaville; its official publication source is the DRC Journal Officiel, not SGG."
+  },
+  {
+   "id": "cd-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 702,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '146/2020' cannot match a 2019 decision from Côte d’Ivoire’s CCJA, as LegalRDC covers DRC Constitutional Court and Cassation decisions."
+  },
+  {
+   "id": "cd-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 839,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. AngoLEX is Angola’s legislation portal; the ordinance is Congolese, so the claimed publication source is incorrect."
+  },
+  {
+   "id": "cd-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 708,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decision is from the Democratic Republic of the Congo’s Cour de cassation, not Congo-Brazzaville’s Constitutional Court."
+  },
+  {
+   "id": "cd-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 684,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The source is a Congolese arrêté, yet the claim attributes publication to Gabon's Journal Officiel, making the bibliographic claim incorrect."
+  }
+ ]
+}

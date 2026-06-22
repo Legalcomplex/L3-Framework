@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Nigeria — Source-Grounded Citation Reliability (NG)",
+ "country": "NG",
+ "jurisdiction": "Nigeria",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:58:38.977653+00:00",
+ "results": [
+  {
+   "id": "ng-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 841,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. NigeriaLII is Nigeria’s official free legal-information repository and routinely publishes Supreme Court decisions such as SC. 373/2015."
+  },
+  {
+   "id": "ng-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 896,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Agricultural and Rural Management Training Institute Act was enacted in 1985, not 1980, and PLAC is a private compilation, not an official source."
+  },
+  {
+   "id": "ng-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 848,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Guardian is an independent newspaper, not an official FCCPC publication, and the 2026 date is impossible."
+  },
+  {
+   "id": "ng-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 820,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No official NERC order or regulation titled 'EKEDP MYTO JULY 2025' was published on 28 August 2025."
+  },
+  {
+   "id": "ng-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 949,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The SEC Nigeria has no authority to publish banking recapitalisation outcomes; such matters fall under the Central Bank of Nigeria, and 2026-04-16 is a future date."
+  },
+  {
+   "id": "ng-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 869,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. NAFDAC has not published any 2025 “Guidelines on Emergency Use Authorization”; the cited date and title do not match any official NAFDAC regulation."
+  },
+  {
+   "id": "ng-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 697,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decision is from Nigeria’s Supreme Court, not Mali’s Cour Suprême."
+  },
+  {
+   "id": "ng-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 769,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Agricultural and Rural Management Training Institute Act was enacted in 1985, not 1977, so the cited 1977 publication date is incorrect."
+  },
+  {
+   "id": "ng-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 803,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Guardian is an independent newspaper; FCCPC did not publish the article."
+  },
+  {
+   "id": "ng-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 914,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. EKEDP MYTO is a Nigerian electricity tariff order; CivLII/Laws.Africa is an Ivorian legal database and cannot publish official Nigerian sources."
+  },
+  {
+   "id": "ng-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 833,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Nigeria Securities and Exchange Commission (SEC) does not publish official legal sources; it issues regulatory notices, not statutes or court decisions."
+  },
+  {
+   "id": "ng-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 889,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. NAFDAC has not published any official document titled 'Guidelines on Emergency Use Authorization for Medical Products' on 1 January 2024."
+  }
+ ]
+}

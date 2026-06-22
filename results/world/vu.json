@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Vanuatu — Source-Grounded Citation Reliability (VU)",
+ "country": "VU",
+ "jurisdiction": "Vanuatu",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T16:02:00.535138+00:00",
+ "results": [
+  {
+   "id": "vu-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 915,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The decision date (2026-04-14) is in the future, so it cannot yet appear in the Vanuatu Judiciary Judgments Database."
+  },
+  {
+   "id": "vu-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 919,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such bill exists; Vanuatu’s Parliament has not published a “Public Land Transport Am Act No. of 2025.”"
+  },
+  {
+   "id": "vu-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1237,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Vanuatu’s official gazette and legislation are published by the Government of Vanuatu, not the Vanuatu Financial Services Commission, and no “Loi No.19 de 2013” appears in its 2025-06 collectio"
+  },
+  {
+   "id": "vu-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1027,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No official record confirms 'Insurance Regulation Order No.16 of 2006' was published by the Reserve Bank of Vanuatu in its 2006 Prudential Guidelines."
+  },
+  {
+   "id": "vu-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 940,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-04-10 is in the future, so the decision cannot yet exist or be published."
+  },
+  {
+   "id": "vu-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 987,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such bill exists; Vanuatu Parliament Bills records show no Municipalities Amendment Act published on 1 January 2025."
+  },
+  {
+   "id": "vu-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 767,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '3919 of 2025' cannot correspond to a 14 April 2026 judgment, as 2025 precedes 2026."
+  },
+  {
+   "id": "vu-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 802,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Vanuatu has no Federal Register of Legislation; that is an Australian publication, so the cited source cannot be official Vanuatu law."
+  },
+  {
+   "id": "vu-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 908,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Vanuatu's official language is English/Bislama; \"Loi\" and \"modificative\" indicate French, making the citation implausible for a Vanuatu statute."
+  },
+  {
+   "id": "vu-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 820,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier specifies Order No.16 of 2007, yet the claim equates it to the 2006 instrument, creating a clear year mismatch."
+  },
+  {
+   "id": "vu-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 972,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Vanuatu Judiciary Judgments Database (courts.gov.vu) is not an official publisher; the Supreme Court Registry issues judgments."
+  },
+  {
+   "id": "vu-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 993,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No such bill exists; Vanuatu’s Parliament has not published or enacted a Municipalities Amendment Act in 2025."
+  }
+ ]
+}

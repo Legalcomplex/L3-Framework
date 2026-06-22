@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Mali — Source-Grounded Citation Reliability (ML)",
+ "country": "ML",
+ "jurisdiction": "Mali",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:58:01.473485+00:00",
+ "results": [
+  {
+   "id": "ml-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 971,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Mali's customs code was enacted in 2001 by Ordinance No. 01-81/P-RM, not published via \"Mali Consolidated Legal Codes (SGG)\"."
+  },
+  {
+   "id": "ml-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 913,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The citation format and date indicate a future or unverifiable decision; no official Mali Supreme Court publication matches this exact reference."
+  },
+  {
+   "id": "ml-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 917,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No official Malian Supreme Court source dated 2025-09-07 exists; the future date and phrasing indicate the claim is fabricated."
+  },
+  {
+   "id": "ml-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1294,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Mali’s official codes are published in the Journal Officiel, not by “Mali Consolidated Legal Codes (SGG)”; no such 1995 SGG imprint exists."
+  },
+  {
+   "id": "ml-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 889,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 21 February 2025 is in the future, so the cited 2025 decision cannot yet have been published."
+  },
+  {
+   "id": "ml-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 824,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No public record confirms the Cour Suprême du Mali published “Arr civil n°95 du 16 mars 2023” under that exact citation."
+  },
+  {
+   "id": "ml-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 784,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The 2001 Customs Code is a Malian statute, not a Nigerian Communications Commission regulation."
+  },
+  {
+   "id": "ml-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 783,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'MALI-COURSUPREME-20240613-194' indicates decision 194, not 193, so the bibliographic claim mismatches the actual case number."
+  },
+  {
+   "id": "ml-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 829,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The claimed 2026-09-07 publication date is impossible, as the present date precedes 2026."
+  },
+  {
+   "id": "ml-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 914,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The 1995 Mali Code de l’artisanat is a Malian statute, not a Nigerian NAFDAC regulation."
+  },
+  {
+   "id": "ml-src-f05",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 738,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'MALI-COURSUPREME-20250221-072' indicates decision 072, not 071, so the bibliographic claim is incorrect."
+  },
+  {
+   "id": "ml-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 712,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The decision is from Mali's Supreme Court, not Senegal's, as the jurisdiction specified is Mali."
+  }
+ ]
+}

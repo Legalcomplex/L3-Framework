@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — United States — Source-Grounded Citation Reliability (US)",
+ "country": "US",
+ "jurisdiction": "United States",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T16:01:34.787348+00:00",
+ "results": [
+  {
+   "id": "us-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 821,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Labor Code § 510 is a current California statute; a 2026 publication date is impossible."
+  },
+  {
+   "id": "us-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 973,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The Caselaw Access Project (Harvard/HuggingFace) publishes the official U.S. court decision Brennan v. Hatton (1973)."
+  },
+  {
+   "id": "us-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 948,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier '25-60111' is a 2025 docket number, making a 2026 decision date impossible."
+  },
+  {
+   "id": "us-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1303,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The FTC does not publish “Decisions and Orders” volumes; its antitrust actions appear in official reports or the Federal Register, not a 2026-dated volume."
+  },
+  {
+   "id": "us-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 930,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such decision exists; the date 2026-04-24 is in the future, so it cannot be a published US federal case."
+  },
+  {
+   "id": "us-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 916,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No federal district court case can be filed or decided in 2026, as that date lies in the future."
+  },
+  {
+   "id": "us-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 854,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Labor Code § 510 is a California statute; British Columbia Laws publishes only B.C. provincial legislation, not U.S. codes."
+  },
+  {
+   "id": "us-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 784,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '72-2704' is a docket number, not a Caselaw Access Project case identifier."
+  },
+  {
+   "id": "us-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 826,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '25-60112' is a 2025 docket number, so it cannot correspond to a 2026 decision."
+  },
+  {
+   "id": "us-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 846,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decision is an FTC administrative complaint/settlement, not a published \"FTC Decisions and Orders\" reporter volume."
+  },
+  {
+   "id": "us-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 954,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. \"United States v. Oscar Hudspeth, Sr.\" is not a published decision of the U.S. Supreme Court or any federal circuit court."
+  },
+  {
+   "id": "us-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 901,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Tax Court of Canada cannot publish U.S. District of Columbia decisions; jurisdiction and court names are incompatible."
+  }
+ ]
+}

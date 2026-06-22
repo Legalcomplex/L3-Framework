@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Tunisia — Source-Grounded Citation Reliability (TN)",
+ "country": "TN",
+ "jurisdiction": "Tunisia",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T16:01:04.992300+00:00",
+ "results": [
+  {
+   "id": "tn-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 890,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No public records confirm that identifier '50712-0017' matches a 26 March 2018 Tunisian Court of Cassation decision."
+  },
+  {
+   "id": "tn-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 942,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The 2005 law predates the 2025 DCAF publication; the claim misstates the actual official source and date."
+  },
+  {
+   "id": "tn-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 983,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No public index confirms identifier 60341 matches the 4 March 2019 Tunisian Court of Cassation decision."
+  },
+  {
+   "id": "tn-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 924,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Tunisia’s JORT has not published any 2025 legislation; the cited “Loi n° 2025-14” post-dates today and cannot exist."
+  },
+  {
+   "id": "tn-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 901,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No public index confirms identifier 17073 matches the 9 November 2017 Tunisian Court of Cassation ruling."
+  },
+  {
+   "id": "tn-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1112,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such decree exists; Tunisia’s official JORT has not published any 2025-74 measure."
+  },
+  {
+   "id": "tn-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 883,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '50712-0018' cannot match the cited decision '50712-0017' because the two numbers differ."
+  },
+  {
+   "id": "tn-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 941,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The 2005-51 law predates the cited 2026 DCAF/JORT source, making the publication claim chronologically impossible."
+  },
+  {
+   "id": "tn-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 930,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '60342' cannot match the cited decision numbered 60341; the numbers are inconsistent."
+  },
+  {
+   "id": "tn-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 989,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Tunisia cannot enact a 2025 law published in 2025-08-06, and Egyptian Legal Corpus is not an official Tunisian source."
+  },
+  {
+   "id": "tn-src-f05",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 922,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The claim misstates the identifier: 17074 cannot correspond to decision 17073, as each jurisprudence entry has a unique number."
+  },
+  {
+   "id": "tn-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 881,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Tunisia issues its own official decrees; an Egyptian corpus cannot be the authoritative source for a Tunisian legal text."
+  }
+ ]
+}

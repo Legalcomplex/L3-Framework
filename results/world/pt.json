@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Portugal — Source-Grounded Citation Reliability (PT)",
+ "country": "PT",
+ "jurisdiction": "Portugal",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:59:27.854916+00:00",
+ "results": [
+  {
+   "id": "pt-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 796,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The decision date (2026-03-12) is in the future, so the citation cannot yet exist."
+  },
+  {
+   "id": "pt-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1195,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The quoted text is not an official Portuguese legal source; it is a partial excerpt from a parliamentary document, not a published law."
+  },
+  {
+   "id": "pt-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1199,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier '733/2025-T' cannot refer to a decision dated 2026-03-02, as that date falls after the present."
+  },
+  {
+   "id": "pt-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 791,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-01-01 is in the future, so this decision cannot yet exist."
+  },
+  {
+   "id": "pt-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 935,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The decision identifier indicates a 2021 case, not a 2026 publication date, making the bibliographic claim chronologically impossible."
+  },
+  {
+   "id": "pt-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 921,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Portuguese Court of Auditors (Tribunal de Contas) does not issue \"Sentenças\"; its decisions are called \"Acórdãos,\" so the cited source name is incorrect."
+  },
+  {
+   "id": "pt-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1083,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '2428/24.1T8VFR.P2' cannot correspond to an Acórdão dated 2026-03-12, as that date is in the future."
+  },
+  {
+   "id": "pt-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 848,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The quoted text is not an official parliamentary publication; it appears to be a fragment from a non-official or secondary source, not a verified Assembleia da República document."
+  },
+  {
+   "id": "pt-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 783,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '733/2026-T' cannot refer to a 2025 proceeding; the year segment must match the filing year."
+  },
+  {
+   "id": "pt-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 784,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decision is from Portugal’s Supreme Administrative Court (Supremo Tribunal Administrativo), not the German Bundesfinanzhof."
+  },
+  {
+   "id": "pt-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 897,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The decision identifier \"Acórdão STJ 267/21.0T8GVA.C1.S1\" indicates a Coimbra Court of Appeal case, not a Supreme Court judgment."
+  },
+  {
+   "id": "pt-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 774,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The decision is a Portuguese court ruling, not a Gibraltar source; gibraltarlaws.gov.gi publishes only Gibraltar legislation."
+  }
+ ]
+}

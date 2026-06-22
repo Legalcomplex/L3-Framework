@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Cyprus — Source-Grounded Citation Reliability (CY)",
+ "country": "CY",
+ "jurisdiction": "Cyprus",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.6667,
+ "correct": 8,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:54:04.401507+00:00",
+ "results": [
+  {
+   "id": "cy-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 939,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited decision is a Supreme Court administrative appeal, not a Cyprus Tax Tribunal ruling, so it cannot be published by that body."
+  },
+  {
+   "id": "cy-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 936,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 30/1/2026 is in the future, so the decision cannot yet exist or be published."
+  },
+  {
+   "id": "cy-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 996,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier 'llfa3fcc50-245f-411f-980a-cd9ad2b18c46' in CY-Law actually corresponds to the 2004 Customs Code (Ν. 94(I)/2004), not the 2004-04-30 title shown."
+  },
+  {
+   "id": "cy-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1062,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The Cyprus Commission for the Protection of Competition is the competent authority that publishes its own merger-control decisions, including CPC:32/2022."
+  },
+  {
+   "id": "cy-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 931,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The cited decision is an official judgment of the Supreme Court of Cyprus, published on its official website."
+  },
+  {
+   "id": "cy-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 893,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier '1-202401-50-16EDD' indicates a 2024 Cyprus Tax Tribunal decision, while the cited ECLI 'ECLI:CY:AD:2015:C240' refers to a 2015 Administrative Court case."
+  },
+  {
+   "id": "cy-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1327,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '3-202302-8-164' does not match the cited case title or date; the reference appears fabricated or misattributed."
+  },
+  {
+   "id": "cy-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 709,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decision is a Cypriot Administrative Court case, not a Montenegro Constitutional Court ruling."
+  },
+  {
+   "id": "cy-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 886,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'llfa3fcc50-245f-411f-980a-cd9ad2b18c47' in CY-Law actually corresponds to the 2004 Customs Code consolidation law, not the cited title."
+  },
+  {
+   "id": "cy-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 683,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decision is a Cypriot Commission for the Protection of Competition ruling, not a Supreme Court of Ukraine judgment."
+  },
+  {
+   "id": "cy-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 821,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited case is a Cypriot Court of Appeal decision; Cyprus has no Constitutional Court of Ukraine, so the publisher attribution is incorrect."
+  },
+  {
+   "id": "cy-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 831,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The ECLI format and “Cyprus Tax Tribunal Decisions” publisher are invented; no such 2015 decision exists under that citation."
+  }
+ ]
+}

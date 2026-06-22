@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Trinidad and Tobago — Source-Grounded Citation Reliability (TT)",
+ "country": "TT",
+ "jurisdiction": "Trinidad and Tobago",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T16:01:13.356080+00:00",
+ "results": [
+  {
+   "id": "tt-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 918,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Trinidad & Tobago Digital Legislative Library did not exist in 2000; it was launched years later, so the claimed 2000-01-01 publication date is impossible."
+  },
+  {
+   "id": "tt-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 897,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The year 2026 has not yet occurred, so no such Act or Gazette could exist."
+  },
+  {
+   "id": "tt-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1166,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Family Proceedings Act is Act No. 29 of 2004, officially published in the Trinidad and Tobago Gazette, not by “Parliament — Acts of Parliament.”"
+  },
+  {
+   "id": "tt-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1129,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The year 2026 has not yet occurred, so no such Act or Gazette publication can exist."
+  },
+  {
+   "id": "tt-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 971,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such Act exists; Trinidad and Tobago’s Parliament did not enact a “National Housing Authority Vesting Act” in 2004."
+  },
+  {
+   "id": "tt-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 820,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The claim is impossible: a 2026 Legal Notice cannot have been published on 5 January 2026."
+  },
+  {
+   "id": "tt-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 957,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Trinidad & Tobago Digital Legislative Library did not exist in 2001; it was launched years later, making the claimed 2001 publication date impossible."
+  },
+  {
+   "id": "tt-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 853,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Probation of Offenders (Amendment) Act, 2026 cannot be a law of Grenada when the jurisdiction specified is Trinidad and Tobago."
+  },
+  {
+   "id": "tt-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 795,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Family Proceedings Act, 2004 is a Trinidad and Tobago statute, not a Bahamian law published in Bahamas Consolidated Legislation."
+  },
+  {
+   "id": "tt-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 782,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Tobago House of Assembly (Amendment) Act, 2026 cannot have been published in January 2026 because that date lies in the future."
+  },
+  {
+   "id": "tt-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 922,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The National Housing Authority Vesting Act, 2004 is a Trinidad and Tobago statute, not a Sint Maarten publication."
+  },
+  {
+   "id": "tt-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 817,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The claim misattributes a Trinidad and Tobago source to Cayman Islands Legislation and cites a future 2026 date."
+  }
+ ]
+}

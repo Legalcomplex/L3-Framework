@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sabaio S3 — Fable 5 Runner</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;700&family=Manrope:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --bg: #272727;
+    --surface: #2f2f2f;
+    --surface-2: #353535;
+    --border: #444240;
+    --text: #e8e4dd;
+    --muted: #9a948a;
+    --accent: #BAAC99;       /* champagne */
+    --accent-dim: #8a7f6e;
+    --true: #84B082;
+    --false: #D08770;
+    --warn: #d9b35c;
+    --radius: 14px;
+    font-family: 'Manrope', system-ui, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font-size: 15px; line-height: 1.5;
+  }
+  h1, h2, h3 { font-family: 'Comfortaa', sans-serif; font-weight: 700; letter-spacing: .2px; }
+  code, .mono { font-family: 'Fira Code', monospace; }
+  a { color: var(--accent); }
+
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 28px 22px 80px; }
+
+  header { display: flex; align-items: center; gap: 16px; margin-bottom: 4px; }
+  .emblem { height: 46px; width: auto; flex: none; }
+  .lockup { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+  .parent { font-family: 'Comfortaa', sans-serif; font-weight: 500; font-size: 13px; color: var(--accent); letter-spacing: .3px; }
+  .title-row { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .product { font-family: 'Comfortaa', sans-serif; font-weight: 700; font-size: 22px; margin: 0; }
+  .product .a { color: var(--accent); }
+  .pill {
+    font-size: 12px; text-transform: uppercase; letter-spacing: 1.5px;
+    color: var(--bg); background: var(--accent); padding: 3px 10px; border-radius: 999px;
+    font-weight: 700;
+  }
+  .docs { font-size: 13px; font-weight: 600; text-decoration: none; border-bottom: 1px solid transparent; }
+  .docs:hover { border-bottom-color: var(--accent); }
+  .tagline { color: var(--muted); font-size: 14px; }
+
+  .grid { display: grid; grid-template-columns: 320px 1fr; gap: 20px; margin-top: 22px; }
+  @media (max-width: 860px) { .grid { grid-template-columns: 1fr; } }
+
+  .card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: 18px;
+  }
+  .card h2 { font-size: 15px; margin: 0 0 14px; color: var(--accent); text-transform: uppercase; letter-spacing: 1px; }
+
+  label { display: block; font-size: 12.5px; color: var(--muted); margin: 12px 0 5px; font-weight: 600; }
+  label:first-of-type { margin-top: 0; }
+  input, select, textarea {
+    width: 100%; background: var(--surface-2); color: var(--text);
+    border: 1px solid var(--border); border-radius: 9px; padding: 9px 11px;
+    font-family: inherit; font-size: 14px;
+  }
+  input:focus, select:focus, textarea:focus { outline: none; border-color: var(--accent); }
+  .row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+
+  button {
+    font-family: 'Manrope', sans-serif; font-weight: 700; cursor: pointer;
+    border: 1px solid var(--border); border-radius: 10px; padding: 10px 16px;
+    background: var(--surface-2); color: var(--text); font-size: 14px;
+  }
+  button:hover:not(:disabled) { border-color: var(--accent); }
+  button:disabled { opacity: .45; cursor: not-allowed; }
+  button.primary { background: var(--accent); color: #1d1d1d; border-color: var(--accent); width: 100%; padding: 12px; font-size: 15px; margin-top: 16px; }
+  button.primary:hover:not(:disabled) { background: #cdbfa9; }
+
+  .hint { font-size: 12px; color: var(--muted); margin-top: 8px; line-height: 1.45; }
+  .hint.warn { color: var(--warn); }
+
+  .pack-line { font-size: 13px; color: var(--text); margin-top: 8px; }
+  .pack-line b { color: var(--accent); }
+
+  /* Summary cards */
+  .cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 16px; }
+  @media (max-width: 700px) { .cards { grid-template-columns: repeat(2, 1fr); } }
+  .stat { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px 16px; }
+  .stat .n { font-family: 'Comfortaa', sans-serif; font-weight: 700; font-size: 24px; color: var(--accent); }
+  .stat .l { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; }
+  .stat .sub { font-size: 10.5px; color: var(--muted); margin-top: 4px; font-family: 'Fira Code', monospace; }
+
+  .progress-wrap { height: 6px; background: var(--surface-2); border-radius: 999px; overflow: hidden; margin: 4px 0 16px; }
+  .progress-bar { height: 100%; width: 0; background: var(--accent); transition: width .25s; }
+
+  table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; font-size: 11.5px; text-transform: uppercase; letter-spacing: .8px; position: sticky; top: 0; background: var(--surface); }
+  td.id { font-family: 'Fira Code', monospace; color: var(--muted); white-space: nowrap; }
+  .chip { display: inline-block; min-width: 20px; text-align: center; font-family: 'Fira Code', monospace;
+          font-size: 11px; padding: 2px 7px; border-radius: 6px; margin-right: 3px; font-weight: 500; }
+  .chip.t { background: rgba(132,176,130,.16); color: var(--true); }
+  .chip.f { background: rgba(208,135,112,.16); color: var(--false); }
+  .chip.x { background: rgba(154,148,138,.16); color: var(--muted); }
+  .badge { font-size: 11px; padding: 2px 8px; border-radius: 6px; font-weight: 700; }
+  .badge.ok { background: rgba(132,176,130,.16); color: var(--true); }
+  .badge.bad { background: rgba(208,135,112,.16); color: var(--false); }
+  .topic { color: var(--text); }
+  .tier { font-size: 11px; color: var(--accent-dim); font-family: 'Fira Code', monospace; }
+  .cite { font-family: 'Fira Code', monospace; font-size: 12.5px; color: #cdbca0; margin-top: 4px; }
+
+  .table-scroll { max-height: 480px; overflow: auto; border: 1px solid var(--border); border-radius: var(--radius); }
+
+  .toolbar { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin: 4px 0 14px; }
+  .toolbar .spacer { flex: 1; }
+  .status { font-size: 13px; color: var(--muted); }
+
+  .tierbreak { margin-top: 16px; font-size: 13px; }
+  .tierbreak div { display: flex; justify-content: space-between; padding: 5px 0; border-bottom: 1px solid var(--border); }
+  .tierbreak .tname { font-family: 'Fira Code', monospace; color: var(--text); }
+
+  .footnote { margin-top: 22px; font-size: 12px; color: var(--muted); line-height: 1.55; }
+  .empty { padding: 40px 20px; text-align: center; color: var(--muted); }
+
+  /* Live model trace (reasoning panel) */
+  .trace-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px 16px; margin-bottom: 16px; }
+  .trace-head { display: flex; align-items: center; gap: 9px; margin-bottom: 9px; }
+  .trace-label { font-size: 11.5px; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 1px; }
+  .trace-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--muted); flex: none; }
+  .trace-dot.live { background: var(--true); animation: tpulse 1.1s ease-in-out infinite; }
+  @keyframes tpulse { 0%,100% { opacity: 1; } 50% { opacity: .25; } }
+  .trace-meta { font-size: 12px; color: var(--muted); margin-left: auto; font-family: 'Fira Code', monospace; }
+  .trace { height: 210px; overflow-y: auto; background: #1d1d1d; color: #d6cfc2;
+           font-family: 'Fira Code', monospace; font-size: 12px; line-height: 1.55;
+           padding: 12px 14px; border-radius: 10px; white-space: pre-wrap; word-wrap: break-word;
+           border: 1px solid var(--border); }
+  .trace::-webkit-scrollbar { width: 8px; }
+  .trace::-webkit-scrollbar-thumb { background: #444240; border-radius: 4px; }
+  .trace .ph { color: var(--muted); font-style: italic; }
+  .trace .q { color: var(--accent); font-weight: 600; }
+  .trace .ok { color: var(--true); }
+  .trace .bad { color: var(--false); }
+  .trace .meta { color: var(--muted); }
+
+  /* Run history */
+  .hist-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px 16px; margin-top: 18px; }
+  .hist-head { display: flex; align-items: center; margin-bottom: 8px; }
+  .hist-head h3 { font-size: 13px; color: var(--accent); margin: 0; text-transform: uppercase; letter-spacing: 1px; }
+  .hist-head .spacer { flex: 1; }
+  .hist-cols, .hist-row { display: grid; grid-template-columns: 1fr 64px 64px 64px 54px; gap: 10px; align-items: center; }
+  .hist-cols { font-size: 10.5px; text-transform: uppercase; letter-spacing: .7px; color: var(--muted); padding: 2px 0 6px; border-bottom: 1px solid var(--border); }
+  .hist-cols span:not(:first-child), .hist-row .m { text-align: right; }
+  .hist-row { padding: 9px 0; border-bottom: 1px solid var(--border); font-size: 13px; }
+  .hist-row:last-child { border-bottom: none; }
+  .hist-row .nm { color: var(--text); min-width: 0; }
+  .hist-row .nm small { display: block; color: var(--muted); font-size: 11px; margin-top: 2px; }
+  .hist-row .m { font-family: 'Fira Code', monospace; font-size: 12.5px; color: var(--accent); }
+  .hist-empty { color: var(--muted); font-size: 13px; padding: 8px 0; }
+  .linkbtn { background: none; border: none; color: var(--accent); cursor: pointer; font-size: 12px; padding: 2px 4px; font-family: inherit; }
+  .linkbtn:hover { text-decoration: underline; }
+
+  /* Per-result Sonnet explanation drawer */
+  tr.resrow { cursor: pointer; }
+  tr.resrow:hover td { background: var(--surface-2); }
+  td.id .caret { color: var(--accent); margin-right: 4px; display: inline-block; transition: transform .15s; }
+  tr.resrow.open td.id .caret { transform: rotate(90deg); }
+  .expl-row td { background: #232323; padding: 0; }
+  .expl-body { padding: 11px 16px; font-size: 13px; color: var(--text); line-height: 1.55; border-left: 3px solid var(--accent); }
+  .expl-body .ph { color: var(--muted); font-style: italic; }
+  .expl-body .by { display: block; font-size: 10.5px; text-transform: uppercase; letter-spacing: .8px; color: var(--accent-dim); margin-bottom: 5px; }
+  .has-expl td.id::after { content: "✦"; color: var(--accent); font-size: 10px; margin-left: 4px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img class="emblem" src="legalcomplex-emblem.png" alt="Legalcomplex emblem" />
+    <div class="lockup">
+      <span class="parent">Legalcomplex</span>
+      <div class="title-row">
+        <h1 class="product">Sabaio <span class="a">S3</span></h1>
+        <span class="pill">Evaluation</span>
+        <a class="docs" href="generator.html">Pack generator&nbsp;↗</a>
+        <a class="docs" href="background.html">Background&nbsp;↗</a>
+        <a class="docs" href="readme.html" target="_blank">Readme&nbsp;↗</a>
+      </div>
+      <span class="tagline">Legal-citation reliability runner · default model <code>claude-fable-5</code></span>
+    </div>
+  </header>
+
+  <div class="grid">
+    <!-- ── Config ─────────────────────────────── -->
+    <div class="card" style="align-self:start">
+      <h2>Configuration</h2>
+
+      <label>Anthropic API key</label>
+      <input id="key" type="password" placeholder="sk-ant-…" autocomplete="off" />
+      <div class="hint">Stored only in this browser (localStorage) and sent directly to <code>api.anthropic.com</code>. Never uploaded anywhere else.</div>
+
+      <label>Model</label>
+      <input id="model" list="models" value="claude-fable-5" />
+      <datalist id="models">
+        <option value="claude-fable-5"></option>
+        <option value="claude-opus-4-8"></option>
+        <option value="claude-sonnet-4-6"></option>
+        <option value="claude-haiku-4-5"></option>
+      </datalist>
+
+      <div class="row2">
+        <div><label>Rounds</label><input id="rounds" type="number" min="1" max="10" value="3" /></div>
+        <div><label>Max tokens</label><input id="maxtok" type="number" min="20" max="1024" value="150" /></div>
+      </div>
+      <div class="row2">
+        <div><label>Delay (s)</label><input id="delay" type="number" min="0" max="5" step="0.05" value="0.15" /></div>
+        <div><label>&nbsp;</label><button id="clearKey" style="width:100%">Forget key</button></div>
+      </div>
+
+      <label>Test pack</label>
+      <select id="packSel">
+        <option value="builtin">Sample — Dutch Law (12 items, verified)</option>
+        <optgroup label="Case law (ECLI)">
+          <option value="fetch:packs/nl-ecli-tiered.json">Case Law — Tiered by date (30)</option>
+          <option value="fetch:packs/nl-popularity-tiered.json">Case Law — Popularity gradient (30)</option>
+        </optgroup>
+        <optgroup label="Statutory article retrieval">
+          <option value="fetch:packs/nl-adjacent-article.json">NL Adjacent-article distractors (40)</option>
+          <option value="fetch:packs/nl-direction-asymmetry.json">NL Direction asymmetry F1/F2 (24)</option>
+          <option value="fetch:packs/cross-jurisdiction.json">Cross-jurisdiction traps (15)</option>
+        </optgroup>
+        <option value="file">Load pack file…</option>
+      </select>
+      <input id="packFile" type="file" accept=".json" style="display:none;margin-top:8px" />
+      <div class="pack-line" id="packInfo"></div>
+
+      <button class="primary" id="run">▶ Run evaluation</button>
+      <button id="stop" style="width:100%;margin-top:8px;display:none">■ Stop</button>
+
+      <div class="hint warn" style="margin-top:14px">
+        Fable 5 removed <code>temperature</code> — S3's "temp 0" can't be forced. Consistency below reflects the model's natural round-to-round agreement.
+      </div>
+    </div>
+
+    <!-- ── Results ────────────────────────────── -->
+    <div>
+      <div class="progress-wrap"><div class="progress-bar" id="bar"></div></div>
+
+      <div class="cards">
+        <div class="stat"><div class="n" id="sAcc">—</div><div class="l">Accuracy</div></div>
+        <div class="stat"><div class="n" id="sCon">—</div><div class="l">Mean consistency</div></div>
+        <div class="stat"><div class="n" id="sUnp">—</div><div class="l">Unparseable</div></div>
+        <div class="stat"><div class="n" id="sCost">—</div><div class="l">Est. cost</div><div class="sub" id="costNote"></div></div>
+      </div>
+
+      <div class="trace-card">
+        <div class="trace-head">
+          <span class="trace-dot" id="traceDot"></span>
+          <span class="trace-label">Live model trace</span>
+          <span class="trace-meta" id="traceMeta"></span>
+        </div>
+        <div class="trace" id="trace"><span class="ph">Run an evaluation to watch each True/False decision stream in live — the question, the model's answer text, and the verdict.</span></div>
+      </div>
+
+      <div class="toolbar">
+        <span class="status" id="status">Ready. Paste your key, pick a pack, and run.</span>
+        <span class="spacer"></span>
+        <button id="explainBtn" disabled title="Explain the FAILED results with claude-sonnet-4-6 (one extra API call per failed item)">✦ Explain fails (Sonnet)</button>
+        <button id="dlJson" disabled>⤓ JSON</button>
+        <button id="dlCsv" disabled>⤓ CSV</button>
+      </div>
+
+      <div class="table-scroll">
+        <table>
+          <thead><tr>
+            <th>ID</th><th>Topic / citation</th><th>Exp.</th><th>Rounds</th><th>Acc</th><th>Cons.</th>
+          </tr></thead>
+          <tbody id="rows">
+            <tr><td colspan="6"><div class="empty">No run yet.</div></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="tierbreak" id="tierbreak"></div>
+
+      <div class="footnote" id="foot"></div>
+
+      <div class="hist-card">
+        <div class="hist-head">
+          <h3>Run history</h3>
+          <span class="spacer"></span>
+          <button class="linkbtn" id="clearHist">Clear all</button>
+        </div>
+        <div class="hist-cols"><span>Run</span><span>Acc</span><span>Cons.</span><span>Unparsed</span><span></span></div>
+        <div id="histRows"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+/* ───────────────────────────── Built-in sample pack ─────────────────────── */
+const SAMPLE_PACK = {
+  name: "S3 Sample — Dutch Law (BW, Sr, Gw, AVG)",
+  jurisdiction: "Dutch Law",
+  prompt_template: "In [Jurisdiction], is '[Code name] [Reference type] [Number]' the correct reference for '[Subject - Topic]'? Answer True/False with a 20-word explanation as to why.",
+  tests: [
+    { id:1,  jurisdiction:"Dutch Law", code:"Burgerlijk Wetboek",        reference:"Boek 6 artikel 74",  topic:"Wanprestatie",        expected:true  },
+    { id:2,  jurisdiction:"Dutch Law", code:"Burgerlijk Wetboek",        reference:"Boek 7 artikel 610", topic:"Arbeidsovereenkomst", expected:true  },
+    { id:3,  jurisdiction:"Dutch Law", code:"Burgerlijk Wetboek",        reference:"Boek 3 artikel 84",  topic:"Levering",            expected:true  },
+    { id:4,  jurisdiction:"Dutch Law", code:"Wetboek van Strafrecht",    reference:"artikel 310",        topic:"Diefstal",            expected:true  },
+    { id:5,  jurisdiction:"Dutch Law", code:"Wetboek van Strafrecht",    reference:"artikel 287",        topic:"Doodslag",            expected:true  },
+    { id:6,  jurisdiction:"Dutch Law", code:"Grondwet",                  reference:"artikel 1",          topic:"Gelijkheidsbeginsel", expected:true  },
+    { id:7,  jurisdiction:"Dutch Law", code:"Burgerlijk Wetboek",        reference:"Boek 7 artikel 675", topic:"Wanprestatie",        expected:false },
+    { id:8,  jurisdiction:"Dutch Law", code:"Wetboek van Strafrecht",    reference:"artikel 100",        topic:"Diefstal",            expected:false },
+    { id:9,  jurisdiction:"Dutch Law", code:"Burgerlijk Wetboek",        reference:"Boek 12 artikel 5",  topic:"Eigendomsrecht",      expected:false },
+    { id:10, jurisdiction:"Dutch Law", code:"Grondwet",                  reference:"artikel 250",        topic:"Gelijkheidsbeginsel", expected:false },
+    { id:11, jurisdiction:"EU Law (applicable in NL)", code:"Algemene Verordening Gegevensbescherming (GDPR)", reference:"artikel 99", topic:"Toestemming voor verwerking persoonsgegevens", expected:false },
+    { id:12, jurisdiction:"Dutch Law", code:"Wet algemene bepalingen omgevingsrecht (Wabo)", reference:"artikel 1", topic:"Hypotheekrecht", expected:false }
+  ]
+};
+
+/* ───────────────────────────── Prompt building (mirrors run_s3_claude.py) ─ */
+const PLACEHOLDERS = {
+  "[Jurisdiction]":"jurisdiction", "[Code name]":"code", "[Code]":"code",
+  "[Reference type]":"reference", "[Reference]":"reference",
+  "[Number]":"number", "[Subject - Topic]":"topic", "[Topic]":"topic"
+};
+function buildPrompt(template, item, packJur) {
+  let out = template;
+  for (const [ph, field] of Object.entries(PLACEHOLDERS)) {
+    if (!out.includes(ph)) continue;
+    let val = item[field];
+    if (field === "jurisdiction" && !val) val = packJur;
+    val = (val === undefined || val === null) ? "" : String(val);
+    if (val === "") out = out.split(" " + ph).join(ph);   // consume leading space
+    out = out.split(ph).join(val);
+  }
+  return out.replace(/\s+/g, " ").trim();
+}
+function parseTF(text) {
+  if (!text) return null;
+  const m = text.match(/\b(true|false)\b/i);
+  return m ? m[1].toLowerCase() === "true" : null;
+}
+
+/* ───────────────────────────── API call ─────────────────────────────────── */
+// No temperature / top_p / top_k — removed on Fable 5 (400 if sent). The runner
+// streams responses (stream: true) so the live trace can show each decision.
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+
+/* Streaming variant — yields text deltas so we can show a live reasoning trace. */
+async function* sseEvents(res) {
+  const reader = res.body.getReader();
+  const dec = new TextDecoder(); let buf = "";
+  while (true) {
+    const { done, value } = await reader.read();
+    if (done) return;
+    buf += dec.decode(value, { stream: true });
+    let nl;
+    while ((nl = buf.indexOf("\n")) >= 0) {
+      const line = buf.slice(0, nl).trim(); buf = buf.slice(nl + 1);
+      if (!line.startsWith("data:")) continue;
+      const p = line.slice(5).trim();
+      if (p === "[DONE]") return;
+      try { yield JSON.parse(p); } catch (e) { /* keepalive */ }
+    }
+  }
+}
+async function callModelStream(key, model, prompt, maxTok, onDelta) {
+  const res = await fetch("https://api.anthropic.com/v1/messages", {
+    method: "POST",
+    headers: {
+      "content-type": "application/json",
+      "x-api-key": key,
+      "anthropic-version": "2023-06-01",
+      "anthropic-dangerous-direct-browser-access": "true"
+    },
+    body: JSON.stringify({ model, max_tokens: maxTok, stream: true, messages: [{ role: "user", content: prompt }] })
+  });
+  if (!res.ok) {
+    let detail = "";
+    try { detail = (await res.json()).error?.message || ""; } catch (e) {}
+    const err = new Error(`HTTP ${res.status}${detail ? " — " + detail : ""}`);
+    err.status = res.status;
+    throw err;
+  }
+  let full = "", usage = { input: 0, output: 0 };
+  for await (const evt of sseEvents(res)) {
+    if (evt.type === "message_start") {
+      const u = evt.message?.usage;
+      if (u) { usage.input = (u.input_tokens || 0) + (u.cache_read_input_tokens || 0) + (u.cache_creation_input_tokens || 0); usage.output = u.output_tokens || 0; }
+    } else if (evt.type === "content_block_delta" && evt.delta?.type === "text_delta") {
+      const piece = evt.delta.text || ""; full += piece; if (onDelta) onDelta(piece);
+    } else if (evt.type === "message_delta") {
+      if (evt.usage?.output_tokens != null) usage.output = evt.usage.output_tokens;
+    }
+  }
+  return { text: full.trim(), usage };
+}
+
+/* ───────────────────────────── State + DOM ──────────────────────────────── */
+const $ = id => document.getElementById(id);
+let pack = SAMPLE_PACK, lastRows = [], running = false, stopFlag = false, explanations = {}, usageByModel = {};
+
+function setPackInfo() {
+  const n = pack.tests ? pack.tests.length : 0;
+  $("packInfo").innerHTML = `<b>${pack.name || "Untitled pack"}</b> · ${n} items`;
+}
+setPackInfo();
+
+// persist key
+$("key").value = localStorage.getItem("s3_key") || "";
+$("key").addEventListener("change", () => localStorage.setItem("s3_key", $("key").value.trim()));
+$("clearKey").onclick = () => { localStorage.removeItem("s3_key"); $("key").value = ""; setStatus("Key forgotten."); };
+
+$("packSel").onchange = async e => {
+  const v = e.target.value;
+  if (v === "file") { $("packFile").click(); return; }
+  if (v === "builtin") { pack = SAMPLE_PACK; setPackInfo(); setStatus("Ready."); return; }
+  if (v.startsWith("fetch:")) {
+    const url = v.slice(6);
+    setStatus("Loading " + url + " …");
+    try {
+      const r = await fetch(url);
+      if (!r.ok) throw new Error("HTTP " + r.status);
+      const p = await r.json();
+      if (!p.prompt_template || !Array.isArray(p.tests)) throw new Error("missing prompt_template or tests");
+      pack = p; setPackInfo(); setStatus("Loaded " + (p.name || url));
+    } catch (err) {
+      alert("Could not load pack from " + url + "\n" + err.message +
+            "\n\nThis runner must be served over http:// (a local server), not opened as a file://, for the built-in packs to load. Use the launch config, or pick 'Load pack file…'.");
+      $("packSel").value = "builtin"; pack = SAMPLE_PACK; setPackInfo();
+    }
+  }
+};
+$("packFile").onchange = e => {
+  const f = e.target.files[0]; if (!f) return;
+  const r = new FileReader();
+  r.onload = () => {
+    try {
+      const p = JSON.parse(r.result);
+      if (!p.prompt_template || !Array.isArray(p.tests)) throw new Error("missing prompt_template or tests");
+      pack = p; setPackInfo(); setStatus("Loaded " + f.name);
+    } catch (err) { alert("Could not load pack: " + err.message); $("packSel").value = "builtin"; pack = SAMPLE_PACK; setPackInfo(); }
+  };
+  r.readAsText(f);
+};
+
+function setStatus(s) { $("status").textContent = s; }
+function chip(v) {
+  if (v === true)  return '<span class="chip t">T</span>';
+  if (v === false) return '<span class="chip f">F</span>';
+  return '<span class="chip x">?</span>';
+}
+
+/* ── Live trace ── */
+function traceReset(msg) {
+  const t = $("trace");
+  t.innerHTML = msg ? `<span class="ph">${msg}</span>` : "";
+}
+function traceWrite(node) {
+  const t = $("trace");
+  const ph = t.querySelector(".ph"); if (ph) ph.remove();
+  t.appendChild(node);
+  while (t.textContent.length > 16000 && t.firstChild) t.removeChild(t.firstChild);
+  t.scrollTop = t.scrollHeight;
+}
+function traceText(s) { traceWrite(document.createTextNode(s)); }
+function traceSpan(cls, s) { const e = document.createElement("span"); e.className = cls; e.textContent = s; traceWrite(e); }
+
+/* ── Run history (localStorage) ── */
+const HKEY = "s3_runs";
+function loadHist() { try { return JSON.parse(localStorage.getItem(HKEY) || "[]"); } catch (e) { return []; } }
+function saveRun(rec) {
+  const h = loadHist(); h.unshift(rec); while (h.length > 25) h.pop();
+  try { localStorage.setItem(HKEY, JSON.stringify(h)); } catch (e) { /* quota: skip */ }
+  renderHist();
+}
+function renderHist() {
+  const h = loadHist(), box = $("histRows");
+  if (!h.length) { box.innerHTML = '<div class="hist-empty">No saved runs yet. Each completed run is stored in this browser.</div>'; return; }
+  box.innerHTML = h.map((r, i) =>
+    `<div class="hist-row">
+       <div class="nm">${r.pack}<small>${new Date(r.at).toLocaleString()} · ${r.model} · ${r.items} items × ${r.rounds}${r.cost ? " · ≈" + r.cost : ""}${r.tokens ? " · " + r.tokens : ""}</small></div>
+       <div class="m">${r.acc}</div>
+       <div class="m">${r.con}</div>
+       <div class="m" style="color:var(--muted)">${r.unp}</div>
+       <div class="m"><button class="linkbtn" data-i="${i}">JSON</button></div>
+     </div>`).join("");
+  box.querySelectorAll(".linkbtn[data-i]").forEach(b =>
+    b.onclick = () => { const r = loadHist()[+b.dataset.i]; if (r) download(`s3_${r.model}_${r.id}.json`, JSON.stringify(r, null, 2), "application/json"); });
+}
+
+/* ── Token usage + estimated cost ── */
+// Published per-1M-token prices [input, output] (cached 2026-05; output ≈5× input).
+const PRICES = {
+  "claude-fable-5": [10, 50],
+  "claude-opus-4-8": [5, 25], "claude-opus-4-7": [5, 25], "claude-opus-4-6": [5, 25], "claude-opus-4-5": [5, 25],
+  "claude-sonnet-4-6": [3, 15], "claude-sonnet-4-5": [3, 15],
+  "claude-haiku-4-5": [1, 5]
+};
+function priceOf(model) {
+  if (PRICES[model]) return { rate: PRICES[model], exact: true };
+  const m = (model || "").toLowerCase();
+  if (m.includes("fable")) return { rate: [10, 50], exact: false };
+  if (m.includes("opus")) return { rate: [5, 25], exact: false };
+  if (m.includes("sonnet")) return { rate: [3, 15], exact: false };
+  if (m.includes("haiku")) return { rate: [1, 5], exact: false };
+  return { rate: [5, 25], exact: false };  // unknown → assume Opus-tier
+}
+function addUsage(model, u) {
+  if (!u) return;
+  const m = usageByModel[model] || (usageByModel[model] = { input: 0, output: 0, calls: 0 });
+  m.input += u.input || 0; m.output += u.output || 0; m.calls++;
+  renderCost();
+}
+function computeCost() {
+  let cost = 0, inTok = 0, outTok = 0, approx = false;
+  for (const model in usageByModel) {
+    const u = usageByModel[model], p = priceOf(model);
+    if (!p.exact) approx = true;
+    cost += u.input / 1e6 * p.rate[0] + u.output / 1e6 * p.rate[1];
+    inTok += u.input; outTok += u.output;
+  }
+  return { cost, inTok, outTok, approx };
+}
+function fmtUsd(c) { return c < 0.01 ? "$" + c.toFixed(4) : "$" + c.toFixed(2); }
+function fmtTok(n) { return n >= 1000 ? (n / 1000).toFixed(1) + "k" : String(n); }
+function renderCost() {
+  const { cost, inTok, outTok, approx } = computeCost();
+  const has = inTok || outTok;
+  $("sCost").textContent = has ? fmtUsd(cost) + (approx ? "*" : "") : "—";
+  $("costNote").textContent = has ? `${fmtTok(inTok)} in · ${fmtTok(outTok)} out` : "";
+}
+
+/* ───────────────────────────── Run loop ─────────────────────────────────── */
+$("run").onclick = async () => {
+  const key = $("key").value.trim();
+  if (!key) { alert("Enter your Anthropic API key first."); return; }
+  localStorage.setItem("s3_key", key);
+
+  const model = $("model").value.trim() || "claude-fable-5";
+  const rounds = Math.max(1, parseInt($("rounds").value) || 3);
+  const maxTok = Math.max(20, parseInt($("maxtok").value) || 150);
+  const delay = Math.max(0, parseFloat($("delay").value) || 0);
+  const tests = pack.tests, packJur = pack.jurisdiction || "";
+  const total = tests.length * rounds;
+
+  running = true; stopFlag = false;
+  $("run").style.display = "none"; $("stop").style.display = "block";
+  $("dlJson").disabled = $("dlCsv").disabled = $("explainBtn").disabled = true;
+  $("rows").innerHTML = ""; $("tierbreak").innerHTML = ""; $("foot").innerHTML = "";
+  lastRows = []; explanations = {}; usageByModel = {}; renderCost();
+  let done = 0;
+  traceReset(""); $("traceDot").classList.add("live");
+  traceSpan("meta", `Run started · ${model} · ${tests.length} items × ${rounds} rounds\n`);
+  $("traceMeta").textContent = "0/" + total;
+
+  for (const item of tests) {
+    if (stopFlag) break;
+    const prompt = buildPrompt(item.prompt_template || pack.prompt_template, item, packJur);
+    const expected = item.expected;
+    const answers = [];
+    const rowId = "row_" + item.id;
+    const cite = item.code === "ECLI"
+      ? `${item.code || ""}${item.reference || ""}${item.number || ""}`
+      : `${item.code || ""} ${item.reference || ""} ${item.number || ""}`.replace(/\s+/g, " ").trim();
+    $("rows").insertAdjacentHTML("beforeend",
+      `<tr id="${rowId}" class="resrow" data-id="${item.id}"><td class="id"><span class="caret">▸</span>${item.id}</td>
+       <td><span class="topic">${item.topic || ""}</span>
+           ${item.tier ? `<div class="tier">${item.tier}</div>` : ""}
+           <div class="cite">${cite}</div></td>
+       <td>${chip(expected)}</td><td class="ans">…</td><td class="acc">—</td><td class="con">—</td></tr>
+       <tr id="expl_${item.id}" class="expl-row" style="display:none"><td colspan="6"><div class="expl-body"><span class="ph">Explanations are generated only for failed items — run “✦ Explain fails (Sonnet)”.</span></div></td></tr>`);
+
+    traceSpan("q", `\n▸ ${item.id} — ${item.topic || ""}  (expect ${expected})\n`);
+    traceText(`  Q: ${prompt}\n`);
+
+    for (let r = 0; r < rounds; r++) {
+      if (stopFlag) break;
+      let raw = "", parsed = null;
+      traceSpan("meta", `  r${r + 1}: `);
+      try {
+        const res = await callModelStream(key, model, prompt, maxTok, piece => traceText(piece));
+        raw = res.text; parsed = parseTF(raw); addUsage(model, res.usage);
+      } catch (err) {
+        if (err.status === 429) { traceSpan("bad", "[429 — backing off]\n"); await sleep(3000); r--; continue; }  // retry round
+        setStatus("Error: " + err.message);
+        traceSpan("bad", `[error: ${err.message}]\n`);
+        if (err.status === 401) { alert("Auth failed (401). Check your API key."); stopFlag = true; break; }
+        raw = "ERROR: " + err.message;
+      }
+      const ok = parsed === expected;
+      traceSpan(ok ? "ok" : "bad", `\n     ⟶ ${parsed === null ? "unparsed" : parsed}${ok ? " ✓" : " ✗ (expected " + expected + ")"}\n`);
+      answers.push(parsed);
+      lastRows.push({ id:item.id, tier:item.tier||"", round:r+1, expected,
+                      parsed, correct: parsed===expected, raw: raw.replace(/\n/g," ") });
+      done++;
+      $("bar").style.width = (done/total*100) + "%";
+      $("traceMeta").textContent = done + "/" + total;
+      setStatus(`Running ${model} — ${done}/${total} calls`);
+      const tr = $(rowId);
+      tr.querySelector(".ans").innerHTML = answers.map(chip).join("");
+      if (delay) await sleep(delay*1000);
+    }
+    // per-item rollup
+    const valid = answers.filter(a => a!==null);
+    const counts = {}; valid.forEach(a => counts[a]=(counts[a]||0)+1);
+    let modal=null, best=-1; for (const k in counts){ if(counts[k]>best){best=counts[k];modal=(k==="true");} }
+    const agree = answers.filter(a => a===modal).length;
+    const con = answers.length ? agree/answers.length : 0;
+    const accN = answers.filter(a => a===expected).length;
+    const tr = $(rowId);
+    tr.querySelector(".acc").innerHTML = `<span class="badge ${accN===rounds?'ok':'bad'}">${accN}/${rounds}</span>`;
+    tr.querySelector(".con").textContent = Math.round(con*100) + "%";
+    // Mark pass/fail so the explanation drawer only invites Sonnet on failures.
+    const failed = answers.some(a => a !== expected);
+    const drawerBody = document.getElementById("expl_" + item.id)?.querySelector(".expl-body");
+    if (drawerBody && !explanations[item.id]) drawerBody.innerHTML = failed
+      ? '<span class="ph">Run “✦ Explain fails (Sonnet)” for an explanation.</span>'
+      : '<span class="ph">✓ Passed — explanations are generated only for failed items.</span>';
+  }
+
+  finishRun(rounds);
+};
+
+$("stop").onclick = () => { stopFlag = true; setStatus("Stopping…"); };
+
+function finishRun(rounds) {
+  running = false;
+  $("run").style.display = "block"; $("stop").style.display = "none";
+  $("traceDot").classList.remove("live");
+
+  const rows = lastRows;
+  const totalR = rows.length;
+  const correct = rows.filter(r => r.correct).length;
+  const unp = rows.filter(r => r.parsed === null).length;
+
+  // per-item consistency
+  const byItem = {};
+  rows.forEach(r => { (byItem[r.id] = byItem[r.id] || []).push(r.parsed); });
+  let consSum = 0, nItems = 0, perfect = 0;
+  for (const id in byItem) {
+    const a = byItem[id]; const counts = {}; a.filter(x=>x!==null).forEach(x=>counts[x]=(counts[x]||0)+1);
+    let modal=null,best=-1; for(const k in counts){if(counts[k]>best){best=counts[k];modal=(k==="true");}}
+    const agree = a.filter(x=>x===modal).length; const c = a.length?agree/a.length:0;
+    consSum += c; nItems++; if (c===1) perfect++;
+  }
+  const meanCon = nItems ? consSum/nItems : 0;
+
+  $("sAcc").textContent = totalR ? Math.round(correct/totalR*100)+"%" : "—";
+  $("sCon").textContent = nItems ? Math.round(meanCon*100)+"%" : "—";
+  $("sUnp").textContent = totalR ? `${unp}/${totalR}` : "—";
+  setStatus(totalR ? `Done — ${correct}/${totalR} correct across ${nItems} items` : "Stopped before any calls.");
+
+  // tier breakdown (recency pillar)
+  const tiers = [...new Set(rows.map(r=>r.tier).filter(Boolean))].sort();
+  if (tiers.length) {
+    let html = '<h3 style="font-size:13px;color:var(--accent);margin:6px 0 4px;text-transform:uppercase;letter-spacing:1px">Accuracy by tier · recency pillar</h3>';
+    tiers.forEach(t => {
+      const tr = rows.filter(r=>r.tier===t); const tc = tr.filter(r=>r.correct).length;
+      html += `<div><span class="tname">${t}</span><span>${tc}/${tr.length} (${Math.round(tc/tr.length*100)}%)</span></div>`;
+    });
+    $("tierbreak").innerHTML = html;
+  }
+
+  $("dlJson").disabled = $("dlCsv").disabled = $("explainBtn").disabled = totalR === 0;
+  const cinfo = computeCost();
+  $("foot").innerHTML =
+    `Round-level accuracy. Consistency = % of an item's rounds matching its modal answer. ` +
+    `<b>${perfect}/${nItems}</b> items were unanimous. Fable 5 ignores temperature, so consistency reflects natural model behavior, not a forced temp-0 setting. ` +
+    `Cost is estimated from published per-token prices (output billed ~5× input); “*” means the model wasn't in the price table and a tier rate was assumed.`;
+  renderCost();
+
+  if (totalR) {
+    traceSpan("meta", `\n── done: ${correct}/${totalR} correct across ${nItems} items · ${fmtUsd(cinfo.cost)} est. ──\n`);
+    saveRun({
+      id: stamp(), at: new Date().toISOString(),
+      pack: pack.name || "Untitled pack", model: $("model").value, rounds,
+      items: nItems, acc: Math.round(correct/totalR*100) + "%", con: Math.round(meanCon*100) + "%",
+      unp: `${unp}/${totalR}`, correct, total: totalR,
+      cost: fmtUsd(cinfo.cost) + (cinfo.approx ? "*" : ""), tokens: Math.round((cinfo.inTok + cinfo.outTok) / 1000) + "k",
+      rows: lastRows
+    });
+  }
+}
+
+/* ───────────────────────────── Exports ──────────────────────────────────── */
+function download(name, text, type) {
+  const blob = new Blob([text], { type });
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob); a.download = name; a.click();
+  URL.revokeObjectURL(a.href);
+}
+function stamp() { return new Date().toISOString().replace(/[:.]/g,"").slice(0,15)+"Z"; }
+$("dlJson").onclick = () => download(
+  `s3_${$("model").value}_${stamp()}.json`,
+  JSON.stringify({ pack: pack.name, model: $("model").value, rounds: parseInt($("rounds").value),
+                   run_at: new Date().toISOString(),
+                   explainer: Object.keys(explanations).length ? "claude-sonnet-4-6" : null,
+                   usage: usageByModel, cost_estimate_usd: computeCost().cost,
+                   explanations, results: lastRows }, null, 2),
+  "application/json");
+$("dlCsv").onclick = () => {
+  const head = ["id","tier","round","expected","parsed","correct","raw","explanation"];
+  const esc = v => `"${String(v).replace(/"/g,'""')}"`;
+  const csv = [head.join(",")].concat(
+    lastRows.map(r => head.map(h => esc(h === "explanation" ? (explanations[r.id] || "") : r[h])).join(","))).join("\n");
+  download(`s3_${$("model").value}_${stamp()}.csv`, csv, "text/csv");
+};
+
+/* ───────────────────────── Per-result explanations (Sonnet) ─────────────── */
+const EXPLAINER_MODEL = "claude-sonnet-4-6";
+
+// Non-streaming one-shot call (used for the explainer).
+async function callOnce(key, model, prompt, maxTok) {
+  const res = await fetch("https://api.anthropic.com/v1/messages", {
+    method: "POST",
+    headers: { "content-type": "application/json", "x-api-key": key,
+               "anthropic-version": "2023-06-01", "anthropic-dangerous-direct-browser-access": "true" },
+    body: JSON.stringify({ model, max_tokens: maxTok, messages: [{ role: "user", content: prompt }] })
+  });
+  if (!res.ok) { let d = ""; try { d = (await res.json()).error?.message || ""; } catch (e) {}
+    const er = new Error(`HTTP ${res.status}${d ? " — " + d : ""}`); er.status = res.status; throw er; }
+  const data = await res.json();
+  const text = (data.content || []).filter(b => b.type === "text").map(b => b.text).join("").trim();
+  const u = data.usage || {};
+  return { text, usage: { input: (u.input_tokens || 0) + (u.cache_read_input_tokens || 0) + (u.cache_creation_input_tokens || 0), output: u.output_tokens || 0 } };
+}
+
+function explainPrompt(testedModel, item, data) {
+  const ans = data.answers.map(a => a === null ? "?" : a).join(", ");
+  const raw = (data.raws[0] || "").slice(0, 300);
+  const cite = `${item.code || ""} ${item.reference || ""} ${item.number || ""}`.trim();
+  return `You are explaining one result of a legal-citation reliability test to a reader, in plain English.
+
+Citation tested: ${cite}
+Question topic: ${item.topic || ""}
+Correct answer (ground truth): ${item.expected}
+Verified rationale (authoritative — rely ONLY on this for the law; do NOT add legal facts beyond it): ${item.rationale || "(none provided)"}
+Tested model: ${testedModel}
+Its answers across rounds: ${ans}${raw ? `\nSample of its own justification: "${raw}"` : ""}
+
+In 2–3 short sentences: (1) state the correct answer and briefly why, grounded only in the verified rationale; (2) say whether ${testedModel} was right, wrong, or inconsistent across rounds, and what that indicates. Be concise and do not introduce legal claims beyond the rationale.`;
+}
+
+$("explainBtn").onclick = async () => {
+  const key = $("key").value.trim();
+  if (!key) { alert("Enter your Anthropic API key first."); return; }
+  // Group this run's rounds by item id.
+  const byId = {};
+  lastRows.forEach(r => {
+    (byId[r.id] = byId[r.id] || { answers: [], raws: [] });
+    byId[r.id].answers.push(r.parsed);
+    if (r.raw && !r.raw.startsWith("ERROR")) byId[r.id].raws.push(r.raw);
+  });
+  // Only explain FAILS — items where any round's answer didn't match expected (incl. unparsed).
+  const ids = Object.keys(byId).filter(id => {
+    const item = pack.tests.find(t => String(t.id) === String(id));
+    const exp = item ? item.expected : undefined;
+    return byId[id].answers.some(a => a !== exp);
+  });
+  if (!ids.length) { alert("No failed items in this run — explanations are only generated for failures."); return; }
+  if (!confirm(`Generate explanations for the ${ids.length} failed item(s) using ${EXPLAINER_MODEL}?\nThat's ${ids.length} additional API calls (billed to your key).`)) return;
+
+  const tmodel = $("model").value;
+  $("explainBtn").disabled = true;
+  traceReset(""); $("traceDot").classList.add("live");
+  traceSpan("meta", `Explaining ${ids.length} results with ${EXPLAINER_MODEL}…\n`);
+
+  for (let i = 0; i < ids.length; i++) {
+    const id = ids[i];
+    const item = pack.tests.find(t => String(t.id) === String(id)) || {};
+    const explRow = document.getElementById("expl_" + id);
+    const drawer = explRow ? explRow.querySelector(".expl-body") : null;
+    if (explRow) explRow.style.display = "";
+    if (drawer) drawer.innerHTML = '<span class="by">claude-sonnet-4-6</span><span class="ph">Generating…</span>';
+    traceSpan("q", `\n▸ ${id} — explaining…\n`);
+    let expl;
+    try {
+      const r = await callOnce(key, EXPLAINER_MODEL, explainPrompt(tmodel, item, byId[id]), 220);
+      expl = r.text; addUsage(EXPLAINER_MODEL, r.usage);
+    } catch (err) {
+      if (err.status === 429) { traceSpan("bad", "[429 — backing off]\n"); await sleep(3000); i--; continue; }
+      expl = "Explanation failed: " + err.message;
+      traceSpan("bad", `[error: ${err.message}]\n`);
+    }
+    explanations[id] = expl;
+    if (drawer) { drawer.innerHTML = '<span class="by">claude-sonnet-4-6</span>'; drawer.appendChild(document.createTextNode(expl)); }
+    const row = document.getElementById("row_" + id);
+    if (row) row.classList.add("has-expl", "open");
+    traceText(`  ${expl}\n`);
+    setStatus(`Explaining — ${i + 1}/${ids.length}`);
+  }
+
+  // Fold explanations into the most recent saved run.
+  const h = loadHist();
+  if (h.length) {
+    const c = computeCost();
+    h[0].explanations = explanations;
+    h[0].cost = fmtUsd(c.cost) + (c.approx ? "*" : "");
+    h[0].tokens = Math.round((c.inTok + c.outTok) / 1000) + "k";
+    try { localStorage.setItem(HKEY, JSON.stringify(h)); } catch (e) {}
+    renderHist();
+  }
+
+  $("traceDot").classList.remove("live");
+  $("explainBtn").disabled = false;
+  setStatus(`Explanations done — ${ids.length} items (${EXPLAINER_MODEL}).`);
+};
+
+// Click a result row to toggle its explanation drawer.
+$("rows").addEventListener("click", e => {
+  const row = e.target.closest("tr.resrow"); if (!row) return;
+  const explRow = document.getElementById("expl_" + row.dataset.id); if (!explRow) return;
+  const showing = explRow.style.display !== "none";
+  explRow.style.display = showing ? "none" : "";
+  row.classList.toggle("open", !showing);
+});
+
+/* ───────────────────────────── Run history wiring ───────────────────────── */
+$("clearHist").onclick = () => {
+  if (!loadHist().length) return;
+  if (confirm("Clear all saved runs from this browser?")) { localStorage.removeItem(HKEY); renderHist(); }
+};
+renderHist();
+
+/* Deep-link from the Pack generator page: ?pack=packs/xxx.json → load it on open. */
+(() => {
+  const p = new URLSearchParams(location.search).get("pack");
+  if (!p) return;
+  const sel = $("packSel"), val = "fetch:" + p;
+  if (![...sel.options].some(o => o.value === val)) {
+    const o = document.createElement("option");
+    o.value = val; o.textContent = p.split("/").pop() + " (generated)";
+    sel.insertBefore(o, [...sel.options].find(x => x.value === "file"));
+  }
+  sel.value = val; sel.dispatchEvent(new Event("change"));
+})();
+
+/* World source-grounded packs: packs/world/index.json (generate_world_packs.py).
+   Adds one optgroup of per-country packs to the picker; silently absent when the
+   manifest hasn't been generated or the page is opened as file://. */
+(async () => {
+  try {
+    const r = await fetch("packs/world/index.json");
+    if (!r.ok) return;
+    const idx = await r.json();
+    if (!Array.isArray(idx) || !idx.length) return;
+    const sel = $("packSel");
+    const og = document.createElement("optgroup");
+    og.label = `World — source-grounded (${idx.length} jurisdictions)`;
+    for (const e of idx) {
+      const val = "fetch:packs/world/" + e.file;
+      if ([...sel.options].some(o => o.value === val)) continue;
+      const o = document.createElement("option");
+      o.value = val;
+      o.textContent = `${e.flag || ""} ${e.countryName || e.country} (${e.items})`.trim();
+      og.appendChild(o);
+    }
+    sel.insertBefore(og, [...sel.options].find(x => x.value === "file"));
+  } catch (_) { /* no world packs: keep the built-in list */ }
+})();
+</script>
+</body>
+</html>

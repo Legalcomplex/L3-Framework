@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Pakistan — Source-Grounded Citation Reliability (PK)",
+ "country": "PK",
+ "jurisdiction": "Pakistan",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:59:12.793945+00:00",
+ "results": [
+  {
+   "id": "pk-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 816,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier 'Criminal Miscellaneous-6-2026' cannot refer to a 5 January 2026 judgment, as that date lies in the future."
+  },
+  {
+   "id": "pk-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 844,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The 1938 Act predates Pakistan; HuggingFace is a dataset repository, not an official publisher of Pakistani statutes."
+  },
+  {
+   "id": "pk-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 891,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Pakistan Supreme Court Judgments on Hugging Face is an unofficial, user-uploaded dataset, not an authoritative or official legal publisher."
+  },
+  {
+   "id": "pk-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 820,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Islamabad High Court Judgments is not an official publisher; official reports are issued by the Pakistan Law Reports or official gazettes."
+  },
+  {
+   "id": "pk-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1473,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The 1941 Act predates Pakistan’s 1947 independence; it was enacted by British India, not published via any modern “Pakistan Laws Dataset.”"
+  },
+  {
+   "id": "pk-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 722,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Pakistan Supreme Court Judgments is a user-uploaded Hugging Face dataset, not an official publisher of authoritative Supreme Court decisions."
+  },
+  {
+   "id": "pk-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 864,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'Criminal Miscellaneous-6-2027' cannot correspond to a 5 January 2026 judgment, as that date precedes the case number's implied 2027 filing."
+  },
+  {
+   "id": "pk-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 767,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The 1938 Act is a Pakistani (then British-Indian) statute; it was never promulgated in the Maldives Government Gazette."
+  },
+  {
+   "id": "pk-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 829,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Pakistan Supreme Court Judgments on Hugging Face is an unofficial, user-uploaded dataset, not an authoritative or official legal publisher."
+  },
+  {
+   "id": "pk-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 609,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'Criminal Miscellaneous-2250-2026' is invalid; Islamabad High Court case numbers use the filing year (e.g., 2024), not 2026."
+  },
+  {
+   "id": "pk-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 849,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Mines Maternity Benefit Act, 1941 was enacted by British India and published in the Gazette of India, not the post-Partition Gazette of Pakistan."
+  },
+  {
+   "id": "pk-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 851,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Pakistan Supreme Court Judgments is a user-uploaded Hugging Face dataset, not an official publisher of authoritative court decisions."
+  }
+ ]
+}

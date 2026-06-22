@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Indonesia — Source-Grounded Citation Reliability (ID)",
+ "country": "ID",
+ "jurisdiction": "Indonesia",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:56:01.351697+00:00",
+ "results": [
+  {
+   "id": "id-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 990,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such law (UU No. 2/2025) exists; Indonesia’s 2025 legislative program has not produced it."
+  },
+  {
+   "id": "id-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 966,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Constitutional Court does not publish decisions under that title; its official decisions are numbered (e.g., Putusan MK No. …) and concern constitutional review, not the cited statute."
+  },
+  {
+   "id": "id-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 816,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited law does not exist; Indonesia’s current Jakarta statute is Law No. 2 of 2023, not 2024."
+  },
+  {
+   "id": "id-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 851,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Constitutional Court of Indonesia does not publish decisions under the title “Pengujian Materiil Undang-Undang Nomor 11 Tahun 1980”; that statute concerns bribery, not constitutional review"
+  },
+  {
+   "id": "id-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 820,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such law exists; Indonesia’s 2024 statute list contains no “Undang-Undang Nomor 5 Tahun 2024 tentang Kota Banda Aceh.”"
+  },
+  {
+   "id": "id-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 950,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Constitutional Court of Indonesia does not publish decisions under the title \"Pengujian Materiil Kitab Undang-Undang Hukum Pidana\"; its official decisions use case numbers and titles like \""
+  },
+  {
+   "id": "id-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1505,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited law (UU No. 2/2025) is fictitious; Indonesia’s statute numbering for 2025 has not reached that point, and Thu Vien Phap Luat is a Vietnamese, not Indonesian, repository."
+  },
+  {
+   "id": "id-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 784,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Constitutional Court does not publish decisions under that title; the cited name refers to a statute, not a court ruling."
+  },
+  {
+   "id": "id-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 759,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited law is Indonesian national legislation; it cannot be published in Thailand’s Royal Gazette."
+  },
+  {
+   "id": "id-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 687,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Constitutional Court of Indonesia does not publish decisions dated 2026-01-01, as that date is in the future."
+  },
+  {
+   "id": "id-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 774,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited source is a Cambodian legal library, not an official Indonesian publisher, making the bibliographic claim implausible."
+  },
+  {
+   "id": "id-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 895,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Constitutional Court of Indonesia does not publish criminal-code decisions under that exact title; its official outputs are “Putusan Mahkamah Konstitusi,” not “Pengujian Materiil Kitab Unda"
+  }
+ ]
+}

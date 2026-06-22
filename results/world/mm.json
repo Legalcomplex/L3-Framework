@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Myanmar — Source-Grounded Citation Reliability (MM)",
+ "country": "MM",
+ "jurisdiction": "Myanmar",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:58:04.552339+00:00",
+ "results": [
+  {
+   "id": "mm-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 985,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No official DICA record or gazette from 5 October 2020 references a “Substitution for Chairman of Kayah State Investment Committee.”"
+  },
+  {
+   "id": "mm-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 894,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Lincoln Legal Services is a private Myanmar law firm; it is not an official government publisher, so the source cannot be described as an “official legal source.”"
+  },
+  {
+   "id": "mm-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1123,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited title and citation are malformed; the correct 2017 national planning law is Pyidaungsu Hluttaw Law No. 6/2017, not “Noo6.”"
+  },
+  {
+   "id": "mm-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1047,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The title indicates an abandoned draft, not an official enacted law, so it cannot be cited as an authoritative legal source."
+  },
+  {
+   "id": "mm-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 905,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No official DICA publication dated 29 January 2021 matches that title; the cited source does not exist."
+  },
+  {
+   "id": "mm-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 718,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Myanmar Laws in English (Lincoln Legal Services) is a private compilation, not an official Myanmar legal source."
+  },
+  {
+   "id": "mm-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 840,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No official DICA record or gazette confirms a 5 October 2023 “Substitution for Chairman of Kayah State Investment Committee” issuance."
+  },
+  {
+   "id": "mm-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2089,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The claimed 2026-11-10 publication date is impossible, as the present date precedes 2026."
+  },
+  {
+   "id": "mm-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1074,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited source is a Myanmar Pyidaungsu Hluttaw law, not an Indonesian JDIHN publication; the attribution is geographically and jurisdictionally incorrect."
+  },
+  {
+   "id": "mm-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1001,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The source is a Cambodian library, not an official Myanmar government publication, so it cannot authoritatively confirm the draft’s status or abandonment."
+  },
+  {
+   "id": "mm-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 820,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No official DICA publication dated 29 January 2022 matches that title; the claim misattributes a non-existent or misdated source."
+  },
+  {
+   "id": "mm-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 748,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Myanmar Laws in English (Lincoln Legal Services) is a private compilation, not an official government source."
+  }
+ ]
+}

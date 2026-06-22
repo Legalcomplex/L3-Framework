@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Georgia — Source-Grounded Citation Reliability (GE)",
+ "country": "GE",
+ "jurisdiction": "Georgia",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:55:08.805402+00:00",
+ "results": [
+  {
+   "id": "ge-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1018,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Georgian Constitutional Court has not issued any decision dated 2026-02-12, as that date lies in the future."
+  },
+  {
+   "id": "ge-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1022,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Georgian Supreme Court decisions use formats like \"საქმე №ბს-701-კ-25\" (2025), not the exact punctuation and spacing shown."
+  },
+  {
+   "id": "ge-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1028,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Identifier 6192001 in Matsne corresponds to the 2019 law on agricultural cooperatives, not the 2024 rural development law."
+  },
+  {
+   "id": "ge-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1019,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Georgia’s Parliament does not publish ordinances of the Chairman of a Legal Entity under Public Law; such acts appear in the Legislative Herald, not parliamentary sources."
+  },
+  {
+   "id": "ge-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1021,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Georgia National Bank is not a real publisher of legal acts; official Georgian legislation is published by the Legislative Herald of Georgia (Matsne)."
+  },
+  {
+   "id": "ge-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 929,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier '2კ-809აპ.-25' cannot correspond to a 2026-01-28 decision, as that future date is impossible."
+  },
+  {
+   "id": "ge-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 917,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'N3/1/1901' does not match the 2026-02-12 case; that date is future and the citation is implausible."
+  },
+  {
+   "id": "ge-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 921,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The claim is false because 'ბს-1354(კ-25)' and 'ბს-701(კ-25)' are distinct identifiers, not the same case."
+  },
+  {
+   "id": "ge-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 915,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Georgian title refers to an agricultural law, not an official legal source publication; Matsne publishes laws but is not itself the source."
+  },
+  {
+   "id": "ge-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1111,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Georgia is not Croatia; its official gazette is the Legislative Herald (Sakartvelos Sakanonmdeblo Matsne), not Narodne novine."
+  },
+  {
+   "id": "ge-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 897,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited title is a Turkish banking regulation; Georgia (country) has no such official source, making the bibliographic claim incorrect."
+  },
+  {
+   "id": "ge-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1944,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Georgia Supreme Court decisions use Georgian identifiers like “საქართველოს უზენაესი სასამართლო,” not the Russian-style “საქმე 2კ-809აპ.-25.”"
+  }
+ ]
+}

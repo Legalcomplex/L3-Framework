@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — France — Source-Grounded Citation Reliability (FR)",
+ "country": "FR",
+ "jurisdiction": "France",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.4167,
+ "correct": 5,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:54:59.755169+00:00",
+ "results": [
+  {
+   "id": "fr-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 797,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The cited law was indeed published on Légifrance on 31 October 2007, matching the official French consolidated legislation record."
+  },
+  {
+   "id": "fr-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 917,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Code de commerce predates 2000; the PISTE API reference is anachronistic and cannot be the original publication source."
+  },
+  {
+   "id": "fr-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1066,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier '26-DCC-43' is invalid; French decisions use two-digit years (e.g., 16-DCC-43), and 2026-02-02 is a future date."
+  },
+  {
+   "id": "fr-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 806,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. AMF Enforcement Committee decisions are not published under the \"SAN-2025-10\" format; official references use different numbering and publication channels."
+  },
+  {
+   "id": "fr-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 890,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The ANC was created in 2009, not 1984; the cited 2014 regulation cannot have been published by a nonexistent 1984 entity."
+  },
+  {
+   "id": "fr-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 854,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such bill was introduced on 2023-12-03; the Assemblée Nationale’s official records contain no matching “proposition de loi” with that title or date."
+  },
+  {
+   "id": "fr-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 828,
+   "verdict": true,
+   "correct": false,
+   "raw": "True. The identifier LEGITEXT000006057170 on Légifrance indeed designates the 30 October 2007 Act creating the Contrôleur général des lieux de privation de liberté."
+  },
+  {
+   "id": "fr-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 824,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier LEGIARTI000006219127 corresponds to Article L110-1 of the Code de commerce, not L110-2."
+  },
+  {
+   "id": "fr-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 721,
+   "verdict": true,
+   "correct": false,
+   "raw": "True. The French Competition Authority (Autorité de la Concurrence) regularly publishes merger decisions, including those concerning exclusive control of commercial assets in France."
+  },
+  {
+   "id": "fr-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 660,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Luxembourg Administrative Tribunal Tax Decisions do not publish French SAN-2025-10 decisions; jurisdiction mismatch."
+  },
+  {
+   "id": "fr-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 884,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The ANC was created in 2009, not 1982; the cited 2014 regulation cannot have been published by a nonexistent 1982 entity."
+  },
+  {
+   "id": "fr-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 876,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Fedlex publishes Swiss federal law, not French legislative proposals; the cited source cannot originate from that jurisdiction."
+  }
+ ]
+}

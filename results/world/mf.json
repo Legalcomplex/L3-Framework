@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Saint Martin — Source-Grounded Citation Reliability (MF)",
+ "country": "MF",
+ "jurisdiction": "Saint Martin",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:57:51.419549+00:00",
+ "results": [
+  {
+   "id": "mf-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1153,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Saint Martin’s Territorial Council could not have published a 2026 deliberation in 2024; the date is chronologically impossible."
+  },
+  {
+   "id": "mf-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1018,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Saint Martin’s Territorial Council has no 2026 deliberations; the cited date and reference are anachronistic."
+  },
+  {
+   "id": "mf-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 965,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Saint Martin’s Territorial Council could not have published a 2026 deliberation in 2026-04-17, as that date lies in the future."
+  },
+  {
+   "id": "mf-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1233,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Saint Martin’s Territorial Council could not have issued a 2026 deliberation in April 2026, as that date lies in the future."
+  },
+  {
+   "id": "mf-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 993,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Saint Martin’s Territorial Council could not have issued a 2026 deliberation in April 2026; the date is still in the future."
+  },
+  {
+   "id": "mf-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 804,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Saint Martin’s Territorial Council could not have published a 2026 deliberation in April 2026; the date is in the future."
+  },
+  {
+   "id": "mf-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 773,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Saint Martin (French) and Sint Maarten (Dutch) are separate jurisdictions; the cited source cannot be published by the latter."
+  },
+  {
+   "id": "mf-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 4547,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Saint Martin (French Caribbean) has no connection to Bahamas Consolidated Legislation, making the claimed publication source impossible."
+  },
+  {
+   "id": "mf-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 722,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Bermuda Laws Online publishes Bermudian legislation, not Saint Martin (French Caribbean) urban planning decisions."
+  },
+  {
+   "id": "mf-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 4328,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Saint Martin is a French overseas collectivity; Turks and Caicos Revised Laws cannot publish its official legal sources."
+  },
+  {
+   "id": "mf-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 936,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Saint Martin is a French overseas collectivity; Curaçao legislation cannot publish its official legal sources."
+  },
+  {
+   "id": "mf-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 930,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Saint Martin is a French overseas collectivity; Aruba’s DWJZ archive cannot publish its official legal sources."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Bermuda — Source-Grounded Citation Reliability (BM)",
+ "country": "BM",
+ "jurisdiction": "Bermuda",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:53:01.397920+00:00",
+ "results": [
+  {
+   "id": "bm-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 978,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited decision date (6 March 2026) is in the future, so no such judgment can yet exist or be published."
+  },
+  {
+   "id": "bm-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 930,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Bermuda Laws Online is a modern digital repository; the Admiralty Pilots Act 1925 was originally enacted and published in 1925 by the official Government Printer, not via that online platform."
+  },
+  {
+   "id": "bm-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 918,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier 'e67aced0877cd54d' does not correspond to 'In The Matter of RST Trusts' dated 2026-03-02, as that future date is impossible."
+  },
+  {
+   "id": "bm-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 945,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 26 March 2026 lies in the future, so the cited 2026 judgment cannot yet exist or be published."
+  },
+  {
+   "id": "bm-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 914,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Bermuda Laws Online was not established until 2001, so it could not have published the 1950 Act."
+  },
+  {
+   "id": "bm-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1092,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier 'a3976943d563aad5' cannot correspond to a 2026 judgment because that date is in the future."
+  },
+  {
+   "id": "bm-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 971,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier's '2025' and '050327' indicate a 2025 filing, not a 2026 judgment date."
+  },
+  {
+   "id": "bm-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 900,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Bermuda Laws Online does not contain an 'Admiralty Pilots Act 1925'; the identifier '71fff89edb8efb03' is invalid for that title."
+  },
+  {
+   "id": "bm-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1006,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Bermuda Supreme Court Judgments is not an official publisher; official reports are issued by the Bermuda Judiciary or authorized law reporters."
+  },
+  {
+   "id": "bm-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 891,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decision is a Bermuda Supreme Court judgment, not a BVI Commercial Court source."
+  },
+  {
+   "id": "bm-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 718,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Act is Bermudian legislation; it cannot originate from Aruba’s DWJZ archive."
+  },
+  {
+   "id": "bm-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 766,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Bermuda Supreme Court Judgments is not an official publisher; the authoritative source is the Bermuda Judiciary website."
+  }
+ ]
+}

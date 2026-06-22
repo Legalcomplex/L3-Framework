@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Tuvalu — Source-Grounded Citation Reliability (TV)",
+ "country": "TV",
+ "jurisdiction": "Tuvalu",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.75,
+ "correct": 9,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T16:01:15.880163+00:00",
+ "results": [
+  {
+   "id": "tv-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 965,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. PacLII is the authorised publisher of Tuvalu High Court decisions, and the cited neutral citation matches its official series."
+  },
+  {
+   "id": "tv-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 935,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The citation lists a 2026 decision, but the current date is before 2026, making future publication impossible."
+  },
+  {
+   "id": "tv-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 914,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Tuvalu has no High Court cases from 2025; PacLII’s Tuvalu collection ends in 2024."
+  },
+  {
+   "id": "tv-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 866,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The citation matches a real 2023 High Court of Tuvalu judgment published on PacLII."
+  },
+  {
+   "id": "tv-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1137,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Tuvalu’s High Court decisions are not yet on PacLII; the cited neutral citation and 2025 date are fabricated."
+  },
+  {
+   "id": "tv-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1275,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. PacLII is the official publisher of Tuvalu High Court decisions, including the cited 2023 case."
+  },
+  {
+   "id": "tv-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 845,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The decision is from Tuvalu's High Court, not the Republic of Marshall Islands Judiciary, which has no jurisdiction over Tuvalu cases."
+  },
+  {
+   "id": "tv-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 736,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Tonga’s Attorney General has no authority to publish Tuvalu High Court judgments."
+  },
+  {
+   "id": "tv-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 614,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Tuvalu has no Federal Court of Australia; its High Court judgments are published by Tuvalu’s own judiciary, not an Australian federal court."
+  },
+  {
+   "id": "tv-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1208,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. RONLAW is Nauru's legal database; Tuvalu decisions are published on PacLII, not RONLAW."
+  },
+  {
+   "id": "tv-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 851,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Tuvalu’s High Court decisions are not published by Open Australian Legal Corpus; that dataset covers Australian, not Tuvaluan, judgments."
+  },
+  {
+   "id": "tv-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 848,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decision is from Tuvalu's High Court, not the Federal Court of Australia, which lacks jurisdiction over Tuvalu matters."
+  }
+ ]
+}

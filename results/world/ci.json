@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Côte d'Ivoire — Source-Grounded Citation Reliability (CI)",
+ "country": "CI",
+ "jurisdiction": "Côte d'Ivoire",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:53:38.553865+00:00",
+ "results": [
+  {
+   "id": "ci-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 923,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. CivLII/Laws.Africa aggregates and republishes official texts; it is not the original publishing authority for the 2000 bilateral agreement."
+  },
+  {
+   "id": "ci-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 932,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The citation format and publisher name do not match official Ivorian Supreme Court reporting practice."
+  },
+  {
+   "id": "ci-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 918,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 15 July 2025 is in the future, so the decision cannot yet exist."
+  },
+  {
+   "id": "ci-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 912,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The chapter heading is from the official Ivorian Code, not a 2026 publication by loidici.biz."
+  },
+  {
+   "id": "ci-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1186,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. CivLII/Laws.Africa aggregates and republishes Ivorian legislation; it is not the official governmental source that originally promulgated the arrêté."
+  },
+  {
+   "id": "ci-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 929,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The citation format and publisher name do not match official Ivorian practice; the Cour suprême does not publish under “Côte d'Ivoire Supreme Court Decisions.”"
+  },
+  {
+   "id": "ci-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 928,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited source is a Senegal government portal; an Ivorian-Malian bilateral accord cannot be officially published there."
+  },
+  {
+   "id": "ci-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 918,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The decision is from Côte d'Ivoire's Cour suprême, not Senegal's Cour des Comptes, so the publisher attribution is incorrect."
+  },
+  {
+   "id": "ci-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2815,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The decision is issued by Côte d'Ivoire's Cour Constitutionnelle, not Mali's Cour Suprême."
+  },
+  {
+   "id": "ci-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 887,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. \"CHAPITRE 4 : DISPOSITIONS FINALES\" is a statutory heading, not a publication by Côte d'Ivoire Legal Codes (loidici.biz)."
+  },
+  {
+   "id": "ci-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 815,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The arrêté is an Ivorian health-regulation instrument, not a Guinea-Bissau tax law published by its Ministry of Economy & Finance."
+  },
+  {
+   "id": "ci-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 846,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Liberia Legal Information Institute cannot publish official Ivorian Supreme Court decisions; jurisdiction and source mismatch."
+  }
+ ]
+}

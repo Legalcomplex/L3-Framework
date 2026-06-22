@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Saint Helena — Source-Grounded Citation Reliability (SH)",
+ "country": "SH",
+ "jurisdiction": "Saint Helena",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T16:00:04.639978+00:00",
+ "results": [
+  {
+   "id": "sh-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1230,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Saint Helena, Ascension and Tristan da Cunha are separate jurisdictions; the Ordinance is a Saint Helena enactment, not a joint publication."
+  },
+  {
+   "id": "sh-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 935,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Burial Grounds Ordinance, 1895 predates the 2009 constitutional merger; Saint Helena, Ascension & Tristan da Cunha Legislation did not exist in 1895."
+  },
+  {
+   "id": "sh-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1348,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Animals (Diseases) Ordinance, 1944, was enacted for Saint Helena alone; the joint “Saint Helena, Ascension & Tristan da Cunha Legislation” series did not exist until 2009."
+  },
+  {
+   "id": "sh-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 970,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Saint Helena, Ascension and Tristan da Cunha were separate jurisdictions in 1995; the unified “Saint Helena, Ascension & Tristan da Cunha Legislation” imprint did not exist until 2009."
+  },
+  {
+   "id": "sh-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1023,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Ordinance was enacted in 1940, but the cited publisher, Saint Helena, Ascension & Tristan da Cunha Legislation, did not exist until the 2009 constitutional merger."
+  },
+  {
+   "id": "sh-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 864,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Ordinance was enacted by Saint Helena’s Legislative Council, not published by the external “Saint Helena, Ascension & Tristan da Cunha Legislation” site."
+  },
+  {
+   "id": "sh-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 832,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Building Control Ordinance, 2013 is a Saint Helena enactment; it cannot be published by Zimbabwe’s Reserve Bank Exchange Control Directives."
+  },
+  {
+   "id": "sh-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 842,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Saint Helena’s 1895 Burial Grounds Ordinance was enacted locally, not published by South Africa Open By-laws (Laws.Africa)."
+  },
+  {
+   "id": "sh-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 894,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Saint Helena’s 1944 animal-disease law was enacted locally, not published by the Namibia Legal Information Institute."
+  },
+  {
+   "id": "sh-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 861,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Saint Helena has no connection to Lesotho’s Central Bank or its 1995 financial regulations; the Bees Ordinance is a local enactment."
+  },
+  {
+   "id": "sh-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1125,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Saint Helena’s 1940 Agriculture Ordinance was enacted locally, not by Namibia’s supervisory authority, which did not exist until 2001."
+  },
+  {
+   "id": "sh-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 784,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The ordinance is a Saint Helena enactment; ZambiaLII does not publish Saint Helena legislation."
+  }
+ ]
+}

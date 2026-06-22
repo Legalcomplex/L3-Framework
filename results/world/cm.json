@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Cameroon — Source-Grounded Citation Reliability (CM)",
+ "country": "CM",
+ "jurisdiction": "Cameroon",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:53:46.184943+00:00",
+ "results": [
+  {
+   "id": "cm-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 950,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Constitutional Council of Cameroon was established in 2018 and its first decisions appeared in 2019; no decision numbered 02/CC/SRCER was rendered on 24 February 2020."
+  },
+  {
+   "id": "cm-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1011,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 17 December 2025 is in the future, so the cited law cannot yet have been published."
+  },
+  {
+   "id": "cm-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 919,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier format and date string do not match the official Cameroon Supreme Court citation style."
+  },
+  {
+   "id": "cm-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 911,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Constitutional Council of Cameroon was established by the 2008 constitutional revision and became operational only in February 2018; no decisions were issued in 2020."
+  },
+  {
+   "id": "cm-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1151,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 15 July 2025 is in the future, so the cited law cannot yet have been published."
+  },
+  {
+   "id": "cm-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 872,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier 'CAMEROUN-COURSUPREME-20230406-02COM' does not match the cited reference '02/COM' of 6 April 2023."
+  },
+  {
+   "id": "cm-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 810,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Cameroon’s Constitutional Council decisions are not published on Lex.ao, an Angolan platform; the cited source is geographically and jurisdictionally implausible."
+  },
+  {
+   "id": "cm-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 856,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Cameroon publishes laws in its own Journal Officiel, not Congo-Brazzaville’s SGG."
+  },
+  {
+   "id": "cm-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 794,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier's '2024' suffix contradicts the claimed 2023 date and decision number."
+  },
+  {
+   "id": "cm-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1518,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decision is from Cameroon’s Constitutional Council, not the DRC Constitutional Court, so it cannot be a LegalRDC-DRC publication."
+  },
+  {
+   "id": "cm-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 819,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Cameroon’s 2025 subcontracting law cannot be published by a DRC portal; the source attribution is geographically and jurisdictionally implausible."
+  },
+  {
+   "id": "cm-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 769,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'CAMEROUN-COURSUPREME-20230406-03COM' indicates a 3rd Commercial Chamber decision, not the 2nd Commercial Chamber referenced in the bibliographic claim."
+  }
+ ]
+}

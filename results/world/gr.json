@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Greece — Source-Grounded Citation Reliability (GR)",
+ "country": "GR",
+ "jurisdiction": "Greece",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:55:31.384049+00:00",
+ "results": [
+  {
+   "id": "gr-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1210,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Hellenic Court of Audit (Ελεγκτικό Συνέδριο) does not issue “Γνωμοδοτήσεις”; such advisory opinions are rendered by the Legal Council of State (ΝΣΚ)."
+  },
+  {
+   "id": "gr-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 884,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No Decision 892/2025 exists; the Hellenic Competition Commission has not issued any decision dated 3 November 2025."
+  },
+  {
+   "id": "gr-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 828,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. FEK Issue A 50/2024 was published on 2024-02-29, not 2024-04-06."
+  },
+  {
+   "id": "gr-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 796,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited source is a 1951 emergency law, not a 1923 parliamentary publication; the date and publisher attribution are factually incorrect."
+  },
+  {
+   "id": "gr-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 895,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No official Greek Supreme Court decision numbered 13/2025 exists for 30 June 2024; the date precedes the decision’s purported year."
+  },
+  {
+   "id": "gr-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 826,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Hellenic Court of Audit does not issue decisions numbered “Απόφαση 1648/2025”; its rulings are published under different identifiers and series."
+  },
+  {
+   "id": "gr-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 828,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decision is Greek (Γνωμοδότηση), dated 2026, and issued by Greece’s Full Plenary, not Romania’s ICCJ."
+  },
+  {
+   "id": "gr-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 763,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Decision 892/2025 cannot originate from Montenegro’s Constitutional Court, as the date 2025-11-03 lies in the future and no such decision exists."
+  },
+  {
+   "id": "gr-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 695,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. ΦΕΚ is Greece’s official gazette; the cited issue cannot originate from a Turkish legislation dataset."
+  },
+  {
+   "id": "gr-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 764,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited source is a 1951 Greek emergency law, not a Latvian portal publication from 1923."
+  },
+  {
+   "id": "gr-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1367,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The decision number 13/2025 cannot have been issued on 30 June 2023; the year in the citation post-dates the stated publication date."
+  },
+  {
+   "id": "gr-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1286,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Unified State Register of Court Decisions (ЄДРСР) is Ukraine’s registry; Greek decisions like Απόφαση 1648/2025 are not published there."
+  }
+ ]
+}

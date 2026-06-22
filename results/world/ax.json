@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Åland Islands — Source-Grounded Citation Reliability (AX)",
+ "country": "AX",
+ "jurisdiction": "Åland Islands",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:52:29.842123+00:00",
+ "results": [
+  {
+   "id": "ax-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 717,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited ordinance was published in ÅFS 1995:103, not on 1 January 1995; the date given is the entry-into-force date, not the publication date."
+  },
+  {
+   "id": "ax-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1108,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Åland’s official gazette is Ålands författningssamling (ÅFS); “Ålex” is merely an unofficial database, not the publishing authority."
+  },
+  {
+   "id": "ax-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1001,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Åland’s official gazette (ÅFS/Ålex) has not issued any 2025:96 instrument; the cited date precedes its purported publication."
+  },
+  {
+   "id": "ax-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 875,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited act (2017:43) was published in ÅFS 2017:43, not on 1 January 2017."
+  },
+  {
+   "id": "ax-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 968,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited act (2013:75) was enacted 19 December 2013 and published 30 December 2013, not on 1 January 2013."
+  },
+  {
+   "id": "ax-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 925,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited regulation is from 2007:99, so it could not have been published on 2007-01-01."
+  },
+  {
+   "id": "ax-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 771,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Åland is Finnish jurisdiction; Retsinformation is Denmark’s database, so the cited source cannot be the official publication channel."
+  },
+  {
+   "id": "ax-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 917,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited ordinance is an Åland-specific regulation, not published in Sweden’s SFS; Åland uses its own ÅFS series."
+  },
+  {
+   "id": "ax-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 888,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Åland’s official gazette is Ålands författningssamling, not Finlex; Finlex does not publish Åland regulations."
+  },
+  {
+   "id": "ax-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1136,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Åland’s laws are published by Åland’s own authorities, not Denmark’s Retsinformation."
+  },
+  {
+   "id": "ax-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 894,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited act is an Åland Islands regional law (2013:75), not a Finnish national statute, so it cannot originate from Finland’s Finlex Open Data."
+  },
+  {
+   "id": "ax-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 971,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Lovdata is Norway’s legal database; Åland’s official source is the Ålandic Government Gazette, not Lovdata."
+  }
+ ]
+}

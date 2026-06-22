@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — New Zealand — Source-Grounded Citation Reliability (NZ)",
+ "country": "NZ",
+ "jurisdiction": "New Zealand",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:58:54.796109+00:00",
+ "results": [
+  {
+   "id": "nz-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 895,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-04-24 is in the future, so this determination cannot yet exist."
+  },
+  {
+   "id": "nz-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 831,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited decision is a Fijian employment case, not a New Zealand Employment Relations Authority determination."
+  },
+  {
+   "id": "nz-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 834,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-04-24 is in the future, so the decision cannot yet exist."
+  },
+  {
+   "id": "nz-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 866,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Employment Relations Authority does not issue \"Determinations\" and no such decision exists for a 2026 date."
+  },
+  {
+   "id": "nz-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 820,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The NZ Employment Relations Authority does not issue \"Determinations\" and the 2026 date is impossible."
+  },
+  {
+   "id": "nz-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 854,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-04-23 is in the future, so this decision cannot yet exist or be published."
+  },
+  {
+   "id": "nz-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 898,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Employment Relations Authority issues \"determinations,\" not \"decisions,\" so the bibliographic description is inaccurate."
+  },
+  {
+   "id": "nz-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1106,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Employment Relations Authority does not publish \"Determinations\" under that title; its outputs are called \"Determinations,\" but the cited case name and identifiers do not match any official"
+  },
+  {
+   "id": "nz-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 759,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The decision is a New Zealand High Court judgment, not a Republic of Marshall Islands Judiciary publication."
+  },
+  {
+   "id": "nz-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 705,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The decision is from the Federal Court of Australia, not a New Zealand official legal source."
+  },
+  {
+   "id": "nz-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 859,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Employment Relations Authority does not issue \"Determinations\" but \"Determinations of the Employment Relations Authority\"; the cited title and date format also do not match official NZ ERA "
+  },
+  {
+   "id": "nz-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 737,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Employment Relations Authority issues \"determinations,\" not \"decisions,\" so the bibliographic description is inaccurate."
+  }
+ ]
+}

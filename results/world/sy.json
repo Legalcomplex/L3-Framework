@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Syria — Source-Grounded Citation Reliability (SY)",
+ "country": "SY",
+ "jurisdiction": "Syria",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T16:00:36.441815+00:00",
+ "results": [
+  {
+   "id": "sy-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 931,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Syria.Law is a private legal database, not an official publisher of Syrian court judgments."
+  },
+  {
+   "id": "sy-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 920,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-04-06 is in the future, so the claimed publication cannot exist."
+  },
+  {
+   "id": "sy-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 995,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Syria.Law is a private commercial database, not an official Syrian government publisher of court judgments."
+  },
+  {
+   "id": "sy-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 922,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-03-20 is in the future, so the claimed decree cannot have been published."
+  },
+  {
+   "id": "sy-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1058,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No official Syrian legal source called 'Council of State Administrative Law' was published by Syria.Law on 2019-11-14; the claim misstates both the publisher and the document."
+  },
+  {
+   "id": "sy-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 822,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-02-18 is in the future, so the decree cannot have been published then."
+  },
+  {
+   "id": "sy-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1018,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. ADGM Courts Judgments is Abu Dhabi’s offshore court publisher, not Syria’s, so it cannot issue Syrian judgments."
+  },
+  {
+   "id": "sy-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 808,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No verifiable Syrian Presidential Decree or SANA report from 6 April 2024 matches that exact title or content."
+  },
+  {
+   "id": "sy-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 912,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. DIFC Courts are Dubai institutions; they cannot publish Syrian judgments from 1956."
+  },
+  {
+   "id": "sy-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 864,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No Syrian Presidential Decree matching that title or date exists; SANA reports from March 2025 contain no such decree."
+  },
+  {
+   "id": "sy-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 978,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No official Syrian legal source called \"Council of State Administrative Law\" was published by Syria.Law on 2017-11-14; the claim misstates both the title and provenance."
+  },
+  {
+   "id": "sy-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 969,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No Syrian Presidential Decree granting general amnesty was issued or published by SANA on 18 February 2024."
+  }
+ ]
+}

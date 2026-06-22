@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Marshall Islands — Source-Grounded Citation Reliability (MH)",
+ "country": "MH",
+ "jurisdiction": "Marshall Islands",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:57:56.514220+00:00",
+ "results": [
+  {
+   "id": "mh-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 927,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Marshall Islands Judiciary does not publish case decisions; official reports are issued by the Pacific Islands Legal Information Institute (PacLII)."
+  },
+  {
+   "id": "mh-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 921,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such General Order 2005-001 appears in the Marshall Islands Administrative Regulations or any official legal source."
+  },
+  {
+   "id": "mh-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 888,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Marshall Islands Business Corporations Act was enacted in 1990 by the Nitijela, but the cited publication date and phrasing are inaccurate."
+  },
+  {
+   "id": "mh-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 809,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. PacLII is the official publisher of Marshall Islands Supreme Court decisions, including the cited 2024 case."
+  },
+  {
+   "id": "mh-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 823,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Marshall Islands Judiciary has not published any 2026 decision; future dates are impossible."
+  },
+  {
+   "id": "mh-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 821,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Constitution is a foundational legal instrument, not an administrative regulation, and cannot be published in the 2025 Marshall Islands Administrative Regulations."
+  },
+  {
+   "id": "mh-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 803,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Marshall Islands has no published 2025 judicial decisions; the claimed case and date are anachronistic and unverifiable."
+  },
+  {
+   "id": "mh-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 807,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Marshall Islands has no connection to Australia's Federal Register of Legislation, making this bibliographic claim implausible."
+  },
+  {
+   "id": "mh-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 762,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Marshall Islands Business Corporations Act is a domestic statute, not an Australian legal source, and was not published by Open Australian Legal Corpus."
+  },
+  {
+   "id": "mh-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 827,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. RONLAW is Nauru's database; Marshall Islands decisions are published on its own PacLII or official judiciary site, not RONLAW."
+  },
+  {
+   "id": "mh-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 817,
+   "verdict": true,
+   "correct": false,
+   "raw": "True. The Marshall Islands Judiciary is the official publisher of its own court decisions, including constitutional interpretations."
+  },
+  {
+   "id": "mh-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 897,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Constitution is a foundational legal instrument, not an administrative regulation, and cannot be published in a 2026 source."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Cayman Islands — Source-Grounded Citation Reliability (KY)",
+ "country": "KY",
+ "jurisdiction": "Cayman Islands",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:57:02.916067+00:00",
+ "results": [
+  {
+   "id": "ky-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 929,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-03-18 is in the future, so the judgment cannot yet exist or be published."
+  },
+  {
+   "id": "ky-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 889,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The 1997 Revision of the Bills of Exchange Law was published by the Cayman Islands Legislative Assembly, not by “Cayman Islands Legislation (1964)”."
+  },
+  {
+   "id": "ky-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 891,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier '[2026] CIGC (FSD) 24' is impossible because the judgment date (2026-04-16) lies in the future."
+  },
+  {
+   "id": "ky-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1023,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Interpretation Law (Cap. 70) is a Cayman statute, not a publication issued by “Cayman Islands Legislation (1963)”; the latter is not an official bibliographic source."
+  },
+  {
+   "id": "ky-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 886,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-03-31 is in the future, so the judgment cannot yet exist."
+  },
+  {
+   "id": "ky-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 846,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Companies Law (1995 Revision) post-dates 1961, so it could not have been published by Cayman Islands Legislation in that year."
+  },
+  {
+   "id": "ky-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 937,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '[2026] CICA (Civ) 7' cannot exist because the judgment date (2026-03-18) is in the future."
+  },
+  {
+   "id": "ky-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 927,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The 1997 Revision post-dates 1963, so it could not have been published by Cayman Islands Legislation in that year."
+  },
+  {
+   "id": "ky-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 800,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '[2026] CIGC (FSD) 27' is impossible because the year 2026 has not yet occurred."
+  },
+  {
+   "id": "ky-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 782,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Interpretation Law (Cap. 70) is Cayman Islands legislation, not Sint Maarten Government Legislation."
+  },
+  {
+   "id": "ky-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 754,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Cayman Islands Courts website (judicial.ky) does not publish judgments under the title \"Trustee v AB and others - Judgment\" dated 2025-03-31."
+  },
+  {
+   "id": "ky-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 713,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Companies Law (1995 Revision) is Cayman Islands legislation, not Bahamas Consolidated Legislation (1961)."
+  }
+ ]
+}

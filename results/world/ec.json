@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Ecuador — Source-Grounded Citation Reliability (EC)",
+ "country": "EC",
+ "jurisdiction": "Ecuador",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:54:28.155242+00:00",
+ "results": [
+  {
+   "id": "ec-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 813,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The quoted text is an administrative resolution, not legislation, and oficial.ec is not Ecuador’s official legal gazette."
+  },
+  {
+   "id": "ec-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 861,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The claim misidentifies the source; Acuerdo DM-2014-081 was published in Ecuador’s Registro Oficial, not via oficial.ec."
+  },
+  {
+   "id": "ec-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1040,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited text is an internal administrative resolution, not a published law; oficial.ec does not issue or authenticate such documents."
+  },
+  {
+   "id": "ec-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 852,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited text is a ministerial resolution, not legislation; oficial.ec is not Ecuador’s official gazette."
+  },
+  {
+   "id": "ec-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 909,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The claim misattributes the source; Acuerdo 0086 was issued by Ecuador’s Ministerio de Salud Pública, not published by oficial.ec."
+  },
+  {
+   "id": "ec-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 822,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The claim misstates the source: Acuerdo 001 was published in Ecuador’s Registro Oficial, not via the private site oficial.ec."
+  },
+  {
+   "id": "ec-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 851,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited text is an official Registro Oficial extract, not a publication by the private site oficial.ec."
+  },
+  {
+   "id": "ec-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 800,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Acuerdo DM-2014-081 is an Ecuadorian ministerial resolution, not a Brazilian municipal gazette publication."
+  },
+  {
+   "id": "ec-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 826,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited document is an Ecuadorian Ministry of Labour accord, not a Chilean legal source, so BCN Linked Open Data cannot be its publisher."
+  },
+  {
+   "id": "ec-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 823,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited text is a Colombian administrative act, not an Ecuadorian legal source, so it cannot appear in Ecuador Legislation (oficial.ec)."
+  },
+  {
+   "id": "ec-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 914,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The claim misattributes the source; Acuerdo 0086 was issued by Ecuador’s Ministerio de Salud Pública, not published by oficial.ec."
+  },
+  {
+   "id": "ec-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 892,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The claim misstates the source: Acuerdo 001 was published in Ecuador’s Registro Oficial, not via the private site oficial.ec."
+  }
+ ]
+}

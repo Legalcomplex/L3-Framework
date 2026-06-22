@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Chad — Source-Grounded Citation Reliability (TD)",
+ "country": "TD",
+ "jurisdiction": "Chad",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T16:00:44.829106+00:00",
+ "results": [
+  {
+   "id": "td-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1161,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Juricaf is a Francophone-African case-law database, not the Chad Supreme Court itself; the citation therefore misattributes the publishing authority."
+  },
+  {
+   "id": "td-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1101,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The citation format and date mismatch; Juricaf is a French database, not Chad’s official publisher, so the claim is inaccurate."
+  },
+  {
+   "id": "td-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 960,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier 'TCHAD-COURSUPREME-20191227-04719' matches the citation 'Tchad, Cour suprême, 27 décembre 2019, 047/19', confirming the bibliographic claim."
+  },
+  {
+   "id": "td-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1020,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The citation format and \"Juricaf\" publication indicate a French-speaking African court decision, not a Chad Supreme Court source."
+  },
+  {
+   "id": "td-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1039,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The citation format and \"Juricaf\" publisher indicate a French-speaking African court decision, not a Chad Supreme Court publication from 2014."
+  },
+  {
+   "id": "td-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 987,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The identifier 'TCHAD-COURSUPREME-20191213-042' directly encodes the court, date (2019-12-13), and decision number 042, matching the cited citation."
+  },
+  {
+   "id": "td-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 862,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'TCHAD-COURSUPREME-20150320-015' indicates case 015, not 014 as claimed."
+  },
+  {
+   "id": "td-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 945,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'TCHAD-COURSUPREME-20101209-034CSCJSC11' does not match the cited reference '034/CS/CJ/SC/10', indicating a mismatch in case numbering."
+  },
+  {
+   "id": "td-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1402,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Chad’s Supreme Court decisions are published in Chad’s own Journal officiel, not Congo-Brazzaville’s SGG."
+  },
+  {
+   "id": "td-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 832,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Chad’s Supreme Court decision cannot be published in Equatorial Guinea’s Official Gazette; the two countries maintain separate official publications."
+  },
+  {
+   "id": "td-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 835,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decision is from Chad’s Supreme Court, not the DRC Constitutional Court, so the LegalRDC source attribution is incorrect."
+  },
+  {
+   "id": "td-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 801,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decision is from Chad’s Supreme Court, not Gabon’s Constitutional Court, so the publication claim is incorrect."
+  }
+ ]
+}

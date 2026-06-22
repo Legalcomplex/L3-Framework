@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Canada — Source-Grounded Citation Reliability (CA)",
+ "country": "CA",
+ "jurisdiction": "Canada",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:53:24.518610+00:00",
+ "results": [
+  {
+   "id": "ca-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1018,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. A2AJ Canadian Legal Data is not an official publisher of Canadian court decisions; only courts or authorized government reporters hold that status."
+  },
+  {
+   "id": "ca-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 944,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Administrative Tribunals Appointment and Administration Act is a British Columbia statute, not a publication; British Columbia Laws provides access, not publication."
+  },
+  {
+   "id": "ca-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 948,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Agricultural and Rural Development Act is a real Canadian statute, but it is not published on the Justice Laws Website under the title “Federal Laws and Regulations (2026-02-18)”."
+  },
+  {
+   "id": "ca-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 974,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Act respecting equal access to employment in public bodies (c. A-2.01) was enacted in 2000, but LegisQuebec is the current online platform, not the original publisher."
+  },
+  {
+   "id": "ca-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 785,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Supreme Court of Canada has not issued any decision titled Emond v. Trillium Mutual Insurance Co. on 30 January 2026."
+  },
+  {
+   "id": "ca-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 830,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier '2026 TCC 56' cannot exist because the current year is 2024; a 2026 decision is impossible."
+  },
+  {
+   "id": "ca-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 832,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. A2AJ Canadian Legal Data is not an official publisher of Canadian court decisions; only court registries or CanLII publish official judgments."
+  },
+  {
+   "id": "ca-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1047,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '03047_02' in the BC Laws XML API corresponds to the 'Administrative Tribunals Act', not the 'Administrative Tribunals Appointment and Administration Act'."
+  },
+  {
+   "id": "ca-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 651,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. ARDA is a Canadian federal statute; it cannot be published by Washington State Legislative Web Services."
+  },
+  {
+   "id": "ca-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 693,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Act is a Quebec statute; California Legislative Information has no jurisdiction or authority to publish Canadian legislation."
+  },
+  {
+   "id": "ca-src-f05",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 773,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Supreme Court of Canada has not issued any 2026 decisions; 2026 SCC 4 is a non-existent future citation."
+  },
+  {
+   "id": "ca-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 772,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Tax Court of Canada does not publish decisions under the heading “Tax Court of Canada Decisions”; its official reporter is Tax Court of Canada Reports (T.C.C.)."
+  }
+ ]
+}

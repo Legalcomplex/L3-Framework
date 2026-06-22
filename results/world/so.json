@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Somalia — Source-Grounded Citation Reliability (SO)",
+ "country": "SO",
+ "jurisdiction": "Somalia",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T16:00:21.975972+00:00",
+ "results": [
+  {
+   "id": "so-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 969,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The claimed publication date of 2026-04-01 is in the future, making the bibliographic claim impossible."
+  },
+  {
+   "id": "so-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2379,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Somaliland is a self-declared independent region, not part of Somalia’s national jurisdiction, so the cited source cannot be an official Somali legal publication."
+  },
+  {
+   "id": "so-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 742,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Somalia’s Official Gazette is not published by the Office of the State Attorney General, and no such 1 December 2025 issue exists."
+  },
+  {
+   "id": "so-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1134,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Somaliland is a self-declared independent region, not internationally recognized as a sovereign state, so its Companies Law 2004 cannot be an “official legal source” of Somalia."
+  },
+  {
+   "id": "so-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 977,
+   "verdict": false,
+   "correct": false,
+   "raw": "False: Somalia’s Official Gazette has not issued any publication dated 2026-04-01, so the claimed bibliographic entry is impossible."
+  },
+  {
+   "id": "so-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1017,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Somaliland is a self-declared independent region, not internationally recognized as a sovereign state, so its police law compilation cannot be an official legal source of Somalia."
+  },
+  {
+   "id": "so-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 907,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No verifiable evidence exists that Somalia’s Office of the Attorney General published that title in its Official Gazette on 2024-04-01."
+  },
+  {
+   "id": "so-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1304,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Seychelles Official Gazette cannot publish Somali legislation; Law No. 91-2020 is a Somali statute, not a Seychellois one."
+  },
+  {
+   "id": "so-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 842,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Somalia’s Official Gazette is issued by the Ministry of Justice, not the Office of the State Attorney General, so the cited publisher is incorrect."
+  },
+  {
+   "id": "so-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 901,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Somaliland is a self-declared independent jurisdiction, so its Companies Law cannot be an official publication of Tanzania’s Attorney General’s Office."
+  },
+  {
+   "id": "so-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 833,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Somalia’s Official Gazette is not issued by the Office of the State Attorney General, and no 2025-04-01 issue exists."
+  },
+  {
+   "id": "so-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 998,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Kenya Law (Kenya’s National Council for Law Reporting) does not publish Somaliland legislation; the cited compilation is not an official Kenyan source."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Kenya — Source-Grounded Citation Reliability (KE)",
+ "country": "KE",
+ "jurisdiction": "Kenya",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:56:39.738559+00:00",
+ "results": [
+  {
+   "id": "ke-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 978,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Kenya Law (National Council for Law Reporting) publishes statutes and regulations, but does not itself issue or date them as “published via” on 2022-12-31."
+  },
+  {
+   "id": "ke-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 952,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Kenya Tax Appeals Tribunal cannot issue a 2026 decision; the date is in the future."
+  },
+  {
+   "id": "ke-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 957,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such CAK decision exists; the Competition Authority of Kenya has not issued or published any ruling dated 2025-05-01 involving Mananasi Fibre Limited v Del Monte Kenya Limited."
+  },
+  {
+   "id": "ke-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 915,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The Kenya National Environment Tribunal is the official publisher of its own decisions, including Tribunal Appeal 177 of 2024."
+  },
+  {
+   "id": "ke-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1492,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Kenya Law (National Council for Law Reporting) publishes statutes and judgments, not subsidiary regulations; the Access to Information (General) Regulations were gazetted by the Government Prin"
+  },
+  {
+   "id": "ke-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 790,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited decision date (2026-03-26) is in the future, so the Tribunal could not have published it."
+  },
+  {
+   "id": "ke-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 651,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Accountants (Quality Assurance Review) Regulations are Kenyan subsidiary legislation, not published in the Seychelles Official Gazette."
+  },
+  {
+   "id": "ke-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 779,
+   "verdict": true,
+   "correct": false,
+   "raw": "True. The Kenya Tax Appeals Tribunal is the correct publishing body for its own decisions, including the cited 2024 case."
+  },
+  {
+   "id": "ke-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 930,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No such CAK decision exists; the Kenya Competition Authority has not published any ruling titled 'CAK DECISION ON MANANASI FIBRE LIMITED v DEL MONTE KENYA LIMITED' dated 2024-05-01."
+  },
+  {
+   "id": "ke-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 736,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decision is a Kenyan National Environment Tribunal appeal, not a Mauritius Supreme Court judgment."
+  },
+  {
+   "id": "ke-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 800,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Kenya Law (National Council for Law Reporting) publishes statutes and judgments, not subsidiary regulations; the Access to Information (General) Regulations, 2020 were gazetted by the Governmen"
+  },
+  {
+   "id": "ke-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1266,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Kenya Tax Appeals Tribunal does not publish decisions; it issues rulings, and the cited source is a tribunal appeal, not an official publication."
+  }
+ ]
+}

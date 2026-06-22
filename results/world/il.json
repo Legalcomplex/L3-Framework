@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Israel — Source-Grounded Citation Reliability (IL)",
+ "country": "IL",
+ "jurisdiction": "Israel",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:56:06.339604+00:00",
+ "results": [
+  {
+   "id": "il-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 808,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited decision is dated 2025-01-24, but the Israeli Case Law Dataset on HuggingFace contains only judgments up to 2024."
+  },
+  {
+   "id": "il-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 918,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Ports Ordinance [New Version], 1971, was officially published in the official government gazette (Reshumot), not by Israel Knesset Data/Hasadna."
+  },
+  {
+   "id": "il-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 866,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. HCJ 9232/01 is the official citation for the 11 August 2003 “Noah” animal-rights judgment in the English translation series."
+  },
+  {
+   "id": "il-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 907,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited decision is an authentic Israeli family-court ruling, but the publisher “Israeli Case Law Dataset (HuggingFace)” is a third-party repository, not an official legal source."
+  },
+  {
+   "id": "il-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1039,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Postal Ordinance [New Version], 1976, was officially published in the Official Gazette (Reshumot) by the government, not via Israel Knesset Data (Hasadna)."
+  },
+  {
+   "id": "il-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 778,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. HCJ 2150/07 is actually 'Abu Safiyeh v. Minister of Defense' decided 29 December 2009, so the bibliographic claim is correct."
+  },
+  {
+   "id": "il-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1396,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decision is a real Israeli family court ruling, but \"Israeli Case Law Dataset (HuggingFace)\" is not an official publisher; it is merely a third-party repository."
+  },
+  {
+   "id": "il-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 794,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. DIFC Legal Database is Dubai’s, not Israel’s; the Ports Ordinance was published in Israel’s Official Gazette."
+  },
+  {
+   "id": "il-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 656,
+   "verdict": true,
+   "correct": false,
+   "raw": "True. HCJ 9232/02 is the official citation for the 11 August 2003 “Noah” animal-rights judgment in the English Translations series."
+  },
+  {
+   "id": "il-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 841,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decision is an authentic Israeli family court ruling, but \"Israeli Case Law Dataset (HuggingFace)\" is a third-party repository, not an official publisher."
+  },
+  {
+   "id": "il-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 972,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Postal Ordinance [New Version], 1976 is an Israeli statute, not a Jordanian one; the Jordan Legislation & Opinion Bureau has no authority to promulgate Israeli legislation."
+  },
+  {
+   "id": "il-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 805,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. HCJ 2150/08 is actually Abu Safiyeh v. Minister of Defense, but the decision date is 29 December 2009, not 2009-12-29."
+  }
+ ]
+}

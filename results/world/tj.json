@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Tajikistan — Source-Grounded Citation Reliability (TJ)",
+ "country": "TJ",
+ "jurisdiction": "Tajikistan",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T16:00:53.087939+00:00",
+ "results": [
+  {
+   "id": "tj-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1614,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The claim misstates the source: Tajikistan’s Tax Code was adopted 2004 (not 2024), and the Tax Committee does not publish it as “Tax Legislation 2024-01-01.”"
+  },
+  {
+   "id": "tj-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 884,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Tajikistan’s Constitutional Court does not publish decisions under that title; the cited citation is not an official source."
+  },
+  {
+   "id": "tj-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1145,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited title and publisher do not match any official Tajik legal source; the National Bank of Tajikistan does not issue “Banking Laws & Regulations” under that English imprint."
+  },
+  {
+   "id": "tj-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1177,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Supreme Court of Tajikistan does not publish an official bulletin titled “Нашрияи Суди Олии Ҷумҳурии Тоҷикистон №3/2022” on sud.tj; no such source exists."
+  },
+  {
+   "id": "tj-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1007,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The citation format and date mismatch; the Tax Code of Tajikistan was adopted 23 December 2021, not 19 July 2019."
+  },
+  {
+   "id": "tj-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 837,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited decision is a Supreme Court ruling, not a Constitutional Court decision, so the bibliographic claim is incorrect."
+  },
+  {
+   "id": "tj-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 880,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Lex.uz is Uzbekistan’s national database; Tajikistan’s official legal source is adlia.tj, so the claim is jurisdictionally incorrect."
+  },
+  {
+   "id": "tj-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 998,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Tajikistan’s Constitutional Court does not publish decisions under the title “Постановление по ходатайству”; its official outputs are “Определение” or “Постановление Конституционного суда,” mak"
+  },
+  {
+   "id": "tj-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 705,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Adilet is Kazakhstan’s legal database and cannot publish Tajikistan’s official laws."
+  },
+  {
+   "id": "tj-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 798,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The source is a Tajik Supreme Court publication, not issued by the Astana International Financial Centre Court."
+  },
+  {
+   "id": "tj-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 757,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Adilet system is Kazakhstan’s official legal database and does not publish Tajikistan’s Tax Code."
+  },
+  {
+   "id": "tj-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 644,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Constitutional Court of Tajikistan does not publish decisions under that title; the cited 2019 ruling originates from a lower court, not the Constitutional Court."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Andorra — Source-Grounded Citation Reliability (AD)",
+ "country": "AD",
+ "jurisdiction": "Andorra",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:51:58.414265+00:00",
+ "results": [
+  {
+   "id": "ad-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1092,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Andorra’s official gazette is the Butlletí Oficial del Principat d’Andorra (BOPA); the Portal Jurídic merely consolidates texts, so the decree cannot be “published via” the Portal."
+  },
+  {
+   "id": "ad-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 954,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The decree date (11-2-2026) precedes its claimed BOPA publication (17-2-2026), which is chronologically impossible."
+  },
+  {
+   "id": "ad-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1033,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier '2024-47-RE' cannot correspond to a decision dated 2026-03-13, as that date lies in the future."
+  },
+  {
+   "id": "ad-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 987,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Andorra’s official consolidated laws are published in the Butlletí Oficial del Principat d’Andorra (BOPA), not the Andorra Portal Juridic."
+  },
+  {
+   "id": "ad-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1025,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 11-2-2026 is in the future, so the order cannot have been published in 2026-02-17 BOPA."
+  },
+  {
+   "id": "ad-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 894,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier '2025-101-RE' cannot correspond to a decision dated 2026-03-13, as the year in the identifier precedes the decision date."
+  },
+  {
+   "id": "ad-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 845,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Fedlex publishes Swiss federal law; Andorran decrees like Decret 475/2024 are issued by Andorra’s government, not Switzerland."
+  },
+  {
+   "id": "ad-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 706,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Andorran decrees are not published on the Dutch wetten.overheid.nl portal."
+  },
+  {
+   "id": "ad-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 936,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The claim is implausible: a 2024 identifier cannot reference a 2026 date, and distinct case numbers denote separate decisions."
+  },
+  {
+   "id": "ad-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 819,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Andorra’s official gazette is the Butlletí Oficial del Principat d’Andorra, not Laws of Gibraltar."
+  },
+  {
+   "id": "ad-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 724,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Andorran ministerial orders are not published on Ireland’s Statute Database; the cited source and date are implausible."
+  },
+  {
+   "id": "ad-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 772,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '2025-102-RE' cannot correspond to '2025-101-RE' as they are distinct case numbers."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Puerto Rico — Source-Grounded Citation Reliability (PR)",
+ "country": "PR",
+ "jurisdiction": "Puerto Rico",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:59:22.654771+00:00",
+ "results": [
+  {
+   "id": "pr-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 819,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. LexJuris is a private legal database, not an official Puerto Rico government source."
+  },
+  {
+   "id": "pr-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 839,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. LexJuris is a private legal publisher, not an official source of Puerto Rico statutes."
+  },
+  {
+   "id": "pr-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 828,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. LexJuris is a private legal database, not an official Puerto Rico government source for statutes."
+  },
+  {
+   "id": "pr-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 813,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. LexJuris is a private legal publisher, not an official source of Puerto Rico statutes."
+  },
+  {
+   "id": "pr-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 804,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. LexJuris is a private legal publisher, not an official source of Puerto Rico statutes."
+  },
+  {
+   "id": "pr-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 852,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. LexJuris is a private legal publisher, not an official source of Puerto Rico statutes."
+  },
+  {
+   "id": "pr-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 910,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Puerto Rico statutes are not published by Bahamas Consolidated Legislation; the cited source is jurisdictionally mismatched."
+  },
+  {
+   "id": "pr-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 929,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Puerto Rico statutes are not published by Aruba’s DWJZ archive; the cited source is geographically and jurisdictionally implausible."
+  },
+  {
+   "id": "pr-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 833,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Puerto Rico statutes are not published by \"Laws of Grenada\"; that source is jurisdictionally irrelevant."
+  },
+  {
+   "id": "pr-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 907,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Ley Núm. 11 de 2024 is a Puerto Rico statute; it cannot be published in the Turks and Caicos Revised Laws."
+  },
+  {
+   "id": "pr-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 817,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Bermuda Laws Online publishes Bermudian statutes, not Puerto Rican legislation."
+  },
+  {
+   "id": "pr-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 712,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Saint Lucia Revised Laws is a Caribbean jurisdiction; it cannot publish Puerto Rico statutes."
+  }
+ ]
+}

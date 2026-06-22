@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Poland — Source-Grounded Citation Reliability (PL)",
+ "country": "PL",
+ "jurisdiction": "Poland",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.6667,
+ "correct": 8,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:59:15.288114+00:00",
+ "results": [
+  {
+   "id": "pl-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1083,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited regulation was published on 31 December 2024, but the Polish Official Journal (Dziennik Ustaw) has not yet issued any 2024 acts dated after 30 December."
+  },
+  {
+   "id": "pl-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 895,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. Postanowienie P 54/14 was indeed issued by the Polish Constitutional Tribunal on 25 November 2015."
+  },
+  {
+   "id": "pl-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 997,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier 'III FSK 142/26' cannot refer to a 2026 judgment because Polish case numbers use the filing year, making 2026 impossible."
+  },
+  {
+   "id": "pl-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 943,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. SAOS aggregates and indexes Polish court rulings but is not the official publisher of Constitutional Tribunal decisions like K 1/87."
+  },
+  {
+   "id": "pl-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 906,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The Polish Supreme Court (Sąd Najwyższy) publishes its own decisions, including V KK 137/16 of 21 June 2016."
+  },
+  {
+   "id": "pl-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 770,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 30 December 2024 lies in the future, so the cited regulation cannot have been published on 31 December 2024."
+  },
+  {
+   "id": "pl-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 796,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited Polish excise regulation cannot be published by Slovenia’s PISRS database; it belongs in Poland’s Dziennik Ustaw."
+  },
+  {
+   "id": "pl-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 813,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'P 54/15' cannot refer to a ruling dated 25 November 2015 labelled 'P 54/14'; the year suffix must match."
+  },
+  {
+   "id": "pl-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 873,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'III FSK 142/27' cannot refer to a 2026 judgment, as Polish case numbering follows the filing year, not future dates."
+  },
+  {
+   "id": "pl-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 816,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. SAOS aggregates and publishes court rulings, but K 1/87 is a 1987 Constitutional Tribunal decision, not a 1984 ruling."
+  },
+  {
+   "id": "pl-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 823,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The decision 'V KK 137/16' is a Polish Supreme Court criminal ruling, not a Georgian Constitutional Court publication."
+  },
+  {
+   "id": "pl-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 782,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited act is a Polish Council of Ministers regulation, so it cannot be published in the Czech e-Sbírka."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — El Salvador — Source-Grounded Citation Reliability (SV)",
+ "country": "SV",
+ "jurisdiction": "El Salvador",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T16:00:30.553419+00:00",
+ "results": [
+  {
+   "id": "sv-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 974,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The decision date (2026-03-05) precedes today, making future publication impossible."
+  },
+  {
+   "id": "sv-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 955,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The decision date (2026-03-13) precedes today, making the bibliographic claim chronologically impossible."
+  },
+  {
+   "id": "sv-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 958,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Legislative Assembly of El Salvador has not published any such law dated 29 April 2026; that future date makes the bibliographic claim impossible."
+  },
+  {
+   "id": "sv-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1009,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Superintendencia de Competencia does not publish decisions under the title “Caso Agencia de Viajes Escamilla”; no such 2013-02-25 decision exists in its official records."
+  },
+  {
+   "id": "sv-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 994,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The decision date (2026-03-03) precedes today, making future publication impossible."
+  },
+  {
+   "id": "sv-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 901,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier '80-P-2025' cannot refer to a 2026-03-05 document, as the year in the identifier precedes the stated date."
+  },
+  {
+   "id": "sv-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 918,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decision identifier and date do not match any official publication by the Corte Suprema de Justicia’s Centro de Jurisprudencia."
+  },
+  {
+   "id": "sv-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 760,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '559-2026' cannot correspond to a 2025 case dated 2026-03-13; the year mismatch makes the bibliographic claim chronologically impossible."
+  },
+  {
+   "id": "sv-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 993,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited law is Salvadoran, not Honduran; TSC Virtual Library is Honduras’ audit body and cannot publish El Salvador’s official gazette."
+  },
+  {
+   "id": "sv-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 849,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Superintendencia de Competencia does not publish decisions under the title “Caso Agencia de Viajes Escamilla”; no such 2012-02-25 decision exists in its official records."
+  },
+  {
+   "id": "sv-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 766,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Decision 341-P-2025 is from El Salvador’s Corte Suprema de Justicia, not Mexico’s SCJN, so the claimed Mexican source is incorrect."
+  },
+  {
+   "id": "sv-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 893,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '80-P-2026' cannot correspond to a 2025-labeled document dated 2026-03-05; the year codes are inconsistent."
+  }
+ ]
+}

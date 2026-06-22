@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Costa Rica — Source-Grounded Citation Reliability (CR)",
+ "country": "CR",
+ "jurisdiction": "Costa Rica",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.6667,
+ "correct": 8,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:53:54.286234+00:00",
+ "results": [
+  {
+   "id": "cr-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1058,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No official Costa Rican judicial database lists a decision with that exact expediente number or date."
+  },
+  {
+   "id": "cr-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 938,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The Tribunal Supremo de Elecciones is Costa Rica’s constitutional electoral court, and its official resolutions are published under the “Resoluciones” series."
+  },
+  {
+   "id": "cr-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 924,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No public record exists of a Costa Rican judicial decision with that exact expediente number from Sala Segunda dated 22-12-2023."
+  },
+  {
+   "id": "cr-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 871,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The Tribunal Supremo de Elecciones is Costa Rica’s constitutional electoral body and routinely publishes its resolutions under the “Resoluciones” series."
+  },
+  {
+   "id": "cr-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 859,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No public record exists of a Costa Rican Supreme Court decision with that exact expediente number from Sala Segunda dated 22-12-2023."
+  },
+  {
+   "id": "cr-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1199,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier '0046' does not match the full citation 'TSE, 0046-E3-2024', which indicates a different resolution number."
+  },
+  {
+   "id": "cr-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 996,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No public record exists of a Costa Rican Supreme Court decision with that exact docket number or date from the cited publisher."
+  },
+  {
+   "id": "cr-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 750,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '0024' cannot correspond to 'TSE, 0023-E3-2024' because the numeric prefixes differ."
+  },
+  {
+   "id": "cr-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 733,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Costa Rica's judicial system does not publish decisions dated in the future (2025-12-22)."
+  },
+  {
+   "id": "cr-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 801,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '0002' cannot correspond to 'TSE, 0001-E1-2024' because the numeric portions differ."
+  },
+  {
+   "id": "cr-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 718,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decision is from Costa Rica’s Sala Segunda, not Mexico’s SCJN, so it cannot appear on the SCJN Open Data Platform."
+  },
+  {
+   "id": "cr-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 743,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. TSE 0046-E3-2024 is a Costa Rican Electoral Tribunal ruling, not a Mexican Supreme Court decision, so it cannot appear on Mexico’s SCJN Open Data Platform."
+  }
+ ]
+}

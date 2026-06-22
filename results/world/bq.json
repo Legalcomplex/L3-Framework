@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Caribbean Netherlands — Source-Grounded Citation Reliability (BQ)",
+ "country": "BQ",
+ "jurisdiction": "Caribbean Netherlands",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:53:09.435686+00:00",
+ "results": [
+  {
+   "id": "bq-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1036,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The 'Wet openbaarheid van bestuur BES' is a Dutch statute, not a publication of Caribbean Netherlands BES Legislation."
+  },
+  {
+   "id": "bq-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1026,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. BWBR0028161 is the identifier for the 'Wet openbare lichamen Bonaire, Sint Eustatius en Saba' (WolBES), not the Mijnwet BES."
+  },
+  {
+   "id": "bq-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1032,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier BWBR0028163 corresponds to the \"Wet tot wijziging van de Petroleumwet BES\" (2019), not the original Petroleumwet Saba Bank BES."
+  },
+  {
+   "id": "bq-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1029,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Wet openbare lichamen Bonaire, Sint Eustatius en Saba is a Dutch statute enacted in 2010, not a 2025 publication of Caribbean Netherlands BES Legislation."
+  },
+  {
+   "id": "bq-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1039,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier BWBR0028160 corresponds to the \"Wet op het notarisambt BES,\" not the \"Wet rechtspositie Kustwacht BES.\""
+  },
+  {
+   "id": "bq-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 928,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier BWBR0028151 corresponds to the 'Wet financiën openbare lichamen Bonaire, Sint Eustatius en Saba' but its effective date is 2010-10-10, not 2023-01-01."
+  },
+  {
+   "id": "bq-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 917,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The 'Wet openbaarheid van bestuur BES' is a Dutch statute, not a publication of Caribbean Netherlands BES Legislation."
+  },
+  {
+   "id": "bq-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 968,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. 'BWBR0028162' is the identifier for the 'Wet openbare lichamen Bonaire, Sint Eustatius en Saba' (WolBES), not the 'Mijnwet BES'."
+  },
+  {
+   "id": "bq-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 921,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier BWBR0028165 corresponds to the 'Wet tot wijziging van de Petroleumwet BES' (2019), not the original 'Petroleumwet Saba Bank BES'."
+  },
+  {
+   "id": "bq-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 911,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The 'Wet openbare lichamen Bonaire, Sint Eustatius en Saba' is a Dutch statute from 2010, not a 2024 Caribbean Netherlands BES Legislation publication."
+  },
+  {
+   "id": "bq-src-f05",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 951,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier BWBR0028162 corresponds to the \"Wet op de Kustwacht BES\" (2010-09-30), not the 2011 \"Wet rechtspositie Kustwacht BES\"."
+  },
+  {
+   "id": "bq-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 815,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The 'Wet financiën openbare lichamen Bonaire, Sint Eustatius en Saba' is Dutch Caribbean law, not Cayman Islands legislation."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Jordan — Source-Grounded Citation Reliability (JO)",
+ "country": "JO",
+ "jurisdiction": "Jordan",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:56:34.106629+00:00",
+ "results": [
+  {
+   "id": "jo-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1023,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Jordan’s Legislation & Opinion Bureau publishes draft laws, not the final “قانون الموازنة العامة,” which is enacted by Parliament and published in the Official Gazette."
+  },
+  {
+   "id": "jo-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1034,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Jordan’s Credit Information Law is Law No. 9 of 2010, not Temporary Law No. 15; the cited source misstates both number and status."
+  },
+  {
+   "id": "jo-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1020,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Jordan Securities Commission’s official site lists the “Instructions of Issuing Companies’ Disclosure, Accounting and Auditing Standards” under “Laws & Regulations,” not as a 2017 publicati"
+  },
+  {
+   "id": "jo-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1058,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such instructions titled 'تعليمات سجل مسؤولي ومعالجي ومراقبي حماية البيانات' appear on the Jordan Legislation and Opinion Bureau site as of 2025-03-02."
+  },
+  {
+   "id": "jo-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1066,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Jordan Legislation & Opinion Bureau does not publish laws; it only drafts and reviews them."
+  },
+  {
+   "id": "jo-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 929,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such circular exists; the Central Bank of Jordan’s official site shows no record of Circular No. (26/4/5734) dated 19/5/2020."
+  },
+  {
+   "id": "jo-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 922,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. ADGM is Abu Dhabi's financial free zone; Jordan's 2024 budget law is published by Jordan's Official Gazette, not ADGM."
+  },
+  {
+   "id": "jo-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 919,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. DIFC Legal Database covers Dubai International Financial Centre laws, not Jordanian legislation; the cited source cannot publish Jordan’s Credit Information Law."
+  },
+  {
+   "id": "jo-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 883,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Jordan Securities Commission instructions are not published under that exact title or date; official sources use different phrasing and publication details."
+  },
+  {
+   "id": "jo-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 981,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Jordan Legislation and Opinion Bureau has not published any 2026-dated instructions on data-protection officers; the cited date is impossible."
+  },
+  {
+   "id": "jo-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 919,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Jordan Legislation & Opinion Bureau does not publish laws dated 2026-06-13; that future date is impossible."
+  },
+  {
+   "id": "jo-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 919,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited circular originates from Jordan’s Central Bank, not Saudi Arabia’s SAMA, so the jurisdiction and publisher are incorrect."
+  }
+ ]
+}

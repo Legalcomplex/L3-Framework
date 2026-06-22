@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Norway — Source-Grounded Citation Reliability (NO)",
+ "country": "NO",
+ "jurisdiction": "Norway",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.75,
+ "correct": 9,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:58:47.124723+00:00",
+ "results": [
+  {
+   "id": "no-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 922,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The decision date (2026-02-13) is in the future, so this Supreme Court ruling cannot yet exist."
+  },
+  {
+   "id": "no-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 926,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Lovvedtak 1 (2025-2026) cannot have been published on 2025-12-03 because that date lies in the future."
+  },
+  {
+   "id": "no-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1064,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. KFIR is the Norwegian Industrial Property Office (Patentstyret), not the Board of Appeal; the cited decision name and date do not match any official source."
+  },
+  {
+   "id": "no-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 917,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. KOFA 2004/2 is an authentic KOFA decision dated 9 August 2004, issued by Norway’s Public Procurement Complaints Board."
+  },
+  {
+   "id": "no-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 920,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The Norwegian Equality and Anti-Discrimination Tribunal (Diskrimineringsnemnda) issues decisions such as Sak 22/163 dated 12 June 2022."
+  },
+  {
+   "id": "no-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 794,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. Personvernnemnda is Norway’s official Privacy Appeals Board and publishes its decisions under the cited “PVN” designation."
+  },
+  {
+   "id": "no-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 832,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The decision is a Norwegian Supreme Court ruling, not a Finnish source, so Finland’s Finlex cannot be its publisher."
+  },
+  {
+   "id": "no-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 981,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Lovvedtak 1 (2025-2026) is a Norwegian parliamentary decision, not published by Denmark’s Retsinformation database."
+  },
+  {
+   "id": "no-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 891,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. KFIR is the Norwegian Industrial Property Office (Patentstyret), not the Board of Appeal; the cited decision name and date also lack verification."
+  },
+  {
+   "id": "no-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 833,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. KOFA case identifiers are unique; '2004/5' and '2004/2' denote distinct decisions, not the same document."
+  },
+  {
+   "id": "no-src-f05",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 749,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '22/164' cannot correspond to 'Sak 22/163'; distinct case numbers denote separate matters."
+  },
+  {
+   "id": "no-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 807,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Finlex is Finland’s official legal database; Norwegian decisions such as PVN-2003-05 are not published there."
+  }
+ ]
+}

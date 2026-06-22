@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Sri Lanka — Source-Grounded Citation Reliability (LK)",
+ "country": "LK",
+ "jurisdiction": "Sri Lanka",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:57:19.554977+00:00",
+ "results": [
+  {
+   "id": "lk-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 984,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Sri Lanka cannot have enacted or gazetted an Act dated 2026-02-17, as that date lies in the future."
+  },
+  {
+   "id": "lk-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1093,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. LawNet Sri Lanka is operated by the Ministry of Justice, but the cited 2026-03-23 decision cannot exist as the date is in the future."
+  },
+  {
+   "id": "lk-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1057,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. CommonLII hosts the official Sri Lanka Supreme Court judgment (1978) 79 NLR 89, confirming the bibliographic claim."
+  },
+  {
+   "id": "lk-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 990,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The PUCSL Act, No. 35 of 2002, is the parent statute enacted by Parliament, not a regulation published by the Commission itself."
+  },
+  {
+   "id": "lk-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 986,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Sri Lanka cannot enact or gazette Act No. 09/2026 in March 2026; future-dated legislation is impossible."
+  },
+  {
+   "id": "lk-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 809,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The claimed 2026-03-26 date is impossible; no judgment can be dated in the future."
+  },
+  {
+   "id": "lk-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 833,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Sri Lanka’s official gazette is published at documents.gov.lk, not egazette.gov.in, which is India’s site; the cited Act number also follows Indian, not Sri Lankan, numbering."
+  },
+  {
+   "id": "lk-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 763,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The date 2026-03-23 is impossible; the judgment cannot pre-date the present."
+  },
+  {
+   "id": "lk-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 723,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decision is a Sri Lankan Supreme Court case, not an Islamabad High Court judgment."
+  },
+  {
+   "id": "lk-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1044,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The PUCSL Act, No. 35 of 2002 is Sri Lankan legislation, not Pakistani, so it cannot originate from a Pakistan Laws Dataset."
+  },
+  {
+   "id": "lk-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 782,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Sri Lanka’s official gazette is the Government Gazette of Sri Lanka, not the Maldives Government Gazette, so the cited source is jurisdictionally impossible."
+  },
+  {
+   "id": "lk-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 824,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The date 2026-03-26 is impossible; no judgment from that future date can exist in LawNet Sri Lanka."
+  }
+ ]
+}

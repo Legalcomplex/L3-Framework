@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Ireland — Source-Grounded Citation Reliability (IE)",
+ "country": "IE",
+ "jurisdiction": "Ireland",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:56:03.788470+00:00",
+ "results": [
+  {
+   "id": "ie-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 904,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The decision date (2026-02-16) is in the future, so the case cannot yet exist or be published."
+  },
+  {
+   "id": "ie-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 854,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The decision '[2026] IESC 3' cannot exist, as its cited date (28 January 2026) lies in the future."
+  },
+  {
+   "id": "ie-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 820,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The DPC does not publish court decisions; only the courts or official law reporters do."
+  },
+  {
+   "id": "ie-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 893,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The decision date (2026-02-13) is in the future, so the case cannot yet exist or be published."
+  },
+  {
+   "id": "ie-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 898,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The citation '[2026] IESC 7' is impossible; no 2026 judgment exists in January 2025."
+  },
+  {
+   "id": "ie-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1235,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such DPC decision titled 'Inquiry into LinkedIn Ireland Unlimited Company - October 2024' exists; the DPC has not published this document."
+  },
+  {
+   "id": "ie-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 748,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '[2026] IEHC 79' cannot exist, as 2026 has not yet occurred."
+  },
+  {
+   "id": "ie-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1018,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. '[2026] IESC 3' is an Irish Supreme Court citation, not a Dutch court decision published on rechtspraak.nl."
+  },
+  {
+   "id": "ie-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 784,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The decision is an Irish High Court judgment on a data-protection reference, not an Austrian Supreme Administrative Court ruling."
+  },
+  {
+   "id": "ie-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 791,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '[2026] IECA 14' cannot exist, as the current year is 2024 and future case citations are impossible."
+  },
+  {
+   "id": "ie-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 711,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The decision is an Irish Supreme Court judgment, not a ruling of the German Federal Constitutional Court."
+  },
+  {
+   "id": "ie-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 751,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The decision concerns LinkedIn Ireland and is attributed to Portuguese appeal courts, which have no jurisdiction over Irish entities."
+  }
+ ]
+}

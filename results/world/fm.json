@@ -1,0 +1,121 @@
+{
+ "pack": "S3 — Micronesia — Source-Grounded Citation Reliability (FM)",
+ "country": "FM",
+ "jurisdiction": "Micronesia",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 10,
+ "items_in_pack": 10,
+ "parsed": 10,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 5,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:54:54.214529+00:00",
+ "results": [
+  {
+   "id": "fm-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 750,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. FSM Legal Information System is not an official publisher; FSM Supreme Court decisions are published by the FSM Supreme Court itself."
+  },
+  {
+   "id": "fm-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 888,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. FSM Legal Information System is not a publisher; it is the official online database hosting FSM Supreme Court decisions."
+  },
+  {
+   "id": "fm-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 840,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. FSM Legal Information System did not exist in 1981; the FSM Supreme Court itself published the opinion."
+  },
+  {
+   "id": "fm-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 940,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. FSM Legal Information System did not exist in 1982; the FSM Supreme Court published its own Intrm. reports."
+  },
+  {
+   "id": "fm-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 755,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. FSM Legal Information System is not an official publisher; FSM Supreme Court decisions are published by the court itself."
+  },
+  {
+   "id": "fm-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 704,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. FSM Legal Information System is not the official publisher of FSM Supreme Court decisions; official publication is handled by the court itself."
+  },
+  {
+   "id": "fm-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 883,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. FSM Legal Information System is not a publisher; it is the official online database hosting FSM Supreme Court decisions."
+  },
+  {
+   "id": "fm-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 764,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Open Australian Legal Corpus on HuggingFace contains Australian—not Micronesian—legal materials, so it cannot publish FSM decisions."
+  },
+  {
+   "id": "fm-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 830,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. FSM 1 Intrm. 209-231 is a Federated States of Micronesia decision, not a Republic of Marshall Islands Judiciary publication."
+  },
+  {
+   "id": "fm-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 844,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. FSM Legal Information System is not an official publisher; FSM Supreme Court decisions are published by the FSM Supreme Court itself."
+  }
+ ]
+}

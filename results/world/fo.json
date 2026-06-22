@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Faroe Islands — Source-Grounded Citation Reliability (FO)",
+ "country": "FO",
+ "jurisdiction": "Faroe Islands",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:54:57.231585+00:00",
+ "results": [
+  {
+   "id": "fo-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 926,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Faroe Islands Parliament (Løgting) does not publish administrative regulations (kunngerð); such executive orders are issued by government ministries, not the legislature."
+  },
+  {
+   "id": "fo-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 948,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Faroe Islands Parliament (Løgting) does not publish executive regulations (kunngerð); such instruments are issued by the government or ministries, not the legislature."
+  },
+  {
+   "id": "fo-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 865,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Faroe Islands Parliament (Løgting) does not publish ministerial decrees; such administrative orders are issued by the government (landsstýrið), not the legislature."
+  },
+  {
+   "id": "fo-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 900,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Faroe Islands Parliament (Løgting) does not publish legislation; official legal sources are issued by the Prime Minister’s Office or relevant ministries."
+  },
+  {
+   "id": "fo-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1547,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited act cannot have been published on 2026-03-05 because that date lies in the future."
+  },
+  {
+   "id": "fo-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1455,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such publication exists; the 2026 election has not occurred and the Løgting issues no “Kunngerð nr. 18” dated 2026-02-25."
+  },
+  {
+   "id": "fo-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1512,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Retsinformation is Denmark’s database; Faroe Islands maintain separate legislation, so this source cannot publish Faroese legal acts."
+  },
+  {
+   "id": "fo-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 722,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Faroe Islands laws are not published on Denmark’s Retsinformation; the cited 2026 date is also impossible."
+  },
+  {
+   "id": "fo-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 932,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited source is a governmental ministerial decree (Fráboðan) issued by the Prime Minister’s Office, not legislation enacted or published by the Løgting."
+  },
+  {
+   "id": "fo-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1463,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Faroe Islands Parliament (Løgting) does not publish \"Kunngerð\"; such administrative orders are issued by the government or ministries, not the legislature."
+  },
+  {
+   "id": "fo-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 988,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Faroe Islands Parliament (Løgting) has not published any legislation dated 2025-03-05, as that date is in the future."
+  },
+  {
+   "id": "fo-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 771,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Faroe Islands issue laws via kunngerðir in their own official gazette, not through Sweden’s SFS."
+  }
+ ]
+}

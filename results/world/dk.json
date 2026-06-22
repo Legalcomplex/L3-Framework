@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Denmark — Source-Grounded Citation Reliability (DK)",
+ "country": "DK",
+ "jurisdiction": "Denmark",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:54:17.900009+00:00",
+ "results": [
+  {
+   "id": "dk-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 934,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Domsdatabasen is not an official Danish publisher; the quoted text is from a 2021 Eastern High Court judgment, not a National Court decision."
+  },
+  {
+   "id": "dk-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 971,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Retsinformation cannot publish a 2026-01-08 document today; the date is in the future."
+  },
+  {
+   "id": "dk-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1345,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The circular cannot have been published on 2026-03-28 because that date lies in the future and Retsinformation only contains documents already issued."
+  },
+  {
+   "id": "dk-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 945,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Domsdatabasen is not an official Danish court publication; the cited decision appears to be a non-existent or misattributed source."
+  },
+  {
+   "id": "dk-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 935,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Decision '82/2025' cannot exist, as its 2025 number precedes its 2026 publication date."
+  },
+  {
+   "id": "dk-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 817,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier '21-0113279' cannot correspond to a 19 March 2026 decision, as that date lies in the future."
+  },
+  {
+   "id": "dk-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1020,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'BS-19699/2021-VLR' is a Vestre Landsret case number, not a record in the National Court Decisions Database (Domsdatabasen)."
+  },
+  {
+   "id": "dk-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 810,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Finlex is Finland’s legal database; Danish legislation cannot be officially published there."
+  },
+  {
+   "id": "dk-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1274,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Lovdata is Norway’s official legal database; a Danish circular cannot be published there."
+  },
+  {
+   "id": "dk-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 800,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The ECLI 'ECLI:DK:BOR:2021:SS0000000082' is a 2021 Bornholm court decision, not a 2018 homicide case."
+  },
+  {
+   "id": "dk-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1014,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Denmark's Supreme Court (Højesteret) does not publish decisions under the identifier \"82/2025\"; its official numbering uses case numbers like UfR references, not this format."
+  },
+  {
+   "id": "dk-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 920,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Landsskatteretten is Denmark’s National Tax Tribunal, but the cited decision title and date do not match any published ruling from that body."
+  }
+ ]
+}

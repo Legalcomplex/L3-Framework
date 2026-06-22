@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — United Kingdom — Source-Grounded Citation Reliability (UK)",
+ "country": "UK",
+ "jurisdiction": "United Kingdom",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T16:01:29.444948+00:00",
+ "results": [
+  {
+   "id": "uk-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1067,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. UK Case Law (National Archives) publishes only judgments from courts in England and Wales; this 2015 decision is a High Court (Chancery) case from England, so the attribution is correct."
+  },
+  {
+   "id": "uk-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1019,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The decision date (2026-03-24) is in the future, so the case cannot yet exist or be published."
+  },
+  {
+   "id": "uk-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1022,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier 'ukpga/2025/33' cannot refer to a 2025 Act enacted in 2026; future-dated legislation does not yet exist on legislation.gov.uk."
+  },
+  {
+   "id": "uk-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1026,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Children’s Wellbeing and Schools Act 2026 does not exist; no such Act received Royal Assent on 1 January 2026."
+  },
+  {
+   "id": "uk-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1034,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The UK Competition Appeal Tribunal does not publish \"Judgment (Application for withdrawal and costs)\" decisions; such titles are not standard CAT nomenclature."
+  },
+  {
+   "id": "uk-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1018,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. UK Employment Tribunals do not publish decisions under the citation format \"6017020/2025\"; official references use case numbers like 6017020/2025 without the \"Mr V Patel v Swissport Ltd\" prefix"
+  },
+  {
+   "id": "uk-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 980,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. UK Case Law (National Archives) publishes only England & Wales judgments; this 2017 decision is a Commercial Court case from the British Virgin Islands, not a UK judgment."
+  },
+  {
+   "id": "uk-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 974,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. UK National Archives' Find Case Law publishes only judgments from courts in England and Wales, not decisions from other jurisdictions."
+  },
+  {
+   "id": "uk-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 918,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'ukpga/2025/33' cannot exist because 2025 legislation has not yet been enacted."
+  },
+  {
+   "id": "uk-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 945,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier refers to a non-existent 2026 Act; UK legislation cannot yet include future-dated statutes."
+  },
+  {
+   "id": "uk-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 821,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Austrian Supreme Administrative Court (Verwaltungsgerichtshof) is an Austrian, not UK, judicial body, so the claim misattributes jurisdiction."
+  },
+  {
+   "id": "uk-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 770,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decision is a UK Employment Tribunal case; Germany’s NeuRIS portal publishes only German federal law, not UK judgments."
+  }
+ ]
+}

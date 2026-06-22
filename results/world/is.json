@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Iceland — Source-Grounded Citation Reliability (IS)",
+ "country": "IS",
+ "jurisdiction": "Iceland",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:56:22.538579+00:00",
+ "results": [
+  {
+   "id": "is-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 956,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Lagasafn is Iceland’s official consolidated legislation database; the cited Act (2008 nr. 88) was enacted 12 June 2008, not published in 2025."
+  },
+  {
+   "id": "is-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1007,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Iceland Regulations Collection (Reglugerd) does not publish future-dated regulations; 2026-03-17 is impossible."
+  },
+  {
+   "id": "is-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1011,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Icelandic Supreme Court case identifiers follow the format year/number (e.g., 44/2023), so the claimed 2024-04-17 date is inconsistent with the 2023 identifier."
+  },
+  {
+   "id": "is-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 985,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Yfirskattanefnd decisions are numbered sequentially within each year; a decision dated 18 March 2026 cannot bear the number 28/2026."
+  },
+  {
+   "id": "is-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1037,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Lagasafn is Iceland’s official consolidated legislation database; the cited act is correctly identified as 2022 nr. 80, 28 June, Lög um loftferðir."
+  },
+  {
+   "id": "is-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 862,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Iceland Regulations Collection (Reglugerd) does not publish future-dated documents; a 2026-03-24 publication date is impossible."
+  },
+  {
+   "id": "is-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 850,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Lagasafn is Iceland’s official consolidated legislation database; it does not “publish” statutes, and the 2026-09-01 date is impossible."
+  },
+  {
+   "id": "is-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 868,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No such regulation titled 'Reglugerð um flutning sauð- og geitfjár yfir varnarlínur' appears in Iceland’s official Reglugerðasafn as of 17 March 2024."
+  },
+  {
+   "id": "is-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 809,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '44/2024' cannot match a 2023 case number; the year in the citation must align with the identifier."
+  },
+  {
+   "id": "is-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 777,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Úrskurður nr. 28/2026 is an Icelandic administrative ruling, not a Norwegian Supreme Court decision."
+  },
+  {
+   "id": "is-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 926,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Greenland’s Nalunaarutit publishes Greenlandic—not Icelandic—legislation, so it cannot be the source of Iceland’s 2022 nr. 80 aviation law."
+  },
+  {
+   "id": "is-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 921,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No such regulation titled 'Reglugerð um ráðgjafanefnd um erfðabreyttar lífverur' appears in Iceland’s official Reglugerðasafn as of 2024-03-24."
+  }
+ ]
+}

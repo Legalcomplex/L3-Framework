@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Gambia — Source-Grounded Citation Reliability (GM)",
+ "country": "GM",
+ "jurisdiction": "Gambia",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:55:23.142445+00:00",
+ "results": [
+  {
+   "id": "gm-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 968,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited title and date do not match any official Central Bank of The Gambia guidelines or regulations; no such document appears in the Bank’s published legal sources."
+  },
+  {
+   "id": "gm-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 820,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Law Hub Gambia is a private legal database, not an official publisher of Gambian judgments."
+  },
+  {
+   "id": "gm-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 962,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No official Central Bank of The Gambia publication matches that exact title or date; the claimed source does not exist."
+  },
+  {
+   "id": "gm-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 628,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Law Hub Gambia did not exist in 2001; the publisher post-dates the reported decision, making the bibliographic claim impossible."
+  },
+  {
+   "id": "gm-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 891,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Central Bank of The Gambia did not publish any document titled 'CBG BILLS NOTICE JUNE 8, 2022' on 1 January 2022."
+  },
+  {
+   "id": "gm-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 779,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Law Hub Gambia is a private legal database, not an official publisher; the Women's Act 2010 was enacted and gazetted by The Gambia government."
+  },
+  {
+   "id": "gm-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 748,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The source is a Gambian Central Bank notice, not a Nigerian federal law; PLAC does not publish Gambian official gazettes."
+  },
+  {
+   "id": "gm-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 713,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Denton v Director-General NIA (2006) is a Gambian High Court decision, not a publication of Senegal’s Cour des Comptes."
+  },
+  {
+   "id": "gm-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 768,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Central Bank of Gambia (CBG) form is a Gambian national document, not a Malian legal code published by SGG."
+  },
+  {
+   "id": "gm-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 676,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The 2001 Sabally decision is a Gambian High Court case, not a Senegal Supreme Court ruling."
+  },
+  {
+   "id": "gm-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 864,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Benin LEGIS is a Benin-focused database; it cannot publish Gambian Central Bank notices."
+  },
+  {
+   "id": "gm-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1727,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Women's Act 2010 is Gambian legislation, not Guinean; DroitGuinéen is a Guinea-focused platform and cannot be its official publisher."
+  }
+ ]
+}

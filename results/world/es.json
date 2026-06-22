@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Spain — Source-Grounded Citation Reliability (ES)",
+ "country": "ES",
+ "jurisdiction": "Spain",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.6667,
+ "correct": 8,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:54:39.231160+00:00",
+ "results": [
+  {
+   "id": "es-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 861,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The cited order was indeed published in Spain’s official gazette (BOE) on 1 April 2020."
+  },
+  {
+   "id": "es-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 983,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No official AEPD source records a decision numbered PD-00310-2025 dated 2025-06-16; the date is still in the future."
+  },
+  {
+   "id": "es-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1094,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 4 February 2026 lies in the future, so no such resolution could have been published in BOJA."
+  },
+  {
+   "id": "es-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 864,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The resolution was officially published in the BOPV/EHAA on 20 December 2023, confirming the bibliographic claim."
+  },
+  {
+   "id": "es-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 928,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-02-17 is in the future, so the decree cannot have been published."
+  },
+  {
+   "id": "es-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 926,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The ECLI 'ECLI:ES:TC:2025:47A' indicates a 2025 decision, but the claimed date 26 May 2025 has not yet occurred."
+  },
+  {
+   "id": "es-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2065,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited order is a Spanish ministerial regulation, not a Portuguese parliamentary document."
+  },
+  {
+   "id": "es-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 854,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '00311' cannot correspond to 'PD-00310-2025', as the numeric suffixes differ and the claim is internally inconsistent."
+  },
+  {
+   "id": "es-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 860,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The source is a Spanish regional resolution, not Liechtenstein legislation; LILEX cannot publish official Spanish legal texts."
+  },
+  {
+   "id": "es-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 774,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The resolution is a Basque (Spanish) price-control act; the Gazzetta Ufficiale is Italy’s official gazette, so the publication claim is geographically impossible."
+  },
+  {
+   "id": "es-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 817,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decree is a Catalan/Spanish legal act; Isle of Man legislation cannot publish Spanish autonomous-community decrees."
+  },
+  {
+   "id": "es-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1021,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The ECLI 'ECLI:ES:TC:2025:49A' indicates decision 49/2025, not Auto 47/2025."
+  }
+ ]
+}

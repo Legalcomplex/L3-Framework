@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Cambodia — Source-Grounded Citation Reliability (KH)",
+ "country": "KH",
+ "jurisdiction": "Cambodia",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:56:44.664067+00:00",
+ "results": [
+  {
+   "id": "kh-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 927,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Juricaf is an international database, not an official Cambodian court publisher; the Constitutional Council itself is the authoritative source."
+  },
+  {
+   "id": "kh-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 909,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Law on Investment is an official Cambodian statute enacted by the National Assembly, not a publication of Husky & Partners."
+  },
+  {
+   "id": "kh-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 957,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The ECCC issued the 9 January 2007 accreditation decision for Me SAY Bory as KHIEU Samphan’s counsel."
+  },
+  {
+   "id": "kh-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 906,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Arbitration Council of Cambodia does not publish “Labor Decisions”; its awards are issued under the name “Arbitration Council Awards.”"
+  },
+  {
+   "id": "kh-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 902,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Juricaf is an international database, not an official Cambodian court publisher; the Conseil constitutionnel itself is the authoritative source."
+  },
+  {
+   "id": "kh-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 883,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No public evidence confirms that identifier 'husky-9974e5217bbd' in Husky & Partners’ library actually refers to Cambodia’s 2016 Law on Accounting and Auditing."
+  },
+  {
+   "id": "kh-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 783,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Constitutional Council of Cambodia, not Indonesia’s court, issued Decision 143/006/2008 on 19 July 2008."
+  },
+  {
+   "id": "kh-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1044,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No public evidence confirms that identifier 'husky-5b123abad0a2' in Husky & Partners’ library is the 2021 Investment Law."
+  },
+  {
+   "id": "kh-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 798,
+   "verdict": true,
+   "correct": false,
+   "raw": "True. The ECCC issued the 9 January 2006 decision accrediting Me SAY Bory as counsel for KHIEU Samphan."
+  },
+  {
+   "id": "kh-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 791,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Arbitration Council of Cambodia was established in 2003; no Decision 009/05 dated 22 March 2004 exists in its published labor decisions."
+  },
+  {
+   "id": "kh-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 847,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Cambodian Constitutional Council decision cannot be published by the Philippine Supreme Court E-Library, which only hosts Philippine jurisprudence."
+  },
+  {
+   "id": "kh-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 825,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No public records confirm that identifier 'husky-9974e5218bbd' in Husky & Partners’ library corresponds to Cambodia’s 2016 Law on Accounting and Auditing."
+  }
+ ]
+}

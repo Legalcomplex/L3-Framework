@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Maldives — Source-Grounded Citation Reliability (MV)",
+ "country": "MV",
+ "jurisdiction": "Maldives",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:58:22.858126+00:00",
+ "results": [
+  {
+   "id": "mv-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 967,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited law number 1/2026 cannot have been gazetted on 8 January 2026, as that date lies in the future."
+  },
+  {
+   "id": "mv-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 984,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Capital Market Development Authority of Maldives does not issue custodial-service regulations; such matters fall under the Ministry of Home Affairs or the Department of Penitentiary and Reh"
+  },
+  {
+   "id": "mv-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 995,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The claim is implausible: a 2025 law cannot amend a 2010 statute in a 2025 Gazette issue dated 1 December 2025."
+  },
+  {
+   "id": "mv-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1001,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such regulation was issued by the Capital Market Development Authority on 28 August 2011; the cited bibliographic claim is unsupported."
+  },
+  {
+   "id": "mv-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 958,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited law (25/2025) post-dates the stated 3 December 2025 Gazette; no such issue exists yet."
+  },
+  {
+   "id": "mv-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1306,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such amendment or publication date is verifiable; the Capital Market Development Authority of Maldives has not issued a documented \"First Amendment\" on that date."
+  },
+  {
+   "id": "mv-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 968,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited Maldivian statute cannot have been published in a Pakistan Laws Dataset on a future date."
+  },
+  {
+   "id": "mv-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 947,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Capital Market Development Authority of Maldives does not issue custodial-service regulations; such rules fall under the Ministry of Home Affairs or the Department of Penitentiary and Rehab"
+  },
+  {
+   "id": "mv-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1037,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Gazette of India (egazette.gov.in) publishes Indian federal laws, not Maldivian statutes such as “ޤާނޫނު ނަންބަރު 23/2025.”"
+  },
+  {
+   "id": "mv-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1000,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Capital Market Development Authority of Maldives did not exist in 2008; it was established in 2020, so the claimed 2008 publication is impossible."
+  },
+  {
+   "id": "mv-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 923,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited Act is a Maldivian statute; Sri Lanka’s Government Printing Department does not publish Maldives legislation."
+  },
+  {
+   "id": "mv-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 916,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No such amendment exists; the Capital Market Development Authority of Maldives has not published a \"First Amendment to the Regulation on Registration of Shariah Advisers\" on 27 January 2015."
+  }
+ ]
+}

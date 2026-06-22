@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — French Polynesia — Source-Grounded Citation Reliability (PF)",
+ "country": "PF",
+ "jurisdiction": "French Polynesia",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:59:05.039319+00:00",
+ "results": [
+  {
+   "id": "pf-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 830,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 16 April 2026 is in the future, so the arrêté cannot yet have been published."
+  },
+  {
+   "id": "pf-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 825,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 16 April 2026 is in the future, so the arrêté cannot yet have been published."
+  },
+  {
+   "id": "pf-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 862,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 16 April 2026 is in the future, so the arrêté cannot yet have been published."
+  },
+  {
+   "id": "pf-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 935,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 16 April 2026 is in the future, so the arrêté cannot have been published."
+  },
+  {
+   "id": "pf-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 929,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 16 April 2026 is in the future, so the arrêté cannot yet have been published."
+  },
+  {
+   "id": "pf-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 715,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 16 April 2026 is in the future, so the arrêté cannot yet have been published."
+  },
+  {
+   "id": "pf-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 798,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. French Polynesia is not under Nauru's RONLAW database; an arrêté dated 2026 cannot appear in a 2026-04-16 publication."
+  },
+  {
+   "id": "pf-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 789,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The source is a French Polynesian arrêté, not a Fijian law; laws.gov.fj cannot publish 2026-dated Polynesian legislation."
+  },
+  {
+   "id": "pf-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 917,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. French Polynesia is under French law; the Marshall Islands Judiciary cannot publish its official arrêtés."
+  },
+  {
+   "id": "pf-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 747,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. French Polynesia is a French overseas collectivity, not under Australian jurisdiction, so its arrêté cannot be published in Australia's Federal Register of Legislation."
+  },
+  {
+   "id": "pf-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 882,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. French Polynesia is a French overseas collectivity; its arrêtés are not published on the Solomon Islands Attorney General Legislation Portal."
+  },
+  {
+   "id": "pf-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 831,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. French Polynesia is a French overseas collectivity; its official legal sources are published by French authorities, not Tonga’s Attorney General."
+  }
+ ]
+}

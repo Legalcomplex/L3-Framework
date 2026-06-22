@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Thailand — Source-Grounded Citation Reliability (TH)",
+ "country": "TH",
+ "jurisdiction": "Thailand",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T16:00:50.556058+00:00",
+ "results": [
+  {
+   "id": "th-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1011,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited Royal Decree (No. 782) was actually published in the Royal Gazette on 2024-04-01, not 2024-03-21."
+  },
+  {
+   "id": "th-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1038,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Royal Gazette is published by Thailand’s government, not a Hugging Face OCR dataset."
+  },
+  {
+   "id": "th-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1089,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Thailand's SEC Enforcement does not publish \"Criminal Complaints\" decisions; such matters fall under criminal courts, not the SEC's administrative enforcement publications."
+  },
+  {
+   "id": "th-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 980,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited decision is dated 2025-11-21, which is a future date, so it cannot yet be an official published verdict."
+  },
+  {
+   "id": "th-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 896,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited ministerial regulation was actually published in the Royal Gazette on 2024-04-02, not 2024-03-29."
+  },
+  {
+   "id": "th-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1057,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Royal Gazette is an official Thai government publication; a Hugging Face OCR dataset cannot be its authoritative source."
+  },
+  {
+   "id": "th-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 806,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited Royal Decree is a Thai tax law, not a Cambodian source; Husky & Partners Cambodian Legal Library cannot be its official publisher."
+  },
+  {
+   "id": "th-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 949,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited Thai bankruptcy notice cannot originate from Indonesia’s JDIHN network; that platform publishes Indonesian, not Thai, legal sources."
+  },
+  {
+   "id": "th-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 873,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Thailand's SEC Enforcement does not publish \"Criminal Complaints\" decisions; such matters fall under criminal courts, not the SEC's administrative enforcement publications."
+  },
+  {
+   "id": "th-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 876,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Trade Competition Commission does not publish its verdicts under the imprint “Thailand Trade Competition Commission Verdicts”; the cited decision is an internal TCC document, not an officia"
+  },
+  {
+   "id": "th-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 853,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited ministerial regulation is dated 2567 BE (2024 CE), yet the claimed Royal Gazette publication date is 2022-03-29—chronologically impossible."
+  },
+  {
+   "id": "th-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1173,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Royal Gazette dataset on Hugging Face contains only issues published up to 2023-11-03, but case ล.9091/2568 is dated 2025, making the claim chronologically impossible."
+  }
+ ]
+}

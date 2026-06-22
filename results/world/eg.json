@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Egypt — Source-Grounded Citation Reliability (EG)",
+ "country": "EG",
+ "jurisdiction": "Egypt",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.6667,
+ "correct": 8,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:54:33.880663+00:00",
+ "results": [
+  {
+   "id": "eg-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 845,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The quoted text is a procedural order from an ordinary court, not a published decision of Egypt’s Supreme Constitutional Court."
+  },
+  {
+   "id": "eg-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 909,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The Supreme Constitutional Court of Egypt did issue Decision No. 37/19 JY on 30 December 2002 declaring Article 302(2) and related defamation provisions unconstitutional."
+  },
+  {
+   "id": "eg-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 832,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The Supreme Constitutional Court of Egypt issued this 2002 ruling declaring Articles 302, 303, 306, and 307 of the Penal Code unconstitutional."
+  },
+  {
+   "id": "eg-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1074,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The Supreme Constitutional Court of Egypt issued this 2010 ruling declaring Article 341 of the Penal Code and related procedural provisions unconstitutional."
+  },
+  {
+   "id": "eg-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 941,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Egypt's Supreme Constitutional Court did not issue a 26 April 2003 decision striking Articles 171, 302, 303 and 306 of the Penal Code."
+  },
+  {
+   "id": "eg-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 738,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The quoted petition text matches the style and format of filings before Egypt's Supreme Constitutional Court."
+  },
+  {
+   "id": "eg-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1240,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The quoted text is a procedural order from an ordinary court, not a published decision of Egypt’s Supreme Constitutional Court."
+  },
+  {
+   "id": "eg-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 829,
+   "verdict": true,
+   "correct": false,
+   "raw": "True. The Supreme Constitutional Court of Egypt did issue a ruling on 30 December 2000 declaring Article 302(2) and related defamation provisions unconstitutional."
+  },
+  {
+   "id": "eg-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 786,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decision concerns Egyptian Penal Code provisions and was issued by Egypt’s Supreme Constitutional Court, not Morocco’s Competition Council."
+  },
+  {
+   "id": "eg-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1008,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decision is an Egyptian Constitutional Court ruling on Egyptian Penal and Criminal Procedure Codes, not an Algerian Constitutional Court publication."
+  },
+  {
+   "id": "eg-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 919,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Egypt's Supreme Constitutional Court did not issue a 26 April 2004 decision striking Articles 171, 302, 303 and 306 of the Penal Code."
+  },
+  {
+   "id": "eg-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 963,
+   "verdict": true,
+   "correct": false,
+   "raw": "True. The quoted petition language matches the style of filings before Egypt’s Supreme Constitutional Court, and the 6 July 2009 date is consistent with its official publications."
+  }
+ ]
+}

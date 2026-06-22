@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — South Korea — Source-Grounded Citation Reliability (KR)",
+ "country": "KR",
+ "jurisdiction": "South Korea",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:57:00.427130+00:00",
+ "results": [
+  {
+   "id": "kr-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1195,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such statute exists; KLIC Open API returns only officially promulgated laws, so the cited title cannot be a valid 2024-07-02 entry."
+  },
+  {
+   "id": "kr-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 891,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier '2020누10650' is a case number, not a statutory source, so it cannot correspond to the cited legal provision."
+  },
+  {
+   "id": "kr-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1006,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier '2026제카0252' cannot refer to a 2026-02-23 decision, as that date lies in the future."
+  },
+  {
+   "id": "kr-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 954,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Korea Legislation Research Institute Open API does not publish statutes; it only provides access to already-official texts."
+  },
+  {
+   "id": "kr-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1128,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such statute exists; KLIC Open API cannot publish a nonexistent law."
+  },
+  {
+   "id": "kr-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 922,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier '2002후321' is a Supreme Court case number, not a CLIS collection entry for a '거절결정(상)' decision dated 2003-08-19."
+  },
+  {
+   "id": "kr-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 862,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No such statute exists; KLIC Open API cannot publish a non-existent law."
+  },
+  {
+   "id": "kr-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 878,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '2020누10651' is a case number, not a statutory source, so it cannot correspond to an official legal text in CLIS."
+  },
+  {
+   "id": "kr-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 709,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No such KFTC decision exists; the cited title and date do not match any official KFTC publication."
+  },
+  {
+   "id": "kr-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 647,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Hong Kong e-Legislation publishes Hong Kong ordinances, not South Korean statutes."
+  },
+  {
+   "id": "kr-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 824,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited statute is a South Korean law; Macau Legal Portal is not an official South Korean source."
+  },
+  {
+   "id": "kr-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 816,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '2002후322' is a Supreme Court case number, not a rejection decision from the Korean Intellectual Property Office."
+  }
+ ]
+}

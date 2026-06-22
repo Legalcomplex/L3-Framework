@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Lithuania — Source-Grounded Citation Reliability (LT)",
+ "country": "LT",
+ "jurisdiction": "Lithuania",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:57:28.118471+00:00",
+ "results": [
+  {
+   "id": "lt-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 998,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The TAR entry is an amendment order, not the original 2006 legal source itself."
+  },
+  {
+   "id": "lt-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1474,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The decision is a Lithuanian Constitutional Court ruling examining a presidential decree, confirming its official publication by Konstitucinis Teismas."
+  },
+  {
+   "id": "lt-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1004,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier 'BIK-514/2024' cannot correspond to a 2025-01-16 decision, as the case number's year (2024) precedes the stated decision date."
+  },
+  {
+   "id": "lt-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1044,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The 2019-03-08 publication date precedes the 2019-03-13 meeting, making the claimed publication date impossible."
+  },
+  {
+   "id": "lt-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1000,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited decision date (2026-04-02) is in the future, so it cannot yet exist as an official Lithuanian Competition Council publication."
+  },
+  {
+   "id": "lt-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 878,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The quoted title is a draft or project document, not an official legal act published in TAR on 2021-10-31."
+  },
+  {
+   "id": "lt-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 833,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited Lithuanian ministerial order cannot originate from Hungary’s Nemzeti Jogszabálytár, which publishes only Hungarian legislation."
+  },
+  {
+   "id": "lt-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 784,
+   "verdict": true,
+   "correct": false,
+   "raw": "True. The decision is a Lithuanian Constitutional Court ruling examining a presidential decree, confirming its official publication by Konstitucinis Teismas."
+  },
+  {
+   "id": "lt-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 815,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'BIK-514/2025' cannot match a 2024 case number, and the 2025-01-16 decision date precedes the stated year."
+  },
+  {
+   "id": "lt-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 958,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited Lithuanian parliamentary agenda cannot originate from Turkey’s Mevzuat Bilgi Sistemi, which publishes only Turkish legal acts."
+  },
+  {
+   "id": "lt-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 996,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Lithuanian Competition Council does not issue decisions titled “Atsisakyti pradėti tyrimą dėl…”; such phrasing indicates a prosecutor’s or police refusal-to-investigate order, not a competi"
+  },
+  {
+   "id": "lt-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 778,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The TAR database does not publish municipal project-partner selection orders under that exact title on 2024-10-31."
+  }
+ ]
+}

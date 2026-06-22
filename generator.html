@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sabaio S3 — Pack Generator</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;700&family=Manrope:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --bg: #272727; --surface: #2f2f2f; --surface-2: #353535; --border: #444240;
+    --text: #e8e4dd; --muted: #9a948a; --accent: #BAAC99; --accent-dim: #8a7f6e;
+    --true: #84B082; --false: #D08770; --radius: 14px;
+    font-family: 'Manrope', system-ui, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font-size: 15px; line-height: 1.5; }
+  h1, h2, h3 { font-family: 'Comfortaa', sans-serif; font-weight: 700; letter-spacing: .2px; }
+  code, .mono { font-family: 'Fira Code', monospace; }
+  a { color: var(--accent); }
+
+  .wrap { max-width: 760px; margin: 0 auto; padding: 28px 22px 80px; }
+  header { display: flex; align-items: center; gap: 16px; margin-bottom: 22px; }
+  .emblem { height: 46px; width: auto; flex: none; }
+  .lockup { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+  .parent { font-family: 'Comfortaa', sans-serif; font-weight: 500; font-size: 13px; color: var(--accent); letter-spacing: .3px; }
+  .title-row { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .product { font-family: 'Comfortaa', sans-serif; font-weight: 700; font-size: 22px; margin: 0; }
+  .product .a { color: var(--accent); }
+  .pill { font-size: 12px; text-transform: uppercase; letter-spacing: 1.5px; color: var(--bg); background: var(--accent); padding: 3px 10px; border-radius: 999px; font-weight: 700; }
+  .docs { font-size: 13px; font-weight: 600; text-decoration: none; border-bottom: 1px solid transparent; }
+  .docs:hover { border-bottom-color: var(--accent); }
+  .tagline { color: var(--muted); font-size: 14px; }
+
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; }
+  .card h2 { font-size: 15px; margin: 0 0 14px; color: var(--accent); text-transform: uppercase; letter-spacing: 1px; }
+  label { display: block; font-size: 12.5px; color: var(--muted); margin: 12px 0 5px; font-weight: 600; }
+  input, select { width: 100%; background: var(--surface-2); color: var(--text); border: 1px solid var(--border); border-radius: 9px; padding: 9px 11px; font-family: inherit; font-size: 14px; }
+  input:focus, select:focus { outline: none; border-color: var(--accent); }
+  .row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .checkbox { display: flex; align-items: center; gap: 8px; margin-top: 12px; cursor: pointer; }
+  .checkbox input { width: auto; }
+  button { font-family: 'Manrope', sans-serif; font-weight: 700; cursor: pointer; border: 1px solid var(--border); border-radius: 10px; padding: 10px 16px; background: var(--surface-2); color: var(--text); font-size: 14px; }
+  button.primary { background: var(--accent); color: #1d1d1d; border-color: var(--accent); width: 100%; padding: 12px; font-size: 15px; margin-top: 16px; }
+  button.primary:hover:not(:disabled) { background: #cdbfa9; }
+  button:disabled { opacity: .45; cursor: not-allowed; }
+  .hint { font-size: 12px; color: var(--muted); margin-top: 8px; line-height: 1.45; }
+
+  .trace-head { display: flex; align-items: center; gap: 9px; margin: 20px 0 9px; }
+  .trace-label { font-size: 11.5px; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 1px; }
+  .trace-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--muted); flex: none; }
+  .trace-dot.live { background: var(--true); animation: tpulse 1.1s ease-in-out infinite; }
+  @keyframes tpulse { 0%,100% { opacity: 1; } 50% { opacity: .25; } }
+  .trace { height: 320px; overflow-y: auto; background: #1d1d1d; color: #d6cfc2;
+           font-family: 'Fira Code', monospace; font-size: 12px; line-height: 1.55;
+           padding: 12px 14px; border-radius: 10px; white-space: pre-wrap; word-wrap: break-word;
+           border: 1px solid var(--border); }
+  .trace::-webkit-scrollbar { width: 8px; }
+  .trace::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+  .trace .ph { color: var(--muted); font-style: italic; }
+  .trace .ok { color: var(--true); } .trace .bad { color: var(--false); } .trace .meta { color: var(--muted); }
+
+  .result { margin-top: 16px; padding: 14px 16px; border-radius: 10px; background: rgba(132,176,130,.1); border: 1px solid #3a5141; display: none; font-size: 14px; }
+  .result.show { display: block; }
+  .result a { font-weight: 700; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img class="emblem" src="legalcomplex-emblem.png" alt="Legalcomplex emblem" />
+    <div class="lockup">
+      <span class="parent">Legalcomplex</span>
+      <div class="title-row">
+        <h1 class="product">Sabaio <span class="a">S3</span></h1>
+        <span class="pill">Pack generator</span>
+        <a class="docs" href="s3-runner.html">&larr;&nbsp;Runner</a>
+        <a class="docs" href="readme.html" target="_blank">Readme&nbsp;↗</a>
+      </div>
+      <span class="tagline">Build a popularity-gradient ECLI pack from live rechtspraak.nl data</span>
+    </div>
+  </header>
+
+  <div class="card">
+    <h2>Configuration</h2>
+    <div class="row2">
+      <div><label>Popular (landmarks)</label><input id="genPop" type="number" min="0" max="5" value="5" /></div>
+      <div><label>Obscure (sampled)</label><input id="genObs" type="number" min="0" max="40" value="12" /></div>
+    </div>
+    <div class="row2">
+      <div><label>Year from</label><input id="genYf" type="number" min="1960" max="2026" value="2015" /></div>
+      <div><label>Year to</label><input id="genYt" type="number" min="1960" max="2026" value="2024" /></div>
+    </div>
+    <label>Rechtsgebied (rechtspraak slug)</label>
+    <select id="genRg">
+      <option value="civielRecht">civielRecht</option>
+      <option value="civielRecht_ondernemingsrecht">civielRecht_ondernemingsrecht</option>
+      <option value="civielRecht_insolventierecht">civielRecht_insolventierecht</option>
+      <option value="civielRecht_arbeidsrecht">civielRecht_arbeidsrecht</option>
+      <option value="strafrecht">strafrecht</option>
+      <option value="bestuursrecht">bestuursrecht</option>
+    </select>
+    <label>Output filename (saved to packs/)</label>
+    <input id="genOut" value="nl-popularity-tiered.json" />
+    <label class="checkbox"><input id="genTwins" type="checkbox" checked /> Add wrong-topic False twins</label>
+    <button class="primary" id="genRun">⚙ Generate pack</button>
+    <div class="hint">Every ECLI is fetched live from rechtspraak.nl (a 404 is skipped, never fabricated).
+      Popular landmarks are saved <code>high</code>; obscure rulings get an auto-extracted candidate
+      topic and are saved <code>needs_check</code> — confirm before publishing. Requires
+      <code>serve_s3.py</code> running (not plain <code>http.server</code>).</div>
+
+    <div class="trace-head"><span class="trace-dot" id="genDot"></span><span class="trace-label">Generator output</span></div>
+    <div class="trace" id="genPanel"><span class="ph">Configure and click Generate to sample live HR rulings from rechtspraak.nl.</span></div>
+
+    <div class="result" id="genResult"></div>
+  </div>
+</div>
+
+<script>
+const $ = id => document.getElementById(id);
+function genWrite(cls, txt) {
+  const p = $("genPanel"); const ph = p.querySelector(".ph"); if (ph) ph.remove();
+  const e = document.createElement("span"); if (cls) e.className = cls; e.textContent = txt + "\n";
+  p.appendChild(e); p.scrollTop = p.scrollHeight;
+}
+$("genRun").onclick = () => {
+  const params = new URLSearchParams({
+    popular: $("genPop").value || "0", obscure: $("genObs").value || "0",
+    year_from: $("genYf").value || "2015", year_to: $("genYt").value || "2024",
+    rechtsgebied: $("genRg").value, false_twins: $("genTwins").checked ? "true" : "false",
+    seed: "7", out: ($("genOut").value || "nl-popularity-tiered.json").trim()
+  });
+  $("genPanel").innerHTML = ""; $("genResult").classList.remove("show");
+  $("genDot").classList.add("live"); $("genRun").disabled = true;
+  let finished = false;
+  const es = new EventSource("/api/generate?" + params.toString());
+  es.addEventListener("log", e => {
+    const m = JSON.parse(e.data), t = m.trimStart();
+    genWrite(t.startsWith("+") ? "ok" : (t.startsWith("-") || t.startsWith("!") ? "bad" : "meta"), m);
+  });
+  es.addEventListener("done", e => {
+    finished = true; const d = JSON.parse(e.data);
+    genWrite("ok", `\n✓ wrote ${d.file} — ${d.items} items (${d.high} high, ${d.needs_check} needs_check)`);
+    es.close(); $("genDot").classList.remove("live"); $("genRun").disabled = false;
+    const note = d.renamed
+      ? `<br><span style="color:var(--muted);font-size:12px">“${d.requested}” already existed — saved under a new name so packs stay unique.</span>`
+      : "";
+    $("genResult").innerHTML = `✓ Wrote <span class="mono">${d.file}</span> — ${d.items} items `
+      + `(${d.high} high, ${d.needs_check} needs_check). `
+      + `<a href="s3-runner.html?pack=${encodeURIComponent(d.file)}">▶ Open in the S3 runner</a>${note}`;
+    $("genResult").classList.add("show");
+  });
+  es.addEventListener("failed", e => {
+    finished = true; genWrite("bad", "✗ " + (e.data ? JSON.parse(e.data) : "generation failed"));
+    es.close(); $("genDot").classList.remove("live"); $("genRun").disabled = false;
+  });
+  es.onerror = () => {
+    if (finished) return;
+    genWrite("bad", "✗ connection lost — is serve_s3.py running? (plain http.server has no /api/generate endpoint)");
+    es.close(); $("genDot").classList.remove("live"); $("genRun").disabled = false;
+  };
+};
+</script>
+</body>
+</html>

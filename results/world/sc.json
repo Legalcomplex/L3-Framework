@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Seychelles — Source-Grounded Citation Reliability (SC)",
+ "country": "SC",
+ "jurisdiction": "Seychelles",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:59:53.684019+00:00",
+ "results": [
+  {
+   "id": "sc-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 882,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The claim references a 2026 Act published in 2026, which is impossible as the current date precedes 2026."
+  },
+  {
+   "id": "sc-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 911,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Seychelles Official Gazette issues are not dated 2025-01-01, and Act 24 of 2025 cannot yet exist."
+  },
+  {
+   "id": "sc-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 929,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Seychelles Official Gazette publications are not dated 2025-01-01; Act 20 of 2025 cannot yet exist."
+  },
+  {
+   "id": "sc-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 884,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Seychelles Official Gazette cannot have published an Act dated 2026 on 1 January 2026, as that date has not yet occurred."
+  },
+  {
+   "id": "sc-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 959,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Seychelles Official Gazette issues are not dated 2025-01-01; Act 21 of 2025 cannot yet exist."
+  },
+  {
+   "id": "sc-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 804,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Seychelles Official Gazette issues are not dated 2025-01-01, and Act 23 of 2025 cannot yet exist."
+  },
+  {
+   "id": "sc-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 844,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Kenya Law reports Kenyan statutes, not Seychelles legislation, so it cannot publish an official Seychelles Act."
+  },
+  {
+   "id": "sc-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 844,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Seychelles has no jurisdiction over Tanzanian legislation; the cited Act originates from Tanzania, not Seychelles."
+  },
+  {
+   "id": "sc-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 794,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Kenya Law reports Kenyan statutes; Seychelles legislation cannot be published by Kenya’s National Council for Law Reporting."
+  },
+  {
+   "id": "sc-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 763,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Seychelles legislation cannot be published by Tanzania’s Attorney General’s Office; the cited source is geographically and jurisdictionally implausible."
+  },
+  {
+   "id": "sc-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 868,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Kenya Law reports Kenyan statutes; Seychelles legislation cannot be officially published by Kenya’s National Council for Law Reporting."
+  },
+  {
+   "id": "sc-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 829,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Kenya Law reports Kenyan legislation; Seychelles statutes are published by the Seychelles National Printing Company, not Kenya Law."
+  }
+ ]
+}

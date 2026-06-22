@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Bolivia — Source-Grounded Citation Reliability (BO)",
+ "country": "BO",
+ "jurisdiction": "Bolivia",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.75,
+ "correct": 9,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:53:06.533888+00:00",
+ "results": [
+  {
+   "id": "bo-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 908,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 7 November 2025 lies in the future, so Ley Nº 1691 cannot yet have been published in the Gaceta Oficial."
+  },
+  {
+   "id": "bo-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1153,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The Tribunal Agroambiental is Bolivia’s national agrarian/environmental court, and its 2017 decisions are officially cited as “SAN-S1-0001-2017.”"
+  },
+  {
+   "id": "bo-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 903,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 7 November 2025 is in the future, so Ley Nº 1694 cannot yet have been published."
+  },
+  {
+   "id": "bo-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 978,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The Tribunal Agroambiental is Bolivia’s national agrarian/environmental court, and its 2017 decisions are officially cited as SAN-S1-0010-2017."
+  },
+  {
+   "id": "bo-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 939,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 7 November 2025 lies in the future, so Ley Nº 1688 cannot yet have been published in the Gaceta Oficial."
+  },
+  {
+   "id": "bo-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 925,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The Tribunal Agroambiental is Bolivia’s national agrarian/environmental court, and its 2017 decisions are officially cited as “SAN-S1-00xx-2017.”"
+  },
+  {
+   "id": "bo-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 813,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Ley Nº 1691 is a Bolivian national statute; it cannot be published in Brazil’s municipal gazettes."
+  },
+  {
+   "id": "bo-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 852,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The decision is a Bolivian agro-environmental ruling, not a Peruvian OSCE procurement resolution."
+  },
+  {
+   "id": "bo-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 806,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Bolivia’s Ley Nº 1694 cannot have been published on 7 November 2025 by Brazil’s Planalto/REFLEGIS, which only publishes Brazilian federal law."
+  },
+  {
+   "id": "bo-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 763,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The decision is a Bolivian agro-environmental ruling, not a Colombian disciplinary one; the publisher attribution is incorrect."
+  },
+  {
+   "id": "bo-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 816,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The date 7 November 2025 is in the future, so the law cannot yet have been published via any 2025-11-12 API."
+  },
+  {
+   "id": "bo-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 752,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decision is a Bolivian agro-environmental ruling, not a Peruvian INDECOPI competition/IP resolution."
+  }
+ ]
+}

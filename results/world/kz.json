@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Kazakhstan — Source-Grounded Citation Reliability (KZ)",
+ "country": "KZ",
+ "jurisdiction": "Kazakhstan",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:57:05.533273+00:00",
+ "results": [
+  {
+   "id": "kz-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1164,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The claimed publication date (2026-03-18) is impossible because the referenced decision is dated December 2025, making a later 2026 publication chronologically inconsistent."
+  },
+  {
+   "id": "kz-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 853,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The AIFC Court did not issue a decision dated 2026-04-30; that future date makes the bibliographic claim chronologically impossible."
+  },
+  {
+   "id": "kz-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 943,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Constitutional Court of Kazakhstan was abolished in 1995; no such 2026 decision exists."
+  },
+  {
+   "id": "kz-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 922,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The source is a government legal database (Adilet), not a National Bank regulation, and the 2026 date is impossible."
+  },
+  {
+   "id": "kz-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 919,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The claimed publication date (2026-03-18) precedes the referenced 18 December 2025 decision, making the chronology impossible."
+  },
+  {
+   "id": "kz-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 959,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier 'AIFC-C/CFI/2026/0007' cannot refer to a 2026-03-31 judgment because that date lies in the future."
+  },
+  {
+   "id": "kz-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 834,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The source is Lex.uz (Uzbekistan), yet the cited act is a Kazakh district maslikhat decision, making the bibliographic attribution geographically and jurisdictionally impossible."
+  },
+  {
+   "id": "kz-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 814,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier mixes two distinct case numbers (0020 and 0025) and lists a 2026 date for a 2025-filed AIFC case, making the bibliographic claim internally inconsistent."
+  },
+  {
+   "id": "kz-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 753,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Constitutional Court of Kazakhstan was established in 2023; no such decision could exist on 30 April 2023 under that publisher."
+  },
+  {
+   "id": "kz-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 939,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The source is a government legal database (Adilet), not a National Bank regulation; the claim misattributes the publisher and legal nature."
+  },
+  {
+   "id": "kz-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 714,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Lex.uz is Uzbekistan’s official database; it cannot publish Kazakhstan’s Atbasar district maslikhat decisions."
+  },
+  {
+   "id": "kz-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 875,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'AIFC-C/CFI/2026/0008' cannot refer to a 31 March 2026 judgment because that date lies in the future."
+  }
+ ]
+}

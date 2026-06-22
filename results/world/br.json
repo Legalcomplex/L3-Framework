@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Brazil — Source-Grounded Citation Reliability (BR)",
+ "country": "BR",
+ "jurisdiction": "Brazil",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:53:11.967618+00:00",
+ "results": [
+  {
+   "id": "br-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 991,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The claim is impossible: PL 1828/2026 cannot have been published on 2026-04-14 because that date is in the future."
+  },
+  {
+   "id": "br-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 877,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Lei nº 15.380 cannot have been published on 06/04/2026; that date is in the future and no such law exists."
+  },
+  {
+   "id": "br-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 872,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-03-21 is in the future, so this edition cannot have been published."
+  },
+  {
+   "id": "br-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1248,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The decision date (2026-03-25) is in the future, so the claim cannot be true."
+  },
+  {
+   "id": "br-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1239,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Resolution 784 was published on 8 November 2024, not 7 November 2025; the future date is impossible."
+  },
+  {
+   "id": "br-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 831,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The claim accurately identifies RN 216/2010 as an official normative resolution issued by Brazil’s Agência Nacional de Saúde Suplementar on 14 April 2010."
+  },
+  {
+   "id": "br-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 827,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. PL 1828/2026 is a Brazilian bill, not a Colombian Senate law; the cited source is implausible."
+  },
+  {
+   "id": "br-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 710,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The date 06/04/2026 is in the future, so no such law can have been published."
+  },
+  {
+   "id": "br-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 735,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Diário Oficial de Mogi Guaçu is a Brazilian municipal gazette; it cannot be published via Uruguay’s IMPO Open Data JSON API."
+  },
+  {
+   "id": "br-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 956,
+   "verdict": true,
+   "correct": false,
+   "raw": "True. The TST (Tribunal Superior do Trabalho) is Brazil’s highest labor court and routinely publishes “Acórdão – AIRR” decisions, including the cited 2024-03-25 ruling."
+  },
+  {
+   "id": "br-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 823,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Anatel Resolution 784 is a Brazilian telecommunications regulation, not an Argentine BCRA communication."
+  },
+  {
+   "id": "br-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 817,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. RN 216/2010 is a Brazilian ANS resolution; Chile’s BCN Linked Open Data cannot be its official publication source."
+  }
+ ]
+}

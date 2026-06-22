@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Monaco — Source-Grounded Citation Reliability (MC)",
+ "country": "MC",
+ "jurisdiction": "Monaco",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:57:40.561518+00:00",
+ "results": [
+  {
+   "id": "mc-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 931,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited judgment is dated 5 March 2026, a future date, so it cannot have been published."
+  },
+  {
+   "id": "mc-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 852,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 21 January 2026 lies in the future, so the cited decision cannot yet have been published."
+  },
+  {
+   "id": "mc-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 955,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier cites a 9 April 2026 decision, but today is before that date, so the record cannot yet exist."
+  },
+  {
+   "id": "mc-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 806,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 21 January 2026 is in the future, so the ordinance cannot yet have been published."
+  },
+  {
+   "id": "mc-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 894,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited decision date (20 February 2026) is in the future, so the bibliographic claim cannot be true."
+  },
+  {
+   "id": "mc-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 750,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 21 January 2026 lies in the future, so the ordinance cannot yet have been published."
+  },
+  {
+   "id": "mc-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 774,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier references a 5 March 2026 judgment, which is a future date and cannot yet exist in Juricaf."
+  },
+  {
+   "id": "mc-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 710,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. A Monaco sovereign decision cannot be published by UK Legislation; the 2026 date is also impossible."
+  },
+  {
+   "id": "mc-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 860,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier contains '20260409' (April 9, 2026), but Monaco’s Tribunal Suprême cannot issue a 2026 decision in 2024."
+  },
+  {
+   "id": "mc-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 888,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Monaco issues sovereign ordinances via its Journal de Monaco, not Portugal’s Diário da República."
+  },
+  {
+   "id": "mc-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 797,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited Tribunal Suprême decision post-dates 2025, yet the Irish Tax Appeals Commission cannot publish Monégasque rulings."
+  },
+  {
+   "id": "mc-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 769,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The source is a Monegasque sovereign ordinance, not a UK statute, so it cannot be published via UK Legislation."
+  }
+ ]
+}

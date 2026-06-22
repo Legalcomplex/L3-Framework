@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Angola — Source-Grounded Citation Reliability (AO)",
+ "country": "AO",
+ "jurisdiction": "Angola",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:52:14.412893+00:00",
+ "results": [
+  {
+   "id": "ao-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 990,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The claim misstates the source: AngoLEX is not an official publisher; the authentic text appears in the official *Diário da República*."
+  },
+  {
+   "id": "ao-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 967,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Lex.ao is a private aggregator, not an official publisher; the claim misattributes the source of the official Angolan regulatory text."
+  },
+  {
+   "id": "ao-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 830,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier '1076/2026' cannot refer to a 2026 decision because the current year is 2024."
+  },
+  {
+   "id": "ao-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 863,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-04-17 is in the future, so the decision cannot yet have been published by the Tribunal Supremo."
+  },
+  {
+   "id": "ao-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1087,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The claim misstates the source: AngoLEX is not the official publisher; the Código Penal (Lei n.º 38/20) was officially promulgated in Angola’s Diário da República."
+  },
+  {
+   "id": "ao-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1067,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Lex.ao is a private aggregator, not the official gazette; the claim misattributes publication authority."
+  },
+  {
+   "id": "ao-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1161,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Lei n.º 8/22 was published 14 April 2022; the 2023-04-14 AngoLEX entry is merely a later digital upload, not the official publication date."
+  },
+  {
+   "id": "ao-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 613,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Lex.ao is a private aggregator, not the official Angolan gazette; the cited Norma was published in the Diário da República."
+  },
+  {
+   "id": "ao-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 837,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '1076/2027' cannot match a 2026 decision; the year in the citation must align with the decision date."
+  },
+  {
+   "id": "ao-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 787,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The date 2026-04-17 is impossible; no Angolan Supreme Court decision can pre-date today."
+  },
+  {
+   "id": "ao-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 818,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Código Penal (Lei n.º 38/20) is an Angolan statute; it was not published by Cameroon Official Acts."
+  },
+  {
+   "id": "ao-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1082,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited source is a Congolese (DRC) portal, not an Angolan official gazette, so it cannot publish Angolan “Norma Regulamentar n.º 3/23”."
+  }
+ ]
+}

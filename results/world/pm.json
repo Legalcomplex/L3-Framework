@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Saint Pierre and Miquelon — Source-Grounded Citation Reliability (PM)",
+ "country": "PM",
+ "jurisdiction": "Saint Pierre and Miquelon",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:59:17.835900+00:00",
+ "results": [
+  {
+   "id": "pm-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 916,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Saint Pierre and Miquelon’s Journal Officiel has not issued any 2026 publications; the cited date is impossible."
+  },
+  {
+   "id": "pm-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 834,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-04-07 is in the future, so the claimed publication cannot yet exist."
+  },
+  {
+   "id": "pm-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 929,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Saint Pierre and Miquelon’s Journal Officiel cannot publish a 2026 decision in 2026-04-13; the date is impossible."
+  },
+  {
+   "id": "pm-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 810,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-04-07 is in the future, so the claimed publication cannot yet exist."
+  },
+  {
+   "id": "pm-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1049,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Saint Pierre and Miquelon’s Journal Officiel has not yet published any 9 April 2026 issues, making the claimed bibliographic entry impossible."
+  },
+  {
+   "id": "pm-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 887,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Saint Pierre and Miquelon’s Journal Officiel has not issued any 13 April 2026 edition, making the claimed publication date impossible."
+  },
+  {
+   "id": "pm-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 790,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Saint Pierre and Miquelon is a French overseas collectivity; its official procurement notices are not published by Washington State Legislative Web Services."
+  },
+  {
+   "id": "pm-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 752,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Saint Pierre and Miquelon is a French overseas collectivity, not under Canada’s Federal Laws/Justice Laws Website."
+  },
+  {
+   "id": "pm-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 700,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Saint Pierre and Miquelon is a French overseas collectivity; its official legal sources are French, not the US Code."
+  },
+  {
+   "id": "pm-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 733,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Saint Pierre and Miquelon is a French overseas collectivity; its official legal sources are not published on bclaws.gov.bc.ca, a Canadian provincial site."
+  },
+  {
+   "id": "pm-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 822,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Saint Pierre and Miquelon has no Journal Officiel; its official gazette is the Journal Officiel de la République française."
+  },
+  {
+   "id": "pm-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 913,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Saint Pierre and Miquelon’s official gazette is the Journal Officiel de Saint-Pierre-et-Miquelon; the cited notice’s wording and date are unverifiable and therefore the bibliographic claim cann"
+  }
+ ]
+}

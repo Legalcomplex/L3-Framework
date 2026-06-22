@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Rwanda — Source-Grounded Citation Reliability (RW)",
+ "country": "RW",
+ "jurisdiction": "Rwanda",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:59:45.702601+00:00",
+ "results": [
+  {
+   "id": "rw-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 944,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 06/03/2026 is in the future, so the law cannot yet have been published."
+  },
+  {
+   "id": "rw-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 926,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No official BNR source records “Guidelines N° 4230/2023-00034[616] of 05/06/2023”; the cited title and date do not exist in published regulations."
+  },
+  {
+   "id": "rw-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 920,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No official Rwandan court publication exists under that name, and the cited 2025 decision date is still in the future."
+  },
+  {
+   "id": "rw-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 917,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No official Rwandan source confirms a 'Capital Market Corporate Governance Code-2024' published by the Capital Market Authority on 2024-10-02."
+  },
+  {
+   "id": "rw-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 913,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such RURA regulation titled 'Regulation Governing Motorcycle Public Transport Services in Rwanda' dated 28 May 2024 appears in official RURA publications."
+  },
+  {
+   "id": "rw-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 928,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 12/01/2026 is in the future, so the regulation cannot have been published on 16 January 2026."
+  },
+  {
+   "id": "rw-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 922,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Kenya Law reports Kenyan statutes, not Rwandan laws; a Rwandan statute cannot be officially published by Kenya’s National Council for Law Reporting."
+  },
+  {
+   "id": "rw-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1024,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited “Guidelines N° 4230/2023-00034[616]” post-dates the 31 July 2022 Financial Regulations, so it cannot have been published via that source."
+  },
+  {
+   "id": "rw-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1054,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Rwanda Courts Decisions is not an official publisher of Rwandan judicial decisions; official sources are the Ministry of Justice or the judiciary’s official gazette."
+  },
+  {
+   "id": "rw-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 892,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Capital Market Corporate Governance Code-2024 is a Tanzanian instrument; Rwanda’s jurisdiction cannot be sourced from Tanzania’s Attorney General’s Office."
+  },
+  {
+   "id": "rw-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 818,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No such RURA regulation titled 'Regulation Governing Motorcycle Public Transport Services in Rwanda' dated 28 May 2023 appears in official RURA publications."
+  },
+  {
+   "id": "rw-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 822,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Rwanda’s CMA issues regulations under Rwandan law; Seychelles Official Gazette cannot publish them."
+  }
+ ]
+}

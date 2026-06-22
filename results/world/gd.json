@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Grenada — Source-Grounded Citation Reliability (GD)",
+ "country": "GD",
+ "jurisdiction": "Grenada",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:55:04.915030+00:00",
+ "results": [
+  {
+   "id": "gd-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 899,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 10 April 2026 lies in the future, so the cited 2026 Gazette cannot yet have been published."
+  },
+  {
+   "id": "gd-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1159,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The claimed date (March 11, 2026) precedes the stated publication date (March 13, 2026), which is chronologically impossible."
+  },
+  {
+   "id": "gd-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 920,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 29 May 2026 lies in the future, so no such Gazette issue can yet have been published."
+  },
+  {
+   "id": "gd-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 931,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The claimed publication date (20 March 2026) precedes the stated identifier date (11 April 2026), making the bibliographic correspondence chronologically impossible."
+  },
+  {
+   "id": "gd-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 928,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 30 April 2026 lies in the future, so the claimed 2026 gazette cannot yet have been published."
+  },
+  {
+   "id": "gd-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 731,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier's date (27 March 2026) precedes the claimed publication date (11 April 2026), making the bibliographic claim internally inconsistent."
+  },
+  {
+   "id": "gd-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 806,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Grenada has no connection to Bahamas Consolidated Legislation; the cited source is not an official Grenada legal publication."
+  },
+  {
+   "id": "gd-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 813,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier's date (2027-03-11) conflicts with the claimed publication date (2026-03-13), making the bibliographic claim internally inconsistent."
+  },
+  {
+   "id": "gd-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 818,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Grenada has no connection to Bermuda Laws Online, and the 2026 date is impossible for a current claim."
+  },
+  {
+   "id": "gd-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 766,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier's date (20 March 2026) precedes the claimed publication date (11 April 2026), making the bibliographic claim internally inconsistent."
+  },
+  {
+   "id": "gd-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 921,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Grenada has no connection to Curaçao Government Legislation, and the 2026 date is impossible for a current bibliographic claim."
+  },
+  {
+   "id": "gd-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 828,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited source is a Grenada Gazette, not Cayman Islands Legislation, so the bibliographic claim is incorrect."
+  }
+ ]
+}

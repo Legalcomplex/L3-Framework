@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Slovenia — Source-Grounded Citation Reliability (SI)",
+ "country": "SI",
+ "jurisdiction": "Slovenia",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.6667,
+ "correct": 8,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T16:00:07.379358+00:00",
+ "results": [
+  {
+   "id": "si-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1066,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited title is a draft or amendment bill, not an official consolidated act published by PISRS on 2018-05-04."
+  },
+  {
+   "id": "si-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 945,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The decision date (2025-11-26) is in the future, so this UPRS judgment cannot yet exist or be published."
+  },
+  {
+   "id": "si-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1062,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The ECLI 'ECLI:SI:VSRS:2009:II.IPS.360.2009' correctly matches the Slovenian Supreme Court judgment 'Sodba II Ips 360/2009' dated 8 July 2009."
+  },
+  {
+   "id": "si-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 932,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Act was published in the Official Gazette of the Republic of Slovenia (Uradni list RS), not via PISRS, which is only a database."
+  },
+  {
+   "id": "si-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 896,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The decision date (2026-01-12) is in the future, so it cannot yet be published."
+  },
+  {
+   "id": "si-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1408,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The ECLI 'ECLI:SI:VSRS:2009:X.IPS.216.2009' correctly identifies the Slovenian Supreme Court decision 'Sklep X Ips 216/2009' dated 9 July 2009."
+  },
+  {
+   "id": "si-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 874,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited title is a draft or amendment bill, not an official consolidated act published by PISRS on 2016-05-04."
+  },
+  {
+   "id": "si-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 954,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The ECLI identifier ends in '.16' but the cited judgment number ends in '-15', indicating a mismatch in the official court reference."
+  },
+  {
+   "id": "si-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1007,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The ECLI 'ECLI:SI:VSRS:2009:II.IPS.360.2010' indicates a 2010 decision, not the 2009 judgment 'Sodba II Ips 360/2009'."
+  },
+  {
+   "id": "si-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 837,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Bulgarian State Gazette publishes Bulgarian laws; Slovenian legislation appears in Slovenia’s Official Gazette (Uradni list RS)."
+  },
+  {
+   "id": "si-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 824,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Slovenian Administrative Court does not publish decisions under the prefix \"UPRS Sklep I U 1571/2025-\"."
+  },
+  {
+   "id": "si-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 832,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Sklep X Ips 216/2009 is a Slovenian Supreme Court decision, not a Georgian Constitutional Court publication."
+  }
+ ]
+}

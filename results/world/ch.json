@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Switzerland — Source-Grounded Citation Reliability (CH)",
+ "country": "CH",
+ "jurisdiction": "Switzerland",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:53:34.801719+00:00",
+ "results": [
+  {
+   "id": "ch-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 817,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The decision date 07.01.2026 lies in the future, so no such published judgment can exist."
+  },
+  {
+   "id": "ch-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 874,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Fedlex publishes Swiss federal legislation, not Tribunal administratif fédéral rulings; the cited date is also in the future."
+  },
+  {
+   "id": "ch-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 861,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. SAR 301.112 is the Verordnung über die Patientendokumentation, not the pilot-project ordinance."
+  },
+  {
+   "id": "ch-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 872,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited title is a cantonal enforcement ordinance, not an official federal source; BSG is Bern’s compilation, not a federal publication."
+  },
+  {
+   "id": "ch-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 876,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited title is a cantonal statute, not an official publication; it cannot be “published via” the Gesetzessammlung, which is the compilation that contains it."
+  },
+  {
+   "id": "ch-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 804,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier '2023/A/9438' is a CAS case number, not a Swiss court decision, so it cannot be an official Swiss legal source."
+  },
+  {
+   "id": "ch-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 728,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The decision is from a Swiss district court, not Portuguese Courts of Appeal, so DGSI cannot be its publisher."
+  },
+  {
+   "id": "ch-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 881,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Fedlex publishes federal statutes and ordinances, not individual Tribunal administratif fédéral rulings; court decisions appear on its own site or in official collections."
+  },
+  {
+   "id": "ch-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 860,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 301.115 in SAR Aargau corresponds to the 'Verordnung über die Patientendokumentation', not the pilot-project health-care ordinance."
+  },
+  {
+   "id": "ch-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 987,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. BSG 832.522 is the Verordnung über die Arbeits- und Ruhezeit der berufsmässigen Motorfahrzeugführer (ARMV), not the 1983 ordinance on enforcement of the federal regulation."
+  },
+  {
+   "id": "ch-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 864,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited title is a cantonal statute, not an official publication channel; the Gesetzessammlung (SG) is the compilation where it appears, not its publisher."
+  },
+  {
+   "id": "ch-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 836,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Decision 2023/A/9438 is a CAS arbitration award, not a German court ruling, so it cannot be published by Germany’s NeuRIS portal."
+  }
+ ]
+}

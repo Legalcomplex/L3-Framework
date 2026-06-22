@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Singapore — Source-Grounded Citation Reliability (SG)",
+ "country": "SG",
+ "jurisdiction": "Singapore",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T16:00:01.710861+00:00",
+ "results": [
+  {
+   "id": "sg-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 880,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Singapore Competition & Consumer Commission (CCCS) was established in 2016; in 2014 the authority was the Competition Commission of Singapore (CCS)."
+  },
+  {
+   "id": "sg-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 849,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Singapore International Commercial Court has not issued any decision in 2026, as that date is in the future."
+  },
+  {
+   "id": "sg-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 948,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Agency for Science, Technology and Research Act was enacted in 2001, not 1990; the 1990 date and title are incorrect."
+  },
+  {
+   "id": "sg-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 898,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such decision exists; the date 2026-03-19 is in the future, so it cannot be published."
+  },
+  {
+   "id": "sg-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 923,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. CCCS is the Competition and Consumer Commission of Singapore; the claimed “Singapore Competition & Consumer Commission” is not its official name."
+  },
+  {
+   "id": "sg-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 949,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The Singapore International Commercial Court (SICC) is the publishing court for its own decisions, including [2025] SGHC(I) 22."
+  },
+  {
+   "id": "sg-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 726,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Singapore Competition & Consumer Commission (CCCS) was established in 2018; in 2012 the authority was the Competition Commission of Singapore (CCS)."
+  },
+  {
+   "id": "sg-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 836,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decision is from Singapore’s International Judge, not Indonesia’s Constitutional Court."
+  },
+  {
+   "id": "sg-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 881,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Agency for Science, Technology and Research Act is a Singapore statute; Thu Vien Phap Luat is a Vietnamese legal database, so it cannot be the official Singapore source."
+  },
+  {
+   "id": "sg-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 871,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Singapore eLitigation does not publish judgments; official sources are the Singapore Law Reports or judiciary.gov.sg."
+  },
+  {
+   "id": "sg-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1020,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Competition and Consumer Commission of Singapore (CCCS) is the correct name; “Singapore Competition & Consumer Commission” is not its official title."
+  },
+  {
+   "id": "sg-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 771,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The decision is a Singapore International Commercial Court judgment, not a Philippine Supreme Court case, so it cannot be published by the Philippine Reports."
+  }
+ ]
+}

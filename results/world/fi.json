@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Finland — Source-Grounded Citation Reliability (FI)",
+ "country": "FI",
+ "jurisdiction": "Finland",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:54:47.097628+00:00",
+ "results": [
+  {
+   "id": "fi-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 803,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such decree exists; Finlex shows no 2025 national support regulation for southern Finland published on that date."
+  },
+  {
+   "id": "fi-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 876,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The claim misstates the source; Finlex Open Data (Linked Data) is not an official publisher of Finnish regulations."
+  },
+  {
+   "id": "fi-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 915,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited title is a government bill (HE), not an official legal source; only enacted statutes published in the Statutes of Finland qualify as such."
+  },
+  {
+   "id": "fi-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 868,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Hämeenlinnan hallinto-oikeus is a Finnish administrative court, not the publisher; Finlex merely hosts the decision."
+  },
+  {
+   "id": "fi-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 909,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such decision exists; Finlex Open Data does not publish a “Helsingin hovioikeus 103699/2025” dated 2025-04-09."
+  },
+  {
+   "id": "fi-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 725,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier '12/2026' cannot refer to a 20 January 2026 decision, as that date lies in the future."
+  },
+  {
+   "id": "fi-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 821,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Denmark’s Retsinformation only publishes Danish legislation; a Finnish government decree cannot appear there."
+  },
+  {
+   "id": "fi-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 677,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The claim misstates the source; Finlex Open Data (Linked Data) is not an official Finnish legal publisher."
+  },
+  {
+   "id": "fi-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1787,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Finnish Parliament (Eduskunta) does not publish government bills; they are issued by the Government (Valtioneuvosto)."
+  },
+  {
+   "id": "fi-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 827,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '463/2026' cannot match a 2025 decision; the year in the citation must align with the decision date."
+  },
+  {
+   "id": "fi-src-f05",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 844,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '103699/2026' cannot correspond to a 2025 decision; the year in the identifier must match the decision year."
+  },
+  {
+   "id": "fi-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 692,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. MAO:12/2026 is a Finnish Market Court decision, not a Danish one, so it cannot be published by Denmark’s Domsdatabasen."
+  }
+ ]
+}

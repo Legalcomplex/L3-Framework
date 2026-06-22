@@ -1,0 +1,126 @@
+{
+  "_doc": "Sample S3 test pack for Dutch civil and criminal law. 12 items, 6 True / 6 False — the 50/50 mix prevents 'always answer False' gaming. Load into app.py via the test-editor's JSON-import button. Schema is descriptive — adapt fields if app.py expects different keys.",
+  "name": "S3 Sample — Dutch Law (BW, Sr, Gw, AVG)",
+  "jurisdiction": "Dutch Law",
+  "version": "0.1",
+  "prompt_template": "In [Jurisdiction], is '[Code name] [Reference type] [Number]' the correct reference for '[Subject - Topic]'? Answer True/False with a 20-word explanation as to why.",
+  "tests": [
+    {
+      "id": 1,
+      "jurisdiction": "Dutch Law",
+      "code": "Burgerlijk Wetboek",
+      "reference": "Boek 6 artikel 74",
+      "topic": "Tekortkoming in de nakoming",
+      "expected": true,
+      "rationale": "BW 6:74 is the foundational article on toerekenbare tekortkoming (attributable failure to perform) — the basis for damages claims for breach of contract."
+    },
+    {
+      "id": 2,
+      "jurisdiction": "Dutch Law",
+      "code": "Burgerlijk Wetboek",
+      "reference": "Boek 7 artikel 610",
+      "topic": "Arbeidsovereenkomst",
+      "expected": true,
+      "rationale": "BW 7:610 is the statutory definition of arbeidsovereenkomst (employment contract): work, wage, in service of, for a period of time."
+    },
+    {
+      "id": 3,
+      "jurisdiction": "Dutch Law",
+      "code": "Burgerlijk Wetboek",
+      "reference": "Boek 3 artikel 84",
+      "topic": "Levering",
+      "expected": true,
+      "rationale": "BW 3:84 lists the three requirements for valid transfer of property: valid title, transfer act, and authority to dispose."
+    },
+    {
+      "id": 4,
+      "jurisdiction": "Dutch Law",
+      "code": "Wetboek van Strafrecht",
+      "reference": "artikel 310",
+      "topic": "Diefstal",
+      "expected": true,
+      "rationale": "Sr 310 defines theft: 'Hij die enig goed dat geheel of ten dele aan een ander toebehoort wegneemt met het oogmerk om het zich wederrechtelijk toe te eigenen.'"
+    },
+    {
+      "id": 5,
+      "jurisdiction": "Dutch Law",
+      "code": "Wetboek van Strafrecht",
+      "reference": "artikel 287",
+      "topic": "Doodslag",
+      "expected": true,
+      "rationale": "Sr 287 defines manslaughter (doodslag): intentionally taking another's life, distinct from premeditated murder (moord, Sr 289)."
+    },
+    {
+      "id": 6,
+      "jurisdiction": "Dutch Law",
+      "code": "Grondwet",
+      "reference": "artikel 1",
+      "topic": "Gelijkheidsbeginsel",
+      "expected": true,
+      "rationale": "Gw 1 is the equal-treatment clause: equal cases shall be treated equally; discrimination on enumerated grounds prohibited."
+    },
+    {
+      "id": 7,
+      "jurisdiction": "Dutch Law",
+      "code": "Burgerlijk Wetboek",
+      "reference": "Boek 7 artikel 675",
+      "topic": "Tekortkoming in de nakoming",
+      "expected": false,
+      "rationale": "WRONG. Tekortkoming in de nakoming (doctrinally 'wanprestatie') is governed by BW 6:74 (general law of obligations). Boek 7 contains specific contracts; 7:675 is in the employment chapter."
+    },
+    {
+      "id": 8,
+      "jurisdiction": "Dutch Law",
+      "code": "Wetboek van Strafrecht",
+      "reference": "artikel 100",
+      "topic": "Diefstal",
+      "expected": false,
+      "rationale": "WRONG. Theft is Sr 310. Sr 100-series articles concern offenses against state security, not property crimes."
+    },
+    {
+      "id": 9,
+      "jurisdiction": "Dutch Law",
+      "code": "Burgerlijk Wetboek",
+      "reference": "Boek 12 artikel 5",
+      "topic": "Eigendomsrecht",
+      "expected": false,
+      "rationale": "WRONG. Boek 12 of the BW does not exist. Eigendom (ownership) is regulated in Boek 5 (zakelijke rechten)."
+    },
+    {
+      "id": 10,
+      "jurisdiction": "Dutch Law",
+      "code": "Grondwet",
+      "reference": "artikel 250",
+      "topic": "Gelijkheidsbeginsel",
+      "expected": false,
+      "rationale": "WRONG. The Grondwet has ~140 articles; there is no article 250. Equality is in Gw 1."
+    },
+    {
+      "id": 11,
+      "jurisdiction": "EU Law (applicable in NL)",
+      "code": "Algemene Verordening Gegevensbescherming (GDPR)",
+      "reference": "artikel 99",
+      "topic": "Toestemming voor verwerking persoonsgegevens",
+      "expected": false,
+      "rationale": "WRONG. GDPR Art. 99 is the entry-into-force clause. Lawful bases for processing — including consent — are in Art. 6 (and consent specifically detailed in Art. 7)."
+    },
+    {
+      "id": 12,
+      "jurisdiction": "Dutch Law",
+      "code": "Wet algemene bepalingen omgevingsrecht (Wabo)",
+      "reference": "artikel 1",
+      "topic": "Hypotheekrecht",
+      "expected": false,
+      "rationale": "WRONG. Wabo concerns environmental and building permits. Hypotheek (mortgage) is in BW 3:227 e.v. — different code entirely."
+    }
+  ],
+  "scoring_notes": {
+    "expected_perfect_score": "12/12 across all 3 consistency rounds",
+    "common_failure_modes": [
+      "Models that do well on common-law often fail civil-code questions (training-data skew)",
+      "Models with stale cutoffs may miss recent reforms (recency pillar)",
+      "Models with high temperature drift across consistency rounds (consistency pillar)"
+    ],
+    "tip": "Run the same pack on multiple models (GPT-4-class, Claude-class, smaller open models) to surface where each breaks."
+  }
+}

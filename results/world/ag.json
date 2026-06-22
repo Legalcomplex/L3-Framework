@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Antigua and Barbuda — Source-Grounded Citation Reliability (AG)",
+ "country": "AG",
+ "jurisdiction": "Antigua and Barbuda",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:52:03.594548+00:00",
+ "results": [
+  {
+   "id": "ag-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 739,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The claimed date (2026-05-18) is in the future, so the source cannot yet have been published."
+  },
+  {
+   "id": "ag-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1281,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Act is an official statute of Antigua and Barbuda; it was not published by the ONDCP AML/CFT Regulatory Library, which is merely a secondary repository."
+  },
+  {
+   "id": "ag-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 810,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The claimed date (2026-05-27) is in the future, so the source cannot yet have been published."
+  },
+  {
+   "id": "ag-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1027,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The ONDCP AML/CFT Regulatory Library is a modern digital compilation, not the official 1993 government publisher of the Misuse of Drugs Act (Amendment) Act."
+  },
+  {
+   "id": "ag-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 825,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The claimed publication date (29 April 2026) precedes the gazette’s stated issue date (23 April 2026), creating an impossible chronology."
+  },
+  {
+   "id": "ag-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 839,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The 2009 amendment was enacted by Parliament, not published by the ONDCP AML/CFT Regulatory Library, which only hosts copies."
+  },
+  {
+   "id": "ag-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 867,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited source is dated 2026 and attributed to Cayman Islands Legislation, not Antigua and Barbuda."
+  },
+  {
+   "id": "ag-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 780,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Act is an Antiguan statute; it cannot be published in Bahamas Consolidated Legislation."
+  },
+  {
+   "id": "ag-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1042,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited source is a 2026 Curacao regulation, not an official Antigua and Barbuda legal publication."
+  },
+  {
+   "id": "ag-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 885,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited Act is from Grenada, not Antigua and Barbuda, so it cannot be an official legal source of that jurisdiction."
+  },
+  {
+   "id": "ag-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 723,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The claim misattributes a 2026 Saint Lucia Gazette to Antigua and Barbuda’s jurisdiction and official legal sources."
+  },
+  {
+   "id": "ag-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 805,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Sint Maarten is not part of Antigua and Barbuda; the 2009 Act is an Antiguan statute, not a Sint Maarten publication."
+  }
+ ]
+}

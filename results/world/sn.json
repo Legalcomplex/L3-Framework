@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Senegal — Source-Grounded Citation Reliability (SN)",
+ "country": "SN",
+ "jurisdiction": "Senegal",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T16:00:18.994888+00:00",
+ "results": [
+  {
+   "id": "sn-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1072,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier 'SENEGAL-COURSUPREME-20240124-03' is a plausible citation format, but without access to the official Senegal Supreme Court collection, its exact correspondence to the 24 January "
+  },
+  {
+   "id": "sn-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1038,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Conseil constitutionnel is Senegal’s constitutional court, not the Supreme Court; Juricaf/AHJUCAF cannot publish its decisions as “Supreme Court Decisions.”"
+  },
+  {
+   "id": "sn-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1046,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Senegal’s Code général des collectivités locales was enacted by Loi n° 2013-10 of 28 December 2013, not by any 1996 Prime Minister’s instrument."
+  },
+  {
+   "id": "sn-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1043,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Cour des Comptes du Sénégal has not published any document titled 'IINFOCOMPTES_ édition spéciale_Juillet 2024' on 24 August 2024."
+  },
+  {
+   "id": "sn-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1102,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier 'SENEGAL-COURSUPREME-20231227-47' matches the date 27 December 2023, but the numeric suffix '47' cannot be verified as the correct case number without consulting the official Sen"
+  },
+  {
+   "id": "sn-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 866,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The claimed 2026 publication date is impossible; Senegal ARTP cannot issue a 2026 document in 2024."
+  },
+  {
+   "id": "sn-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1158,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'SENEGAL-COURSUPREME-20240124-04' indicates decision 04, not 03, so the bibliographic claim mismatches the stated case number."
+  },
+  {
+   "id": "sn-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 853,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The decision is from Senegal’s Constitutional Council, not Côte d’Ivoire’s, so it cannot be published by the latter."
+  },
+  {
+   "id": "sn-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 875,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Senegal’s Code général des collectivités locales was enacted by Loi n° 2013-10 of 28 December 2013, not in 1994."
+  },
+  {
+   "id": "sn-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 957,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The source name and publisher indicate a Nigerian agency, not Senegal, so the jurisdictional claim is incorrect."
+  },
+  {
+   "id": "sn-src-f05",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 912,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'SENEGAL-COURSUPREME-20231227-51' indicates decision 51, not 47, so the bibliographic claim mismatches the actual case number."
+  },
+  {
+   "id": "sn-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1234,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Mauritania Consolidated Legal Codes (MSGG) is a Mauritanian—not Senegalese—source, so it cannot publish an official Senegalese legal document."
+  }
+ ]
+}

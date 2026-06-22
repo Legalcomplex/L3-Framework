@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — South Africa — Source-Grounded Citation Reliability (ZA)",
+ "country": "ZA",
+ "jurisdiction": "South Africa",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T16:02:14.444359+00:00",
+ "results": [
+  {
+   "id": "za-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 949,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Constitutional Court of South Africa has not issued any judgment on 6 May 2025."
+  },
+  {
+   "id": "za-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 951,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. SAFLII is the authoritative free publisher of South African judgments, including this official SCA decision."
+  },
+  {
+   "id": "za-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1036,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier 'LM030Jun07' is a merger case number, not a Tribunal collection identifier, and the cited parties/title do not match the actual 2007-07-27 decision."
+  },
+  {
+   "id": "za-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1024,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Competition Tribunal of South Africa does not publish decisions dated 2026-01-30, as that future date has not yet occurred."
+  },
+  {
+   "id": "za-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1016,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The by-law originates from the City of Cape Town (2007), not Laws.Africa; the latter merely hosts an unofficial, consolidated copy."
+  },
+  {
+   "id": "za-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 877,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The North West Provincial Gazette is an official government publication; Open Gazettes merely hosts copies, so the claim misattributes the official source."
+  },
+  {
+   "id": "za-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 872,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. CCT184/24 is not a valid Constitutional Court identifier; the case name and 2025 date are also implausible."
+  },
+  {
+   "id": "za-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 803,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited judgment is a South African Supreme Court of Appeal decision, not a Namibian one, so it cannot be published by Namibia eJustice Portal."
+  },
+  {
+   "id": "za-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 861,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decision is from the South African Competition Tribunal, not the Competition Appeal Court, so the bibliographic attribution is incorrect."
+  },
+  {
+   "id": "za-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 918,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'LM168Dec26' indicates a December 2026 filing, yet the claimed decision date is 2026-01-30, which is chronologically impossible."
+  },
+  {
+   "id": "za-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1080,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The by-law was originally promulgated by the City of Cape Town in 2007; Laws.Africa merely hosts an open-access copy, not the official publication."
+  },
+  {
+   "id": "za-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 918,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The North West Provincial Gazette is a South African provincial publication; it cannot be issued by Eswatini’s Central Bank."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Vatican City — Source-Grounded Citation Reliability (VA)",
+ "country": "VA",
+ "jurisdiction": "Vatican City",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T16:01:43.536284+00:00",
+ "results": [
+  {
+   "id": "va-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1007,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such Apostolic Letter exists; Pope Leo XIV is fictional and the cited 2025 document is unverifiable."
+  },
+  {
+   "id": "va-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 951,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Canon 2 is a numbered provision within the 1983 Code, not a separately published source."
+  },
+  {
+   "id": "va-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1155,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Pope Leo XIV does not exist; the current pontiff is Francis, so the cited 2025 motu proprio cannot be an official Vatican source."
+  },
+  {
+   "id": "va-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 954,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Canon 7 is a numbered provision within the 1983 Code, not a separately published source."
+  },
+  {
+   "id": "va-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1009,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Laudato si’ is a papal encyclical, not an official legal source, and its promulgation date is 24 May 2015, not 18 June."
+  },
+  {
+   "id": "va-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 820,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Canon 8 is a numbered provision within the 1983 Code, not a separately published source."
+  },
+  {
+   "id": "va-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 985,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Vatican City is a sovereign jurisdiction; its official acts are promulgated via the Acta Apostolicae Sedis, not the Dutch wetten.overheid.nl portal."
+  },
+  {
+   "id": "va-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 849,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Canon 2 forms part of the 1983 Code of Canon Law, promulgated 25 January 1983, not 1982."
+  },
+  {
+   "id": "va-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 812,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Vatican City is an independent sovereign jurisdiction; its official legal sources are not published via Luxembourg’s Legilux database."
+  },
+  {
+   "id": "va-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1339,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Canon 7 forms part of the 1983 Codex Iuris Canonici, promulgated 25 January 1983, not 1982."
+  },
+  {
+   "id": "va-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 883,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Laudato si' is a papal encyclical issued by the Holy See, not a Dutch statute published in the Staatsblad der Nederlanden."
+  },
+  {
+   "id": "va-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 949,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Canon 8 is a provision within the 1983 Code, not a separately published source dated 1986-01-25."
+  }
+ ]
+}

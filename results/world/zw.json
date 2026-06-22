@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Zimbabwe — Source-Grounded Citation Reliability (ZW)",
+ "country": "ZW",
+ "jurisdiction": "Zimbabwe",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T16:02:20.230049+00:00",
+ "results": [
+  {
+   "id": "zw-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 962,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Acquisition of Farm Equipment or Material Act is a Zimbabwean statute, not a publication of ZimLII, which only hosts or indexes legislation."
+  },
+  {
+   "id": "zw-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1063,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Reserve Bank of Zimbabwe’s Exchange Control Directives do not include a “Cybersecurity and Resilience Guideline — August 2025”; no such document exists under that series."
+  },
+  {
+   "id": "zw-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1118,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The African Development Bank (Membership of Zimbabwe) Act is a Zimbabwean statute, not a publication of ZimLII, which is a legal-information database rather than an official publisher."
+  },
+  {
+   "id": "zw-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 928,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No verifiable public record confirms the existence or publication of \"Exchange Control Circular No. 3 of 2024\" by the Reserve Bank of Zimbabwe on 8 April 2024."
+  },
+  {
+   "id": "zw-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1044,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The African Development Fund (Zimbabwe) Act is a Zimbabwean statute, not a publication of ZimLII, which only hosts—not originates—official legal texts."
+  },
+  {
+   "id": "zw-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 896,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited title is a monetary policy statement, not an Exchange Control Directive, and the Reserve Bank of Zimbabwe does not publish such statements under its Exchange Control Directives series"
+  },
+  {
+   "id": "zw-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1936,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Acquisition of Farm Equipment or Material Act is a Zimbabwean statute, not a publication of ZimLII, which is a legal database rather than a legislative publisher."
+  },
+  {
+   "id": "zw-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1744,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Saint Helena, Ascension & Tristan da Cunha legislation cannot publish Zimbabwe’s official Cybersecurity and Resilience Guideline."
+  },
+  {
+   "id": "zw-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 863,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The African Development Bank (Membership of Zimbabwe) Act is a Zimbabwean statute, not a publication of ZimLII, which is a legal-information database rather than an official publisher."
+  },
+  {
+   "id": "zw-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 786,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Exchange Control Circulars are issued by Zimbabwe’s Reserve Bank, not Zambia’s National Assembly."
+  },
+  {
+   "id": "zw-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 968,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The African Development Fund (Zimbabwe) Act is a Zimbabwean statute, not a publication of ZimLII, which only hosts—not authors—official legal texts."
+  },
+  {
+   "id": "zw-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 930,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Monetary Policy Statement 2024 is a Zimbabwean Reserve Bank document, not a Lesotho Legal Information Institute publication."
+  }
+ ]
+}

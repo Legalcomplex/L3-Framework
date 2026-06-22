@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Laos — Source-Grounded Citation Reliability (LA)",
+ "country": "LA",
+ "jurisdiction": "Laos",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:57:08.104366+00:00",
+ "results": [
+  {
+   "id": "la-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1082,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No verifiable record exists of a 2021-06-23 Lao Securities Commission Office publication titled 'Decision on Securities Business Operation Authorization of Fund Management Companies (Amended)'."
+  },
+  {
+   "id": "la-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 888,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Lao Trade Portal is a government portal, not an official legal source for promulgating binding decisions."
+  },
+  {
+   "id": "la-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1012,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No UNDP English translation of the 2003 Law on the People’s Court appears in the Lao Laws database dated 20 March 2006."
+  },
+  {
+   "id": "la-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 881,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No official Lao Securities Commission source confirms a 2021-06-10 publication titled 'Decision on Approval of Custodian Banks (Amended)'."
+  },
+  {
+   "id": "la-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 879,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The decree is dated 20 May 2026, a future date, so it cannot have been published in 2026-05-20."
+  },
+  {
+   "id": "la-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 903,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No official UNDP English translation of the Lao Constitution was published on 2006-03-20 via Lao Laws."
+  },
+  {
+   "id": "la-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 813,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No such decision exists in Lao securities regulations; the cited title and source do not match any official Lao Securities Commission issuance."
+  },
+  {
+   "id": "la-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 849,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited source is an Indonesian database; a Laos legal instrument cannot be officially published by Indonesia’s JDIHN."
+  },
+  {
+   "id": "la-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 785,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No UNDP English translation of the 'Law on the People's Court' was published on 20 March 2008."
+  },
+  {
+   "id": "la-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 747,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited source is a Cambodian legal library, not an official Lao publication, so it cannot validly document a Laotian legal instrument."
+  },
+  {
+   "id": "la-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 870,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The decree is dated 20 May 2026, a future date, so it cannot yet have been published."
+  },
+  {
+   "id": "la-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 830,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No official UNDP English translation of the Lao Constitution was published on 2007-03-20 via Lao Laws."
+  }
+ ]
+}

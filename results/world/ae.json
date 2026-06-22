@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — United Arab Emirates — Source-Grounded Citation Reliability (AE)",
+ "country": "AE",
+ "jurisdiction": "United Arab Emirates",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:52:01.177867+00:00",
+ "results": [
+  {
+   "id": "ae-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 820,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. ADGM Courts publish judgments from 2015 onward; a 2026 decision date is impossible."
+  },
+  {
+   "id": "ae-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1953,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. ADGM Courts Regulations Amendment No. 1 of 2020 was enacted 24 June 2020, not published on 1 January 2020."
+  },
+  {
+   "id": "ae-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 978,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. DIFC Courts do not publish 2026 judgments in 2024; the future date makes the bibliographic claim impossible."
+  },
+  {
+   "id": "ae-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1143,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. DIFC Law No. 6 of 2004 is Contract Law, but the DIFC Legal Database did not exist in 2004; the 2024 update is plausible, yet the stated 2004-01-01 publication date is impossible."
+  },
+  {
+   "id": "ae-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1955,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No evidence confirms an \"Abu Dhabi Official Gazette - 2023 Edition 2\" was officially published on 2023-02-01 via the cited portal."
+  },
+  {
+   "id": "ae-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 839,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-03-27 is in the future, so the claimed publication cannot yet exist."
+  },
+  {
+   "id": "ae-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 767,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '[2026] ADGMCFI 0005' is impossible because the year 2026 has not yet occurred."
+  },
+  {
+   "id": "ae-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 779,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. ADGM is Abu Dhabi, not Saudi; SAMA has no authority to publish ADGM court regulations."
+  },
+  {
+   "id": "ae-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 921,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. DIFC Courts publish judgments from 2005 onward; no record exists of a 2023-05-05 decision numbered CFI 084/2024."
+  },
+  {
+   "id": "ae-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 838,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. DIFC Law No. 6 of 2004 is a Dubai decree, not an Israeli statute, so it cannot be an official Israeli Knesset publication."
+  },
+  {
+   "id": "ae-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 830,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Jordan Legislation & Opinion Bureau is a Jordanian government body and cannot publish the Abu Dhabi Official Gazette."
+  },
+  {
+   "id": "ae-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 806,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No public evidence confirms Dubai Official Gazette Issue 767 was published by the Dubai Legal Affairs Department on 27 March 2024."
+  }
+ ]
+}

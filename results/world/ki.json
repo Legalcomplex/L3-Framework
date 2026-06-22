@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Kiribati — Source-Grounded Citation Reliability (KI)",
+ "country": "KI",
+ "jurisdiction": "Kiribati",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:56:52.643031+00:00",
+ "results": [
+  {
+   "id": "ki-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 754,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. PacLII is the official publisher of Kiribati Court Decisions, including the cited [2025] KICA 7 judgment."
+  },
+  {
+   "id": "ki-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 761,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Kiribati Court Decisions on PacLII do not publish 2025 judgments; the cited 7 July 2025 decision is therefore not an official source."
+  },
+  {
+   "id": "ki-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 887,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Kiribati Court Decisions on PacLII do not publish 2025 judgments; the cited case post-dates available content."
+  },
+  {
+   "id": "ki-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1004,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. PacLII does not publish Kiribati Court of Appeal decisions; the official source is the Kiribati Judiciary website."
+  },
+  {
+   "id": "ki-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 864,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Kiribati Court Decisions on PacLII does not publish 2025 decisions; the cited case post-dates available content."
+  },
+  {
+   "id": "ki-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 816,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. PacLII does not publish Kiribati Court of Appeal decisions; the official source is the Kiribati Judiciary website."
+  },
+  {
+   "id": "ki-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 772,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. RONLAW is Nauru’s database; Kiribati decisions are published on PacLII, not RONLAW."
+  },
+  {
+   "id": "ki-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1396,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Kiribati—not Tonga—has jurisdiction; the cited decision cannot be published by Tonga’s Attorney General."
+  },
+  {
+   "id": "ki-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 778,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The decision is from Kiribati’s Court of Appeal (KICA), not the Federal Court of Australia, which lacks jurisdiction over Kiribati matters."
+  },
+  {
+   "id": "ki-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 688,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The decision is from Kiribati’s Court of Appeal, not the Republic of the Marshall Islands Judiciary."
+  },
+  {
+   "id": "ki-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2749,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Kiribati’s official law reports are not published by Open Australian Legal Corpus; the cited “[2025] KICA 8” decision post-dates the claimed 7 July 2025 publication."
+  },
+  {
+   "id": "ki-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 6403,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Kiribati’s official judgments are not published by Open Australian Legal Corpus; the cited decision is therefore not an authentic official source."
+  }
+ ]
+}

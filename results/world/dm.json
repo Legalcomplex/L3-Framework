@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Dominica — Source-Grounded Citation Reliability (DM)",
+ "country": "DM",
+ "jurisdiction": "Dominica",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:54:20.373590+00:00",
+ "results": [
+  {
+   "id": "dm-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 838,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited Order is a statutory instrument, not a publication of the Laws of Dominica series."
+  },
+  {
+   "id": "dm-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 953,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No official record confirms S.R.O.57 of 2002 was published by Dominica’s Financial Services Unit on 1 January 2002."
+  },
+  {
+   "id": "dm-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 957,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such SRO 19 of 2006 exists in Dominica’s official gazette or Laws of Dominica; the cited stamp order is fabricated."
+  },
+  {
+   "id": "dm-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1009,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Money Laundering (Prevention) Act, 2011 is an Act of Parliament, not a publication of the Financial Services Unit."
+  },
+  {
+   "id": "dm-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 829,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited SRO 36 of 2005 is a statutory instrument, not a publication of the Laws of Dominica series."
+  },
+  {
+   "id": "dm-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 723,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Financial Services Unit Act, 2008 is an Act of Parliament, not a publication of the Financial Services Unit itself."
+  },
+  {
+   "id": "dm-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 971,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited Order (SRO 29 of 2006) is a Grenadian statutory instrument, not a Dominica source, and “Laws of Grenada” is not a Dominica publisher."
+  },
+  {
+   "id": "dm-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 910,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Dominica issues S.R.O.s; Curacao’s Regelingen are unrelated, so the cited publication source is geographically and jurisdictionally incorrect."
+  },
+  {
+   "id": "dm-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 743,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited Order is a Dominica statutory instrument (SRO 19/2006), not a Saint Lucia Revised Laws publication."
+  },
+  {
+   "id": "dm-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 773,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Money Laundering (Prevention) Act, 2011 is Dominica legislation, not published by Sint Maarten Government Legislation."
+  },
+  {
+   "id": "dm-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 911,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited Order is a Dominica SRO, not a Turks and Caicos instrument, so it could not have been published in the Turks and Caicos Revised Laws."
+  },
+  {
+   "id": "dm-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 764,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Financial Services Unit Act, 2008 is a Dominica statute, not Cayman Islands legislation."
+  }
+ ]
+}

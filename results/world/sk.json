@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Slovakia — Source-Grounded Citation Reliability (SK)",
+ "country": "SK",
+ "jurisdiction": "Slovakia",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T16:00:10.210074+00:00",
+ "results": [
+  {
+   "id": "sk-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1028,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 30 January 2026 lies in the future, so no such announcement could have been published on 31 January 2026."
+  },
+  {
+   "id": "sk-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1314,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited decision (I. ÚS 123/2010) is a Constitutional Court ruling, not one of the Supreme Court."
+  },
+  {
+   "id": "sk-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 935,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited decision date (2026-04-17) is in the future, so it cannot yet have been published by Slovakia’s Antimonopoly Office."
+  },
+  {
+   "id": "sk-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 839,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Slovak Collection of Laws (Zbierka zákonov) ceased publication in 2023; no 2026 issue exists."
+  },
+  {
+   "id": "sk-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1025,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Slovak Supreme Court does not issue decisions on minor-offence (priestupkové) proceedings; such matters fall under district or regional courts."
+  },
+  {
+   "id": "sk-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1218,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such 2026 decision exists; the date is in the future and the cited PMU source does not contain it."
+  },
+  {
+   "id": "sk-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 891,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'SK/ZZ/2026/12/20260132' cannot exist because 2026 laws have not yet been promulgated."
+  },
+  {
+   "id": "sk-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1057,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decision (I. ÚS 123/2010) is a Constitutional Court ruling, not one issued by the Slovak Supreme Court."
+  },
+  {
+   "id": "sk-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1061,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decision originates from the Slovak Antimonopoly Office (PMU), not “Slovakia Antimonopoly Office (PMU) — Decisions,” which is not an official publishing body."
+  },
+  {
+   "id": "sk-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 926,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'SK/ZZ/2026/1/20260110' cannot exist because the Slovak Collection of Laws has not yet published any 2026 acts."
+  },
+  {
+   "id": "sk-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 963,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The decision concerns Slovak administrative-offence procedure, not Turkish constitutional law; the Turkish Constitutional Court has no jurisdiction in Slovakia."
+  },
+  {
+   "id": "sk-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 769,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The decision is attributed to Georgia’s Supreme Court, but the jurisdiction specified is Slovakia, creating an irreconcilable mismatch."
+  }
+ ]
+}

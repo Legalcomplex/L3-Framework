@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Yemen — Source-Grounded Citation Reliability (YE)",
+ "country": "YE",
+ "jurisdiction": "Yemen",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T16:02:11.537917+00:00",
+ "results": [
+  {
+   "id": "ye-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 932,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No verifiable evidence links that Arabic title to any Central Bank of Yemen circular dated 2021-10-06."
+  },
+  {
+   "id": "ye-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 970,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited source is a 1991 presidential decree-law, not a Ministry of Justice database publication; the database merely hosts it."
+  },
+  {
+   "id": "ye-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1010,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Yemen’s House of Representatives has not published any “Legislative Encyclopedia” dated 19 October 2018; the cited source is unverifiable."
+  },
+  {
+   "id": "ye-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1067,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No verifiable record exists of a Central Bank of Yemen circular titled 'الإقراض لذوي العلاقة والمصالح المرتبطة بهم' dated 2021-10-06."
+  },
+  {
+   "id": "ye-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 961,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited decree is an executive regulation issued by the Council of Ministers, not the Ministry of Justice, so the claimed publication source is incorrect."
+  },
+  {
+   "id": "ye-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 766,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Yemen's House of Representatives was dissolved in 2015; no 2018 legislative encyclopedia exists."
+  },
+  {
+   "id": "ye-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 966,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Central Bank of Yemen has no publicly documented circular or law titled 'متطلبات إضافية من المراجعين الخارجيين' dated 2024-10-06."
+  },
+  {
+   "id": "ye-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 960,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The DIFC Legal Database covers Dubai International Financial Centre law, not Yemeni legislation; the cited 1991 Yemeni Commercial Law cannot originate from that source."
+  },
+  {
+   "id": "ye-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 825,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Yemen has no functioning House of Representatives since 2015, so no 2017 legislative encyclopedia from that body exists."
+  },
+  {
+   "id": "ye-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1197,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. SAMA is Saudi Arabia’s central bank; it has no jurisdiction to issue rules in Yemen."
+  },
+  {
+   "id": "ye-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 941,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The source is a Yemeni Republican Decree, not a Jordanian publication; the Jordan Legislation & Opinion Bureau has no jurisdiction over Yemeni legislation."
+  },
+  {
+   "id": "ye-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 929,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Yemen’s House of Representatives has been largely non-functional since 2014, so no 2019 legislative encyclopedia from that body exists."
+  }
+ ]
+}

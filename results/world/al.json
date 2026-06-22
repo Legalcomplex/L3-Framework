@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Albania — Source-Grounded Citation Reliability (AL)",
+ "country": "AL",
+ "jurisdiction": "Albania",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:52:08.962306+00:00",
+ "results": [
+  {
+   "id": "al-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1026,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Albanian Official Gazette cannot publish a 2026-dated law in 2024; the future date makes the bibliographic claim chronologically impossible."
+  },
+  {
+   "id": "al-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1101,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The decision date (29.07.2025) precedes its publication date (2026-02-25), which is chronologically impossible."
+  },
+  {
+   "id": "al-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 982,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier 'ligj-2026-01-28-3' cannot exist in the Albanian Official Gazette because the date 2026-01-28 is in the future."
+  },
+  {
+   "id": "al-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 985,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The decision date (22.01.2025) precedes the publication date (28.02.2025), which is chronologically impossible."
+  },
+  {
+   "id": "al-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 978,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Albanian Official Gazette cannot have published a 2026 document in 2024; the stated publication date is chronologically impossible."
+  },
+  {
+   "id": "al-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1004,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Albanian Constitutional Court decisions use formats like “Vendim nr. X, datë DD.MM.YYYY”; the cited “vend.mosk.20’26” neither matches this style nor exists for 2026."
+  },
+  {
+   "id": "al-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 889,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'ligj-2026-01-28-8' cannot exist in the Albanian Official Gazette because the date 2026-01-28 is in the future."
+  },
+  {
+   "id": "al-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 740,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The date 29.07.2025 lies in the future, so the cited 2025 decision cannot yet exist."
+  },
+  {
+   "id": "al-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 912,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'ligj-2026-01-28-8' cannot exist in 2024; the date 2026-01-28 is in the future."
+  },
+  {
+   "id": "al-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 700,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decision originates from Albania, not Moldova; the Moldova National Courts Portal cannot publish Albanian judicial rulings."
+  },
+  {
+   "id": "al-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 823,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Albanian-language title and Bosnian Official Gazette source are incompatible; Albania’s official gazette is “Fletorja Zyrtare,” not BiH’s publication."
+  },
+  {
+   "id": "al-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 825,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Albanian Constitutional Court decisions use formats like “Vendim nr. X, datë Y”; “vend.mosk.20’26” is not a recognized official citation."
+  }
+ ]
+}

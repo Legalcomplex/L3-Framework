@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Colombia — Source-Grounded Citation Reliability (CO)",
+ "country": "CO",
+ "jurisdiction": "Colombia",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:53:51.863151+00:00",
+ "results": [
+  {
+   "id": "co-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 981,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Colombian Constitutional Court has not issued any Sentencia T-522/25 dated 18 December 2025; that future date makes the bibliographic claim impossible."
+  },
+  {
+   "id": "co-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 850,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Constitutional Court of Colombia has not issued any ruling dated 2026-01-30, as that date lies in the future."
+  },
+  {
+   "id": "co-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 894,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited decision date (2026-01-20) is in the future, so it cannot yet exist in any official Colombian disciplinary database."
+  },
+  {
+   "id": "co-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 880,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. SIC is Colombia’s competition authority, but “RE28552-2022” is not an official SIC decision identifier."
+  },
+  {
+   "id": "co-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1071,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. SUIN-Juriscol is Colombia’s official legal database, but Ley 605 was enacted 20 July 2000 and published in Diario Oficial 44.078 on 28 July 2000, not via SUIN."
+  },
+  {
+   "id": "co-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 746,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No official Colombian Senate source lists Ley 2429 of 2024; the cited title and date do not correspond to any enacted statute."
+  },
+  {
+   "id": "co-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 816,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Colombian Constitutional Court has not issued any Sentencia T-522/25 dated 18 December 2024; its latest decisions are from 2024."
+  },
+  {
+   "id": "co-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 851,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. \"Sentencia T-008/26\" cannot exist in 2025; Colombian tutela rulings use sequential numbering within each year, so T-008/2026 would be required."
+  },
+  {
+   "id": "co-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 796,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The decision is Colombian (Bucaramanga Procuraduría), not a Peruvian OSCE procurement resolution."
+  },
+  {
+   "id": "co-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 799,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '28553' does not match the cited resolution 'RE28552-2022', indicating a likely typographical or cataloguing error."
+  },
+  {
+   "id": "co-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 958,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Ley 605 de 2000 is a Colombian statute enacted by Colombia’s Congress, not an Argentine BCRA communication."
+  },
+  {
+   "id": "co-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 922,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Ley 2429 de 2024 is Colombian legislation, not Brazilian; Querido Diário publishes Brazilian municipal gazettes, so the source attribution is geographically and jurisdictionally incorrect."
+  }
+ ]
+}

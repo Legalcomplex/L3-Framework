@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Belgium — Source-Grounded Citation Reliability (BE)",
+ "country": "BE",
+ "jurisdiction": "Belgium",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:52:43.405642+00:00",
+ "results": [
+  {
+   "id": "be-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 968,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The cited title and date match the official Belgian law published in the Moniteur Belge / Belgisch Staatsblad on 7 January 2024."
+  },
+  {
+   "id": "be-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 915,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The phrase is a title fragment, not a full official source; Vlaamse Codex is a consolidation platform, not the original publisher from 1982."
+  },
+  {
+   "id": "be-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 912,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The decision date (16 February 2026) is in the future, so the cited source cannot yet exist."
+  },
+  {
+   "id": "be-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 918,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Court of Cassation does not issue decisions dated 4 December 2025; that future date makes the bibliographic claim impossible."
+  },
+  {
+   "id": "be-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 999,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-01-19 is in the future, so this decision cannot yet exist or be published."
+  },
+  {
+   "id": "be-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1329,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The ECLI identifier contains the year 2026, which is in the future, making the claimed 2026-01-22 judgment impossible."
+  },
+  {
+   "id": "be-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 866,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited Belgian statute was not published in Italy’s Gazzetta Ufficiale; Belgian laws appear in the Moniteur belge."
+  },
+  {
+   "id": "be-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 813,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The phrase is a title fragment, not a publication; Vlaamse Codex is a database, not a publisher, and the 1985 date is incorrect."
+  },
+  {
+   "id": "be-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1274,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decision is Belgian, but RIS is Austria’s legal database; Belgian sources are published by the Belgian Official Gazette or Justel."
+  },
+  {
+   "id": "be-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 895,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The ECLI 'ECLI:BE:CASS:2025:ARR.20251204.1N.9' is invalid because Belgian Court of Cassation decisions cannot be dated 4 December 2025."
+  },
+  {
+   "id": "be-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 829,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Belgian Council of State has not issued any decision numbered 265464 dated 19 January 2025."
+  },
+  {
+   "id": "be-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 770,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The ECLI identifier contains the year 2026, which is impossible for a 2026-01-22 judgment."
+  }
+ ]
+}

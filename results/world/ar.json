@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Argentina — Source-Grounded Citation Reliability (AR)",
+ "country": "AR",
+ "jurisdiction": "Argentina",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.3333,
+ "correct": 4,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:52:16.980868+00:00",
+ "results": [
+  {
+   "id": "ar-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1215,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The claim is impossible: BCRA communications cannot be dated 15 April 2026, a future date."
+  },
+  {
+   "id": "ar-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 939,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. InfoLEG is Argentina’s official legislative database, but no such administrative capture reserve titled “ESPECIE GATUZO” appears in its records."
+  },
+  {
+   "id": "ar-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1026,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited decision is from the Cámara de Apelación en lo Civil y Comercial de Junín, not the Suprema Corte de Buenos Aires, and JUBA is a database, not the publishing court."
+  },
+  {
+   "id": "ar-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1061,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. CEDOM is the official gazette of the City of Buenos Aires, not a publisher; the cited law is national (No. 5798/2017), not a CABA ordinance."
+  },
+  {
+   "id": "ar-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 905,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited decision date (2026-02-26) is in the future, so the publication claim cannot be true."
+  },
+  {
+   "id": "ar-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 845,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Cámara Nacional de Apelaciones del Trabajo lacks authority to issue decisions dated 19 November 2025."
+  },
+  {
+   "id": "ar-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 808,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Chamber of Deputies Open Data API cannot have published a 2026-dated circular; the future date makes the bibliographic claim chronologically impossible."
+  },
+  {
+   "id": "ar-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 932,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The claim misattributes a Chilean open-data source to an Argentine legal document on the gatuso species."
+  },
+  {
+   "id": "ar-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 847,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Supreme Court of Buenos Aires is the provincial highest court; the national court is the Corte Suprema de Justicia de la Nación, so the publisher attribution is incorrect."
+  },
+  {
+   "id": "ar-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 769,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Ley N° 5798 is Argentine national law, not Brazilian municipal gazette content."
+  },
+  {
+   "id": "ar-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 815,
+   "verdict": true,
+   "correct": false,
+   "raw": "True. The cited decision is an authentic ruling of Argentina’s Cámara Nacional de Apelaciones en lo Contencioso Administrativo Federal, issued 26 February 2023."
+  },
+  {
+   "id": "ar-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 807,
+   "verdict": true,
+   "correct": false,
+   "raw": "True. The citation correctly identifies the Argentine National Labor Appeals Chamber as the publishing court for that 2022 decision."
+  }
+ ]
+}

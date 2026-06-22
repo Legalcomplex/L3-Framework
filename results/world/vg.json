@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — British Virgin Islands — Source-Grounded Citation Reliability (VG)",
+ "country": "VG",
+ "jurisdiction": "British Virgin Islands",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T16:01:52.036649+00:00",
+ "results": [
+  {
+   "id": "vg-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 973,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The BVI Commercial Court does not publish judgments under the title \"BVI Commercial Court Judgments\"; official decisions are issued by the Eastern Caribbean Supreme Court."
+  },
+  {
+   "id": "vg-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1230,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The BVI Commercial Court does not publish judgments under the title \"BVI Commercial Court Judgments\"; official decisions are issued by the Eastern Caribbean Supreme Court."
+  },
+  {
+   "id": "vg-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1054,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier 'BVIHC(COM) 2025/0202' cannot correspond to a judgment dated 2026-03-26, as the year prefix precedes the judgment date."
+  },
+  {
+   "id": "vg-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1208,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The BVI Commercial Court does not publish judgments under the title \"BVI Commercial Court Judgments\"; official decisions are issued by the High Court (Commercial Division) or via ECSC."
+  },
+  {
+   "id": "vg-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1243,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier 'BVIHC (COM) 2023/0064' cannot correspond to a judgment dated 12 August 2025, as the filing year precedes the judgment date."
+  },
+  {
+   "id": "vg-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 858,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier 'BVIHC(COM)2023/0087' cannot correspond to a 12 February 2026 judgment, as that date lies in the future."
+  },
+  {
+   "id": "vg-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 982,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The date 2026-09-02 is impossible; no judgment from September 2026 can exist in a 2020 collection."
+  },
+  {
+   "id": "vg-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 809,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. BVI Commercial Court Judgments is not an official publisher; the decision is an unreported judgment of the BVI Commercial Court."
+  },
+  {
+   "id": "vg-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 803,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. BVI Commercial Court Judgments is not an official publisher; the authoritative source is the Eastern Caribbean Supreme Court’s official website or BVI judiciary portal."
+  },
+  {
+   "id": "vg-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 768,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The decision is from the British Virgin Islands, not Bermuda; Bermuda Supreme Court Judgments cannot publish BVI cases."
+  },
+  {
+   "id": "vg-src-f05",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 823,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'BVIHC (COM) 2023/0065' denotes a 2023 filing, not a 2025 judgment date."
+  },
+  {
+   "id": "vg-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 820,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The decision is from the British Virgin Islands, not the Bahamas Supreme Court."
+  }
+ ]
+}

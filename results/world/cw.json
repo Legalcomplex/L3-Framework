@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Curaçao — Source-Grounded Citation Reliability (CW)",
+ "country": "CW",
+ "jurisdiction": "Curaçao",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:54:01.819474+00:00",
+ "results": [
+  {
+   "id": "cw-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 921,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No official Curaçao Government Legislation record exists for that exact BBO aanschrijving dated 2010-10-10."
+  },
+  {
+   "id": "cw-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 869,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The ECLI identifier and court name indicate a 2026 decision of the Joint Court of Justice, not a Curaçao-only publication."
+  },
+  {
+   "id": "cw-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 922,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No official Curaçao legislation database or public record confirms 'CVDR143525_1' as 'Aanschrijving PC-privé actie' (2010-10-10)."
+  },
+  {
+   "id": "cw-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 912,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The ECLI identifies the Gemeenschappelijk Hof van Justitie, not a Curaçao-only court, so the claim misattributes the publishing jurisdiction."
+  },
+  {
+   "id": "cw-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 923,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No official Curaçao Government Legislation record exists for that exact aanschrijving dated 2010-10-10."
+  },
+  {
+   "id": "cw-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 783,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The ECLI identifier 'ECLI:NL:OGHACMB:2026:67' cannot refer to a 2026 decision, as the current year is 2024."
+  },
+  {
+   "id": "cw-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 813,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'CVDR143518_2' is not a Curaçao source; CVDR is the Dutch national database for regulations."
+  },
+  {
+   "id": "cw-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 950,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The decision is from Curaçao’s Joint Court of Justice, not Bermuda; gov.bm cannot publish official Curaçao judgments."
+  },
+  {
+   "id": "cw-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 893,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No public evidence confirms that CVDR143525_2 is the identifier for the 2010-10-10 'Aanschrijving PC-privé actie' in Curaçao’s Regelingen."
+  },
+  {
+   "id": "cw-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 733,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The ECLI identifier and court name refer to Curaçao’s Joint Court of Justice, not Bermuda’s Supreme Court."
+  },
+  {
+   "id": "cw-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 899,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No official Curaçao Government Legislation record exists for that exact 2007-10-10 aanschrijving on securities transactions."
+  },
+  {
+   "id": "cw-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1086,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The ECLI identifies a 2026 decision of the Common Court of Justice for Curaçao, not Cayman Islands Court Judgments."
+  }
+ ]
+}

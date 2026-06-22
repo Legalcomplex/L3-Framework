@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Moldova — Source-Grounded Citation Reliability (MD)",
+ "country": "MD",
+ "jurisdiction": "Moldova",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:57:43.125977+00:00",
+ "results": [
+  {
+   "id": "md-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1452,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The cited decision identifier and date match an official record published by Moldova’s National Courts Portal (Instanțe de judecată)."
+  },
+  {
+   "id": "md-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1013,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 5 March 2026 lies in the future, so the decision cannot yet have been published."
+  },
+  {
+   "id": "md-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 827,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such Regulation appears on the National Bank of Moldova’s official “Regulations & Decisions” page dated 7 November 2024."
+  },
+  {
+   "id": "md-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 814,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited decision identifier and date do not match any published record on Moldova’s National Courts Portal, making the bibliographic claim inaccurate."
+  },
+  {
+   "id": "md-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1426,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The decision date (10 March 2026) is in the future, so no such published ruling exists."
+  },
+  {
+   "id": "md-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 827,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such Regulation No 74 of 20.03.2020 appears in the National Bank of Moldova’s official Regulations & Decisions listings."
+  },
+  {
+   "id": "md-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 884,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '2-21014741-21-2 p/s-01022022' indicates a 2022 filing, not the 2021-03-23 date shown in the claim."
+  },
+  {
+   "id": "md-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 706,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decision is a Moldovan Constitutional Court ruling, not a Cyprus Tax Tribunal publication."
+  },
+  {
+   "id": "md-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 720,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Hellenic Parliament’s Raptarchis Greek Legal Code cannot publish Moldovan regulations; the cited source is jurisdictionally mismatched."
+  },
+  {
+   "id": "md-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 826,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '15-4-922-02022019' does not match the cited case '15-4-922-02022018', indicating a typographical discrepancy in the bibliographic claim."
+  },
+  {
+   "id": "md-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 750,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decision is from Moldova's Constitutional Court, not Romania's ICCJ, and the 2026 date is future."
+  },
+  {
+   "id": "md-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 848,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited regulation is a Moldovan legal act; Dziennik Ustaw is Poland’s official journal, so the publication claim is geographically and jurisdictionally incorrect."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Bangladesh — Source-Grounded Citation Reliability (BD)",
+ "country": "BD",
+ "jurisdiction": "Bangladesh",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:52:40.839585+00:00",
+ "results": [
+  {
+   "id": "bd-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 721,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Supreme Court Online Bulletin is not an official publisher of Bangladeshi judgments; Death Reference No. 36 of 2010 would be reported by the Bangladesh Supreme Court or official law reports."
+  },
+  {
+   "id": "bd-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1013,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Commissions of Inquiry Act, 1956 predates Bangladesh’s 1971 independence and was enacted for Pakistan, not published via any Bangladesh Legal Acts Dataset."
+  },
+  {
+   "id": "bd-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 936,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Legal Representatives’ Suits Act, 1855 is an Indian colonial statute, not a Bangladeshi enactment; Bangladesh Code lists it only as inherited law."
+  },
+  {
+   "id": "bd-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 933,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Bangladesh Government Press Gazette Archive did not exist or publish on 2026-04-30, a future date."
+  },
+  {
+   "id": "bd-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1014,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The decision date (2026-03-15) is in the future, making the bibliographic claim impossible."
+  },
+  {
+   "id": "bd-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 890,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such July 18, 2024 BSEC circular on stock brokers’/dealers’ funds exists in the official Bangladesh Securities & Exchange Commission circulars & regulations database."
+  },
+  {
+   "id": "bd-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 859,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Supreme Court Online Bulletin is not an official publisher of Bangladeshi judgments; Death Reference No. 36 of 2010 is an internal High Court Division reference, not a formally published source"
+  },
+  {
+   "id": "bd-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 756,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Commissions of Inquiry Act, 1956 is a Bangladeshi statute, not a Sri Lankan government publication."
+  },
+  {
+   "id": "bd-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 926,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Legal Representatives’ Suits Act, 1855 is a pre-partition British-Indian statute, not a Pakistani enactment, so it cannot originate from a “Pakistan Laws Dataset.”"
+  },
+  {
+   "id": "bd-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 952,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Bangladesh Government Press Gazette Archive did not exist or publish on 2025-04-30; the date is future and the claim is therefore impossible."
+  },
+  {
+   "id": "bd-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 819,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Bangladesh Supreme Court Judgments is not an official publisher; official reports are the Bangladesh Supreme Court Reports (BSCR)."
+  },
+  {
+   "id": "bd-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 919,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The claimed directive concerns Bangladeshi stock brokers yet is attributed to the Maldives Government Gazette, creating an irreconcilable jurisdictional mismatch."
+  }
+ ]
+}

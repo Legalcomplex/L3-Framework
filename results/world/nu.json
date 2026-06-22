@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Niue — Source-Grounded Citation Reliability (NU)",
+ "country": "NU",
+ "jurisdiction": "Niue",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:58:52.332501+00:00",
+ "results": [
+  {
+   "id": "nu-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 888,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Niue was under New Zealand administration in 1945; no independent Niue Government Official Legislation existed then."
+  },
+  {
+   "id": "nu-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 893,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. PacLII does not publish Niue court decisions; the cited judgment is hosted on the official Niue High Court website."
+  },
+  {
+   "id": "nu-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 890,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Niue had no independent government or official legislation in 1938; it remained under New Zealand administration."
+  },
+  {
+   "id": "nu-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 896,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. PacLII does not publish Niue court decisions; the cited neutral citation and publisher are fabricated."
+  },
+  {
+   "id": "nu-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 909,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Niue Government Official Legislation is not a verifiable publisher; the Constitution of Niue was enacted in 1974 by the Niue Assembly."
+  },
+  {
+   "id": "nu-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 984,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. PacLII does not publish Niue court decisions; the cited judgment is hosted by the separate Pacific Islands Legal Information Institute (PacLII) platform, not by any “Niue Legislation & Court De"
+  },
+  {
+   "id": "nu-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 925,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Niue is a self-governing territory in free association with New Zealand; the Republic of the Marshall Islands has no jurisdiction there."
+  },
+  {
+   "id": "nu-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 916,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Niue High Court decisions are not published by Open Australian Legal Corpus, which covers Australian—not Niuean—jurisdictions."
+  },
+  {
+   "id": "nu-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1063,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Niue is not governed by Solomon Islands legislation, so the cited portal cannot publish Niue’s Arbitration Amendment Act 1938."
+  },
+  {
+   "id": "nu-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 903,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Niue’s High Court judgments are not published by the Federal Court of Australia; the cited decision originates from Niue, not an Australian federal court."
+  },
+  {
+   "id": "nu-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 819,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Niue Government Official Legislation is not a real publisher; official Niue constitutional texts are issued by the Niue Assembly or Government Printer, not this entity."
+  },
+  {
+   "id": "nu-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1110,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Niue is a self-governing territory in free association with New Zealand; RONLAW is Nauru’s official legal database, not Niue’s."
+  }
+ ]
+}

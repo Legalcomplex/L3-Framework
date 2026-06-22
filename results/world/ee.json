@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Estonia — Source-Grounded Citation Reliability (EE)",
+ "country": "EE",
+ "jurisdiction": "Estonia",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:54:31.184911+00:00",
+ "results": [
+  {
+   "id": "ee-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 942,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such list was published in Riigi Teataja on 27 December 2016; the cited title does not appear in the official gazette."
+  },
+  {
+   "id": "ee-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 918,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The claimed publication date (2026-02-09) is in the future, making the bibliographic claim impossible."
+  },
+  {
+   "id": "ee-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1178,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The ECLI 'ECLI:EE:RK:2025:4.25.3684' encodes a 2025 decision date, yet the claim lists 2026-02-05, making the bibliographic data internally inconsistent."
+  },
+  {
+   "id": "ee-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 920,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited decision is not an official publication of the Estonian Competition Authority; no such merger decision exists in its records."
+  },
+  {
+   "id": "ee-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 913,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The publication date 2026-01-28 is in the future, so the claim cannot be true."
+  },
+  {
+   "id": "ee-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1198,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The claimed publication date (2026-02-10) is in the future, so the law cannot yet have been published."
+  },
+  {
+   "id": "ee-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 817,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The document is an administrative list, not an official legal act, and was never published in Riigi Teataja."
+  },
+  {
+   "id": "ee-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 819,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited source is an Estonian parliamentary decision, not a Greek legal code; publication via Hellenic Parliament’s Raptarchis is impossible."
+  },
+  {
+   "id": "ee-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1710,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The ECLI identifier 'ECLI:EE:RK:2025:4.25.3685' indicates a 2025 decision, yet the claimed date is 2026-02-05, making the bibliographic claim chronologically impossible."
+  },
+  {
+   "id": "ee-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 778,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decision is not an official publication of the Estonian Competition Authority; no such merger decision exists in its records."
+  },
+  {
+   "id": "ee-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1289,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited law is Estonian, yet Portal Legislativ is Romania’s official site; an Estonian statute cannot be published there."
+  },
+  {
+   "id": "ee-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 910,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited title is a draft bill, not an official law; no such act was adopted or published by the Riigikogu on 10 February 2023."
+  }
+ ]
+}

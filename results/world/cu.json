@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Cuba — Source-Grounded Citation Reliability (CU)",
+ "country": "CU",
+ "jurisdiction": "Cuba",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:53:56.710585+00:00",
+ "results": [
+  {
+   "id": "cu-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 946,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-03-03 is in the future, so the claimed 2026 resolution cannot yet have been published."
+  },
+  {
+   "id": "cu-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 924,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The claim is impossible: February 2026 has not yet occurred, so no 2026-02-19 publication exists."
+  },
+  {
+   "id": "cu-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 786,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-03-16 lies in the future, so the cited 2026 resolution cannot yet have been published."
+  },
+  {
+   "id": "cu-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 845,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-03-16 lies in the future, so the cited 2026 resolution cannot yet have been published."
+  },
+  {
+   "id": "cu-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 843,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The claim is impossible: 2026 has not occurred, so no 2026 resolution or its publication can exist."
+  },
+  {
+   "id": "cu-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 717,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The claim references a 2026 agreement, but today is before 2026, making future publication impossible."
+  },
+  {
+   "id": "cu-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 699,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Cuba’s Ministry of Economy and Planning issues resolutions, not Grenada’s “Laws of Grenada,” so the cited source is jurisdictionally impossible."
+  },
+  {
+   "id": "cu-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 941,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. A Cuban Council of State proclamation cannot be published in the Turks and Caicos Revised Laws, which are a separate British Overseas Territory’s official compilation."
+  },
+  {
+   "id": "cu-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 851,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Cuba’s Ministry of Justice issues resolutions, not Curacao’s legislation portal; the cited source is geographically and jurisdictionally impossible."
+  },
+  {
+   "id": "cu-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 715,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Cuba’s Ministry of Justice does not publish via Bermuda Laws Online; the cited 2026 resolution is therefore implausible."
+  },
+  {
+   "id": "cu-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 752,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Saint Lucia’s Attorney General cannot publish Cuban ministerial resolutions; the cited source is jurisdictionally impossible."
+  },
+  {
+   "id": "cu-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 876,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Cuba's Council of State does not publish laws via Bahamas Consolidated Legislation; the cited source is implausible."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Australia — Source-Grounded Citation Reliability (AU)",
+ "country": "AU",
+ "jurisdiction": "Australia",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:52:24.604445+00:00",
+ "results": [
+  {
+   "id": "au-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1222,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The decision is from the Federal Court of Australia, but the publisher is the court itself, not \"Federal Court of Australia Judgments\"."
+  },
+  {
+   "id": "au-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 911,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Acts Interpretation Act 1901 is an Act of Parliament, not a publication; the Federal Register hosts its compilation, not its original publication."
+  },
+  {
+   "id": "au-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 972,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Act was enacted by Tasmania in 2009; it cannot have been published by Open Australian Legal Corpus in 2016."
+  },
+  {
+   "id": "au-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 993,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The Transport Operations (Passenger Transport) Act 1994 is an official Queensland statute, correctly cited from legislation.qld.gov.au with its 14 September 1994 assent date."
+  },
+  {
+   "id": "au-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 985,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Summary Offences Act 1953 is South Australian legislation, not published by data.sa.gov.au, which is a Commonwealth open-data portal."
+  },
+  {
+   "id": "au-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 907,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier 'act-2025-021' cannot refer to a 2025 Act in Tasmania's current legislation collection, as no such Act exists yet."
+  },
+  {
+   "id": "au-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 930,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The decision is from the Federal Magistrates Court of Australia, not the Federal Court of Australia."
+  },
+  {
+   "id": "au-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 810,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Acts Interpretation Act 1901 is a Commonwealth statute, not a publication; the Federal Register records its compilation, not its “publication” date."
+  },
+  {
+   "id": "au-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 821,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Act is Tasmanian legislation, not Fijian; Laws of Fiji cannot publish repealed Tasmanian statutes."
+  },
+  {
+   "id": "au-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1024,
+   "verdict": true,
+   "correct": false,
+   "raw": "True. The identifier 'act-1994-044' in Queensland Legislation correctly matches the Transport Operations (Passenger Transport) Act 1994, assented 14 September 1994."
+  },
+  {
+   "id": "au-src-f05",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 907,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '1953.56' in South Australia Legislation actually corresponds to the 'Police Offences Act 1953', not the 'Summary Offences Act 1953'."
+  },
+  {
+   "id": "au-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 839,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Tonga is not part of Australia, so its Attorney-General cannot publish Australian legislation."
+  }
+ ]
+}

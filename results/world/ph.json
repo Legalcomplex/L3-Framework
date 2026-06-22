@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Philippines — Source-Grounded Citation Reliability (PH)",
+ "country": "PH",
+ "jurisdiction": "Philippines",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:59:10.325943+00:00",
+ "results": [
+  {
+   "id": "ph-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1012,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited decision is dated 2026-01-15, which is a future date, making publication impossible."
+  },
+  {
+   "id": "ph-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1002,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-04-23 is in the future, so the cited CTA resolution cannot yet exist."
+  },
+  {
+   "id": "ph-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 998,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Corpus Juris is a private aggregator, not the official publisher of 1901 Philippine Supreme Court decisions."
+  },
+  {
+   "id": "ph-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1008,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. G.R. No. 276927 cannot exist in 2026; LawPhil only republishes official Philippine decisions, not originating sources."
+  },
+  {
+   "id": "ph-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1005,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Philippine Supreme Court E-Library does not publish decisions in the Philippine Reports; that official series is issued by the Supreme Court’s Reporter of Decisions."
+  },
+  {
+   "id": "ph-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1204,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. CTA Case No. 11253 cannot have a 2026-04-20 decision because that date is still in the future."
+  },
+  {
+   "id": "ph-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 898,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Philippine Supreme Court E-Library does not publish decisions in the Philippine Reports; that official series is issued by the Supreme Court’s Reporter of Decisions."
+  },
+  {
+   "id": "ph-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 959,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '10931' cannot correspond to CTA Case No. 10930, as case numbers and docket identifiers must match or follow sequential order."
+  },
+  {
+   "id": "ph-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1084,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Corpus Juris is a private aggregator, not the official publisher of 1898 Philippine Supreme Court decisions."
+  },
+  {
+   "id": "ph-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 955,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. G.R. No. 276927 is a Philippine Supreme Court docket number, not an Indonesian Constitutional Court decision."
+  },
+  {
+   "id": "ph-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 733,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The decision is a Philippine Supreme Court ruling, not published by Indonesia’s Constitutional Court."
+  },
+  {
+   "id": "ph-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 733,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '11254' cannot correspond to CTA Case No. 11253, as case numbers are unique and sequential."
+  }
+ ]
+}

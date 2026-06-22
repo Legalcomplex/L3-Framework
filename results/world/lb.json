@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Lebanon — Source-Grounded Citation Reliability (LB)",
+ "country": "LB",
+ "jurisdiction": "Lebanon",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:57:11.889884+00:00",
+ "results": [
+  {
+   "id": "lb-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 960,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Lebanon’s Cour de cassation rulings are not published by “Lebanon Courts (Juricaf)”; Juricaf is a French-led database, not an official Lebanese source."
+  },
+  {
+   "id": "lb-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1014,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited law was annulled by the Constitutional Council, so it cannot be an approved law published in 2025."
+  },
+  {
+   "id": "lb-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 915,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No verifiable record exists of a BCCL Circular titled “No. 1-IEF” dated 3 September 2021; the cited numbering and title appear fabricated."
+  },
+  {
+   "id": "lb-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 912,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Lebanon Capital Markets Authority was established in 2011; it could not have published Law No. 706 in 2005."
+  },
+  {
+   "id": "lb-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1387,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Lebanon Courts (Juricaf) is a Francophone-African database; Lebanese Court of Cassation decisions are not published there."
+  },
+  {
+   "id": "lb-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 918,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No Lebanese parliamentary law or official gazette records a 2026-approved economic classification titled \"خطة 11\" on 27 January 2026."
+  },
+  {
+   "id": "lb-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1074,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier's date suffix (20210617) indicates 17 June 2021, not the claimed 16 June 2021."
+  },
+  {
+   "id": "lb-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 873,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited Lebanese law and Constitutional Council decision have no connection to Saudi Arabia’s SAMA Rulebook, making the bibliographic attribution incorrect."
+  },
+  {
+   "id": "lb-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 845,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No official BCCL Circular No. 1-IEF dated 2023-09-03 exists; the cited title and numbering are fabricated."
+  },
+  {
+   "id": "lb-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 854,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Lebanon Capital Markets Authority was established in 2011; it could not have published Law No. 706 in 2006."
+  },
+  {
+   "id": "lb-src-f05",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 749,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'LIBAN-COURDECASSATION-20190226-20' indicates decision 20, not 19, of 26 February 2019."
+  },
+  {
+   "id": "lb-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1947,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The source is Israeli (Knesset), yet the claim references a Lebanese parliamentary body (مجلس النواب), making the attribution jurisdictionally impossible."
+  }
+ ]
+}

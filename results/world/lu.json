@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Luxembourg — Source-Grounded Citation Reliability (LU)",
+ "country": "LU",
+ "jurisdiction": "Luxembourg",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:57:30.621694+00:00",
+ "results": [
+  {
+   "id": "lu-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1247,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 19 December 2025 is in the future, so the law cannot yet have been published."
+  },
+  {
+   "id": "lu-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1227,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Luxembourg Administrative Tribunal Tax Decisions do not publish a Decision '49349' dated 2026-03-27, as that future date is impossible."
+  },
+  {
+   "id": "lu-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 973,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier 'JPLBAIL-1322' cannot refer to a decision dated 2026-03-26, as that future date has not yet occurred."
+  },
+  {
+   "id": "lu-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 809,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 22.01.2026 is in the future, so no such decision can yet exist."
+  },
+  {
+   "id": "lu-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 882,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Luxembourg Competition Authority decisions are not published under the identifier \"2014-AV-05\"; the Authority uses different numbering and publication formats."
+  },
+  {
+   "id": "lu-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 706,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 19 December 2025 is in the future, so the law cannot yet have been published."
+  },
+  {
+   "id": "lu-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 788,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Luxembourg statutes are not published on Germany’s Gesetze im Internet; the cited source is therefore incorrect."
+  },
+  {
+   "id": "lu-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 868,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The ECLI 'ECLI:LU:TADM:2026:49350' cannot correspond to decision '49349' dated 2026-03-27, as the numbers and dates are inconsistent."
+  },
+  {
+   "id": "lu-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 883,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'JPLBAIL-1323' cannot match a decision dated 2026-03-26, as that future date has not yet occurred."
+  },
+  {
+   "id": "lu-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 757,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The decision is a Luxembourg judgment, not a Swiss one, so it cannot be published by Entscheidsuche, a Swiss court-decisions database."
+  },
+  {
+   "id": "lu-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 851,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Decision '2014-AV-05' is not a German Federal Labor Court ruling; Luxembourg jurisdiction implies it originates from a Luxembourg authority, not the Bundesarbeitsgericht."
+  },
+  {
+   "id": "lu-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 828,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Luxembourg laws are published in the Mémorial (Journal Officiel), not Normattiva, an Italian database; the cited title and date are also implausible."
+  }
+ ]
+}

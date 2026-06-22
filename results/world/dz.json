@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Algeria — Source-Grounded Citation Reliability (DZ)",
+ "country": "DZ",
+ "jurisdiction": "Algeria",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:54:25.596453+00:00",
+ "results": [
+  {
+   "id": "dz-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 965,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Algeria’s Bank of Algeria issues “Règlements,” not “Regulations & Instructions,” and the cited title appears in the official Journal Officiel, not a 2014-02-16 Bank publication."
+  },
+  {
+   "id": "dz-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 839,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. Algeria’s Constitutional Court issues and publishes its own decisions, including the cited 2022 ruling."
+  },
+  {
+   "id": "dz-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1080,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited decision number and date do not match any published Algerian Supreme Court ruling; the 2024-12-26 publication date post-dates the alleged 2016 decision."
+  },
+  {
+   "id": "dz-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 814,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Journal Officiel cannot publish a 2026 issue in January 2026; the date is impossible."
+  },
+  {
+   "id": "dz-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 926,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2 June 2025 lies in the future, so the decree cannot have been published on 9 June 2025."
+  },
+  {
+   "id": "dz-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 944,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Algeria’s Bank of Algeria issues “Règlements” directly in its official journal, not via a secondary “Regulations & Instructions” series."
+  },
+  {
+   "id": "dz-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 923,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The source is an Algerian banking regulation, not Egyptian; the Egyptian Legal Corpus cannot publish Algerian official texts."
+  },
+  {
+   "id": "dz-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 933,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Algeria's Constitutional Court publishes decisions under its own name, not as \"Cour constitutionnelle,\" and the Gregorian date 2024-12-15 post-dates the claimed Hijri date."
+  },
+  {
+   "id": "dz-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 801,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decision number and date do not match any published Algerian Supreme Court ruling; the 2021-12-26 publication date post-dates the alleged 2016 decision."
+  },
+  {
+   "id": "dz-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 897,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Journal Officiel cannot have been published in 2026, and no Algerian official gazette appears on Egyptian Legal Corpus."
+  },
+  {
+   "id": "dz-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 819,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Algeria’s official journal publishes in Arabic/French; an Egyptian corpus cannot be the authoritative source for a 2025 Algerian decree."
+  },
+  {
+   "id": "dz-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 812,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited règlement is an Algerian Bank of Algeria text; it cannot originate from an Egyptian Legal Corpus."
+  }
+ ]
+}

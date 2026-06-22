@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Ghana — Source-Grounded Citation Reliability (GH)",
+ "country": "GH",
+ "jurisdiction": "Ghana",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:55:14.538083+00:00",
+ "results": [
+  {
+   "id": "gh-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 922,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Aircraft Accident and Incident Investigation and Prevention Bureau Act, 2020 is an official Ghanaian statute, not a publication of GhaLII."
+  },
+  {
+   "id": "gh-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3069,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No official Bank of Ghana directive titled “Draft Open Banking Directive for Regulated Financial Institutions 201224” appears on its Regulations & Directives page for 20 December 2024."
+  },
+  {
+   "id": "gh-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 925,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Community Water and Sanitation Agency Act, 1998 (Act 564) was enacted by Parliament and assented to by the President, not published by the Ghana Parliament Acts Database."
+  },
+  {
+   "id": "gh-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1003,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Ghana’s Parliament does not publish draft Bills as official law; only Acts passed and assented to are authoritative sources."
+  },
+  {
+   "id": "gh-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 927,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Communications Service Tax (Amendment) Act, 2013 (Act 864) is an Act of Parliament, not a G.N.C.A. regulation."
+  },
+  {
+   "id": "gh-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 863,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Alternative Dispute Resolution Act, 2010 (Act 798) was enacted by Parliament and assented to by the President; GhaLII merely hosts a copy, it is not the publisher."
+  },
+  {
+   "id": "gh-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 796,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Act is Ghanaian legislation; it cannot be an official Burkina Faso parliamentary publication."
+  },
+  {
+   "id": "gh-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 810,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Bank of Ghana has not issued any “Draft Open Banking Directive” dated 20 December 2026; the cited title and future date are fictitious."
+  },
+  {
+   "id": "gh-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 697,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Community Water and Sanitation Agency Act, 1998 (Act 564) is Ghanaian legislation, not published by the Sierra Leone Legal Information Institute."
+  },
+  {
+   "id": "gh-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 755,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Environmental Protection Bill, 2024 is a Ghanaian draft statute, not a Nigerian pension regulation."
+  },
+  {
+   "id": "gh-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 833,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Communications Service Tax (Amendment) Act, 2013 (Act 864) is Ghanaian legislation, not published in Nigeria’s Laws of the Federation."
+  },
+  {
+   "id": "gh-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 786,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Ghana’s ADR Act 2010 was published in the Ghana Gazette, not Guinea’s Journal Officiel."
+  }
+ ]
+}

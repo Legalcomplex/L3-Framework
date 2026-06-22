@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Bosnia & Herzegovina — Source-Grounded Citation Reliability (BA)",
+ "country": "BA",
+ "jurisdiction": "Bosnia & Herzegovina",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.4167,
+ "correct": 5,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:52:35.421189+00:00",
+ "results": [
+  {
+   "id": "ba-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1033,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Constitutional Court of Bosnia and Herzegovina has not issued any decision numbered AP-1993/22 dated 19 February 2026, as that date lies in the future."
+  },
+  {
+   "id": "ba-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1168,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited decision date (24.05.2012) precedes the claimed publication date (2012-04-24), making the bibliographic claim chronologically impossible."
+  },
+  {
+   "id": "ba-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1191,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such decision appears in Službene novine FBiH 30 Dec 2024; the cited title does not match any published act."
+  },
+  {
+   "id": "ba-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 949,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The correct title is \"Zakon o budžetskom sistemu Republike Srpske\" and it was published in the Official Gazette of Republika Srpska, not via \"Republika Srpska Legislation\"."
+  },
+  {
+   "id": "ba-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 933,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Constitutional Court of Bosnia and Herzegovina has not issued any decision dated 19 February 2026, as that date lies in the future."
+  },
+  {
+   "id": "ba-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 949,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier '01 0 K 009189 17 Kžk' is a 2017 appellate criminal case, not a 14.07.2017 judgment titled 'Presuda [BOŽIDARKA DODIK]'."
+  },
+  {
+   "id": "ba-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 904,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Constitutional Court of Bosnia and Herzegovina does not publish decisions under the identifier \"AP-1993/22\"."
+  },
+  {
+   "id": "ba-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1081,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '80 0 P 027108 12 Rev' denotes a 2012 revision (Rev) decision, not the 24 May 2012 first-instance judgment cited."
+  },
+  {
+   "id": "ba-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 898,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decision is a Bosnian legal act; it cannot be published in Lithuania’s TAR database."
+  },
+  {
+   "id": "ba-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 666,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The law is a Republic of Srpska statute; Likumi.lv is Latvia’s portal and could not be its official publication source."
+  },
+  {
+   "id": "ba-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 882,
+   "verdict": true,
+   "correct": false,
+   "raw": "True. The Constitutional Court of Bosnia and Herzegovina officially publishes its decisions, including AP-1175/22 of 19 February 2024, on its public website."
+  },
+  {
+   "id": "ba-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 933,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '01 0 K 009189 18 Kžk' denotes a 2018 appellate decision, not a 2017 first-instance judgment dated 14.07.2017."
+  }
+ ]
+}

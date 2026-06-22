@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Libya — Source-Grounded Citation Reliability (LY)",
+ "country": "LY",
+ "jurisdiction": "Libya",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:57:35.789772+00:00",
+ "results": [
+  {
+   "id": "ly-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1084,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The 1959 Royal Decree predates Libya DCAF's 2022 database; the source is a modern repository, not the original publisher."
+  },
+  {
+   "id": "ly-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1021,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited decree is dated 2026, but the claimed publication date of 21 May 2026 is in the future, making the bibliographic claim impossible."
+  },
+  {
+   "id": "ly-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 945,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such official circular titled 'منشور19 2023' appears on the Central Bank of Libya’s published laws, circulars, or decisions for 2023."
+  },
+  {
+   "id": "ly-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 940,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The 1969 Constitutional Declaration was issued by Libya’s Revolutionary Command Council, not published by the Leiden/Benghazi Academic Collection."
+  },
+  {
+   "id": "ly-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 942,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited title is a Libyan decree on military discipline, not published by DCAF’s 2022 database; the claim misattributes the source."
+  },
+  {
+   "id": "ly-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 885,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited decree is dated 2026, yet no such future official gazette entry exists today."
+  },
+  {
+   "id": "ly-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 816,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The 1959 Royal Decree predates DCAF’s 2019 database; the platform merely hosts a digitized copy, not the original publication."
+  },
+  {
+   "id": "ly-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 937,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The decree is dated 2026 and concerns a 1447 H holiday, so it cannot have been published in 2026-05-21 by any corpus."
+  },
+  {
+   "id": "ly-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 750,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited title is a 2023 Libyan Central Bank circular, not an Egyptian Legal Corpus publication."
+  },
+  {
+   "id": "ly-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 678,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The 1969 Constitutional Declaration was issued in Libya, not published by the Egyptian Legal Corpus on Hugging Face."
+  },
+  {
+   "id": "ly-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 775,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited title is a Libyan decree, not a DCAF database publication; DCAF only hosts or indexes it."
+  },
+  {
+   "id": "ly-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 959,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The 2026 decree post-dates today and cannot appear in any 2026-05-21 corpus."
+  }
+ ]
+}

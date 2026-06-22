@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Jamaica — Source-Grounded Citation Reliability (JM)",
+ "country": "JM",
+ "jurisdiction": "Jamaica",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:56:31.236752+00:00",
+ "results": [
+  {
+   "id": "jm-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 950,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The decision date (2026-03-13) is in the future, so it cannot yet be published by the Jamaica Court of Appeal."
+  },
+  {
+   "id": "jm-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 876,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Jamaica Supreme Court does not publish 2026 judgments; the cited date is in the future, making the bibliographic claim impossible."
+  },
+  {
+   "id": "jm-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1118,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The FSC did not publish any such guideline on 18 February 2025; the cited date is in the future and no matching document exists."
+  },
+  {
+   "id": "jm-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 934,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Jamaica’s Constitution is the supreme law; it is not created or amended by ministerial proclamation or Official Gazette publication."
+  },
+  {
+   "id": "jm-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 962,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The citation uses a future date (2026) and an implausible party name, making it impossible for a real Jamaica Court of Appeal judgment."
+  },
+  {
+   "id": "jm-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 759,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier '[2026] JMSC Civ 32' cannot exist because the current year is 2024, making any 2026 judgment date impossible."
+  },
+  {
+   "id": "jm-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 889,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Jamaica Court of Appeal Judgments is not an official publisher; the decision is published by the official Jamaica Legal Information Institute (JAMLAW)."
+  },
+  {
+   "id": "jm-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 875,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '[2026] JMSC Civ 30' cannot exist because the current year is 2024, making a 2026 judgment impossible."
+  },
+  {
+   "id": "jm-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 779,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited source is an Aruban archive, not a Jamaican official publication, so it cannot authenticate a Jamaican legal guideline."
+  },
+  {
+   "id": "jm-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2012,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Jamaica's Constitution is a UK Order in Council (1962), not a Sint Maarten proclamation; the cited source is foreign and unrelated."
+  },
+  {
+   "id": "jm-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1115,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Jamaica Court of Appeal does not publish its judgments; they are released by the Court Administration Division or judiciary website."
+  },
+  {
+   "id": "jm-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 987,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '[2026] JMSC Civ 33' cannot exist because the judgment date (2026-03-06) is in the future."
+  }
+ ]
+}

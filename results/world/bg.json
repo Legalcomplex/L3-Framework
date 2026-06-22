@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Bulgaria — Source-Grounded Citation Reliability (BG)",
+ "country": "BG",
+ "jurisdiction": "Bulgaria",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:52:48.710150+00:00",
+ "results": [
+  {
+   "id": "bg-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 974,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The State Gazette uses sequential issue numbers (e.g., 100/2005), not the identifier '1005', and 'Президент на републиката' is not an official gazette issue."
+  },
+  {
+   "id": "bg-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 925,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Bulgarian Constitutional Court decisions are numbered by year (e.g., Решение №1/2026), not by a standalone “2026-01-23” date format."
+  },
+  {
+   "id": "bg-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 877,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier '542/2020' is the case number, not the decision number; the cited decision is actually № 514."
+  },
+  {
+   "id": "bg-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 884,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 16.04.2026 is in the future, so the decision cannot yet exist in any official register."
+  },
+  {
+   "id": "bg-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 888,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Bulgarian Constitutional Court decisions use \"Определение\" numbering, but a 2026 date is impossible as the present year is 2024."
+  },
+  {
+   "id": "bg-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 865,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Bulgarian Supreme Court of Cassation decisions are cited by case number and year, not by a separate “решение № 361” identifier."
+  },
+  {
+   "id": "bg-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 818,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The State Gazette uses sequential issue numbers, not '1006' as an identifier for the President of the Republic."
+  },
+  {
+   "id": "bg-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 811,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '3/2027' cannot refer to a 2026 decision, as the year in the docket number must match or post-date the decision date."
+  },
+  {
+   "id": "bg-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 956,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Bulgarian Supreme Court of Cassation decisions are numbered by civil/criminal case type (e.g., № 514/2022), not solely by “решение № 514” (2022-10-14)."
+  },
+  {
+   "id": "bg-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 956,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Constitutional Court of Ukraine has no authority to issue decisions in Bulgaria, and the 2026 date is impossible."
+  },
+  {
+   "id": "bg-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 982,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Bulgarian Constitutional Court decisions use \"Определение №\" numbering, but no decision dated 2025-01-23 exists yet."
+  },
+  {
+   "id": "bg-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 798,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Cyprus Tax Tribunal Decisions is a Cypriot body; it cannot publish Bulgarian court decisions such as “решение № 361”."
+  }
+ ]
+}

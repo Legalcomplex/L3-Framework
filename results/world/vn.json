@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Vietnam — Source-Grounded Citation Reliability (VN)",
+ "country": "VN",
+ "jurisdiction": "Vietnam",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T16:01:57.794899+00:00",
+ "results": [
+  {
+   "id": "vn-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 988,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The claim misattributes the source; Quyết định 1934/QĐ-UBND 2015 was issued by a Vietnamese provincial People’s Committee, not published by Thu Vien Phap Luat."
+  },
+  {
+   "id": "vn-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1222,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The claim is implausible: Vietnam Official Gazette issues are not dated in 2026, and the cited document number indicates a 2024 consolidation."
+  },
+  {
+   "id": "vn-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1059,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited decision is not published by Vietnam Supreme People's Court Decisions (Juricaf / AHJUCAF); that database does not contain Vietnamese judgments."
+  },
+  {
+   "id": "vn-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 993,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The 2013 Constitution was adopted 28 November 2013 and promulgated the same day; VBPL merely hosts the text, it did not “publish” it."
+  },
+  {
+   "id": "vn-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 989,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The claim misattributes the source; Quyết định 17/2015/QĐ-UBND was issued by a provincial People’s Committee, not published by Thu Vien Phap Luat."
+  },
+  {
+   "id": "vn-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1063,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The claim is implausible: Vietnam Official Gazette issues are not dated in 2026, and the cited document number/format does not match known consolidated texts."
+  },
+  {
+   "id": "vn-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 867,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decision is a Vietnamese provincial document; it cannot be published in Thailand’s Royal Gazette."
+  },
+  {
+   "id": "vn-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 958,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The claim misstates the document: Văn bản hợp nhất 28/VBHN-BCT was issued 30-12-2022, not published in Công Báo on 10-04-2023."
+  },
+  {
+   "id": "vn-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 915,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited Vietnamese Supreme Court decision cannot be published by the Philippine Supreme Court E-Library, which only hosts Philippine jurisprudence."
+  },
+  {
+   "id": "vn-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 824,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The 2013 Constitution is a Vietnamese official legal source, not published by a Cambodian legal library."
+  },
+  {
+   "id": "vn-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 976,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The source is a Vietnamese provincial decision, not an Indonesian JDIHN publication; the cited network has no jurisdiction over Vietnam’s legal documents."
+  },
+  {
+   "id": "vn-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1190,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The claim misstates the document: Văn bản hợp nhất 27/VBHN-BCT was issued 27-02-2023, not published in Công Báo on 10-04-2023."
+  }
+ ]
+}

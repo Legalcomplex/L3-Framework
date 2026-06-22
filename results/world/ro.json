@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Romania — Source-Grounded Citation Reliability (RO)",
+ "country": "RO",
+ "jurisdiction": "Romania",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:59:38.046048+00:00",
+ "results": [
+  {
+   "id": "ro-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 974,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 9 May 2025 lies in the future, so no such decision can yet exist."
+  },
+  {
+   "id": "ro-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 977,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited title and date refer to a non-existent 1864 law; Portal Legislativ only hosts post-1865 legislation, so the bibliographic claim is inaccurate."
+  },
+  {
+   "id": "ro-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 970,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No official ANSPDCP decision titled \"Regimul sancționator pentru sectorul public\" dated 23 July 2024 exists in Romania’s public legal sources."
+  },
+  {
+   "id": "ro-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 979,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 10 December 2025 is in the future, so Decision 740 cannot yet have been issued or published."
+  },
+  {
+   "id": "ro-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1022,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The 1864 law was not published on Portal Legislativ, which did not exist until the 21st century."
+  },
+  {
+   "id": "ro-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 919,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 05/03/2026 is in the future, so no such decision can exist yet."
+  },
+  {
+   "id": "ro-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1175,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The decision is dated 2025-05-09, yet the claimed publication source is Moldova’s courts portal, not Romania’s, making the bibliographic claim jurisdictionally and factually incorrect."
+  },
+  {
+   "id": "ro-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1071,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited Romanian law (1864) cannot have been published by Slovenia’s PISRS database, which covers only Slovenian legislation."
+  },
+  {
+   "id": "ro-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 956,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No official ANSPDCP decision titled \"Regimul sancționator pentru sectorul public\" dated 23 July 2021 exists in the Authority’s published register."
+  },
+  {
+   "id": "ro-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 869,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The decision date (10 Dec 2025) is after the publication date (1 Mar 2025), which is chronologically impossible."
+  },
+  {
+   "id": "ro-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 850,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited law is Romanian (Parliament of Romania, 1864), not published in Greece’s FEK."
+  },
+  {
+   "id": "ro-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 772,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Constitutional Court of Ukraine has no authority to issue decisions in Romania; the cited source is not an official Romanian legal publication."
+  }
+ ]
+}

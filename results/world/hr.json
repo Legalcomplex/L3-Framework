@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Croatia — Source-Grounded Citation Reliability (HR)",
+ "country": "HR",
+ "jurisdiction": "Croatia",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:55:49.967815+00:00",
+ "results": [
+  {
+   "id": "hr-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1379,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such decision exists on odluke.sudovi.hr; the cited identifier \"Ovrv-88340/2024-6 - OGSZG\" is fabricated."
+  },
+  {
+   "id": "hr-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1088,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-02-25 is in the future, so the decision cannot yet have been published."
+  },
+  {
+   "id": "hr-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 887,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier '2026/13/117' is invalid; Croatian Official Gazette uses year/issue format (e.g., 2026/13), not three-part codes."
+  },
+  {
+   "id": "hr-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 883,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Croatian High Administrative Court does not publish decisions under the identifier \"Rješenje - Su - Uzp-24/2025-5\"."
+  },
+  {
+   "id": "hr-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 881,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Supreme Court of Croatia does not publish decisions dated in the future (2025-10-13)."
+  },
+  {
+   "id": "hr-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 921,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier contains an impossible future year (2026) and the date 2026-03-26 has not yet occurred."
+  },
+  {
+   "id": "hr-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 912,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The decision identifier and court name indicate a Croatian enforcement proceeding, not a Latvian Constitutional Court publication."
+  },
+  {
+   "id": "hr-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 912,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Constitutional Court of Croatia does not publish decisions under the identifier \"U-III-478/2021 - usvajanje (odluka,)\" dated 2024-02-25."
+  },
+  {
+   "id": "hr-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 877,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '2026/13/118' is invalid; Croatian Official Gazette uses year/issue format (e.g., 2026/13), not three-part codes."
+  },
+  {
+   "id": "hr-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 678,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The decision identifier and date indicate a Croatian court ruling, not a Moldovan source."
+  },
+  {
+   "id": "hr-src-f05",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1022,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The ECLI 'ECLI:HR:VSRH:2025:5159' cannot exist because the year 2025 has not yet occurred."
+  },
+  {
+   "id": "hr-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 817,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decision identifier and parties are Croatian; the issuing body is the Croatian Competition Agency (AZTN), not Montenegro’s Constitutional Court."
+  }
+ ]
+}

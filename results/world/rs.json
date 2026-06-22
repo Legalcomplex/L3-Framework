@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Serbia — Source-Grounded Citation Reliability (RS)",
+ "country": "RS",
+ "jurisdiction": "Serbia",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:59:40.516382+00:00",
+ "results": [
+  {
+   "id": "rs-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 857,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The decision date (2025-12-11) is in the future, making the bibliographic claim impossible."
+  },
+  {
+   "id": "rs-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 917,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Zakon o pečatu državnih i drugih organa was published in Službeni glasnik RS, br. 101/2005, not 2021-01-01."
+  },
+  {
+   "id": "rs-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 985,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Serbian Supreme Court decisions use case numbers like Rev 3486/2025, not the cited format with sub-codes and future 2026 date."
+  },
+  {
+   "id": "rs-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 885,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier '073-14-2204/2025-02' cannot reference a 2026-04-16 publication, as the year 2025 precedes 2026."
+  },
+  {
+   "id": "rs-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 922,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such decision exists; the cited identifier mixes unrelated elements and is not published by the VKS database."
+  },
+  {
+   "id": "rs-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 741,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Law on the State Seal of the Republic of Serbia was published in the Official Gazette, not via the Serbia Legal Information System."
+  },
+  {
+   "id": "rs-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 972,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Constitutional Court of Serbia does not publish decisions under the title \"Одлука о усвајању\"; that phrasing is not an official designation used by the Court."
+  },
+  {
+   "id": "rs-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 937,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The law is Serbian; Narodne novine is Croatia’s gazette, so the cited publication source is jurisdictionally incorrect."
+  },
+  {
+   "id": "rs-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 862,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Serbian Supreme Court decisions use case numbers like Rev 3486/2025, not the cited format with sub-codes and semicolon."
+  },
+  {
+   "id": "rs-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 885,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '073-14-2204/2025-03' cannot correspond to a 2026-04-16 entry, as the year in the identifier precedes the claimed date."
+  },
+  {
+   "id": "rs-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 832,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decision originates from Serbian courts, not BiH, so it cannot be published by the BiH Judicial Practice Portal."
+  },
+  {
+   "id": "rs-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 682,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Law on the State Seal of the Republic of Serbia was published in the Official Gazette, not via the Serbia Legal Information System."
+  }
+ ]
+}

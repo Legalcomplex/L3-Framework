@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Aruba — Source-Grounded Citation Reliability (AW)",
+ "country": "AW",
+ "jurisdiction": "Aruba",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.75,
+ "correct": 9,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:52:27.219897+00:00",
+ "results": [
+  {
+   "id": "aw-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 868,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such Landsverordening exists; the cited title and DWJZ/Internet Archive reference are fabricated."
+  },
+  {
+   "id": "aw-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 981,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The cited ECLI identifies a 2011 decision of the Gemeenschappelijk Hof van Justitie, the joint court whose Aruba decisions are officially published under that designation."
+  },
+  {
+   "id": "aw-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 878,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited source is an unofficial Internet Archive snapshot, not an official Aruba DWJZ publication."
+  },
+  {
+   "id": "aw-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 959,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The ECLI identifier and court name correctly identify an official Gemeenschappelijk Hof decision from Aruba’s jurisdiction."
+  },
+  {
+   "id": "aw-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1064,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The claim misattributes the source; Afkondigingsblad van Aruba 2020 no. 184 is an official government gazette, not a publication of the Internet Archive."
+  },
+  {
+   "id": "aw-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 795,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The ECLI identifier directly matches the cited Aruban court decision and its official publication details."
+  },
+  {
+   "id": "aw-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1268,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited title and date do not match any verifiable Aruba DWJZ archive entry; the claim appears fabricated."
+  },
+  {
+   "id": "aw-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 847,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The two ECLI identifiers are distinct; BQ0629 cannot be the same decision as BQ0628."
+  },
+  {
+   "id": "aw-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 846,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No credible evidence shows that \"01.02AB91.123 Pensioenverordening leden der Staten\" was published by Aruba DWJZ via the Internet Archive on 2023-01-01."
+  },
+  {
+   "id": "aw-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 736,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The two ECLI identifiers are distinct; BQ0636 cannot be the same decision as BQ0635."
+  },
+  {
+   "id": "aw-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 944,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Afkondigingsblad van Aruba is Aruba’s own official gazette, not a Curacao publication."
+  },
+  {
+   "id": "aw-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 808,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The decision is from Aruba’s Common Court of Justice, not the Cayman Islands; judicial.ky has no jurisdiction to publish it."
+  }
+ ]
+}

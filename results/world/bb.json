@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Barbados — Source-Grounded Citation Reliability (BB)",
+ "country": "BB",
+ "jurisdiction": "Barbados",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:52:38.221493+00:00",
+ "results": [
+  {
+   "id": "bb-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 905,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The Barbados Judiciary publishes official judgments on barbadoslawcourts.gov.bb, so the cited decision is correctly attributed to that source."
+  },
+  {
+   "id": "bb-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1062,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date April 16, 2026 lies in the future, so the cited Gazette issue cannot yet have been published."
+  },
+  {
+   "id": "bb-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1084,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The claim is tautological, merely repeating the same identifier without providing any verifiable bibliographic evidence or external confirmation."
+  },
+  {
+   "id": "bb-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 950,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Barbados Employment Rights Tribunal does not publish decisions under that title or format; official rulings are issued by the Employment Rights Tribunal without such addendum designations."
+  },
+  {
+   "id": "bb-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 917,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Financial Services Commission Act was enacted in 2010; the 2022-11-16 date refers only to the FSC website’s publication of the legislation, not the Act itself."
+  },
+  {
+   "id": "bb-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 813,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Barbados Fair Trading Commission (FTC) does not publish decisions under the name \"Barbados FTC — Fair Trading Commission Decisions\"; its official outputs are issued directly by the FTC itse"
+  },
+  {
+   "id": "bb-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 802,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Barbados Judiciary Judgments is not an official publisher; the authoritative source is the Barbados Government Printing Department."
+  },
+  {
+   "id": "bb-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 828,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Bermuda Laws Online publishes Bermudian, not Barbadian, legislation; Barbados uses its own official gazette."
+  },
+  {
+   "id": "bb-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 699,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifiers differ in the Cap number (110B vs 109B), so they cannot be the same subsidiary legislation."
+  },
+  {
+   "id": "bb-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 870,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decision originates from Barbados, yet the claimed publisher (judicial.ky) is the Cayman Islands judiciary’s site, creating a clear jurisdictional mismatch."
+  },
+  {
+   "id": "bb-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1074,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Financial Services Commission Act was enacted in 2010; the 2019-11-16 date refers only to the FSC website’s upload or revision, not the Act’s publication."
+  },
+  {
+   "id": "bb-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1024,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Fair Trading Commission (FTC) in Barbados is not the publisher; it is the issuing authority, and official decisions are not formally \"published by\" the FTC itself."
+  }
+ ]
+}

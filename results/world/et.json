@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Ethiopia — Source-Grounded Citation Reliability (ET)",
+ "country": "ET",
+ "jurisdiction": "Ethiopia",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:54:41.874573+00:00",
+ "results": [
+  {
+   "id": "et-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1023,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited document is a ratified international financing agreement (Proclamation 823/2014), not a Supreme Court judgment, so it would not be published by the Federal Supreme Court’s Digital Law"
+  },
+  {
+   "id": "et-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 923,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Ethiopia Federal Courts Case Law is not an official publisher of binding tax decisions; the Federal Supreme Court Cassation Division issues them."
+  },
+  {
+   "id": "et-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 902,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Proclamation No. 1051 was published in the Federal Negarit Gazette on 27 March 2018, not 5 June 2017."
+  },
+  {
+   "id": "et-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 979,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No official directive titled 'SPECIAL FOREIGN EXCHANGE AUCTION GUIDELINES' was issued by the National Bank of Ethiopia on 30 December 2025."
+  },
+  {
+   "id": "et-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 894,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Ethiopia Federal Supreme Court Cassation Decisions do not publish under the title “102141 civil procedure/ pleaders/ agents”; that format is not an official bibliographic designation."
+  },
+  {
+   "id": "et-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 950,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited source is a bilateral agreement, not an official Ethiopian law; the Supreme Court library merely hosts it, not publishes it as legislation."
+  },
+  {
+   "id": "et-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 914,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited item is a parliamentary ratification proclamation (Proc. 823/2014), not a Supreme Court judgment, so it cannot originate from the Court’s Digital Law Library."
+  },
+  {
+   "id": "et-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 895,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No public evidence confirms identifier '14700' as a 2015-03-29 Ethiopian federal tax case on business expenses."
+  },
+  {
+   "id": "et-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1095,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Proclamation No. 1051 is an Ethiopian federal law, not a Seychelles publication."
+  },
+  {
+   "id": "et-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 815,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No official Ethiopian National Bank directive bears identifier 'et-nbe-44087' or the title 'SPECIAL FOREIGN EXCHANGE AUCTION GUIDELINES' dated 2025-12-30."
+  },
+  {
+   "id": "et-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 822,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Ethiopia Federal Supreme Court Cassation Decisions do not publish under the title “102141 civil procedure/ pleaders/ agents”; that format is not an official bibliographic designation."
+  },
+  {
+   "id": "et-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 817,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Kenya Law reports Kenyan, not Ethiopian, legislation; the cited bilateral agreement is an Ethiopian official source."
+  }
+ ]
+}

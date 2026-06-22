@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Saint Lucia — Source-Grounded Citation Reliability (LC)",
+ "country": "LC",
+ "jurisdiction": "Saint Lucia",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:57:14.354913+00:00",
+ "results": [
+  {
+   "id": "lc-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 910,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The claim misstates the source: Saint Lucia Government Gazette issues are dated by publication day, not retroactively labeled “2004-01-01.”"
+  },
+  {
+   "id": "lc-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 819,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Saint Lucia has not enacted or published any Act No. 11 of 2025, as the current year is 2024."
+  },
+  {
+   "id": "lc-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 896,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Saint Lucia has not yet reached 2026, so no Statutory Instrument dated 2026-01-01 can exist."
+  },
+  {
+   "id": "lc-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 897,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Financial Services Regulatory Authority Act 2011 is primary legislation enacted by Parliament, not a publication of the Authority itself."
+  },
+  {
+   "id": "lc-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 814,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Saint Lucia’s official legislation portal does not host collective agreements; they are internal HR documents, not government legislation."
+  },
+  {
+   "id": "lc-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 832,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Gazette issue date (2004-03-01) precedes the claimed publication date (March 29, 2004), making the bibliographic claim chronologically impossible."
+  },
+  {
+   "id": "lc-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 816,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The date and publisher mismatch: Saint Lucia law cannot be issued in Bahamas Consolidated Legislation."
+  },
+  {
+   "id": "lc-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 735,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Saint Lucia legislation cannot be published by Cayman Islands Legislation; the cited source and jurisdiction are incompatible."
+  },
+  {
+   "id": "lc-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 747,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Saint Lucia issues S.I.s via its Government Gazette, not Aruba’s DWJZ archive; a 2026 order cannot have been published in 2026-01-01."
+  },
+  {
+   "id": "lc-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 783,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Financial Services Regulatory Authority Act 2011 is Saint Lucian legislation, not a Curacao government publication."
+  },
+  {
+   "id": "lc-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 709,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Saint Lucia and Grenada are separate sovereign states; a Saint Lucian collective agreement cannot be published in the Laws of Grenada."
+  },
+  {
+   "id": "lc-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 823,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Sint Maarten is not part of Saint Lucia’s jurisdiction; its legislation cannot be an official Saint Lucian legal source."
+  }
+ ]
+}

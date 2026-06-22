@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Sweden — Source-Grounded Citation Reliability (SE)",
+ "country": "SE",
+ "jurisdiction": "Sweden",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:59:59.080983+00:00",
+ "results": [
+  {
+   "id": "se-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 830,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The year 2026 is in the future, so no such SFS law can have been published on 2026-01-29."
+  },
+  {
+   "id": "se-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1096,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Swedish Parliament (Riksdagen) does not publish official legal sources under future dates such as 2026-02-10."
+  },
+  {
+   "id": "se-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1003,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Swedish Supreme Administrative Court case identifiers like 3034-24 are real, but a 2026-02-04 decision date is impossible since today is 2025."
+  },
+  {
+   "id": "se-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 941,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No Supreme Court decision with case number Ö 1052-25 dated 29 December 2025 exists; the Swedish Supreme Court has not issued or published any such ruling."
+  },
+  {
+   "id": "se-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 961,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Swedish courts do not publish decisions under the prefix “ÖM”; that format is used by the Migration Agency (Migrationsverket), not the Courts Administration (Domstolsverket)."
+  },
+  {
+   "id": "se-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 776,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The year 2025 has not yet occurred, so no such SFS regulation can exist or have been published."
+  },
+  {
+   "id": "se-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 744,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Lag (2026:43) is a Swedish statute, so it cannot be published by Finland’s Finlex database."
+  },
+  {
+   "id": "se-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 769,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No official Swedish parliamentary document with identifier 'HD03120' exists; the cited title and date do not match any Riksdag record."
+  },
+  {
+   "id": "se-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 728,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Swedish case identifiers use the filing year; '3034-25' cannot refer to a 2024 case decided in 2026."
+  },
+  {
+   "id": "se-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 954,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. “Den frånvarande fadern” (Ö 1052-25) is not a Supreme Court decision; the case number and title indicate a lower-court or administrative matter, not Högsta domstolen."
+  },
+  {
+   "id": "se-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 693,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Swedish Courts (Domstolsverket) does not publish individual court decisions; only the courts themselves issue rulings."
+  },
+  {
+   "id": "se-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 761,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The regulation is Swedish, so it cannot be published by Norway’s Stortingets datatjeneste."
+  }
+ ]
+}

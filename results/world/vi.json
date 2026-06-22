@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — U.S. Virgin Islands — Source-Grounded Citation Reliability (VI)",
+ "country": "VI",
+ "jurisdiction": "U.S. Virgin Islands",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T16:01:54.647092+00:00",
+ "results": [
+  {
+   "id": "vi-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 989,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The U.S. Virgin Islands Supreme Court does not publish opinions under the imprint “USVI Supreme Court Opinions”; its official reporter is “V.I.”"
+  },
+  {
+   "id": "vi-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1076,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The U.S. Virgin Islands Superior Court does not publish its opinions under the heading “USVI Superior Court Published Opinions.”"
+  },
+  {
+   "id": "vi-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 998,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No public USVI Supreme Court opinion record matches SCT-Civ-2024-0020 or a December 18, 2024 Magras v. People decision."
+  },
+  {
+   "id": "vi-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1018,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The USVI Superior Court does not publish its own opinions; official opinions are issued by the Virgin Islands Reports or the Supreme Court of the Virgin Islands."
+  },
+  {
+   "id": "vi-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1063,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The U.S. Virgin Islands Supreme Court does not publish opinions under the name \"USVI Supreme Court Opinions\"; official decisions are released by the court itself or through recognized legal dat"
+  },
+  {
+   "id": "vi-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 726,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The 2025 date is impossible for a 2017 case identifier, indicating the bibliographic claim is erroneous."
+  },
+  {
+   "id": "vi-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 801,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No public USVI Supreme Court opinion matches that identifier or title on the official site."
+  },
+  {
+   "id": "vi-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 912,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No USVI Superior Court opinions from July 2025 exist, as that date is in the future."
+  },
+  {
+   "id": "vi-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1047,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The U.S. Virgin Islands Supreme Court does not publish its opinions under the title “USVI Supreme Court Opinions”; official decisions appear in the Virgin Islands Reports or on the court’s offi"
+  },
+  {
+   "id": "vi-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 837,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. USVI Superior Court opinions are published by the court itself or official reporters, not a generic “USVI Superior Court Published Opinions” imprint."
+  },
+  {
+   "id": "vi-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 861,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The U.S. Virgin Islands is not governed by the British Virgin Islands (BVI) Commercial Court; its judgments are not official legal sources for USVI cases."
+  },
+  {
+   "id": "vi-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 806,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The U.S. Virgin Islands has no connection to Bermuda Supreme Court Judgments, so the cited decision cannot be an official USVI legal source."
+  }
+ ]
+}

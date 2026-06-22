@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Panama — Source-Grounded Citation Reliability (PA)",
+ "country": "PA",
+ "jurisdiction": "Panama",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:59:00.027341+00:00",
+ "results": [
+  {
+   "id": "pa-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1299,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Panama's Corte Suprema de Justicia does not publish decisions under the identifier \"Entrada N°244642021\"; its official jurisprudence uses different numbering and publication channels."
+  },
+  {
+   "id": "pa-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1006,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Legispan is Panama’s National Assembly site; the cited title is an Executive Decree, not Assembly legislation, and the 2026 date is impossible."
+  },
+  {
+   "id": "pa-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1001,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No public evidence confirms Acuerdo No. 3 (2025) was issued or published by Panama’s Superintendencia de Bancos on 2025-05-12."
+  },
+  {
+   "id": "pa-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 998,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Panama's Corte Suprema de Justicia does not publish decisions under the identifier \"Expediente N°95017-2021\"; official jurisprudence uses different numbering and publication channels."
+  },
+  {
+   "id": "pa-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 995,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Legispan is Panama’s National Assembly site; it cannot publish 2026-dated material in 2024, making the bibliographic claim chronologically impossible."
+  },
+  {
+   "id": "pa-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 847,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No public evidence confirms that Acuerdo No. 1 (2024) was issued or published by Panama’s Superintendencia de Bancos on 19 March 2024."
+  },
+  {
+   "id": "pa-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 939,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Panama has no connection to Mexico’s SCJN; the cited decision identifier and platform are exclusively Mexican federal judicial sources."
+  },
+  {
+   "id": "pa-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 952,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Legispan is the Panamanian legislature’s official site; the cited title is a bill/proyecto, not the enacted decree itself."
+  },
+  {
+   "id": "pa-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 905,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Acuerdo No. 3 (2025) is a Panamanian instrument, so it cannot be an official publication of Honduras’ Tribunal Superior de Cuentas."
+  },
+  {
+   "id": "pa-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1127,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decision is a Panamanian file number, not a Mexican Supreme Court case, so it cannot appear in Mexico’s SCJN Open Data Platform."
+  },
+  {
+   "id": "pa-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 892,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited source is a Mexican federal repository; it cannot publish Panamanian administrative orders."
+  },
+  {
+   "id": "pa-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 821,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Acuerdo No. 1 (2024) is a Panamanian Superintendencia resolution, not Mexican state legislation, so the cited source is incorrect."
+  }
+ ]
+}

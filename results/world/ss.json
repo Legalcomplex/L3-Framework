@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — South Sudan — Source-Grounded Citation Reliability (SS)",
+ "country": "SS",
+ "jurisdiction": "South Sudan",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T16:00:27.798169+00:00",
+ "results": [
+  {
+   "id": "ss-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 989,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. South Sudan’s Ministry of Justice did not publish the Code of Civil Procedure Act 2007; the statute was enacted in 2011 after independence."
+  },
+  {
+   "id": "ss-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1214,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No official Bank of South Sudan “Regulations & Circulars” page or April statistical bulletin was published on 2024-12-05; the cited source does not exist."
+  },
+  {
+   "id": "ss-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2096,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. South Sudan’s Advocates Act is Act No. 9 of 2013, not “55 of 2013,” and no official Ministry of Justice compilation titled “Laws (2013-01-01)” exists."
+  },
+  {
+   "id": "ss-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1141,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No official Bank of South Sudan “Regulations & Circulars” page or document dated 5 December 2024 exists; the cited title is unverifiable."
+  },
+  {
+   "id": "ss-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 985,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. South Sudan’s Ministry of Justice did not publish the 2011 Act; the Commission itself was created by presidential decree, not ministerial legislation."
+  },
+  {
+   "id": "ss-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 847,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No verifiable evidence exists that the Bank of South Sudan published a document titled 'Risk Based Supervision for BoSS 04102024' on 4 October 2024."
+  },
+  {
+   "id": "ss-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 833,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. South Sudan’s Code of Civil Procedure Act 2007 was enacted by its own legislature, not published by Tanzania’s Attorney General’s Office."
+  },
+  {
+   "id": "ss-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 877,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No official Bank of South Sudan “Regulations & Circulars” page or document dated 5 Dec 2023 matches the cited title."
+  },
+  {
+   "id": "ss-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 814,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Advocates Act (55 of 2013) is Kenyan legislation, not a South Sudanese official legal source."
+  },
+  {
+   "id": "ss-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 940,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Bank of South Sudan has not published any “Statistical bulletin table-May” on 5 December 2026; that future date makes the claim impossible."
+  },
+  {
+   "id": "ss-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 742,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Seychelles Official Gazette publishes Seychelles legislation, not South Sudanese statutes."
+  },
+  {
+   "id": "ss-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 920,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. South Sudan’s central bank is the Bank of South Sudan (BoSS); the cited source is a Malagasy database, not a South Sudanese official legal publication."
+  }
+ ]
+}

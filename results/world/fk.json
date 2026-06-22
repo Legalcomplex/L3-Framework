@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Falkland Islands — Source-Grounded Citation Reliability (FK)",
+ "country": "FK",
+ "jurisdiction": "Falkland Islands",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:54:52.424974+00:00",
+ "results": [
+  {
+   "id": "fk-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1008,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Administration of Estates Ordinance 1949 predates the 2022 Falkland Islands Legislation portal; the cited publication date refers to online consolidation, not original enactment."
+  },
+  {
+   "id": "fk-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 898,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such 2018 inquest decision appears in Falkland Islands Court Decisions records; the cited source and date are unsupported."
+  },
+  {
+   "id": "fk-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 994,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such ordinance exists; Falkland Islands Legislation records show no 2024 amendment to the Administration of Justice Ordinance."
+  },
+  {
+   "id": "fk-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 935,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such 2023 decision exists; Falkland Islands Court Decisions is not an official publisher of judgments."
+  },
+  {
+   "id": "fk-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 819,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The 1940 Ordinance predates the 2017 Falkland Islands Legislation site; that platform merely hosts a later consolidation or reprint, not the original publication."
+  },
+  {
+   "id": "fk-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1755,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Falkland Islands Court Decisions is not a recognized publisher of official legal sources in the jurisdiction."
+  },
+  {
+   "id": "fk-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 905,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Administration of Estates Ordinance 1949 predates Falkland Islands Legislation’s 2024 launch and was originally published by the Islands’ own gazette, not that platform."
+  },
+  {
+   "id": "fk-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 787,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Falkland Islands inquest decision cannot be published by Colombia Datos Abiertos, a Colombian open-data platform for Constitutional Court rulings."
+  },
+  {
+   "id": "fk-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 664,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Falkland Islands are a British Overseas Territory; their legislation is not published by Uruguay’s IMPO Open Data service."
+  },
+  {
+   "id": "fk-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 655,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Falkland Islands Court Decisions is not a recognised publisher of official legal sources."
+  },
+  {
+   "id": "fk-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 738,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The 1940 Ordinance predates the 2015 Falkland Islands Legislation site; that portal only hosts consolidated or revised texts, not the original publication."
+  },
+  {
+   "id": "fk-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 873,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Falkland Islands are a British Overseas Territory; its courts are not under Argentina’s Supreme Court (JUBA), so the cited Argentine publisher cannot issue an official Falkland Islands deci"
+  }
+ ]
+}

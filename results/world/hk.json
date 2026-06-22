@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Hong Kong — Source-Grounded Citation Reliability (HK)",
+ "country": "HK",
+ "jurisdiction": "Hong Kong",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.6667,
+ "correct": 8,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:55:44.507479+00:00",
+ "results": [
+  {
+   "id": "hk-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 841,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. 'Cap. 104 sub. leg. A' is not a valid citation; Hong Kong e-Legislation uses 'Cap. 104A' for subsidiary legislation, not 'sub. leg. A'."
+  },
+  {
+   "id": "hk-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 951,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The citation correctly identifies a genuine 1981 Board of Review decision on salaries tax furniture allowance, issued by Hong Kong’s Inland Revenue Board of Review."
+  },
+  {
+   "id": "hk-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 819,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier '[2025] HKCT 4' cannot refer to a 21 October 2025 judgment because that date has not yet occurred."
+  },
+  {
+   "id": "hk-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 921,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Hong Kong Legal Information Institute does not publish official judgments; only the Judiciary’s website provides authoritative HK court decisions."
+  },
+  {
+   "id": "hk-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1044,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The Securities and Futures Appeals Tribunal is the statutory body that publishes its own rulings, including SFAT Application No. 4/2021 (2022-04-25)."
+  },
+  {
+   "id": "hk-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1027,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Cap. 101 sub. leg. B (Import and Export Ordinance subsidiary legislation) was never published on Hong Kong e-Legislation, which only commenced in 2015."
+  },
+  {
+   "id": "hk-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1001,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Cap. 104 sub. leg. A is Hong Kong legislation, not a Macau source; the Macau Legal Portal cannot publish official Hong Kong legal materials."
+  },
+  {
+   "id": "hk-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 922,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The citation format and date are inconsistent; Board of Review decisions use case numbers like D12/81, not 1979-11-25 publication dates."
+  },
+  {
+   "id": "hk-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 920,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '[2025] HKCT 5' cannot refer to a 21 October 2025 judgment because that date lies in the future."
+  },
+  {
+   "id": "hk-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 793,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '[2026] HKDC 568' cannot exist because the current year is 2024; a 2026 citation is impossible."
+  },
+  {
+   "id": "hk-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 711,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The date (2019-04-25) precedes the 2021 case number, making the bibliographic claim chronologically impossible."
+  },
+  {
+   "id": "hk-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 780,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Cap. 101 sub. leg. B is Hong Kong legislation, not Korean; KLIC is Korea’s database and could not have published it."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Guam — Source-Grounded Citation Reliability (GU)",
+ "country": "GU",
+ "jurisdiction": "Guam",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:55:36.758639+00:00",
+ "results": [
+  {
+   "id": "gu-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 813,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The decision date (2026-03-09) is in the future, so it cannot yet be published by the Supreme Court of Guam."
+  },
+  {
+   "id": "gu-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 927,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Guam Legislature Public Laws is not a publisher; official public laws are enacted by the Guam Legislature and promulgated by the Governor."
+  },
+  {
+   "id": "gu-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1018,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Guam Superior Court case identifiers follow a year-based format (e.g., CF0049-19), making a 2025 decision date impossible."
+  },
+  {
+   "id": "gu-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 967,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Supreme Court of Guam does not issue opinions dated in 2026; that future date makes the bibliographic claim impossible."
+  },
+  {
+   "id": "gu-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1018,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Guam Legislature Public Laws is not a publisher; it is the official source itself."
+  },
+  {
+   "id": "gu-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 808,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Guam Superior Court decisions are not published in 2025, so a 2025-12-23 decision cannot exist."
+  },
+  {
+   "id": "gu-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 840,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Supreme Court of Guam does not publish its own opinions; they are issued by the judiciary and distributed through official reporters or the court’s website."
+  },
+  {
+   "id": "gu-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 718,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. RONLAW is Nauru’s database; Guam statutes are published by the Guam Compiler of Laws, not RONLAW."
+  },
+  {
+   "id": "gu-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 830,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Guam Superior Court decisions are not published in an official collection identified by 'CF0049-20', and the 2025 date is impossible."
+  },
+  {
+   "id": "gu-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 734,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Supreme Court of Guam does not publish its own opinions; they are issued by the Guam Compiler of Laws."
+  },
+  {
+   "id": "gu-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 831,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Guam statutes are not published by the Solomon Islands Attorney General; the cited portal is the wrong jurisdiction."
+  },
+  {
+   "id": "gu-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 969,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Guam Superior Court case identifiers follow a year-based format (e.g., CV0735-19), so a 2025 decision cannot bear the 2019 docket number CV0735-19."
+  }
+ ]
+}

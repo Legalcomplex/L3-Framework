@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Bahrain — Source-Grounded Citation Reliability (BH)",
+ "country": "BH",
+ "jurisdiction": "Bahrain",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:52:51.149368+00:00",
+ "results": [
+  {
+   "id": "bh-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 828,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-04-09 is in the future, so the claimed publication cannot yet exist."
+  },
+  {
+   "id": "bh-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1124,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-04-28 is in the future, so the claimed Official Gazette issue cannot yet have been published."
+  },
+  {
+   "id": "bh-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 851,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-05-07 is in the future, so the claimed publication cannot yet exist."
+  },
+  {
+   "id": "bh-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 844,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-04-16 is in the future, so the claimed publication cannot yet exist."
+  },
+  {
+   "id": "bh-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1279,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-04-21 is in the future, so the claimed publication cannot yet exist."
+  },
+  {
+   "id": "bh-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 813,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-04-23 is in the future, so the claimed publication cannot yet exist."
+  },
+  {
+   "id": "bh-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 846,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The date 2025-04-09 is in the future, so the cited Official Gazette issue cannot yet have been published."
+  },
+  {
+   "id": "bh-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 875,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Bahrain's Official Gazette is published by the Information Affairs Authority, not the Ministry of Information, making the bibliographic claim inaccurate."
+  },
+  {
+   "id": "bh-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1030,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The DIFC Legal Database covers Dubai International Financial Centre law, not Bahrain’s Official Gazette; the 2026 date is also impossible."
+  },
+  {
+   "id": "bh-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 875,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Jordan Legislation & Opinion Bureau does not publish Bahrain’s Official Gazette; Issue 3874 would be issued by Bahrain’s government."
+  },
+  {
+   "id": "bh-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 749,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Official Gazette is published by Bahrain's Ministry of Justice, not the Ministry of Information."
+  },
+  {
+   "id": "bh-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 742,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The date 2025-04-23 is in the future, so the claimed publication cannot yet exist."
+  }
+ ]
+}

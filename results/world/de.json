@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Germany — Source-Grounded Citation Reliability (DE)",
+ "country": "DE",
+ "jurisdiction": "Germany",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:54:12.614626+00:00",
+ "results": [
+  {
+   "id": "de-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 865,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 21.10.2025 is in the future, so this decision cannot yet exist."
+  },
+  {
+   "id": "de-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 821,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 27.01.2026 is in the future, so this BFH decision cannot yet exist."
+  },
+  {
+   "id": "de-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1137,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier BJNR002089971 corresponds to the Bundesbesoldungsgesetz (Federal Salary Act), not the 1971 unification law."
+  },
+  {
+   "id": "de-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 810,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The BVerfG does not publish \"Nichtannahmebeschlüsse\" as official decisions; only formally adopted judgments or orders appear in its official collection."
+  },
+  {
+   "id": "de-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 977,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited title is not an official German statute, and the 2026-05-15 date is in the future, making the bibliographic claim impossible."
+  },
+  {
+   "id": "de-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 827,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The ECLI contains a future date (2026) that has not yet occurred, making the bibliographic claim impossible."
+  },
+  {
+   "id": "de-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 902,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The ECLI identifier encodes the date 2025-10-21, but the claimed judgment date is 21.10.2025, which is impossible as that date has not yet occurred."
+  },
+  {
+   "id": "de-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 791,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The ECLI contains a future date (2026) that has not yet occurred, making the bibliographic claim impossible."
+  },
+  {
+   "id": "de-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 717,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The law was published 27 February 1975 (BGBl. I S. 481), not 18 March 1973."
+  },
+  {
+   "id": "de-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1441,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Isle of Man Judgments Online publishes only Manx court decisions; a German Federal Constitutional Court ruling cannot appear there."
+  },
+  {
+   "id": "de-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 849,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No such law exists; the cited title and 2025-05-15 publication date on NeuRIS are fabricated."
+  },
+  {
+   "id": "de-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 792,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decision is from Germany’s Federal Court of Justice (BGH), not the Luxembourg Administrative Tribunal."
+  }
+ ]
+}

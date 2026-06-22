@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Nicaragua — Source-Grounded Citation Reliability (NI)",
+ "country": "NI",
+ "jurisdiction": "Nicaragua",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:58:41.798993+00:00",
+ "results": [
+  {
+   "id": "ni-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 857,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Nicaragua Digesto Jurídico was not established until 1999, so it could not have published the 1993 decree."
+  },
+  {
+   "id": "ni-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 883,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Gaceta is Nicaragua’s official gazette, but the Biblioteca Enrique Bolaños is a private foundation, not the official publisher."
+  },
+  {
+   "id": "ni-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 852,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Nicaragua Digesto Jurídico is not an official legislative publisher; legal personality grants are issued via La Gaceta."
+  },
+  {
+   "id": "ni-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 934,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The citation correctly identifies Gaceta No. 76 of 26 April 1999, published by Nicaragua’s official gazette archive."
+  },
+  {
+   "id": "ni-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 879,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Nicaragua Digesto Jurídico is not an official publisher; legal personality grants appear in La Gaceta."
+  },
+  {
+   "id": "ni-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1033,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Gaceta is Nicaragua’s official gazette, but the Biblioteca Enrique Bolaños is a private foundation, not the official publisher."
+  },
+  {
+   "id": "ni-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1083,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Nicaragua Digesto Jurídico was not established until 1999, so it could not have published the 1991 decree."
+  },
+  {
+   "id": "ni-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1221,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Gaceta is Nicaragua’s official gazette, not a Mexican publication; Mexico’s Orden Jurídico Nacional cannot issue Nicaraguan state legislation."
+  },
+  {
+   "id": "ni-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 692,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Nicaragua Digesto Jurídico is a private legal database, not an official government publication source."
+  },
+  {
+   "id": "ni-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1060,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Gaceta is Nicaragua’s official gazette, not a Honduran publication; attributing it to Honduras’ TSC Virtual Library is jurisdictionally incorrect."
+  },
+  {
+   "id": "ni-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 850,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Nicaragua Digesto Jurídico is not an official legislative database; legal personality grants are published in La Gaceta."
+  },
+  {
+   "id": "ni-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 931,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Gaceta is Nicaragua’s official gazette, not a Honduran publication; attributing it to Honduras’ TSC Virtual Library is jurisdictionally incorrect."
+  }
+ ]
+}

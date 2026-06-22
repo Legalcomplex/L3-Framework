@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Equatorial Guinea — Source-Grounded Citation Reliability (GQ)",
+ "country": "GQ",
+ "jurisdiction": "Equatorial Guinea",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:55:28.420710+00:00",
+ "results": [
+  {
+   "id": "gq-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 885,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Equatorial Guinea’s official gazette is the Boletín Oficial del Estado de Guinea Ecuatorial; the Spanish “Boletín Oficial del Estado” is a different publication."
+  },
+  {
+   "id": "gq-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 889,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Equatorial Guinea’s official gazette is the Boletín Oficial del Estado de Guinea Ecuatorial; the Spanish “Boletín Oficial del Estado” is a different publication."
+  },
+  {
+   "id": "gq-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 965,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Equatorial Guinea's official gazette is the Boletín Oficial del Estado de Guinea Ecuatorial, not \"Boletín Oficial del Estado.\""
+  },
+  {
+   "id": "gq-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 991,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Equatorial Guinea’s official gazette is the Boletín Oficial del Estado de Guinea Ecuatorial; the Spanish “Boletín Oficial del Estado” is a different publication."
+  },
+  {
+   "id": "gq-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1010,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Equatorial Guinea’s official gazette is the Boletín Oficial del Estado de Guinea Ecuatorial; the cited title and date do not match any published instrument."
+  },
+  {
+   "id": "gq-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 966,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Equatorial Guinea’s official gazette is the Boletín Oficial del Estado de Guinea Ecuatorial; the cited title is not recorded in its 21 April 2021 issue."
+  },
+  {
+   "id": "gq-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 954,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Equatorial Guinea's official gazette is the Boletín Oficial del Estado de Guinea Ecuatorial; the Spanish \"Boletín Oficial del Estado\" is a different publication."
+  },
+  {
+   "id": "gq-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 852,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Equatorial Guinea’s official gazette is the Boletín Oficial del Estado de Guinea Ecuatorial, not “Boletín Oficial del Estado,” so the cited source name is incorrect."
+  },
+  {
+   "id": "gq-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 839,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Equatorial Guinea has no official journal published by Congo-Brazzaville’s SGG; its own Boletín Oficial is the authoritative source."
+  },
+  {
+   "id": "gq-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 829,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Equatorial Guinea is not the Democratic Republic of Congo; the cited portal publishes Congolese, not Equatoguinean, legislation."
+  },
+  {
+   "id": "gq-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 907,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Equatorial Guinea’s official gazette is the Boletín Oficial del Estado de Guinea Ecuatorial, not “Boletín Oficial del Estado,” and no such 2019-04-21 publication exists."
+  },
+  {
+   "id": "gq-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 828,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Equatorial Guinea’s official gazette is the Boletín Oficial del Estado de Guinea Ecuatorial; the cited title is not recorded in its 21 April 2022 issue."
+  }
+ ]
+}

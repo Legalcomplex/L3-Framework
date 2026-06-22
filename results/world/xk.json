@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Kosovo — Source-Grounded Citation Reliability (XK)",
+ "country": "XK",
+ "jurisdiction": "Kosovo",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T16:02:08.766996+00:00",
+ "results": [
+  {
+   "id": "xk-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 937,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The decision date (2026-02-27) is in the future, so the Kosovo Constitutional Court could not have published it."
+  },
+  {
+   "id": "xk-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 813,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The law was indeed published in the Kosovo Official Gazette on 1 May 2008."
+  },
+  {
+   "id": "xk-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1196,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No official Kosovo Central Bank regulation titled 'Rregullore RLlB 1 1' appears in its published banking regulations as of 2024-11-01."
+  },
+  {
+   "id": "xk-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 939,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The decision date (2026-03-05) post-dates the referenced 2025 ruling, making future publication impossible."
+  },
+  {
+   "id": "xk-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1010,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Law No. 02/L-30 on Waste was promulgated 22 January 2007 and published in Official Gazette No. 5/2007, not 1 April 2008."
+  },
+  {
+   "id": "xk-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 975,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such regulation titled 'RREGULLORE PER PROCESIN E TRAJTIMIT TE ANKESAVE NGA INSTITUCIONET FINANCIARE' appears in the Central Bank of Kosovo’s official banking regulations."
+  },
+  {
+   "id": "xk-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 996,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier KI269/25 cannot refer to a 2023 Supreme Court decision because the case number itself indicates filing in 2025."
+  },
+  {
+   "id": "xk-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1122,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The law was published in Gazeta Zyrtare on 31 December 2009, not 1 May 2010."
+  },
+  {
+   "id": "xk-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 843,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No official Kosovo Central Bank regulation titled 'Rregullore RLlB 1 1' dated 2025-11-01 exists in published records."
+  },
+  {
+   "id": "xk-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 814,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier KI185/26 cannot refer to a 2025 decision issued in May 2025."
+  },
+  {
+   "id": "xk-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 830,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The law is a Kosovo statute; e-Sbírka is the Czech legal database, so the claimed publication source is incorrect."
+  },
+  {
+   "id": "xk-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 783,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited regulation is a Kosovo legal act; it cannot originate from Turkey’s Mevzuat Bilgi Sistemi."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Peru — Source-Grounded Citation Reliability (PE)",
+ "country": "PE",
+ "jurisdiction": "Peru",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:59:02.576137+00:00",
+ "results": [
+  {
+   "id": "pe-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 897,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. INDECOPI’s Competition & IP Tribunal issues administrative resolutions, not judicial “decisions,” so the cited bibliographic claim mischaracterizes the source’s official nature."
+  },
+  {
+   "id": "pe-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1138,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. OSCE's Public Procurement Tribunal (TCP) issues resolutions, but no official source confirms \"Resolución N.° 6454-2025-TCP-S5\" dated 2025-09-29."
+  },
+  {
+   "id": "pe-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 934,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. El Peruano Digital is Peru’s official gazette, but the quoted text is merely a descriptive headline, not the actual legal source itself."
+  },
+  {
+   "id": "pe-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 826,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The cited resolution is an official JNE document on vacancy proceedings, correctly attributed to Peru’s Jurado Nacional de Elecciones."
+  },
+  {
+   "id": "pe-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 988,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such decision exists; INDECOPI’s Competition & IP Tribunal does not publish under that exact title or date."
+  },
+  {
+   "id": "pe-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 853,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier '6453-2025-TCP-S5' cannot correspond to a 2025-09-29 resolution because the year 2025 has not yet occurred."
+  },
+  {
+   "id": "pe-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 942,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. INDECOPI’s Competition & IP Tribunal issues resolutions, not “decisions,” and the cited title is not an official bibliographic source."
+  },
+  {
+   "id": "pe-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 997,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '6454-2025-TCP-S6' cannot match 'Resolución N.° 6454-2025-TCP-S5' because the chamber suffixes differ (S6 vs. S5)."
+  },
+  {
+   "id": "pe-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 789,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Chamber of Deputies Open Data API is a Mexican congressional source, not a Peruvian official legal publication."
+  },
+  {
+   "id": "pe-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 840,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'JNE.2019000014' does not match the cited resolution number or vacancy reference."
+  },
+  {
+   "id": "pe-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 796,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decision is a 2015 INDECOPI tribunal resolution, not an official legal source like a statute or regulation."
+  },
+  {
+   "id": "pe-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 766,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decision is from Peru’s Tribunal Constitucional (TCP), not Brazil’s TST; the bibliographic claim misattributes jurisdiction and court."
+  }
+ ]
+}

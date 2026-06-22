@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Mozambique — Source-Grounded Citation Reliability (MZ)",
+ "country": "MZ",
+ "jurisdiction": "Mozambique",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:58:30.993194+00:00",
+ "results": [
+  {
+   "id": "mz-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1051,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The decision date (2026-04-20) is in the future, so it cannot yet have been published by Mozambique’s Supreme Court."
+  },
+  {
+   "id": "mz-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 992,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Mozambique’s official legislation is published in the Boletim da República, not the Supreme Court portal."
+  },
+  {
+   "id": "mz-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1093,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-04-20 is impossible for a 2024 case file, and no public record confirms identifier 9848."
+  },
+  {
+   "id": "mz-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 995,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Mozambique's Supreme Court does not operate a public legislation portal; official laws are published in the Boletim da República."
+  },
+  {
+   "id": "mz-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 988,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The decision date (2026-04-20) is in the future, so it cannot yet be published by Mozambique’s Supreme Court."
+  },
+  {
+   "id": "mz-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 941,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier 'cd812dbd6028' does not match the cited 2023 labour law; the portal lists a different document under that code."
+  },
+  {
+   "id": "mz-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1014,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The date 2026-04-20 is impossible for a 2021 case file, and no public record confirms identifier 9843 as Acórdão proc. 2021-35."
+  },
+  {
+   "id": "mz-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 916,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '52f423df0e60' does not match the cited 2023-08-28 law in Mozambique’s Supreme Court portal."
+  },
+  {
+   "id": "mz-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 858,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Mozambique Supreme Court decisions are not published under the identifier \"Ac proc. 2024-68\" dated 2025-04-20; no such official source exists."
+  },
+  {
+   "id": "mz-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 831,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Kenya Law reports Kenyan legislation, not Mozambican statutes; the cited source cannot publish Mozambique’s Lei n°. 15/2023."
+  },
+  {
+   "id": "mz-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 767,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Mozambique's Supreme Court (Tribunal Supremo) does not publish decisions under the citation \"Ac proc. 2024-51\"."
+  },
+  {
+   "id": "mz-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 732,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Mozambique’s Lei n° 13/2023 was published in Mozambique’s Boletim da República, not Seychelles Official Gazette."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Saint Vincent and the Grenadines — Source-Grounded Citation Reliability (VC)",
+ "country": "VC",
+ "jurisdiction": "Saint Vincent and the Grenadines",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T16:01:46.530318+00:00",
+ "results": [
+  {
+   "id": "vc-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1120,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The claimed 2026 Gazette issue cannot exist, as current real time precedes 2026."
+  },
+  {
+   "id": "vc-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 985,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Telecommunications (Interconnection) Regulations 2008 (No. 60 of 2008) were made by the Minister, not published by the National Telecommunications Regulatory Commission."
+  },
+  {
+   "id": "vc-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 941,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. A 2026-dated gazette cannot have been published in 2026; the year is still future."
+  },
+  {
+   "id": "vc-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1019,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited title and numbering do not match any official Saint Vincent and the Grenadines statutory instrument; the National Telecommunications Regulatory Commission has not published Regulation"
+  },
+  {
+   "id": "vc-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 989,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. A 2026-dated gazette cannot have been published in 2026; the year is still future, making the bibliographic claim impossible."
+  },
+  {
+   "id": "vc-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 878,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Telecommunications (Numbering) Regulations 2008 (No. 11 of 2008) were made by the Minister, not published by the NTRC."
+  },
+  {
+   "id": "vc-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 866,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Saint Vincent and the Grenadines publishes its own Gazette; “Laws of Grenada” is Grenada’s official series and cannot publish SVG legislation."
+  },
+  {
+   "id": "vc-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 851,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited source is a Saint Vincent enactment; Turks and Caicos Revised Laws cannot publish or promulgate legislation from another jurisdiction."
+  },
+  {
+   "id": "vc-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 856,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Bermuda Laws Online cannot publish Saint Vincent and the Grenadines’ official gazette; the cited 2026 volume is therefore not an authentic SVG source."
+  },
+  {
+   "id": "vc-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 748,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited Regulations are from Saint Vincent and the Grenadines, not Cayman Islands Legislation."
+  },
+  {
+   "id": "vc-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1169,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Saint Vincent and the Grenadines publishes its own Gazette; Saint Lucia’s Revised Laws cannot issue SVG official notices."
+  },
+  {
+   "id": "vc-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 839,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Sint Maarten is not part of Saint Vincent and the Grenadines; its government cannot publish that jurisdiction’s official regulations."
+  }
+ ]
+}

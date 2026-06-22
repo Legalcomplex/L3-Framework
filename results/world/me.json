@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Montenegro — Source-Grounded Citation Reliability (ME)",
+ "country": "ME",
+ "jurisdiction": "Montenegro",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:57:45.849518+00:00",
+ "results": [
+  {
+   "id": "me-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 933,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Montenegro's Constitutional Court decisions use \"U-I\", \"U-II\", etc.; \"U-III br.374/25\" is not a recognized case identifier."
+  },
+  {
+   "id": "me-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2461,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Sudovi.me is a private aggregator, not the official publisher of Montenegrin Supreme Court decisions."
+  },
+  {
+   "id": "me-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1061,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-02-16 is in the future, so the claimed publication cannot yet exist."
+  },
+  {
+   "id": "me-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 913,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No official record exists of a \"Decision on Open Market Operations\" published by Montenegro's Central Bank on 2011-01-01."
+  },
+  {
+   "id": "me-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 980,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Montenegro's Constitutional Court decisions use \"U-I\", \"U-II\", etc.; \"U-III\" is Croatian, and the 2025 date is future."
+  },
+  {
+   "id": "me-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 831,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier 'Kr-S 4/2011' in Sudovi.me actually refers to a 2011 Supreme Court decision, not a 2011-07-06 judgment."
+  },
+  {
+   "id": "me-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 718,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'U-III br.374/26' cannot refer to a 2025 decision, as the year suffix indicates 2026."
+  },
+  {
+   "id": "me-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 822,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'Kž-I 12/2012' cannot match a 2011 decision; the year in the case number must correspond to the decision year."
+  },
+  {
+   "id": "me-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 857,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Montenegro’s Official Gazette is “Službeni list Crne Gore,” but no issue dated 16 Feb 2024 contains that exact public call."
+  },
+  {
+   "id": "me-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 797,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The 'Decision on Open Market Operations' is a Montenegrin central-bank act, not a Ukrainian Verkhovna Rada law."
+  },
+  {
+   "id": "me-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 974,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Montenegro’s Constitutional Court decisions use “U-I” or “U-II” prefixes; “U-III” is not an official citation format."
+  },
+  {
+   "id": "me-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 873,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Montenegro’s official decisions are published by the national courts’ portal, not Ukraine’s ЄДРСР, so the cited source is jurisdictionally impossible."
+  }
+ ]
+}

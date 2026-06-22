@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Iran — Source-Grounded Citation Reliability (IR)",
+ "country": "IR",
+ "jurisdiction": "Iran",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:56:19.792840+00:00",
+ "results": [
+  {
+   "id": "ir-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 886,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Abdorrahman Boroumand Center provides unofficial English translations of Iranian laws, not official publications of the Islamic Penal Code."
+  },
+  {
+   "id": "ir-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 920,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Iran Human Rights Documentation Center is a U.S.-based NGO, not an official Iranian government publisher, so the cited source cannot be an authoritative official legal text."
+  },
+  {
+   "id": "ir-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 881,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier '3430' in the Abdorrahman Boroumand Center collection does not correspond to the 2013 Islamic Penal Code; the claim misattributes the source."
+  },
+  {
+   "id": "ir-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 949,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Iran Human Rights Documentation Center is a U.S.-based NGO, not an official Iranian government publisher, so the translation is unofficial."
+  },
+  {
+   "id": "ir-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 889,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Abdorrahman Boroumand Center is a U.S.-based NGO, not an official Iranian government publisher, so the cited source cannot be an authoritative official legal text."
+  },
+  {
+   "id": "ir-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 891,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Iran Human Rights Documentation Center is a U.S.-based NGO, not an official Iranian government publisher, so it cannot be the authoritative source for the Islamic Penal Code."
+  },
+  {
+   "id": "ir-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 863,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The 2013 Islamic Penal Code does not prescribe crucifixion as a punishment; the cited title misstates its content."
+  },
+  {
+   "id": "ir-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 895,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Iran Human Rights Documentation Center is a U.S.-based NGO, not an official Iranian authority, so the cited source cannot be an “official legal source.”"
+  },
+  {
+   "id": "ir-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 817,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Abdorrahman Boroumand Center’s identifier 3432 is the 1991 Islamic Penal Code, not the 2013 revised version."
+  },
+  {
+   "id": "ir-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 779,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Iran Human Rights Documentation Center is a U.S.-based NGO, not an official Iranian government publisher, so its translation lacks authoritative legal status."
+  },
+  {
+   "id": "ir-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 782,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Jordan Legislation & Opinion Bureau is a Jordanian, not Iranian, official publisher, so it cannot issue Iranian judiciary directives."
+  },
+  {
+   "id": "ir-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 903,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. DIFC is Dubai’s legal database; Iran’s official Islamic Penal Code is not published there."
+  }
+ ]
+}

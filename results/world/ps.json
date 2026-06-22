@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Palestine — Source-Grounded Citation Reliability (PS)",
+ "country": "PS",
+ "jurisdiction": "Palestine",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:59:25.238712+00:00",
+ "results": [
+  {
+   "id": "ps-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 877,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited decision date (2026-03-23) is in the future, so the bibliographic claim cannot be true."
+  },
+  {
+   "id": "ps-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 884,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Palestinian Supreme Constitutional Court was established in 2016; no decision numbered 2022/06 from 2022-01-01 exists under that court."
+  },
+  {
+   "id": "ps-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 909,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The decree was issued in 2020; the 2021 DCAF citation is merely a later database upload, not the official publication source."
+  },
+  {
+   "id": "ps-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 845,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The decision date (2026-04-13) is in the future, so the bibliographic claim cannot be true."
+  },
+  {
+   "id": "ps-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 924,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Palestinian Supreme Constitutional Court does not publish “دعوى تنازع تنفيذ” decisions; such cases fall under ordinary or administrative courts."
+  },
+  {
+   "id": "ps-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 789,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited decree is Palestinian Authority legislation, not an official source from the jurisdiction of Palestine."
+  },
+  {
+   "id": "ps-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 800,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decision is from Palestine’s Supreme Constitutional Court, not Saudi Arabia, so cannot be published by Saudi Commercial Court Judgments."
+  },
+  {
+   "id": "ps-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 755,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. ADGM Courts operate in Abu Dhabi, UAE; they cannot publish Palestinian decisions."
+  },
+  {
+   "id": "ps-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 855,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The decree is from 2020, so a 2018 DCAF database publication date is chronologically impossible."
+  },
+  {
+   "id": "ps-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 745,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. DIFC Courts are Dubai institutions; they cannot publish Palestinian Court of Cassation decisions."
+  },
+  {
+   "id": "ps-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 943,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decision originates from Palestinian courts, not Saudi Arabia, so a Saudi Commercial Court Judgments dataset cannot be its official publisher."
+  },
+  {
+   "id": "ps-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 814,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No such decree amending the 2018 cybercrime law appears in the DCAF Palestine Security Sector Legal Database."
+  }
+ ]
+}

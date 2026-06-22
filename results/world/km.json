@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Comoros — Source-Grounded Citation Reliability (KM)",
+ "country": "KM",
+ "jurisdiction": "Comoros",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:56:55.323530+00:00",
+ "results": [
+  {
+   "id": "km-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1043,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Juricaf is an international database, not an official Comorian court publisher; the cited decision appears to be a real case but the publication source is mischaracterized."
+  },
+  {
+   "id": "km-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1064,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited text is the presidential promulgation decree itself, not a Ministry of Justice publication."
+  },
+  {
+   "id": "km-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1082,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Juricaf's identifier 'COMORES-COURSUPREME-20221227-02' matches the described Comorian Supreme Court decision of 27 December 2022."
+  },
+  {
+   "id": "km-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1014,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No verifiable official Comoran source confirms that the Ministry of Justice published this 2007 electoral-law amendment on 14 January 2007."
+  },
+  {
+   "id": "km-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1026,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Juricaf is a public-access database, not the issuing court; the cited decision is a Comorian Supreme Court ruling, not a Juricaf publication."
+  },
+  {
+   "id": "km-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 823,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No credible evidence confirms that the 1981 law was officially published by the Comoros Ministry of Justice."
+  },
+  {
+   "id": "km-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 865,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Juricaf identifier 'COMORES-COURSUPREME-20170924-2017CIVIL008' ends in 008, not 007, so it cannot match the cited reference."
+  },
+  {
+   "id": "km-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 908,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The decree is a Comorian official gazette publication; attribution to Tanzania’s Attorney General’s Office is geographically and jurisdictionally incorrect."
+  },
+  {
+   "id": "km-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 770,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'COMORES-COURSUPREME-20221227-03' indicates decision 03, not 02, so the bibliographic claim mismatches the actual case number."
+  },
+  {
+   "id": "km-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 834,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The 2007 Comorian electoral law was published in the Comorian Official Gazette, not Seychelles."
+  },
+  {
+   "id": "km-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 841,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited judgment is from Comoros’ Supreme Court, not Mauritius; Mauritius Supreme Court Judgments cannot publish Comorian decisions."
+  },
+  {
+   "id": "km-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 816,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Kenya Law reports Kenyan legislation only; it cannot publish Comorian statutes such as Loi n°81-026/AF."
+  }
+ ]
+}

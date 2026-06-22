@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Madagascar — Source-Grounded Citation Reliability (MG)",
+ "country": "MG",
+ "jurisdiction": "Madagascar",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:57:53.981039+00:00",
+ "results": [
+  {
+   "id": "mg-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 811,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No public Madagascar Ministry of Justice Jurisprudence Database existed in 2018; the cited source is unverifiable."
+  },
+  {
+   "id": "mg-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1038,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Juricaf is an online database, not a publisher; the cited decision originates from Madagascar’s Cour suprême, not from Juricaf itself."
+  },
+  {
+   "id": "mg-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 883,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The claimed 2026-01-20 publication date is impossible, as that future date has not yet occurred."
+  },
+  {
+   "id": "mg-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1284,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-03-03 is in the future, so the decision cannot yet exist or be published."
+  },
+  {
+   "id": "mg-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 883,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No official Madagascar Ministry of Justice Jurisprudence Database existed in 2018, so the claimed source is nonexistent."
+  },
+  {
+   "id": "mg-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 821,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The identifier 'MADAGASCAR-COURSUPREME-20060616-13' matches the cited case details: Madagascar Supreme Court, Cassation Chamber, 16 June 2006, decision 13."
+  },
+  {
+   "id": "mg-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 822,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No public evidence confirms that identifier 'DCS68389AFFEED7A' exists or matches the described 2018 case in Madagascar’s Ministry of Justice database."
+  },
+  {
+   "id": "mg-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 817,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier ends in 162, but the cited decision is numbered 161, indicating a mismatch in the bibliographic claim."
+  },
+  {
+   "id": "mg-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 891,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No verifiable record exists of that exact decree title being published by the Madagascar National Legislation Center on 2020-01-20."
+  },
+  {
+   "id": "mg-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 742,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The decision is a 2026 ruling of Madagascar’s Haute Cour Constitutionnelle, not a Mauritius Supreme Court judgment."
+  },
+  {
+   "id": "mg-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 924,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No official Madagascar Ministry of Justice Jurisprudence Database existed in 2016, so the claimed source is nonexistent."
+  },
+  {
+   "id": "mg-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 851,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decision is from Madagascar’s Supreme Court, not Tanzania’s Attorney General’s Office, so the publication claim is incorrect."
+  }
+ ]
+}

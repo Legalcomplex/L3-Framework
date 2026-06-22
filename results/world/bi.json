@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Burundi — Source-Grounded Citation Reliability (BI)",
+ "country": "BI",
+ "jurisdiction": "Burundi",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:52:53.749884+00:00",
+ "results": [
+  {
+   "id": "bi-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 900,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The claim misstates the source: the 2018 ministerial ordinance was not published in the Bulletin Officiel du Burundi on 2 January 2018."
+  },
+  {
+   "id": "bi-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 860,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Juricaf is an OHADA/AU project, not the Burundi Supreme Court itself; the citation is a court decision, not a publication by that court."
+  },
+  {
+   "id": "bi-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 867,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No evidence confirms that Ordonnance ministérielle 630/166 of 16/02/2018 appeared in the Bulletin Officiel du Burundi on that date."
+  },
+  {
+   "id": "bi-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1017,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Juricaf is an OHADA/AU database, not the official Burundi Supreme Court publisher; the citation itself is authentic, but the stated source is incorrect."
+  },
+  {
+   "id": "bi-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 927,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The claim misstates the publication: the Ordonnance was issued 02/01/2018, but the Bulletin Officiel appeared later, not on the same day."
+  },
+  {
+   "id": "bi-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 828,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The identifier directly encodes the court, date, and case reference matching the described source."
+  },
+  {
+   "id": "bi-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 624,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Kenya Law reports Kenyan legislation, not Burundian ministerial ordinances."
+  },
+  {
+   "id": "bi-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 974,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'BURUNDI-COURSUPREME-20050131-RPC1559' ends in 1559, not 1.558, so the bibliographic claim mismatches the cited reference."
+  },
+  {
+   "id": "bi-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 782,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited ministerial ordinance is a Burundian legal instrument; it cannot have been published by Tanzania’s Attorney General’s Office."
+  },
+  {
+   "id": "bi-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 769,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier ends in RAA610, but the claim references R.A.A.609, indicating a mismatch in case numbers."
+  },
+  {
+   "id": "bi-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1105,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Ordonnance ministérielle 540/005 is a Burundian ministerial order, not published in the Seychelles Official Gazette."
+  },
+  {
+   "id": "bi-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 895,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decision is from Burundi’s Supreme Court, not Mauritius; the Mauritius Supreme Court Judgments portal cannot publish Burundian rulings."
+  }
+ ]
+}

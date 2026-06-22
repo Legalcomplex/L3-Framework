@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Uruguay — Source-Grounded Citation Reliability (UY)",
+ "country": "UY",
+ "jurisdiction": "Uruguay",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T16:01:37.809616+00:00",
+ "results": [
+  {
+   "id": "uy-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1059,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No official IMPO Open Data JSON record exists for that exact 2024-01-16 publication of Resolución 1/2024."
+  },
+  {
+   "id": "uy-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 989,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. IMPO is Uruguay’s official gazette; the cited title is not a recognized law or decree published on 2020-04-02."
+  },
+  {
+   "id": "uy-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1137,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Uruguay’s official judicial case-law database is the “Base de Jurisprudencia” of the Suprema Corte de Justicia; “Uruguay Judicial Branch Case Law Database” is not its recognized publisher."
+  },
+  {
+   "id": "uy-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 991,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Decreto-Ley 14.990 was enacted 28 October 1980, not 22 February; the cited IMPO JSON date is incorrect."
+  },
+  {
+   "id": "uy-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 962,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No official IMPO publication dated 2020-06-04 matches that exact title; the phrasing appears fabricated or misattributed."
+  },
+  {
+   "id": "uy-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1011,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The cited decision is an authentic ruling from Uruguay’s Tribunal de Apelaciones en lo Penal 1° Turno, officially published in the Judicial Branch’s case-law database."
+  },
+  {
+   "id": "uy-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 881,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. SUIN-Juriscol is Colombia’s official normative database; Uruguay publishes its resolutions through IMPO, not SUIN-Juriscol."
+  },
+  {
+   "id": "uy-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1104,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. IMPO is Uruguay’s official gazette; the cited title is a descriptive heading, not an actual law’s formal name, and the 2022-04-02 date does not match any promulgated text."
+  },
+  {
+   "id": "uy-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 838,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decision is a Uruguayan criminal appeals ruling, not a Colombian Constitutional Court judgment, so it cannot be published by Colombia Datos Abiertos."
+  },
+  {
+   "id": "uy-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1015,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Decreto-Ley 14.990 is a Uruguayan statute on the foreign service, not a Chilean publication; BCN is Chile’s library, so the claim misattributes jurisdiction and source."
+  },
+  {
+   "id": "uy-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1147,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. IMPO is Uruguay’s official gazette publisher, but the quoted title is not an official legal source; it is a BCU circular or resolution title, not a law or decree published by IMPO."
+  },
+  {
+   "id": "uy-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 783,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The decision is from Uruguay’s Tribunal de Apelaciones en lo Penal, not Argentina’s Suprema Corte de Buenos Aires."
+  }
+ ]
+}

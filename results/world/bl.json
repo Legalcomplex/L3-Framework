@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Saint Barthélemy — Source-Grounded Citation Reliability (BL)",
+ "country": "BL",
+ "jurisdiction": "Saint Barthélemy",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:52:58.758989+00:00",
+ "results": [
+  {
+   "id": "bl-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 951,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Saint-Barthélemy has no official “Codes & Regulations” publisher; 2024-059 CT is a French territorial act, not issued by that source."
+  },
+  {
+   "id": "bl-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 846,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Saint-Barthélemy has no official “Codes & Regulations” publisher; the cited title is not a verifiable government source."
+  },
+  {
+   "id": "bl-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 903,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Saint-Barthélemy has no official “Codes & Regulations” publisher; the cited source is not a recognized legal gazette."
+  },
+  {
+   "id": "bl-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 940,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Saint-Barthélemy has no official “Codes & Regulations” publisher; 2024-062 CT is a Collectivité decree, not an annexe from that source."
+  },
+  {
+   "id": "bl-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1529,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Saint-Barthélemy has no official “Codes & Regulations” publisher; the cited title is not a recognized official legal source."
+  },
+  {
+   "id": "bl-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 823,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Saint-Barthélemy has no official “Codes & Regulations” publisher; 2024-058 CT is a Collectivité decree, not a bibliographic source."
+  },
+  {
+   "id": "bl-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 731,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Saint Barthélemy is a French overseas collectivity; Cayman Islands Legislation cannot publish its official legal sources."
+  },
+  {
+   "id": "bl-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 915,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Saint Barthélemy is a French overseas collectivity; its official legal sources are published by French authorities, not Bahamas Consolidated Legislation."
+  },
+  {
+   "id": "bl-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 752,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Saint Barthélemy is a French overseas collectivity; its official legal sources are published in the Journal Officiel, not via Aruba’s DWJZ archive."
+  },
+  {
+   "id": "bl-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 921,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Saint Barthélemy is a French overseas collectivity; Curaçao legislation has no official authority there."
+  },
+  {
+   "id": "bl-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 819,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Saint Barthélemy is a French overseas collectivity; its official legal sources are published by French authorities, not Sint Maarten Government Legislation."
+  },
+  {
+   "id": "bl-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 785,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Saint Barthélemy is a French overseas collectivity; Grenada’s Laws series has no jurisdiction there."
+  }
+ ]
+}

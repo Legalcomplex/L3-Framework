@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Mauritius — Source-Grounded Citation Reliability (MU)",
+ "country": "MU",
+ "jurisdiction": "Mauritius",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.4167,
+ "correct": 5,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:58:19.997896+00:00",
+ "results": [
+  {
+   "id": "mu-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 923,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-04-09 is in the future, so the decision cannot yet exist or be published."
+  },
+  {
+   "id": "mu-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 919,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Mauritius Competition Commission does not publish decisions under that name or date, as it was established in 2023."
+  },
+  {
+   "id": "mu-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 954,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The citation format and publisher attribution do not match the official Mauritius Supreme Court reporting practice."
+  },
+  {
+   "id": "mu-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 916,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The citation \"2026 SCJ 58\" refers to a Supreme Court of Mauritius judgment, not an FCC Court decision."
+  },
+  {
+   "id": "mu-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 995,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Additional Remuneration (No. 2) Act 2009 was enacted and published by Mauritius’s Government Gazette in 2009, not by the Mauritius Legal Information Institute in 2017."
+  },
+  {
+   "id": "mu-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 815,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-04-17 is in the future, so the cited 2026 ruling cannot yet exist."
+  },
+  {
+   "id": "mu-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 955,
+   "verdict": true,
+   "correct": false,
+   "raw": "True. The Mauritius Supreme Court publishes its judgments, and the cited 2024 decision matches that official source."
+  },
+  {
+   "id": "mu-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 707,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Mauritius Competition Commission does not publish decisions under that title; no such 2025-02-11 merger decision exists in its official records."
+  },
+  {
+   "id": "mu-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 924,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Kenya Law reports Kenyan decisions; a Mauritius Supreme Court judgment cannot be published by Kenya’s National Council for Law Reporting."
+  },
+  {
+   "id": "mu-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 796,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decision is a Mauritian Supreme Court judgment, not a Malagasy source, so it cannot be published by Madagascar’s Ministry of Justice database."
+  },
+  {
+   "id": "mu-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 915,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Additional Remuneration (No. 2) Act 2009 was enacted and gazetted by Mauritius in 2009; the 2020-06-30 date refers only to its later online publication on the Mauritius Legal Information In"
+  },
+  {
+   "id": "mu-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 831,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Mauritius Supreme Court Judgments is not an official publisher; the authoritative source is the official Mauritius Judgments portal or law reports."
+  }
+ ]
+}

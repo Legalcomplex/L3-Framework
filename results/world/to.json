@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Tonga — Source-Grounded Citation Reliability (TO)",
+ "country": "TO",
+ "jurisdiction": "Tonga",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T16:01:07.943597+00:00",
+ "results": [
+  {
+   "id": "to-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1071,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Harbours Act 1903 is not identified as 'leg-1903-0029' in Tonga’s Attorney General Legislation & Judgments collection."
+  },
+  {
+   "id": "to-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 986,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Counter Terrorism and Transnational Organised Crime Act is Tongan legislation, not a regulatory instrument issued by the National Reserve Bank of Tonga."
+  },
+  {
+   "id": "to-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1088,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier 'leg-1906-0010' in Tonga’s Attorney General collection actually refers to the Maintenance of Illegitimate Children Act 1906, not the misspelled title given."
+  },
+  {
+   "id": "to-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1003,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No official Tongan legal source or National Reserve Bank publication records the 'Currency Regulations 1989' under that exact title or date."
+  },
+  {
+   "id": "to-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 982,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier 'leg-1903-0000' in Tonga’s Attorney General collection actually refers to the 1903 Town Regulations, not the Town Regulations Act."
+  },
+  {
+   "id": "to-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1002,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier 'to-nrbt-ForeignExchangeControlAct_3' is not a recognized Tongan legal source; the 1963 Foreign Exchange Control Act is not part of the NRBT Regulatory Framework collection."
+  },
+  {
+   "id": "to-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 920,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Tonga’s Harbours Act dates to 1908; no 1903 enactment exists under identifier ‘leg-1903-0031’."
+  },
+  {
+   "id": "to-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 899,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The National Reserve Bank of Tonga regulates banking, not criminal legislation; the Counter Terrorism Act is enacted by Parliament, not the central bank."
+  },
+  {
+   "id": "to-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 883,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'leg-1906-0011' does not correspond to the Maintenance of Illegitimate Children Act 1906 in Tongan legal records."
+  },
+  {
+   "id": "to-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 896,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The National Reserve Bank of Tonga is a Tongan institution; its regulations cannot be published by the Marshall Islands Judiciary."
+  },
+  {
+   "id": "to-src-f05",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 963,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Town Regulations Act was enacted in 1918, not 1903, so the 1903 identifier cannot correctly reference that legislation."
+  },
+  {
+   "id": "to-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1041,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'to-nrbt-ForeignExchangeControlAct_4' is not a recognized official Tongan legal source; the 1963 Act is not part of the NRBT Regulatory Framework collection."
+  }
+ ]
+}

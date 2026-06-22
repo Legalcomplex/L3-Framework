@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Guatemala — Source-Grounded Citation Reliability (GT)",
+ "country": "GT",
+ "jurisdiction": "Guatemala",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:55:34.098743+00:00",
+ "results": [
+  {
+   "id": "gt-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 897,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The Corte de Constitucionalidad is Guatemala’s highest constitutional court and routinely publishes its own amparo decisions, including the cited 2001 expediente."
+  },
+  {
+   "id": "gt-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 906,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Ley de Almacenes Generales de Depósito is a congressional statute (Decreto 26-2006), not an instrument issued by the Banco de Guatemala."
+  },
+  {
+   "id": "gt-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 919,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Corte de Constitucionalidad did not publish the 25 June 1997 decision; it was issued by a court of appeal, not the Constitutional Court itself."
+  },
+  {
+   "id": "gt-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 968,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such law titled 'Ley de Bancos de Ahorro y Préstamo para la Vivienda Familiar' appears in Banco de Guatemala’s Marco Legal del Sistema Financiero."
+  },
+  {
+   "id": "gt-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 992,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Corte de Constitucionalidad does not publish decisions; it only issues them. Official publication is handled by the Diario de Centro América."
+  },
+  {
+   "id": "gt-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 994,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Ley de Sociedades Financieras Privadas was enacted by Guatemala’s Congress (Decreto 19-2012) and published in the Diario de Centro América, not by Banco de Guatemala."
+  },
+  {
+   "id": "gt-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 906,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Corte de Constitucionalidad was created by the 1985 Constitution and began functioning in 1986; no 1999 decision could have been issued by it in 1999-04-03."
+  },
+  {
+   "id": "gt-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 872,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Ley de Almacenes Generales de Depósito is Guatemalan legislation, not Mexican, so the cited Mexican source is incorrect."
+  },
+  {
+   "id": "gt-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 870,
+   "verdict": true,
+   "correct": false,
+   "raw": "True. The Corte de Constitucionalidad is Guatemala’s highest constitutional court and routinely publishes its amparo decisions, including Expediente 1392-1996 of 25 June 1996."
+  },
+  {
+   "id": "gt-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 795,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited law is Honduran, not Guatemalan, and the TSC Virtual Library is Honduras’ audit body, not Guatemala’s."
+  },
+  {
+   "id": "gt-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 918,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The decision is a Guatemalan Constitutional Court amparo appeal, not a Mexican Supreme Court case, so it cannot be published by Mexico’s SCJN Open Data Platform."
+  },
+  {
+   "id": "gt-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 918,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Ley de Sociedades Financieras Privadas (Decree 17-2002) was published in the Diario de Centro América, not by Banco de Guatemala’s Marco Legal portal."
+  }
+ ]
+}

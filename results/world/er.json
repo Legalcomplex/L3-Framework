@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Eritrea — Source-Grounded Citation Reliability (ER)",
+ "country": "ER",
+ "jurisdiction": "Eritrea",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:54:36.296844+00:00",
+ "results": [
+  {
+   "id": "er-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 926,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Eritrea’s Official Gazette is not published or held by the Library of Congress; the cited source is therefore not an official Eritrean legal publication."
+  },
+  {
+   "id": "er-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 999,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Eritrea’s Official Gazette began in 1995; no issue dated 15 Dec 1997 contains Regulations 33/1997, and Library of Congress holdings confirm its absence."
+  },
+  {
+   "id": "er-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 922,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Eritrea’s Official Gazette is not held by the Library of Congress; the cited source is therefore not an official publication."
+  },
+  {
+   "id": "er-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 924,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Eritrea’s Official Gazette is not published or held by the U.S. Library of Congress; the cited source is therefore mis-attributed."
+  },
+  {
+   "id": "er-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1436,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Eritrea’s Official Gazette is not published or held by the Library of Congress; the cited source is therefore not an official Eritrean legal publication."
+  },
+  {
+   "id": "er-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 942,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No verifiable evidence confirms that Proclamation 179/2017 was published in the Eritrea Official Gazette or is held in the Library of Congress collection."
+  },
+  {
+   "id": "er-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 736,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Eritrea issues its own official gazette; Seychelles publications cannot promulgate Eritrean proclamations."
+  },
+  {
+   "id": "er-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 767,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Eritrea is an independent sovereign state; its 1997 standards regulations could not be published by Tanzania’s Attorney General’s Office."
+  },
+  {
+   "id": "er-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 711,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Eritrea's official legal sources are not published by Kenya Law (National Council for Law Reporting), which reports Kenyan legislation."
+  },
+  {
+   "id": "er-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 819,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Eritrea’s aviation laws are promulgated by its own government, not Tanzania’s Attorney General’s Office."
+  },
+  {
+   "id": "er-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 752,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Eritrea’s proclamations are not published by Tanzania’s Attorney General’s Office; the cited source is jurisdictionally mismatched."
+  },
+  {
+   "id": "er-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 692,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Eritrea’s 2017 environmental framework was not published by Tanzania’s Attorney General’s Office; the cited source is jurisdictionally mismatched."
+  }
+ ]
+}

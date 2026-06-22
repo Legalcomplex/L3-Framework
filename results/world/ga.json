@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Gabon — Source-Grounded Citation Reliability (GA)",
+ "country": "GA",
+ "jurisdiction": "Gabon",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.6667,
+ "correct": 8,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:55:02.354886+00:00",
+ "results": [
+  {
+   "id": "ga-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 908,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Gabon’s Cour de cassation decisions are not published by Juricaf; the cited identifier and platform combination is therefore incorrect."
+  },
+  {
+   "id": "ga-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 895,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Ministry of Public Accounts and Debt was not published in the Journal Officiel on 8 February 2025; that date is in the future."
+  },
+  {
+   "id": "ga-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 853,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The Constitutional Court of Gabon is the official publisher of its own decisions, including Décision N° 005/CC of 27/05/2021."
+  },
+  {
+   "id": "ga-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 874,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No public record confirms a Gabonese Cour de cassation decision dated 15 March 2022 under that citation on Juricaf or elsewhere."
+  },
+  {
+   "id": "ga-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 937,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The ordinance is dated 22/01/2025, yet the claimed publication date of 11/02/2025 precedes it, which is chronologically impossible."
+  },
+  {
+   "id": "ga-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 940,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The Cour Constitutionnelle du Gabon is the official publisher of its own decisions, including Décision N° 040/CC of 16/07/2020."
+  },
+  {
+   "id": "ga-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 914,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'GABON-COURDECASSATION-20211123-RANDOM510644570' does not match the cited case number 'RANDOM510644569', indicating a mismatch in the bibliographic claim."
+  },
+  {
+   "id": "ga-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 903,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No official Gabonese Journal Officiel issue dated 8 February 2024 lists a source titled 'MINISTERE DES COMPTES PUBLICS ET DE LA DETTE'."
+  },
+  {
+   "id": "ga-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 877,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The decision is from Gabon's Constitutional Court, not Angola's Supreme Court, as indicated by its Gabonese jurisdiction and numbering."
+  },
+  {
+   "id": "ga-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 854,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'GABON-COURDECASSATION-20220315-RANDOM1645329918' does not match the cited case 'RANDOM1645329917', indicating a mismatch in the bibliographic claim."
+  },
+  {
+   "id": "ga-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 808,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Gabon issues its official legal texts via its own Journal Officiel, not Congo-Brazzaville’s SGG."
+  },
+  {
+   "id": "ga-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 803,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The decision is from Gabon's Constitutional Court, not Congo-Brazzaville's, so the bibliographic claim misattributes jurisdiction."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Macao — Source-Grounded Citation Reliability (MO)",
+ "country": "MO",
+ "jurisdiction": "Macao",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:58:09.574422+00:00",
+ "results": [
+  {
+   "id": "mo-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 906,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-04-01 is in the future, so the cited dispatch cannot have been published."
+  },
+  {
+   "id": "mo-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 999,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Macau Court Decisions (法院裁判) is not an official publisher; TUI decisions are issued by the Tribunal de Última Instância itself."
+  },
+  {
+   "id": "mo-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1144,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier 'mo-pj-46277' cannot correspond to Lei n.º 13/2025, as that law would post-date the 2025-12-29 publication date."
+  },
+  {
+   "id": "mo-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 906,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-04-13 is in the future, so the cited Official Gazette issue cannot yet exist."
+  },
+  {
+   "id": "mo-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1137,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Macau Court Decisions is not an official publisher; TUI decisions are published by the Tribunal de Última Instância itself."
+  },
+  {
+   "id": "mo-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 862,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier 'mo-pj-45920' does not correspond to 'Lei n.º 11/2025' because that law, dated 2025-07-28, post-dates the current date."
+  },
+  {
+   "id": "mo-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 761,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'mo-bo-46548' cannot refer to a 2026 dispatch; the date precedes the claimed publication."
+  },
+  {
+   "id": "mo-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 712,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Macau Court Decisions is not an official publisher; TUI decisions are published by the Tribunal de Última Instância itself."
+  },
+  {
+   "id": "mo-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 830,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'mo-pj-46279' cannot correspond to a 2026 budget law dated 2025-12-29, as that date precedes the law's purported year."
+  },
+  {
+   "id": "mo-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 826,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Macao issues its own laws; China State Taxation Administration is a mainland PRC body and cannot publish Macao executive orders."
+  },
+  {
+   "id": "mo-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 809,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Macau Court Decisions (法院裁判) is not an official publisher; the decision originates from the Tribunal de Última Instância (TUI)."
+  },
+  {
+   "id": "mo-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 732,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Macao’s official gazette is the Boletim Oficial; KLIC is Korea’s legal database and cannot publish Macao statutes."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Honduras — Source-Grounded Citation Reliability (HN)",
+ "country": "HN",
+ "jurisdiction": "Honduras",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:55:47.144357+00:00",
+ "results": [
+  {
+   "id": "hn-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 955,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Tribunal Superior de Cuentas (TSC) is Honduras’s audit court, not a legislative publisher, and a 2026 publication date is impossible."
+  },
+  {
+   "id": "hn-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 952,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No official Banco Central de Honduras circular or regulation numbered 237-7/2020 appears in its published Regulations & Circulars for 30 July 2020."
+  },
+  {
+   "id": "hn-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 959,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No official CNBS records or publications confirm the existence of Circular CNBS No.009/2025 dated 2025-08-25."
+  },
+  {
+   "id": "hn-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 963,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Tribunal Superior de Cuentas (TSC) cannot publish a 2026-dated law; the future date is impossible."
+  },
+  {
+   "id": "hn-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1054,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No public evidence confirms that \"ACUERDO No.13/2021\" was issued or published by Banco Central de Honduras on 2021-09-27."
+  },
+  {
+   "id": "hn-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 923,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. CNBS Circular 011/2025 cannot have been published on 2025-09-24 because that date is still in the future."
+  },
+  {
+   "id": "hn-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 924,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Honduras TSC (Tribunal Superior de Cuentas) is an audit body, not a legislative publisher; the cited title is not an official legal source."
+  },
+  {
+   "id": "hn-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 914,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. RESOLUCIÓN No.237-7/2020 is a Honduran administrative resolution, not a Mexican state law, so it cannot appear in Mexico’s Orden Jurídico Nacional."
+  },
+  {
+   "id": "hn-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1627,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Mexico’s national legal database cannot publish or authenticate Honduran CNBS circulars; official Honduran sources are required."
+  },
+  {
+   "id": "hn-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1081,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Tribunal Superior de Cuentas (TSC) is Honduras’s audit court, not a publisher of primary legislation; the cited “Ley Especial de Emergencia Vial…” is not an official legal source from that "
+  },
+  {
+   "id": "hn-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 758,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Honduras has no official legal source titled \"Mexico Orden Juridico Nacional\"; that is a Mexican federal repository, not Honduran legislation."
+  },
+  {
+   "id": "hn-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 727,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Mexico Orden Juridico Nacional is a Mexican federal repository and cannot publish Honduran CNBS circulars."
+  }
+ ]
+}

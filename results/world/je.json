@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Jersey — Source-Grounded Citation Reliability (JE)",
+ "country": "JE",
+ "jurisdiction": "Jersey",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:56:28.101044+00:00",
+ "results": [
+  {
+   "id": "je-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1312,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Income Tax (Amendment – Stage 2 of Independent Taxation) (Jersey) Law 2024 was registered 19 March 2024 and came into force 1 January 2025, not published 1 January 2024."
+  },
+  {
+   "id": "je-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1023,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Jersey Employment & Discrimination Tribunal decisions are cited as '[year] JET xxx', not '[year] TRE'."
+  },
+  {
+   "id": "je-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1083,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Jersey tribunal identifiers use the format year-month (e.g., MD-ENV-2024-xxx); a 2026 identifier cannot reference a 2024 appeal decided in April 2026."
+  },
+  {
+   "id": "je-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 954,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such law exists; Jersey's 2025 legislative programme contains no Statistics and Census Amendment Law."
+  },
+  {
+   "id": "je-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 864,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Jersey Employment & Discrimination Tribunal decisions use the neutral citation prefix “JET”, not “TRE”."
+  },
+  {
+   "id": "je-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 872,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Jersey Planning & Environment Tribunal records do not use the identifier format 'MD-ENV-2026-159' or reference future 2026 dates."
+  },
+  {
+   "id": "je-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 840,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The 'Income Tax (Amendment – Stage 2 of Independent Taxation) (Jersey) Law 2024' is a Jersey statute, not a Portuguese parliamentary document."
+  },
+  {
+   "id": "je-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 756,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Jersey has no connection to the German Bundesfinanzhof; '[2025] TRE 16' is not a Jersey legal source."
+  },
+  {
+   "id": "je-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 930,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Jersey tribunal identifiers use the format year-month (e.g., MD-ENV-2024-xxx); a 2026 identifier cannot reference a 2024 application."
+  },
+  {
+   "id": "je-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1252,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Jersey is a British Crown Dependency; its laws are not published on France’s Légifrance database."
+  },
+  {
+   "id": "je-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 960,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Jersey is a British Crown Dependency; Swiss court decisions from Entscheidsuche have no official status in Jersey law."
+  },
+  {
+   "id": "je-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 898,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Jersey Planning & Environment Tribunal decisions are not identified by “MD-ENV-2026-163” and 2026-02-20 is a future date."
+  }
+ ]
+}

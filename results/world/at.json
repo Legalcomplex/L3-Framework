@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Austria — Source-Grounded Citation Reliability (AT)",
+ "country": "AT",
+ "jurisdiction": "Austria",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:52:21.893259+00:00",
+ "results": [
+  {
+   "id": "at-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1061,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier 'NOR40148595' in Austria's RIS actually refers to a different legal document, not the Swiss visa representation agreement."
+  },
+  {
+   "id": "at-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1021,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The ECLI 'ECLI:AT:VWGH:2026:RA2026030007.L02' cannot exist because the year 2026 has not yet occurred."
+  },
+  {
+   "id": "at-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1226,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The claimed publication date (2026-01-29) is in the future, so the source cannot yet exist in BGBl."
+  },
+  {
+   "id": "at-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1024,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier 'LBG40016052' does not correspond to the 2014 Aufwertungsfaktoren regulation; it refers to a different Austrian state law entry."
+  },
+  {
+   "id": "at-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1160,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Austrian Supreme Court (OGH) has not issued a decision numbered 18ONc4/25w dated 30 January 2026; that future date and reference are impossible."
+  },
+  {
+   "id": "at-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1034,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Austrian ECLI identifiers use the format ECLI:AT:VFGH:YYYY:CASE, so 'ECLI:AT:VFGH:2025:G68.2025' is malformed and cannot correspond to G68/2025."
+  },
+  {
+   "id": "at-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1018,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'NOR40148598' in Austria's RIS actually refers to a 2013 agreement on mutual representation for visa issuance between Austria and Switzerland in Nicosia and Skopje."
+  },
+  {
+   "id": "at-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 992,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The ECLI 'ECLI:AT:VWGH:2026:RA2026030007.L04' cannot exist because the decision date 2026-01-29 lies in the future."
+  },
+  {
+   "id": "at-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 888,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Austria’s Bundesgesetzblatt does not publish the cited German-language title on 29 January 2024; no such BGBl entry exists."
+  },
+  {
+   "id": "at-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 820,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'LBG40016054' does not correspond to the 2014 Aufwertungsfaktoren regulation; it is the identifier for the 2015 version."
+  },
+  {
+   "id": "at-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1129,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Austrian Supreme Court decisions use the format like \"18ONc4/25w\" but the date 2025-01-30 is in the future, making this bibliographic claim impossible."
+  },
+  {
+   "id": "at-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 919,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Decision G68/2025 is an Austrian Constitutional Court (Verfassungsgerichtshof) ruling, not a German Federal Finance Court judgment."
+  }
+ ]
+}

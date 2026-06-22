@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Paraguay — Source-Grounded Citation Reliability (PY)",
+ "country": "PY",
+ "jurisdiction": "Paraguay",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:59:32.795330+00:00",
+ "results": [
+  {
+   "id": "py-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 799,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Ley Nº 110 was enacted in 1991; the 1992-01-09 BACN publication date is incorrect."
+  },
+  {
+   "id": "py-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1424,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Paraguay's Supreme Court does not publish decisions under that format; official jurisprudence uses \"Acuerdo y Sentencia\" citations, not \"EXPEDIENTE\" numbers."
+  },
+  {
+   "id": "py-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1040,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. TSJE resolutions are not published by the Tribunal itself; official publication occurs via the national gazette (Registro Oficial)."
+  },
+  {
+   "id": "py-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 888,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. CONACOM decisions are not published under the “Paraguay CONACOM — Competition Authority Decisions” imprint; the cited identifier belongs to an administrative file, not an official bibliographic"
+  },
+  {
+   "id": "py-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1025,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The bibliographic claim accurately identifies Ley Nº 7323/2024, its title, and its publication on Paraguay - Leyes Paraguayas dated 2024-09-09."
+  },
+  {
+   "id": "py-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 995,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Ley Nº 3984 was enacted in 2010, but the BACN digital repository was not launched until 2013, making the 2010-10-01 publication date impossible."
+  },
+  {
+   "id": "py-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 762,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Ley Nº 110 was enacted in 1991, not 1989; the cited BACN publication date is therefore incorrect."
+  },
+  {
+   "id": "py-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 952,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decision is dated 2025-02-01, which is a future date, so it cannot yet be published by the Paraguayan Supreme Court."
+  },
+  {
+   "id": "py-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 758,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Resolución TSJE 302/2023 is a Paraguayan electoral ruling, not a Colombian Constitutional Court decision, so it cannot be published by Colombia Datos Abiertos."
+  },
+  {
+   "id": "py-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 693,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decision originates from Paraguay’s competition authority, not Chile’s TDLC, so the bibliographic attribution is incorrect."
+  },
+  {
+   "id": "py-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 950,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Ley Nº 7323/2024 is a Paraguayan municipal law, not a BCRA regulation; the Argentine Central Bank does not publish Paraguayan legislation."
+  },
+  {
+   "id": "py-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 803,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Ley Nº 3984 was enacted in 2010; the 2012-10-01 BACN date is incorrect."
+  }
+ ]
+}

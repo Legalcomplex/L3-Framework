@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Liberia — Source-Grounded Citation Reliability (LR)",
+ "country": "LR",
+ "jurisdiction": "Liberia",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:57:22.131879+00:00",
+ "results": [
+  {
+   "id": "lr-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1082,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The claim misstates the publication source and date; the regulation was issued directly by the Central Bank of Liberia in 2017, not via a 2018 compilation."
+  },
+  {
+   "id": "lr-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1367,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 02/12/2026 is in the future, so the decision cannot yet be published."
+  },
+  {
+   "id": "lr-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 898,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No official Liberian source confirms a 2012 “Liberia Customs HS” tariff published by the Liberia Revenue Authority on 1 January 2012."
+  },
+  {
+   "id": "lr-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1099,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Liberia Legal Information Institute did not exist in 1976 and could not have published the 1976 decision."
+  },
+  {
+   "id": "lr-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 794,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such regulation appears in the Central Bank of Liberia’s official 2018 directives or gazetted instruments."
+  },
+  {
+   "id": "lr-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 791,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited decision date (02/13/2026) is in the future, so it cannot yet be published by the Liberia Supreme Court."
+  },
+  {
+   "id": "lr-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 762,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'Amended_related_party_regulations-December_27_2018-Final' clearly references related-party rules, not the 2017 supervisory-intervention regulation."
+  },
+  {
+   "id": "lr-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 716,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. NigeriaLII is a Nigerian platform and cannot be the official publisher of a Liberian Supreme Court decision."
+  },
+  {
+   "id": "lr-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 665,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Ghana’s parliamentary repository cannot be the official publisher of Liberia’s 2012 customs tariff."
+  },
+  {
+   "id": "lr-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 790,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decision is a 1976 Liberian Supreme Court case, not a Côte d'Ivoire Supreme Court publication."
+  },
+  {
+   "id": "lr-src-f05",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 682,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'amendedauditregulationsdecember2018' indicates a December 2018 issuance, not September 18, 2018."
+  },
+  {
+   "id": "lr-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 910,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The decision is from Liberia's Supreme Court, not Senegal's Cour suprême, and the 2026 date is impossible."
+  }
+ ]
+}

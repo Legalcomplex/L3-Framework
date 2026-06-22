@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Pitcairn Islands — Source-Grounded Citation Reliability (PN)",
+ "country": "PN",
+ "jurisdiction": "Pitcairn Islands",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:59:20.174733+00:00",
+ "results": [
+  {
+   "id": "pn-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 889,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Pitcairn Islands Legislation & Court Decisions on PacLII does not publish the 2023 Christian v Lands Court decision."
+  },
+  {
+   "id": "pn-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 988,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Pitcairn Islands Legislation & Court Decisions (PacLII) is not an official publisher of Pitcairn court decisions."
+  },
+  {
+   "id": "pn-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 858,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. PacLII does not publish Pitcairn court decisions; official sources are the Pitcairn Islands Government and UK Privy Council websites."
+  },
+  {
+   "id": "pn-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 892,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Pitcairn Islands Legislation & Court Decisions (PacLII) is not an official publisher of Pitcairn court decisions."
+  },
+  {
+   "id": "pn-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 804,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Pitcairn Islands Legislation & Court Decisions (PacLII) is not an official publisher of Pitcairn court decisions."
+  },
+  {
+   "id": "pn-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 746,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. PacLII does not publish Pitcairn court decisions; the Pacific Islands Legal Information Institute has no Pitcairn collection."
+  },
+  {
+   "id": "pn-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 724,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Pitcairn Islands judgments are issued by its Supreme Court, not the Federal Court of Australia."
+  },
+  {
+   "id": "pn-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 955,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. RONLAW is Nauru's database; Pitcairn judgments are not published there."
+  },
+  {
+   "id": "pn-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 750,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Open Australian Legal Corpus cannot publish official Pitcairn judgments; only the Pitcairn judiciary or authorised reporters can do so."
+  },
+  {
+   "id": "pn-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 701,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Pitcairn Islands, not the Republic of the Marshall Islands, exercises jurisdiction over its Supreme Court decisions."
+  },
+  {
+   "id": "pn-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 779,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Pitcairn’s judgments are published by its own judiciary or PacificLII, not Tonga’s Attorney-General."
+  },
+  {
+   "id": "pn-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 751,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Pitcairn Court of Appeal sits in New Zealand, not Australia; the cited judgment cannot be an official Federal Court of Australia publication."
+  }
+ ]
+}

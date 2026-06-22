@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Mongolia — Source-Grounded Citation Reliability (MN)",
+ "country": "MN",
+ "jurisdiction": "Mongolia",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:58:07.093014+00:00",
+ "results": [
+  {
+   "id": "mn-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 847,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The 2012-05-17 entry in the Unified Legal Information System records the repeal of the Air Law, not its original publication."
+  },
+  {
+   "id": "mn-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 813,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited decision is an appellate administrative ruling, not issued or published by the Supreme Court of Mongolia."
+  },
+  {
+   "id": "mn-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 818,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Constitutional Court of Mongolia has not issued Decision №01 in 2026; the date is in the future."
+  },
+  {
+   "id": "mn-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 850,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Mongolian Unified Legal Information System was not established until 2008, so it could not have published the 2003 law."
+  },
+  {
+   "id": "mn-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1050,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited decision originates from the Darhan-Uul Administrative Court, not the Supreme Court, so attributing it to shuukh.mn’s “Mongolia Supreme Court Decisions” is incorrect."
+  },
+  {
+   "id": "mn-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 893,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-04-02 is in the future, so the decision cannot yet have been published."
+  },
+  {
+   "id": "mn-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 854,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The 2015-05-17 entry in the Unified Legal Information System is the repeal law itself, not the original Air Law it nullified."
+  },
+  {
+   "id": "mn-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 758,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '221/МА2017/0053' does not match the cited title, which references '221/МА2017/0052'."
+  },
+  {
+   "id": "mn-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 757,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Macau Court Decisions is a Macanese publisher and cannot issue Mongolian Constitutional Court decisions."
+  },
+  {
+   "id": "mn-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 870,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Mongolian statute “Агаарын зайг нисэхэд ашиглах тухай” is a domestic Mongolian law; it cannot have been published by Korea’s KLIC Open API."
+  },
+  {
+   "id": "mn-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 930,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decision originates from the Darhan-Uul Administrative Court, not the Supreme Court, so attribution to shuukh.mn’s “Mongolia Supreme Court Decisions” is incorrect."
+  },
+  {
+   "id": "mn-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 917,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Macau Court Decisions is a Portuguese SAR publisher; it cannot issue Mongolian Constitutional Court rulings."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Sint Maarten — Source-Grounded Citation Reliability (SX)",
+ "country": "SX",
+ "jurisdiction": "Sint Maarten",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T16:00:33.720196+00:00",
+ "results": [
+  {
+   "id": "sx-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1256,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The ECLI indicates a 2026 decision of the Joint Court, not a Sint Maarten-specific publication."
+  },
+  {
+   "id": "sx-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1185,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier 'CVDR141920_3' is not a Sint Maarten source; CVDR is the Dutch national legislation database, not used in Sint Maarten."
+  },
+  {
+   "id": "sx-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1225,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The ECLI identifier contains an impossible future date (2026) and cannot correspond to any real judgment."
+  },
+  {
+   "id": "sx-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1322,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The ECLI indicates a 2026 decision of the Joint Court, not a Sint Maarten-specific publication."
+  },
+  {
+   "id": "sx-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1014,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The ECLI indicates a 2026 decision of the Joint Court, not a Sint Maarten-specific publication."
+  },
+  {
+   "id": "sx-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 919,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No official Sint Maarten legislation database or record matches identifier CVDR141921_1 for that ordinance."
+  },
+  {
+   "id": "sx-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 905,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The ECLI identifies a 2026 judgment of the Common Court of Justice for Sint Maarten, not a Cayman Islands court, so publication by judicial.ky is implausible."
+  },
+  {
+   "id": "sx-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 869,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'CVDR141920_5' is a Dutch national CVDR code, not a Sint Maarten ordinance."
+  },
+  {
+   "id": "sx-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 830,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The ECLI identifies a 2026 judgment of the Common Court of Justice for Sint Maarten, not a Bermuda Supreme Court publication."
+  },
+  {
+   "id": "sx-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1160,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The ECLI identifies a 2026 judgment of the Common Court of Justice for Sint Maarten, not a Bahamas Court of Appeal publication."
+  },
+  {
+   "id": "sx-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 859,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The ECLI identifies a 2026 judgment of the Common Court of Justice for Sint Maarten, not a BVI Commercial Court decision."
+  },
+  {
+   "id": "sx-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1076,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No official Sint Maarten legislation database uses the CVDR identifier system; that code belongs to Dutch municipal regulations, not Sint Maarten."
+  }
+ ]
+}

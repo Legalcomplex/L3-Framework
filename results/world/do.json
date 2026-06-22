@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Dominican Republic — Source-Grounded Citation Reliability (DO)",
+ "country": "DO",
+ "jurisdiction": "Dominican Republic",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:54:23.013398+00:00",
+ "results": [
+  {
+   "id": "do-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1631,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Consultoría Jurídica del Poder Ejecutivo does not operate a “Dominican Legislation Database,” and no official publication dated 2026-01-09 exists."
+  },
+  {
+   "id": "do-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 918,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The decision date (2026-04-17) is in the future, so the bibliographic claim cannot be true."
+  },
+  {
+   "id": "do-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 987,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Ley 98-25 was enacted in 1998 by the Dominican Congress, not published in 2020 by the Ministry of Environment."
+  },
+  {
+   "id": "do-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 950,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The Dominican Republic’s National Competition Commission (ProCompetencia) officially publishes its decisions, including Resolución núm. FT-04-2015 of 15 May 2015."
+  },
+  {
+   "id": "do-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 913,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Superintendencia de Pensiones has not published any 2025-08-01 normative text matching that title."
+  },
+  {
+   "id": "do-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 805,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Consultoría Jurídica del Poder Ejecutivo database does not contain any 2026-01-07 entry naming six subdirectors of the Dirección de Asistencia Social y Alimentación Comunitaria."
+  },
+  {
+   "id": "do-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 764,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Consultoría Jurídica del Poder Ejecutivo does not operate a “Dominican Legislation Database,” and no such publication dated 2025-01-09 exists."
+  },
+  {
+   "id": "do-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 654,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decision is a Dominican Republic family court ruling, not a BVI Commercial Court judgment."
+  },
+  {
+   "id": "do-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 699,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Ley 98-25 was enacted in 1998; the 2019 date refers to a later regulation, not the law’s original publication."
+  },
+  {
+   "id": "do-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1029,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Joint Court of Justice (Gemeenschappelijk Hof) is a Caribbean Netherlands court, not a Dominican Republic authority, so the cited decision cannot be an official Dominican legal source."
+  },
+  {
+   "id": "do-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 824,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The quoted text is not an official publication from the Superintendencia de Pensiones; it appears to be a descriptive or paraphrased title rather than an authentic normative document."
+  },
+  {
+   "id": "do-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 925,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Consultoría Jurídica del Poder Ejecutivo does not publish Dominican legislation; official sources are the Gaceta Oficial and the Cámara de Diputados/Senado databases."
+  }
+ ]
+}

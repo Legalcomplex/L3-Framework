@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Gibraltar — Source-Grounded Citation Reliability (GI)",
+ "country": "GI",
+ "jurisdiction": "Gibraltar",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:55:17.101394+00:00",
+ "results": [
+  {
+   "id": "gi-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 919,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-04-02 is in the future, so the claimed 2026 Regulations cannot yet have been published."
+  },
+  {
+   "id": "gi-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 948,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No public record confirms '2024GibLR543' as the identifier for 'OCHELLO v. OCHELLO' (2024-10-17) in Gibraltar Supreme Court Judgments."
+  },
+  {
+   "id": "gi-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 927,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The notice is dated 2026, but the claimed publication date of 2026-04-09 is impossible since that date has not yet occurred."
+  },
+  {
+   "id": "gi-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1069,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Gibraltar Supreme Court Judgments is not an official publisher; the Supreme Court of Gibraltar does not issue or authorise such a series."
+  },
+  {
+   "id": "gi-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 917,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The 2026 date is impossible; no official source could have published a 2026 regulation in April 2026."
+  },
+  {
+   "id": "gi-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 767,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No public records confirm '2024GibLR472' or the cited case details in Gibraltar Supreme Court Judgments."
+  },
+  {
+   "id": "gi-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 761,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Gibraltar does not publish laws in the Belgian official gazette Moniteur Belge / Belgisch Staatsblad."
+  },
+  {
+   "id": "gi-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 856,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No public record confirms '2024GibLR544' as 'OCHELLO v. OCHELLO' (2024-10-17) in Gibraltar Supreme Court Judgments."
+  },
+  {
+   "id": "gi-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 748,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Gibraltar issues official notices via its own Gazette, not Italy’s Gazzetta Ufficiale."
+  },
+  {
+   "id": "gi-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 812,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No public record confirms '2024GibLR606' as that judgment; the cited identifier appears fabricated or unverifiable."
+  },
+  {
+   "id": "gi-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 871,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Gibraltar is a British Overseas Territory with its own gazette; Malta’s Government Gazette cannot publish Gibraltar legislation."
+  },
+  {
+   "id": "gi-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 872,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Gibraltar Supreme Court Judgments is not an official publisher; the claim misattributes the source."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Montserrat — Source-Grounded Citation Reliability (MS)",
+ "country": "MS",
+ "jurisdiction": "Montserrat",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:58:14.715457+00:00",
+ "results": [
+  {
+   "id": "ms-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 815,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Montserrat’s 2025 SROs have not yet been enacted or published by the Financial Services Commission."
+  },
+  {
+   "id": "ms-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1091,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Montserrat’s Children (Care and Adoption) Act was enacted in 1998, not 2026; the cited 2026-05-07 date is impossible."
+  },
+  {
+   "id": "ms-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1119,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Montserrat's official gazette, not the FSC's site, is the authoritative source for the 2013 Amendment Act."
+  },
+  {
+   "id": "ms-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 879,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Montserrat’s Legislative Assembly has not published a ‘Child Abduction and Custody Act’ dated 7 May 2026; that future date is impossible."
+  },
+  {
+   "id": "ms-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 911,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Montserrat’s 2025 S.R.O.s have not yet been issued, so no such regulation exists."
+  },
+  {
+   "id": "ms-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 814,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Montserrat’s Legislative Assembly has not published any 2026 Acts or SROs; the cited date is in the future."
+  },
+  {
+   "id": "ms-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 832,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Montserrat and Turks and Caicos are separate jurisdictions; no Montserrat SRO would be published in TCI Revised Laws."
+  },
+  {
+   "id": "ms-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 855,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Montserrat’s Children (Care and Protection) Act 2024 was gazetted 7 May 2024; no “Children (Care and Adoption) Act” exists."
+  },
+  {
+   "id": "ms-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 809,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Montserrat is a British Overseas Territory with its own legislature; Saint Lucia Revised Laws cannot publish Montserrat statutes."
+  },
+  {
+   "id": "ms-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 985,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Montserrat’s Legislative Assembly did not publish the Child Abduction and Custody Act on 7 May 2025; no such Act exists."
+  },
+  {
+   "id": "ms-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 816,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Montserrat issues S.R.O.s, not Bermuda; Bermuda Laws Online cannot publish Montserrat legislation."
+  },
+  {
+   "id": "ms-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 891,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Montserrat's official legislation is published by the Attorney General's Chambers or Government Printer, not the Legislative Assembly's Hansard."
+  }
+ ]
+}

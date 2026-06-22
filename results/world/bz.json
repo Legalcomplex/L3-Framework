@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Belize — Source-Grounded Citation Reliability (BZ)",
+ "country": "BZ",
+ "jurisdiction": "Belize",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:53:22.113588+00:00",
+ "results": [
+  {
+   "id": "bz-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1011,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Belize Consolidated Laws are not published by the Attorney General; the official revised edition is issued under the authority of the Law Revision Commissioner."
+  },
+  {
+   "id": "bz-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 970,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Belize Court of Appeal Judgments is not an official publisher; the decision is an official court record, not a commercially published source."
+  },
+  {
+   "id": "bz-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1040,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Belize Supreme Court Judgments is not an official publisher; the cited decision appears to be a non-official or fabricated source."
+  },
+  {
+   "id": "bz-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 803,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Central Bank of Belize (Amendment) Act No. 8 of 2018 was enacted by Belize’s Parliament, not published by the Central Bank itself."
+  },
+  {
+   "id": "bz-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 793,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The 2026 date is future-dated; no such amendment can have been published in 2026."
+  },
+  {
+   "id": "bz-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 860,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-01-01 is in the future, so the SI cannot have been published."
+  },
+  {
+   "id": "bz-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 896,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Belize Consolidated Laws (Attorney General) is not an official publisher; Cap 67 is the Banana Industry (Special Powers) Act, not a loan act."
+  },
+  {
+   "id": "bz-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 747,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The decision is a Belize Court of Appeal judgment; Mexico’s SCJN Open Data Platform only publishes Mexican federal rulings, not Belizean cases."
+  },
+  {
+   "id": "bz-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 857,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Belize Supreme Court Judgments is not an official publisher; the cited decision appears to be a non-official or fabricated source."
+  },
+  {
+   "id": "bz-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1481,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Central Bank of Belize (Amendment) Act No. 8 of 2018 is a Belizean statute; it cannot be an official publication of Honduras’s Tribunal Superior de Cuentas."
+  },
+  {
+   "id": "bz-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 767,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Belize has no \"Mexico Orden Juridico Nacional\"; the cited 2026 Act cannot be published by a Mexican source."
+  },
+  {
+   "id": "bz-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 867,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Belize statutory instruments are not published by Mexico’s Orden Jurídico Nacional; the cited source is implausible for a Belizean SI."
+  }
+ ]
+}

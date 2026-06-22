@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Namibia — Source-Grounded Citation Reliability (NA)",
+ "country": "NA",
+ "jurisdiction": "Namibia",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:58:33.623082+00:00",
+ "results": [
+  {
+   "id": "na-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 935,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Additional Appropriation Act, 2000 is an official Namibian statute, not a secondary publication on NamibLII."
+  },
+  {
+   "id": "na-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 944,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The Namibia eJustice Portal is the official publisher of High Court judgments, and the cited decision matches its standard citation format."
+  },
+  {
+   "id": "na-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 980,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Act is a South African statute (RSA), not a Namibian one; the Legal Assistance Centre cannot validly publish it as Namibian annotated law."
+  },
+  {
+   "id": "na-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 921,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No verifiable public record exists of a FIM Act consultation notice dated 23 October 2023 on the NAMFISA website."
+  },
+  {
+   "id": "na-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 923,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such Act exists; Namibia Legal Information Institute records show no “Abolition of Payment by Cheque Act, 2022.”"
+  },
+  {
+   "id": "na-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 866,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Admiralty Court Act 1840 is a UK statute; Namibia’s NamibLII cannot publish it as a Namibian Act."
+  },
+  {
+   "id": "na-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 869,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Additional Appropriation Act, 2000 is a Namibian statute, not an Eswatini Revenue Service publication."
+  },
+  {
+   "id": "na-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 873,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'HC-MD-CIV-ACT-CON-2021-04874' does not match the cited judgment 'HC-MD-CIV-ACT-CON-2021-04873', indicating a mismatch in case numbers."
+  },
+  {
+   "id": "na-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 847,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Inspection of Financial Institutions Act 38 of 1984 is a South African statute, not a Zimbabwean directive issued by the Reserve Bank of Zimbabwe."
+  },
+  {
+   "id": "na-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 970,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The FIM Act is Namibian legislation; South Africa Open By-laws (Laws.Africa) is not an official Namibian government source."
+  },
+  {
+   "id": "na-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 835,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Abolition of Payment by Cheque Act, 2022 has not been enacted in Namibia, so no official commencement notice exists."
+  },
+  {
+   "id": "na-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 817,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Admiralty Court Act 1840 is a UK statute; EswatiniLII cannot publish Namibian or UK legislation."
+  }
+ ]
+}

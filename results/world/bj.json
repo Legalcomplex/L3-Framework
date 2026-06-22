@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Benin — Source-Grounded Citation Reliability (BJ)",
+ "country": "BJ",
+ "jurisdiction": "Benin",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.4167,
+ "correct": 5,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:52:56.299790+00:00",
+ "results": [
+  {
+   "id": "bj-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 974,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Benin’s official supreme-court decisions are not published by “Benin Courts (Juricaf)”; Juricaf is a regional database, not an official Benin source."
+  },
+  {
+   "id": "bj-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 988,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Benin’s Constitutional Court has not issued any decision numbered EL-25-002 dated 26 December 2025; that future date and reference are nonexistent."
+  },
+  {
+   "id": "bj-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 853,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Benin LEGIS is a private legal database, not an official government publication source for Benin statutes."
+  },
+  {
+   "id": "bj-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 903,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited text is a statute enacted by Benin’s legislature, not a publication issued by the National Assembly’s documentation service."
+  },
+  {
+   "id": "bj-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 977,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Benin’s official supreme-court decisions are not published by “Benin Courts (Juricaf)”; Juricaf is an external database, not an official Benin source."
+  },
+  {
+   "id": "bj-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 878,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Benin’s Constitutional Court decisions use four-digit years (e.g., DCC 26-003, 2026-02-27 is impossible)."
+  },
+  {
+   "id": "bj-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 824,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Juricaf identifier 'BENIN-COURSUPREME-20221223-89CJS' indicates decision 89/CJ-S, not the claimed 88/CJ-S."
+  },
+  {
+   "id": "bj-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 921,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Benin’s Constitutional Court has not issued any decision numbered EL-25-002 dated 26 December 2026; that future date makes the claim impossible."
+  },
+  {
+   "id": "bj-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 821,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Benin’s Loi N° 2020-12 originates from Benin’s legislature, not Nigeria’s NAFDAC, so the cited publication source is incorrect."
+  },
+  {
+   "id": "bj-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 737,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited law is a Benin statute; the Nigerian Communications Commission has no authority to publish Benin’s official gazette or legal sources."
+  },
+  {
+   "id": "bj-src-f05",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 820,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'BENIN-COURSUPREME-20221223-92CJCM' references decision 92/CJ-CM, not 90/CJ-CM as claimed."
+  },
+  {
+   "id": "bj-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 815,
+   "verdict": true,
+   "correct": false,
+   "raw": "True. Benin’s Constitutional Court (Cour Constitutionnelle) is the official publisher of its own decisions, including DCC26-003 of 27 February 2023."
+  }
+ ]
+}

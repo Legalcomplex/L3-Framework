@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Timor-Leste — Source-Grounded Citation Reliability (TL)",
+ "country": "TL",
+ "jurisdiction": "Timor-Leste",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T16:00:59.427012+00:00",
+ "results": [
+  {
+   "id": "tl-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1107,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited title and date do not match any official Timor-Leste publication; Law 1/2003 was enacted 10 March 2003, not 24 December 2002."
+  },
+  {
+   "id": "tl-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1115,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No official BCTL source or public record confirms the existence or publication of “Instruction No.23/2023 On Chart of Accounts” on the Central Bank’s site."
+  },
+  {
+   "id": "tl-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 905,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-04-15 is in the future, so the claimed publication cannot yet exist."
+  },
+  {
+   "id": "tl-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1169,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such law titled \"Publication of Acts\" exists; Law 1/2002 concerns the National Parliament's internal rules, not official publication procedures."
+  },
+  {
+   "id": "tl-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 928,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No BCTL Regulation 4/2018 on credit guarantees appears in the Central Bank of Timor-Leste’s official Regulations & Circulars listings."
+  },
+  {
+   "id": "tl-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 902,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-02-12 is in the future, so this issue of the Jornal da República cannot yet have been published."
+  },
+  {
+   "id": "tl-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 4995,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No official Timor-Leste source records Parliamentary Law 1/2003 titled “Juridical Regime of Real Estate”; the cited English translation portal did not exist in 2005."
+  },
+  {
+   "id": "tl-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1006,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. BCTL Instruction No. 23/2023 is a Timor-Leste central-bank rule, not an Indonesian instrument, so it cannot appear on Indonesia’s JDIHN."
+  },
+  {
+   "id": "tl-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 946,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Timor-Leste has no connection to Thailand’s Royal Gazette; the cited source cannot be an official Timorese legal publication."
+  },
+  {
+   "id": "tl-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1375,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Timor-Leste’s official gazette is the *Jornal da República*; Thu Vien Phap Luat is a Vietnamese database, not an authoritative source for RDTL laws."
+  },
+  {
+   "id": "tl-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 939,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. BCTL Regulation N.º 4/2018 is a Timor-Leste central-bank instrument, not a Cambodian source; Husky & Partners is a Cambodian firm, so the attribution is jurisdictionally incorrect."
+  },
+  {
+   "id": "tl-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 4273,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Timor-Leste’s official gazette is the Jornal da República; Husky & Partners is a Cambodian legal library, so the cited source cannot be an authentic Timorese official publication."
+  }
+ ]
+}

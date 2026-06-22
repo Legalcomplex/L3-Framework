@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Lesotho — Source-Grounded Citation Reliability (LS)",
+ "country": "LS",
+ "jurisdiction": "Lesotho",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:57:25.328619+00:00",
+ "results": [
+  {
+   "id": "ls-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 941,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No official Central Bank of Lesotho record shows a “Financial Institutions Know Your Customer Guidelines 2021” issued on 1 January 2021."
+  },
+  {
+   "id": "ls-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 848,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The VAT Act 2001 is a parliamentary statute, not a publication issued by the Lesotho Revenue Authority."
+  },
+  {
+   "id": "ls-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 906,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The citation lists a 2026 judgment, but today is 2025; a future decision cannot yet be published."
+  },
+  {
+   "id": "ls-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 814,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No official record exists of 'Financial Institutions RiskBased Capital Requirements Regulations 2016' issued by the Central Bank of Lesotho on that date."
+  },
+  {
+   "id": "ls-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 871,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Lesotho Revenue Authority did not exist in 1993; it was established in 2001, so the claimed 1993 publication date is impossible."
+  },
+  {
+   "id": "ls-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 818,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The citation lists a 2026 judgment from the Lesotho High Court, but the Lesotho Legal Information Institute has not published any 2026 decisions."
+  },
+  {
+   "id": "ls-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 837,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Lesotho is a sovereign jurisdiction; South Africa Open By-laws (Laws.Africa) cannot publish its official KYC guidelines."
+  },
+  {
+   "id": "ls-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 797,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The VAT Act 2001 is a Lesotho statute; Namibia Legal Information Institute cannot be its official publisher."
+  },
+  {
+   "id": "ls-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 762,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited judgment is from Lesotho's High Court (LSHC), not South Africa's Constitutional Court, which has no jurisdiction over Lesotho cases."
+  },
+  {
+   "id": "ls-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2251,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. EswatiniLII covers Eswatini law, not Lesotho; the cited regulations are Lesotho instruments and would appear on LesothoLII."
+  },
+  {
+   "id": "ls-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 819,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Income Tax Act 1993 is a Lesotho statute, so a Namibian publisher cannot be its official source."
+  },
+  {
+   "id": "ls-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 786,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decision is from Lesotho’s High Court (LSHC), not South Africa’s Constitutional Court, so the publisher attribution is incorrect."
+  }
+ ]
+}

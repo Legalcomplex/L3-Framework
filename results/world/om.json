@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Oman — Source-Grounded Citation Reliability (OM)",
+ "country": "OM",
+ "jurisdiction": "Oman",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:58:57.286484+00:00",
+ "results": [
+  {
+   "id": "om-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 936,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such consolidated regulation appears on decree.om; Oman’s labour rules are issued by ministerial decisions, not a single 2025 decree."
+  },
+  {
+   "id": "om-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 745,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited decree (RD 15/74) established Oman’s Currency Board, not the later Central Bank; the 1974 publication date and “Qanoon” attribution are therefore incorrect."
+  },
+  {
+   "id": "om-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 904,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Oman’s Capital Market Authority has not issued any regulation titled “On the Issuance of the Regulation for Electronic Insurance Operations” on 21 September 2023."
+  },
+  {
+   "id": "om-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 833,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited source is a Supreme Committee decision, not an official legal instrument published on qanoon.om."
+  },
+  {
+   "id": "om-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 769,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-03-17 is in the future, so the claimed publication cannot yet exist."
+  },
+  {
+   "id": "om-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 877,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited decree (RD 21/74) established Oman Refreshments Co., but the source “Oman Royal Decrees and Legislation (Qanoon)” did not exist in 1974; official publication was the Oman Gazette."
+  },
+  {
+   "id": "om-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 843,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No such consolidated regulation appears on decree.om; Oman’s labour permits are governed by Royal Decree 35/2003 and Ministerial Decision 235/2008, not a 2024 consolidation."
+  },
+  {
+   "id": "om-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 765,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decree (RD 15/74) was issued in 1974, not 1976; the 1976 date misattributes its publication."
+  },
+  {
+   "id": "om-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 890,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited source is Jordan’s Legislation & Opinion Bureau, not an Omani official gazette or authority, so it cannot be the authentic Omani regulation."
+  },
+  {
+   "id": "om-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 742,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decision is an Omani Supreme Committee COVID-19 measure, not a Saudi Central Bank (SAMA) rulebook entry."
+  },
+  {
+   "id": "om-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 885,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Financial Services Authority and Decision E/7/2026 are Omani, not Israeli, so the Israel Knesset source is implausible."
+  },
+  {
+   "id": "om-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 753,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decree (RD 21/74) was issued in 1974, not 1972, so the 1972-05-14 publication date is incorrect."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Saint Kitts and Nevis — Source-Grounded Citation Reliability (KN)",
+ "country": "KN",
+ "jurisdiction": "Saint Kitts and Nevis",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:56:57.783818+00:00",
+ "results": [
+  {
+   "id": "kn-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 885,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Saint Kitts and Nevis has not enacted or published any “Act 25 of 2025”; the 2025 legislative session has not yet occurred."
+  },
+  {
+   "id": "kn-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 842,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No official St Kitts & Nevis Ministry of Finance publication record exists for “Common Reporting Standard Act No 13 of 2016.”"
+  },
+  {
+   "id": "kn-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 886,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Saint Kitts and Nevis has not enacted any “Act 23 of 2025,” and the Law Commission did not publish such a statute on 1 January 2025."
+  },
+  {
+   "id": "kn-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 898,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No official St Kitts & Nevis Ministry of Finance source confirms the 2016-01-01 publication of SRO No 32 of 2016."
+  },
+  {
+   "id": "kn-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 849,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Saint Kitts and Nevis has no Law Commission; official legislation is published by the Government Printer or Gazette, not that body."
+  },
+  {
+   "id": "kn-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 874,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Saint Kitts and Nevis has not enacted any “Act 24 of 2025,” and the Law Commission did not publish such an instrument on 1 January 2025."
+  },
+  {
+   "id": "kn-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 869,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Saint Kitts and Nevis cannot promulgate an Act 25 of 2025 via Saint Lucia’s Revised Laws; the jurisdictions are distinct."
+  },
+  {
+   "id": "kn-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 845,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Saint Kitts and Nevis enacted its own Common Reporting Standard legislation; Cayman Islands sources cannot publish Saint Kitts and Nevis statutes."
+  },
+  {
+   "id": "kn-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 907,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Saint Kitts and Nevis is a separate jurisdiction; Grenada’s 2025 legislation cannot be an official legal source for it."
+  },
+  {
+   "id": "kn-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1423,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Saint Kitts and Nevis—not Aruba—issued SRO 32 of 2016, so an Aruba archive cannot be its official publication source."
+  },
+  {
+   "id": "kn-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 689,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Bermuda Laws Online publishes Bermudian legislation, not Saint Kitts and Nevis statutes."
+  },
+  {
+   "id": "kn-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 738,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Saint Kitts and Nevis cannot publish laws via the Turks and Caicos Attorney General’s Revised Laws."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — India — Source-Grounded Citation Reliability (IN)",
+ "country": "IN",
+ "jurisdiction": "India",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.75,
+ "correct": 9,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:56:11.619255+00:00",
+ "results": [
+  {
+   "id": "in-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 940,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Indian High Court Judgments (AWS Open Data) is not an official publisher; only the issuing High Court’s own official website or authorized reporter constitutes the authoritative source."
+  },
+  {
+   "id": "in-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 927,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Supreme Court of India has not issued any judgment dated 03-02-2026; future dates are impossible."
+  },
+  {
+   "id": "in-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 975,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The Appellate Tribunal for Electricity (APTEL) is the statutory appellate body under the Electricity Act, 2003, and Appeal No. 74 of 2008 was indeed filed and decided by it."
+  },
+  {
+   "id": "in-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1049,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The Central Administrative Tribunal (CAT) is the competent forum for service disputes involving central government employees in India."
+  },
+  {
+   "id": "in-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 992,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Competition Commission of India (CCI) does not issue orders under the style “Case No. 36/2025,” and no such case involving Preeti Kodwani v. Sundar Pichai exists as of 2026-01-05."
+  },
+  {
+   "id": "in-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 872,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The Customs, Excise & Service Tax Appellate Tribunal (CESTAT) is the competent Indian appellate body for customs/excise disputes, and the cited citation matches its official reporting style."
+  },
+  {
+   "id": "in-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 839,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'CR. WJC/144/2026' cannot match a 2025 judgment; the year suffix is inconsistent."
+  },
+  {
+   "id": "in-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 873,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'ESCR010000402027' does not correspond to 'C. VELUSAMY versus K INDHERA' (2026-02-03) in the AWS Open Data collection of Indian Supreme Court Judgments."
+  },
+  {
+   "id": "in-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 823,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Islamabad High Court is in Pakistan, not India, so it cannot publish an Indian legal decision."
+  },
+  {
+   "id": "in-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 991,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Supreme Court Online Bulletin does not publish CAT decisions like O.A./3243/2015; such orders appear on the Central Administrative Tribunal’s official website."
+  },
+  {
+   "id": "in-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 930,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Competition Commission of India (CCI) does not issue orders under the style \"Case No. 36/2025\"; its numbering follows a different format and 2025 cases cannot pre-date 2023."
+  },
+  {
+   "id": "in-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 906,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Customs, Excise & Service Tax Appellate Tribunal (CESTAT) does not publish decisions under the prefix “E/”; that format belongs to the Central Excise bench, not CESTAT."
+  }
+ ]
+}

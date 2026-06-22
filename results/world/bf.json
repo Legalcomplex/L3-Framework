@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Burkina Faso — Source-Grounded Citation Reliability (BF)",
+ "country": "BF",
+ "jurisdiction": "Burkina Faso",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:52:46.021460+00:00",
+ "results": [
+  {
+   "id": "bf-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1057,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Juricaf is an OHADA/AU project, not an official Burkina Faso court publisher; the Cour de cassation itself is the authoritative source."
+  },
+  {
+   "id": "bf-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 905,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Burkina Faso’s transitional legislature is the Assemblée Législative de Transition (ALT), not the Assemblée Nationale, so the cited publisher is incorrect."
+  },
+  {
+   "id": "bf-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 988,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The identifier 'BURKINAFASO-COURDECASSATION-20220401-033' directly encodes the court, date (2022-04-01), and decision number 033, matching the cited source."
+  },
+  {
+   "id": "bf-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 907,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Burkina Faso’s legislature is the Assemblée Législative de Transition (ALT), not the Assemblée Nationale, so the cited publisher is incorrect."
+  },
+  {
+   "id": "bf-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1041,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Juricaf is an OHADA/AU project, not an official Burkina Faso court publisher; the Cour de cassation itself is the authoritative source."
+  },
+  {
+   "id": "bf-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1030,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Burkina Faso’s legislature is the Assemblée Législative de Transition (ALT), not the Assemblée Nationale, so the cited publisher is incorrect."
+  },
+  {
+   "id": "bf-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 875,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'BURKINAFASO-COURDECASSATION-20230601-242024' does not match the cited decision '24/2023' of 1 June 2023."
+  },
+  {
+   "id": "bf-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 807,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited law is Burkina Faso legislation, not a Nigerian pension regulation; the publisher attribution is factually incorrect."
+  },
+  {
+   "id": "bf-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 727,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Juricaf identifier ends in '034', but the claimed decision number is '033', indicating a mismatch in the source reference."
+  },
+  {
+   "id": "bf-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 843,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Burkina Faso’s 2023 budget-settlement law cannot be published by Senegal’s ARTP, a Senegalese telecom regulator."
+  },
+  {
+   "id": "bf-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 842,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Liberia Supreme Court Opinions (judiciary.gov.lr) is Liberia’s official reporter, not Burkina Faso’s, so it cannot publish a Burkina Faso Cour de cassation decision."
+  },
+  {
+   "id": "bf-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 791,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Mauritania Consolidated Legal Codes cannot publish Burkina Faso legislation; the cited law originates from Burkina Faso's National Assembly."
+  }
+ ]
+}

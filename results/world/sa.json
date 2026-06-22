@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Saudi Arabia — Source-Grounded Citation Reliability (SA)",
+ "country": "SA",
+ "jurisdiction": "Saudi Arabia",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:59:48.571682+00:00",
+ "results": [
+  {
+   "id": "sa-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1023,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Capital Market Law was issued by Royal Decree M/30 on 31 July 2003; the Capital Market Authority did not publish it."
+  },
+  {
+   "id": "sa-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1026,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No official Saudi CMA source confirms a June 2022 publication of “Securities Exchanges and Depository Centers Regulations”; the cited title and date appear unsubstantiated."
+  },
+  {
+   "id": "sa-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1040,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Implementing Regulation was issued by the Capital Market Authority on 25/01/1444H (22/08/2022G), not on 2026-01-01."
+  },
+  {
+   "id": "sa-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1028,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Saudi Capital Market Authority has not published any regulation titled 'Rules for Foreign Investment in Securities' dated 2026-01-01."
+  },
+  {
+   "id": "sa-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1024,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such CMA regulation titled 'Guidelines for Issuing Green, Social, Sustainability, and Sustainability-Linked Debt Instruments' was published on 2025-05-01."
+  },
+  {
+   "id": "sa-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1324,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such publication titled 'Cross-Border Passporting Guide for Investment Funds' appears on the Saudi Capital Market Authority’s official regulations portal."
+  },
+  {
+   "id": "sa-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 880,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Capital Market Law was issued by Royal Decree M/30 on 31 July 2003, not 2000, and the CMA was established later."
+  },
+  {
+   "id": "sa-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 912,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No official Saudi Capital Market Authority source confirms a 1 June 2025 publication of “Securities Exchanges and Depository Centers Regulations.”"
+  },
+  {
+   "id": "sa-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 877,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. DIFC Legal Database covers Dubai International Financial Centre (UAE) law, not Saudi Arabian regulations."
+  },
+  {
+   "id": "sa-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 839,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The source is Israeli parliamentary data, not a Saudi official publication, and the 2026 date is future."
+  },
+  {
+   "id": "sa-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 980,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Saudi Capital Market Authority has not published any such guidelines dated 2026-05-01; that future date makes the bibliographic claim impossible."
+  },
+  {
+   "id": "sa-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 959,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Saudi Capital Market Authority does not publish a document titled 'Cross-Border Passporting Guide for Investment Funds' under its Regulations on 2023-06-01."
+  }
+ ]
+}

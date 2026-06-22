@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Uganda — Source-Grounded Citation Reliability (UG)",
+ "country": "UG",
+ "jurisdiction": "Uganda",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T16:01:26.667490+00:00",
+ "results": [
+  {
+   "id": "ug-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1020,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Uganda's Judicial Training Institute is governed by the 2003 Regulations; no 2025 version appears in official gazettes or Laws.Africa/ULII records."
+  },
+  {
+   "id": "ug-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1524,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Uganda’s foreign exchange law is the Foreign Exchange Act, 2004; no “Foreign Exchange Amendment Act” appears among Bank of Uganda’s official publications."
+  },
+  {
+   "id": "ug-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 913,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Uganda Electricity Regulatory Authority has not published any 2026 Tariff Orders or Decisions, as that date lies in the future."
+  },
+  {
+   "id": "ug-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 962,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Uganda Communications Commission has not published any document titled 'A CONSUMER GUIDE TO PAY TV, POSTAL AND COURIER PRICING' on 2026-04-10, as that date is in the future."
+  },
+  {
+   "id": "ug-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1008,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Act was enacted in 1972 but not published by Laws.Africa/ULII, which did not exist then; official publication was via the Uganda Gazette."
+  },
+  {
+   "id": "ug-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 812,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No official Ugandan source records an “MDI Amendment Act 2023” published by the Bank of Uganda on 1 January 2023."
+  },
+  {
+   "id": "ug-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 859,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited instrument is a Ugandan regulation, so publication by Tanzania’s Attorney General’s Office is jurisdictionally implausible."
+  },
+  {
+   "id": "ug-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 886,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Uganda’s foreign exchange law is the Foreign Exchange Act, 2004 (Act No. 5), not an “Amendment Act” published by the Bank of Uganda in 2022."
+  },
+  {
+   "id": "ug-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 856,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Uganda Electricity Regulatory Authority does not publish Tariff Orders & Decisions under that title; the cited document is not an official UER legal source."
+  },
+  {
+   "id": "ug-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 918,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Seychelles Official Gazette cannot publish Ugandan regulatory documents; jurisdiction mismatch invalidates the bibliographic claim."
+  },
+  {
+   "id": "ug-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 926,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Act was enacted in 1972, not 1970; the 1970-06-06 date misattributes its publication."
+  },
+  {
+   "id": "ug-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 800,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The MDI Amendment Act 2023 is a Ugandan statute; Kenya Law reports Kenyan legislation only."
+  }
+ ]
+}

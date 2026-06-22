@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Sierra Leone — Source-Grounded Citation Reliability (SL)",
+ "country": "SL",
+ "jurisdiction": "Sierra Leone",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T16:00:12.860453+00:00",
+ "results": [
+  {
+   "id": "sl-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1503,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Bank of Sierra Leone Act, 2019 is an official statute enacted by Parliament, not a publication of the Sierra Leone Legal Information Institute."
+  },
+  {
+   "id": "sl-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 944,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Sierra Leone Web Laws Archive is not an official publisher; the Finance Act, 2021 would be gazetted by Sierra Leone’s Government Printer."
+  },
+  {
+   "id": "sl-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 885,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Companies Act 2009 is primary legislation enacted by Parliament, not a Bank of Sierra Leone banking regulation or guideline."
+  },
+  {
+   "id": "sl-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 924,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Sierra Leone Legal Information Institute was founded in 2005, so it could not have published the 1977 Act."
+  },
+  {
+   "id": "sl-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 941,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Sierra Leone Web is an unofficial archive; the Appropriation Act, 2021 was officially published in the Sierra Leone Gazette, not via that site."
+  },
+  {
+   "id": "sl-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 839,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such Act exists; the Bank of Sierra Leone does not publish statutes, and the cited title misstates both the source and legal instrument."
+  },
+  {
+   "id": "sl-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 875,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Bank of Sierra Leone Act, 2019 is a Sierra Leone statute, not a Burkina Faso Assemblée Nationale publication."
+  },
+  {
+   "id": "sl-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1394,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Finance Act, 2021 is a Sierra Leone statute; Côte d'Ivoire's loidici.biz is not its official publisher."
+  },
+  {
+   "id": "sl-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 851,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Companies Act 2009 is a Sierra Leone statute, not a Benin publication, so the Benin LEGIS attribution is incorrect."
+  },
+  {
+   "id": "sl-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 745,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Benin National Assembly has no jurisdiction over Sierra Leone legislation; the Act is a Sierra Leone statute."
+  },
+  {
+   "id": "sl-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 893,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Appropriation Act, 2021 is a Sierra Leone statute, not a Nigerian Electricity Regulatory Commission order."
+  },
+  {
+   "id": "sl-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 850,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Other Financial Services Act 2007 is a Gambian statute; Law Hub Gambia cannot publish Sierra Leone legislation."
+  }
+ ]
+}

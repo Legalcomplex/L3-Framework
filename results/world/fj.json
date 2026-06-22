@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Fiji — Source-Grounded Citation Reliability (FJ)",
+ "country": "FJ",
+ "jurisdiction": "Fiji",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:54:49.842174+00:00",
+ "results": [
+  {
+   "id": "fj-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 929,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Allied Health Practitioners Act 2011 was enacted in 2011; Laws of Fiji (laws.gov.fj) merely hosts the consolidated text, not the original 2016 publication."
+  },
+  {
+   "id": "fj-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 921,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The decision date (25.03.2026) is in the future, so it cannot yet be published."
+  },
+  {
+   "id": "fj-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1144,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Airports (Development and Modernisation) Act 2012 was enacted in 2012; Laws of Fiji (laws.gov.fj) merely hosts the official revised text, not the original publication."
+  },
+  {
+   "id": "fj-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 924,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The decision date (18-03-2026) precedes the publication date (2026-03-27), which is chronologically impossible."
+  },
+  {
+   "id": "fj-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 970,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Arbitration Act 1965 is a Fijian statute; Laws of Fiji (laws.gov.fj) is merely its online publisher, not the source of enactment."
+  },
+  {
+   "id": "fj-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 888,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier 'HBJ 38.2023' cannot correspond to a 2026 judgment, as the case number indicates filing in 2023."
+  },
+  {
+   "id": "fj-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 981,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Allied Health Practitioners Act 2011 was enacted in 2011; Laws of Fiji (laws.gov.fj) merely hosts the consolidated text, not the original 2014 publication."
+  },
+  {
+   "id": "fj-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1044,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'HBC 362.2016' cannot match a 2026 decision; the year in the case number precedes the decision date."
+  },
+  {
+   "id": "fj-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 737,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Airports (Development and Modernisation) Act 2012 is a Fijian statute; Laws of Fiji (laws.gov.fj) is the official online repository, not the publisher."
+  },
+  {
+   "id": "fj-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 722,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decision is a Fiji High Court matter, not a Federal Court of Australia judgment, so the publisher attribution is incorrect."
+  },
+  {
+   "id": "fj-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 719,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Arbitration Act 1965 is a Nauruan statute; RONLAW is Nauru’s official database, not Fiji’s, so the jurisdiction claim is incorrect."
+  },
+  {
+   "id": "fj-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 930,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'HBJ 38.2024' cannot match a 2023 case number, and the 2026 judgment date is impossible."
+  }
+ ]
+}

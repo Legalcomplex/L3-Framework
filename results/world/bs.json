@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Bahamas — Source-Grounded Citation Reliability (BS)",
+ "country": "BS",
+ "jurisdiction": "Bahamas",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:53:14.408237+00:00",
+ "results": [
+  {
+   "id": "bs-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 812,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The decision date (2026-04-17) is in the future, so it cannot yet be published by the Bahamas Court of Appeal."
+  },
+  {
+   "id": "bs-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 903,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Bahamas Consolidated Legislation (2021) is not an official publisher; amendments appear in the official Gazette or revised statutes."
+  },
+  {
+   "id": "bs-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1019,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier '069bcad08edfb7cd' does not match the cited 2026 judgment; the date is also impossible as it precedes today."
+  },
+  {
+   "id": "bs-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 845,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No official Bahamian source records an \"Agricultural Sales and Services Act, 2023\" published on 1 January 2023."
+  },
+  {
+   "id": "bs-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 981,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Bahamas Official Gazette cannot publish a 2026 document in the present, making the bibliographic claim chronologically impossible."
+  },
+  {
+   "id": "bs-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 783,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-04-13 is in the future, so the decision cannot yet exist or be published."
+  },
+  {
+   "id": "bs-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 904,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Bahamas Court of Appeal does not publish judgments under the name \"Bahamas Court of Appeal Judgments\"; official decisions are issued by the Court of Appeal of the Commonwealth of The Bahama"
+  },
+  {
+   "id": "bs-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1020,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '2789df7345070a57' is not a Bahamas Consolidated Legislation entry, and no such amendment is recorded for 2021."
+  },
+  {
+   "id": "bs-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 718,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '069bcad08edfb8cd' does not correspond to the cited 2026 judgment, as that future date is impossible."
+  },
+  {
+   "id": "bs-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 677,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Agricultural Sales and Services Act, 2023 is a Bahamian statute, not a Cayman Islands enactment."
+  },
+  {
+   "id": "bs-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 751,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Grenada is a sovereign state; its laws cannot be published under Bahamian jurisdiction."
+  },
+  {
+   "id": "bs-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 738,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Bahamas Court of Appeal does not publish judgments under the name “Bahamas Court of Appeal Judgments”; its official series is the Bahamas Law Reports or the Court’s own website."
+  }
+ ]
+}

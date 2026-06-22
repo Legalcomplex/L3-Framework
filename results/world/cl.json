@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Chile — Source-Grounded Citation Reliability (CL)",
+ "country": "CL",
+ "jurisdiction": "Chile",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:53:43.509921+00:00",
+ "results": [
+  {
+   "id": "cl-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 913,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. BCN Ley Chile publishes only enacted laws and decrees; a 2026-05-07 date is impossible and the cited title is not an official source."
+  },
+  {
+   "id": "cl-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 996,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The claim misstates the source and date; Chile BCN Linked Open Data (SPARQL) is not an official publisher, and 2026-02-11 is a future date."
+  },
+  {
+   "id": "cl-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 942,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The TDLC (Tribunal de Defensa de la Libre Competencia) is Chile’s competition court; “Chile TDLC - Competition Tribunal” is redundant and inexact."
+  },
+  {
+   "id": "cl-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1008,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The quoted title is not an official CMF legal source; it appears to be an incomplete or misattributed reference rather than a published norm."
+  },
+  {
+   "id": "cl-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 881,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited decision is from Chile’s TDLC (Tribunal de Defensa de la Libre Competencia), not published by the FNE."
+  },
+  {
+   "id": "cl-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 733,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited decision is from the Tribunal Tributario y Aduanero de Rancagua, not the central TTA."
+  },
+  {
+   "id": "cl-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 799,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited title is Chilean, not Colombian, and the publisher “Colombia Secretaria del Senado” cannot issue Chilean legal instruments."
+  },
+  {
+   "id": "cl-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 727,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited title is Chilean legislation, not a Uruguayan IMPO publication; the 2026 date is also impossible."
+  },
+  {
+   "id": "cl-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 785,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decision is from the TDLC (Tribunal de Defensa de la Libre Competencia), not the TDLC - Competition Tribunal; the correct name is Tribunal de Defensa de la Libre Competencia."
+  },
+  {
+   "id": "cl-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 841,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The quoted title is not an official CMF legal source; it appears to be an incomplete or misattributed reference rather than a published norm."
+  },
+  {
+   "id": "cl-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 898,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The TDLC (Tribunal de Defensa de la Libre Competencia) issues the sentence, not the FNE, which only litigates before it."
+  },
+  {
+   "id": "cl-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 841,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decision is from the Tribunal Tributario y Aduanero de Rancagua, not the national TTA body."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Haiti — Source-Grounded Citation Reliability (HT)",
+ "country": "HT",
+ "jurisdiction": "Haiti",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:55:56.339753+00:00",
+ "results": [
+  {
+   "id": "ht-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 6368,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Juricaf aggregates Haitian decisions but is not the official publisher; the Court of Cassation itself is the authoritative source."
+  },
+  {
+   "id": "ht-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 962,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Haiti’s official budget is published in Le Moniteur by presidential decree; the Ministry of Economy & Finance does not issue “Lois de Finances” as a standalone source."
+  },
+  {
+   "id": "ht-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 919,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Haiti has no functioning Assemblée Nationale de la Jeunesse, and no 2025 référendaire decree exists in official records."
+  },
+  {
+   "id": "ht-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 945,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No official CONATEL publication dated 8 Dec 2017 titled “CONCESSION RADIO” appears in Haiti’s regulatory texts from 1977–2017."
+  },
+  {
+   "id": "ht-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 922,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Le Moniteur is Haiti’s official gazette, but the 1887-07-28 issue was not published by the Digital Library of the Caribbean, which only hosts later digitized copies."
+  },
+  {
+   "id": "ht-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 817,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No verifiable Haitian Ministry of Economy and Finance source confirms a 12 June 2009 public-procurement law under that exact title."
+  },
+  {
+   "id": "ht-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 817,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'HAITI-COURDECASSATION-20140630-RG49484416' does not match the cited reference 'RG4948-4415', indicating a mismatch in case numbers."
+  },
+  {
+   "id": "ht-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 865,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Budget Général is a Haitian government document, not a Curaçao regulation; the cited publisher and jurisdiction do not match."
+  },
+  {
+   "id": "ht-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 5381,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Haiti has no 2025 référendaire decree; the cited Aruba archive cannot publish Haitian official sources."
+  },
+  {
+   "id": "ht-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 823,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No verifiable record exists of a Haiti CONATEL publication titled 'CONCESSION RADIO 8 dec 17 (1)' dated 12 October 1976."
+  },
+  {
+   "id": "ht-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 817,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. \"Le Moniteur\" is Haiti's official gazette; \"Laws of Grenada\" is a separate Caribbean jurisdiction and could not publish it."
+  },
+  {
+   "id": "ht-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 4553,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The 2009 Haitian public-procurement law was not published by Bahamas Consolidated Legislation; that source only compiles Bahamian statutes."
+  }
+ ]
+}

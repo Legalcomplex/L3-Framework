@@ -1,0 +1,81 @@
+{
+ "pack": "S3 — American Samoa — Source-Grounded Citation Reliability (AS)",
+ "country": "AS",
+ "jurisdiction": "American Samoa",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 6,
+ "items_in_pack": 6,
+ "parsed": 6,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 3,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:52:18.716150+00:00",
+ "results": [
+  {
+   "id": "as-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 812,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. American Samoa Code Annotated & Case Law is a commercial publisher, not the official source of American Samoa decisions."
+  },
+  {
+   "id": "as-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 932,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. American Samoa Code Annotated & Case Law is not a recognized publisher of official legal decisions."
+  },
+  {
+   "id": "as-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 831,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. American Samoa Code Annotated & Case Law is not a publisher; it is the jurisdiction’s codified statutes and reported decisions."
+  },
+  {
+   "id": "as-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 883,
+   "verdict": false,
+   "correct": true,
+   "raw": "False: American Samoa Code Annotated & Case Law is a commercial publisher, not the official source for American Samoa decisions."
+  },
+  {
+   "id": "as-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1004,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. American Samoa and the Republic of the Marshall Islands are separate jurisdictions; the cited decision belongs to the latter, not American Samoa."
+  },
+  {
+   "id": "as-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 918,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. American Samoa Code Annotated & Case Law is not a publisher; it is the official compilation of statutes and reported decisions."
+  }
+ ]
+}

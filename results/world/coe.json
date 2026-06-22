@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Council of Europe — Source-Grounded Citation Reliability (CoE)",
+ "country": "COE",
+ "jurisdiction": "Council of Europe",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:54:10.030450+00:00",
+ "results": [
+  {
+   "id": "coe-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1127,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Venice Commission (Council of Europe) does not issue “decisions” on national scandals; CODICES indexes constitutional-court judgments, not Commission outputs."
+  },
+  {
+   "id": "coe-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 961,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. HUDOC did not exist in 1961; the European Court of Human Rights launched its HUDOC database decades later, so the 1961-dated publication claim is anachronistic."
+  },
+  {
+   "id": "coe-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 924,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Interim Agreement (ETS 12) was opened for signature on 11 December 1953, not “published” by the Treaty Office; the Office merely registers and disseminates adopted treaties."
+  },
+  {
+   "id": "coe-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 931,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The bibliographic claim is inaccurate because the European Social Charter is not under the Council of Europe’s HUDOC-ESC; HUDOC is the European Court of Human Rights database."
+  },
+  {
+   "id": "coe-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 927,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. HUDOC-EXEC is the Council of Europe’s execution-monitoring database, not a publisher; the cited decision is an official CM/DH document."
+  },
+  {
+   "id": "coe-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 934,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Venice Commission’s CODICES database indexes constitutional-court decisions; “ESP-1996-1-003” is a Spanish Constitutional Court ruling, not a Venice Commission act."
+  },
+  {
+   "id": "coe-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 927,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Venice Commission (Council of Europe) does not issue “Suspicion based reporting relating to the Wirecard scandal”; that decision originates from German authorities, not CODICES."
+  },
+  {
+   "id": "coe-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 920,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The ECLI identifies the original English judgment in Lawless v. Ireland (No. 2); HUDOC does not list a German translation by N. P. Engel Verlag under that identifier."
+  },
+  {
+   "id": "coe-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 886,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The 1953 Isle of Man publication cannot be the source of a Council of Europe treaty opened in 1953 and formally published in the ETS series."
+  },
+  {
+   "id": "coe-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 814,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decision is from the European Committee of Social Rights, not HUDOC-ESC, which is the Council of Europe’s database, not the publisher."
+  },
+  {
+   "id": "coe-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1024,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The 1553rd DH meeting decision is a Council of Europe document, not a Jersey court judgment, so it cannot be published by the Jersey Legal Information Board."
+  },
+  {
+   "id": "coe-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1022,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Decision 'ESP-1996-1-003' is a Spanish Constitutional Court case, not a Portuguese Courts of Appeal decision."
+  }
+ ]
+}

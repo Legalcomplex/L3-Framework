@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Japan — Source-Grounded Citation Reliability (JP)",
+ "country": "JP",
+ "jurisdiction": "Japan",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.4167,
+ "correct": 5,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:56:36.760427+00:00",
+ "results": [
+  {
+   "id": "jp-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 920,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Act was enacted in 1947, but Japanese Law Translation (MOJ) did not exist then; it launched in 2006."
+  },
+  {
+   "id": "jp-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 936,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier '令和5(オ)360' is a 2023 Supreme Court case; a 2026 date is chronologically impossible."
+  },
+  {
+   "id": "jp-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 942,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited decision is an official JFTC enforcement action, not a judicial “Decision” published by “JFTC Decisions”; the bibliographic description mischaracterizes its issuing authority and publ"
+  },
+  {
+   "id": "jp-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 912,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited decision is from the National Tax Tribunal (Kokuzei Fufuku Shinpansho), not the Japan National Tax Tribunal."
+  },
+  {
+   "id": "jp-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 914,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Act on Marine Accident Inquiries (Act No. 95 of 1947) was enacted 15 September 1947; the 19 November date is incorrect."
+  },
+  {
+   "id": "jp-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 912,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier '令和7(マ)244' cannot correspond to a 2026-01-28 decision, as Reiwa 7 begins in 2025."
+  },
+  {
+   "id": "jp-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 859,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Act is Japanese legislation; it was never published in Macau’s Official Gazette."
+  },
+  {
+   "id": "jp-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 885,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '令和5(オ)361' is a 2023 Supreme Court case, not a 2026 decision."
+  },
+  {
+   "id": "jp-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 802,
+   "verdict": true,
+   "correct": false,
+   "raw": "True. The cited decision is an official JFTC enforcement action, correctly attributed to the Japan Fair Trade Commission as its issuing authority."
+  },
+  {
+   "id": "jp-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 910,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decision date (平4.5.12) is 12 May 1992, not 1991, so the bibliographic claim is incorrect."
+  },
+  {
+   "id": "jp-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 909,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Act on Marine Accident Inquiries is Japanese legislation; Hong Kong e-Legislation cannot be its official source."
+  },
+  {
+   "id": "jp-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 769,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '令和7(マ)245' cannot refer to a 2026-01-28 decision, as Reiwa 7 begins in 2025."
+  }
+ ]
+}

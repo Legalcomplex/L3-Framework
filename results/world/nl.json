@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Netherlands — Source-Grounded Citation Reliability (NL)",
+ "country": "NL",
+ "jurisdiction": "Netherlands",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:58:44.561301+00:00",
+ "results": [
+  {
+   "id": "nl-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1032,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 17-02-2026 lies in the future, so the cited decision cannot yet exist or be published."
+  },
+  {
+   "id": "nl-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1022,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The citation matches the official publication format and date of the Dutch Staatsblad entry for that 2019 entry-into-force decree."
+  },
+  {
+   "id": "nl-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1287,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. BWBR0001827 is the Wetboek van Burgerlijke Rechtsvordering; the parenthetical “(geldt in geval van digitaal procederen)” is not part of its official title."
+  },
+  {
+   "id": "nl-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1025,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Dutch Data Protection Authority (Autoriteit Persoonsgegevens) does not issue \"Woo-besluit\" decisions; these are administrative decisions under the Open Government Act (Wet open overheid) is"
+  },
+  {
+   "id": "nl-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1025,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The ECLI code indicates a 2026 decision, which is impossible since the current year is 2024."
+  },
+  {
+   "id": "nl-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 923,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The ECLI identifier contains a future year (2026) and a date that has not yet occurred, making the bibliographic claim impossible."
+  },
+  {
+   "id": "nl-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 913,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited Dutch court decision cannot be published by Laws of Gibraltar, a foreign jurisdiction’s official site."
+  },
+  {
+   "id": "nl-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 956,
+   "verdict": true,
+   "correct": false,
+   "raw": "True. The identifier 'stb-2019-179' matches the 25 April 2019 entry in Staatsblad der Nederlanden for the inwerkingtredingsbesluit of the Wet van 5 juli."
+  },
+  {
+   "id": "nl-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 910,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. BWBR0001828 is the Wetboek van Burgerlijke Rechtsvordering; the parenthetical “(geldt in geval van digitaal procederen)” is not part of its official title."
+  },
+  {
+   "id": "nl-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 870,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Dutch Data Protection Authority (Autoriteit Persoonsgegevens) does not publish \"Woo-besluit: Boetebesluit en besluit op bezwaar\" decisions; these are issued by the relevant administrative b"
+  },
+  {
+   "id": "nl-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 803,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. ECLI:NL:CRVB:2026:330 is a Dutch Central Appeals Tribunal decision, not a Portuguese court ruling."
+  },
+  {
+   "id": "nl-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 815,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The ECLI prefix \"NL:HR\" denotes a Dutch Supreme Court (Hoge Raad) decision, not the German Bundesfinanzhof."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Brunei — Source-Grounded Citation Reliability (BN)",
+ "country": "BN",
+ "jurisdiction": "Brunei",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:53:03.991780+00:00",
+ "results": [
+  {
+   "id": "bn-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 945,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Brunei’s 2026 Gazette cannot yet exist; the cited 1 January 2026 publication date is in the future."
+  },
+  {
+   "id": "bn-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 833,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Brunei Attorney General's Chambers did not publish \"Old Age and Disability Pensions\" via its Laws series on 1 January 1984."
+  },
+  {
+   "id": "bn-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 899,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Brunei Court Decisions is not an official publisher; official judgments come from the Judiciary of Brunei Darussalam or the Attorney General’s Chambers."
+  },
+  {
+   "id": "bn-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 861,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The claim misattributes the source; S13/2003 is a Brunei government gazette order, not a publication of “Brunei AITI.”"
+  },
+  {
+   "id": "bn-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 841,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Brunei’s 2026 Gazette cannot exist yet; the cited date and Order are chronologically impossible."
+  },
+  {
+   "id": "bn-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 763,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Interpretation and General Clauses Act is a statute enacted by Brunei’s legislature, not a publication issued by the Attorney General’s Chambers."
+  },
+  {
+   "id": "bn-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 768,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'S5_2027' cannot validly reference a 2026 order; the year mismatch indicates an erroneous or fabricated bibliographic claim."
+  },
+  {
+   "id": "bn-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 826,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Brunei Attorney General's Chambers did not publish \"Old Age and Disability Pensions\" via its Laws series on 1982-01-01; that title is not an official Brunei statute."
+  },
+  {
+   "id": "bn-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 777,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Brunei Court Decisions is not an official publisher; official judgments are issued by the Judiciary of Brunei Darussalam."
+  },
+  {
+   "id": "bn-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 780,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Brunei’s AITI Amendment Order 2003 (S13/2003) is a domestic statutory instrument, not an Indonesian JDIHN publication."
+  },
+  {
+   "id": "bn-src-f05",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 991,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'S4_2027' cannot refer to an Order dated 2026-01-01, as the year in the citation does not match."
+  },
+  {
+   "id": "bn-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 776,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Interpretation and General Clauses Act is Bruneian legislation, not Cambodian; Husky & Partners Cambodian Legal Library cannot be its official publisher."
+  }
+ ]
+}

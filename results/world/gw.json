@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Guinea-Bissau — Source-Grounded Citation Reliability (GW)",
+ "country": "GW",
+ "jurisdiction": "Guinea-Bissau",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:55:39.261573+00:00",
+ "results": [
+  {
+   "id": "gw-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 917,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No official record exists of a \"Declaração de Bissau (2015)\" published by Guinea-Bissau’s National People’s Assembly on 6 December 2015."
+  },
+  {
+   "id": "gw-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 858,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No verifiable official publication by Guinea-Bissau’s Ministry of Economy & Finance matches this exact title or date."
+  },
+  {
+   "id": "gw-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1017,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The 1988 publication is a Portuguese compilation of bilateral acts, not an official Guinean National Assembly source."
+  },
+  {
+   "id": "gw-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1100,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No verifiable official record confirms that Despacho MEF nº 25/2016 was published by Guinea-Bissau’s Ministry of Economy & Finance on 5 April 2016."
+  },
+  {
+   "id": "gw-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1107,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The claim misattributes the source; Guinea-Bissau’s National People’s Assembly did not publish the “Lista dos Tratados” on 29 Jan 2003."
+  },
+  {
+   "id": "gw-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 815,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No official evidence confirms that IS n° 08/2021 was published by Guinea-Bissau’s Ministry of Economy & Finance on 8 February 2021."
+  },
+  {
+   "id": "gw-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 718,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Declaração de Bissau (2015) is a Bissau-Guinean document, not a Ghanaian parliamentary publication."
+  },
+  {
+   "id": "gw-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 985,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Central Bank of Guinea-Bissau (BCRG) does not publish tax codes; the cited source is not an official legal publication."
+  },
+  {
+   "id": "gw-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 774,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The 1985 publication is a Portuguese compilation of bilateral acts, not an official Guinea-Bissau National People’s Assembly source."
+  },
+  {
+   "id": "gw-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 814,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Despacho MEF nº 25/2016 is a Guinea-Bissau Ministry of Finance order, not a Mauritanian central-bank regulation."
+  },
+  {
+   "id": "gw-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 863,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The 'Lista dos Tratados e Convenções Internacionais' is not an official legal source published by Guinea-Bissau's National People's Assembly in 2005."
+  },
+  {
+   "id": "gw-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 778,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Guinea-Bissau’s official gazette is the Boletim Oficial; no “Guinea Journal Officiel” exists, so the cited publication source is incorrect."
+  }
+ ]
+}

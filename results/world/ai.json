@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Anguilla — Source-Grounded Citation Reliability (AI)",
+ "country": "AI",
+ "jurisdiction": "Anguilla",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:52:06.331109+00:00",
+ "results": [
+  {
+   "id": "ai-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 998,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such exemption regulations appear in Anguilla’s Revised Statutes and Regulations; the cited 1976 Barclays instrument is not recorded in the 2006 revision."
+  },
+  {
+   "id": "ai-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 987,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such Act exists; Anguilla’s 2024 legislation contains no “Integration of the Registry into the Financial Services Commission (Miscellaneous Amendments) Act.”"
+  },
+  {
+   "id": "ai-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1024,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Anguilla’s Revised Statutes and Regulations were published in 2000, but the Act itself is not listed among the official revised statutes."
+  },
+  {
+   "id": "ai-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 995,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Anguilla’s Financial Services Commission does not appear to have issued or published any instrument titled “Digital Asset Business Regulations, 2023.”"
+  },
+  {
+   "id": "ai-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 991,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Anguilla’s Revised Statutes are not published in a single 2022-12-31 edition; the Act appears in the ongoing Revised Statutes series, not that specific date."
+  },
+  {
+   "id": "ai-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1004,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such Act exists; Anguilla’s official legislation is published by the Attorney-General’s Chambers, not the Financial Services Commission."
+  },
+  {
+   "id": "ai-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1021,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No such exemption regulations appear in Anguilla’s Revised Statutes and Regulations; the cited 1976 Barclays instrument is not recorded in the 2008 revision."
+  },
+  {
+   "id": "ai-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 900,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Act is Anguillan legislation, not Bahamian, so it cannot appear in Bahamas Consolidated Legislation."
+  },
+  {
+   "id": "ai-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 765,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Anguilla’s Revised Statutes and Regulations were published in 2000, not 1999-12-15, so the cited bibliographic detail is incorrect."
+  },
+  {
+   "id": "ai-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 820,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Digital Asset Business Regulations, 2023 are Anguillan legislation, not Cayman Islands legislation."
+  },
+  {
+   "id": "ai-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 968,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Anguilla’s Revised Statutes are typically cited to 2014 (or 2000); no official 2019-12-31 revision of the Aliens Land Holding Regulation Act is recorded."
+  },
+  {
+   "id": "ai-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 882,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Anguilla is a British Overseas Territory; its legislation is not published by Sint Maarten’s government."
+  }
+ ]
+}

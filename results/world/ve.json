@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Venezuela — Source-Grounded Citation Reliability (VE)",
+ "country": "VE",
+ "jurisdiction": "Venezuela",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.4167,
+ "correct": 5,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T16:01:49.198667+00:00",
+ "results": [
+  {
+   "id": "ve-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 996,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Venezuela's National Assembly has been dissolved since 2020; no official Gaceta Oficial entry exists for that title on 23 Feb 2023."
+  },
+  {
+   "id": "ve-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1146,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The decision date (2026-01-08) is in the future, so the claimed publication cannot yet exist."
+  },
+  {
+   "id": "ve-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 973,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Venezuela's National Assembly was dissolved in 2020; no such Gaceta Oficial entry exists from December 2022."
+  },
+  {
+   "id": "ve-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 915,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-02-19 is in the future, so the decision cannot yet exist."
+  },
+  {
+   "id": "ve-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 918,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such law appears in Venezuela’s Gaceta Oficial for 28 October 2022; the cited title does not exist."
+  },
+  {
+   "id": "ve-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 822,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier '2025-0509' cannot correspond to a decision dated 2026-02-19, as the year in the identifier precedes the decision date."
+  },
+  {
+   "id": "ve-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1030,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No such law titled 'Ley de Participación Estudiantil en el Subsistema de Educación Básica' appears in Venezuela’s Gaceta Oficial for 23 February 2021."
+  },
+  {
+   "id": "ve-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 836,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The date 2026-01-08 is impossible; no Venezuelan Supreme Court decision from 2026 exists."
+  },
+  {
+   "id": "ve-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 839,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Ley de Creación de la Condecoración Orden Darío Vivas is a Venezuelan statute, not a Uruguayan one, so it cannot be published via Uruguay’s IMPO Open Data JSON API."
+  },
+  {
+   "id": "ve-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 976,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The date 2026-02-19 is impossible for a 2023 decision, and identifier '2023-0002' cannot match 'Sentencia N° 00005'."
+  },
+  {
+   "id": "ve-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 925,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. InfoLEG is Argentina’s legislative database; Venezuela’s official sources are Gaceta Oficial and TSJ, not InfoLEG."
+  },
+  {
+   "id": "ve-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 850,
+   "verdict": true,
+   "correct": false,
+   "raw": "True. The cited decision is an official TSJ ruling, published by Venezuela Supreme Court Decisions (TSJ)."
+  }
+ ]
+}

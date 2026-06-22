@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Nauru — Source-Grounded Citation Reliability (NR)",
+ "country": "NR",
+ "jurisdiction": "Nauru",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:58:49.405071+00:00",
+ "results": [
+  {
+   "id": "nr-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 841,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Sports Act 2026 cannot have been published on 1 January 2026 because that date lies in the future."
+  },
+  {
+   "id": "nr-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 819,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. PacLII does not publish Nauru Supreme Court decisions dated 2026; the citation is therefore impossible."
+  },
+  {
+   "id": "nr-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 838,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier cannot correspond to a 2026 Act because RONLAW cannot contain a future-dated law that has not yet been enacted."
+  },
+  {
+   "id": "nr-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 765,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The decision date (24 February 2026) is in the future, so the citation cannot yet exist."
+  },
+  {
+   "id": "nr-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 714,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The claimed certification date (31 March 2026) precedes the stated publication date (1 March 2026), which is chronologically impossible."
+  },
+  {
+   "id": "nr-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 787,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The decision date (30 January 2026) is in the future, so the citation cannot yet exist."
+  },
+  {
+   "id": "nr-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 740,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier cannot reference a 2026 Act because RONLAW currently contains no legislation dated after 2024."
+  },
+  {
+   "id": "nr-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 720,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Nauru’s judiciary, not the Republic of Marshall Islands, publishes Nauru Supreme Court decisions such as [2026] NRSC 11."
+  },
+  {
+   "id": "nr-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 728,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier cannot reference a 2026 Act in 2025; the future date makes the bibliographic claim chronologically impossible."
+  },
+  {
+   "id": "nr-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 761,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decision is dated 2026, which is in the future, so it cannot yet exist or be published."
+  },
+  {
+   "id": "nr-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 774,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Nauru’s constitutional amendments are enacted and published by Nauru’s own authorities, not the Solomon Islands Attorney General Legislation Portal."
+  },
+  {
+   "id": "nr-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 761,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Nauru Supreme Court decisions are not published by the Federal Court of Australia; the cited judgment originates from Nauru’s own judiciary."
+  }
+ ]
+}

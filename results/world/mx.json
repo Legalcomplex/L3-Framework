@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Mexico — Source-Grounded Citation Reliability (MX)",
+ "country": "MX",
+ "jurisdiction": "Mexico",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.4167,
+ "correct": 5,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:58:28.311881+00:00",
+ "results": [
+  {
+   "id": "mx-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 960,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Código Fiscal de la Federación is federal legislation, not state legislation, so the “State Legislation” attribution is incorrect."
+  },
+  {
+   "id": "mx-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1006,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Mexico SCJN Open Data Platform does not publish decisions as \"Sentencia 233251\" via JSON API; official sources use different identifiers and formats."
+  },
+  {
+   "id": "mx-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 991,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Ley de Responsabilidades Administrativas de la Ciudad de México was published in the Gaceta Oficial on 1 June 2019, not by congresocdmx.gob.mx in 2022."
+  },
+  {
+   "id": "mx-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 982,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Jalisco State Congress site (congresojal.gob.mx) is not the official publisher; the Periódico Oficial del Estado de Jalisco is."
+  },
+  {
+   "id": "mx-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1004,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2025-09-10 is in the future, so the cited IFT resolution cannot yet exist."
+  },
+  {
+   "id": "mx-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 858,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier '45/2025' is a Toca number, not a bibliographic citation of an official legal source."
+  },
+  {
+   "id": "mx-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 832,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Código Fiscal de la Federación is a Mexican federal statute, not a Honduran publication; TSC Virtual Library is Honduras’ audit court."
+  },
+  {
+   "id": "mx-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1304,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Mexico’s SCJN Open Data Platform does not publish individual “Sentencia 233251”; its JSON API only releases anonymized, aggregated statistics, not full judgments."
+  },
+  {
+   "id": "mx-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 945,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Ley de Responsabilidades Administrativas de la Ciudad de México is a Mexico City statute, not a Honduran document, so it cannot originate from Honduras’ Tribunal Superior de Cuentas."
+  },
+  {
+   "id": "mx-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1104,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Jalisco State Congress site (congresojal.gob.mx) is not the official publisher; the Ley is published in the Periódico Oficial del Estado de Jalisco."
+  },
+  {
+   "id": "mx-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 816,
+   "verdict": true,
+   "correct": false,
+   "raw": "True. The claim correctly identifies the official IFT resolution series and publication date."
+  },
+  {
+   "id": "mx-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 844,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '45/2026' cannot match a 2025 case; the year in the citation is inconsistent."
+  }
+ ]
+}

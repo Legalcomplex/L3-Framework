@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Kyrgyzstan — Source-Grounded Citation Reliability (KG)",
+ "country": "KG",
+ "jurisdiction": "Kyrgyzstan",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:56:42.108849+00:00",
+ "results": [
+  {
+   "id": "kg-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 828,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Constitutional Court of Kyrgyzstan was established in 2011; no decisions from 1996 exist under that publisher."
+  },
+  {
+   "id": "kg-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 786,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The decision date (2026-05-07) is in the future, so it cannot yet be published."
+  },
+  {
+   "id": "kg-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 874,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier 'ВСЧ404-0247/26-УД' cannot correspond to a 2026-03-25 decision because that date lies in the future."
+  },
+  {
+   "id": "kg-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1005,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The 1997-02-05 decision predates Kyrgyzstan’s Constitutional Court, established by the 2003 Constitution; no such publication existed in 1997."
+  },
+  {
+   "id": "kg-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 963,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-04-29 is in the future, so the decision cannot yet be published."
+  },
+  {
+   "id": "kg-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 762,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier '05-354/26-ГД' cannot correspond to a 2026-04-02 decision because that date lies in the future."
+  },
+  {
+   "id": "kg-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 671,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The 1996 decision is a Kyrgyz Constitutional Court ruling, not a Kazakhstan Constitutional Court publication."
+  },
+  {
+   "id": "kg-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1167,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'ГД-319/26-Т6' cannot match the described act dated 2026-05-07, as that date lies in the future."
+  },
+  {
+   "id": "kg-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 754,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'ВСЧ404-0247/27-УД' cannot match a 2026-03-25 decision because that future date has not yet occurred."
+  },
+  {
+   "id": "kg-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 683,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Astana International Financial Centre Court was established in 2017, so it could not have published a 1997 decision."
+  },
+  {
+   "id": "kg-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 866,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decision originates from Kyrgyzstan’s Tyup District Court, not Uzbekistan’s Constitutional Court."
+  },
+  {
+   "id": "kg-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 799,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decision is from Kyrgyzstan’s Supreme Court, not Tajikistan’s Constitutional Court."
+  }
+ ]
+}

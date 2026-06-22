@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — International — Source-Grounded Citation Reliability (INTL)",
+ "country": "INTL",
+ "jurisdiction": "International",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:56:14.620134+00:00",
+ "results": [
+  {
+   "id": "intl-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 901,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The African Charter on Democracy, Elections and Governance was adopted by the African Union on 30 January 2007, not published by “African Union Treaties, Conventions & Protocols.”"
+  },
+  {
+   "id": "intl-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 877,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Constitute Project did not exist in 1818; it is a modern digital platform launched in 2013."
+  },
+  {
+   "id": "intl-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 874,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. ECOLEX aggregates environmental law texts; it is not an official legal publisher, so the claim mischaracterizes the source’s authority."
+  },
+  {
+   "id": "intl-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1024,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Inter-American Court of Human Rights has not issued a 2025 judgment; the cited case name, number, and date are fabricated."
+  },
+  {
+   "id": "intl-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 880,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. ICC-01/04-00/00 is not a valid case identifier; the cited 2017 decision pertains to the DRC situation (ICC-01/04), not that non-existent docket."
+  },
+  {
+   "id": "intl-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 904,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The ICC Legal Tools Database does not publish future-dated decisions; a 2026 order cannot exist or be catalogued today."
+  },
+  {
+   "id": "intl-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 982,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The African Charter is an AU treaty, not an Austrian legal act; RIS publishes only Austrian federal law, not international instruments."
+  },
+  {
+   "id": "intl-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1839,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Liechtenstein's LILEX database cannot publish Baden's 1818 Constitution, as Baden was a sovereign German state, not under Liechtenstein jurisdiction."
+  },
+  {
+   "id": "intl-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 863,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. ECOLEX is a legal database, not a publisher; it cannot issue official amendments to national orders."
+  },
+  {
+   "id": "intl-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1486,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Inter-American Court of Human Rights does not publish under the imprint “Inter-American Court of Human Rights Judgments”; its official series is “Series C”."
+  },
+  {
+   "id": "intl-src-f05",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1231,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. ICC-01/04-00/01 is the Situation in the Democratic Republic of the Congo, not a 2017 participation decision."
+  },
+  {
+   "id": "intl-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 730,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The ICC Legal Tools Database does not publish official ICC decisions; it only hosts copies of them."
+  }
+ ]
+}

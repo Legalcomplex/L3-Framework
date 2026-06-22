@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Guinea — Source-Grounded Citation Reliability (GN)",
+ "country": "GN",
+ "jurisdiction": "Guinea",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:55:25.690957+00:00",
+ "results": [
+  {
+   "id": "gn-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 992,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Juricaf is an OHADA project database, not an official Guinea Courts publisher; the decision's authentic source is the Cour suprême itself."
+  },
+  {
+   "id": "gn-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 924,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such arrêté appears in Guinea’s official legal sources; DroitGuinéen is a private platform, not an authoritative publisher."
+  },
+  {
+   "id": "gn-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 913,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 26/03/2026 lies in the future, so the cited Journal officiel issue cannot yet have been published."
+  },
+  {
+   "id": "gn-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 916,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No official BCRG publication titled 'Données caractéristiques du secteur bancaire' dated 1 Feb 2020 is recorded in Guinea’s regulatory texts."
+  },
+  {
+   "id": "gn-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 920,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Guinea’s Supreme Court does not maintain a “Legislative Texts Archive,” and no such decree appears in official Guinean legal sources."
+  },
+  {
+   "id": "gn-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 893,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Juricaf’s GUINEE-COURSUPREME-20210729-09 identifier actually denotes the 29 July 2021 decision numbered 09, confirming the bibliographic claim."
+  },
+  {
+   "id": "gn-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 984,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Juricaf identifier 'GUINEE-COURSUPREME-20210527-003' indicates decision 003, not 002, so the bibliographic claim mismatches the actual case number."
+  },
+  {
+   "id": "gn-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 903,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No verifiable record exists of this arrêté on DroitGuinéen or any official Guinea legal source; the truncated title and platform citation lack confirmation."
+  },
+  {
+   "id": "gn-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 808,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Journal officiel cited is Guinean, not Mauritanian; Banque Centrale de Mauritanie cannot publish Guinea’s official gazette."
+  },
+  {
+   "id": "gn-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 842,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Central Bank of Guinea (BCRG) does not publish a document titled 'Données caractéristiques du secteur bancaire' under its Regulatory Texts."
+  },
+  {
+   "id": "gn-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 692,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Benin National Assembly Legislation is not a Guinean source; Guinea issues its own official decrees."
+  },
+  {
+   "id": "gn-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 736,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'GUINEE-COURSUPREME-20210729-10' indicates decision 10, not 09, so the bibliographic claim mismatches the actual case number."
+  }
+ ]
+}

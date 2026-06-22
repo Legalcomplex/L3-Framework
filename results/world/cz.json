@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Czechia — Source-Grounded Citation Reliability (CZ)",
+ "country": "CZ",
+ "jurisdiction": "Czechia",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:54:07.153572+00:00",
+ "results": [
+  {
+   "id": "cz-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 914,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited decision identifier does not match the published Czech Court Decisions Open Data dataset; no such record exists under that reference."
+  },
+  {
+   "id": "cz-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 921,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Czech Collection of Laws (Sbírka zákonů) cannot contain an issue numbered 79/2026, as the year 2026 has not yet occurred."
+  },
+  {
+   "id": "cz-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1055,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The ECLI 'ECLI:CZ:US:2024:3.US.3303.24.1' does not match the Czech Constitutional Court identifier 'III.ÚS 3303/24', which would use '3.US.3303.24' not '3.US.3303.24.1'."
+  },
+  {
+   "id": "cz-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 909,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Czech Supreme Administrative Court (Nejvyšší správní soud) does not issue decisions dated in the future (2025-11-12)."
+  },
+  {
+   "id": "cz-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 914,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The cited decision is an authentic Czech Supreme Court (Nejvyšší soud) ruling, officially published under sp. zn. 11 Tcu 95/2003 on 17 July 2003."
+  },
+  {
+   "id": "cz-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 816,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. ÚOHS decisions are published by the Office for the Protection of Competition itself, not by a separate “Czech Competition Authority Decisions” publisher."
+  },
+  {
+   "id": "cz-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 872,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'ECLI:CZ:OSMO:2020:14.C.225.2020.3' does not match the cited case title or date in the Czech Court Decisions Open Data collection."
+  },
+  {
+   "id": "cz-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 885,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. 'Sb.' denotes Czech/Slovak collections; Riigi Teataja is Estonia’s official gazette, so the jurisdiction and source mismatch."
+  },
+  {
+   "id": "cz-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 909,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The ECLI 'ECLI:CZ:US:2024:3.US.3303.24.2' encodes case '3.US.3303.24', not 'III.ÚS 3303/24'."
+  },
+  {
+   "id": "cz-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 802,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Czech Supreme Administrative Court (NSS) does not issue decisions dated in the future (2026-11-12)."
+  },
+  {
+   "id": "cz-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 814,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decision is a Czech Supreme Court ruling (Nejvyšší soud), not a Turkish Council of State (Danıştay) publication."
+  },
+  {
+   "id": "cz-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 960,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decision originates from Czechia’s Úřad pro ochranu hospodářské soutěže, not Moldova’s courts portal."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Tanzania — Source-Grounded Citation Reliability (TZ)",
+ "country": "TZ",
+ "jurisdiction": "Tanzania",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T16:01:21.078172+00:00",
+ "results": [
+  {
+   "id": "tz-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 953,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Tanzania’s 2025 legislative session has not yet concluded, so no “Written Laws (Miscellaneous Amendments) (No. 3) Act, 2025” exists."
+  },
+  {
+   "id": "tz-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 881,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Acquisition of Buildings Regulations, 1971 predate the Tanzania Legal Information Institute, which was established in 2002."
+  },
+  {
+   "id": "tz-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1003,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such CMS regulation titled \"Foreign Companies Offers Eligibility and Cross Listing Requirements (2003)\" was issued by Tanzania’s Capital Markets and Securities Authority on 1 January 2003."
+  },
+  {
+   "id": "tz-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 971,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Fair Competition Tribunal is not the publishing body; it is the deciding court, so the bibliographic claim misattributes the source."
+  },
+  {
+   "id": "tz-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 929,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Employment and Labour Relations Act was enacted in 2004, not published by the Attorney General’s Office MIS in 2025."
+  },
+  {
+   "id": "tz-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 851,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Tanzania Legal Information Institute was not established until 2007, so it could not have published the 1992 Regulations in 2002."
+  },
+  {
+   "id": "tz-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1086,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Written Laws (Miscellaneous Amendments) (No. 3) Act, 2025 is a Tanzanian statute and cannot be published in the Seychelles Official Gazette."
+  },
+  {
+   "id": "tz-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1103,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Acquisition of Buildings Regulations, 1971 pre-date the Tanzania Legal Information Institute, which was established in 2002."
+  },
+  {
+   "id": "tz-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 928,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited source is a Kenyan regulatory document issued by the Capital Markets Authority, not a Tanzanian official legal publication."
+  },
+  {
+   "id": "tz-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 849,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The decision is a Tanzanian Energy and Water Utilities Regulatory Authority appeal, not a Madagascar Ministry of Justice publication."
+  },
+  {
+   "id": "tz-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 872,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Employment and Labour Relations Act was enacted in 2004; the 2022 date refers only to its online upload, not original publication."
+  },
+  {
+   "id": "tz-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 846,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Tanzania Legal Information Institute was not established until 2012, so it could not have published the 1992 regulations in 2004."
+  }
+ ]
+}

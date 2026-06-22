@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Taiwan — Source-Grounded Citation Reliability (TW)",
+ "country": "TW",
+ "jurisdiction": "Taiwan",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T16:01:18.375064+00:00",
+ "results": [
+  {
+   "id": "tw-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1001,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The decision date 2025-01-23 is in the future, so it cannot yet be published."
+  },
+  {
+   "id": "tw-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 931,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The Constitutional Court of Taiwan (R.O.C.) is the official publisher of Constitutional Interpretation No. 805, issued 16 July 2021."
+  },
+  {
+   "id": "tw-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 815,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The claimed date (2026-04-27) is in the future, so the Gazette could not have published it."
+  },
+  {
+   "id": "tw-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 950,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited decision number (114 台聲 89) belongs to 2025, but Taiwan Judicial Yuan has not yet published any 2025 rulings."
+  },
+  {
+   "id": "tw-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 889,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The Constitutional Court of Taiwan (R.O.C.) is the official publisher of Constitutional Interpretation No. 812, issued on 2021-12-10."
+  },
+  {
+   "id": "tw-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 705,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The claimed 2026 publication date is impossible, as the current date is before 2026."
+  },
+  {
+   "id": "tw-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 820,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '114,台聲,104' does not match the cited case number 103; the digits are inconsistent."
+  },
+  {
+   "id": "tw-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 647,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'Interpretation-806' corresponds to Constitutional Interpretation No. 806, not No. 805."
+  },
+  {
+   "id": "tw-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 944,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited text is a Taiwanese Legislative Yuan committee agenda, not a Macau legal source; Macau Legal Portal did not publish it."
+  },
+  {
+   "id": "tw-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 810,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decision number (114 台聲 89) belongs to 2025, not 2022; the 2022 date is chronologically impossible."
+  },
+  {
+   "id": "tw-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 860,
+   "verdict": true,
+   "correct": false,
+   "raw": "True. Constitutional Interpretation No. 812 was indeed issued by Taiwan’s Constitutional Court on 10 December 2024."
+  },
+  {
+   "id": "tw-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 911,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Hong Kong e-Legislation publishes Hong Kong ordinances, not Taiwan presidential nominations or ROC court-organization statutes."
+  }
+ ]
+}

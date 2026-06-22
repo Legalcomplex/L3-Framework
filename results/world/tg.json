@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Togo — Source-Grounded Citation Reliability (TG)",
+ "country": "TG",
+ "jurisdiction": "Togo",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T16:00:47.466238+00:00",
+ "results": [
+  {
+   "id": "tg-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1049,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier 'TOGO-COURSUPREME-20221117-010122' matches the date 17 November 2022, but the decision number '0101/22' does not align with the trailing '010122' segment."
+  },
+  {
+   "id": "tg-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 934,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Togo's Journal Officiel issues are not yet published for May 2025; the cited arrêté cannot exist."
+  },
+  {
+   "id": "tg-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 913,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Togo's Constitutional Court does not publish decisions under the title \"Togo Constitutional Court Decisions\"; official sources use different designations."
+  },
+  {
+   "id": "tg-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1182,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The Juricaf identifier 'TOGO-COURSUPREME-20221222-11322' directly encodes Togo Supreme Court, 22 December 2022, decision 113/22."
+  },
+  {
+   "id": "tg-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1018,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Togo's Journal Officiel has not yet published any 2025 decrees; the cited 2025-05-08 issue does not exist."
+  },
+  {
+   "id": "tg-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 931,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. Togo's Constitutional Court issues and publishes its own decisions, including Decision N° C-002/21 of 28 July 2021."
+  },
+  {
+   "id": "tg-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 885,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'TOGO-COURSUPREME-20221117-010123' does not match the cited case reference '0101/22', indicating a mismatch in the Juricaf bibliographic claim."
+  },
+  {
+   "id": "tg-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 769,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Togo’s official legal source is the Journal Officiel de la République Togolaise, not Mali’s SGG."
+  },
+  {
+   "id": "tg-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 807,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The decision is a Togolese Constitutional Court ruling, not a Nigerian SEC publication."
+  },
+  {
+   "id": "tg-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1017,
+   "verdict": true,
+   "correct": false,
+   "raw": "True. The Juricaf identifier 'TOGO-COURSUPREME-20221222-11323' directly encodes Togo Supreme Court, 22 December 2022, decision 113/22."
+  },
+  {
+   "id": "tg-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 845,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Togo is not Côte d’Ivoire; CivLII/Laws.Africa is not Togo’s official legal publisher, so the claim misattributes jurisdiction."
+  },
+  {
+   "id": "tg-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 792,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Law Hub Gambia is a Gambian legal database and has no authority to publish Togolese decisions."
+  }
+ ]
+}

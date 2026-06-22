@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Malawi — Source-Grounded Citation Reliability (MW)",
+ "country": "MW",
+ "jurisdiction": "Malawi",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:58:25.646084+00:00",
+ "results": [
+  {
+   "id": "mw-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 883,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such 2025 ruling exists; the date is in the future and no verifiable Malawi Judiciary publication matches this citation."
+  },
+  {
+   "id": "mw-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 954,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Malawi Legal Information Institute was established in 2006, so it could not have published the Act in 1982."
+  },
+  {
+   "id": "mw-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 963,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No official evidence confirms the Reserve Bank of Malawi published that directive on 27 June 2024."
+  },
+  {
+   "id": "mw-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1263,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited decision date (2026-01-01) is in the future, so no such published judgment exists."
+  },
+  {
+   "id": "mw-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 954,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Malawi Legal Information Institute (MalawiLII) was established in 2006, so it could not have published the Act in 1995."
+  },
+  {
+   "id": "mw-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 851,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No official record exists of the Reserve Bank of Malawi publishing “Liquidity Coverage Ratio Guidelines 2024” on 15 April 2025."
+  },
+  {
+   "id": "mw-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 802,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No such ruling exists; Malawi Judiciary Judgments contain no record of “Blantyre City Council et al -vs- Harvey's Gardens” dated 2022-10-01."
+  },
+  {
+   "id": "mw-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 777,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Accommodation and Refreshment Tax Act is a Malawian statute, not a Tanzanian publication from the Attorney General’s Office."
+  },
+  {
+   "id": "mw-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 767,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The directive concerns Malawi banking regulation, so it cannot be published in the Seychelles Official Gazette."
+  },
+  {
+   "id": "mw-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1185,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No such decision exists; Malawi Judiciary Judgments does not publish a 2024 case titled 'RAMUZANI JUMA MAHOMMED V MEC APPLICATION FOR STAY OF JUDGMENT'."
+  },
+  {
+   "id": "mw-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 844,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Malawi Legal Information Institute (MalawiLII) was established in 2005; no 1993 publication exists."
+  },
+  {
+   "id": "mw-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1050,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Reserve Bank of Malawi has not published any “Liquidity Coverage Ratio Guidelines 2024” under “Financial Sector Regulations” dated 2026-04-15; the cited source does not exist."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Italy — Source-Grounded Citation Reliability (IT)",
+ "country": "IT",
+ "jurisdiction": "Italy",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:56:25.391235+00:00",
+ "results": [
+  {
+   "id": "it-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 988,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Normattiva is an official Italian legal database, but the quoted title is incomplete and the 2025-11-26 date is future, making the claim unverifiable."
+  },
+  {
+   "id": "it-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1035,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The decision date (2026-02-05) is in the future, so the cited 2026 judgment cannot yet exist."
+  },
+  {
+   "id": "it-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1233,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The ECLI 'ECLI:IT:CDS:2023:202300058SENT' is malformed; Italian Council of State ECLIs use the format 'ECLI:IT:CDS:YYYY:NNNNNSENT', not a 9-digit identifier."
+  },
+  {
+   "id": "it-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1010,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Italian Constitutional Court issues \"sentenze\" or \"ordinanze,\" but \"Ordinanza 7/2001\" dated 15 December 2000 is not an official publication of that Court."
+  },
+  {
+   "id": "it-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 911,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Demetra is a modern database; no 1972 regional law was published via it."
+  },
+  {
+   "id": "it-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 921,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No Lazio regional law of 2 September 1972 matches that exact title; the cited source does not exist."
+  },
+  {
+   "id": "it-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 851,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Normattiva publishes only enacted laws and regulations; the quoted title is a draft or incomplete citation, not an official, published legal source."
+  },
+  {
+   "id": "it-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 918,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The ECLI format is invalid: Italian Cassation identifiers use four-digit years (e.g., 2024), not 2026, and the numeric segment is malformed."
+  },
+  {
+   "id": "it-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 897,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The ECLI 'ECLI:IT:CDS:2023:202300059SENT' indicates decision 59, not 58, so the bibliographic claim mismatches the identifier."
+  },
+  {
+   "id": "it-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 834,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Italian Constitutional Court issues \"sentenze\" or \"ordinanze,\" but no decision numbered 7/2001 was rendered on 15 December 2002."
+  },
+  {
+   "id": "it-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1001,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Fedlex publishes only Swiss federal law; the cited Italian regional budget measure cannot originate from that source."
+  },
+  {
+   "id": "it-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1009,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited source is an Italian regional law from Lazio, not Swiss cantonal legislation."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Zambia — Source-Grounded Citation Reliability (ZM)",
+ "country": "ZM",
+ "jurisdiction": "Zambia",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T16:02:17.326465+00:00",
+ "results": [
+  {
+   "id": "zm-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1171,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Zambia’s parliament has not enacted or published any Independent Broadcasting Authority Act (Act No. 25 of 2025)."
+  },
+  {
+   "id": "zm-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1077,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Securities (Advertisements) Rules are statutory instruments (S.I. 166/1993, amended 13/1994) issued by the Minister, not 2025 directives from the Zambia Securities and Exchange Commission."
+  },
+  {
+   "id": "zm-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 962,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The African War Memorial Fund Act, 1954 predates Zambia’s independence (1964) and could not have been published by the Zambia Legal Information Institute."
+  },
+  {
+   "id": "zm-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1343,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Zambia’s 2026 parliamentary session has not occurred, so no Act No. 9 of 2026 exists."
+  },
+  {
+   "id": "zm-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 958,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Securities (Conduct of Business) Rules, S.I. No. 168 of 1993, were issued by Zambia’s Minister of Finance, not published by the ZSEC in 2025."
+  },
+  {
+   "id": "zm-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 998,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No official Zambian regulations titled 'Access to Information (General) Regulations, 2025' exist; the cited source is not authoritative."
+  },
+  {
+   "id": "zm-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 808,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Independent Broadcasting Authority Act, 2025 (Act No. 25 of 2025) is Zambian legislation, not published by South Africa Open By-laws (Laws.Africa)."
+  },
+  {
+   "id": "zm-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1135,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited instrument is a statutory instrument (S.I. No. 166 of 1993, amended by Act 13 of 1994), not a 2023 directive published by the Commission."
+  },
+  {
+   "id": "zm-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 873,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The African War Memorial Fund Act, 1954 is Zambian legislation, not a Namibian source, so NamLII cannot be its official publisher."
+  },
+  {
+   "id": "zm-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 987,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Banking and Financial Services Act, 2026 (Act No. 9 of 2026) is Zambian legislation, not published by the Zimbabwe Legal Information Institute."
+  },
+  {
+   "id": "zm-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 925,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Securities (Conduct of Business) Rules, S.I. No. 168 of 1993, were issued by Zambia’s Minister of Finance, not published by the Securities and Exchange Commission in 2022."
+  },
+  {
+   "id": "zm-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 919,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Access to Information (General) Regulations, 2025 are Zambian, not Eswatini, and the Central Bank of Eswatini is not their publisher."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Sudan — Source-Grounded Citation Reliability (SD)",
+ "country": "SD",
+ "jurisdiction": "Sudan",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:59:56.627636+00:00",
+ "results": [
+  {
+   "id": "sd-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1147,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No verifiable evidence confirms that a 'DraftPress Law (2021)' was officially published by Sudan Legal Resources/REDRESS on that date."
+  },
+  {
+   "id": "sd-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 844,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No verifiable evidence confirms the existence or official publication of a \"Central Bank of Sudan Policies for 2009\" by the Central Bank of Sudan on that date."
+  },
+  {
+   "id": "sd-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 851,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Sudan’s Stamp Duty Act was enacted in 2006, not 1986, and the Sudan Tax Authority was not its publisher."
+  },
+  {
+   "id": "sd-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 822,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such act exists; Sudan's 1996 constitution was issued by decree, not via REDRESS publications."
+  },
+  {
+   "id": "sd-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2934,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Sudan’s official legal sources are statutes, gazettes and ministerial orders; a Central Bank policy document is administrative guidance, not an official legal source."
+  },
+  {
+   "id": "sd-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 948,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. SudanTax is not an official publisher; the Capital Gains Tax Act, 1986 was enacted by Sudan’s legislature, not issued by any tax authority."
+  },
+  {
+   "id": "sd-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1135,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Seychelles Official Gazette cannot publish Sudanese draft laws; jurisdiction mismatch makes the bibliographic claim impossible."
+  },
+  {
+   "id": "sd-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 780,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Central Bank of Sudan cannot be officially published by Tanzania’s Attorney General’s Office, making the bibliographic claim jurisdictionally implausible."
+  },
+  {
+   "id": "sd-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 737,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Stamp Duty Act, 1986 is a Kenyan statute; Kenya Law Reports cannot publish Sudanese legislation."
+  },
+  {
+   "id": "sd-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 793,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Constitutional and Administrative Law Act (1996) is a Tanzanian statute, not a Sudanese source, and its publication details are unrelated to Sudan’s jurisdiction."
+  },
+  {
+   "id": "sd-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 642,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Central Bank of Sudan’s 2007 policies are Sudanese instruments, not published in the Seychelles Official Gazette."
+  },
+  {
+   "id": "sd-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 960,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Capital Gains Tax Act, 1986 is a Seychelles statute, not a Sudanese legal source."
+  }
+ ]
+}

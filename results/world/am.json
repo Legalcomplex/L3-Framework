@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Armenia — Source-Grounded Citation Reliability (AM)",
+ "country": "AM",
+ "jurisdiction": "Armenia",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:52:11.498067+00:00",
+ "results": [
+  {
+   "id": "am-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 855,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The quoted text is a 1998 governmental decree, not a bibliographic claim about an official legal source, so the evaluation cannot be true."
+  },
+  {
+   "id": "am-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 913,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The quoted title refers to a 2008 Government Decision; ARLIS records show no matching 1998-05-25 publication."
+  },
+  {
+   "id": "am-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 845,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The quoted title is incomplete and truncated, so the bibliographic claim cannot be verified as accurate."
+  },
+  {
+   "id": "am-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 991,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited title is a 1997 Government Decision, not a 1998 ARLIS publication; ARLIS merely hosts the already-adopted act."
+  },
+  {
+   "id": "am-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 955,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The quoted title refers to a 1991 decision, so it could not have been published by ARLIS on 25 May 1998."
+  },
+  {
+   "id": "am-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 936,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The quoted title refers to a 1998 amendment, so it could not have been published on 25 May 1998 before the amendment existed."
+  },
+  {
+   "id": "am-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 871,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited Armenian government decision cannot have been published in Serbia’s Službeni glasnik RS, which is a Serbian, not Armenian, official gazette."
+  },
+  {
+   "id": "am-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 855,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The quoted title refers to a 2018 Government Decision; ARLIS did not publish it on 2001-05-25."
+  },
+  {
+   "id": "am-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 800,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The quoted title is incomplete and truncated; ARLIS records show the full 1996 decision title differs, making the bibliographic claim inaccurate."
+  },
+  {
+   "id": "am-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 708,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited Armenian government decision cannot have been published by Albania’s Official Gazette (Qendra e Botimeve Zyrtare)."
+  },
+  {
+   "id": "am-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 779,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The quoted title refers to a 1991 Armenian government decision, so it could not have been published on ARLIS in 1995."
+  },
+  {
+   "id": "am-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 804,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited Armenian government decision cannot be published by Lithuania’s TAR database, which only contains Lithuanian legal acts."
+  }
+ ]
+}

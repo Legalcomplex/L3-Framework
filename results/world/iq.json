@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Iraq — Source-Grounded Citation Reliability (IQ)",
+ "country": "IQ",
+ "jurisdiction": "Iraq",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:56:17.146739+00:00",
+ "results": [
+  {
+   "id": "iq-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 923,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited Kurdish title refers to a Kurdistan Regional Government law, not a publication of the Kurdistan Region Parliament in 1992."
+  },
+  {
+   "id": "iq-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 787,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited source is a 1992 Kurdistan Regional Government executive regulation, not legislation enacted by the Kurdistan Region Parliament."
+  },
+  {
+   "id": "iq-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 902,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited Kurdish title refers to a 1992 Kurdistan Regional Government ministerial law, not a Kurdistan Region Parliament enactment."
+  },
+  {
+   "id": "iq-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 842,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited Kurdish text refers to a 1992 Iraqi statute on foreigners and UN workers, not a Kurdistan Region Parliament enactment."
+  },
+  {
+   "id": "iq-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 780,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited source is a Kurdistan Regional Government ministerial regulation, not a Kurdistan Region Parliament law enacted in 1992."
+  },
+  {
+   "id": "iq-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 876,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited Kurdish title refers to a 1992 Kurdistan Regional Government ministerial law, not a Kurdistan Region Parliament enactment."
+  },
+  {
+   "id": "iq-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 939,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited Iraqi law on the Ministry of Awqaf was not published by Saudi Arabia’s SAMA Rulebook; SAMA issues Saudi financial regulations, not Iraqi statutes."
+  },
+  {
+   "id": "iq-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 839,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited Kurdish law originates from the Kurdistan Regional Government in Iraq, not the Abu Dhabi Global Market (ADGM) legal framework."
+  },
+  {
+   "id": "iq-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 761,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. DIFC Legal Database is Dubai’s, not Iraq’s; the 1992 Kurdish law could not have been published there."
+  },
+  {
+   "id": "iq-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 859,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited source is an Iraqi Kurdish law (1992), not an Israeli Knesset document; attributing it to “Israel Knesset Data” is factually incorrect."
+  },
+  {
+   "id": "iq-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 862,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited Iraqi Ministry of Education Law No. 4 of 1992 was enacted by Iraq’s legislature, not published by Jordan’s Legislation & Opinion Bureau."
+  },
+  {
+   "id": "iq-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 753,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited Kurdish law (1992) predates ADGM’s 2015 establishment and concerns Iraq’s Kurdistan Region, not Abu Dhabi’s ADGM framework."
+  }
+ ]
+}

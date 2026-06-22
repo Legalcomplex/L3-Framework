@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — San Marino — Source-Grounded Citation Reliability (SM)",
+ "country": "SM",
+ "jurisdiction": "San Marino",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T16:00:15.851496+00:00",
+ "results": [
+  {
+   "id": "sm-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 919,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 17/02/2026 is in the future, so this source cannot have been published."
+  },
+  {
+   "id": "sm-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1049,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. San Marino’s official gazette is the Bollettino Ufficiale della Repubblica di San Marino; the quoted phrasing is not a verifiable publication from 18 June 2015."
+  },
+  {
+   "id": "sm-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1138,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-02-04 is in the future, so no such law can exist in the Bollettino Ufficiale."
+  },
+  {
+   "id": "sm-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 889,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 16/02/2026 is in the future, so the regulation cannot have been published."
+  },
+  {
+   "id": "sm-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1024,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 04/02/2026 is in the future, so no such law could have been published."
+  },
+  {
+   "id": "sm-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 921,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. San Marino’s official gazette is the Bollettino Ufficiale della Repubblica di San Marino, not “San Marino Official Legislation.”"
+  },
+  {
+   "id": "sm-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 895,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The date 17/02/2026 is in the future, so no such official act can exist in the Bollettino Ufficiale."
+  },
+  {
+   "id": "sm-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 870,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The quoted text is a generic opening formula used in San Marino decrees, not a specific bibliographic citation of an official source published on 2012-06-18."
+  },
+  {
+   "id": "sm-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 769,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The date 2026-02-04 is in the future, so the cited law cannot yet exist in any official collection."
+  },
+  {
+   "id": "sm-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 802,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. San Marino has no connection to JerseyLaw, and the 2026 date is impossible for a past publication."
+  },
+  {
+   "id": "sm-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1133,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. San Marino has no connection to Fedlex, which publishes only Swiss federal law; the cited 2026 date is also impossible."
+  },
+  {
+   "id": "sm-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1172,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. San Marino has no official Rechtsinformationssystem (RIS); that platform is Austria’s federal legal database, so the cited publication route is impossible."
+  }
+ ]
+}

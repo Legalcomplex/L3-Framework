@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Guyana — Source-Grounded Citation Reliability (GY)",
+ "country": "GY",
+ "jurisdiction": "Guyana",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:55:41.880781+00:00",
+ "results": [
+  {
+   "id": "gy-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 877,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 18 April 2026 lies in the future, so no such Extraordinary Gazette can yet have been published."
+  },
+  {
+   "id": "gy-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1056,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited title and date do not match any official Guyana EPA publication; the 2013 Regulations were gazetted earlier and lack that 2022-11-04 attribution."
+  },
+  {
+   "id": "gy-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 921,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 11 April 2026 lies in the future, so no such Official Gazette entry can yet exist."
+  },
+  {
+   "id": "gy-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 873,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Guyana EPA has not published any \"Volume 3 Mining EIA guidelines\" under Regulations dated 2022-11-04; no such official source exists."
+  },
+  {
+   "id": "gy-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 881,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The claimed 2026 publication date is in the future, making the bibliographic claim impossible."
+  },
+  {
+   "id": "gy-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 888,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Guyana EPA did not publish any 2004 Rules and Procedures volume on 4 November 2022; the date and title do not match any official EPA instrument."
+  },
+  {
+   "id": "gy-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 888,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The claim is impossible: Guyana cannot publish an Extraordinary Gazette dated 18 April 2026 via Chile’s BCN Linked Open Data service."
+  },
+  {
+   "id": "gy-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 809,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited title mixes two unrelated instruments; no such combined “AG.1Hazardous_Wastes_Regulations” source exists under the 2013 Litter Enforcement Regulations."
+  },
+  {
+   "id": "gy-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 820,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Brazil’s Planalto site publishes Brazilian federal law, not Guyanese Extraordinary Gazettes."
+  },
+  {
+   "id": "gy-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 867,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No official EPA regulations or gazetted instruments from 2024-11-04 reference a “Volume 3 Mining EIA guidelines” publication."
+  },
+  {
+   "id": "gy-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 819,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The source is a Brazilian municipal gazette, not an official Guyanese legal publication."
+  },
+  {
+   "id": "gy-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 873,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Guyana EPA did not publish any 2004 Rules and Procedures volume on 4 November 2021; the cited date post-dates the claimed 2004 source."
+  }
+ ]
+}

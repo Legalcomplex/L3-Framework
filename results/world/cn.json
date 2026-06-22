@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — China — Source-Grounded Citation Reliability (CN)",
+ "country": "CN",
+ "jurisdiction": "China",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:53:49.240064+00:00",
+ "results": [
+  {
+   "id": "cn-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 804,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-03-20 is in the future, so the claimed publication cannot exist."
+  },
+  {
+   "id": "cn-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 882,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The CSRC has not issued any 2026-dated announcement; the cited date is in the future and therefore impossible."
+  },
+  {
+   "id": "cn-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 798,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. China Law Translate is a private translation site, not an official SPC publication, so the bibliographic claim misattributes the source."
+  },
+  {
+   "id": "cn-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 801,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. CAIL2018 is an academic dataset of Chinese judgments, not an official publisher of court decisions."
+  },
+  {
+   "id": "cn-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 962,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The decision date (2026-04-21) is in the future, so this penalty cannot yet have been issued by SAMR."
+  },
+  {
+   "id": "cn-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 835,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Guiding Case 270 was issued in 2023, not 2026; the future date is impossible."
+  },
+  {
+   "id": "cn-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 821,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited URL (fgk.chinatax.gov.cn) is not an official State Taxation Administration domain; authentic announcements appear on chinatax.gov.cn."
+  },
+  {
+   "id": "cn-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 815,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The e-Gov Laws API (Version 2) did not exist in 2026-04-24, making the claimed publication date impossible."
+  },
+  {
+   "id": "cn-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 853,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The claim misattributes a Chinese SPC domestic-violence case collection to Japan’s MOJ translation site, which only publishes Japanese statutes."
+  },
+  {
+   "id": "cn-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 803,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. CAIL2018 is an academic dataset of Chinese judgments, not an official publisher; the cited decision cannot be an official source issued by it."
+  },
+  {
+   "id": "cn-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 816,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The decision is a mainland Chinese administrative penalty (Wuhu SAMR), not a Macau court ruling, so the publisher attribution is incorrect."
+  },
+  {
+   "id": "cn-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1428,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The claim is internally inconsistent: it asserts that identifier 271 corresponds to case 270, which is a contradiction."
+  }
+ ]
+}

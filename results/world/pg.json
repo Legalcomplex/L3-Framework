@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Papua New Guinea — Source-Grounded Citation Reliability (PG)",
+ "country": "PG",
+ "jurisdiction": "Papua New Guinea",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:59:07.622946+00:00",
+ "results": [
+  {
+   "id": "pg-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 804,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The National Information and Communication Technology Act 2009 was enacted by Parliament, not published by the National ICT Authority via Gazette Instruments."
+  },
+  {
+   "id": "pg-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 976,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No official PNG National ICT Authority gazette record shows the 'ICT Equipment Type Approval Rule 2022' published on 22 March 2023."
+  },
+  {
+   "id": "pg-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 954,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Reference Interconnection Offer Rule, 2012 was gazetted by Papua New Guinea’s National Information and Communications Technology Authority in 2012, not 2017."
+  },
+  {
+   "id": "pg-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1017,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such Rule exists; PNG NICTA has not published any 2025 licence-conditions gazette on 1 Oct 2025."
+  },
+  {
+   "id": "pg-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1065,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No official PNG National ICT Authority gazette record confirms a \"SIM Card Registration Regulation, 2016\" published on 13 April 2016."
+  },
+  {
+   "id": "pg-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 973,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No official PNG National ICT Authority gazette record confirms publication of the 'Telecommunications Quality of Service (QoS) Rule 2022' on 22 March 2023."
+  },
+  {
+   "id": "pg-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 764,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The National Information and Communication Technology Act 2009 was enacted by Parliament in 2009, not published by the National ICT Authority in 2011."
+  },
+  {
+   "id": "pg-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 755,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The ICT Equipment Type Approval Rule 2022 could not have been published on 22 March 2020, as that date precedes the rule’s 2022 enactment."
+  },
+  {
+   "id": "pg-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 729,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Reference Interconnection Offer Rule, 2012 is a Papua New Guinea instrument, not an Australian legal source, so it cannot originate from Open Australian Legal Corpus."
+  },
+  {
+   "id": "pg-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 795,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited source is the Solomon Islands Attorney General Legislation Portal, not Papua New Guinea, so the claim misattributes jurisdiction."
+  },
+  {
+   "id": "pg-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 860,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited source is a Marshall Islands regulation, not a Papua New Guinea instrument, so it cannot be the PNG SIM Card Registration Regulation 2016."
+  },
+  {
+   "id": "pg-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 723,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The 2022 QoS Rule could not have been published in a 2020 Gazette; the date is chronologically impossible."
+  }
+ ]
+}

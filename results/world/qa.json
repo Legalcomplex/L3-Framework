@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Qatar — Source-Grounded Citation Reliability (QA)",
+ "country": "QA",
+ "jurisdiction": "Qatar",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:59:35.301196+00:00",
+ "results": [
+  {
+   "id": "qa-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 943,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Qatar Al Meezan is an official legal database, but the cited decision number and date do not match any published criminal ruling from the Court of Cassation."
+  },
+  {
+   "id": "qa-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1082,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Qatar Al Meezan is a private legal database; official publication occurs in the Official Gazette, not Al Meezan."
+  },
+  {
+   "id": "qa-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 951,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No official Qatar Free Zones publication dated 2021-01-01 matches the cited Arabic title; the source appears fabricated or misattributed."
+  },
+  {
+   "id": "qa-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1007,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Qatar Financial Centre Regulatory Tribunal (QICDRC) does not publish decisions; the Qatar International Court and Dispute Resolution Centre (QICDRC) does."
+  },
+  {
+   "id": "qa-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 846,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Qatar Al Meezan is an unofficial, privately-run legal database; it does not publish official court decisions."
+  },
+  {
+   "id": "qa-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1032,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Qatar Al Meezan is a modern online database; it did not exist in 1987 and could not have published the 1987 law."
+  },
+  {
+   "id": "qa-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 791,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. ADGM Courts Judgments publishes Abu Dhabi Global Market rulings, not Qatari Court of Cassation decisions."
+  },
+  {
+   "id": "qa-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 786,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decree is a Qatari ministerial instrument, not an ADGM (Abu Dhabi) publication."
+  },
+  {
+   "id": "qa-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 808,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No official Qatari source records a 2019 publication titled 'ملاحظات توضيحية للوائح التنظيمية للشركات' by Qatar Free Zones Laws."
+  },
+  {
+   "id": "qa-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 896,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '[2020] QIC (F) 8' is not a QICDRC case; it is a Qatar International Court judgment, so the bibliographic claim is incorrect."
+  },
+  {
+   "id": "qa-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 734,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. DIFC Courts are Dubai-based and do not publish Qatari Court of Cassation judgments."
+  },
+  {
+   "id": "qa-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 764,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. DIFC Legal Database is a Dubai (UAE) platform and cannot be the official publisher of a Qatari statute."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Hungary — Source-Grounded Citation Reliability (HU)",
+ "country": "HU",
+ "jurisdiction": "Hungary",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:55:58.775451+00:00",
+ "results": [
+  {
+   "id": "hu-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 895,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier 'IV/2018/2025' cannot refer to a 5 February 2026 decision, as that date lies in the future."
+  },
+  {
+   "id": "hu-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 792,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The 2025. évi CXXIX. törvény cannot have been published on 2026-01-23, as that date is in the future."
+  },
+  {
+   "id": "hu-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 966,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier 'f.5.002/2012/13' does not match the official Kúria format 'Köf.5.002/2012/13', indicating a bibliographic error."
+  },
+  {
+   "id": "hu-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1002,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier 'ÖB-13/2026/6' cannot exist because the date 2026-03-17 is in the future."
+  },
+  {
+   "id": "hu-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 903,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The claim misstates the source: \"Benyújtó: Dr. Komáromi Zoltán (DK)\" is a submitter line on a bill, not a publication issued by the Hungarian Parliament."
+  },
+  {
+   "id": "hu-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 784,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier 'III/2545/2025' cannot refer to a 2026-02-05 decision, as case numbers use the filing year and future dates are impossible."
+  },
+  {
+   "id": "hu-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 767,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'IV/2018/2026' is not a valid Hungarian Constitutional Court case number; the format and date do not match official records."
+  },
+  {
+   "id": "hu-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 723,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The 2025. évi CXXIX. törvény cannot have been published on 2023-01-23, as the year 2025 had not yet occurred."
+  },
+  {
+   "id": "hu-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 882,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decision 'Köf.5.002/2012/13' originates from Hungary’s Kúria (Curia), not Serbia’s Ustavni sud."
+  },
+  {
+   "id": "hu-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 661,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'ÖB-13/2026/7' cannot exist because the date 2026-03-17 lies in the future."
+  },
+  {
+   "id": "hu-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 784,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The claim is false because the Croatian Official Gazette (Narodne novine) is a Croatian publication, not Hungarian, and cannot publish Hungarian parliamentary documents."
+  },
+  {
+   "id": "hu-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 804,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No such decision exists; the Hungarian Constitutional Court has not issued any ruling dated 2025-02-05."
+  }
+ ]
+}

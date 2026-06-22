@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Botswana — Source-Grounded Citation Reliability (BW)",
+ "country": "BW",
+ "jurisdiction": "Botswana",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:53:19.541407+00:00",
+ "results": [
+  {
+   "id": "bw-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 873,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Botswana Non-Bank Financial Institutions Regulatory Authority does not publish judicial decisions; only courts issue case law."
+  },
+  {
+   "id": "bw-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 917,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited date (2026-05-29) is in the future, so the tender cannot have been published then."
+  },
+  {
+   "id": "bw-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 867,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-04-18 is in the future, so the claimed publication cannot yet exist."
+  },
+  {
+   "id": "bw-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 876,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Botswana Non-Bank Financial Institutions Regulatory Authority does not publish judicial decisions; only courts issue case law."
+  },
+  {
+   "id": "bw-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 913,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Botswana Non-Bank Financial Institutions Regulatory Authority (NBFIRA) does not publish judicial decisions; only courts issue case law."
+  },
+  {
+   "id": "bw-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 907,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Botswana Non-Bank Financial Institutions Regulatory Authority does not publish judicial decisions; only courts issue case law."
+  },
+  {
+   "id": "bw-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 796,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Botswana Non-Bank Financial Institutions Regulatory Authority does not publish judicial decisions; only courts issue case law."
+  },
+  {
+   "id": "bw-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 790,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. South Africa’s Constitutional Court does not publish Botswana tender notices; the cited source and jurisdiction are mismatched."
+  },
+  {
+   "id": "bw-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 770,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited source is a South African Constitutional Court publication, not an official Botswana legal authority."
+  },
+  {
+   "id": "bw-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 738,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Botswana Non-Bank Financial Institutions Regulatory Authority does not publish judicial decisions; only courts issue case law."
+  },
+  {
+   "id": "bw-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 847,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decision originates from Botswana’s NBFIT tribunal, not South Africa’s Constitutional Court, so the publisher attribution is incorrect."
+  },
+  {
+   "id": "bw-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 937,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decision date (2020-10-13) precedes the 2022 case number, making the bibliographic claim chronologically impossible."
+  }
+ ]
+}

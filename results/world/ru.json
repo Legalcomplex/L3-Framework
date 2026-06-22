@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Russia — Source-Grounded Citation Reliability (RU)",
+ "country": "RU",
+ "jurisdiction": "Russia",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:59:43.036633+00:00",
+ "results": [
+  {
+   "id": "ru-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 949,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited title refers to a 2009 Duma internal order, not an official normative act published on pravo.gov.ru."
+  },
+  {
+   "id": "ru-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 877,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The decision date (1 October 2025) lies in the future, so no such published judgment can yet exist."
+  },
+  {
+   "id": "ru-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 883,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited title is a draft bill identifier, not an official legal act; pravo.gov.ru publishes only enacted federal laws, not legislative proposals."
+  },
+  {
+   "id": "ru-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1151,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Sudact.ru aggregates unofficial copies; official publication of Russian arbitration decisions occurs on the Kad.arbitr.ru portal, not Sudact.ru."
+  },
+  {
+   "id": "ru-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 871,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The phrasing matches the standard title format of Russian federal education standards published on pravo.gov.ru."
+  },
+  {
+   "id": "ru-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 774,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier 'А62-4716/2025' cannot correspond to a decision dated 24 September 2025, as that date precedes the case number's implied filing period."
+  },
+  {
+   "id": "ru-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 781,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited title refers to a 2008 Duma internal appointment order, not an official normative legal act published on pravo.gov.ru."
+  },
+  {
+   "id": "ru-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 764,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'А62-4962/2026' cannot match a 2025 decision, as the year suffix must align with the case filing year."
+  },
+  {
+   "id": "ru-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 820,
+   "verdict": true,
+   "correct": false,
+   "raw": "True. The cited bill draft was indeed published on pravo.gov.ru on 13 November 2018."
+  },
+  {
+   "id": "ru-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 621,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'А68-6852/2026' cannot match a 2025 decision; the year suffix must align with the case number's filing year."
+  },
+  {
+   "id": "ru-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 868,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited title is a Russian federal education standard, not a Croatian law; it could not be published in Narodne novine."
+  },
+  {
+   "id": "ru-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 862,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decision number (А62-4716/2025) follows Russian arbitration-court indexing, not Georgian Supreme Court practice."
+  }
+ ]
+}

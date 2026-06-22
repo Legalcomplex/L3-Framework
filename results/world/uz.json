@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Uzbekistan — Source-Grounded Citation Reliability (UZ)",
+ "country": "UZ",
+ "jurisdiction": "Uzbekistan",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T16:01:40.760234+00:00",
+ "results": [
+  {
+   "id": "uz-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1010,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Lex.uz is Uzbekistan’s official legal database, but no decree with that exact title was published on 30 December 2025."
+  },
+  {
+   "id": "uz-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1050,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited title is a Russian-language heading, not an official Uzbek normative act; the Ministry of Justice registry does not list it under that exact wording."
+  },
+  {
+   "id": "uz-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1041,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The claim misattributes the source; the Constitutional Court does not publish its own decisions under that title."
+  },
+  {
+   "id": "uz-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1059,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The quoted title is a draft regulation, not an official legal source; regulation.gov.uz hosts public consultations, not enacted law."
+  },
+  {
+   "id": "uz-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1149,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Lex.uz is Uzbekistan’s official legal database, but the cited title and 2025-12-29 date do not match any published presidential or governmental act."
+  },
+  {
+   "id": "uz-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1009,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited title and 2001-09-28 date do not match any registered act in Uzbekistan’s Ministry of Justice registry."
+  },
+  {
+   "id": "uz-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 928,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The decree cannot have been published on 2026-12-30 because that date lies in the future."
+  },
+  {
+   "id": "uz-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1047,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited title is a Kazakh legal act; Adilet is Kazakhstan’s system, not Uzbekistan’s, so the bibliographic claim is jurisdictionally incorrect."
+  },
+  {
+   "id": "uz-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1265,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The claim misattributes the source; the cited decision is an official act of the Oliy Majlis (Parliament), not a publication by the Constitutional Court itself."
+  },
+  {
+   "id": "uz-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1148,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited title is an Uzbek-language regulation; Adilet is Kazakhstan’s official legal database and would not publish Uzbek national rules."
+  },
+  {
+   "id": "uz-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 959,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Lex.uz is Uzbekistan’s official database, but no decree with that title was published on 29 December 2026."
+  },
+  {
+   "id": "uz-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 926,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited title and 1999 Ministry of Justice registry entry do not match any verifiable Uzbek departmental act from that date."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Azerbaijan — Source-Grounded Citation Reliability (AZ)",
+ "country": "AZ",
+ "jurisdiction": "Azerbaijan",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:52:32.625703+00:00",
+ "results": [
+  {
+   "id": "az-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1226,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Constitutional Court of Azerbaijan does not publish or promulgate ordinary statutes such as the “Dövlət qulluğu haqqında” Qanun; only the Milli Məclis and President do."
+  },
+  {
+   "id": "az-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 948,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The quoted text is a road description, not a bibliographic claim about an official legal source, and e-Qanun is Azerbaijan’s legislation portal, not a publisher."
+  },
+  {
+   "id": "az-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 930,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No official Central Bank of Azerbaijan publication dated 28 October 2016 records a “Decision № 308.”"
+  },
+  {
+   "id": "az-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1370,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Constitutional Court of Azerbaijan does not publish “decisions” dated 20.10.25; its official acts are decisions (qərar) or rulings (qərardad) formally numbered and promulgated in the offici"
+  },
+  {
+   "id": "az-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 955,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The quoted text is a statutory reference, not a publication; e-Qanun merely hosts the decree, it did not “publish” the quoted phrase."
+  },
+  {
+   "id": "az-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 943,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such regulation titled 'Regulations on archivation in the banking system of the Republic of Azerbaijan' appears in the Central Bank of Azerbaijan’s official 2013 decisions."
+  },
+  {
+   "id": "az-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 779,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The claimed date 26.01.2026 is in the future, so identifier 1494 cannot yet correspond to a 2026 decision."
+  },
+  {
+   "id": "az-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 854,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The quoted text is a road description, not a published legal act; e-Qanun hosts official legislation, not such descriptive fragments."
+  },
+  {
+   "id": "az-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 844,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No official Central Bank of Azerbaijan publication dated 28 October 2014 records a “Decision № 308.”"
+  },
+  {
+   "id": "az-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 850,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The date 20.10.25 is in the future, so no such 2025 decision can exist in the collection."
+  },
+  {
+   "id": "az-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1051,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The quoted Azerbaijani presidential decree cannot originate from Latvia’s Likumi.lv portal, which publishes only Latvian legal acts."
+  },
+  {
+   "id": "az-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 947,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Hellenic Parliament's Raptarchis Greek Legal Code is a Greek, not Azerbaijani, publication and could not have issued an official Azerbaijani banking regulation."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — North Macedonia — Source-Grounded Citation Reliability (MK)",
+ "country": "MK",
+ "jurisdiction": "North Macedonia",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:57:59.031944+00:00",
+ "results": [
+  {
+   "id": "mk-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 941,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. North Macedonia's Constitutional Court has not issued any decision numbered У.бр.71/2025 dated 24 December 2025, as that date lies in the future."
+  },
+  {
+   "id": "mk-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 955,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. North Macedonia’s Supreme Court does not publish a series titled “Судска пракса – Врховен суд”; its official case-law outlet is the “Весник на судската пракса”."
+  },
+  {
+   "id": "mk-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 950,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The decision date (2026-04-02) is in the future, so it cannot yet have been published by the North Macedonia Commission for Protection of Competition."
+  },
+  {
+   "id": "mk-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 993,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Constitutional Court of North Macedonia has not issued any decision dated 24 December 2025."
+  },
+  {
+   "id": "mk-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 943,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. North Macedonia’s Supreme Court does not publish an official series titled “Судска пракса – Врховен суд”; the cited decision therefore cannot be attributed to that non-existent source."
+  },
+  {
+   "id": "mk-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 721,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-04-02 is in the future, so the decision cannot yet have been published."
+  },
+  {
+   "id": "mk-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 927,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Hellenic Court of Audit is a Greek institution; the cited decision is from North Macedonia’s Constitutional Court, not Greece."
+  },
+  {
+   "id": "mk-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1008,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. North Macedonia's Supreme Court does not publish a series titled \"Судска пракса - Врховен суд\"; official decisions appear in the Official Gazette or the Court's own online database."
+  },
+  {
+   "id": "mk-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 703,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited decision concerns a Slovak company and originates from Slovakia’s competition authority, not North Macedonia’s Commission for Protection of Competition."
+  },
+  {
+   "id": "mk-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 772,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The decision is from North Macedonia’s Constitutional Court, not Ukraine’s Supreme Court, as indicated by the Macedonian citation and jurisdiction."
+  },
+  {
+   "id": "mk-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 854,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. North Macedonia’s Supreme Court does not publish an official series titled “Судска пракса – Врховен суд”; the cited decision therefore cannot be an official publication of that court."
+  },
+  {
+   "id": "mk-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 813,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The quoted decision title and date do not match any published decision of the North Macedonia Commission for Protection of Competition."
+  }
+ ]
+}

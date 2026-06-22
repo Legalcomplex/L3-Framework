@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Guernsey — Source-Grounded Citation Reliability (GG)",
+ "country": "GG",
+ "jurisdiction": "Guernsey",
+ "model": "grok-4-1-fast-non-reasoning",
+ "endpoint": "xai",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-06-20T15:55:11.464879+00:00",
+ "results": [
+  {
+   "id": "gg-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 921,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Guernsey’s competition authority is the GCRA; CICRA ceased in 2020, and no 2026 publication date is possible."
+  },
+  {
+   "id": "gg-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1092,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. CICRA ceased operations in 2020; Guernsey’s current authority is the GCRA, so a 2025 CICRA publication is impossible."
+  },
+  {
+   "id": "gg-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 916,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No official CICRA/GCRA/JCRA document bears identifier 'P-003' titled 'Ports of Jersey Quality of Service Reporting 2025'."
+  },
+  {
+   "id": "gg-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 991,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Guernsey’s competition authority is the GCRA; CICRA ceased in 2020, and no 2026 publication date is possible."
+  },
+  {
+   "id": "gg-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 993,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Guernsey’s regulator is the Guernsey Competition & Regulatory Authority (GCRA); CICRA ceased in 2020, and no 2026-dated document exists."
+  },
+  {
+   "id": "gg-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1196,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Guernsey’s CICRA/GCRA merger register does not list any decision or filing under identifier C-085 dated 2025-12-15."
+  },
+  {
+   "id": "gg-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1167,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Guernsey’s competition authority is the Guernsey Competition & Regulatory Authority (GCRA); CICRA was dissolved in 2020, so the cited publisher and acronym are incorrect."
+  },
+  {
+   "id": "gg-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 871,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Guernsey’s competition regulator is the Guernsey Competition & Regulatory Authority (GCRA); CICRA was dissolved in 2020, so the cited publisher name is anachronistic."
+  },
+  {
+   "id": "gg-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 762,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No official CICRA/GCRA/Ports of Jersey document matches identifier P-004 or that exact 2025 title and date."
+  },
+  {
+   "id": "gg-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 792,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Guernsey has no official legal database called RIS, and the cited 2026 date is impossible."
+  },
+  {
+   "id": "gg-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 873,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Isle of Man Judgments Online publishes Manx court decisions, not Guernsey regulatory reviews like T1699G."
+  },
+  {
+   "id": "gg-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 791,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Guernsey’s CICRA/GCRA case register does not list any decision or filing under identifier C-088 dated 2025-12-15."
+  }
+ ]
+}
