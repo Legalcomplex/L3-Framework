@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Burundi — Source-Grounded Citation Reliability (BI)",
+ "country": "BI",
+ "jurisdiction": "Burundi",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:08:34.054366+00:00",
+ "results": [
+  {
+   "id": "bi-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2956,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The publication date cannot match the ordinance's signing date; official gazette publication typically occurs later, not simultaneously, so this is unverifiable."
+  },
+  {
+   "id": "bi-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2589,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This citation cannot be verified as authentic; Juricaf's Burundi coverage and this specific reference number lack reliable confirmation of existence."
+  },
+  {
+   "id": "bi-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2281,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The citation is incomplete (truncated title) and unverifiable; publication details cannot be confirmed as accurately matching the Bulletin Officiel du Burundi."
+  },
+  {
+   "id": "bi-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2625,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Burundi Supreme Court decisions are not systematically published via Juricaf; this citation's platform attribution and verifiable existence cannot be confirmed."
+  },
+  {
+   "id": "bi-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2344,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Burundi's official gazette is \"Bulletin Officiel du Burundi\" (BOB), but same-day publication is implausible; verification of citation details is required."
+  },
+  {
+   "id": "bi-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2575,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific identifier or decision exists in Juricaf; fabricated-looking citations require confirmation against the actual database."
+  },
+  {
+   "id": "bi-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 3079,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Kenya Law (National Council for Law Reporting) publishes Kenyan legislation, not Burundian ordonnances, which belong to Burundi's jurisdiction."
+  },
+  {
+   "id": "bi-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2610,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier ends in RPC1559 but the cited case number is R.P.C.1.558, showing a mismatch between values."
+  },
+  {
+   "id": "bi-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1848,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Burundi ministerial ordinances are published via Burundi's official channels, not Tanzania's Attorney General's Office Management Information System."
+  },
+  {
+   "id": "bi-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 6489,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier ends in RAA610, but the cited case number is R.A.A.609—these numbers don't match, indicating inconsistency."
+  },
+  {
+   "id": "bi-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1879,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Burundi's ministerial ordinances are published in Burundi's Bulletin Officiel, not the Seychelles Official Gazette—different sovereign jurisdiction entirely."
+  },
+  {
+   "id": "bi-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1997,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Burundi's Cour suprême is a distinct national court; Mauritius Supreme Court Judgments cannot publish Burundian decisions—wrong jurisdiction entirely."
+  }
+ ]
+}

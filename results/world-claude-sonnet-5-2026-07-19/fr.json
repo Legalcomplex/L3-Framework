@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — France — Source-Grounded Citation Reliability (FR)",
+ "country": "FR",
+ "jurisdiction": "France",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:53:41.657328+00:00",
+ "results": [
+  {
+   "id": "fr-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2161,
+   "verdict": true,
+   "correct": true,
+   "raw": "**True.** This law was indeed enacted on 30 October 2007, published in the Journal Officiel on 31 October 2007, and is available on Légifrance's LEGI database."
+  },
+  {
+   "id": "fr-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1849,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Article L110-2 exists in Code de commerce, but \"PISTE API\" is a data access platform, not a publication source itself—the actual source is Légifrance."
+  },
+  {
+   "id": "fr-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2371,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This decision number/date/subject combination cannot be verified as authentic; it references a 2026 future date, suggesting fabrication or error."
+  },
+  {
+   "id": "fr-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1874,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific AMF Commission des sanctions decision reference, date, or parties exist in official published records."
+  },
+  {
+   "id": "fr-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2019,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The ANC was created in 2009 (replacing CRC/CNC), so it couldn't have published this in 1984; the date is inaccurate."
+  },
+  {
+   "id": "fr-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1930,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific \"proposition de loi\" title, date, and details without access to real-time French legislative databases to confirm authenticity."
+  },
+  {
+   "id": "fr-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2173,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. LEGITEXT000006057170 does not correspond to this law; Légifrance LEGITEXT codes for individual laws typically differ, and this identifier likely designates another consolidated text entirely."
+  },
+  {
+   "id": "fr-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1775,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. LEGIARTI000006219127 does not correspond to Code de commerce Article L110-2 with that date on Légifrance's official database."
+  },
+  {
+   "id": "fr-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1630,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This appears to be a fabricated or unverifiable citation; I cannot confirm the Autorité de la Concurrence published this specific decision on that date."
+  },
+  {
+   "id": "fr-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1752,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. A decision named \"SAN-2025-10\" involving French parties is an AMF (French regulator) sanction, not a Luxembourg tax tribunal ruling."
+  },
+  {
+   "id": "fr-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1662,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The ANC was created in 2009 (replacing the CRC/CNC), not 1982; the cited règlement 2014-03 postdates that founding date."
+  },
+  {
+   "id": "fr-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2120,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Fedlex is Switzerland's legal database; a French \"proposition de loi\" would be published via French sources like Assemblée Nationale or Légifrance, not Fedlex."
+  }
+ ]
+}

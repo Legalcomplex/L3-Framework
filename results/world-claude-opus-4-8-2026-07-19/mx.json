@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Mexico — Source-Grounded Citation Reliability (MX)",
+ "country": "MX",
+ "jurisdiction": "Mexico",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:19:54.332690+00:00",
+ "results": [
+  {
+   "id": "mx-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1944,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Código Fiscal de la Federación is federal legislation, not state legislation, published in the Diario Oficial de la Federación."
+  },
+  {
+   "id": "mx-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2732,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.**  Mexican SCJN sentencias use \"Amparo/Contradicción\" formats, not \"Sentencia [number].\" The specific ID, future date, and API details appear fabricated/unverifiable."
+  },
+  {
+   "id": "mx-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2250,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. Mexico City enacted this administrative responsibilities law; the CDMX Congress publishes local legislation, though verify exact publication date independently."
+  },
+  {
+   "id": "mx-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1839,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Jalisco state patrimonial responsibility law exists, but I cannot verify this specific 2023-02-24 publication date as accurate."
+  },
+  {
+   "id": "mx-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2261,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific resolution number or date exists; the citation format appears plausible but is unverifiable and likely fabricated."
+  },
+  {
+   "id": "mx-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 4323,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation exists; without access to Jalisco's judicial records, I cannot confirm its authenticity."
+  },
+  {
+   "id": "mx-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2461,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Código Fiscal de la Federación is Mexican federal law; Honduras's TSC has no authority to publish it."
+  },
+  {
+   "id": "mx-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2644,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Mexican SCJN uses \"Tesis\" and registration numbers differently; \"Sentencia 233251\" format and specific JSON API details appear fabricated, unverifiable."
+  },
+  {
+   "id": "mx-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2178,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Mexican legislation isn't published through Honduras's Tribunal Superior de Cuentas; jurisdictional mismatch makes this bibliographic source citation clearly incorrect."
+  },
+  {
+   "id": "mx-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1835,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This state law exists in Jalisco, but I cannot verify the specific 2024-02-24 publication date without fabricating details."
+  },
+  {
+   "id": "mx-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1956,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier \"P/IFT/100925/309\" encodes date 10/09/25, contradicting the stated 2022-09-10; internal inconsistency makes this citation unreliable/fabricated."
+  },
+  {
+   "id": "mx-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 3071,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '45/2026' contradicts the cited 'Toca 45/2025' and 2025 date; year mismatch invalidates the claim."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Greenland — Source-Grounded Citation Reliability (GL)",
+ "country": "GL",
+ "jurisdiction": "Greenland",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:13:38.499420+00:00",
+ "results": [
+  {
+   "id": "gl-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2187,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-02-23 is in the future, making this citation unverifiable and likely fabricated as an official source."
+  },
+  {
+   "id": "gl-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2682,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Greenland's criminal law uses \"Kriminalloven,\" but Domsdatabasen is Denmark's database; Greenlandic decisions typically appear elsewhere, making this attribution questionable."
+  },
+  {
+   "id": "gl-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2881,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-03-10 is in the future, making this specific publication claim unverifiable and almost certainly fabricated."
+  },
+  {
+   "id": "gl-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2535,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Greenland uses its own Kriminallov (Criminal Code); however, I cannot verify this specific decision's publication in Domsdatabasen without confirmation."
+  },
+  {
+   "id": "gl-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2210,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The claim cites a 2026 future date, which cannot yet exist as a published source; likely fabricated citation."
+  },
+  {
+   "id": "gl-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2182,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Danish national Domsdatabasen doesn't cover Greenland's courts; also, the 2026 date is future-dated relative to plausible verification."
+  },
+  {
+   "id": "gl-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2952,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Finlex is Finland's legal database; Greenlandic Self-Government regulations (\"Selvstyrets bekendtgørelse\") are published via Nalunaarutit, not Finnish sources."
+  },
+  {
+   "id": "gl-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2231,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Denmark's Domstyrelsen operates Domsdatabasen for Danish courts; Greenland court decisions aren't published there, casting doubt on this claim."
+  },
+  {
+   "id": "gl-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2157,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This is a Danish/Greenlandic ordinance (Anordning); it would be published via Danish legal sources, not Norway's Stortinget."
+  },
+  {
+   "id": "gl-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1960,
+   "verdict": false,
+   "correct": true,
+   "raw": "I cannot verify this specific decision exists in Domsdatabasen. Unable to confirm authenticity, so I answer False cautiously."
+  },
+  {
+   "id": "gl-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1816,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific bekendtgørelse, exact date, or title exists in Nalunaarutit; unverifiable citation details risk fabrication."
+  },
+  {
+   "id": "gl-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2612,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Denmark's Domsdatabasen is the Danish court database; Greenland's courts (Grønlands Landsret/kredsretter) publish separately, not via Domsdatabasen despite Danish-language decisions."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Yemen — Source-Grounded Citation Reliability (YE)",
+ "country": "YE",
+ "jurisdiction": "Yemen",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:05:56.420313+00:00",
+ "results": [
+  {
+   "id": "ye-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2762,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific circular's existence, exact title, publisher, or date; likely a fabricated or unverifiable bibliographic citation."
+  },
+  {
+   "id": "ye-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2092,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Yemen's Commercial Code is Republican Decree Law No. 32 of 1991, but the exact database attribution/publication details cannot be independently verified reliably."
+  },
+  {
+   "id": "ye-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2361,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.**  I cannot verify this specific bibliographic claim regarding a precise publication date and source attribution without access to authoritative Yemeni legal databases to confirm."
+  },
+  {
+   "id": "ye-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2195,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific bibliographic claim; I lack access to authoritative records confirming this exact publication, date, and source combination."
+  },
+  {
+   "id": "ye-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 6689,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific bibliographic claim's accuracy regarding the exact decree number, date, or database publication details for this Yemeni legislation."
+  },
+  {
+   "id": "ye-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2341,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific bibliographic claim—the exact law, publication date, and source details for this Yemeni legislation aren't confirmable in my knowledge."
+  },
+  {
+   "id": "ye-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 4684,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — I cannot verify this specific circular exists; likely a fabricated citation, as I have no reliable record confirming this exact publication or date."
+  },
+  {
+   "id": "ye-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2320,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The DIFC Legal Database publishes Dubai International Financial Centre laws, not Yemeni legislation; Yemen's commercial law would appear in Yemen's official gazette instead."
+  },
+  {
+   "id": "ye-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1693,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This claim cannot be verified reliably; specific publication dates and sourcing details for Yemeni legislation require authoritative official gazette confirmation, which isn't available here."
+  },
+  {
+   "id": "ye-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2062,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The claim mismatches jurisdictions: SAMA regulates Saudi Arabia's banking sector, not Yemen, so this Yemeni-context attribution is incorrect."
+  },
+  {
+   "id": "ye-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2495,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — Yemeni presidential decrees are published in Yemen's Official Gazette; Jordan's Legislation & Opinion Bureau has no authority over Yemeni legal publication."
+  },
+  {
+   "id": "ye-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 6583,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This claim cannot be verified as accurate without access to the actual official record; such specific bibliographic metadata requires direct source confirmation, not assumption."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Paraguay — Source-Grounded Citation Reliability (PY)",
+ "country": "PY",
+ "jurisdiction": "Paraguay",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 11,
+ "blocked": 0,
+ "unparsed": 1,
+ "errors": [],
+ "accuracy": 0.4545,
+ "correct": 5,
+ "parse_rate": 0.9167,
+ "passed": false,
+ "timestamp": "2026-07-19T07:43:56.255352+00:00",
+ "results": [
+  {
+   "id": "py-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2990,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The citation lacks essential information (complete property owner name, official gazette publication date) required for verification as an authentic Paraguayan law through BACN records."
+  },
+  {
+   "id": "py-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1557,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  This appears to be a trial court case number (homicide attempt), not a Supreme Court decision. Paraguay's Supreme Court publishes constitutional and cassation rulings, not first-instance cr"
+  },
+  {
+   "id": "py-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1863,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The TSJE (Electoral Justice Tribunal) exists in Paraguay, but \"Resolución TSJE 302/2023\" dated 2023-01-01 cannot be verified as an authentic official legal source through standard Paraguaya"
+  },
+  {
+   "id": "py-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 3162,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  CONACOM (Paraguay's competition authority) does not publish decisions in this format. The citation style, case numbering, and RAL reference do not match authentic CONACOM decision documenta"
+  },
+  {
+   "id": "py-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2286,
+   "verdict": null,
+   "correct": false,
+   "raw": "# Evaluation: **UNABLE TO VERIFY**  I cannot definitively confirm or deny this claim. While the citation format appears consistent with Paraguayan law numbering conventions, I lack access to comprehen"
+  },
+  {
+   "id": "py-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1542,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The citation is incomplete and lacks essential details (full title, article numbers, effective date). BACN records require complete bibliographic information for verification."
+  },
+  {
+   "id": "py-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2129,
+   "verdict": true,
+   "correct": false,
+   "raw": "# Evaluation: **TRUE**  This law citation format aligns with Paraguay's official legislative numbering system. The \"Ley Nº 110\" designation and BACN (Biblioteca y Archivo del Congreso Nacional) public"
+  },
+  {
+   "id": "py-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1621,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The document reference lacks verifiable publication confirmation in official Supreme Court jurisprudence databases. The specific case number and format cannot be authenticated through Parag"
+  },
+  {
+   "id": "py-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 872,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This resolution is from Paraguay's Supreme Electoral Court (TSJE), not Colombia's Constitutional Court, and not published by Colombia Datos Abiertos."
+  },
+  {
+   "id": "py-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1323,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The decision's case number format (RAL 2022/044) and reference to \"Copetrol SA\" indicate this is a Chilean competition authority decision, not a Paraguayan legal source. Paraguay's jurisdicti"
+  },
+  {
+   "id": "py-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 4137,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  A Paraguayan municipal law (Ley Nº 7323/2024) cannot be published through Argentina's Central Bank (BCRA) regulations. These are separate jurisdictions with distinct legislative bodies."
+  },
+  {
+   "id": "py-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1267,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The citation is incomplete and lacks essential information (full title, year of enactment). The truncated title ending with \"DENOMINADOS'\" suggests data corruption or improper transcription fro"
+  }
+ ]
+}

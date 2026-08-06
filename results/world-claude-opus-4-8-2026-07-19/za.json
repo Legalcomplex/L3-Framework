@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — South Africa — Source-Grounded Citation Reliability (ZA)",
+ "country": "ZA",
+ "jurisdiction": "South Africa",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 9,
+ "blocked": 0,
+ "unparsed": 3,
+ "errors": [],
+ "accuracy": 0.5556,
+ "correct": 5,
+ "parse_rate": 0.75,
+ "passed": false,
+ "timestamp": "2026-07-19T08:28:30.457484+00:00",
+ "results": [
+  {
+   "id": "za-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2411,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific case citation exists; the details appear unverifiable and may be fabricated without confirmation."
+  },
+  {
+   "id": "za-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2706,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The citation format is suspect—duplicated case number and truncated SA report citation suggest fabricated or unverifiable bibliographic details."
+  },
+  {
+   "id": "za-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2178,
+   "verdict": null,
+   "correct": false,
+   "raw": "I cannot verify this specific case identifier and details against authoritative Competition Tribunal records, so I cannot confirm accuracy."
+  },
+  {
+   "id": "za-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1839,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-01-30 is in the future, making this citation impossible to verify as a genuine published decision."
+  },
+  {
+   "id": "za-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2637,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. Cape Town's Streets, Public Places and Prevention of Noise Nuisances By-law (2007) is available on OpenByLaws.org.za."
+  },
+  {
+   "id": "za-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2702,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. South Africa's Provincial Gazettes typically lack \"volume\" numbering; this format appears inconsistent, and details cannot be reliably verified as accurate."
+  },
+  {
+   "id": "za-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2402,
+   "verdict": null,
+   "correct": false,
+   "raw": "I cannot verify this specific citation. Case identifiers and party names cannot be confirmed from my training data with certainty; treat as unverified."
+  },
+  {
+   "id": "za-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2076,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The \"ZASCA\" citation indicates South Africa's Supreme Court of Appeal, published via SAFLII, not Namibia's eJustice Portal."
+  },
+  {
+   "id": "za-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2659,
+   "verdict": null,
+   "correct": false,
+   "raw": "I cannot verify this specific citation as authentic; the case number format and details appear plausible but require confirmation against official Tribunal records."
+  },
+  {
+   "id": "za-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2621,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This appears fabricated; the 2026 date is future/implausible, and I cannot verify this specific identifier or case exists."
+  },
+  {
+   "id": "za-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 3815,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Open By-laws republishes municipal by-laws from official Provincial Gazettes; Laws.Africa is a platform, not the original authoritative publication source."
+  },
+  {
+   "id": "za-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1584,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. South African provincial gazettes are published by provincial governments, not the Central Bank of Eswatini, a separate country's institution."
+  }
+ ]
+}

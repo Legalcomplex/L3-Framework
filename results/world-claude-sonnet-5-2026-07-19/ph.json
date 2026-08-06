@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Philippines — Source-Grounded Citation Reliability (PH)",
+ "country": "PH",
+ "jurisdiction": "Philippines",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:00:40.345382+00:00",
+ "results": [
+  {
+   "id": "ph-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2333,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. A 2026-01-15 decision date is in the future/impossible given current knowledge, making the citation unverifiable and likely fabricated."
+  },
+  {
+   "id": "ph-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1991,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated or unverifiable future-dated citation; the case, resolution date, and details cannot be confirmed as authentic."
+  },
+  {
+   "id": "ph-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2203,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. G.R. No. 12 dates from 1901, before the CFI system's later organization, and Corpus Juris cannot be verified as its authoritative publisher."
+  },
+  {
+   "id": "ph-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 10140,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** G.R. No. 276927 with decision date 2026-01-01 is a future/fabricated citation—no such Supreme Court decision could yet exist or be verifiably published by LawPhil."
+  },
+  {
+   "id": "ph-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2326,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Philippine Reports publishes bound, edited final volumes with significant lag; a decision dated 2025-12-03 could not yet be officially reported there."
+  },
+  {
+   "id": "ph-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2228,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears fabricated: the CTA hasn't reached case number 11253 or issued 2026 decisions—the date is impossibly future-dated, exceeding current records."
+  },
+  {
+   "id": "ph-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 3189,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — the Philippine Reports (print/official) publishes only selected decisions; en banc administrative matters are typically e-Library/unreported, not formally paginated therein."
+  },
+  {
+   "id": "ph-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2092,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '10931' should correspond to CTA Case No. 10931, not 10930—mismatched identifier and case number indicate an inaccurate citation."
+  },
+  {
+   "id": "ph-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1695,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. In 1898 the Philippines had no CFI system or G.R. numbering under that framework, and Corpus Juris's actual coverage/citation format doesn't match this fabricated entry."
+  },
+  {
+   "id": "ph-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1703,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** G.R. No. is a Philippine Supreme Court case numbering format, not used by Indonesia's Constitutional Court; also 2026 dates are not yet decided/published."
+  },
+  {
+   "id": "ph-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1691,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This is a Philippine Judicial Integrity Office/Supreme Court decision; the Indonesia Constitutional Court has no jurisdiction over Philippine judicial disciplinary matters."
+  },
+  {
+   "id": "ph-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1783,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** A mismatch between the stated identifier (11254) and the cited case number (11253) indicates inconsistency, plus the future date (2026) is implausible/unverifiable."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Vatican City — Source-Grounded Citation Reliability (VA)",
+ "country": "VA",
+ "jurisdiction": "Vatican City",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.6667,
+ "correct": 8,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:27:31.693925+00:00",
+ "results": [
+  {
+   "id": "va-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2358,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Leo XIV became pope in May 2025, but this specific document title and December 2025 date cannot be verified."
+  },
+  {
+   "id": "va-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2493,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Code was promulgated January 25, 1983, but took legal effect November 27, 1983. Canon 2 concerns liturgical laws."
+  },
+  {
+   "id": "va-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2349,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Pope Leo XIV and \"Coniuncta cura\" appear fabricated; no such Motu Proprio exists in verifiable Vatican records."
+  },
+  {
+   "id": "va-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1941,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. Canon 7 exists in the 1983 Code of Canon Law, promulgated by John Paul II on that date."
+  },
+  {
+   "id": "va-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2611,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Laudato si' is an encyclical (papal teaching document), not an official legal source; publication date and cited series are inaccurate."
+  },
+  {
+   "id": "va-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2437,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. Canon 8 exists in the 1983 Code of Canon Law, promulgated January 25, 1983, addressing law's promulgation and effect."
+  },
+  {
+   "id": "va-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2859,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Vatican documents aren't published on the Dutch legislation portal; papal texts appear via the Holy See's official channels."
+  },
+  {
+   "id": "va-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2006,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The 1983 Code was promulgated January 25, 1983, not 1982; and Canon 2 concerns liturgical laws."
+  },
+  {
+   "id": "va-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1698,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Vatican City legal documents are published in Acta Apostolicae Sedis, not Luxembourg's Legilux, which handles Luxembourg legislation."
+  },
+  {
+   "id": "va-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1980,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The 1983 Code was promulgated January 25, 1983, not 1982; Canon 7 defines when law begins existing."
+  },
+  {
+   "id": "va-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2226,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. *Laudato si'* is a papal encyclical published in Acta Apostolicae Sedis, not the Dutch official gazette (Staatsblad der Nederlanden)."
+  },
+  {
+   "id": "va-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1682,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The 1983 Code of Canon Law was promulgated January 25, 1983, effective November 27, 1983—not 1986."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — South Sudan — Source-Grounded Citation Reliability (SS)",
+ "country": "SS",
+ "jurisdiction": "South Sudan",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:45:16.092061+00:00",
+ "results": [
+  {
+   "id": "ss-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2705,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. South Sudan gained independence in 2011, making a 2007 publication date impossible for an official South Sudan legal source."
+  },
+  {
+   "id": "ss-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1446,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** \"Statistical bulletin table-April\" is a data publication, not a regulation or circular. Bank of South Sudan's Regulations & Circulars section publishes regulatory instruments, not statistic"
+  },
+  {
+   "id": "ss-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1616,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** South Sudan's independence was July 9, 2011. The Advocates Act 55/2013 exists, but publication details cannot be verified from standard legal databases without access to official South Suda"
+  },
+  {
+   "id": "ss-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2533,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Bank of South Sudan publishes monetary policy circulars and banking regulations, not statistical bulletins through its \"Regulations & Circulars\" official channel."
+  },
+  {
+   "id": "ss-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1654,
+   "verdict": false,
+   "correct": false,
+   "raw": "# Answer: **False**  South Sudan gained independence on July 9, 2011. No legislation could have been officially published on January 1, 2011, before the state existed as an independent entity."
+  },
+  {
+   "id": "ss-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2556,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Bank of South Sudan does not maintain a publicly accessible \"Regulations & Circulars\" database with dated publications. This source cannot be verified through official South Sudan financial"
+  },
+  {
+   "id": "ss-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1478,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  South Sudan's Code of Civil Procedure Act 2007 would be published by South Sudan's Attorney General's Office, not Tanzania's. Tanzania is a separate country with different legal systems."
+  },
+  {
+   "id": "ss-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2040,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** \"Statistical bulletin table-April\" is not a regulatory or circular document. Bank of South Sudan publishes statistical bulletins separately from formal regulations and circulars."
+  },
+  {
+   "id": "ss-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1026,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Advocates Act (55 of 2013) is Kenyan legislation, not South Sudanese. Kenya Law is Kenya's official legal publisher, not South Sudan's legal authority."
+  },
+  {
+   "id": "ss-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1380,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The publication date (2026-12-05) is in the future, making this claim impossible to verify as accurate. Future dates are not valid for historical documents."
+  },
+  {
+   "id": "ss-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1084,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** South Sudan is a separate nation from Seychelles. South Sudan legislation would be published in the South Sudan Gazette, not the Seychelles Official Gazette."
+  },
+  {
+   "id": "ss-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1209,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The document title references \"BoSS\" (Bank of South Sudan), yet attributes publication to Madagascar's Ministry of Justice. South Sudan and Madagascar are distinct nations with separate reg"
+  }
+ ]
+}

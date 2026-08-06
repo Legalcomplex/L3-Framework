@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Jamaica — Source-Grounded Citation Reliability (JM)",
+ "country": "JM",
+ "jurisdiction": "Jamaica",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:56:02.313211+00:00",
+ "results": [
+  {
+   "id": "jm-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2170,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated/unverifiable citation—no such case, party names, or 2026 decision date can be confirmed as authentic."
+  },
+  {
+   "id": "jm-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1980,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This decision is dated 2026-03-05, a future date, making it impossible to verify as an actual published court judgment."
+  },
+  {
+   "id": "jm-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2161,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific guideline title, publication date, or issuer details exist as an authentic, confirmed official FSC Jamaica publication."
+  },
+  {
+   "id": "jm-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2096,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Jamaica's Constitution dates to 1962 (independence); no \"Proclamation No 20/2022\" amending or republishing it is a verifiable official Gazette publication."
+  },
+  {
+   "id": "jm-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 3126,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date is in the future (2026), so this decision cannot currently exist or have been genuinely published as claimed."
+  },
+  {
+   "id": "jm-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 3066,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The citation [2026] JMSC Civ 32 refers to a future-dated judgment that cannot be verified as accurate or existing yet."
+  },
+  {
+   "id": "jm-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1938,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific case citation exists; it appears fabricated, and I lack reliable access to confirm Jamaican Court of Appeal records."
+  },
+  {
+   "id": "jm-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2149,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This citation refers to a future-dated 2026 judgment I cannot verify; I have no reliable database access confirming this specific case-number correspondence."
+  },
+  {
+   "id": "jm-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1843,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Jamaican insurance guidelines wouldn't be published via Aruba's DWJZ Legislation Archive; that source is jurisdictionally mismatched and implausible for this document."
+  },
+  {
+   "id": "jm-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1851,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Sint Maarten Government Legislation is unrelated to Jamaica's Constitution; Jamaican constitutional instruments are published through Jamaica's own official government gazette, not Sint Maa"
+  },
+  {
+   "id": "jm-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2185,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** I cannot verify this specific case citation exists; I have no reliable record of this exact decision, party names, or date in Jamaican Court of Appeal reports."
+  },
+  {
+   "id": "jm-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2040,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — this citation cannot be verified; [2026] JMSC Civ 33 dates from the future, making the claim unconfirmable and likely fabricated."
+  }
+ ]
+}

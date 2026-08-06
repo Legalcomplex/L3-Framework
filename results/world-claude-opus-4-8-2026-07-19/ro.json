@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Romania — Source-Grounded Citation Reliability (RO)",
+ "country": "RO",
+ "jurisdiction": "Romania",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:23:35.994809+00:00",
+ "results": [
+  {
+   "id": "ro-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2613,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Curtea Constituțională issues \"Decizii,\" not \"Hotărâri.\" Also, the date (May 1) contradicts the cited May 9 decision date."
+  },
+  {
+   "id": "ro-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2869,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Romanian numbered laws (LEGE nr. X) with sequential numbering didn't exist in 1864; the number/date/citation appear fabricated or misattributed."
+  },
+  {
+   "id": "ro-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2173,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific decision exists; the title and date appear fabricated. Verify directly via ANSPDCP's official records."
+  },
+  {
+   "id": "ro-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2344,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 10 December 2025 is in the future relative to knowledge; this decision cannot be verified as authentic."
+  },
+  {
+   "id": "ro-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2507,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Romania's 1864 communal law was enacted under Cuza, not by a \"Parlament\"; date and attribution are anachronistic/incorrect."
+  },
+  {
+   "id": "ro-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2310,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-03-05 is in the future relative to any current verification, making this specific claim unverifiable and likely fabricated."
+  },
+  {
+   "id": "ro-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2464,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The jurisdiction is Romania, but the cited source is Moldova's courts portal—a mismatch. Also, date inconsistencies (May 9 vs May 1)."
+  },
+  {
+   "id": "ro-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2462,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Romanian laws are published in Monitorul Oficial, not Slovenia's PISRS database; the cited source is jurisdictionally incorrect."
+  },
+  {
+   "id": "ro-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2003,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific decision exists; the title and details appear fabricated, lacking authentic ANSPDCP citation references."
+  },
+  {
+   "id": "ro-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 3481,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. A decision dated 10 December 2025 cannot have a publication date of 1 March 2025, which precedes it."
+  },
+  {
+   "id": "ro-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 6790,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Romanian laws are published in Monitorul Oficial, not the Greek Government Gazette (FEK), which serves Greece exclusively."
+  },
+  {
+   "id": "ro-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1518,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. GDPR enforcement in Romania is handled by ANSPDCP (national data protection authority), not Ukraine's Constitutional Court."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — United Kingdom — Source-Grounded Citation Reliability (UK)",
+ "country": "UK",
+ "jurisdiction": "United Kingdom",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 11,
+ "blocked": 0,
+ "unparsed": 1,
+ "errors": [],
+ "accuracy": 0.5455,
+ "correct": 6,
+ "parse_rate": 0.9167,
+ "passed": false,
+ "timestamp": "2026-07-19T08:27:04.536592+00:00",
+ "results": [
+  {
+   "id": "uk-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2417,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This judgment predates The National Archives' Find Case Law service (launched 2022), so it wouldn't be published there."
+  },
+  {
+   "id": "uk-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2077,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-03-24 is in the future, making this citation implausible and likely fabricated; verification is impossible."
+  },
+  {
+   "id": "uk-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2203,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No Mental Health Act 2025 exists; date mismatch (identifier says 2026-02-18, claim says 2026-02-19) further invalidates this fabricated citation."
+  },
+  {
+   "id": "uk-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2080,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No \"Children's Wellbeing and Schools Act 2026\" exists; the Children's Wellbeing and Schools Bill was progressing through Parliament, not yet enacted."
+  },
+  {
+   "id": "uk-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2258,
+   "verdict": null,
+   "correct": false,
+   "raw": "I cannot reliably verify this specific claim. Without access to CAT's case records, I cannot confirm this exact judgment's existence or details."
+  },
+  {
+   "id": "uk-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2255,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.**  The case number format (6017020/2025) and future-dated decision (October 2025) appear fabricated; I cannot verify this citation's authenticity."
+  },
+  {
+   "id": "uk-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 3004,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This 2017 Court of Appeal decision predates the Find Case Law service (launched 2022), covering judgments from 2003 onwards—actually plausibly included."
+  },
+  {
+   "id": "uk-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2348,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. UK Find Case Law began coverage in April 2022; however, verification issues include the unusual date and unconfirmed citation details."
+  },
+  {
+   "id": "uk-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2614,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No Mental Health Act 2025 exists; the Mental Health Bill 2024-25 was progressing through Parliament and hadn't received Royal Assent as ukpga/2025/33."
+  },
+  {
+   "id": "uk-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1645,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The URI format is plausible, but I cannot verify a 2026 Act with that title/chapter number exists—likely fabricated."
+  },
+  {
+   "id": "uk-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2138,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Austrian Verwaltungsgerichtshof is an Austrian court, contradicting the stated UK jurisdiction; this bibliographic claim is inconsistent."
+  },
+  {
+   "id": "uk-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1869,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. A UK employment tribunal decision would be published by UK sources (GOV.UK), not Germany's NeuRIS legal information portal."
+  }
+ ]
+}

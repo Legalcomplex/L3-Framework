@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Brunei — Source-Grounded Citation Reliability (BN)",
+ "country": "BN",
+ "jurisdiction": "Brunei",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:34:14.985204+00:00",
+ "results": [
+  {
+   "id": "bn-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1762,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This is a prospective date (2026) that has not yet occurred. No official gazette publication from a future year can currently exist or be verified."
+  },
+  {
+   "id": "bn-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1730,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No official legal source titled 'Old Age and Disability Pensions' exists in Brunei's Attorney General's Chambers Laws from January 1, 1984."
+  },
+  {
+   "id": "bn-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1456,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The decision date (2025-10-28) is in the future relative to the knowledge cutoff, making verification impossible. Additionally, no confirmed official Brunei court database was identified."
+  },
+  {
+   "id": "bn-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2422,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The claim contains inconsistencies in its citation format and lacks sufficient verifiable details about the official Brunei legal gazette publication to confirm authenticity as stated."
+  },
+  {
+   "id": "bn-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1721,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  This document cannot have been published in 2026 as that date is in the future. The claim contains a chronological impossibility that undermines its validity as a verifiable official source"
+  },
+  {
+   "id": "bn-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1450,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The correct title is the \"Interpretation and General Clauses Order, 2001\" in Brunei, not \"Act.\" Brunei uses Orders rather than Acts for primary legislation under its constitutional framewor"
+  },
+  {
+   "id": "bn-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1269,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The identifier 'S5_2027' should correspond to legislation from 2027, not 2026. The year designation in the identifier typically matches the enactment year."
+  },
+  {
+   "id": "bn-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1305,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. 'Old Age and Disability Pensions' does not appear to be an official legal source published by Brunei Attorney General's Chambers in 1982. Brunei's primary legislation focuses on Islamic law and"
+  },
+  {
+   "id": "bn-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1121,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Brunei's court decisions are published by the Brunei Judiciary/courts themselves, not by a publisher called \"Brunei Court Decisions.\" This appears to be a fabricated or imprecise publisher "
+  },
+  {
+   "id": "bn-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1182,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The AITI (Amendment) Order, 2003 is a Brunei legal instrument, not an Indonesian one. It would not be published via Indonesia's JDIHN National Legal Network, which is Indonesia's official l"
+  },
+  {
+   "id": "bn-src-f05",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1863,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The identifier contains a date mismatch: 'S4_2027' suggests 2027 legislation, while the referenced order is dated 2026-01-01, creating an internal inconsistency in the citation."
+  },
+  {
+   "id": "bn-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1745,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The 'Interpretation and General Clauses Act' is a Brunei law, not Cambodian. It would not be published through a Cambodian legal library. This appears to be a jurisdictional mismatch."
+  }
+ ]
+}

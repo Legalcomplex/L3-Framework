@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Mauritania — Source-Grounded Citation Reliability (MR)",
+ "country": "MR",
+ "jurisdiction": "Mauritania",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:58:47.461765+00:00",
+ "results": [
+  {
+   "id": "mr-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2459,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation exists; Mauritanian Supreme Court decisions on Juricaf are not reliably indexed for confirmation."
+  },
+  {
+   "id": "mr-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1989,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Mauritania has no publisher called \"Mauritania Consolidated Legal Codes (MSGG)\"; this appears to be a fabricated or non-official citation source."
+  },
+  {
+   "id": "mr-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2060,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific citation—\"Instruction 09_GR_2009\" details, exact date, and source attribution appear fabricated or unconfirmed against actual BCM records."
+  },
+  {
+   "id": "mr-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2576,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific citation exists in Juricaf's database; case numbers, dates, and details may be fabricated or unconfirmed by me."
+  },
+  {
+   "id": "mr-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2243,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** \"Mauritania Consolidated Legal Codes (MSGG)\" is not a real, verifiable official publisher/source for Mauritanian legislation; this citation appears fabricated."
+  },
+  {
+   "id": "mr-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2097,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This citation lacks verifiable specificity—the bracketed reference number, generic title, and undated source description suggest fabricated or unverifiable bibliographic details."
+  },
+  {
+   "id": "mr-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1930,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier contains \"422024,\" suggesting case number 42/2024, not 42/2023, creating an inconsistency with the cited reference."
+  },
+  {
+   "id": "mr-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1964,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Mauritania's civil aviation code would be enacted through Mauritanian legislative authorities, not Guinea-Bissau's National People's Assembly, which has no jurisdiction there."
+  },
+  {
+   "id": "mr-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1849,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Loidici.biz publishes Côte d'Ivoire legal texts, not Mauritanian instructions; this citation misattributes jurisdiction, making the sourcing claim implausible and unverifiable."
+  },
+  {
+   "id": "mr-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1496,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify specific Juricaf identifiers or case details for Mauritanian Supreme Court decisions; this precise citation appears fabricated or unverifiable."
+  },
+  {
+   "id": "mr-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1525,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Mauritania is not Gambia; \"Law Hub Gambia\" is an implausible/mismatched publisher for a Mauritanian legal code, indicating a fabricated citation."
+  },
+  {
+   "id": "mr-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1913,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Mauritanian law \"Loi 2011-052\" could not be published by Nigeria's food/drug agency (NAFDAC) — mismatched jurisdiction, subject matter, and publishing authority entirely."
+  }
+ ]
+}

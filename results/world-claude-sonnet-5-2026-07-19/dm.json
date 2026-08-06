@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Dominica — Source-Grounded Citation Reliability (DM)",
+ "country": "DM",
+ "jurisdiction": "Dominica",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:52:31.385681+00:00",
+ "results": [
+  {
+   "id": "dm-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2126,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific SRO citation exists; fabricated or unverifiable legal instrument details shouldn't be presumed accurate without confirmed official source verification."
+  },
+  {
+   "id": "dm-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3944,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific citation's accuracy—the instrument number, year, and publisher details may be fabricated or unconfirmed against official Dominica legal records."
+  },
+  {
+   "id": "dm-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1984,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This describes a highly implausible, oddly specific commemorative stamp order; no verifiable official Dominica legal source confirms this citation's existence."
+  },
+  {
+   "id": "dm-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2084,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Dominica's Money Laundering (Prevention) Act dates from 2003 (with amendments), not 2011; the FSU didn't publish original legislation."
+  },
+  {
+   "id": "dm-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2520,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This appears to be a fabricated or unverifiable citation; I cannot confirm such a specific SRO exists in official Dominica legal publication records."
+  },
+  {
+   "id": "dm-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2524,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The correct title is the \"Financial Services Unit Act\" and its actual publication authority is Dominica's official government legislative/gazette process, not a \"Legislation\" body."
+  },
+  {
+   "id": "dm-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2105,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This claim conflates jurisdictions—the instrument (SRO 29 of 2006) belongs to Dominica's legal series, not Laws of Grenada, a distinct nation's publication."
+  },
+  {
+   "id": "dm-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1991,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Curaçao Government Legislation (Regelingen) publishes Curaçao's own laws, not Dominica's Companies (Amendment) Regulations, S.R.O. 57 of 2002."
+  },
+  {
+   "id": "dm-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2386,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Statutory Rules and Orders (SRO) are Dominica's own legal instruments; Saint Lucia's Attorney General does not publish Dominica's subsidiary legislation."
+  },
+  {
+   "id": "dm-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1727,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Dominica's Money Laundering (Prevention) Act is domestic legislation published through Dominica's own official Gazette, not Sint Maarten's legislative publication system."
+  },
+  {
+   "id": "dm-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1782,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This claim conflates jurisdictions—Dominica's SRO cannot be published via Turks and Caicos Revised Laws; sources must match the actual jurisdiction issuing the instrument."
+  },
+  {
+   "id": "dm-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2183,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Dominica's regulator is the Financial Services Unit, but this Act is attributed to Cayman Islands Legislation, not Dominica's official legal publisher."
+  }
+ ]
+}

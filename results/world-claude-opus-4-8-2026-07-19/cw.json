@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Curaçao — Source-Grounded Citation Reliability (CW)",
+ "country": "CW",
+ "jurisdiction": "Curaçao",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.4167,
+ "correct": 5,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:10:56.294004+00:00",
+ "results": [
+  {
+   "id": "cw-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2758,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Curaçao became an autonomous country on 2010-10-10; legislation databases date from this transition, making that precise publication date implausible."
+  },
+  {
+   "id": "cw-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2117,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-03-31 is in the future relative to verifiable records, so this citation cannot be authenticated."
+  },
+  {
+   "id": "cw-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 6409,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific CVDR identifier and title-date pairing against authoritative records, so I decline confirming it."
+  },
+  {
+   "id": "cw-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2208,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The ECLI prefix OGHACMB denotes the Joint Court of Justice, published via Rechtspraak.nl, not a \"Curaçao Court Decisions\" publisher."
+  },
+  {
+   "id": "cw-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2787,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Curaçao became an autonomous country on 2010-10-10; legislation under Curaçao's own framework wouldn't predate that constitutional transition date."
+  },
+  {
+   "id": "cw-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2402,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier references a 2026 future-dated decision I cannot verify; such specific citation details are likely fabricated or unconfirmable."
+  },
+  {
+   "id": "cw-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 3769,
+   "verdict": true,
+   "correct": false,
+   "raw": "I cannot verify this specific CVDR identifier and its exact correspondence, so I cannot confirm this claim as True.  **False** (unverifiable)."
+  },
+  {
+   "id": "cw-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 3062,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Gemeenschappelijk Hof is a Dutch Caribbean court; its ECLI decisions are published via rechtspraak.nl, not Bermuda's site."
+  },
+  {
+   "id": "cw-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2048,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific CVDR identifier or its metadata; CVDR is primarily a Dutch (Netherlands) decentralized-regulations database, not Curaçao's."
+  },
+  {
+   "id": "cw-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1992,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The ECLI code indicates a Dutch Caribbean court (Gemeenschappelijk Hof), published via Dutch judicial systems, not Bermuda's Supreme Court."
+  },
+  {
+   "id": "cw-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2321,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Curaçao became an autonomous country only in 2010; a 2007 publication would have been under Netherlands Antilles legislation."
+  },
+  {
+   "id": "cw-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 4068,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. ECLI:NL:OGHACMB decisions are Dutch Caribbean court rulings, published on rechtspraak.nl, not the Cayman Islands judicial website."
+  }
+ ]
+}

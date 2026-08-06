@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Cyprus — Source-Grounded Citation Reliability (CY)",
+ "country": "CY",
+ "jurisdiction": "Cyprus",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:52:05.587761+00:00",
+ "results": [
+  {
+   "id": "cy-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2124,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Cyprus Tax Tribunal doesn't handle public service appeals; \"Αναθεωρητική Έφεση\" cases against the Public Service Commission belong to Supreme Court jurisdiction."
+  },
+  {
+   "id": "cy-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2106,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this date is in the future (2026), so the decision cannot have been officially published or verified as an existing CyLaw record yet."
+  },
+  {
+   "id": "cy-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2095,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific claim — the identifier format and exact database entry appear fabricated/unverifiable against actual accessible Cyprus legislation records."
+  },
+  {
+   "id": "cy-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2028,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific decision citation's accuracy—citation numbers, dates, and titles from unverified sources risk fabrication or hallucination errors."
+  },
+  {
+   "id": "cy-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2081,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation's accuracy—case numbers, party names, and dates require confirmation against official CyLaw or Supreme Court records directly."
+  },
+  {
+   "id": "cy-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 3201,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This identifier and ECLI citation appear fabricated/non-standard—Cyprus lacks a \"Tax Tribunal Decisions\" collection with such formatted identifiers matching real official ECLI records."
+  },
+  {
+   "id": "cy-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2146,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This looks like a fabricated/mismatched citation—the case name/parties suggest a Public Service Commission administrative appeal, not a Tax Tribunal matter."
+  },
+  {
+   "id": "cy-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2165,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This is a Cyprus Administrative Court case (Greek text, Cypriot parties/format); Montenegro's Constitutional Court has no jurisdiction over Cypriot administrative matters."
+  },
+  {
+   "id": "cy-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2158,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This identifier format and specific claim cannot be verified against an actual authoritative CY-Law database record, so it's unconfirmed."
+  },
+  {
+   "id": "cy-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2053,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Cyprus's CPC decisions concern the Cyprus Competition Protection Commission, not Ukraine's Supreme Court, which lacks jurisdiction over Cypriot merger notifications entirely."
+  },
+  {
+   "id": "cy-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2080,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This is a Cyprus Supreme Court civil appeal decision (Πολιτική Έφεση) concerning Cypriot parties, unrelated to Ukraine's Constitutional Court."
+  },
+  {
+   "id": "cy-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1946,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Cyprus Tax Tribunal does not issue ECLI:CY:AD decisions; that citation format corresponds to the Cyprus Supreme Court (Anotato Dikastirio) rulings."
+  }
+ ]
+}

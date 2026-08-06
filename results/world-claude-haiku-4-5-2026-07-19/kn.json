@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Saint Kitts and Nevis — Source-Grounded Citation Reliability (KN)",
+ "country": "KN",
+ "jurisdiction": "Saint Kitts and Nevis",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:39:47.931547+00:00",
+ "results": [
+  {
+   "id": "kn-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2116,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Act 25 of 2025 cannot have been published on 2025-01-01 as this date is in the future relative to typical legal publication timelines and verification records available for Saint Kitts and "
+  },
+  {
+   "id": "kn-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1395,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The Common Reporting Standard Act was enacted in 2015, not 2016. The publication date attribution to January 1, 2016 appears inaccurate for this legislation."
+  },
+  {
+   "id": "kn-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1467,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The claim appears incomplete and unverifiable. \"Act 23 of 2025\" cannot be confirmed as a legitimate Saint Kitts and Nevis statute without complete title and proper verification through offici"
+  },
+  {
+   "id": "kn-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1665,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Common Reporting Standard Regulations (SRO No. 32 of 2016) was published in 2016, but the specific date of 2016-01-01 (January 1st) is unlikely to be accurate for this statutory instrum"
+  },
+  {
+   "id": "kn-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1559,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Saint Kitts and Nevis Law Commission does not publish acts with January 1st dates. Official acts are typically published on their actual enactment or gazette dates, not standardized to January "
+  },
+  {
+   "id": "kn-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2365,
+   "verdict": false,
+   "correct": false,
+   "raw": "# Evaluation: False  **Explanation:** Act 24 of 2025 cannot have been published on 2025-01-01 as this date is in the future relative to typical legal publication timelines and verification records for"
+  },
+  {
+   "id": "kn-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1486,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Saint Lucia Revised Laws would not publish Saint Kitts and Nevis legislation. These are separate jurisdictions with distinct legal systems and official gazettes."
+  },
+  {
+   "id": "kn-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1698,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Common Reporting Standard Act No. 13 of 2016 is Cayman Islands legislation, not Saint Kitts and Nevis legislation. The claim incorrectly attributes it to the wrong jurisdiction."
+  },
+  {
+   "id": "kn-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1265,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The title is incomplete and appears truncated (\"Asset Mana\"). Additionally, Act 23 of 2025 would be too recent to verify, and the jurisdiction mismatch (Grenada vs. Saint Kitts and Nevis) r"
+  },
+  {
+   "id": "kn-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1145,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.**  Saint Kitts and Nevis is a separate jurisdiction from Aruba. The cited source (Aruba DWJZ) is not an official legal repository for Saint Kitts and Nevis legislation."
+  },
+  {
+   "id": "kn-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1107,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Saint Kitts and Nevis laws would not be published via Bermuda Laws Online, as that platform is dedicated to Bermuda's legislation, not another jurisdiction's laws."
+  },
+  {
+   "id": "kn-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1066,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Act 24 of 2025 from Saint Kitts and Nevis would be published through SKN's official gazette or legal repository, not Turks and Caicos Revised Laws."
+  }
+ ]
+}

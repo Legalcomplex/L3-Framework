@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — International — Source-Grounded Citation Reliability (INTL)",
+ "country": "INTL",
+ "jurisdiction": "International",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.4167,
+ "correct": 5,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:38:53.203528+00:00",
+ "results": [
+  {
+   "id": "intl-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 4951,
+   "verdict": true,
+   "correct": true,
+   "raw": "**True**  The African Charter on Democracy, Elections and Governance was adopted by the African Union on January 30, 2007, and published through African Union's official treaties repository."
+  },
+  {
+   "id": "intl-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1436,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Constitute Project was founded in 2011, making it impossible for it to have published Baden's 1818 Constitution in 1818. The date reference is anachronistic."
+  },
+  {
+   "id": "intl-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1559,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  ECOLEX is a gateway aggregating existing environmental laws from official sources, not a publisher. The order originates from a national jurisdiction's official authority, not ECOLEX itself"
+  },
+  {
+   "id": "intl-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1418,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The decision date (2025-12-03) is in the future, making this claim impossible. Official court decisions cannot be published before they occur."
+  },
+  {
+   "id": "intl-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1599,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  ICC-01/04-00/00 is the Prosecutor v. Lubanga case (Uganda situation), not a decision on participation applications in a Democratic Republic of Congo investigation matter from 2017."
+  },
+  {
+   "id": "intl-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1709,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The ICC Legal Tools Database does not publish future-dated decisions (April 2, 2026). This date is in the future and such a document cannot currently exist or be officially published."
+  },
+  {
+   "id": "intl-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1622,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The African Charter on Democracy, Elections and Governance was adopted by the African Union in 2007 but published through AU channels, not Austria's RIS legal database system."
+  },
+  {
+   "id": "intl-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1607,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** LILEX is Liechtenstein's legislation database. Baden's 1818 Constitution is a German state document, not Liechtenstein legislation, so it wouldn't be published there."
+  },
+  {
+   "id": "intl-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1117,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  ECOLEX primarily indexes environmental and natural resource laws. Pharmaceutical manufacturing practice orders fall outside its core scope, making this publication venue implausible."
+  },
+  {
+   "id": "intl-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1673,
+   "verdict": true,
+   "correct": false,
+   "raw": "# Evaluation Result  **True**  The Inter-American Court of Human Rights publishes decisions in \"Series C\" format for judgments and decisions. Series C No. 587 follows the standard official citation fo"
+  },
+  {
+   "id": "intl-src-f05",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1372,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  ICC-01/04-00/01 is the Prosecutor v. Lubanga case (Uganda situation), not a participation decision from 2017. The identifier and document type do not match."
+  },
+  {
+   "id": "intl-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1190,
+   "verdict": true,
+   "correct": false,
+   "raw": "**True.** The ICC Legal Tools Database is the International Criminal Court's official repository for case decisions, orders, and legal documents, including procedural orders from 2023."
+  }
+ ]
+}

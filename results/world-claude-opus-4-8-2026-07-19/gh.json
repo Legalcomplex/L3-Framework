@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Ghana — Source-Grounded Citation Reliability (GH)",
+ "country": "GH",
+ "jurisdiction": "Ghana",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.6667,
+ "correct": 8,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:13:29.591840+00:00",
+ "results": [
+  {
+   "id": "gh-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2487,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Ghana's aircraft accident investigation body was established under Act 2020 (Act 1028), but title and citation details appear inaccurate."
+  },
+  {
+   "id": "gh-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2203,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific directive exists; Bank of Ghana has no confirmed \"Open Banking Directive\" published on that date."
+  },
+  {
+   "id": "gh-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2468,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The Community Water and Sanitation Agency Act, 1998 (Act 564) is a genuine Ghanaian statute establishing that agency.  However, I should flag uncertainty about the specific \"Ghana Parliament Act"
+  },
+  {
+   "id": "gh-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2639,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific bill, repository, or date exists; Ghana's Parliament lacks a widely-documented institutional repository publishing bills this way."
+  },
+  {
+   "id": "gh-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2211,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Communications Service Tax (Amendment) Act is primary legislation passed by Parliament, published in the Gazette, not the NCA."
+  },
+  {
+   "id": "gh-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2418,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The Alternative Dispute Resolution Act, 2010 (Act 798) was passed and assented to in May 2010; GhaLII publishes Ghanaian legislation."
+  },
+  {
+   "id": "gh-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2413,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This is a Ghanaian Act; it would be published by Ghana's Parliament, not Burkina Faso's Assemblée Nationale."
+  },
+  {
+   "id": "gh-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2548,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The date 2026-12-20 is in the future, and this specific directive citation appears fabricated with no verifiable record."
+  },
+  {
+   "id": "gh-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1793,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Community Water and Sanitation Agency Act, 1998 (Act 564) is Ghanaian legislation, not published via Sierra Leone Legal Information Institute."
+  },
+  {
+   "id": "gh-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1816,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Ghana jurisdiction claim cites Nigeria's Pension Commission—a mismatched, implausible source for environmental legislation, indicating fabricated bibliographic information."
+  },
+  {
+   "id": "gh-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2757,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Ghana's Act 754 is Ghanaian legislation, not Nigerian; PLAC publishes Nigerian laws, so the source attribution is incorrect."
+  },
+  {
+   "id": "gh-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2241,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Ghana's laws are published in the Ghana Gazette, not Guinea's Journal Officiel; jurisdictions are entirely different countries."
+  }
+ ]
+}

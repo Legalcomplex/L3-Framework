@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — United Nations — Source-Grounded Citation Reliability (UN)",
+ "country": "UN",
+ "jurisdiction": "United Nations",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:04:45.739205+00:00",
+ "results": [
+  {
+   "id": "un-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2133,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific bibliographic claim—the exact resolution title, date, and ODS publication details require direct source confirmation I lack."
+  },
+  {
+   "id": "un-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2247,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Resolution 3 (1946) concerned Spain, not Iranian troop withdrawal; the Iran matter was addressed in Resolution 5 (1946), not Resolution 3."
+  },
+  {
+   "id": "un-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2372,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** While UN treaty bodies do issue views on communications, I cannot verify this specific case citation, name, or date without risking fabrication of details."
+  },
+  {
+   "id": "un-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3010,
+   "verdict": true,
+   "correct": true,
+   "raw": "**True.**  The Convention on the Privileges and Immunities of the United Nations was adopted by the UN General Assembly on 13 February 1946 and registered in the UN Treaty Series, consistent with stan"
+  },
+  {
+   "id": "un-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2137,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** ES-11/10 is a plausible-format resolution number, but I cannot verify this specific document's existence, content, or the cited 2026 date (future/unverifiable)."
+  },
+  {
+   "id": "un-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 5541,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This is a generic operative paragraph fragment lacking resolution number, document symbol, and verifiable specifics confirming actual ODS publication details."
+  },
+  {
+   "id": "un-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2023,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This claim references a future date (2026-11-19), which cannot be verified as an existing official document; it appears fabricated or unverifiable."
+  },
+  {
+   "id": "un-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2358,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** UN Security Council resolutions are published by the United Nations (UN Digital Library/UNSCR archives), not via UK Legislation's legislation.gov.uk database."
+  },
+  {
+   "id": "un-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1955,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Human Rights Committee case Y.H.G. et al v. Australia was decided in 2011 (Views adopted March 2011), not on 2010-11-14."
+  },
+  {
+   "id": "un-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2451,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Convention on the Privileges and Immunities of the United Nations is a UN treaty from 1946, not a German federal law publication source."
+  },
+  {
+   "id": "un-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1581,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.**  Resolution ES-11/10 was adopted November 14, 2022 (11th Emergency Special Session, reparations for Ukraine), not published/dated 2025-02-25."
+  },
+  {
+   "id": "un-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2098,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — I cannot verify this specific claim; the exact resolution text, date, and document details cannot be confirmed without access to authoritative UN records."
+  }
+ ]
+}

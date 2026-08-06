@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Bangladesh — Source-Grounded Citation Reliability (BD)",
+ "country": "BD",
+ "jurisdiction": "Bangladesh",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:33:37.528541+00:00",
+ "results": [
+  {
+   "id": "bd-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1710,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Supreme Court of Bangladesh does not publish decisions under a \"Supreme Court Online Bulletin\" as an official gazette. Official decisions are published in Bangladesh Law Reports or offi"
+  },
+  {
+   "id": "bd-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2195,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The Commissions of Inquiry Act, 1956 predates Bangladesh's independence (1971). Bangladesh Legal Acts Dataset would not include pre-independence acts with 1956 as an official publication date"
+  },
+  {
+   "id": "bd-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1682,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Legal Representative Suits Act, 1855 is a colonial-era Indian Act. Bangladesh Code compiles post-1971 independent Bangladesh laws, not pre-1971 British Indian legislation."
+  },
+  {
+   "id": "bd-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1584,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The publication date is in the future (2026-04-30), making this claim temporally impossible. Official legal sources cannot be published before the current date."
+  },
+  {
+   "id": "bd-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1838,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The decision date is 2026-03-15, which is in the future. No court decision can be published from a date that has not yet occurred. This is a fictional or erroneous citation."
+  },
+  {
+   "id": "bd-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1761,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The claim cannot be verified as an authentic BSEC directive through standard official Bangladesh Securities & Exchange Commission public records and publications available for July 2024."
+  },
+  {
+   "id": "bd-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1733,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Bangladesh Supreme Court decisions are typically published in official law reports (like Bangladesh Law Reports), not in an \"Supreme Court Online Bulletin.\" This publication venue appears n"
+  },
+  {
+   "id": "bd-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2300,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Commissions of Inquiry Act, 1956 is a Bangladeshi (then East Pakistani) law, not a Sri Lankan one. Sri Lankan publication details are incorrectly attributed here."
+  },
+  {
+   "id": "bd-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1949,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Bangladesh's legal system inherited laws from British India. The 1855 Act predates Pakistan (1947) and Bangladesh (1971), so attributing it to \"Pakistan Laws Dataset\" is anachronistic and m"
+  },
+  {
+   "id": "bd-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2347,
+   "verdict": false,
+   "correct": true,
+   "raw": "# Answer: **False**  The Bangladesh Government Press Gazette Archive does not have a publication date of 2025-04-30 (future date). Additionally, this description is too vague to verify as a specific o"
+  },
+  {
+   "id": "bd-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1431,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The case name format and citation style don't match standard Bangladesh Supreme Court judgment documentation. Official Supreme Court decisions use standardized case numbers and reporter citat"
+  },
+  {
+   "id": "bd-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1049,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This directive concerns Bangladesh stock brokers/dealers, not Maldives. It should be published in Bangladesh Government Gazette, not Maldives Government Gazette."
+  }
+ ]
+}

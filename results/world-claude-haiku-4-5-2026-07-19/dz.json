@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Algeria — Source-Grounded Citation Reliability (DZ)",
+ "country": "DZ",
+ "jurisdiction": "Algeria",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:36:22.957011+00:00",
+ "results": [
+  {
+   "id": "dz-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1945,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Regulation 2014-01 was published by the Bank of Algeria on February 16, 2014, but the citation format and source attribution in the claim contain inaccuracies regarding official publication"
+  },
+  {
+   "id": "dz-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1463,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  This decision number format doesn't match Algeria's Constitutional Court citation system. The \"D.CC\" designation and structure appear inconsistent with official Algerian Constitutional Cour"
+  },
+  {
+   "id": "dz-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1758,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The decision file number 0894586 dated 27-09-2016 predates the publication date of 2024-12-26 by nearly 8 years, creating an implausible publication timeline for an official court decision."
+  },
+  {
+   "id": "dz-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1492,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The Journal Officiel de la République Algérienne Issue 1/2026 cannot have been published on 2026-01-08 because that date is in the future relative to the current date."
+  },
+  {
+   "id": "dz-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1542,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The date June 2, 2025 is in the future relative to typical claim verification timelines, and this specific decree cannot be verified in current official Algerian legal databases."
+  },
+  {
+   "id": "dz-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1605,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Bank of Algeria (Banque d'Algérie) publishes regulations through official channels like its Official Bulletin. This citation lacks verification of authentic publication through proper B"
+  },
+  {
+   "id": "dz-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1972,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This regulation concerns Algerian banking solvency coefficients, but the Egyptian Legal Corpus would not be the authoritative official publication source for Algerian legal documents."
+  },
+  {
+   "id": "dz-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1571,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The date conversion is inconsistent. 23 Joumada Ethania 1443 AH corresponds to January 2022, not December 2024. The claim contains a chronological error."
+  },
+  {
+   "id": "dz-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1688,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The decision date (27-09-2016) predates the publication date (2021-12-26) by five years, which is unusual but possible. However, the file number format and metadata lack verifiable confirma"
+  },
+  {
+   "id": "dz-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1406,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The Journal Officiel de la République Algérienne is Algeria's official gazette, not Egypt's. Egyptian Legal Corpus would not be the primary publisher of Algerian official legal documents."
+  },
+  {
+   "id": "dz-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1566,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  This decree cannot exist as published on 2025-06-09 because that date is in the future relative to the current knowledge cutoff. Additionally, Algerian decrees are officially published in the"
+  },
+  {
+   "id": "dz-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1128,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This regulation is Algerian, not Egyptian. The Egyptian Legal Corpus would not be the authoritative publisher of Algerian banking regulations. Algeria has its own official legal sources."
+  }
+ ]
+}

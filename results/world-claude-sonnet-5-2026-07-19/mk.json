@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — North Macedonia — Source-Grounded Citation Reliability (MK)",
+ "country": "MK",
+ "jurisdiction": "North Macedonia",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:58:20.715111+00:00",
+ "results": [
+  {
+   "id": "mk-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2349,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated or unverifiable citation—I cannot confirm a \"У.бр.71/2025\" decision with dissenting opinion dated 2025-12-24 exists."
+  },
+  {
+   "id": "mk-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1930,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific decision, title, and date combination exists in official Supreme Court Practice records without direct source access."
+  },
+  {
+   "id": "mk-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2607,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this dated decision (2026-04-02) is a future date not yet occurred, so it cannot be verified as an actual published official source."
+  },
+  {
+   "id": "mk-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2057,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.**  The date 2025-12-24 is in the future relative to plausible verification, and I cannot confirm this specific case number, dissenting opinion, or publication exists in official Constitutiona"
+  },
+  {
+   "id": "mk-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2022,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific decision title, date, and publication source combination exists in North Macedonia's official Supreme Court Practice records without direct database access."
+  },
+  {
+   "id": "mk-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2491,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this appears to be a fabricated/future-dated entry; I cannot verify such a specific decision's actual publication in the Commission's official records."
+  },
+  {
+   "id": "mk-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2886,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This is a North Macedonian Constitutional Court case (У.бр. format, separate opinion), unrelated to Greece's Hellenic Court of Audit institution."
+  },
+  {
+   "id": "mk-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2916,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific decision's title, date, and publication source combination exists in official North Macedonia Supreme Court records or databases."
+  },
+  {
+   "id": "mk-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1534,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific decision citation exists in the Commission's official records without access to their database to confirm accuracy."
+  },
+  {
+   "id": "mk-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1578,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This is a case number from North Macedonia's Constitutional Court (У.бр. format), unrelated to Ukraine's Supreme Court jurisdiction entirely."
+  },
+  {
+   "id": "mk-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1626,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This appears to be a fabricated or unverifiable citation; I cannot confirm the specific decision, date, or publication details without access to authoritative court records."
+  },
+  {
+   "id": "mk-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1637,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — I cannot verify this specific decision's publication details; no reliable access confirms this exact citation's existence in official Commission records."
+  }
+ ]
+}

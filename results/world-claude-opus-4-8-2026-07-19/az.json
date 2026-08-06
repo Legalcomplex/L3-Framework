@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Azerbaijan — Source-Grounded Citation Reliability (AZ)",
+ "country": "AZ",
+ "jurisdiction": "Azerbaijan",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:07:42.457626+00:00",
+ "results": [
+  {
+   "id": "az-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2452,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-01-26 is in the future, making this citation impossible to verify as a genuine published decision."
+  },
+  {
+   "id": "az-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3055,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated or unverifiable citation; the specific road-listing text and exact publication date cannot be confirmed."
+  },
+  {
+   "id": "az-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2503,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific decision's existence, number, publication date, or issuing body without access to authoritative Azerbaijani legal databases."
+  },
+  {
+   "id": "az-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2715,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Article 80 of Azerbaijan's Constitution concerns responsibility for constitutional violations, not judicial review; citation appears fabricated or misattributed."
+  },
+  {
+   "id": "az-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2249,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The decree exists, but its 2010-05-24 issuance predates a 2023-09-19 publication date, which appears fabricated or unverifiable without confirmation."
+  },
+  {
+   "id": "az-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2416,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific regulation, title, or exact 2013-07-30 publication date; details appear fabricated or unconfirmed."
+  },
+  {
+   "id": "az-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1910,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The date 2026-01-26 is in the future, making this citation impossible to verify as a genuine existing decision."
+  },
+  {
+   "id": "az-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 3083,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This appears to be a fabricated or unverifiable citation; specific road-listing details and the future-dated publication cannot be confirmed as authentic."
+  },
+  {
+   "id": "az-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1978,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific decision number, date, or publication details; fabricated-sounding citations require confirmation from official Azerbaijani sources."
+  },
+  {
+   "id": "az-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 4140,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific identifier, date, or case details; fabricated-looking citation with implausible article numbers requires independent confirmation."
+  },
+  {
+   "id": "az-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 4551,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Likumi.lv is Latvia's official legal portal; Azerbaijani presidential decrees are published via e-qanun.az or Azerbaijan's official gazette, not Latvia."
+  },
+  {
+   "id": "az-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1842,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. An Azerbaijani banking regulation would not be published in the Hellenic Parliament's Greek Legal Code database; jurisdictions are mismatched."
+  }
+ ]
+}

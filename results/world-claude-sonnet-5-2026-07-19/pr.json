@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Puerto Rico — Source-Grounded Citation Reliability (PR)",
+ "country": "PR",
+ "jurisdiction": "Puerto Rico",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:01:06.925776+00:00",
+ "results": [
+  {
+   "id": "pr-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2167,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific law number, date, and subject combination exists in LexJuris's 2024 Puerto Rico legislative records with certainty."
+  },
+  {
+   "id": "pr-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2243,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific citation exists; Puerto Rico legislative numbering/dates require direct confirmation from LexJuris or official Senate/House records."
+  },
+  {
+   "id": "pr-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2083,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — This citation appears fabricated; Puerto Rico's actual public-private partnerships law is Ley 29-2009, not Ley 47-1987, making details unverifiable."
+  },
+  {
+   "id": "pr-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2614,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation's accuracy—law numbers, dates, and amended articles require confirmation directly from LexJuris or OGP records."
+  },
+  {
+   "id": "pr-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2240,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific citation's accuracy; without direct access to LexJuris records, the exact law number, date, and content combination remain unconfirmed."
+  },
+  {
+   "id": "pr-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2467,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific law's existence, number, title, or LexJuris publication date without access to current official Puerto Rico legislative databases."
+  },
+  {
+   "id": "pr-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2717,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Bahamas Consolidated Legislation has no jurisdiction over Puerto Rico statutes; LexJuris Puerto Rico, not a Bahamian source, publishes such Puerto Rico legislative acts."
+  },
+  {
+   "id": "pr-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2296,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Puerto Rico legislation isn't published via Aruba's DWJZ Legislation Archive—that source covers Aruban law, not Puerto Rican statutes; official sources like LexJuris apply."
+  },
+  {
+   "id": "pr-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1931,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Puerto Rico laws are published in LexJuris/OGP Puerto Rico or Puerto Rico Session Laws, not the Laws of Grenada, an unrelated foreign jurisdiction."
+  },
+  {
+   "id": "pr-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1784,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Puerto Rico laws are published via LexJuris/OGP or Puerto Rico's official gazette, not the Turks and Caicos Attorney General's Revised Laws website."
+  },
+  {
+   "id": "pr-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1793,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Puerto Rico laws are published through Puerto Rico's official legislative sources (LexJuris, OGP), not Bermuda Laws Online, which covers Bermuda's legislation exclusively."
+  },
+  {
+   "id": "pr-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1970,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Saint Lucia Revised Laws is a foreign jurisdiction's publication and has no authority over or connection to Puerto Rico's legislation."
+  }
+ ]
+}

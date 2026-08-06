@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Saint Barthélemy — Source-Grounded Citation Reliability (BL)",
+ "country": "BL",
+ "jurisdiction": "Saint Barthélemy",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:34:08.283004+00:00",
+ "results": [
+  {
+   "id": "bl-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1742,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Saint Barthélemy's official legal publications use specific formats for decrees and regulations. The citation format and reference structure provided lacks verifiable official documentation"
+  },
+  {
+   "id": "bl-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1851,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Saint Barthélemy uses a different official publication system (Journal Officiel de Saint-Barthélemy) for legal texts; this reference format and source appear inconsistent with standard local re"
+  },
+  {
+   "id": "bl-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1746,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Saint Barthélemy uses the French legal system with decrees and arrêtés; this reference lacks proper official gazette (Journal Officiel) publication confirmation and formatting standards."
+  },
+  {
+   "id": "bl-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 4982,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Saint Barthélemy's official legal publications do not follow this citation format. The reference lacks proper statutory designation and verifiable publication mechanisms consistent with Fre"
+  },
+  {
+   "id": "bl-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1871,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  Saint Barthélemy uses French legal frameworks and official publications. The claimed source format and publication method cannot be verified as an authentic official legal document from this "
+  },
+  {
+   "id": "bl-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3679,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Saint Barthélemy's official legal publications use different citation formats. \"2024-058 CT\" lacks standard regulatory nomenclature conventions specific to this jurisdiction's official gaze"
+  },
+  {
+   "id": "bl-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1424,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Saint Barthélemy is a French collectivity in the Caribbean. Its legislation would be published through French official channels, not Cayman Islands Legislation."
+  },
+  {
+   "id": "bl-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1483,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Saint Barthélemy is a French Caribbean territory; its legislation is published through French official channels, not Bahamas Consolidated Legislation, which covers Bahamian law."
+  },
+  {
+   "id": "bl-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1322,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Saint Barthélemy is a French overseas collectivity. The document reference format and \"Aruba DWJZ\" (Dutch Caribbean jurisdiction) are inconsistent with Saint Barthélemy's legal system and p"
+  },
+  {
+   "id": "bl-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1050,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Saint Barthélemy is a French overseas collectivity, not part of Curaçao. Official legislation would be published through French official channels, not Curaçao Government."
+  },
+  {
+   "id": "bl-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1113,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Saint Barthélemy is a French collectivity with French legal sources. Sint Maarten is a separate Dutch Caribbean jurisdiction. The attribution is jurisdictionally incorrect."
+  },
+  {
+   "id": "bl-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 997,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Saint Barthélemy is a French territory with its own legal system separate from Grenada. This document cannot originate from Grenada's laws."
+  }
+ ]
+}

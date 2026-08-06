@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Bahamas — Source-Grounded Citation Reliability (BS)",
+ "country": "BS",
+ "jurisdiction": "Bahamas",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:09:17.481720+00:00",
+ "results": [
+  {
+   "id": "bs-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2160,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-04-17 is in the future relative to verifiable records; this citation cannot be confirmed and appears fabricated."
+  },
+  {
+   "id": "bs-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2979,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No \"Access to Affordable Homes Act\" exists in Bahamian legislation; this appears fabricated, lacking any verifiable official publication record."
+  },
+  {
+   "id": "bs-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2068,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The 2026 date is in the future and the specific identifier/title cannot be verified; likely fabricated bibliographic details."
+  },
+  {
+   "id": "bs-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2626,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this Act exists; the title, date, and publication details appear fabricated without authoritative confirmation from Bahamian legal sources."
+  },
+  {
+   "id": "bs-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2920,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific 2026 publication; the future date and precise citation details are unconfirmed in my knowledge."
+  },
+  {
+   "id": "bs-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1994,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-04-13 is in the future, making this citation impossible to verify as a genuine published decision."
+  },
+  {
+   "id": "bs-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2772,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific case exists; I have no reliable record confirming this decision, date, or publication details."
+  },
+  {
+   "id": "bs-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2499,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific alphanumeric identifier or confirm the existence of this exact legislation title without reliable source access."
+  },
+  {
+   "id": "bs-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2038,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific identifier, date (future), or case details; the March 2026 date suggests fabricated bibliographic information."
+  },
+  {
+   "id": "bs-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2276,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Bahamas and Cayman Islands are separate jurisdictions; Bahamian legislation wouldn't be published via Cayman Islands Legislation, indicating fabrication."
+  },
+  {
+   "id": "bs-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2085,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The jurisdiction is Bahamas, but the cited source is \"Laws of Grenada\"—a mismatch between jurisdiction and publication origin."
+  },
+  {
+   "id": "bs-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1748,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific case exists; the details appear unverifiable, and I won't confirm potentially fabricated citations."
+  }
+ ]
+}

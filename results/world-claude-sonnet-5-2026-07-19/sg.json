@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Singapore — Source-Grounded Citation Reliability (SG)",
+ "country": "SG",
+ "jurisdiction": "Singapore",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.4167,
+ "correct": 5,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:02:14.910648+00:00",
+ "results": [
+  {
+   "id": "sg-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2116,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.**  In December 2014, the agency was known as the \"Competition Commission of Singapore\" (CCS) — it was only renamed CCCS in 2018."
+  },
+  {
+   "id": "sg-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2077,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This citation appears fabricated/unverifiable—it references a future date (2026) and cannot be confirmed as an actual published SICC decision."
+  },
+  {
+   "id": "sg-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3186,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Agency for Science, Technology and Research Act's original enactment date is not 1990; it was originally established as the National Science and Technology Board Act, later renamed, and"
+  },
+  {
+   "id": "sg-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2071,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated/future-dated citation—2026-03-19 is a future date, and I cannot verify this case exists."
+  },
+  {
+   "id": "sg-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2160,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.**  CCCS did penalize remittance providers for information exchange, but I cannot verify the exact title, penalty amount, or specific 2025-07-31 publication date cited."
+  },
+  {
+   "id": "sg-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2066,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Singapore International Commercial Court uses \"SGHC(I)\" neutral citations, but I cannot verify this specific case number, date, or party details exist."
+  },
+  {
+   "id": "sg-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2133,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.**  In 2012, the agency was known as the Competition Commission of Singapore (CCS); it was only renamed CCCS in 2018, so attribution is anachronistic."
+  },
+  {
+   "id": "sg-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2106,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. SGHC(I) denotes the Singapore International Commercial Court, part of Singapore's judiciary, not Indonesia's Constitutional Court."
+  },
+  {
+   "id": "sg-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1654,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Thu Vien Phap Luat is a Vietnamese legal database, not an official Singapore legal source; Singapore statutes are published via Singapore Statutes Online."
+  },
+  {
+   "id": "sg-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1774,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** I cannot verify this specific citation—the case name, exact date, and details appear fabricated or unconfirmed against actual Singapore court records/eLitigation database."
+  },
+  {
+   "id": "sg-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1801,
+   "verdict": true,
+   "correct": false,
+   "raw": "**True.** CCCS did publish a decision/media release concerning penalties imposed on Chinese Yuan remittance service providers for anti-competitive information exchange around this period, consistent w"
+  },
+  {
+   "id": "sg-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1555,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** SGHC(I) denotes the Singapore International Commercial Court; this decision is published in Singapore Law Reports, not by the Philippine Supreme Court E-Library."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — United Nations — Source-Grounded Citation Reliability (UN)",
+ "country": "UN",
+ "jurisdiction": "United Nations",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.75,
+ "correct": 9,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:27:09.195460+00:00",
+ "results": [
+  {
+   "id": "un-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2230,
+   "verdict": true,
+   "correct": true,
+   "raw": "I cannot verify this as True. Without access to UN ODS records, I cannot confirm this specific document's existence or publication date."
+  },
+  {
+   "id": "un-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2534,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Resolution 3 (1946) concerned the Iran/USSR situation but is dated 4 April 1946; verify citation details against official UN records."
+  },
+  {
+   "id": "un-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2211,
+   "verdict": true,
+   "correct": true,
+   "raw": "I cannot verify this specific claim as true; the case name, date, and citation details cannot be confirmed against reliable records."
+  },
+  {
+   "id": "un-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1987,
+   "verdict": true,
+   "correct": true,
+   "raw": "**True.** The Convention was adopted 13 February 1946 by the UN General Assembly and is registered in UNTS."
+  },
+  {
+   "id": "un-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3267,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. UN General Assembly emergency special session resolutions ES-11 date to 2022-2023; numbering \"ES-11/10\" and a 2026 date appear fabricated."
+  },
+  {
+   "id": "un-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2058,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Without a specific document symbol, I cannot verify this quoted operative paragraph or its exact 2024-11-19 publication date."
+  },
+  {
+   "id": "un-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2376,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The date 2026-11-19 is in the future, making this citation impossible to verify as an already-published official document."
+  },
+  {
+   "id": "un-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2455,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. UN Security Council resolutions are published by the United Nations, not UK Legislation (legislation.gov.uk), which covers UK domestic law."
+  },
+  {
+   "id": "un-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1916,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific decision exists with that exact citation and date; details appear fabricated or unconfirmed against actual records."
+  },
+  {
+   "id": "un-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1469,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This UN convention is published via UN Treaty Series, not German Federal Law; Gesetze im Internet covers German legislation."
+  },
+  {
+   "id": "un-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2442,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.**  UN emergency special session resolutions numbered A/RES/ES-11 stop earlier; \"ES-11/10\" likely doesn't exist, and the date appears fabricated."
+  },
+  {
+   "id": "un-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2218,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific document, date, or fragment. Without authenticated access, asserting its publication via ODS would be unfounded."
+  }
+ ]
+}

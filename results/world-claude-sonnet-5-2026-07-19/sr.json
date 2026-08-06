@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Suriname — Source-Grounded Citation Reliability (SR)",
+ "country": "SR",
+ "jurisdiction": "Suriname",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:02:54.084676+00:00",
+ "results": [
+  {
+   "id": "sr-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2274,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific decision citation exists; case numbers, dates, and details may be fabricated or unconfirmed in available sources."
+  },
+  {
+   "id": "sr-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2679,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This claim cannot be verified; I have no reliable record confirming Article 42's existence or that specific publication in Suriname's legal database."
+  },
+  {
+   "id": "sr-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2192,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Suriname's Arbeidswet dates from 1963 but was enacted/published via the official State Gazette (Staatsblad), not \"Suriname Parliament Legislation (DNA).\""
+  },
+  {
+   "id": "sr-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3155,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This appears to be a fabricated or unverifiable future-dated citation; I cannot confirm this specific document's existence or actual publication details."
+  },
+  {
+   "id": "sr-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2754,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This citation cannot be verified — it references a future date (2026), making it a fabricated or unconfirmed source, not an official published decision."
+  },
+  {
+   "id": "sr-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2465,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Suriname's copyright law is the \"Auteurswet 1913,\" and I cannot verify Article 38's specific content or that exact publication citation's accuracy."
+  },
+  {
+   "id": "sr-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1991,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The date (2026-06-11) is in the future and cannot be verified; also the specific decision number's authenticity cannot be confirmed."
+  },
+  {
+   "id": "sr-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2171,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The claim's future/implausible publication date (2026-04-16) cannot be verified as accurate for this Suriname copyright law citation."
+  },
+  {
+   "id": "sr-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1892,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Suriname's Arbeidswet 1963 is Surinamese labor legislation; Brazil's Planalto/REFLEGIS publishes only Brazilian federal legal instruments, not Surinamese law."
+  },
+  {
+   "id": "sr-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1867,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** BCN Ley Chile publishes Chilean legislation, not Surinamese presidential invitations; this source/jurisdiction pairing is fabricated and implausible."
+  },
+  {
+   "id": "sr-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1696,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Suriname's court decisions (\"HvJ\" = Hof van Justitie) would not be published by Peru's INDECOPI, an unrelated foreign IP/competition authority."
+  },
+  {
+   "id": "sr-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2550,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Suriname's Auteurswet dates from 1913 but Article 38 cannot be verified as officially published via Wetten.sr on that specific 2022 date."
+  }
+ ]
+}

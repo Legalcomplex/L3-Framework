@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Anguilla — Source-Grounded Citation Reliability (AI)",
+ "country": "AI",
+ "jurisdiction": "Anguilla",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:06:47.822850+00:00",
+ "results": [
+  {
+   "id": "ai-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2418,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated citation; no verifiable record confirms this specific regulation exists in Anguilla's revised statutes."
+  },
+  {
+   "id": "ai-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2858,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated citation; no such specifically-titled Act with that generic January 1st publication date is verifiable."
+  },
+  {
+   "id": "ai-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2803,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific Act or publication date in Anguilla's Revised Statutes; likely fabricated or misattributed bibliographic details."
+  },
+  {
+   "id": "ai-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3881,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Anguilla's financial legislation is enacted via its House of Assembly/Gazette, not \"published\" by the FSC with that fabricated date."
+  },
+  {
+   "id": "ai-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2687,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Anguilla's revised laws are the \"Revised Statutes of Anguilla,\" and the Act is the \"Aliens Land Holding Regulation Act.\""
+  },
+  {
+   "id": "ai-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3671,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Anguilla's relevant law is the \"Anguilla Utility Token Offering Act, 2018,\" not 2024; this citation appears fabricated."
+  },
+  {
+   "id": "ai-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2888,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This appears to be a fabricated citation; I cannot verify this specific regulation exists in Anguilla's official revised statutes."
+  },
+  {
+   "id": "ai-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2467,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Anguilla is the stated jurisdiction, but \"Bahamas Consolidated Legislation\" is a different jurisdiction's source; the citation is inconsistent and likely fabricated."
+  },
+  {
+   "id": "ai-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2067,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific Act exists in Anguilla's 1999 Revised Statutes; the citation appears fabricated and unverifiable."
+  },
+  {
+   "id": "ai-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1909,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Anguilla legislation is published via Anguilla's official gazette, not Cayman Islands Legislation, which serves a different jurisdiction entirely."
+  },
+  {
+   "id": "ai-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1640,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Anguilla's legislation is published in the Revised Statutes of Anguilla; the \"Aliens Land Holding Regulation Act\" is not an accurate title."
+  },
+  {
+   "id": "ai-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1463,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Anguilla Utility Token Offering Act dates from 2018, not 2024, and Anguilla publishes legislation independently, not via Sint Maarten."
+  }
+ ]
+}

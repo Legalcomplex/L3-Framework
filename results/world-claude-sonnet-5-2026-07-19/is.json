@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Iceland — Source-Grounded Citation Reliability (IS)",
+ "country": "IS",
+ "jurisdiction": "Iceland",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:55:48.780513+00:00",
+ "results": [
+  {
+   "id": "is-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2222,
+   "verdict": true,
+   "correct": true,
+   "raw": "**True.**  Lög um meðferð sakamála, nr. 88/2008 (12 June 2008), is genuinely published and consolidated in Lagasafn, Iceland's official consolidated legislation database, as claimed."
+  },
+  {
+   "id": "is-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2177,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated or unverifiable citation; I cannot confirm this regulation's existence, exact title, or 2026 publication date."
+  },
+  {
+   "id": "is-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1921,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific case citation; case numbers, party names, and dates in Icelandic Supreme Court records require direct database confirmation."
+  },
+  {
+   "id": "is-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2011,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This appears to be a fabricated or unverifiable citation—2026 is a future date, and I cannot confirm this specific decision exists in Yfirskattanefnd's actual published records."
+  },
+  {
+   "id": "is-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1908,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Lög um loftferðir (nr. 80/2022) is the original act; Lagasafn publishes consolidated legislation incorporating amendments, not standalone original statutes."
+  },
+  {
+   "id": "is-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2681,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated or unverifiable citation; regulation titles/dates cannot be confirmed as authentic without access to Iceland's official Stjórnartíðindi database."
+  },
+  {
+   "id": "is-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2303,
+   "verdict": true,
+   "correct": false,
+   "raw": "**True.**  Lög nr. 88/2008 um meðferð sakamála (Criminal Procedure Act, 12 June 2008) is genuinely published in Iceland's Lagasafn consolidated legislation database."
+  },
+  {
+   "id": "is-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2160,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This appears to be a plausible-sounding but unverifiable regulation title; I cannot confirm this specific instrument's actual publication date or existence."
+  },
+  {
+   "id": "is-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1376,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier mismatch (44/2024 vs. 44/2023) is inconsistent, and I cannot verify this specific case citation exists as described."
+  },
+  {
+   "id": "is-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1903,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** \"Úrskurður\" is an Icelandic legal term, not Norwegian court terminology, and the case number format doesn't match Høyesterett's citation conventions; also 2026 is a future date."
+  },
+  {
+   "id": "is-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1751,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Iceland's laws are published in *Stjórnartíðindi*, not Greenland's *Nalunaarutit*, which is Greenland's separate official legislative gazette system."
+  },
+  {
+   "id": "is-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1763,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** I cannot verify this specific regulation title, number, and publication date (2024-03-24) exist in Iceland's Stjórnartíðindi/reglugerð collection without direct source access."
+  }
+ ]
+}

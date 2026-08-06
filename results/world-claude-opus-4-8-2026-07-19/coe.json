@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Council of Europe — Source-Grounded Citation Reliability (CoE)",
+ "country": "COE",
+ "jurisdiction": "Council of Europe",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.75,
+ "correct": 9,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:11:10.085099+00:00",
+ "results": [
+  {
+   "id": "coe-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2355,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Venice Commission's CODICES database covers constitutional case-law, not financial scandal reporting; this fabricated citation lacks credible verification."
+  },
+  {
+   "id": "coe-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2486,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. HUDOC publishes official Court judgments; N.P. Engel Verlag is a separate publisher of translations, not HUDOC content."
+  },
+  {
+   "id": "coe-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2231,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The European Interim Agreement on Social Security (Old Age, Invalidity, Survivors), ETS No. 12, opened 11 December 1953."
+  },
+  {
+   "id": "coe-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2218,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. HUDOC-ESC is the official European Committee of Social Rights database publishing collective complaint decisions, including separate and dissenting opinions."
+  },
+  {
+   "id": "coe-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2011,
+   "verdict": false,
+   "correct": false,
+   "raw": "False—the date March 2026 is in the future, so this decision cannot yet exist or be published on HUDOC-EXEC."
+  },
+  {
+   "id": "coe-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2560,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. CODICES, maintained by the Venice Commission, uses this identifier format (country-year-decision) for constitutional case-law summaries, including Spanish decisions."
+  },
+  {
+   "id": "coe-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2361,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Venice Commission's CODICES database compiles constitutional case-law, not financial fraud decisions; this fabricated citation doesn't match."
+  },
+  {
+   "id": "coe-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2412,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. That ECLI corresponds to Lawless v. Ireland (No. 2), 7 April 1961, but the German translation attribution appears fabricated."
+  },
+  {
+   "id": "coe-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1691,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This is a Council of Europe treaty (ETS No. 12), not Isle of Man legislation from Tynwald."
+  },
+  {
+   "id": "coe-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2249,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. ECSR decisions are collective complaints; dissenting opinions attributed to specific named committee members in this format appear fabricated or misdescribed."
+  },
+  {
+   "id": "coe-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2240,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Council of Europe Committee of Ministers decisions are published by the Council of Europe itself, not JerseyLaw."
+  },
+  {
+   "id": "coe-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2385,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The code \"ESP\" indicates Spain (Spanish Constitutional Court), not Portugal. Portuguese decisions would carry the \"POR\" jurisdiction prefix instead."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Malawi — Source-Grounded Citation Reliability (MW)",
+ "country": "MW",
+ "jurisdiction": "Malawi",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:59:12.980947+00:00",
+ "results": [
+  {
+   "id": "mw-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2020,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific case citation exists—I have no reliable record of this particular decision, parties, or publication date in Malawi Judiciary records."
+  },
+  {
+   "id": "mw-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2040,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific citation's accuracy—Malawi LII may host this Act, but confirming exact publication date requires direct source access."
+  },
+  {
+   "id": "mw-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1778,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific directive's existence, exact title, or publication date from Reserve Bank of Malawi sources with confidence."
+  },
+  {
+   "id": "mw-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 5051,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This case cites a future date (2026), which cannot exist yet as an official published decision, making the claim unverifiable/false."
+  },
+  {
+   "id": "mw-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1864,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Malawi does not have an \"Advisory Committee on the Granting of Pardon Act\" — this appears to be a fabricated or misattributed citation; no such statute exists."
+  },
+  {
+   "id": "mw-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1882,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific citation exists; RBM's regulatory publications database doesn't confirm this exact document, date, or title."
+  },
+  {
+   "id": "mw-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2784,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** I cannot verify this specific case citation exists in Malawi Judiciary records; the case name, date, and source appear unconfirmed or potentially fabricated."
+  },
+  {
+   "id": "mw-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2014,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Accommodation and Refreshment Tax Act is Malawian legislation; it would be published through Malawi's official legal channels, not Tanzania's Attorney General's Office system."
+  },
+  {
+   "id": "mw-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1740,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Malawi's official legal notices are published in the Malawi Gazette, not the Seychelles Official Gazette—these are distinct national jurisdictions with separate publications."
+  },
+  {
+   "id": "mw-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1567,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific case citation exists in Malawi Judiciary records; the exact title, date, and details appear unconfirmed/fabricated."
+  },
+  {
+   "id": "mw-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1696,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** I cannot verify this specific Act, title, publication date, or its availability via Malawi LII without access to authoritative sources confirming these exact details."
+  },
+  {
+   "id": "mw-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1467,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The publication date (2026-04-15) is in the future relative to current knowledge, making this citation unverifiable and likely fabricated or inaccurate."
+  }
+ ]
+}

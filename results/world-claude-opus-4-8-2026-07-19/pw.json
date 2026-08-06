@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Palau — Source-Grounded Citation Reliability (PW)",
+ "country": "PW",
+ "jurisdiction": "Palau",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 11,
+ "blocked": 0,
+ "unparsed": 1,
+ "errors": [],
+ "accuracy": 0.5455,
+ "correct": 6,
+ "parse_rate": 0.9167,
+ "passed": false,
+ "timestamp": "2026-07-19T08:23:16.334081+00:00",
+ "results": [
+  {
+   "id": "pw-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2423,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific 2025 decision exists; the citation details may be fabricated, and I lack reliable confirmation."
+  },
+  {
+   "id": "pw-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 6302,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation exists; I lack reliable knowledge of this particular Palau Supreme Court decision."
+  },
+  {
+   "id": "pw-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2722,
+   "verdict": false,
+   "correct": false,
+   "raw": "I cannot verify this specific citation as authentic; without access to PacLII records, I cannot confirm its existence. False."
+  },
+  {
+   "id": "pw-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 3052,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation's authenticity; while PacLII hosts Palau court decisions, this exact case reference is unconfirmed."
+  },
+  {
+   "id": "pw-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2303,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific decision exists; the citation may be fabricated, and I lack reliable data confirming it."
+  },
+  {
+   "id": "pw-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 4854,
+   "verdict": null,
+   "correct": false,
+   "raw": "I cannot verify this specific citation as authentic. Without access to PacLII's database, I cannot confirm this decision's existence or accuracy."
+  },
+  {
+   "id": "pw-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2743,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Palau Supreme Court decisions (PWSC citation) are Palauan sources, not published by the Federal Court of Australia."
+  },
+  {
+   "id": "pw-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2731,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. PWSC denotes Palau Supreme Court; it would be published by PacLII, not Nauru's RONLAW database."
+  },
+  {
+   "id": "pw-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1887,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. \"PWSC\" denotes Palau Supreme Court; a Palau decision wouldn't be published by Tonga's Attorney General."
+  },
+  {
+   "id": "pw-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 4638,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The citation \"PWSC\" denotes Palau Supreme Court; a Palau decision would be published by Palau's Judiciary, not Marshall Islands."
+  },
+  {
+   "id": "pw-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1828,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Open Australian Legal Corpus covers Australian jurisdictions, not Palau; Palauan Supreme Court decisions would not appear there."
+  },
+  {
+   "id": "pw-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1814,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Open Australian Legal Corpus covers Australian jurisdictions, not Palau; a Palau Supreme Court decision wouldn't appear there."
+  }
+ ]
+}

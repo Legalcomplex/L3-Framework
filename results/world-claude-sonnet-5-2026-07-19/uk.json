@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — United Kingdom — Source-Grounded Citation Reliability (UK)",
+ "country": "UK",
+ "jurisdiction": "United Kingdom",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:04:40.192754+00:00",
+ "results": [
+  {
+   "id": "uk-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2215,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This case exists but I cannot verify the specific citation, date, or National Archives publication details without risking fabrication of legal authority."
+  },
+  {
+   "id": "uk-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2416,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The date is in the future (2026), so this decision cannot yet exist or be published as an official record."
+  },
+  {
+   "id": "uk-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2468,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This identifier appears fabricated—the Mental Health Act 2025 with this specific URL structure and date isn't a verifiable legislation.gov.uk entry."
+  },
+  {
+   "id": "uk-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1961,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. As of my knowledge cutoff, no such Act exists on legislation.gov.uk; this appears to be a fabricated or unverifiable future citation."
+  },
+  {
+   "id": "uk-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 3305,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific claim—no reliable record confirms a Competition Appeal Tribunal judgment titled exactly this, dated 2003-03-03, exists officially."
+  },
+  {
+   "id": "uk-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2233,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific case citation exists—case numbers, party names, and dates for tribunal decisions require direct database confirmation, which I lack."
+  },
+  {
+   "id": "uk-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2172,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Bank St Petersburg PJSC v Arkhangelsky is a genuine Court of Appeal case, but its actual judgment date is 2020, not 22 December 2017."
+  },
+  {
+   "id": "uk-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 4945,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** I cannot verify this specific case citation exists in UK Find Case Law's database; the case name, date, or parties may be fabricated or inaccurate."
+  },
+  {
+   "id": "uk-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1897,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This appears fabricated; I cannot verify a Mental Health Act 2025 exists with that identifier, and future-dated legislation entries are inherently unreliable."
+  },
+  {
+   "id": "uk-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1893,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — this Act had not received Royal Assent or been assigned that legislation.gov.uk chapter number by the claimed date; the citation is unverifiable/fabricated."
+  },
+  {
+   "id": "uk-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1726,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The jurisdiction specified is United Kingdom, but the Verwaltungsgerichtshof is Austria's Supreme Administrative Court, creating a jurisdictional inconsistency/mismatch."
+  },
+  {
+   "id": "uk-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1702,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** UK Employment Tribunal decisions are published on the UK's official register/gov.uk, not Germany's NeuRIS portal, which covers only German federal law."
+  }
+ ]
+}

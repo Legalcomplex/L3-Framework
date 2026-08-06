@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Sint Maarten — Source-Grounded Citation Reliability (SX)",
+ "country": "SX",
+ "jurisdiction": "Sint Maarten",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:03:10.998959+00:00",
+ "results": [
+  {
+   "id": "sx-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1941,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date (2026) is in the future relative to my knowledge cutoff, making this citation unverifiable and likely fictitious or fabricated."
+  },
+  {
+   "id": "sx-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2301,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. CVDR (Centrale Voorziening Decentrale Regelgeving) identifiers pertain to Dutch municipal/decentralized regulations, not Sint Maarten's national legislation system, making this attribution impl"
+  },
+  {
+   "id": "sx-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 8402,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This ECLI references a 2026 future date, which cannot currently be verified as an existing official decision—likely fabricated or hypothetical, not a real source."
+  },
+  {
+   "id": "sx-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2187,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date (2026-03-03) is in the future relative to current knowledge, making this ECLI citation unverifiable and likely fabricated."
+  },
+  {
+   "id": "sx-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 4530,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date is in the future (2026), so this decision cannot have been issued or published yet as claimed."
+  },
+  {
+   "id": "sx-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2179,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. CVDR identifiers/codes are specific to Dutch (Netherlands) municipal/provincial regulations database; Sint Maarten legislation isn't catalogued under CVDR identifiers this way."
+  },
+  {
+   "id": "sx-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2916,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. ECLI:NL:OGHACMB decisions are Dutch Caribbean joint court rulings published via rechtspraak.nl, not Cayman Islands' judicial.ky, an unrelated jurisdiction's publisher."
+  },
+  {
+   "id": "sx-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2545,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. CVDR identifiers correspond to Dutch (Netherlands municipal/regional) legislation via CVDR/KOOP repository, not Sint Maarten's official legal publications system."
+  },
+  {
+   "id": "sx-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 3269,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** ECLI:NL identifiers denote Dutch/Caribbean Netherlands courts; the Gemeenschappelijk Hof is a Caribbean joint court, not Bermuda's Supreme Court—wrong publisher entirely."
+  },
+  {
+   "id": "sx-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1762,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The ECLI prefix \"NL\" and court name indicate this is a Dutch Caribbean joint court decision, not a Bahamas Court of Appeal judgment."
+  },
+  {
+   "id": "sx-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1976,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. ECLI:NL:OGHACMB decisions are published by the Dutch/Caribbean judiciary (rechtspraak.nl), not the BVI Commercial Court, an unrelated jurisdiction's court."
+  },
+  {
+   "id": "sx-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1758,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. CVDR identifiers are Dutch national repository codes for Netherlands municipal/provincial regulations, not Sint Maarten legislation; this specific claim cannot be verified as accurate."
+  }
+ ]
+}

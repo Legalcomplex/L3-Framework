@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Luxembourg — Source-Grounded Citation Reliability (LU)",
+ "country": "LU",
+ "jurisdiction": "Luxembourg",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:57:30.945621+00:00",
+ "results": [
+  {
+   "id": "lu-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3227,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this appears to be a fabricated or unverifiable citation; I cannot confirm a law with this exact date, title, and content exists in Legilux."
+  },
+  {
+   "id": "lu-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1856,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The date 2026-03-27 is in the future relative to my knowledge, making this citation unverifiable and almost certainly fabricated or inaccurate."
+  },
+  {
+   "id": "lu-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1893,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This cites a future-dated decision (2026-03-26), which cannot exist yet, indicating a fabricated or unverifiable bibliographic reference."
+  },
+  {
+   "id": "lu-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2273,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this appears to be a fabricated/unverifiable future-dated citation; I cannot confirm such a specific decision actually exists in official records."
+  },
+  {
+   "id": "lu-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2072,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This citation appears fabricated or unverifiable; I have no evidence confirming a decision \"2014-AV-05\" exists in Luxembourg Competition Authority records."
+  },
+  {
+   "id": "lu-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2188,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this claim; it references a future/unconfirmed 2025 law, and I have no reliable record of its actual promulgation or Legilux publication."
+  },
+  {
+   "id": "lu-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2074,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** German Federal Law (Gesetze im Internet) publishes German federal legislation, not Luxembourg laws, which appear in Luxembourg's Mémorial/Journal Officiel instead."
+  },
+  {
+   "id": "lu-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1928,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The ECLI identifier number \"49350\" does not match the stated case number \"49349,\" creating an internal inconsistency that invalidates the claimed correspondence."
+  },
+  {
+   "id": "lu-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1570,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier JPLBAIL-1323 mismatches the referenced number 1322, and 2026 is a future date, indicating fabrication."
+  },
+  {
+   "id": "lu-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2960,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Entscheidsuche.ch publishes Swiss court decisions, not Luxembourg ones; Luxembourg decisions are published via Luxembourg's own judicial portals, e.g., Justel or the Cour de cassation websi"
+  },
+  {
+   "id": "lu-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1570,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Luxembourg is the stated jurisdiction, but the German Federal Labor Court (Bundesarbeitsgericht) is a German court, creating a jurisdictional mismatch."
+  },
+  {
+   "id": "lu-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1815,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Normattiva is Italy's legal database, not Luxembourg's; Luxembourg laws are published in the Journal Officiel (Legilux), not Normattiva."
+  }
+ ]
+}

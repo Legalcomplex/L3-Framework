@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Barbados — Source-Grounded Citation Reliability (BB)",
+ "country": "BB",
+ "jurisdiction": "Barbados",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:49:24.469214+00:00",
+ "results": [
+  {
+   "id": "bb-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1934,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific case exists in Barbados Judiciary records; the citation details appear unconfirmed and potentially fabricated."
+  },
+  {
+   "id": "bb-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2326,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This is a future-dated, unverifiable claim; I cannot confirm the Gazette's existence, volume numbering, or S.I. #55 details for 2026."
+  },
+  {
+   "id": "bb-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2119,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This citation cannot be verified as accurate; Barbados subsidiary legislation identifiers and titles require confirmation against official Attorney General records, which are not reliably acces"
+  },
+  {
+   "id": "bb-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1949,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific decision exists in official Barbados Employment Rights Tribunal records; the citation appears fabricated or unverifiable."
+  },
+  {
+   "id": "bb-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2055,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Financial Services Commission Act is Chapter 310A of Barbados law, enacted in 2010/2011, but this specific citation format cannot be verified as accurate."
+  },
+  {
+   "id": "bb-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2056,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific decision's existence, exact title, or publication date from the Barbados Fair Trading Commission's official records with confidence."
+  },
+  {
+   "id": "bb-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2731,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** I cannot verify this specific case citation exists—I have no reliable record confirming \"Shekelia Johnson v The Queen\" was published on that date/source."
+  },
+  {
+   "id": "bb-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 6914,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Barbados uses its own Official Gazette; \"Bermuda Laws Online\" is a distinct jurisdiction's legal database, not Barbados's publisher."
+  },
+  {
+   "id": "bb-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1610,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier's citation as \"Cap110B'A'\" conflicts with the corresponding entry's \"Cap109B'A'\" — a chapter number mismatch signals inconsistent citation."
+  },
+  {
+   "id": "bb-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1694,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The claim mixes jurisdictions—Barbados is stated, but the source cited (judicial.ky) is the Cayman Islands' judiciary website, not Barbadian."
+  },
+  {
+   "id": "bb-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1791,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Financial Services Commission Act is Barbados Cap. 306, enacted 2010 by Parliament, not \"published via\" the FSC's guidelines webpage."
+  },
+  {
+   "id": "bb-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1660,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** I cannot verify this specific decision title, date, or citation against actual Barbados FTC records, as I lack reliable access to confirm this precise bibliographic detail."
+  }
+ ]
+}

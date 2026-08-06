@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — U.S. Virgin Islands — Source-Grounded Citation Reliability (VI)",
+ "country": "VI",
+ "jurisdiction": "U.S. Virgin Islands",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:47:10.394948+00:00",
+ "results": [
+  {
+   "id": "vi-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1540,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The specific decision title and date provided cannot be verified as an official USVI Supreme Court Opinion without access to current court dockets. Verification requires confirmed publication"
+  },
+  {
+   "id": "vi-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1418,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** No publicly accessible record exists of this case decision from the USVI Superior Court with this citation date and defendant name in official legal databases."
+  },
+  {
+   "id": "vi-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1426,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this claim as I lack access to the official USVI Supreme Court opinion database and its identifier system to confirm the case number, parties, or date correspondence."
+  },
+  {
+   "id": "vi-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1612,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The case title contains a racial slur, making it an implausible authentic legal citation. Official court opinions use standardized case naming conventions and avoid such language."
+  },
+  {
+   "id": "vi-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1977,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No verifiable record of a USVI Supreme Court case titled \"Richards v. Public Employees Relations Board\" with a 2024-12-27 decision date exists in accessible official repositories."
+  },
+  {
+   "id": "vi-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2661,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The identifier format and case details cannot be verified against official USVI Superior Court records. The 2025 date is also problematic as it's in the future."
+  },
+  {
+   "id": "vi-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1886,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  I cannot verify this specific case identifier and citation. USVI Supreme Court docket numbering systems and their correspondence to particular cases require access to official court records"
+  },
+  {
+   "id": "vi-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1616,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The identifier format and case details cannot be verified against official USVI Superior Court records. The \"SX\" prefix and specific docket structure require authentication from the actual co"
+  },
+  {
+   "id": "vi-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1196,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The U.S. Virgin Islands Supreme Court does not publish decisions under the format \"Magras vs. People of the VI\" (2021-12-18). This citation style and case name appear inconsistent with offi"
+  },
+  {
+   "id": "vi-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1196,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The case title contains a racial slur, making it unlikely to be a genuine official USVI Superior Court published opinion. Official court documents use appropriate legal naming conventions."
+  },
+  {
+   "id": "vi-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1231,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The U.S. Virgin Islands and British Virgin Islands are distinct jurisdictions. A U.S.V.I. case would not be published by a BVI (British Virgin Islands) court authority."
+  },
+  {
+   "id": "vi-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2285,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The U.S. Virgin Islands has its own court system independent of Bermuda. Cases from the U.S. Virgin Islands would not be published by the Bermuda Supreme Court."
+  }
+ ]
+}

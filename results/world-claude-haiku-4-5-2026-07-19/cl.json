@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Chile — Source-Grounded Citation Reliability (CL)",
+ "country": "CL",
+ "jurisdiction": "Chile",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:35:14.906769+00:00",
+ "results": [
+  {
+   "id": "cl-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1861,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The publication date (2026-05-07) is in the future and impossible. BCN Ley Chile publishes laws that have already been enacted, not prospective legislation."
+  },
+  {
+   "id": "cl-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1421,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The publication date of 2026-02-11 is in the future, making this claim implausible. Official legal sources cannot be published in advance."
+  },
+  {
+   "id": "cl-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 4602,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The TDLC (Tribunal de Defensa de la Libre Competencia) is Chile's competition tribunal, but this decision appears to reference a specific case that would require verification of actual TDLC"
+  },
+  {
+   "id": "cl-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1625,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  This appears to be a CMF circular or instruction, not a formal legal source. CMF documents are administrative guidance, not binding legislation equivalent to laws or decrees in Chile's lega"
+  },
+  {
+   "id": "cl-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1816,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The TDLC (Tribunal de Defensa de la Libre Competencia) is an independent court, not an FNE publication body. The FNE prosecutes cases before the TDLC but does not publish its sentencias."
+  },
+  {
+   "id": "cl-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1531,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Tribunales Tributarios y Aduaneros (TTA) does not publish individual case decisions. Decisions are published by the courts themselves or legal databases, not by TTA as an institution."
+  },
+  {
+   "id": "cl-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1733,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This document cannot be Chilean legislation published by Colombia's Senate Secretariat. Chile and Colombia are separate nations with distinct legal systems and publishing authorities."
+  },
+  {
+   "id": "cl-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1800,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The cited source is incorrect. This document pertains to Chilean education law (Ley Nº 20.370), not Uruguayan legislation. Uruguay's IMPO would not publish Chilean laws as official sources."
+  },
+  {
+   "id": "cl-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1266,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The decision number and date are inconsistent. A 2023 sentencia cannot be published in 2021. Additionally, verification of this specific case is necessary."
+  },
+  {
+   "id": "cl-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1292,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The title is incomplete and lacks a specific instrument number. CMF circulars require complete identification with resolution numbers to constitute official legal sources."
+  },
+  {
+   "id": "cl-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1256,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The TDLC (Tribunal de Defensa de la Libre Competencia) is an independent judicial body, not the FNE. While FNE can bring cases before TDLC, the tribunal publishes its own decisions."
+  },
+  {
+   "id": "cl-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1669,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This decision would be published by the Court of Appeals (Corte de Apelaciones) or relevant tax court, not the TTA administrative body itself. The TTA administers procedures but courts issu"
+  }
+ ]
+}

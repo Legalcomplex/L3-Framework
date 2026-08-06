@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Argentina — Source-Grounded Citation Reliability (AR)",
+ "country": "AR",
+ "jurisdiction": "Argentina",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:48:49.703749+00:00",
+ "results": [
+  {
+   "id": "ar-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2587,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — the date 2026-04-15 is future/impossible for verification, and the circular reference details cannot be authenticated as accurate."
+  },
+  {
+   "id": "ar-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2000,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific InfoLEG entry, title, or publication date; no reliable record confirms this exact claim exists."
+  },
+  {
+   "id": "ar-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2044,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific case citation exists in JUBA's database; I lack reliable access to confirm this exact decision's details."
+  },
+  {
+   "id": "ar-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2247,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. Ley 5798 (2017), on reurbanization/integration of Villa 31/31 bis, was enacted by the CABA Legislature and published via CEDOM accordingly."
+  },
+  {
+   "id": "ar-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2192,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — the case is dated 2026-02-26, a future date not yet occurred, so this decision cannot have been officially published or verified as claimed."
+  },
+  {
+   "id": "ar-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2215,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific case citation exists; it appears to reference a future/unverifiable date, suggesting fabrication or hallucination."
+  },
+  {
+   "id": "ar-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1955,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This is a Central Bank (BCRA) circular reference, not a legislative document, so the Chamber of Deputies Open Data API attribution is implausible."
+  },
+  {
+   "id": "ar-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1988,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. \"Chile BCN Linked Open Data\" is Chile's legal database, not Argentina's; this jurisdiction mismatch makes the citation source implausible."
+  },
+  {
+   "id": "ar-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1609,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific case citation exists in JUBA's database; fabricated case names/dates are common errors requiring verification."
+  },
+  {
+   "id": "ar-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2289,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Ley N° 5798 is an Argentine (Buenos Aires City) law; \"Querido Diário\" indexes Brazilian municipal gazettes only, not Argentine legislation."
+  },
+  {
+   "id": "ar-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1562,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific case citation, date, and court combination exists; I lack reliable access to confirm this precise ruling's authenticity."
+  },
+  {
+   "id": "ar-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1506,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific case citation exists with these exact parties, date, and court—it appears potentially fabricated or unverifiable."
+  }
+ ]
+}

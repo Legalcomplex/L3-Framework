@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Malawi — Source-Grounded Citation Reliability (MW)",
+ "country": "MW",
+ "jurisdiction": "Malawi",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:42:09.799726+00:00",
+ "results": [
+  {
+   "id": "mw-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2383,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The decision date is October 1, 2025—a future date. Official judicial decisions cannot be published before they occur. This appears to be a fabricated or hypothetical case."
+  },
+  {
+   "id": "mw-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1385,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Accommodation and Refreshment Tax Act does not appear in documented Malawi Legal Information Institute records for May 1, 1982, or nearby dates in accessible sources."
+  },
+  {
+   "id": "mw-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2067,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No evidence confirms this directive was published by the Reserve Bank of Malawi on 2024-06-27. The specific title and date cannot be verified from available official sources."
+  },
+  {
+   "id": "mw-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1883,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The decision date of 2026-01-01 is in the future, making this claim impossible. No court decision can be published with a future date from the present."
+  },
+  {
+   "id": "mw-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1875,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Malawi Legal Information Institute (Malawi LII) was established in 2011, making a 1995 publication date impossible. The source attribution is chronologically inconsistent."
+  },
+  {
+   "id": "mw-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1960,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Reserve Bank of Malawi has not published a document titled 'Liquidity Coverage Ratio Guidelines 2024' with the specified 2025-04-15 publication date. This cannot be verified as authenti"
+  },
+  {
+   "id": "mw-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1791,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** No such decision can be verified in official Malawi Judiciary records. The case name, date, and parties appear fabricated or misattributed to an unreliable source."
+  },
+  {
+   "id": "mw-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1728,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The 'Accommodation and Refreshment Tax Act' would be a Malawian law, not Tanzanian. Tanzania Attorney General's Office would not be the publisher of Malawian legislation."
+  },
+  {
+   "id": "mw-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2386,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This directive pertains to banking regulation in Seychelles, not Malawi. The claim misidentifies the jurisdiction of both the source and the legal instrument."
+  },
+  {
+   "id": "mw-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1709,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This decision cannot be verified as an official Malawi Judiciary publication. The case name and 2024 date lack corroborating evidence in accessible Malawi judicial databases or official rep"
+  },
+  {
+   "id": "mw-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1336,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** No evidence exists of an 'Advisory Committee on the Granting of Pardon Act' in Malawi's official legislation. The cited date and source cannot be verified."
+  },
+  {
+   "id": "mw-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 983,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The publication date (2026-04-15) is in the future, making this claim impossible. Official guidelines cannot be published in advance."
+  }
+ ]
+}

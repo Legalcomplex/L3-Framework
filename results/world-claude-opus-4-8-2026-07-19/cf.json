@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Central African Republic — Source-Grounded Citation Reliability (CF)",
+ "country": "CF",
+ "jurisdiction": "Central African Republic",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:09:50.455337+00:00",
+ "results": [
+  {
+   "id": "cf-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2245,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Central African Republic's highest court is the Cour de cassation, but I cannot verify this specific citation's authenticity."
+  },
+  {
+   "id": "cf-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2603,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Central African Republic's highest court structure and Juricaf coverage make this specific citation unverifiable; likely fabricated details."
+  },
+  {
+   "id": "cf-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2179,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific identifier exists; the CAR's highest court structure and Juricaf holdings make this claim unconfirmable."
+  },
+  {
+   "id": "cf-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2383,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Central African Republic's highest court is the Cour de cassation, but Juricaf coverage and this specific citation cannot be verified."
+  },
+  {
+   "id": "cf-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2292,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Central African Republic's highest court is the Cour de Cassation, but verifying this specific citation's existence via Juricaf is uncertain."
+  },
+  {
+   "id": "cf-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2462,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Central African Republic's supreme jurisdiction is the Cour de cassation, but this specific identifier and decision cannot be verified."
+  },
+  {
+   "id": "cf-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2126,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier ends in \"049\" while the cited decision number is \"048\"—these digits mismatch, indicating inconsistent records."
+  },
+  {
+   "id": "cf-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2318,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier ends in 046 while the cited decision number is 045, creating an inconsistency that invalidates the correspondence."
+  },
+  {
+   "id": "cf-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2183,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Angola and the Central African Republic are separate countries; a CAR Cour de cassation ruling wouldn't be published there."
+  },
+  {
+   "id": "cf-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1989,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Central African Republic and Congo-Brazzaville are separate jurisdictions; a CAR Cour de cassation ruling wouldn't publish there."
+  },
+  {
+   "id": "cf-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2154,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Droit Congolais covers Democratic Republic of Congo legislation, not Central African Republic sources; jurisdictional mismatch makes this citation implausible."
+  },
+  {
+   "id": "cf-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2004,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Cour de cassation of the Central African Republic wouldn't publish through Cameroon's Presidency official acts; jurisdictions differ."
+  }
+ ]
+}

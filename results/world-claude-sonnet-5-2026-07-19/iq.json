@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Iraq — Source-Grounded Citation Reliability (IQ)",
+ "country": "IQ",
+ "jurisdiction": "Iraq",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:55:40.634251+00:00",
+ "results": [
+  {
+   "id": "iq-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2016,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This citation lacks verifiable specificity—law numbers, dates, and publishing authority for Kurdistan Region legislation require official Gazette confirmation, not assumed accuracy."
+  },
+  {
+   "id": "iq-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3172,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Kurdistan Region Parliament was not established until 1992 (first elected in May 1992), making a legislation from January 1, 1992 implausible/unverifiable."
+  },
+  {
+   "id": "iq-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2239,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Law No. 12 of 1992 concerning the Kurdistan Region Justice Ministry appears misattributed/unverifiable; exact citation details require verification against official Kurdistan Gazette records."
+  },
+  {
+   "id": "iq-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2166,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This citation lacks verifiable specifics (issuing authority details, official gazette publication, exact article), making confirmation of its authenticity currently impossible."
+  },
+  {
+   "id": "iq-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2736,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific citation's accuracy—the exact law number, ministry title, and 1992 date combination require confirmation against actual official Kurdistan Region gazette recor"
+  },
+  {
+   "id": "iq-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2177,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This citation lacks verifiable specificity—the vague title, generic \"1992-01-01\" date, and unconfirmed source details suggest fabrication rather than an authentic verifiable legal publication."
+  },
+  {
+   "id": "iq-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2068,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This is an Iraqi/Kurdistan Ministry of Endowments and Islamic Affairs law, unrelated to Saudi Arabia's central bank (SAMA) publications entirely."
+  },
+  {
+   "id": "iq-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2167,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. ADGM (Abu Dhabi Global Market) is a UAE financial free zone framework, entirely unrelated to Kurdistan Region Iraq's Council of Ministers legislation from 1992."
+  },
+  {
+   "id": "iq-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1648,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The DIFC Legal Database publishes Dubai International Financial Centre laws, not Kurdistan Region of Iraq legislation like this Ministry of Justice law."
+  },
+  {
+   "id": "iq-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1906,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Israel's Knesset/Hasadna platform publishes Israeli legislation, not Iraqi Kurdish-language laws; this citation's source attribution is implausible and mismatched."
+  },
+  {
+   "id": "iq-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1727,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Jordan's Legislation and Opinion Bureau does not publish Iraqi Kurdistan Ministry of Education laws; this citation misattributes jurisdiction and source authority."
+  },
+  {
+   "id": "iq-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1587,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. ADGM Legal Framework governs Abu Dhabi Global Market's financial free zone, unrelated to Kurdistan Region-Iraq's regional legislation."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Bahamas — Source-Grounded Citation Reliability (BS)",
+ "country": "BS",
+ "jurisdiction": "Bahamas",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 11,
+ "blocked": 0,
+ "unparsed": 1,
+ "errors": [],
+ "accuracy": 0.4545,
+ "correct": 5,
+ "parse_rate": 0.9167,
+ "passed": false,
+ "timestamp": "2026-07-19T07:34:29.073089+00:00",
+ "results": [
+  {
+   "id": "bs-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2507,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  This decision cannot be authenticated as a legitimate Bahamas Court of Appeal judgment because the date (2026-04-17) is in the future, making it impossible to verify as an actual published "
+  },
+  {
+   "id": "bs-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1537,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Bahamas Consolidated Legislation does not publish acts; it compiles existing legislation. Acts are published in the official Gazette, not by the consolidation service itself."
+  },
+  {
+   "id": "bs-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1961,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-03-23 is in the future and cannot represent an actual Supreme Court judgment. Official legal decisions must have historical dates."
+  },
+  {
+   "id": "bs-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1954,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Bahamas Legislation website publishes acts after royal assent, but no Agricultural Sales and Services Act, 2023 appears in official records as of my knowledge cutoff."
+  },
+  {
+   "id": "bs-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1620,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Bahamas Official Gazette did not publish this form in 2026, as that date is in the future. Current publication records cannot verify future publications."
+  },
+  {
+   "id": "bs-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1572,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The decision date is 2026-04-13 (April 13, 2026), which is in the future. No court judgment can be published from a date that has not yet occurred."
+  },
+  {
+   "id": "bs-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 3230,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This decision cannot be verified as a legitimate Bahamas Court of Appeal judgment. The future date (2025-04-17) and lack of verifiable case citation make authenticity impossible to confirm."
+  },
+  {
+   "id": "bs-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2614,
+   "verdict": null,
+   "correct": false,
+   "raw": "I cannot verify this claim with certainty. The identifier '2789df7345070a57' cannot be reliably cross-referenced against publicly available Bahamas Consolidated Legislation databases without direct ac"
+  },
+  {
+   "id": "bs-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1772,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  I cannot verify this claim as I lack access to the Bahamas Supreme Court Judgment database or its indexing system to confirm the identifier-document correspondence."
+  },
+  {
+   "id": "bs-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1149,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Agricultural Sales and Services Act, 2023 is a Bahamian statute, not Cayman Islands legislation. The jurisdictions are distinct and separate."
+  },
+  {
+   "id": "bs-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1121,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Bahamas and Grenada are distinct jurisdictions. A Grenadian legal publication cannot be an official Bahamian legal source."
+  },
+  {
+   "id": "bs-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1173,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The decision date is April 13, 2025—a future date. No court can publish judgments from future dates, making this claim impossible and therefore false."
+  }
+ ]
+}

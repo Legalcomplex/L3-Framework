@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — United Kingdom — Source-Grounded Citation Reliability (UK)",
+ "country": "UK",
+ "jurisdiction": "United Kingdom",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:46:34.693959+00:00",
+ "results": [
+  {
+   "id": "uk-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1512,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This case involves a Russian bank and appears to relate to Russian law/parties, making it unlikely to be published as a UK official legal source by the National Archives."
+  },
+  {
+   "id": "uk-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1422,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The decision is dated 2026-03-24, which is in the future. No court decision can be published from a date that has not yet occurred."
+  },
+  {
+   "id": "uk-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1654,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier format suggests a 2025 Act with a 2026 commencement date, but no Mental Health Act 2025 has been enacted in UK legislation as of current records."
+  },
+  {
+   "id": "uk-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1635,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  This act does not exist. As of my knowledge cutoff (April 2024), no such legislation has been enacted or published. The 2026 date is in the future."
+  },
+  {
+   "id": "uk-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1400,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Competition Appeal Tribunal was established in 2003. A judgment dated 2003-03-03 predates or falls at the tribunal's inception, making publication attribution questionable."
+  },
+  {
+   "id": "uk-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1939,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Employment Tribunal decisions are published by BAILII (British and Irish Legal Information Institute) or the Employment Tribunals Service, not as standalone official publishers. The referen"
+  },
+  {
+   "id": "uk-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 4305,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This case is a Russian commercial arbitration decision, not a UK case, and would not be published by UK Case Law (National Archives) as an official source."
+  },
+  {
+   "id": "uk-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1314,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This case does not appear in UK Find Case Law's official database. The name, date, and parties do not match any published judgment in the National Archives collection."
+  },
+  {
+   "id": "uk-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1216,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The identifier structure suggests a 2025 Act with a February 2026 date, which is inconsistent. UK legislation identifiers use commencement dates, not future dates relative to enactment."
+  },
+  {
+   "id": "uk-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1488,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The year 2026 is in the future. As of my knowledge cutoff (April 2024), no legislation from 2026 exists in official UK records."
+  },
+  {
+   "id": "uk-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1295,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Austrian Supreme Administrative Court (Verwaltungsgerichtshof) publishes decisions in German, and this decision's title format and dating don't match standard Austrian court publication"
+  },
+  {
+   "id": "uk-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1094,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The case reference format and name suggest a UK employment tribunal decision, not a German federal court decision. Germany's NeuRIS would not publish UK tribunal cases."
+  }
+ ]
+}

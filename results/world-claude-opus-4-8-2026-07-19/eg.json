@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Egypt — Source-Grounded Citation Reliability (EG)",
+ "country": "EG",
+ "jurisdiction": "Egypt",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:12:03.881484+00:00",
+ "results": [
+  {
+   "id": "eg-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 3018,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This phrasing describes urgent-relief court pleadings/requests, not Supreme Constitutional Court rulings, which don't issue such expedited stay-of-execution decisions."
+  },
+  {
+   "id": "eg-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 3021,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Article 302(2) and articles 303, 306, 307 concern defamation; no such unconstitutionality ruling on this date is verifiable."
+  },
+  {
+   "id": "eg-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 5373,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Egyptian Supreme Constitutional Court decisions are published in the Official Gazette (الجريدة الرسمية), not by the Court itself."
+  },
+  {
+   "id": "eg-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2337,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Article 341 of the Egyptian Penal Code concerns breach of trust and has not been ruled unconstitutional."
+  },
+  {
+   "id": "eg-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2302,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such SCC ruling exists on these defamation/penal code articles for that date; the citation appears fabricated or inaccurate."
+  },
+  {
+   "id": "eg-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2474,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This text is a litigant's petition requesting urgent stay of execution, not an official published SCC decision."
+  },
+  {
+   "id": "eg-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2420,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Egyptian Supreme Constitutional Court rules on constitutionality, not urgent stay of judgment execution requests; this reflects administrative/ordinary court phrasing."
+  },
+  {
+   "id": "eg-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2187,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Article 302(2) penalties (defamation/libel) were not ruled unconstitutional; the cited provisions and unconstitutionality claim appear fabricated or inaccurate."
+  },
+  {
+   "id": "eg-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 5745,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This is an Egyptian constitutional court ruling on Penal Code articles, not published by Morocco's Competition Council."
+  },
+  {
+   "id": "eg-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1707,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Egyptian penal/criminal procedure articles fall under Egypt's Supreme Constitutional Court jurisdiction, not Algeria's Constitutional Court."
+  },
+  {
+   "id": "eg-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2318,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No such 2004 SCC ruling striking down these Penal Code defamation articles exists; this citation appears fabricated or misattributed."
+  },
+  {
+   "id": "eg-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1895,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This text is a litigant's petition requesting urgent stay of execution, not an official published SCC decision."
+  }
+ ]
+}

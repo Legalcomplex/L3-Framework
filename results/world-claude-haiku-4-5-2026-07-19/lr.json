@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Liberia — Source-Grounded Citation Reliability (LR)",
+ "country": "LR",
+ "jurisdiction": "Liberia",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:40:31.301058+00:00",
+ "results": [
+  {
+   "id": "lr-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2169,
+   "verdict": false,
+   "correct": false,
+   "raw": "# Evaluation: **FALSE**  The Central Bank of Liberia's official regulatory database does not confirm this specific regulation number and title with the cited 2018-05-09 publication date as a verified "
+  },
+  {
+   "id": "lr-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1865,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The decision is dated 02/12/2026, which is a future date. No court decision can be published from that time period yet, making this claim invalid."
+  },
+  {
+   "id": "lr-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2752,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Liberia's tariff schedules are typically managed by the Ministry of Finance or Customs Authority, not specifically branded as \"Liberia Revenue Authority\" with that exact 2012 publication fo"
+  },
+  {
+   "id": "lr-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1370,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Liberia Legal Information Institute (LibLII) was not established until 2010. This 1976 decision predates the institute's existence by 34 years."
+  },
+  {
+   "id": "lr-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1553,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No verifiable evidence confirms this specific regulation was published by the Central Bank of Liberia on that exact date. Liberian legal documentation accessibility is limited."
+  },
+  {
+   "id": "lr-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 6743,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The decision is dated 02/13/2026, which is a future date. No court decision can be published from that date in 2026."
+  },
+  {
+   "id": "lr-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1740,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The identifier references \"related party regulations\" from December 2018, while the cited regulation concerns supervisory intervention from May 2017—different subjects and dates."
+  },
+  {
+   "id": "lr-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1561,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  NigeriaLII publishes Nigerian legal decisions, not Liberian ones. This case involves Liberian courts and should be published by a Liberian legal database, not Nigeria's."
+  },
+  {
+   "id": "lr-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1388,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Ghana Parliament Institutional Repository would not publish Liberian tariff documents. This source should originate from Liberian customs or government institutions, not Ghana's parliam"
+  },
+  {
+   "id": "lr-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2059,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The decision is from Liberia's Supreme Court (LRSC = Liberian Reports Supreme Court), not Côte d'Ivoire's Supreme Court, as indicated by the jurisdiction and citation format."
+  },
+  {
+   "id": "lr-src-f05",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1063,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The identifier specifies December 2018 as the document date, but the claim provides September 18, 2018, creating a three-month discrepancy in dating."
+  },
+  {
+   "id": "lr-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1156,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The decision is attributed to Senegal's Supreme Court, but the jurisdiction specified is Liberia. The case involves Liberian parties and should be decided by Liberian courts, not Senegalese"
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Netherlands — Source-Grounded Citation Reliability (NL)",
+ "country": "NL",
+ "jurisdiction": "Netherlands",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:42:37.978476+00:00",
+ "results": [
+  {
+   "id": "nl-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1440,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The ECLI identifier contains a future date (2026), which cannot exist yet. This decision cannot be a published official source from rechtspraak.nl."
+  },
+  {
+   "id": "nl-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1898,
+   "verdict": true,
+   "correct": true,
+   "raw": "# Evaluation: True  **Explanation:** This format is consistent with Dutch legislative procedure. Royal Decrees (Besluiten) establishing entry-into-force dates are standard official acts published in t"
+  },
+  {
+   "id": "nl-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1503,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. BWBR0001827 identifies the Code of Civil Procedure (Wetboek van Burgerlijke Rechtsvordering) generally, not specifically its digital procedure variant version from 2002."
+  },
+  {
+   "id": "nl-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1801,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Dutch Data Protection Authority (Autoriteit Persoonsgegevens) issues decisions on GDPR and Dutch data protection law matters, not administrative penalty decisions regarding Freedom of I"
+  },
+  {
+   "id": "nl-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1540,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The ECLI identifier indicates a 2026 decision, which is a future date. This decision cannot currently exist or be published."
+  },
+  {
+   "id": "nl-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1874,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.**  The ECLI identifier format appears structurally valid, but the date 2026-02-13 is in the future, making this claim impossible to verify as an existing official source."
+  },
+  {
+   "id": "nl-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1417,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This ECLI identifier indicates a Dutch district court (Rechtbank Oost-Brabant) decision. Dutch court decisions are published by official Dutch sources, not Gibraltar's legal publisher."
+  },
+  {
+   "id": "nl-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1589,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Staatsblad identifier format and date structure cannot be verified without access to the official gazette database. The claim lacks sufficient verifiable detail."
+  },
+  {
+   "id": "nl-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1807,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** BWBR0001828 identifies the Code of Civil Procedure (Wetboek van Burgerlijke Rechtsvordering) generally, not a version specifically for digital proceedings."
+  },
+  {
+   "id": "nl-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1010,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Dutch Data Protection Authority (Autoriteit Persoonsgegevens) publishes decisions on data protection matters, not general administrative law decisions regarding fines (boetes) and objec"
+  },
+  {
+   "id": "nl-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1169,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The ECLI prefix \"NL\" indicates Netherlands jurisdiction, not Portuguese. DGSI publishes Portuguese court decisions, not Dutch ones."
+  },
+  {
+   "id": "nl-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1781,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.**   The ECLI identifier \"NL:HR\" indicates Dutch Supreme Court (Hoge Raad), not the German Federal Finance Court (Bundesfinanzhof), which would have a German ECLI prefix."
+  }
+ ]
+}

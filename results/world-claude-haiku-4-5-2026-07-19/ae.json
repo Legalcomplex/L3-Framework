@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — United Arab Emirates — Source-Grounded Citation Reliability (AE)",
+ "country": "AE",
+ "jurisdiction": "United Arab Emirates",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:32:32.116420+00:00",
+ "results": [
+  {
+   "id": "ae-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1467,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  ADGM Courts Judgments publishes court decisions, not corporate regulatory decisions. This appears to be a regulatory matter outside ADGM judicial publication scope."
+  },
+  {
+   "id": "ae-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1498,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The publication date (2020-01-01) predates the regulation's enactment date (24 June 2020), making this chronologically impossible and internally inconsistent."
+  },
+  {
+   "id": "ae-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1845,
+   "verdict": false,
+   "correct": false,
+   "raw": "# Answer: False  **Explanation:** DIFC Courts (Dubai International Financial Centre) handle commercial and civil disputes, but the decision date (2026-05-05) is in the future, making this claim anachr"
+  },
+  {
+   "id": "ae-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1536,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The DIFC Law No. 6 of 2004 is authentic, but the \"Updated 2024\" designation cannot be verified as an official publication date without confirmation from DIFC's official legal database or le"
+  },
+  {
+   "id": "ae-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1976,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Abu Dhabi Official Gazette publishes issues with specific issue numbers/dates, not generic \"edition\" numbering like \"2023 Edition 2.\" This citation format lacks standard official gazett"
+  },
+  {
+   "id": "ae-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1544,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The date provided (2026-03-27) is in the future. Official gazettes are published retrospectively for past legal acts, not prospectively for future dates."
+  },
+  {
+   "id": "ae-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2237,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The identifier format and date suggest a future judgment (2026), which cannot exist as an official published court record in current collections. This appears to be a fictitious citation."
+  },
+  {
+   "id": "ae-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2430,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** ADGM (Abu Dhabi Global Market) Courts Regulations are issued by ADGM authorities, not Saudi Arabia's SAMA. Different jurisdictions issue their own regulations."
+  },
+  {
+   "id": "ae-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1212,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The decision date (2023-05-05) predates the decision number year (2024), creating an internal inconsistency that suggests this citation contains errors or may not be an authentic DIFC Court"
+  },
+  {
+   "id": "ae-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1525,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The DIFC Contract Law No. 6 of 2004 is a UAE legal instrument, not an Israeli source. Israel's Knesset would not publish UAE legislation. Attribution error in source."
+  },
+  {
+   "id": "ae-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1388,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Abu Dhabi Official Gazette would be published by UAE authorities, not Jordan Legislation & Opinion Bureau. Jordan's bureau cannot officially publish Abu Dhabi's official legal documents"
+  },
+  {
+   "id": "ae-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1960,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Dubai Official Gazette typically uses different numbering formats and publication structures. Issue No. 767 in March 2024 cannot be verified as an authentic official publication without"
+  }
+ ]
+}

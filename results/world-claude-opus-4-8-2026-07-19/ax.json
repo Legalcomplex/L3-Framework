@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Åland Islands — Source-Grounded Citation Reliability (AX)",
+ "country": "AX",
+ "jurisdiction": "Åland Islands",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:07:35.484086+00:00",
+ "results": [
+  {
+   "id": "ax-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2487,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The specific citation number (1995:103), exact title, and date cannot be verified; details appear fabricated without authoritative confirmation."
+  },
+  {
+   "id": "ax-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2303,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Export guarantee legislation falls under Finnish state competence, not Åland's autonomy, so such a landskap decree wouldn't exist."
+  },
+  {
+   "id": "ax-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2516,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific regulation number, title, or exact publication date exists in Ålands författningssamling without fabricating details."
+  },
+  {
+   "id": "ax-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2415,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The 2017:XX numbering format requires verification; the exact citation, title completeness, and precise publication date cannot be confirmed as stated."
+  },
+  {
+   "id": "ax-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3178,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Åland laws are numbered sequentially; the citation format \"2013:75\" plausibility and exact title/date require verification against Ålex; likely fabricated details."
+  },
+  {
+   "id": "ax-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2243,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific regulation's exact citation, title, or publication date without risking fabricated bibliographic details."
+  },
+  {
+   "id": "ax-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2578,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Åland Islands are Finnish autonomous territory; their legislation is published via Finnish/Åland channels, not Denmark's Retsinformation database."
+  },
+  {
+   "id": "ax-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 3303,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Åland legislation appears in Ålands författningssamling (ÅFS), not Sweden's SFS; Åland is an autonomous Finnish territory, not Swedish."
+  },
+  {
+   "id": "ax-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2185,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Åland regional statutes are published in Ålands författningssamling, not Finlex; the fabricated citation and date lack verifiable authenticity."
+  },
+  {
+   "id": "ax-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2500,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Åland is autonomous within Finland, not Denmark; its laws appear in Ålands författningssamling, not Denmark's Retsinformation."
+  },
+  {
+   "id": "ax-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2693,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Åland regional laws (landskapslag) are published in Ålands författningssamling, not Finland's Finlex Open Data linked data service."
+  },
+  {
+   "id": "ax-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2319,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Lovdata is Norway's legal database; Åland (Finnish autonomous region) legislation appears in Ålands författningssamling, not Norwegian sources."
+  }
+ ]
+}

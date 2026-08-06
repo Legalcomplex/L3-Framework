@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Togo — Source-Grounded Citation Reliability (TG)",
+ "country": "TG",
+ "jurisdiction": "Togo",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:45:43.589888+00:00",
+ "results": [
+  {
+   "id": "tg-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1651,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The identifier format suggests a systematic digital classification that doesn't necessarily map directly to the traditional case numbering system cited. The numeric suffix variation (010122"
+  },
+  {
+   "id": "tg-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1563,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.  The date 2025-05-30 is in the future (beyond current knowledge cutoff of April 2024), making verification impossible. The claim cannot be confirmed as accurate."
+  },
+  {
+   "id": "tg-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1577,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Togo's Constitutional Court is called the \"Constitutional Court\" (Cour Constitutionnelle), but this decision reference format and numbering system cannot be verified as an authentic officia"
+  },
+  {
+   "id": "tg-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2192,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The identifier format doesn't match standard Juricaf conventions. The suffix \"11322\" doesn't correspond to the case number \"113/22\" in the claimed citation format."
+  },
+  {
+   "id": "tg-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2297,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The publication date (2025-05-08) is in the future relative to current knowledge, making verification impossible. Official Togolese decrees require contemporaneous documentation."
+  },
+  {
+   "id": "tg-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1741,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Togo's Constitutional Court is called the \"Constitutional Court\" (Cour Constitutionnelle), not \"Togo Constitutional Court Decisions.\" The citation format and publisher designation appear in"
+  },
+  {
+   "id": "tg-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1900,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The identifier format doesn't match Juricaf's standard structure. The case number \"0101/22\" doesn't align with the full identifier \"010123\" in the claim provided."
+  },
+  {
+   "id": "tg-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1571,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The document's prefix indicates it originates from Mali's administrative system (PA/SG format), not Togo's legal framework, making attribution to Togo's official gazette incorrect."
+  },
+  {
+   "id": "tg-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1430,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This decision cannot be from Nigeria's Securities and Exchange Commission because the citation format and reference number style are characteristic of Togolese legal documents, not Nigerian one"
+  },
+  {
+   "id": "tg-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1675,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.**  The identifier format suggests a Juricaf database reference, but the mapping between the alphanumeric code and the stated case details cannot be verified without direct access to Togo's of"
+  },
+  {
+   "id": "tg-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1458,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The decree's designation (2025-001/PC) and naming convention indicate a Togolese source, not Ivorian. CivLII covers Côte d'Ivoire law, not Togo's legal instruments."
+  },
+  {
+   "id": "tg-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1186,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Law Hub Gambia publishes Gambian legal documents, not Togolese ones. This decision belongs to Togo's legal system and should be published by a Togolese official source."
+  }
+ ]
+}

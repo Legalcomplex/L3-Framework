@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Iran — Source-Grounded Citation Reliability (IR)",
+ "country": "IR",
+ "jurisdiction": "Iran",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:55:44.850752+00:00",
+ "results": [
+  {
+   "id": "ir-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1991,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — This mischaracterizes the source; the Islamic Penal Code is Iran's official statute, merely translated/hosted by Boroumand Center, not \"published\" by it."
+  },
+  {
+   "id": "ir-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2182,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This describes a translated compilation available via IHRDC, not an official Iranian government publication; original legal authority lies with Iran's official gazette/legislature, not this Eng"
+  },
+  {
+   "id": "ir-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1958,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify specific database identifiers like '3430' for this exact document without direct access to the Boroumand Center's database records."
+  },
+  {
+   "id": "ir-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1812,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Iran Human Rights Documentation Center is an independent NGO providing unofficial translations, not an official Iranian legal source or government publisher."
+  },
+  {
+   "id": "ir-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2940,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated or unverifiable citation; no such document is confirmed as an authentic, traceable official Iranian legal publication."
+  },
+  {
+   "id": "ir-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1981,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** IHRDC published translations of Iran's Islamic Penal Code, but the specific publication date \"2013-07-15\" cannot be verified as accurate for this compilation."
+  },
+  {
+   "id": "ir-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2018,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify specific identifier-document correspondences in the Boroumand Center database, as I lack access to confirm this exact citation mapping."
+  },
+  {
+   "id": "ir-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1966,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — this is an internal IRIB media policy document, not an official Iranian legal statute properly codified within the cited legal codes database."
+  },
+  {
+   "id": "ir-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2139,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify specific database identifiers like \"3432\" against Boroumand Center records; such precise catalog claims require direct source confirmation."
+  },
+  {
+   "id": "ir-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1733,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.**  This is a translation by an NGO (IHRDC), not an official Iranian government legal publication; official Iranian statutes are only authoritative in Persian."
+  },
+  {
+   "id": "ir-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2177,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — Jordan's Legislation & Opinion Bureau publishes Jordanian legal materials, not Iranian judiciary directives; this citation misattributes jurisdiction and publisher entirely."
+  },
+  {
+   "id": "ir-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2229,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** DIFC Legal Database is Dubai's (UAE) free-zone legal source, not an Iranian official gazette—Iran's Islamic Penal Code wouldn't be published there."
+  }
+ ]
+}

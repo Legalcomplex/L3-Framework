@@ -1,0 +1,121 @@
+{
+ "pack": "S3 — Micronesia — Source-Grounded Citation Reliability (FM)",
+ "country": "FM",
+ "jurisdiction": "Micronesia",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 10,
+ "items_in_pack": 10,
+ "parsed": 10,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 5,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:12:46.105263+00:00",
+ "results": [
+  {
+   "id": "fm-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2479,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The FSM Supreme Court reporter citation format uses \"FSM Intrm.\" differently; I cannot verify this specific citation as authentic."
+  },
+  {
+   "id": "fm-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2258,
+   "verdict": false,
+   "correct": false,
+   "raw": "I cannot verify this specific citation as authentic. Without access to confirm the case, reporter format, and publisher details, False."
+  },
+  {
+   "id": "fm-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2391,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The FSM Interim reporter citation format and \"FSM Legal Information System\" as publisher appear fabricated; I cannot verify this source."
+  },
+  {
+   "id": "fm-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2596,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. \"FSM Intrm.\" is not a standard FSM reporter citation, and no \"FSM Legal Information System\" publisher exists for such decisions."
+  },
+  {
+   "id": "fm-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2611,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. FSM cases use volume/reporter format (e.g., \"13 FSM R. 100\"), not \"13 Intrm. 100-109\"; this citation appears fabricated."
+  },
+  {
+   "id": "fm-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2268,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. FSM decisions use \"FSM Intrm.\" citation format, but \"13 Intrm. 139-145\" and the named publisher appear fabricated or incorrect."
+  },
+  {
+   "id": "fm-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2252,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific citation, volume, or publisher details; \"FSM Legal Information System\" appears fabricated, and citation format seems questionable."
+  },
+  {
+   "id": "fm-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2247,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Open Australian Legal Corpus contains Australian legal materials, not Micronesian (FSM) decisions, making this attribution incorrect."
+  },
+  {
+   "id": "fm-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2009,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The citation \"FSM Intrm.\" refers to the Federated States of Micronesia Interim Reporter, not the Marshall Islands Judiciary."
+  },
+  {
+   "id": "fm-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2180,
+   "verdict": false,
+   "correct": true,
+   "raw": "I cannot verify this specific citation as authentic. The format and \"FSM Legal Information System\" publisher claim appear fabricated; insufficient evidence to confirm.  False."
+  }
+ ]
+}

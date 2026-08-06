@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Kiribati — Source-Grounded Citation Reliability (KI)",
+ "country": "KI",
+ "jurisdiction": "Kiribati",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:39:41.628731+00:00",
+ "results": [
+  {
+   "id": "ki-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1397,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** PacLII is the Pacific Islands Legal Information Institute, which publishes Pacific court decisions, but this specific 2025 decision cannot be verified as officially published without access"
+  },
+  {
+   "id": "ki-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2536,
+   "verdict": false,
+   "correct": false,
+   "raw": "# Evaluation: False  PacLII (Pacific Islands Legal Information Institute) publishes Pacific court decisions, but this citation format and date are **not verifiable** as an actual published decision in"
+  },
+  {
+   "id": "ki-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2219,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  PacLII (Pacific Islands Legal Information Institute) publishes Pacific island case law, but this 2025 decision appears fictional—Kiribati's courts and case numbering don't match documented "
+  },
+  {
+   "id": "ki-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1785,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  PacLII (Pacific Islands Legal Information Institute) publishes Pacific island court decisions, but this specific 2025 decision cannot be verified as officially published there yet, given th"
+  },
+  {
+   "id": "ki-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1524,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  This decision cannot be verified as a real published judgment. The future date (2025) and specific case details cannot be confirmed as authentic official Kiribati Court of Appeal decisions "
+  },
+  {
+   "id": "ki-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1732,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This decision cannot be verified as a real published case. The future date (2025-03-14) and lack of corroboration in accessible Kiribati legal databases make authentication impossible."
+  },
+  {
+   "id": "ki-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2486,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  RONLAW is Nauru's online legal database. This decision concerns Kiribati jurisdiction (KICA = Kiribati Court of Appeal), so it would be published in Kiribati's official legal database, not "
+  },
+  {
+   "id": "ki-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1300,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This decision is attributed to Kiribati Court of Appeal (KICA), not Tonga. The publisher should be Kiribati's official legal sources, not Tonga's."
+  },
+  {
+   "id": "ki-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1108,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Kiribati's court system does not include a \"Federal Court of Australia.\" This decision would be from Kiribati's Court of Appeal, not an Australian court."
+  },
+  {
+   "id": "ki-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1086,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The decision cites Kiribati Court of Appeal (KICA) jurisdiction and case references, indicating it belongs to Kiribati's judiciary, not the Republic of Marshall Islands."
+  },
+  {
+   "id": "ki-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1301,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Kiribati has its own independent legal system and courts (KICA = Kiribati Court of Appeal). The Open Australian Legal Corpus would not be the official publisher of Kiribati decisions."
+  },
+  {
+   "id": "ki-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1271,
+   "verdict": false,
+   "correct": true,
+   "raw": "# Answer: False  **Explanation:** Kiribati's court decisions are not part of the Open Australian Legal Corpus. OALC focuses on Australian jurisdictions; Kiribati is an independent Pacific island natio"
+  }
+ ]
+}

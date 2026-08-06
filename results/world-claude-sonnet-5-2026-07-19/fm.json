@@ -1,0 +1,121 @@
+{
+ "pack": "S3 — Micronesia — Source-Grounded Citation Reliability (FM)",
+ "country": "FM",
+ "jurisdiction": "Micronesia",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 10,
+ "items_in_pack": 10,
+ "parsed": 10,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 5,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:53:33.148257+00:00",
+ "results": [
+  {
+   "id": "fm-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2062,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Citation format \"13 Intrm.\" doesn't match standard FSM Supreme Court reporter conventions; \"FSM Intrm.\" typically precedes volume number, not follows it."
+  },
+  {
+   "id": "fm-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2172,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** FSM Intermediate Reporter citations follow \"FSM Intrm.\" format but I cannot verify this specific citation's page range, date, or publisher details as accurate."
+  },
+  {
+   "id": "fm-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 3367,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The citation format \"1 Intrm.\" doesn't match FSM Supreme Court's standard reporter citation style, which uses \"FSM Intrm.\" for the Intermediate Reporter."
+  },
+  {
+   "id": "fm-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2362,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** FSM Intrm. citations refer to \"FSM Intrm.\" reporter volumes published by the FSM Supreme Court, not primarily attributed to the FSM Legal Information System website itself."
+  },
+  {
+   "id": "fm-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2777,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** FSM Supreme Court decisions are published in \"FSM Intrm.\" reporter series; verifying exact volume/page/date citations requires primary source confirmation, not assumed accuracy."
+  },
+  {
+   "id": "fm-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2348,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** FSM Intrm. citations refer to \"Intrm.\" (Intermediate) reports; verification of exact volume, pagination, and date requires confirming against actual FSM Legal Information System records, no"
+  },
+  {
+   "id": "fm-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2304,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** FSM Supreme Court decisions are published in \"FSM Intrm.\" (FSM Intermediate Reports), not by \"FSM Legal Information System,\" which is not the actual publisher name."
+  },
+  {
+   "id": "fm-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 3023,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** FSM Intermediate Reports are not published by the Open Australian Legal Corpus, which compiles only Australian legal materials, not Micronesian decisions."
+  },
+  {
+   "id": "fm-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1589,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** FSM Intrm. reports Federated States of Micronesia Supreme Court decisions, published by the FSM Judiciary, not the Marshall Islands Judiciary."
+  },
+  {
+   "id": "fm-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1649,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** FSM Supreme Court decisions are published in the \"FSM Intrm.\" (FSM Intermediate) reporter, not by an entity called \"FSM Legal Information System.\""
+  }
+ ]
+}

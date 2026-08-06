@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Burkina Faso — Source-Grounded Citation Reliability (BF)",
+ "country": "BF",
+ "jurisdiction": "Burkina Faso",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:08:11.689305+00:00",
+ "results": [
+  {
+   "id": "bf-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2290,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific decision's existence, number format, or Juricaf publication without access to authoritative Burkina Faso legal databases."
+  },
+  {
+   "id": "bf-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2457,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Burkina Faso's transitional legislature is the \"Assemblée Législative de Transition\" (ALT), not \"Assemblée Nationale,\" as the law number \"046-2024/ALT\" confirms."
+  },
+  {
+   "id": "bf-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2581,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific identifier's existence or accuracy; fabricated-looking database references require confirmation against actual Juricaf records before acceptance."
+  },
+  {
+   "id": "bf-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2285,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Burkina Faso's transitional legislature is the Assemblée Législative de Transition (ALT), not the Assemblée Nationale, which was dissolved in 2022."
+  },
+  {
+   "id": "bf-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2569,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The docket \"12/2021\" versus a 2023 decision date is inconsistent, and this citation appears fabricated without verifiable Juricaf source."
+  },
+  {
+   "id": "bf-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3580,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Cannot verify this specific citation; the \"ALT\" designation and exact details require confirmation against official Burkina Faso legislative sources."
+  },
+  {
+   "id": "bf-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2280,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier contains \"242024\" suggesting case 24/2024, which contradicts the stated 24/2023 reference and 2023 date."
+  },
+  {
+   "id": "bf-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2444,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Burkina Faso laws are published in its Journal Officiel, not Nigeria's Pension Commission, which handles unrelated Nigerian pension regulations."
+  },
+  {
+   "id": "bf-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2158,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier ends in '034' but the cited decision number is '033'—these inconsistent numbers indicate a mismatch."
+  },
+  {
+   "id": "bf-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2201,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. A Burkina Faso budget settlement law wouldn't be published by Senegal's telecom regulator (ARTP); jurisdictions and subject matter mismatch."
+  },
+  {
+   "id": "bf-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1835,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Burkina Faso decisions aren't published by Liberia's Supreme Court; jurisdictions differ entirely, making this bibliographic claim clearly incorrect."
+  },
+  {
+   "id": "bf-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1685,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Burkina Faso laws aren't published via Mauritania's official gazette; the publishing body attribution is jurisdictionally incorrect and fabricated."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Australia — Source-Grounded Citation Reliability (AU)",
+ "country": "AU",
+ "jurisdiction": "Australia",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.75,
+ "correct": 9,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:07:25.890347+00:00",
+ "results": [
+  {
+   "id": "au-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2965,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The case name format (anonymized \"SPLB\"), immigration subject matter, and 2004 date are consistent with Federal Court of Australia judgments."
+  },
+  {
+   "id": "au-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2471,
+   "verdict": true,
+   "correct": true,
+   "raw": "**True.**  The Acts Interpretation Act 1901 (Cth) is genuine Commonwealth legislation officially published and maintained on the Federal Register of Legislation."
+  },
+  {
+   "id": "au-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2138,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Open Australian Legal Corpus was released around 2023-2024, not 2016, so this publication date is fabricated/incorrect."
+  },
+  {
+   "id": "au-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2638,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The Transport Operations (Passenger Transport) Act 1994 is genuine Queensland legislation, officially published on Queensland Legislation website; assent date plausible."
+  },
+  {
+   "id": "au-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2169,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.**  The Summary Offences Act 1953 (SA) is published on legislation.sa.gov.au, not data.sa.gov.au, which is the open-data portal."
+  },
+  {
+   "id": "au-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2462,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific identifier, title, or date; asserting its accuracy would risk fabricating unconfirmed bibliographic details."
+  },
+  {
+   "id": "au-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2716,
+   "verdict": false,
+   "correct": true,
+   "raw": "I cannot verify this specific citation as genuine. The case name, date, and court details cannot be confirmed, warranting caution—likely False."
+  },
+  {
+   "id": "au-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1996,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.**  The Acts Interpretation Act 1901 is genuine, but the 2025-12-11 date is future-dated and likely fabricated, making it unverifiable."
+  },
+  {
+   "id": "au-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2675,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Tasmanian legislation is published via Tasmanian Legislation (legislation.tas.gov.au), not Laws of Fiji, which covers Fijian jurisdiction entirely separately."
+  },
+  {
+   "id": "au-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2011,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Transport Operations (Passenger Transport) Act 1994 is Act No. 30 of 1994, not identifier act-1994-044."
+  },
+  {
+   "id": "au-src-f05",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2669,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Summary Offences Act 1953 was originally the Police Offences Act 1953; it was renamed in 1953. Verify identifier."
+  },
+  {
+   "id": "au-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1946,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No verifiable record exists of this Act; the title and Tonga source are inconsistent with the stated Australian jurisdiction."
+  }
+ ]
+}

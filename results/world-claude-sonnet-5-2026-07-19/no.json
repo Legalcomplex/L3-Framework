@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Norway — Source-Grounded Citation Reliability (NO)",
+ "country": "NO",
+ "jurisdiction": "Norway",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:59:49.402940+00:00",
+ "results": [
+  {
+   "id": "no-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2389,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This citation refers to a future date (2026) not yet occurred, making it impossible to verify as an actual published decision."
+  },
+  {
+   "id": "no-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2067,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Storting's session year 2025–2026 would only reach \"Lovvedtak 1\" numbering later in the session, not plausibly by early December 2025."
+  },
+  {
+   "id": "no-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2038,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific decision \"ROUTE 66\" dated 2016-11-01 exists in KFIR's official records without direct source access."
+  },
+  {
+   "id": "no-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2098,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify the specific case number, date, and content combination for \"KOFA 2004/2\" without access to KOFA's official database records."
+  },
+  {
+   "id": "no-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2002,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation exists; \"Sak 22/163\" appears fabricated, as I have no confirmed record of this exact decision."
+  },
+  {
+   "id": "no-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2249,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Personvernnemnda was established in 2001, but citation details like exact decision number, party name, and precise date require verification against the official register, which I cannot co"
+  },
+  {
+   "id": "no-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 3485,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. HR-2026-389-U is a Norwegian Supreme Court decision, published via Norwegian legal databases like Lovdata, not Finland's Finlex service."
+  },
+  {
+   "id": "no-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2366,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. \"Lovvedtak\" is a Norwegian legislative decision document from Stortinget, published via Norwegian sources like Lovdata—not Denmark's Retsinformation database."
+  },
+  {
+   "id": "no-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1714,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** I cannot verify this specific decision citation (\"ROUTE 66,\" dated 2017-11-01) exists in KFIR's actual published records without direct source access."
+  },
+  {
+   "id": "no-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1565,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Norwegian KOFA decisions are identified by their own case number and date; '2004/5' would not equate to a differently numbered case '2004/2'."
+  },
+  {
+   "id": "no-src-f05",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1673,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '22/164' does not match the cited case number 'Sak 22/163'; mismatched identifiers indicate an inaccurate or fabricated bibliographic reference."
+  },
+  {
+   "id": "no-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1736,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Finlex is Finland's official legal database, not Norway's. A Norwegian decision like PVN-2003-05 (Personvernnemnda) would not be published there."
+  }
+ ]
+}

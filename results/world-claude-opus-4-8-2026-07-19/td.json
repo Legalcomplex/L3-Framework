@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Chad — Source-Grounded Citation Reliability (TD)",
+ "country": "TD",
+ "jurisdiction": "Chad",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:25:36.624588+00:00",
+ "results": [
+  {
+   "id": "td-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2729,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation's authenticity; Chad's court decisions are poorly documented online, and Juricaf coverage is unreliable."
+  },
+  {
+   "id": "td-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 6599,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation exists in Juricaf or Chad Supreme Court records; unverifiable claim."
+  },
+  {
+   "id": "td-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1995,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific identifier or decision exists in Juricaf's Chad Supreme Court collection; likely fabricated."
+  },
+  {
+   "id": "td-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2242,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation's authenticity or Juricaf publication details; Chad's Supreme Court decisions have limited online availability."
+  },
+  {
+   "id": "td-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3079,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation exists in Juricaf's database; I lack reliable access to confirm its authenticity."
+  },
+  {
+   "id": "td-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2352,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific identifier exists in Juricaf's Chad Supreme Court collection; likely fabricated citation details."
+  },
+  {
+   "id": "td-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2082,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier ends in '015' but the cited decision number is '014', creating an inconsistency between reference and citation."
+  },
+  {
+   "id": "td-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2103,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific identifier or decision exists in Juricaf's Chad Supreme Court collection; likely fabricated."
+  },
+  {
+   "id": "td-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2235,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Chad's court decisions are not published via Congo-Brazzaville's Official Journal; these are separate sovereign states with distinct institutions."
+  },
+  {
+   "id": "td-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2254,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Chad's court decisions aren't published in Equatorial Guinea's gazette; these are separate jurisdictions with distinct legal systems."
+  },
+  {
+   "id": "td-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2924,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. LegalRDC covers Democratic Republic of Congo (RDC), not Chad (Tchad); jurisdictions differ, making the source attribution incorrect."
+  },
+  {
+   "id": "td-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1871,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Cour suprême of Chad and the Cour Constitutionnelle du Gabon are different courts in different countries entirely."
+  }
+ ]
+}

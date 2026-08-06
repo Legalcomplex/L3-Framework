@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Sri Lanka — Source-Grounded Citation Reliability (LK)",
+ "country": "LK",
+ "jurisdiction": "Sri Lanka",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:57:14.267138+00:00",
+ "results": [
+  {
+   "id": "lk-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1971,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — Act No. 04/2026 references a future date beyond current records; this citation cannot be verified as an authentic published Sri Lankan legal source."
+  },
+  {
+   "id": "lk-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2138,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this decision has a future date (2026-03-23), which is impossible for an already published official source to verify."
+  },
+  {
+   "id": "lk-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2202,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** While the case citation format resembles genuine NLR/CommonLII records, I cannot verify this specific case's existence, accuracy, or details without access to actual database records."
+  },
+  {
+   "id": "lk-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1991,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Public Utilities Commission of Sri Lanka Act, No. 35 of 2002 was enacted by Parliament, not published via any \"Electricity Regulations\" instrument."
+  },
+  {
+   "id": "lk-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2170,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This is a future/unverifiable citation—Act No. 09/2026 cannot be confirmed as an authentic published Sri Lankan legal instrument at this time."
+  },
+  {
+   "id": "lk-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2064,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date (2026-03-26) is in the future—an impossible publication/decision date for an existing verifiable Sri Lankan court record."
+  },
+  {
+   "id": "lk-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2551,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. A Sri Lankan Act cannot be published in \"Gazette of India\"; also the date is future/unverifiable, indicating a fabricated or mismatched citation."
+  },
+  {
+   "id": "lk-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1887,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific citation exists in LawNet Sri Lanka's database; the future date and details appear fabricated or unverifiable."
+  },
+  {
+   "id": "lk-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1483,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Islamabad High Court is a Pakistani court; this case is from Sri Lanka's Supreme Court, reported in the New Law Reports (NLR)."
+  },
+  {
+   "id": "lk-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1808,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Public Utilities Commission of Sri Lanka Act, No. 35 of 2002 is Sri Lankan legislation, not part of any Pakistan Laws Dataset publication."
+  },
+  {
+   "id": "lk-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1948,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Maldives Government Gazette cannot publish Sri Lankan legislation; Sri Lankan Acts are published in Sri Lanka's official Gazette, not Maldives'."
+  },
+  {
+   "id": "lk-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1695,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This citation cannot be verified—the case number, judge, party name, and future date (2026-03-26) appear fabricated or unconfirmed against actual LawNet records."
+  }
+ ]
+}

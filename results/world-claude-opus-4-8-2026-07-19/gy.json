@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Guyana — Source-Grounded Citation Reliability (GY)",
+ "country": "GY",
+ "jurisdiction": "Guyana",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:14:24.237023+00:00",
+ "results": [
+  {
+   "id": "gy-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3043,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-04-18 is in the future; no such gazette could have been published yet. Claim is unverifiable/fabricated."
+  },
+  {
+   "id": "gy-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2405,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The citation is malformed—mixing an unrelated filename fragment, inconsistent title, and dubious date, indicating a fabricated or corrupted bibliographic reference."
+  },
+  {
+   "id": "gy-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 6323,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date is in the future (2026) relative to verifiable records, making this citation unconfirmable and likely fabricated."
+  },
+  {
+   "id": "gy-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2266,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation; the title, date, and publication details appear fabricated and lack confirmable authoritative sourcing."
+  },
+  {
+   "id": "gy-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2162,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This is a future date (2026) with fabricated specifics; I cannot verify this speculative Gazette publication exists."
+  },
+  {
+   "id": "gy-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2567,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This citation appears fabricated; no verifiable EPA Guyana publication matches \"Volume 1 Rules and Procedures 2004\" with that 2022 date."
+  },
+  {
+   "id": "gy-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2361,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Guyana's Official Gazette is published by Guyana's government, not through Chile's BCN (Biblioteca del Congreso Nacional) SPARQL service."
+  },
+  {
+   "id": "gy-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2570,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The citation is garbled—mixing a litter regulation title with an unrelated hazardous wastes filename and implausible identifier—indicating fabrication, not genuine legislation."
+  },
+  {
+   "id": "gy-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1740,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Guyana's Official Gazette is published domestically, not via Brazil's Planalto (REFLEGIS), which handles Brazilian federal legislation only."
+  },
+  {
+   "id": "gy-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2092,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Guyana's EPA has not published such a specifically titled \"Volume 3 Mining EIA guidelines\" document; this citation appears fabricated or unverifiable."
+  },
+  {
+   "id": "gy-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2175,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Querido Diário covers Brazilian municipal gazettes, not Guyana's Official Gazette; jurisdiction and source mismatch make this claim invalid."
+  },
+  {
+   "id": "gy-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1882,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The citation is internally inconsistent: a 2004 title cannot logically be \"published\" via a 2021 regulation date; likely fabricated."
+  }
+ ]
+}

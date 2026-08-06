@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Brunei — Source-Grounded Citation Reliability (BN)",
+ "country": "BN",
+ "jurisdiction": "Brunei",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:08:53.243273+00:00",
+ "results": [
+  {
+   "id": "bn-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3099,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Brunei's official gazette citation format and date cannot be verified; this appears fabricated with implausibly precise details for 2026."
+  },
+  {
+   "id": "bn-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2099,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The Old Age and Disability Pensions Act (Cap. 18) is a genuine Brunei law published via the Attorney General's Chambers."
+  },
+  {
+   "id": "bn-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2361,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date (2025-10-28) is in the future relative to typical verification, and I cannot confirm this specific citation's authenticity."
+  },
+  {
+   "id": "bn-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2239,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Brunei's telecommunications regulator AITI was established in 2003; citation details, section reference, and date appear fabricated or unverifiable."
+  },
+  {
+   "id": "bn-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2712,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Passport Act's subsidiary legislation exists, but I cannot verify this specific 2026 citation, publication date, or exact title."
+  },
+  {
+   "id": "bn-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2547,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Interpretation and General Clauses Act (Cap. 4) predates 2014; that date likely reflects a revised edition, not original publication."
+  },
+  {
+   "id": "bn-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2230,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'S5_2027' implies year 2027, but the citation claims 'S 5/2026' dated 2026-01-01, creating inconsistency."
+  },
+  {
+   "id": "bn-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2016,
+   "verdict": true,
+   "correct": false,
+   "raw": "True. The Old Age and Disability Pensions Act (Chapter 18) is genuine Brunei legislation published through the Attorney General's Chambers."
+  },
+  {
+   "id": "bn-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1777,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Brunei's court decisions are published by the Judiciary/Supreme Court, not an entity called \"Brunei Court Decisions\"; likely fabricated."
+  },
+  {
+   "id": "bn-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1702,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Brunei legal sources aren't published via Indonesia's JDIHN network; jurisdictions differ, and citation details appear fabricated or mismatched."
+  },
+  {
+   "id": "bn-src-f05",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1873,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'S4_2027' indicates year 2027, contradicting the cited 'S 4/2026' designation and 2026 date, showing inconsistency."
+  },
+  {
+   "id": "bn-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2004,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Brunei's laws are published officially by the Attorney General's Chambers, not a Cambodian legal library like \"Husky & Partners.\""
+  }
+ ]
+}

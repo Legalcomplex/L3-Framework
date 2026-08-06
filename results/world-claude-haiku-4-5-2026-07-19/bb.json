@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Barbados — Source-Grounded Citation Reliability (BB)",
+ "country": "BB",
+ "jurisdiction": "Barbados",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:33:33.494959+00:00",
+ "results": [
+  {
+   "id": "bb-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1606,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Barbados Judiciary website (barbadoslawcourts.gov.bb) does not systematically publish individual case decisions under personal names as standalone official documents in that format."
+  },
+  {
+   "id": "bb-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1608,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  April 16, 2026 is a future date. This citation cannot represent a published official gazette, as it has not yet occurred."
+  },
+  {
+   "id": "bb-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1645,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier contains formatting inconsistencies ('Cap109B'A' with misplaced quotation mark) suggesting a transcription error rather than a valid official citation format for Barbados legisla"
+  },
+  {
+   "id": "bb-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1534,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** No evidence exists that the Barbados Employment Rights Tribunal published a decision with this specific title and date in any accessible official legal database or repository."
+  },
+  {
+   "id": "bb-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3445,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The citation format is unclear and potentially inaccurate. The Financial Services Commission Act of 2010 is a legitimate Barbados statute, but the notation \"21\" lacks proper legislative referen"
+  },
+  {
+   "id": "bb-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1770,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Fair Trading Commission (FTC) in Barbados does not typically issue decisions titled as \"Final Decision On Blpc Motion To Review And Vary The Commission Decision.\" This appears to be a m"
+  },
+  {
+   "id": "bb-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2150,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Barbados Judiciary website (barbadoslawcourts.gov.bb) does not systematically publish individual case judgments with consistent public accessibility or archival systems for all decision"
+  },
+  {
+   "id": "bb-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1847,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The citation references Barbados official gazette materials, but Bermuda Laws Online is a Bermudian legal database, not a Barbados legal publisher."
+  },
+  {
+   "id": "bb-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1080,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The cap numbers differ: 110B versus 109B. These are distinct legislative references, indicating different chapters or versions of Barbados subsidiary legislation, not equivalent identifiers"
+  },
+  {
+   "id": "bb-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1085,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The decision is from Barbados jurisdiction, not Cayman Islands. Judicial.ky is the Cayman Islands court website and would not publish Barbados rulings."
+  },
+  {
+   "id": "bb-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1071,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Financial Services Commission Act dates to 2010, but the cited publication date (2019-11-16) likely refers to a website update, not the original legislation enactment date."
+  },
+  {
+   "id": "bb-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1464,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Fair Trading Commission (FTC) in Barbados does not publish decisions with this title format. This appears to be a misattributed or fictitious document lacking verifiable official public"
+  }
+ ]
+}

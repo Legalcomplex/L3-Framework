@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Solomon Islands — Source-Grounded Citation Reliability (SB)",
+ "country": "SB",
+ "jurisdiction": "Solomon Islands",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:24:00.983333+00:00",
+ "results": [
+  {
+   "id": "sb-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3272,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Solomon Islands consolidated laws use different citation formats; no verified \"Attorney General Legislation Portal\" source confirms this specific chapter reference."
+  },
+  {
+   "id": "sb-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2443,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify a Solomon Islands \"Education Act 2023\" with that exact date; this citation appears unverifiable or fabricated."
+  },
+  {
+   "id": "sb-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2996,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Act's correct citation is uncertain; Solomon Islands lacks an official \"Attorney General Legislation Portal,\" and details appear fabricated."
+  },
+  {
+   "id": "sb-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1971,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify a \"Citizenship (Amendment) Act 2023\" exists with that exact date; the citation appears fabricated or unverifiable."
+  },
+  {
+   "id": "sb-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1975,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Solomon Islands has no official \"Attorney General Legislation Portal\"; legislation appears via PacLII or the government gazette, not this fabricated source."
+  },
+  {
+   "id": "sb-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2251,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The title format is inconsistent and the \"2023-01-01\" date appears fabricated; such precise placeholder dates typically indicate unverified bibliographic data."
+  },
+  {
+   "id": "sb-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2553,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Solomon Islands laws use consolidated legislation numbering, but \"Chapter 180\" and this specific portal/date citation appear fabricated and unverifiable."
+  },
+  {
+   "id": "sb-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2803,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Open Australian Legal Corpus covers Australian jurisdictions, not Solomon Islands legislation, making this bibliographic attribution incorrect and unverifiable."
+  },
+  {
+   "id": "sb-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2253,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The 2026 date is implausible (future), and citation details appear fabricated; verify via official Solomon Islands legislation sources directly."
+  },
+  {
+   "id": "sb-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1798,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The publisher is Tonga's Attorney General office, which cannot officially publish Solomon Islands legislation; jurisdictions are mismatched."
+  },
+  {
+   "id": "sb-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2385,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Provincial ordinances aren't published via the Attorney General's portal, and \"LN 15\" citation format misrepresents provincial legislation numbering conventions."
+  },
+  {
+   "id": "sb-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2806,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. RONLAW is Nauru's legal database, not Solomon Islands. Solomon Islands legislation is published via PacLII or SolomonLII, not RONLAW."
+  }
+ ]
+}

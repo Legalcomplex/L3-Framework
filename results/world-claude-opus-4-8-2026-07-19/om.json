@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Oman — Source-Grounded Citation Reliability (OM)",
+ "country": "OM",
+ "jurisdiction": "Oman",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:22:03.854134+00:00",
+ "results": [
+  {
+   "id": "om-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2501,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No official \"Oman Decrees Portal\" at decree.om exists; Omani legislation is published in the Official Gazette (Al-Jarida Al-Rasmiyya)."
+  },
+  {
+   "id": "om-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2259,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Oman's Banking Law was Royal Decree 7/74, not 15/74; the Hijri year 1394 corresponds roughly to 1974."
+  },
+  {
+   "id": "om-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2252,
+   "verdict": true,
+   "correct": true,
+   "raw": "I cannot verify this specific claim as True or False with confidence, given uncertainty about the exact title, date, and issuing authority details."
+  },
+  {
+   "id": "om-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2254,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Oman's Supreme Committee COVID-19 decisions were issued via official announcements/ONA, not published through qanoon.om, which hosts formal legislation."
+  },
+  {
+   "id": "om-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2256,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Oman has no \"Financial Services Authority\"; its regulator is the Capital Market Authority. The cited source appears fabricated."
+  },
+  {
+   "id": "om-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2993,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Royal Decree 21/74 concerns other matters; Oman's formal Official Gazette (Al-Jarida Al-Rasmiya) began publishing decrees only in 1972, but this specific claim appears fabricated."
+  },
+  {
+   "id": "om-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 15965,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No official \"Oman Decrees Portal\" at decree.om exists; Omani laws are published in the Official Gazette (Al-Jaridah Al-Rasmiyah)."
+  },
+  {
+   "id": "om-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2993,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Oman's Banking Law was Royal Decree 7/74, not 15/74; also the Hijri year 1394 corresponds to 1974, not 1976."
+  },
+  {
+   "id": "om-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1721,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This regulation concerns Oman, but the Jordan Legislation & Opinion Bureau publishes Jordanian legislation, not Omani legal sources."
+  },
+  {
+   "id": "om-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2278,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Supreme Committee's COVID-19 decisions in Oman are Omani measures, not published by Saudi Arabia's SAMA rulebook."
+  },
+  {
+   "id": "om-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1714,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Israeli Knesset Open Source project cannot be the official publication channel for an Omani Financial Services Authority decision."
+  },
+  {
+   "id": "om-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1736,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Oman's first Royal Decrees began in 1972, but decree numbering format 21/74 indicates 1974, not 1972."
+  }
+ ]
+}

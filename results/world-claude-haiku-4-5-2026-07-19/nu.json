@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Niue — Source-Grounded Citation Reliability (NU)",
+ "country": "NU",
+ "jurisdiction": "Niue",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:42:48.106148+00:00",
+ "results": [
+  {
+   "id": "nu-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1760,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Atomic Energy Act 1945 was not Niue legislation. Niue was under New Zealand administration in 1945 and lacked independent legislative capacity then."
+  },
+  {
+   "id": "nu-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1551,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  PacLII publishes Niue court decisions, but the specific citation format and publication date (3 December 2024) cannot be verified as accurate without access to current PacLII databases."
+  },
+  {
+   "id": "nu-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1752,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Niue did not achieve self-government until 1974. The Arbitration Amendment Act 1938 could not have been published as official Niue legislation in 1938, as Niue lacked legislative authority "
+  },
+  {
+   "id": "nu-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1521,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** PacLII publishes Pacific court decisions, but this 2025 decision post-dates current real-time knowledge cutoffs, preventing verification of its actual publication status."
+  },
+  {
+   "id": "nu-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1528,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. While Niue has an official Constitution, the specific 2022 publication details cannot be verified as accurate through reliable sources on Niue's official legislation."
+  },
+  {
+   "id": "nu-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1632,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** PacLII is the Pacific Islands Legal Information Institute, not \"Niue Legislation & Court Decisions.\" PacLII hosts decisions from multiple Pacific jurisdictions, including Niue."
+  },
+  {
+   "id": "nu-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2521,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Atomic Energy Act 1945 is a US federal statute, not a Marshall Islands law. Niue's legal sources would not include this as an official legal document."
+  },
+  {
+   "id": "nu-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1517,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This decision involves Niue courts, not Australian courts. Open Australian Legal Corpus focuses on Australian legal materials and would not be the primary publisher of Niue High Court decisions"
+  },
+  {
+   "id": "nu-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1048,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Arbitration Amendment Act 1938 is a Niue statute, not a Solomon Islands one. The cited portal is therefore an incorrect source for this legislation."
+  },
+  {
+   "id": "nu-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1140,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Niue has its own High Court (NUHC), not a Federal Court of Australia. This decision is a Niue High Court judgment, not an Australian federal court judgment."
+  },
+  {
+   "id": "nu-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1943,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  'Constitution of Niue and Associated Documents' is not published by Niue Government Official Legislation. The Constitution of Niue (1974) is the primary constitutional document, typically pub"
+  },
+  {
+   "id": "nu-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1472,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  RONLAW is Nauru's online legal database, not Niue's. This decision should be published in Niue's official legal database or reports, not a Nauru platform."
+  }
+ ]
+}

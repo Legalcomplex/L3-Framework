@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Ecuador — Source-Grounded Citation Reliability (EC)",
+ "country": "EC",
+ "jurisdiction": "Ecuador",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:36:26.341400+00:00",
+ "results": [
+  {
+   "id": "ec-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1707,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  This appears to be an administrative agreement (acuerdo), not primary legislation. Ecuador's oficial.ec publishes laws, decrees, and executive acts, but the format and content suggest this is"
+  },
+  {
+   "id": "ec-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2538,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The claim cannot be verified. Ecuador's official legislation portal (oficial.ec) does not provide publicly accessible records confirming this specific agreement's publication date or detail"
+  },
+  {
+   "id": "ec-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1929,
+   "verdict": false,
+   "correct": false,
+   "raw": "# Answer: False  **Explanation:** MDT agreements are ministerial administrative acts, not legislation. Ecuador's oficial.ec publishes laws and decrees, not internal ministry service authorizations lik"
+  },
+  {
+   "id": "ec-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1894,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The claim lacks sufficient specificity and verifiability. Official Ecuador legislation documents typically require complete classification numbers, ministerial attribution, and confirmation thr"
+  },
+  {
+   "id": "ec-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1802,
+   "verdict": false,
+   "correct": false,
+   "raw": "# Answer: False  **Explanation:** The citation format and reference to \"Acuerdo 0086\" lacks sufficient specificity. Ecuadorian official legislation requires complete ministerial attribution and precis"
+  },
+  {
+   "id": "ec-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1930,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  This agreement appears non-existent or misidentified. No such regulation on administrative, financial, and legal deconcentration could be verified through Ecuador's official legislative datab"
+  },
+  {
+   "id": "ec-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1618,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The citation format and reference details appear inconsistent with standard Ecuadorian official legal documentation conventions and official.ec publishing practices for governmental agreeme"
+  },
+  {
+   "id": "ec-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1819,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Querido Diário is a Brazilian platform for municipal gazettes. This document concerns an Ecuadorian foundation (DM agreement), so it would not be published there."
+  },
+  {
+   "id": "ec-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1760,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** An Ecuadorian Ministry of Labor (MDT) agreement would be published through Ecuadorian official sources, not Chile's BCN (Biblioteca del Congreso Nacional) Linked Open Data system."
+  },
+  {
+   "id": "ec-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1348,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The claim lacks credibility. Official Ecuadorian legislation on oficial.ec typically addresses national regulatory matters, not individual repatriation requests for foreign nationals, which w"
+  },
+  {
+   "id": "ec-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1342,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Ecuadorian official gazette (oficial.ec) publishes decrees and agreements in Registro Oficial, not standalone documents. This citation lacks the required Registro Oficial issue number a"
+  },
+  {
+   "id": "ec-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1147,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This agreement appears to reference administrative decentralization regulations, but the specific title, date, and official publication details cannot be verified through standard Ecuadoria"
+  }
+ ]
+}

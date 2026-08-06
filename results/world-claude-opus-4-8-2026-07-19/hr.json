@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Croatia — Source-Grounded Citation Reliability (HR)",
+ "country": "HR",
+ "jurisdiction": "Croatia",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.4167,
+ "correct": 5,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:14:38.711472+00:00",
+ "results": [
+  {
+   "id": "hr-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2633,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific decision number exists; without access to odluke.sudovi.hr, I cannot confirm authenticity."
+  },
+  {
+   "id": "hr-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2451,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-02-25 is in the future, making this citation impossible to verify as a genuine published decision."
+  },
+  {
+   "id": "hr-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2999,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This is a future-dated (2026) citation I cannot verify; the identifier and act details appear fabricated, not confirmable."
+  },
+  {
+   "id": "hr-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2192,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The case number format \"Uzp\" indicates Supreme Court jurisdiction over administrative disputes, not the High Administrative Court in Croatia."
+  },
+  {
+   "id": "hr-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2995,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific decision number, date, or its authenticity; fabricated case citations are a known risk requiring verification."
+  },
+  {
+   "id": "hr-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2177,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The 2026 date is in the future relative to verifiable records; this citation cannot be confirmed as an existing AZTN decision."
+  },
+  {
+   "id": "hr-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2172,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The case number format \"Ovrv\" is Croatian, not Latvian; it cannot be published by Latvia's Constitutional Court."
+  },
+  {
+   "id": "hr-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 3000,
+   "verdict": true,
+   "correct": false,
+   "raw": "I cannot verify this specific decision's existence or details, so I cannot confirm the citation's accuracy as True.  False (unverifiable)."
+  },
+  {
+   "id": "hr-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2456,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This appears fabricated; the identifier format and 2026 date cannot be verified, and I cannot confirm this specific citation exists."
+  },
+  {
+   "id": "hr-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1842,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. A Croatian jurisdiction case would be published by Croatian courts, not Moldova's portal; jurisdiction and publisher mismatch."
+  },
+  {
+   "id": "hr-src-f05",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 3770,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific ECLI identifier, case number, or date; such precise unverified details likely constitute fabricated information."
+  },
+  {
+   "id": "hr-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2283,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The case reference number format and Croatian company names indicate this is a Croatian Competition Agency (AZTN) decision, not Montenegro's court."
+  }
+ ]
+}

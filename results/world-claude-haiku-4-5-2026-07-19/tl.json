@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Timor-Leste — Source-Grounded Citation Reliability (TL)",
+ "country": "TL",
+ "jurisdiction": "Timor-Leste",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:45:54.980886+00:00",
+ "results": [
+  {
+   "id": "tl-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1638,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The claim contains an internal inconsistency: Law No. 1/2003 cannot be published on 2002-12-24, as this date precedes the law's 2003 designation by several days."
+  },
+  {
+   "id": "tl-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1987,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  BCTL Instructions are typically internal administrative directives rather than formal published regulations. Verification through official Central Bank of Timor-Leste channels would be nece"
+  },
+  {
+   "id": "tl-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1461,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This document cannot be verified as published on 2026-04-15 because that date is in the future relative to current knowledge cutoff (April 2024)."
+  },
+  {
+   "id": "tl-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1432,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Parliamentary Law No. 1/2002 established the legal framework for publishing acts, but the claim conflates the law itself with a publication venue, which is inaccurate."
+  },
+  {
+   "id": "tl-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1915,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  BCTL Regulation N.º 4/2018 was published on 2018-12-28, not 2018-01-01. The publication date in the claim is incorrect."
+  },
+  {
+   "id": "tl-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1950,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.**  This document cannot be verified as published on 2026-02-12 because that date is in the future. As of my knowledge cutoff (April 2024), this date has not occurred yet."
+  },
+  {
+   "id": "tl-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1644,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No verifiable record exists of Parliamentary Law No. 1/2003 on real estate ownership being officially published in English translations on that specific date in Timor-Leste's legal database."
+  },
+  {
+   "id": "tl-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1684,
+   "verdict": false,
+   "correct": true,
+   "raw": "# Answer: **False**  **Explanation:** BCTL (Banco Central de Timor-Leste) is Timor-Leste's central bank. Instructions would be published through Timor-Leste official channels, not Indonesia's JDIHN Na"
+  },
+  {
+   "id": "tl-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1081,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This document cannot originate from Timor-Leste's legal system while being published through Thailand's Royal Gazette. The jurisdictions and publication sources are incompatible."
+  },
+  {
+   "id": "tl-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1299,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Thu Vien Phap Luat is a Vietnamese legal database. Timor-Leste (RDTL) official acts would be published through the Timorese Official Gazette (Jornal da República), not Vietnamese sources."
+  },
+  {
+   "id": "tl-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1387,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  BCTL (Banco Central Timor-Leste) regulations are official Timor-Leste sources, not published through Cambodian legal libraries. The attribution to a Cambodian publisher is incorrect."
+  },
+  {
+   "id": "tl-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1289,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Timor-Leste's official legal publications are issued through the Diário da República (Official Gazette), not through a Cambodian legal library service. This source attribution is implausibl"
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Dominican Republic — Source-Grounded Citation Reliability (DO)",
+ "country": "DO",
+ "jurisdiction": "Dominican Republic",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:36:19.802312+00:00",
+ "results": [
+  {
+   "id": "do-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1456,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The cited date (2026-01-09) is in the future relative to the current knowledge cutoff, making verification impossible. This appears to be an invalid or fabricated reference."
+  },
+  {
+   "id": "do-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2653,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This decision cannot be from 2026 as it predates the current date. The future date indicates this is not an authentic official Dominican Republic judicial decision."
+  },
+  {
+   "id": "do-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2559,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Ley 98-25 sobre Residuos Sólidos was enacted in 1998, not 2020. The date provided (2020-09-30) does not correspond to the law's original publication date."
+  },
+  {
+   "id": "do-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1716,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Dominican Republic's competition authority is the \"Superintendencia de Competencia\" (PROCOMPETENCIA), not a \"National Competition Commission.\" The citation format and publisher name do "
+  },
+  {
+   "id": "do-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1595,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The date 2025-08-01 is in the future and cannot be a publication date for an official legal source as of now."
+  },
+  {
+   "id": "do-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3381,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The publication date (2026-01-07) is in the future, making this claim impossible. Official legal documents cannot be published before the current date."
+  },
+  {
+   "id": "do-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1484,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Consultoría Jurídica del Poder Ejecutivo is an advisory body, not a legislative publisher. Official Dominican laws are published through the Gaceta Oficial."
+  },
+  {
+   "id": "do-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1553,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This decision is from the Dominican Republic's family court system (indicated by \"Familia\" and the Dominican court citation format), not the British Virgin Islands Commercial Court."
+  },
+  {
+   "id": "do-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2162,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  Ley-98-25 on Solid Waste was enacted in 1998, not 2019. The 2019 date likely refers to regulatory updates or amendments, not original publication."
+  },
+  {
+   "id": "do-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2057,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Joint Court of Justice (Gemeenschappelijk Hof) is a Sint Maarten/Netherlands Antilles court, not a Dominican Republic institution. Dominican resolutions would originate from Dominican c"
+  },
+  {
+   "id": "do-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1461,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The citation lacks essential elements (resolution number, official gazette reference) required to verify it as an authentic Dominican Republic Superintendencia de Pensiones normative docume"
+  },
+  {
+   "id": "do-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1581,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This appears to be a decree excerpt, not a complete official publication. The Consultoría Jurídica database requires full decree numbers and proper legislative citations for verification."
+  }
+ ]
+}

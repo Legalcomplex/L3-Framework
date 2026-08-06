@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Uruguay — Source-Grounded Citation Reliability (UY)",
+ "country": "UY",
+ "jurisdiction": "Uruguay",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 11,
+ "blocked": 0,
+ "unparsed": 1,
+ "errors": [],
+ "accuracy": 0.5455,
+ "correct": 6,
+ "parse_rate": 0.9167,
+ "passed": false,
+ "timestamp": "2026-07-19T08:27:20.750424+00:00",
+ "results": [
+  {
+   "id": "uy-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1936,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific resolution's existence, number, entity, or publication date without access to authoritative IMPO records."
+  },
+  {
+   "id": "uy-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2552,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears fabricated; Uruguay's Ley de Gestión Integral de Residuos (No. 19.829) was published September 2019, not April 2020."
+  },
+  {
+   "id": "uy-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2548,
+   "verdict": null,
+   "correct": false,
+   "raw": "I cannot verify this specific citation as authentic. Without access to Uruguay's official database, I cannot confirm these details' accuracy."
+  },
+  {
+   "id": "uy-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3018,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Decreto-Ley 14.990 concerns different subject matter and this date/title combination appears fabricated; verification against IMPO records fails."
+  },
+  {
+   "id": "uy-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2920,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. Uruguay's IMPO (Centro de Información Oficial) is the official legal publisher; such tax/BCU disclosure decrees were plausibly published during 2020's pandemic suspensions."
+  },
+  {
+   "id": "uy-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2559,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation's authenticity; the case number, date, and details may be fabricated or inaccurate."
+  },
+  {
+   "id": "uy-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2792,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. SUIN-Juriscol is Colombia's normative information system, not Uruguay's. Uruguayan official norms are published via IMPO, not SUIN-Juriscol."
+  },
+  {
+   "id": "uy-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2014,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Ley de Gestión Integral de Residuos (Ley 19.829) was published in 2019, not April 2, 2022."
+  },
+  {
+   "id": "uy-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1990,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Uruguayan appellate court rulings are not published by Colombia's open data portal for Constitutional Court decisions; jurisdictions mismatch."
+  },
+  {
+   "id": "uy-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2313,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Chile's BCN Linked Open Data covers Chilean legislation, not Uruguayan decree-laws, so this cross-jurisdictional sourcing claim is incorrect."
+  },
+  {
+   "id": "uy-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2146,
+   "verdict": true,
+   "correct": false,
+   "raw": "I cannot verify this specific claim as True with confidence. The exact title, date, and IMPO publication details require direct source confirmation, which I lack."
+  },
+  {
+   "id": "uy-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2235,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. JUBA is an Argentine provincial database from Buenos Aires; a Uruguayan appellate court decision wouldn't be published there."
+  }
+ ]
+}

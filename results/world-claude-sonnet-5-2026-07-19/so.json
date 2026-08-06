@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Somalia — Source-Grounded Citation Reliability (SO)",
+ "country": "SO",
+ "jurisdiction": "Somalia",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:02:49.257583+00:00",
+ "results": [
+  {
+   "id": "so-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2692,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Somalia lacks a functioning \"Office of the State Attorney General — Official Gazette\" publishing system, and the date (2026) is future/unverifiable, making this claim fabricated."
+  },
+  {
+   "id": "so-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2728,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — Somaliland Law hosts unofficial translations of Somaliland legislation as a reference archive, not an official government publication source."
+  },
+  {
+   "id": "so-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 7436,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — Somalia lacks a functioning centralized Official Gazette publication system via an \"Office of the State Attorney General,\" making this citation unverifiable and likely fabricated."
+  },
+  {
+   "id": "so-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2249,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific bibliographic claim's accuracy—publication details, dates, and source attributions require direct verification from primary sources, not assumption."
+  },
+  {
+   "id": "so-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3195,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this appears fabricated: Somalia's future 2026 gazette date, unclear \"Machadka Soomaaliyeed ee Badaha\" institute, and unverifiable Attorney General publication authority."
+  },
+  {
+   "id": "so-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2022,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this appears to be a fabricated or unverifiable citation; no such officially documented \"300319F\" compilation exists in verified Somaliland Law records."
+  },
+  {
+   "id": "so-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2098,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — Somalia lacks a verifiable centralized Official Gazette archive under that specific attribution; this citation appears fabricated/unverifiable given weak institutional record-keeping."
+  },
+  {
+   "id": "so-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1935,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Somalia's laws are not published via the Seychelles Official Gazette; this jurisdictional mismatch indicates a fabricated or incorrect bibliographic citation."
+  },
+  {
+   "id": "so-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2047,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — I cannot verify this citation exists; Somalia's fragile legal-publication system and my lack of access make confirming this specific gazette entry impossible."
+  },
+  {
+   "id": "so-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2536,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Somaliland's legal system is not administered by Tanzania's Attorney General's Office; this attribution mismatches jurisdiction, indicating a fabricated or incorrect bibliographic source."
+  },
+  {
+   "id": "so-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1645,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — no verifiable record of this title, publisher role, or 2025-04-01 date exists in known Somali official gazette or legal publication sources."
+  },
+  {
+   "id": "so-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1875,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Kenya Law (National Council for Law Reporting) publishes Kenyan legal materials, not Somaliland Police Force compilations; this attribution is implausible and unverifiable."
+  }
+ ]
+}

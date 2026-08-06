@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — North Macedonia — Source-Grounded Citation Reliability (MK)",
+ "country": "MK",
+ "jurisdiction": "North Macedonia",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:41:18.195951+00:00",
+ "results": [
+  {
+   "id": "mk-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1459,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.**  The date 2025-12-24 is in the future (beyond current time), making this claim not yet verifiable as an official published decision by North Macedonia's Constitutional Court."
+  },
+  {
+   "id": "mk-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1899,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The decision title references civil liability (material/immaterial damage), which would fall under civil court jurisdiction, not the Supreme Court's criminal practice publication."
+  },
+  {
+   "id": "mk-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1558,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The decision is dated 2026-04-02, which is a future date. No official body could have published a decision from the future as of the current time."
+  },
+  {
+   "id": "mk-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2349,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The date 2025-12-24 is in the future (beyond current date), making this claim about a published decision implausible and unverifiable as an official legal source."
+  },
+  {
+   "id": "mk-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1949,
+   "verdict": false,
+   "correct": false,
+   "raw": "# Evaluation: False  The decision title translates to \"Before Second-Instance Court ex officio\" – a procedural description rather than a formal decision name. No verifiable North Macedonian Supreme Co"
+  },
+  {
+   "id": "mk-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1572,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The date 2026-04-02 is in the future and cannot represent a published decision. This claim references a non-existent document with an impossible publication date."
+  },
+  {
+   "id": "mk-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1950,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The dissenting opinion (издвоено мислење) references a Macedonian case number format (У.бр.), indicating it originates from North Macedonia's courts, not Greece's Hellenic Court of Audit."
+  },
+  {
+   "id": "mk-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1663,
+   "verdict": false,
+   "correct": true,
+   "raw": "# Answer: False  **Explanation:** The decision title uses quotation marks and appears to be a case summary rather than an official published Supreme Court decision. North Macedonia's official court pr"
+  },
+  {
+   "id": "mk-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1445,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This decision concerns a Slovak company (Akross Media Holding a.s.) and appears to be a Slovak competition authority decision, not a North Macedonian one."
+  },
+  {
+   "id": "mk-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1096,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The decision's case number format (У.бр.) and Cyrillic language are characteristic of North Macedonian legal documents, not Ukrainian. The Supreme Court of Ukraine would not issue decisions"
+  },
+  {
+   "id": "mk-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1274,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The decision title translates to \"Before a Second-Instance Court by Official Duty\" (procedural description), not a publishable court decision. This appears to be a procedural note rather th"
+  },
+  {
+   "id": "mk-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1542,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The date 2025-04-02 is in the future and cannot represent a published decision. No official decision from North Macedonia's Commission for Protection of Competition exists with this future "
+  }
+ ]
+}

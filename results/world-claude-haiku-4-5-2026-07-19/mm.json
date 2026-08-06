@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Myanmar — Source-Grounded Citation Reliability (MM)",
+ "country": "MM",
+ "jurisdiction": "Myanmar",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:41:24.788692+00:00",
+ "results": [
+  {
+   "id": "mm-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1589,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Kayah State does not have a separate Investment Committee with a Chairman requiring substitution through the national Directorate. Myanmar's investment administration is centralized under D"
+  },
+  {
+   "id": "mm-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2409,
+   "verdict": false,
+   "correct": false,
+   "raw": "# Answer: False  **Explanation:** This directive cannot have a verified 2025-11-10 publication date, as that is a future date from any current perspective. Myanmar's official legal publications typica"
+  },
+  {
+   "id": "mm-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3014,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Myanmar's legislature is the Pyidaungsu Hluttaw, but official laws use \"Law\" designation without \"Noo6\" formatting. This appears to be a misformatted or non-official citation."
+  },
+  {
+   "id": "mm-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1647,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The source appears unreliable. Myanmar's cyber law draft status is uncertain, and attribution through Open Development Mekong CKAN lacks official governmental verification or formal publica"
+  },
+  {
+   "id": "mm-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1446,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The claim cannot be verified as an official legal source. Myanmar's Directorate of Investment and Company Administration does not maintain publicly accessible records confirming this specific"
+  },
+  {
+   "id": "mm-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1678,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The publication date (2026-03-16) is in the future, making this claim temporally impossible to verify as an actual published source as of now."
+  },
+  {
+   "id": "mm-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1715,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Kayah State Investment Committee would fall under regional state administration, not the Myanmar Directorate of Investment and Company Administration, a national-level federal body."
+  },
+  {
+   "id": "mm-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1569,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  Myanmar Laws in English (Lincoln Legal Services) is not an official government legal source. Official Myanmar legislation is published through the State Gazette or government ministries, not "
+  },
+  {
+   "id": "mm-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1086,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Myanmar's laws are published through Myanmar's official gazette and legal institutions, not Indonesia's JDIHN (National Legal Network of Indonesia). This is an incorrect attribution."
+  },
+  {
+   "id": "mm-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1088,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Myanmar Cyber Law Draft (2019) was not formally published by Husky & Partners through a Cambodian legal library. This appears to be an unreliable or misattributed source citation."
+  },
+  {
+   "id": "mm-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1849,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The claim lacks verifiable evidence. Myanmar's investment governance structures and official publication records cannot be independently confirmed through standard legal databases or offici"
+  },
+  {
+   "id": "mm-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1138,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Myanmar's foreign investment regulations typically require USD for MIC investments. No verifiable official source supports CNY as an alternative currency option as of the cited date."
+  }
+ ]
+}

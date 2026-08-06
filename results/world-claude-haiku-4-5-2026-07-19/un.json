@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — United Nations — Source-Grounded Citation Reliability (UN)",
+ "country": "UN",
+ "jurisdiction": "United Nations",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:46:39.742474+00:00",
+ "results": [
+  {
+   "id": "un-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1411,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.**   This document title appears fabricated. No such cooperation agreement with that exact title exists in the UN Official Document System as of the verification date."
+  },
+  {
+   "id": "un-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1295,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Security Council Resolution 3 (1946) concerned Greek frontier incidents, not Soviet troop withdrawal from Iran. The Iran matter was addressed in Resolution 2."
+  },
+  {
+   "id": "un-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 5045,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Y.G.H. et al v. Australia (2013-11-14) is a Human Rights Committee decision published in UN treaty body jurisprudence, but not specifically by \"UN OHCHR Jurisprudence (Treaty Bodies)\" as a "
+  },
+  {
+   "id": "un-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1256,
+   "verdict": true,
+   "correct": true,
+   "raw": "**True.**  The Convention on Privileges and Immunities of the United Nations was adopted February 13, 1946, and is an official UN treaty properly recorded in the UN Treaty Collection."
+  },
+  {
+   "id": "un-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1516,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The date 2026-02-25 is in the future, making this claim impossible. UN resolutions cannot be published on dates that have not yet occurred."
+  },
+  {
+   "id": "un-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1679,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  This fragment is incomplete and lacks essential metadata (document number, session, body). A complete UN official document citation requires these identifiers for verification in the ODS sy"
+  },
+  {
+   "id": "un-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1470,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The publication date of November 19, 2026 is in the future and therefore impossible. UN official documents cannot be published on dates that have not yet occurred."
+  },
+  {
+   "id": "un-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1929,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** UN Security Council resolutions are published through UN official channels (UN Documents), not UK Legislation (legislation.gov.uk), which publishes only British law."
+  },
+  {
+   "id": "un-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1726,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This decision does not exist in UN OHCHR Treaty Bodies jurisprudence. The case name, date, and parties do not match any documented decision in official UN human rights treaty body records."
+  },
+  {
+   "id": "un-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1550,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Convention on Privileges and Immunities of the United Nations is a UN treaty, not German Federal Law. German sources may publish it domestically, but the official source is the United N"
+  },
+  {
+   "id": "un-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1574,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  General Assembly Emergency Special Session resolutions follow the format A/RES/ES-##/##, but ES-11/10 would reference an 11th Emergency Special Session, which has not occurred as of Februar"
+  },
+  {
+   "id": "un-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1281,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The fragment is incomplete and lacks essential citation elements (document symbol, session number, resolution number). It cannot be verified as a complete official UN document without full "
+  }
+ ]
+}

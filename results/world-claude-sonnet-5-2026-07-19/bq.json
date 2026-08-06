@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Caribbean Netherlands — Source-Grounded Citation Reliability (BQ)",
+ "country": "BQ",
+ "jurisdiction": "Caribbean Netherlands",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:50:24.810795+00:00",
+ "results": [
+  {
+   "id": "bq-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2255,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Wet openbaarheid van bestuur BES is Dutch/BES legislation officially published via the Netherlands' Staatsblad or Officiële Bekendmakingen, not a source called \"Caribbean Netherlands BE"
+  },
+  {
+   "id": "bq-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1999,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. BWBR0028161 corresponds to a different regulation; identifiers are specific, and I cannot verify this exact code matches Mijnwet BES accurately."
+  },
+  {
+   "id": "bq-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 3037,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. BWBR0028163 is the identifier used in the Dutch wetten.nl/BWB system for the \"Wet Petroleumwet BES,\" commonly referenced regarding Saba Bank."
+  },
+  {
+   "id": "bq-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 5022,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The correct citation is the \"Wet openbare lichamen Bonaire, Sint Eustatius en Saba\" (WolBES), published in the Staatsblad, not \"Caribbean Netherlands BES Legislation.\""
+  },
+  {
+   "id": "bq-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2154,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** BWBR0028160 does not correspond to that title/date in the official Dutch legislation database; I cannot verify this specific identifier-title pairing as accurate."
+  },
+  {
+   "id": "bq-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1882,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. BWBR0028151 corresponds to the \"Wet openbare lichamen Bonaire, Sint Eustatius en Saba,\" not the financial legislation title cited."
+  },
+  {
+   "id": "bq-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 3482,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Caribbean Netherlands only came into existence on 10-10-2010 (dismantling of Netherlands Antilles); a 2007 BES publication date is anachronistic and incorrect."
+  },
+  {
+   "id": "bq-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2312,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** BWBR0028162 corresponds to the \"Wet toelating en uitzetting BES\" or similar legislation, not \"Mijnwet BES\" — the identifier-title pairing cannot be verified as accurate."
+  },
+  {
+   "id": "bq-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2277,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** BWBR0028165 corresponds to the \"Wet volkenrechtelijke grenzen BES\" or similar legislation, not \"Petroleumwet Saba Bank BES,\" which has a different official identifier."
+  },
+  {
+   "id": "bq-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1643,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.**  The WolBES was enacted in 2010 (effective 10-10-2010, establishing the public bodies), not first published on 2024-02-12 as claimed."
+  },
+  {
+   "id": "bq-src-f05",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2528,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. BWBR0028162 does not correspond to that title; BES legislation identifiers are specific, and this claim's pairing appears fabricated or unverifiable without official confirmation."
+  },
+  {
+   "id": "bq-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2751,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Cayman Islands Legislation portal has no jurisdiction over BES law; this Dutch Caribbean statute would appear in the Dutch Staatsblad or official BES publications, not Cayman sources."
+  }
+ ]
+}

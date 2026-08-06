@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Indonesia — Source-Grounded Citation Reliability (ID)",
+ "country": "ID",
+ "jurisdiction": "Indonesia",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:38:34.148235+00:00",
+ "results": [
+  {
+   "id": "id-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1440,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  As of my knowledge cutoff (April 2024), laws enacted in 2025 cannot be verified. This appears to be a future-dated document that I cannot authenticate."
+  },
+  {
+   "id": "id-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1948,
+   "verdict": false,
+   "correct": false,
+   "raw": "# Evaluation: FALSE  **Explanation:** The Indonesian Constitutional Court (Mahkamah Konstitusi) issues decisions on constitutional review cases, but the specific citation format and date lack verifiab"
+  },
+  {
+   "id": "id-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1458,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  This law does not exist. Jakarta's special status is governed by Law No. 29 of 2007, not a 2024 law creating a new special province designation."
+  },
+  {
+   "id": "id-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1782,
+   "verdict": false,
+   "correct": false,
+   "raw": "# Evaluation: FALSE  **Explanation:** Indonesia Constitutional Court (Mahkamah Konstitusi) publishes constitutional review decisions, not administrative/financial crime law decisions. This falls under"
+  },
+  {
+   "id": "id-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1335,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  This law does not exist. No Law No. 5 of 2024 concerning Banda Aceh City was enacted by the Indonesian Parliament. The citation appears fabricated."
+  },
+  {
+   "id": "id-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1582,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Constitutional Court (Mahkamah Konstitusi) reviews constitutional matters, not criminal code provisions. Criminal code review falls under the Supreme Court's jurisdiction."
+  },
+  {
+   "id": "id-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1852,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Thu Vien Phap Luat is a Vietnamese legal database. Indonesian laws are officially published through Indonesia's Lembaran Negara (State Gazette), not Vietnamese sources."
+  },
+  {
+   "id": "id-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1426,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Indonesian Constitutional Court (Mahkamah Konstitusi) issues decisions on constitutional review, but this specific 2021 decision title appears inaccurate or unverifiable in standard leg"
+  },
+  {
+   "id": "id-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1031,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This law is Indonesian, not Thai. The Royal Gazette is Thailand's official legal publication, not Indonesia's. Indonesian laws are published in the State Gazette (Lembaran Negara)."
+  },
+  {
+   "id": "id-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1101,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This decision cannot be from 2026—it's a future date. Indonesian Constitutional Court decisions are published with actual historical dates, not future ones."
+  },
+  {
+   "id": "id-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1703,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This law would be published in Indonesia's official gazette (Lembaran Negara RI), not through a Cambodian legal library. The publisher attribution is implausible."
+  },
+  {
+   "id": "id-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2600,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The Constitutional Court (Mahkamah Konstitusi) does not publish decisions titled \"Pengujian Materiil Kitab Undang-Undang Hukum Pidana\" as a singular official document in 2021. This appears to"
+  }
+ ]
+}

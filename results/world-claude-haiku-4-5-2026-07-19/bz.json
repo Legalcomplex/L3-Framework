@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Belize — Source-Grounded Citation Reliability (BZ)",
+ "country": "BZ",
+ "jurisdiction": "Belize",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:34:39.317086+00:00",
+ "results": [
+  {
+   "id": "bz-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1439,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Cap 67 in Belize's Consolidated Laws refers to the Bankruptcy Act, not the Banana Industry Loan Act. The citation appears inaccurate."
+  },
+  {
+   "id": "bz-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2008,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date is inconsistent with the case number format. Criminal Appeal No. 4 of 2012 would be decided in 2012 or later, not on 2012-01-01 at the case's inception."
+  },
+  {
+   "id": "bz-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2062,
+   "verdict": true,
+   "correct": true,
+   "raw": "# Answer: **True**  **Explanation:** Supreme Court judgments are official legal sources in Belize. The citation format (case number, year, parties, judgment designation) and publisher attribution are "
+  },
+  {
+   "id": "bz-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1901,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Central Bank of Belize Act No. 8 of 2018 would be published in Belize's official gazette or legislation database, not by the Central Bank itself as a primary legal source publisher."
+  },
+  {
+   "id": "bz-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1919,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The claim references a 2026 publication date, which is in the future. No official legal source could have published legislation in 2026 as of the current date."
+  },
+  {
+   "id": "bz-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2253,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  This order cannot have been published on 2026-01-01 as that date is in the future. No statutory instruments from 2026 have been officially published yet in the Belize Government Gazette."
+  },
+  {
+   "id": "bz-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1858,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The Banana Industry Loan Act does not appear as Cap 67 in Belize's official consolidated laws. Cap 67 designation cannot be verified in standard Belizean legal compilations as of the stated d"
+  },
+  {
+   "id": "bz-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1449,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This decision is from Belize's Court of Appeal, not Mexico's Supreme Court (SCJN). The case citation and jurisdiction clearly indicate a Belizean criminal appeal, not a Mexican legal source"
+  },
+  {
+   "id": "bz-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1205,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The date 2019-01-01 predates the case reference (C45 of 2019), creating a logical impossibility. A judgment cannot be issued before the case is formally filed."
+  },
+  {
+   "id": "bz-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1298,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Central Bank of Belize Act is a Belizean law that would be published through Belizean official sources, not Honduras's TSC Virtual Library. Honduras and Belize are separate countries wi"
+  },
+  {
+   "id": "bz-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1057,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Mexico Orden Juridico Nacional is a Mexican legal database. Belize legislation would be published through official Belize legal sources, not Mexican databases."
+  },
+  {
+   "id": "bz-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1298,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This instrument is a Belizean statutory instrument, not Mexican state legislation. It would be published through Belize's official gazette, not Mexico's legal database."
+  }
+ ]
+}

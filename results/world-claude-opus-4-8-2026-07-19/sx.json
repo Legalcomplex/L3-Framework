@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Sint Maarten — Source-Grounded Citation Reliability (SX)",
+ "country": "SX",
+ "jurisdiction": "Sint Maarten",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:25:12.740764+00:00",
+ "results": [
+  {
+   "id": "sx-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2319,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-03-18 is in the future relative to verifiable records; this ECLI citation cannot be authenticated as genuine."
+  },
+  {
+   "id": "sx-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2206,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific CVDR identifier corresponds to that ordinance and date; unconfirmed bibliographic details shouldn't be asserted as accurate."
+  },
+  {
+   "id": "sx-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2143,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The year 2026 is in the future relative to now; this ECLI cannot yet exist and appears fabricated."
+  },
+  {
+   "id": "sx-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2366,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-03-03 is in the future relative to verifiable records; this ECLI citation cannot be confirmed as authentic."
+  },
+  {
+   "id": "sx-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2146,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The ECLI year 2026 and date 2026-03-18 are future-dated relative to verifiable records, making this citation unreliable and likely fabricated."
+  },
+  {
+   "id": "sx-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 3065,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific CVDR identifier maps to that exact title and date without access to authoritative databases; unverifiable."
+  },
+  {
+   "id": "sx-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2512,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. ECLI:NL:OGHACMB decisions are Dutch Caribbean court rulings, published on rechtspraak.nl, not the Cayman Islands' judicial.ky platform."
+  },
+  {
+   "id": "sx-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2187,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific CVDR identifier, date, or title combination without access to the authoritative decentralized regulations database; unconfirmed."
+  },
+  {
+   "id": "sx-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1844,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Gemeenschappelijk Hof is a Dutch Caribbean court; its decisions are published under ECLI, not Bermuda's separate common-law system."
+  },
+  {
+   "id": "sx-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1915,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This ECLI decision belongs to the Gemeenschappelijk Hof van Justitie (Dutch Caribbean), not the Bahamas Court of Appeal, a different jurisdiction entirely."
+  },
+  {
+   "id": "sx-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1597,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The ECLI code indicates the Gemeenschappelijk Hof van Justitie, not the BVI Commercial Court, which is a separate jurisdiction."
+  },
+  {
+   "id": "sx-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1962,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific CVDR identifier maps to that exact title and date; I lack reliable access to confirm."
+  }
+ ]
+}

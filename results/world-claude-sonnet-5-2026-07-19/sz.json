@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Eswatini — Source-Grounded Citation Reliability (SZ)",
+ "country": "SZ",
+ "jurisdiction": "Eswatini",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:03:24.281539+00:00",
+ "results": [
+  {
+   "id": "sz-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2224,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific citation; it appears fabricated, and no confirmed record of this exact directive, date, or publication exists."
+  },
+  {
+   "id": "sz-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2070,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Income Tax Order 1975 is a legislative instrument (King's Order-in-Council); the Eswatini Revenue Service publishes guidance, not original legislation."
+  },
+  {
+   "id": "sz-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2361,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Authentication of Documents Act, 1965 predates 1998; EswatiniLII hosts/publishes legislation online but is not the original publication source or date."
+  },
+  {
+   "id": "sz-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2007,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated or unverifiable citation; no confirmed official Central Bank of Eswatini publication matches that exact title and date."
+  },
+  {
+   "id": "sz-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2326,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Eswatini's Graded Tax originates from the Graded Tax Order/Act, but \"Eswatini Revenue Service\" didn't exist in 1968; the country was called Swaziland then, and ERS was established much late"
+  },
+  {
+   "id": "sz-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2060,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Apportionment of Damages Act is a genuine Eswatini statute, but EswatiniLII is a legal database/repository, not the original publisher—the Act was enacted in 1970, not 1998."
+  },
+  {
+   "id": "sz-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1983,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Lesotho Revenue Authority has no jurisdiction over Eswatini; a Fast Payments Directive would be issued by Eswatini's own regulatory authority, not Lesotho's."
+  },
+  {
+   "id": "sz-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2051,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Income Tax Order 1975 is Eswatini/Swaziland legislation; it would be published via Eswatini LII (SwaziLII), not Lesotho's legal information institute."
+  },
+  {
+   "id": "sz-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1747,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Authentication of Documents Act dates from 1965, but EswatiniLII merely hosts/republishes legislation; it did not \"publish\" it in 1996."
+  },
+  {
+   "id": "sz-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1717,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Eswatini's laws are not published by the Central Bank of Lesotho, a separate country's institution with no jurisdictional authority over Eswatini."
+  },
+  {
+   "id": "sz-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1676,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Zambia Securities and Exchange Commission would not publish Eswatini's Graded Tax Act; that body has no jurisdiction over Eswatini's legislation."
+  },
+  {
+   "id": "sz-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1948,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Eswatini's Apportionment of Damages Act dates from 1970 as legislation, but EswatiniLII merely hosts/publishes consolidated texts online, not original enactment."
+  }
+ ]
+}

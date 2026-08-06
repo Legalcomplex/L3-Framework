@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Sierra Leone — Source-Grounded Citation Reliability (SL)",
+ "country": "SL",
+ "jurisdiction": "Sierra Leone",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:24:41.223146+00:00",
+ "results": [
+  {
+   "id": "sl-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2021,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Bank of Sierra Leone Act was enacted in 2019, but SierraLII publication details and exact date require verification."
+  },
+  {
+   "id": "sl-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2455,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Sierra Leone's Finance Act 2021 would be published in the official Gazette, not a \"Sierra Leone Web Laws Archive.\""
+  },
+  {
+   "id": "sl-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2462,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Sierra Leone's Companies Act 2009 is legislation published via official Gazette/Parliament, not Bank of Sierra Leone banking regulations."
+  },
+  {
+   "id": "sl-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3135,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation; SierraLII was established decades later and cannot have published anything in 1977."
+  },
+  {
+   "id": "sl-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2556,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Appropriation Acts in Sierra Leone are officially published in the Sierra Leone Gazette, not an unofficial web archive."
+  },
+  {
+   "id": "sl-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1942,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No \"Other Financial Services Act 2007\" exists in Sierra Leone; the cited title, publisher, and date appear fabricated."
+  },
+  {
+   "id": "sl-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 3217,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Bank of Sierra Leone Act is Sierra Leonean legislation; Burkina Faso's Assemblée Nationale has no authority to publish it."
+  },
+  {
+   "id": "sl-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2457,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Sierra Leone's Finance Act 2021 would be published via Sierra Leone official gazette, not an Ivorian legal codes website."
+  },
+  {
+   "id": "sl-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2394,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Sierra Leone's Companies Act 2009 would be published via official national gazette, not a \"Benin LEGIS\" database—jurisdictionally inconsistent."
+  },
+  {
+   "id": "sl-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2128,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Sierra Leone legislation would be published by Sierra Leone's Parliament, not Benin's National Assembly; jurisdictions are mismatched."
+  },
+  {
+   "id": "sl-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2352,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Sierra Leone appropriation acts are published by its own government/parliament, not Nigeria's electricity regulator—jurisdictionally and institutionally mismatched."
+  },
+  {
+   "id": "sl-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1881,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Gambia's Law Hub wouldn't be the official source for Sierra Leone legislation; jurisdictions and citation details appear mismatched."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Samoa — Source-Grounded Citation Reliability (WS)",
+ "country": "WS",
+ "jurisdiction": "Samoa",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:47:26.828151+00:00",
+ "results": [
+  {
+   "id": "ws-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1400,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Alcohol Control Act 2020 is not officially consolidated in Samoa's Attorney General Consolidated Laws 2023. Verification through Samoa's official legislative records is required."
+  },
+  {
+   "id": "ws-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2092,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. While the Act exists, the \"Samoa Attorney General Consolidated Laws 2023\" is not a recognized official publication format for Samoan legislation as of available records."
+  },
+  {
+   "id": "ws-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3220,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Administration Act 1975 was enacted in 1975, predating the 2023 Consolidated Laws compilation. The 2023 publication is a consolidation, not the original source."
+  },
+  {
+   "id": "ws-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1594,
+   "verdict": true,
+   "correct": true,
+   "raw": "# Evaluation: **True**  The Accident Compensation Act 1989 is a legitimate Samoan statute properly consolidated in the Attorney General's official consolidated laws collection with the correct commenc"
+  },
+  {
+   "id": "ws-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1910,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Samoa does not have an \"Allied Health Professions Act 2014.\" This legislation does not appear in official Samoan consolidated laws or statutory records as of 2023."
+  },
+  {
+   "id": "ws-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1498,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The Acts Interpretation Act 1975 (not 2015) is Samoa's primary legislation interpretation statute. The 2015 date appears to be a revision date rather than enactment year."
+  },
+  {
+   "id": "ws-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1969,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Samoa's 'Alcohol Control Act 2020' would be published by Samoa's government, not Australian sources. Open Australian Legal Corpus covers Australian legislation, not Samoan legislation."
+  },
+  {
+   "id": "ws-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1780,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The 'Alienation of Freehold Land Act 1972' is a Samoan law, but RONLAW is Nauru's online legal database, not Samoa's official legal repository."
+  },
+  {
+   "id": "ws-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1559,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The 'Administration Act 1975' is a Samoan law, not Tongan legislation. It would be published through Samoa's official legal sources, not Tonga's Attorney General office."
+  },
+  {
+   "id": "ws-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1173,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Accident Compensation Act 1989 is Samoan legislation, not published by the Republic of Marshall Islands Judiciary. Different jurisdictions with separate legal systems."
+  },
+  {
+   "id": "ws-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1075,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Allied Health Professions Act 2014 is Samoan legislation, not Australian. It would be published in Samoa's official legal register, not Australia's Federal Register of Legislation."
+  },
+  {
+   "id": "ws-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1629,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Acts Interpretation Act 2015 is a Fijian law, not Samoan legislation. The claim misattributes it to Samoa's legal system."
+  }
+ ]
+}

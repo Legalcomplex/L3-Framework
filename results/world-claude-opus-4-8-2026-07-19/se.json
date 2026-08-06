@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Sweden — Source-Grounded Citation Reliability (SE)",
+ "country": "SE",
+ "jurisdiction": "Sweden",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:24:14.598562+00:00",
+ "results": [
+  {
+   "id": "se-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2789,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific 2026 SFS law exists; the future date and unverifiable details suggest a fabricated citation."
+  },
+  {
+   "id": "se-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2557,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated citation—the specific title, precise future date, and attribution details cannot be verified as genuine."
+  },
+  {
+   "id": "se-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2238,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-02-04 is in the future, making this citation impossible to verify as a legitimate decided case."
+  },
+  {
+   "id": "se-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2466,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Swedish Supreme Court decisions don't receive named titles like \"Den frånvarande fadern\"; this appears fabricated. The date is also suspicious."
+  },
+  {
+   "id": "se-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2637,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-02-17 is in the future (beyond present), making this citation implausible; case details cannot be verified."
+  },
+  {
+   "id": "se-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2262,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The SFS number 2025:1536 and date cannot be verified; this appears to be a fabricated citation without authentic source confirmation."
+  },
+  {
+   "id": "se-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2123,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Finlex is Finland's legal database; Swedish laws (SFS) are published via Svensk författningssamling, not Finlex."
+  },
+  {
+   "id": "se-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2396,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier format 'HD03120' and combination of details appear fabricated; I cannot verify this specific document exists."
+  },
+  {
+   "id": "se-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2256,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '3034-25' cannot correspond to 'Mål: 3034-24'—the year suffixes (25 versus 24) differ, indicating inconsistent case numbers."
+  },
+  {
+   "id": "se-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2137,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Swedish Supreme Court cases don't use descriptive names like \"Den frånvarande fadern\"; also case number and date appear fabricated."
+  },
+  {
+   "id": "se-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2115,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The case number format \"ÖM\" is not standard for Swedish courts, and the 2023 date contradicts the \"25\" designation."
+  },
+  {
+   "id": "se-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2076,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Swedish förordningar are published in Svensk författningssamling (SFS), not through Norway's Stortinget data service; jurisdictions and institutions mismatch."
+  }
+ ]
+}

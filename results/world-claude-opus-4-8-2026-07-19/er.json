@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Eritrea — Source-Grounded Citation Reliability (ER)",
+ "country": "ER",
+ "jurisdiction": "Eritrea",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:12:08.898040+00:00",
+ "results": [
+  {
+   "id": "er-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1946,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific proclamation's existence, title, or date without fabricating details about Eritrea's official gazette records."
+  },
+  {
+   "id": "er-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 4517,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Eritrea has no consistently published official gazette; specific citation details and Library of Congress collection attribution appear fabricated."
+  },
+  {
+   "id": "er-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2357,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Eritrea has no regularly published official gazette; this specific proclamation number, date, and Library of Congress attribution appear fabricated."
+  },
+  {
+   "id": "er-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2294,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific proclamation, gazette citation, or date; details appear fabricated and should not be trusted."
+  },
+  {
+   "id": "er-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3167,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Eritrea's Gazette is \"Gazette of Eritrean Laws\"; the Library of Congress doesn't publish an official Eritrean gazette collection. Details appear fabricated."
+  },
+  {
+   "id": "er-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2543,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Eritrea has no regularly published official gazette; this specific citation, proclamation number, and date appear fabricated."
+  },
+  {
+   "id": "er-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2548,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Eritrean proclamations are published in the Eritrean Gazette of Laws, not the Seychelles Official Gazette; jurisdictions don't match."
+  },
+  {
+   "id": "er-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2271,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Eritrea and Tanzania are separate jurisdictions; Eritrean regulations wouldn't be published through Tanzania's Attorney General's Office information system."
+  },
+  {
+   "id": "er-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2147,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Kenya Law reports Kenyan legislation only; Eritrean proclamations wouldn't be published there. The publisher-jurisdiction mismatch invalidates this claim."
+  },
+  {
+   "id": "er-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2347,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Eritrean proclamations are published in the Gazette of Eritrean Laws, not Tanzania's Attorney General's Office system."
+  },
+  {
+   "id": "er-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2718,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Eritrean proclamations are published in Eritrea's Gazette, not Tanzania's Attorney General system; jurisdictional mismatch invalidates the claim."
+  },
+  {
+   "id": "er-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1739,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Eritrea's legal proclamations are published in its own Gazette of Eritrean Laws, not through Tanzania's Attorney General's Office."
+  }
+ ]
+}

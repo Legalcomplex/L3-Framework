@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Timor-Leste — Source-Grounded Citation Reliability (TL)",
+ "country": "TL",
+ "jurisdiction": "Timor-Leste",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:03:51.643886+00:00",
+ "results": [
+  {
+   "id": "tl-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2268,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Law No. 1/2003 concerns the abolition of state property claims/UNTAET regulations on land, not a \"Juridical Regime of Real Estate\" title."
+  },
+  {
+   "id": "tl-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3157,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific instruction number, title, and date combination exists in BCTL's official regulatory publications or records."
+  },
+  {
+   "id": "tl-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2778,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This appears to be a fabricated future-dated citation (2026); I cannot verify unpublished/future Jornal da República entries as legitimate sources."
+  },
+  {
+   "id": "tl-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2188,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Timor-Leste's first Constitution took effect May 20, 2002, and legislation is enacted as \"Law No.\" by National Parliament, not \"Parliamentary Laws,\" making this citation format inaccurate."
+  },
+  {
+   "id": "tl-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2040,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific regulation number, title, or date corresponds to an actual official BCTL publication; citation appears unconfirmed."
+  },
+  {
+   "id": "tl-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1966,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated/unverifiable future-dated citation; I cannot confirm any such law's actual existence or publication details."
+  },
+  {
+   "id": "tl-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2318,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Law No. 1/2003 concerns nationality/other matters in some numbering schemes, and this specific title/citation combination cannot be verified as accurate."
+  },
+  {
+   "id": "tl-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2253,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Timor-Leste's central bank (BCTL) instructions aren't published via Indonesia's JDIHN, which covers Indonesian legal documents, not Timor-Leste's regulatory publications."
+  },
+  {
+   "id": "tl-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1591,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Timor-Leste laws are published in its own Jornal da República, not Thailand's Royal Gazette or \"Open Law Data Thailand.\""
+  },
+  {
+   "id": "tl-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1993,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Timor-Leste's official gazette/legal publication is not \"Thu Vien Phap Luat,\" which is a Vietnamese legal database, not Timor-Leste's authority."
+  },
+  {
+   "id": "tl-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2586,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This is a Timor-Leste BCTL banking regulation; citing \"Cambodian Legal Library\" as its publisher/source is jurisdictionally inconsistent and implausible."
+  },
+  {
+   "id": "tl-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2880,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Timor-Leste's official legal publication venue is the Jornal da República, not a \"Husky & Partners Cambodian Legal Library\" — an implausible, non-official, fabricated source."
+  }
+ ]
+}

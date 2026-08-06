@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Sierra Leone — Source-Grounded Citation Reliability (SL)",
+ "country": "SL",
+ "jurisdiction": "Sierra Leone",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:44:54.206681+00:00",
+ "results": [
+  {
+   "id": "sl-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1514,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Bank of Sierra Leone Act predates 2019; it was originally enacted in 1968 and subsequently amended. The 2019 date likely refers to a revision or online publication, not the original ena"
+  },
+  {
+   "id": "sl-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1862,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Finance Act, 2021 cannot have been published on 2021-01-01, as legislation typically takes months to draft, debate, and enact after the fiscal year begins."
+  },
+  {
+   "id": "sl-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1518,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Companies Act 2009 is primary legislation enacted by Parliament, not a banking regulation published by the Bank of Sierra Leone. These are distinct legal sources."
+  },
+  {
+   "id": "sl-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1541,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Sierra Leone Legal Information Institute (SLeLII) was established in 2010, making it impossible for it to have published a 1977 act document in 1977."
+  },
+  {
+   "id": "sl-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1600,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Appropriation Act, 2021 would typically be published in the Government Gazette, not exclusively through a web archive, which serves as a secondary repository rather than the official public"
+  },
+  {
+   "id": "sl-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1519,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Other Financial Services Act 2007 is primary legislation, not a Bank of Sierra Leone regulatory guideline. Primary acts are published separately from central bank guidelines."
+  },
+  {
+   "id": "sl-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2643,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Bank of Sierra Leone Act, 2019 is a Sierra Leone law and would be published by Sierra Leone's legislative body, not Burkina Faso's Assemblée Nationale."
+  },
+  {
+   "id": "sl-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2636,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.**   The Finance Act, 2021 is a Sierra Leonean statute, not Ivorian legislation. Côte d'Ivoire Legal Codes would not be the authoritative publisher for Sierra Leone's laws."
+  },
+  {
+   "id": "sl-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1128,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Companies Act 2009 is a Sierra Leone law, not a Benin law. Benin LEGIS would not be the authoritative publisher for Sierra Leone legislation."
+  },
+  {
+   "id": "sl-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1147,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Sierra Leone and Benin are distinct West African nations. An Act from Sierra Leone cannot be published by Benin's National Assembly."
+  },
+  {
+   "id": "sl-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1126,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Appropriation Act, 2021 is a Sierra Leonean legislative measure. The Nigerian Electricity Regulatory Commission is a Nigerian agency, not a Sierra Leonean source, making this attributio"
+  },
+  {
+   "id": "sl-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1180,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The claim contains a jurisdictional error. This act pertains to Sierra Leone, not Gambia. Law Hub Gambia would not be the authoritative publisher for Sierra Leonean legislation."
+  }
+ ]
+}

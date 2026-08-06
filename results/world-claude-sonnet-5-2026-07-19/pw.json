@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Palau — Source-Grounded Citation Reliability (PW)",
+ "country": "PW",
+ "jurisdiction": "Palau",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:01:21.107790+00:00",
+ "results": [
+  {
+   "id": "pw-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2003,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This citation appears fabricated—no verifiable record of this specific case exists in PacLII's Palau Supreme Court decisions database."
+  },
+  {
+   "id": "pw-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2064,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated citation—I cannot verify \"Mekui v Kaiichi\" [2025] PWSC 10 exists in PacLII's records."
+  },
+  {
+   "id": "pw-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2264,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation exists in PacLII's database; the case name, docket number, or date may be fabricated or unconfirmed."
+  },
+  {
+   "id": "pw-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1921,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation exists—Palau Supreme Court decisions on PacLII should be independently confirmed before citing."
+  },
+  {
+   "id": "pw-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2036,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation exists in PacLII's database; it appears fabricated or unconfirmed, requiring direct source verification."
+  },
+  {
+   "id": "pw-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2080,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation exists in PacLII's Palau database; the case name, number, and date combination appears fabricated or unconfirmed."
+  },
+  {
+   "id": "pw-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2325,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Palau is a sovereign nation; \"PWSC\" denotes Palau Supreme Court, not Australia's Federal Court—an unrelated foreign jurisdiction's judgment database entirely."
+  },
+  {
+   "id": "pw-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2107,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** RONLAW is Nauru's legal database, not Palau's; Palau case citations wouldn't use \"PWSC\" through Nauru's repository system."
+  },
+  {
+   "id": "pw-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1659,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Tonga's Attorney General publishes Tonga's legislation and judgments, not Palau's; the jurisdictions mismatch, making this citation implausible."
+  },
+  {
+   "id": "pw-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1926,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Palau's neutral citation is \"PW,\" but its judiciary is the Palau Judiciary, not the Republic of Marshall Islands Judiciary—a different Pacific nation entirely."
+  },
+  {
+   "id": "pw-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1899,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This citation appears fabricated—I cannot verify PWSC 15/2025 exists; likely a hallucinated case from the referenced corpus."
+  },
+  {
+   "id": "pw-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1586,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This citation appears fabricated; I cannot verify \"Dermody v Rudimch\" exists in Palau Supreme Court records or that corpus."
+  }
+ ]
+}

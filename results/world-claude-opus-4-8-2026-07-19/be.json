@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Belgium — Source-Grounded Citation Reliability (BE)",
+ "country": "BE",
+ "jurisdiction": "Belgium",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:08:07.197653+00:00",
+ "results": [
+  {
+   "id": "be-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2366,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Moniteur Belge date (2024-01-07) is implausibly identical to the law's adoption date; publication typically follows adoption by weeks."
+  },
+  {
+   "id": "be-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2500,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The decree \"houdende maatregelen voor een sociaal grondbeleid\" dates from June 16, 1982, published via Vlaamse Codex."
+  },
+  {
+   "id": "be-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2634,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Belgian DPA doesn't issue numbered \"classement sans suite\" decisions in this format; date inconsistency (2026-01-01 vs 16 février 2026) confirms fabrication."
+  },
+  {
+   "id": "be-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2509,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2025-12-04 is in the future relative to any verifiable record, making this citation impossible to confirm."
+  },
+  {
+   "id": "be-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2488,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-01-19 is in the future relative to verifiable records, making this citation unverifiable and likely fabricated."
+  },
+  {
+   "id": "be-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2471,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-01-22 is in the future; no such decided case exists. The ECLI and parties appear fabricated."
+  },
+  {
+   "id": "be-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2700,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Belgian laws are published in the Moniteur belge/Belgisch Staatsblad, not Italy's Gazzetta Ufficiale. Wrong official gazette for jurisdiction."
+  },
+  {
+   "id": "be-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2572,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.**  The decree \"houdende maatregelen voor een sociaal grondbeleid\" dates from 25 June 1980, not 16 June 1985."
+  },
+  {
+   "id": "be-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2016,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. RIS is Austria's legal information system, not Belgian. Belgium uses sources like Moniteur belge/Belgisch Staatsblad and Justel."
+  },
+  {
+   "id": "be-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1608,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The date is in the future (December 2025) and cannot be verified; this ECLI reference appears fabricated."
+  },
+  {
+   "id": "be-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1992,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.**  The Belgian Conseil d'État publishes numbered arrêts, but decision 265464 dated 2025-01-19 (a Sunday) appears fabricated/unverifiable."
+  },
+  {
+   "id": "be-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1550,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The date 2026-01-22 is in the future; no such Cassation decision can yet exist. Details are unverifiable/fabricated."
+  }
+ ]
+}

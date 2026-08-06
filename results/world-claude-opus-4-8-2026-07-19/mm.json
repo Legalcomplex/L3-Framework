@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Myanmar — Source-Grounded Citation Reliability (MM)",
+ "country": "MM",
+ "jurisdiction": "Myanmar",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.4167,
+ "correct": 5,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:19:05.118591+00:00",
+ "results": [
+  {
+   "id": "mm-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2621,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific notification's existence, date, or exact title; details appear fabricated without authoritative confirmation from DICA records."
+  },
+  {
+   "id": "mm-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2433,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated citation; no such specific directive from Lincoln Legal Services matches verifiable Myanmar legal publications."
+  },
+  {
+   "id": "mm-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2340,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Publication dates for such laws are typically enacted mid-fiscal year (around March–April), not January 1; date appears fabricated."
+  },
+  {
+   "id": "mm-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2467,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The 2019 draft Cybersecurity Law wasn't abandoned; it was revised and resurfaced, eventually enacted in 2025. Filename mischaracterizes status."
+  },
+  {
+   "id": "mm-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2108,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific document exists; DICA publishes investment notifications, but I lack reliable confirmation of this particular citation."
+  },
+  {
+   "id": "mm-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3030,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date (2026-03-16) is in the future, making this citation unverifiable and impossible as a published source today."
+  },
+  {
+   "id": "mm-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2478,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific document exists; such administrative appointments are typically issued via official notifications, not confirmable without evidence."
+  },
+  {
+   "id": "mm-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2111,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The date (2026) is in the future, making this citation impossible to verify; likely fabricated or erroneous bibliographic details."
+  },
+  {
+   "id": "mm-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2356,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Myanmar laws are not published through Indonesia's JDIHN network; that is Indonesia's domestic legal documentation system, not Myanmar's."
+  },
+  {
+   "id": "mm-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2861,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Official Myanmar draft laws are published through government/parliamentary channels, not a Cambodian private law firm's library."
+  },
+  {
+   "id": "mm-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2714,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific document exists; DICA publishes investment notifications, but I cannot confirm this exact citation authentically."
+  },
+  {
+   "id": "mm-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 3113,
+   "verdict": true,
+   "correct": false,
+   "raw": "I cannot verify this specific claim as True or False, since I lack reliable access to that exact 2023 publication's contents."
+  }
+ ]
+}

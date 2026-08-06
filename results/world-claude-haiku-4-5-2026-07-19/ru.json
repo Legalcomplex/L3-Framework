@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Russia — Source-Grounded Citation Reliability (RU)",
+ "country": "RU",
+ "jurisdiction": "Russia",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:44:12.104587+00:00",
+ "results": [
+  {
+   "id": "ru-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1613,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This citation appears to reference an internal organizational document (about appointing a committee deputy chair) rather than a published legal act distributed through pravo.gov.ru's official "
+  },
+  {
+   "id": "ru-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1610,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  This decision is dated October 1, 2025 — a future date. As of my knowledge cutoff (April 2024), this decision cannot yet exist or be published on any platform."
+  },
+  {
+   "id": "ru-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1634,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The citation format and bill number structure don't match standard Russian legislative documentation. The pravo.gov.ru portal publishes enacted laws, not legislative project discussions wit"
+  },
+  {
+   "id": "ru-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1378,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The decision is dated September 1, 2025—a future date that has not occurred yet. No court decision can be published for a date that has not happened."
+  },
+  {
+   "id": "ru-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1680,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This is a generic title pattern for FSES documents. The claim lacks specific specialty designation and cannot be verified without the complete specialty code required for proper identificat"
+  },
+  {
+   "id": "ru-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2127,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The date 2025-09-24 is in the future (from the present date) and cannot represent an actual court decision. Court decisions must have past dates."
+  },
+  {
+   "id": "ru-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1939,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This title refers to an appointment decree, not a normative legal act. The Official Legal Portal (pravo.gov.ru) publishes only laws, decrees, and regulations—not personnel appointment notic"
+  },
+  {
+   "id": "ru-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1452,
+   "verdict": false,
+   "correct": true,
+   "raw": "# Evaluation: False  **Explanation:** The identifier contains year 2026, but the decision is dated October 1, 2025 with case number 2025. The years are inconsistent and don't match."
+  },
+  {
+   "id": "ru-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1324,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Project bills (проекты) are not published on pravo.gov.ru, which hosts only enacted laws. Project numbers and dates don't match official Federal Assembly documentation standards."
+  },
+  {
+   "id": "ru-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1347,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The identifier contains '2026' but the decision date references case number '2025' from September 2025. The year in the identifier doesn't match the case year."
+  },
+  {
+   "id": "ru-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1541,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Russian federal educational standards (ФГОС) are published in Russian official sources like the Russian Federal Gazette (Российская газета), not in Croatian official publications. The juris"
+  },
+  {
+   "id": "ru-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1567,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The case number format \"А62-4716/2025\" indicates a Russian arbitrazh (commercial) court case, not Georgian. The \"А62\" prefix designates a specific Russian regional arbitrazh court, not Geor"
+  }
+ ]
+}

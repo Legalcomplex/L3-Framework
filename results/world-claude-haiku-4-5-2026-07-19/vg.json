@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — British Virgin Islands — Source-Grounded Citation Reliability (VG)",
+ "country": "VG",
+ "jurisdiction": "British Virgin Islands",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:47:06.491878+00:00",
+ "results": [
+  {
+   "id": "vg-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 3935,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  This decision cannot exist as published in 2026—a future date. Additionally, no verifiable source titled \"BVI Commercial Court Judgments\" is a standard official legal publisher for British "
+  },
+  {
+   "id": "vg-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1820,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  This decision cannot be from 2026 (a future date). Additionally, no verifiable record of this case exists in BVI Commercial Court publications as of current knowledge cutoff."
+  },
+  {
+   "id": "vg-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1576,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The case identifier format and year mismatch are inconsistent. A 2025-filed case cannot have a judgment dated 2026-03-26 in current records."
+  },
+  {
+   "id": "vg-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1679,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The decision is dated 2026-02-20 (future date), which is impossible. Official court judgments are published after they occur, not before."
+  },
+  {
+   "id": "vg-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1884,
+   "verdict": false,
+   "correct": false,
+   "raw": "# Answer: False  **Explanation:** The judgment date (2025-08-12) is in the future relative to the case number year (2023), creating a temporal inconsistency that contradicts standard legal filing conv"
+  },
+  {
+   "id": "vg-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1649,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The case identifier references a 2023 filing (BVIHC(COM)2023/0087), but the alleged judgment date of 2026-02-12 is in the future and therefore impossible as a historical legal document."
+  },
+  {
+   "id": "vg-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2147,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The judgment date of 2026-09-02 is in the future relative to the case number year (2020), which is internally inconsistent and therefore implausible."
+  },
+  {
+   "id": "vg-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1513,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The BVI Commercial Court does not publish decisions under a specific \"BVI Commercial Court Judgments\" imprint. Decisions are published through official court reporting services or legal dat"
+  },
+  {
+   "id": "vg-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2215,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The BVI Commercial Court does not publish decisions under that case name format or title. No verifiable record of this 2024 decision exists in official BVI judicial databases."
+  },
+  {
+   "id": "vg-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1429,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The decision is dated 2026 (future date), and Abdul Kadir Al Muhaidib & Sons Company is a Saudi entity, making Bermuda Supreme Court publication implausible for this case."
+  },
+  {
+   "id": "vg-src-f05",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 3721,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The cited judgment identifier and case name cannot be verified against publicly available BVI Commercial Court records. The future date (2025-08-12) also raises authenticity concerns."
+  },
+  {
+   "id": "vg-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1062,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Privy Judicial and Supreme Court (P.J.S.C.) is a British Virgin Islands court, not a Bahamas court. The publisher attribution is incorrect."
+  }
+ ]
+}

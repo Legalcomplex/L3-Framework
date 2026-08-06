@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Trinidad and Tobago — Source-Grounded Citation Reliability (TT)",
+ "country": "TT",
+ "jurisdiction": "Trinidad and Tobago",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:26:33.500043+00:00",
+ "results": [
+  {
+   "id": "tt-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2727,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. \"1–36 .. Act\" is not a valid statute title, and no \"Trinidad & Tobago Digital Legislative Library\" exists as an official source."
+  },
+  {
+   "id": "tt-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2428,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific 2026 Act exists; the date is in the future relative to my knowledge, unconfirmed."
+  },
+  {
+   "id": "tt-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2435,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Trinidad and Tobago has no \"Family Proceedings Act, 2004\"; likely confused with the Family Law (Guardianship of Minors, Domicile and Maintenance) Act."
+  },
+  {
+   "id": "tt-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2674,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific 2026 Act exists; the date is future/recent and beyond my reliable knowledge."
+  },
+  {
+   "id": "tt-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2778,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such Act exists; Trinidad's housing body became the Housing Development Corporation under the Housing Act 2005, not 2004."
+  },
+  {
+   "id": "tt-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3006,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears fabricated—the citation is truncated, incoherent, and I cannot verify any such 2026 Legal Notice exists."
+  },
+  {
+   "id": "tt-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2146,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. \"1–36 .. Act\" is not a valid statute title, and no \"Trinidad & Tobago Digital Legislative Library\" exists as described."
+  },
+  {
+   "id": "tt-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2991,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The jurisdiction is Trinidad and Tobago, but the source cited is \"Laws of Grenada,\" a different country's legal system."
+  },
+  {
+   "id": "tt-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1839,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Trinidad and Tobago legislation is not published via \"Bahamas Consolidated Legislation\"; that source pertains to The Bahamas, a different jurisdiction."
+  },
+  {
+   "id": "tt-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1980,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Trinidad and Tobago legislation is not published via Aruba's DWJZ archive; this cross-jurisdictional source attribution is implausible and unverifiable."
+  },
+  {
+   "id": "tt-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1820,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Sint Maarten is a Dutch Caribbean territory, unrelated to Trinidad and Tobago legislation; this attribution is jurisdictionally incorrect."
+  },
+  {
+   "id": "tt-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 3099,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Cayman Islands Legislation cannot publish Trinidad and Tobago legal notices; jurisdictions have separate official gazettes and publishing authorities."
+  }
+ ]
+}

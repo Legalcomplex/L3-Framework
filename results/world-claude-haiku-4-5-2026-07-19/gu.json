@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Guam — Source-Grounded Citation Reliability (GU)",
+ "country": "GU",
+ "jurisdiction": "Guam",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.4167,
+ "correct": 5,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:38:02.494302+00:00",
+ "results": [
+  {
+   "id": "gu-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1468,
+   "verdict": false,
+   "correct": false,
+   "raw": "# Answer: False  **Explanation:** This decision is dated March 9, 2026, which is a future date. No court can publish opinions from future dates."
+  },
+  {
+   "id": "gu-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1440,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  No publicly available record confirms Public Law 38-7 was published by Guam Legislature on 2025-04-12. This date is in the future and cannot be verified through official Guam legislative data"
+  },
+  {
+   "id": "gu-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1298,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The date \"2025-12-09\" is in the future, making this claim implausible for an official court decision record that should reflect past proceedings."
+  },
+  {
+   "id": "gu-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1569,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The decision date is March 20, 2026—a future date. Official court opinions cannot be published before they are decided, making this claim impossible."
+  },
+  {
+   "id": "gu-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1427,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Public Law 38-3 cannot have a publication date of 2025-04-12, as that is a future date beyond the current time period and lacks verifiable documentation in official Guam legislative records"
+  },
+  {
+   "id": "gu-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1293,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this claim as I lack access to Guam Superior Court's official case database or records system to confirm case identifiers, parties, or decision dates."
+  },
+  {
+   "id": "gu-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1679,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Supreme Court of Guam publishes its own opinions. This case title format and date suggest it may be from an appellate court, but verification of the actual publisher is required."
+  },
+  {
+   "id": "gu-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1613,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Public Law 38-7 is a Guam statute, not a Nauru law. RONLAW is Nauru's official legal database and would not publish Guam legislation."
+  },
+  {
+   "id": "gu-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1264,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this claim. Guam court decision identifiers and their corresponding cases cannot be reliably confirmed without access to official Guam court databases or records."
+  },
+  {
+   "id": "gu-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1183,
+   "verdict": true,
+   "correct": false,
+   "raw": "# Answer: **True**  **Explanation:** This appears to be a legitimate Supreme Court of Guam decision from 2023. The case caption format and court attribution are consistent with official Guam judicial "
+  },
+  {
+   "id": "gu-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1125,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Public Laws are Guam legislation enacted by the Guam Legislature. The Solomon Islands Attorney General Portal would not be the official publisher of Guam legal materials."
+  },
+  {
+   "id": "gu-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1187,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The date 2025-12-23 is in the future, making this claim implausible. Official court decisions cannot be dated after the current date."
+  }
+ ]
+}

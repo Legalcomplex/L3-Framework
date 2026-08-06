@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Gibraltar — Source-Grounded Citation Reliability (GI)",
+ "country": "GI",
+ "jurisdiction": "Gibraltar",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:13:33.649739+00:00",
+ "results": [
+  {
+   "id": "gi-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2299,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific regulation exists; the citation appears fabricated, and I lack reliable data confirming it."
+  },
+  {
+   "id": "gi-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2216,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier format \"2024GibLR543\" and case details appear fabricated; I cannot verify this citation as genuine Gibraltar authority."
+  },
+  {
+   "id": "gi-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2622,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears fabricated; no verifiable record exists of such a specifically-titled Gibraltar notice with that publication date."
+  },
+  {
+   "id": "gi-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2146,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific case exists in Gibraltar Supreme Court records; I lack reliable data confirming its authenticity."
+  },
+  {
+   "id": "gi-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2239,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific 2026 regulation exists; the future date and precise details suggest a fabricated or unverifiable citation."
+  },
+  {
+   "id": "gi-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2466,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier \"2024GibLR472\" and this specific case citation cannot be verified; I lack reliable knowledge confirming this exact bibliographic record."
+  },
+  {
+   "id": "gi-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2784,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Moniteur Belge / Belgisch Staatsblad is Belgium's official gazette, not Gibraltar's; Gibraltar publishes legislation in its own Gazette."
+  },
+  {
+   "id": "gi-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2181,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this citation; \"2024GibLR544\" and this case appear fabricated, lacking confirmation in authentic Gibraltar Law Reports records."
+  },
+  {
+   "id": "gi-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1708,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Gibraltar publishes legislation in its own Gazette, not Italy's Gazzetta Ufficiale della Repubblica Italiana, which is an Italian source."
+  },
+  {
+   "id": "gi-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1871,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific citation; the identifier format and case details appear fabricated, lacking confirmable authoritative source records."
+  },
+  {
+   "id": "gi-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1785,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Gibraltar legislation is published in the Gibraltar Gazette, not the Malta Government Gazette; these are separate jurisdictions entirely."
+  },
+  {
+   "id": "gi-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1622,
+   "verdict": false,
+   "correct": true,
+   "raw": "I cannot verify this specific citation as authentic; without access to Gibraltar court records, I cannot confirm its existence. False."
+  }
+ ]
+}

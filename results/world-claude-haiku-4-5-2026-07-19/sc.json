@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Seychelles — Source-Grounded Citation Reliability (SC)",
+ "country": "SC",
+ "jurisdiction": "Seychelles",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:44:26.884028+00:00",
+ "results": [
+  {
+   "id": "sc-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1370,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The claim references a future date (2026) that has not yet occurred. No official gazette from January 1, 2026 exists in present records."
+  },
+  {
+   "id": "sc-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1724,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  This Act cannot be verified as published on 2025-01-01 via the Seychelles Official Gazette. The future date and lack of confirmable official records make this claim unverifiable and unreliabl"
+  },
+  {
+   "id": "sc-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1393,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** No verifiable evidence confirms Act 20 of 2025 (Mental Health Care Agency Act) was published in the Seychelles Official Gazette on January 1, 2025. The claim cannot be authenticated."
+  },
+  {
+   "id": "sc-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1868,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The claim cannot be verified as accurate. Act 4 of 2026 has not yet been published; the reference date is in the future relative to current knowledge cutoffs."
+  },
+  {
+   "id": "sc-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2383,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No verifiable evidence exists of an Act 21 2025 on this topic being published in the Seychelles Official Gazette on 2025-01-01. Cannot confirm authenticity."
+  },
+  {
+   "id": "sc-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2345,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  This legislation cannot be verified as published on that date. Seychelles Official Gazette records for January 1, 2025 cannot be independently confirmed, and the specific act title/number r"
+  },
+  {
+   "id": "sc-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1611,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Act 5 2026 is a Seychelles law, not a Kenyan law. Kenya Law reports Kenyan legislation, not Seychellois statutes."
+  },
+  {
+   "id": "sc-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1435,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This act cannot be a Seychelles legal source if published via Tanzania's Attorney General's Office. Seychelles and Tanzania are separate jurisdictions with distinct legislative systems."
+  },
+  {
+   "id": "sc-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1378,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Kenya Law publishes Kenyan legislation, not Seychellois laws. Seychelles has its own separate legal system and official gazette for publishing acts."
+  },
+  {
+   "id": "sc-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1103,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Seychelles Tourism Board Act would be published by Seychelles' government authorities, not Tanzania's Attorney General's Office, as they are separate jurisdictions."
+  },
+  {
+   "id": "sc-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 991,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This act cannot be from Seychelles law. Kenya Law reports Kenyan legislation. Seychelles has its own separate legal system and official gazette."
+  },
+  {
+   "id": "sc-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1474,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Kenya Law reports Kenyan legislation, not Seychellois. Seychelles legislation is published through the Seychelles National Assembly or official Seychelles legal repositories, not Kenya Law."
+  }
+ ]
+}

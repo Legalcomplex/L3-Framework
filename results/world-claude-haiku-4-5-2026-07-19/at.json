@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Austria — Source-Grounded Citation Reliability (AT)",
+ "country": "AT",
+ "jurisdiction": "Austria",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:33:10.201067+00:00",
+ "results": [
+  {
+   "id": "at-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1541,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The claim cannot be verified. RIS (Rechtsinformationssystem des Bundes) identifiers do not typically follow the pattern \"NOR40148595\" for Austrian legal documents, and the content description"
+  },
+  {
+   "id": "at-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1617,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The ECLI identifier format appears structurally inconsistent. Austrian VwGH ECLI identifiers typically follow different formatting conventions than suggested by this claim's notation patter"
+  },
+  {
+   "id": "at-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2652,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The date 2026-01-29 is in the future. As of now, no official BGBl publication can exist for a future date. This appears to be a fictional or incorrectly dated reference."
+  },
+  {
+   "id": "at-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1469,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The identifier LBG40016052 cannot be verified as corresponding to this specific 2014 document without access to Austria's official legislative database. Standard Austrian legal identifiers "
+  },
+  {
+   "id": "at-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1707,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The decision identifier format '18ONc4/25w' does not match Austrian Supreme Court (OGH) citation standards. OGH decisions typically use formats like \"1 Ob X/YY\" or similar, not this pattern"
+  },
+  {
+   "id": "at-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1805,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier format appears inconsistent with standard Austrian VfGH citation practices, and the future date (2025-12-16) is implausible for current verification."
+  },
+  {
+   "id": "at-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1710,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The RIS identifier format and document description suggest this claim requires verification through the official Austrian RIS database, which I cannot access to confirm this specific identifier"
+  },
+  {
+   "id": "at-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1755,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The ECLI identifier structure doesn't match the case citation format provided. ECLI:AT:VWGH:2026:RA2026030007.L04 suggests a different parsing than Ra 2026/03/0007, and the date appears inc"
+  },
+  {
+   "id": "at-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1253,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The cited title appears incomplete and truncated with ellipsis. Without the full, precise title and verification against actual BGBl entries from January 29, 2024, authenticity cannot be co"
+  },
+  {
+   "id": "at-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1269,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'LBG40016054' cannot be verified as corresponding to that specific 2014 document in Austrian State Legislation databases without access to official registry confirmation."
+  },
+  {
+   "id": "at-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 4061,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The citation format '18ONc4/25w' does not match Austrian Supreme Court (OGH) decision numbering. OGH decisions use formats like \"1 Ob 123/45a\" or similar standardized patterns, not this str"
+  },
+  {
+   "id": "at-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1446,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  G68/2025 cannot be a German Federal Finance Court decision. Austrian jurisdiction is specified, and \"G68/2025\" format doesn't match Bundesfinanzhof citation conventions."
+  }
+ ]
+}

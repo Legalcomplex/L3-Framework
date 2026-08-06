@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Kosovo — Source-Grounded Citation Reliability (XK)",
+ "country": "XK",
+ "jurisdiction": "Kosovo",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.75,
+ "correct": 9,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:47:31.255885+00:00",
+ "results": [
+  {
+   "id": "xk-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1951,
+   "verdict": true,
+   "correct": true,
+   "raw": "# Answer: True  **Explanation:** The document title references a Constitutional Court review decision (Vlerësim i kushtetutshmërisë) with standard case numbering and dating conventions consistent with"
+  },
+  {
+   "id": "xk-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1562,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. This law on protection from natural and other disasters aligns with Kosovo's legislative practices and the Official Gazette's 2008 publication timeline is consistent with post-independence legal"
+  },
+  {
+   "id": "xk-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1677,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Kosovo Central Bank does not publish regulations with the designation \"Rregullore RLlB 1 1.\" This appears to be a non-standard or fabricated regulatory reference citation."
+  },
+  {
+   "id": "xk-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1902,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The decision date (2026-03-05) is in the future relative to the act date (2025-05-20), creating a temporal inconsistency. Additionally, the reference format appears fabricated without verif"
+  },
+  {
+   "id": "xk-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 4419,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. LIGJI NR. 02/L-30 PËR MBETURINA (Law on Waste) is a legitimate Kosovo law published in the Official Gazette on the specified date."
+  },
+  {
+   "id": "xk-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1703,
+   "verdict": false,
+   "correct": false,
+   "raw": "# Evaluation: **False**  The claimed publication date (2024-12-01) is in the future relative to current knowledge cutoffs. Additionally, this specific regulation title cannot be verified as an authent"
+  },
+  {
+   "id": "xk-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1932,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The identifier KI269/25 is inconsistent with the case title's 2023 date reference and 2026 filing date, suggesting a cataloging error or non-existent case record in Kosovo Constitutional Co"
+  },
+  {
+   "id": "xk-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1564,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. While Kosovo's Official Gazette (Gazeta Zyrtare) is the correct publication venue, Law No. 02/L-68 on protection from natural disasters was published in 2008, not 2010."
+  },
+  {
+   "id": "xk-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1296,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This regulation cannot have a 2025 publication date (future date). Additionally, \"Rregullore RLlB 1 1\" lacks standard regulatory nomenclature for Kosovo Central Bank documents."
+  },
+  {
+   "id": "xk-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1031,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The identifier format and date structure are inconsistent with established Kosovo Constitutional Court cataloging conventions. The future date (2025) and inconsistent metadata suggest this "
+  },
+  {
+   "id": "xk-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1243,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Kosovo's laws are published in the Official Gazette of Kosovo, not Czech e-Sbírka. The latter is exclusively for Czech legislation, making this claim incorrect."
+  },
+  {
+   "id": "xk-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1248,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The title is in Albanian, not Turkish. Kosovo uses Albanian as its official language. Turkish legislation databases would not be the appropriate publisher for Kosovo legal documents."
+  }
+ ]
+}

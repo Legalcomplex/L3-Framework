@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Saint Kitts and Nevis — Source-Grounded Citation Reliability (KN)",
+ "country": "KN",
+ "jurisdiction": "Saint Kitts and Nevis",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:56:39.197456+00:00",
+ "results": [
+  {
+   "id": "kn-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1945,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific citation; no reliable record confirms Act 25 of 2025 \"Architects Registration Amendment\" exists as described."
+  },
+  {
+   "id": "kn-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2097,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific citation's accuracy—exact act numbers, dates, and publication details require confirmation from official government gazette sources directly."
+  },
+  {
+   "id": "kn-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2012,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation exists—unable to confirm Act 23 of 2025 or its details in official St Kitts and Nevis publications."
+  },
+  {
+   "id": "kn-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1949,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific SRO number, title, and publication details as an accurate bibliographic citation without confirmation."
+  },
+  {
+   "id": "kn-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2072,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation's accuracy; St Kitts and Nevis legislative records require confirmation through official Gazette or Law Commission sources directly."
+  },
+  {
+   "id": "kn-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1939,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific act, its citation number, publication date, or existence in official St Kitts and Nevis Law Commission records."
+  },
+  {
+   "id": "kn-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2297,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Saint Lucia Revised Laws (Attorney General) is not an official source for Saint Kitts and Nevis legislation; jurisdictions mismatch entirely."
+  },
+  {
+   "id": "kn-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2221,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This is a Saint Kitts and Nevis Act, not Cayman Islands legislation; the publisher attribution and jurisdictional source described are incorrect."
+  },
+  {
+   "id": "kn-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2152,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This citation cannot be verified as accurate; I have no reliable record of this specific Act, and Grenada differs from Saint Kitts and Nevis jurisdiction."
+  },
+  {
+   "id": "kn-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1599,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Saint Kitts and Nevis's SRO 32 of 2016 would be published in its own official Gazette, not Aruba's separate DWJZ legislation archive."
+  },
+  {
+   "id": "kn-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2148,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Bermuda Laws Online publishes Bermuda's legislation, not Saint Kitts and Nevis Acts, so this source attribution is incorrect."
+  },
+  {
+   "id": "kn-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1535,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Turks and Caicos Revised Laws is a distinct jurisdiction's publication source and cannot officially publish a Saint Kitts and Nevis act."
+  }
+ ]
+}

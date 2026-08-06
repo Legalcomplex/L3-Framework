@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Seychelles — Source-Grounded Citation Reliability (SC)",
+ "country": "SC",
+ "jurisdiction": "Seychelles",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:02:00.282502+00:00",
+ "results": [
+  {
+   "id": "sc-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2053,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated/unverifiable future citation—I cannot confirm Seychelles enacted this specific Act 5 2026 on that date."
+  },
+  {
+   "id": "sc-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2225,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific citation exists; the exact Act number, title, and 2025-01-01 date appear fabricated or unconfirmed against actual Seychelles Gazette records."
+  },
+  {
+   "id": "sc-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2184,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific citation's accuracy—Seychelles' 2025 legislative record, including exact act numbers, titles, and gazette dates, isn't reliably confirmed in available sources."
+  },
+  {
+   "id": "sc-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2948,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this claim references a future/unverifiable 2026 enactment; I cannot confirm publication details for legislation that hasn't demonstrably occurred yet."
+  },
+  {
+   "id": "sc-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2130,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation exists; Seychelles gazette records for 2025 legislation aren't reliably confirmable in my available knowledge base."
+  },
+  {
+   "id": "sc-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2021,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific act, date, or gazette publication exists—no reliable evidence confirms this citation's accuracy or existence."
+  },
+  {
+   "id": "sc-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2184,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — Seychelles legislation is not published via Kenya Law/National Council for Law Reporting, which is Kenya's official legal publisher, not Seychelles'."
+  },
+  {
+   "id": "sc-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2069,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — Seychelles legislation is published by Seychelles' own Attorney-General's Office/Government, not Tanzania's, indicating a jurisdictional mismatch error."
+  },
+  {
+   "id": "sc-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2261,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Kenya Law (National Council for Law Reporting) publishes Kenyan legislation, not Seychelles law; jurisdictional source mismatch invalidates this bibliographic claim."
+  },
+  {
+   "id": "sc-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1573,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Seychelles legislation is published via the Seychelles Attorney General's Office/Government, not Tanzania's Attorney General's Office Management Information System."
+  },
+  {
+   "id": "sc-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2260,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — Kenya Law reports Kenyan legislation, not Seychelles Acts; Seychelles legal instruments are published via Seychelles Law Reports/Attorney-General's Office, not Kenya's National Council for Law"
+  },
+  {
+   "id": "sc-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1835,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Kenya Law (National Council for Law Reporting) publishes Kenyan legislation, not Seychelles law—Seychelles acts appear via Seychelles Law Reports/official gazette sources instead."
+  }
+ ]
+}

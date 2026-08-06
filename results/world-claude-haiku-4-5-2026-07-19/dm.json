@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Dominica — Source-Grounded Citation Reliability (DM)",
+ "country": "DM",
+ "jurisdiction": "Dominica",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:36:16.178645+00:00",
+ "results": [
+  {
+   "id": "dm-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1596,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This is not an official legal source. Statutory Orders (SROs) are subordinate legislation in Dominica, but commemorative stamp issues are administrative/commercial matters, not legislative inst"
+  },
+  {
+   "id": "dm-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1583,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The claim lacks verification. Dominica's Financial Services Unit would not be the official publisher of Companies Regulations; the Government of Dominica publishes statutory instruments throu"
+  },
+  {
+   "id": "dm-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3273,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Marilyn Monroe's 80th birthday would be 2006, but commemorative stamp orders are typically not primary legislation published in Laws of Dominica statutory compilations."
+  },
+  {
+   "id": "dm-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2466,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Money Laundering (Prevention) Act was enacted in 1990, not 2011. While amendments may have occurred later, the original legislation predates the claimed 2011 publication date."
+  },
+  {
+   "id": "dm-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2108,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** A commemorative stamp issue order would not be published in the primary legislation collection. This appears to be a statutory instrument misattributed to Laws of Dominica's general legisla"
+  },
+  {
+   "id": "dm-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1349,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Financial Services Unit Act was enacted in 2009, not 2008. The legislation date in the claim is incorrect for Dominica's official records."
+  },
+  {
+   "id": "dm-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1852,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This is a Dominica source (SRO 29 of 2006), not a Grenada source. The Laws of Grenada would not be the correct publisher for Dominica legislation."
+  },
+  {
+   "id": "dm-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1425,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  S.R.O. 57 of 2002 is a Dominica Statutory Regulation Order, not Curaçao legislation. Curaçao and Dominica are separate jurisdictions with distinct legal systems."
+  },
+  {
+   "id": "dm-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1707,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This stamp commemorates Marilyn Monroe and was issued by Saint Lucia, not Dominica. The SRO citation format and subject matter indicate Saint Lucian, not Dominican, legal origin."
+  },
+  {
+   "id": "dm-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1699,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Money Laundering (Prevention) Act, 2011 is Dominica legislation, not Sint Maarten legislation. Sint Maarten and Dominica are separate Caribbean jurisdictions with distinct legal systems"
+  },
+  {
+   "id": "dm-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 3555,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The claim contains a jurisdictional error. SRO 36 of 2005 is a Dominica statutory instrument, not a Turks and Caicos Islands legal instrument, making the publisher attribution incorrect."
+  },
+  {
+   "id": "dm-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 906,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Financial Services Unit Act, 2008 is Dominica legislation, not Cayman Islands legislation. The publisher attribution is incorrect for this jurisdiction."
+  }
+ ]
+}

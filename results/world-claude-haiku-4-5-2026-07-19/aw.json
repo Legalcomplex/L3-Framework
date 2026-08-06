@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Aruba — Source-Grounded Citation Reliability (AW)",
+ "country": "AW",
+ "jurisdiction": "Aruba",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:33:17.803577+00:00",
+ "results": [
+  {
+   "id": "aw-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1955,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The citation format and reference structure do not match standard Aruban legal documentation systems. The code \"01.03AB99.026\" and dating methodology appear inconsistent with verified DWJZ le"
+  },
+  {
+   "id": "aw-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1463,
+   "verdict": true,
+   "correct": true,
+   "raw": "# Answer: **True**  The ECLI identifier correctly indicates this decision originates from the Gemeenschappelijk Hof (Joint Court of Justice), the appellate court serving Aruba, Curaçao, Sint Maarten, "
+  },
+  {
+   "id": "aw-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3120,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The citation format and archival reference appear inconsistent with standard Aruban legal documentation practices. Verification through official DWJZ records would be necessary to confirm a"
+  },
+  {
+   "id": "aw-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1508,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The ECLI identifier \"NL:OGHACMB\" indicates this is a Netherlands (NL) court decision from the Joint Court of Justice (Gemeenschappelijk Hof), not an Aruba-specific court publication."
+  },
+  {
+   "id": "aw-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1966,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The \"Afkondigingsblad van Aruba\" (Official Gazette of Aruba) is a legitimate official publication, but the specific citation format and archival claim cannot be verified without direct access"
+  },
+  {
+   "id": "aw-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1523,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The ECLI identifier format indicates a Dutch Caribbean court, but the year segment (2011) conflicts with the stated date (2011-01-25) for this specific case number, suggesting inconsistency"
+  },
+  {
+   "id": "aw-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1585,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The citation format and archive claim cannot be verified as authentic Aruban legislative documentation through standard official legal source databases or the Internet Archive's documented hold"
+  },
+  {
+   "id": "aw-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 4552,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The ECLI identifiers differ (BQ0629 vs BQ0628), indicating distinct cases. Identical case citations cannot correspond to different ECLI numbers."
+  },
+  {
+   "id": "aw-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1268,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The citation format and reference structure do not match standard Aruba DWJZ legislative documentation systems. The alphanumeric prefix \"01.02AB91.123\" does not correspond to recognized Aruba"
+  },
+  {
+   "id": "aw-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1242,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The ECLI identifiers are different (BQ0636 vs BQ0635), indicating distinct court decisions rather than the same case reference."
+  },
+  {
+   "id": "aw-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1029,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Afkondigingsblad van Aruba is Aruba's official gazette, not published through Curaçao's government legislation portal. Each jurisdiction maintains separate official publications."
+  },
+  {
+   "id": "aw-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1249,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This decision is from the Gemeenschappelijk Hof (Joint Court of Justice) for Aruba, Curaçao, and Sint Maarten, not a Cayman Islands court. The publisher is incorrect."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Israel — Source-Grounded Citation Reliability (IL)",
+ "country": "IL",
+ "jurisdiction": "Israel",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:38:41.461801+00:00",
+ "results": [
+  {
+   "id": "il-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1464,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Israeli Case Law Dataset on HuggingFace does not publish official court decisions. Only Israel's official courts and legal databases (Nevo, Takdin, government portals) publish authoritative"
+  },
+  {
+   "id": "il-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1871,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Ports Ordinance [New Version], 5731-1971 exists as a legal source, but Israel Knesset Data (Hasadna) is a modern database (founded later) that digitized historical legislation, not the "
+  },
+  {
+   "id": "il-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1565,
+   "verdict": true,
+   "correct": true,
+   "raw": "**True**  HCJ 9232/01 is a documented Israeli Supreme Court case from 2003 involving \"Noah\" - The Israeli Federation of Animal Protection Organizations v. The Attorney-General, matching the provided i"
+  },
+  {
+   "id": "il-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2189,
+   "verdict": false,
+   "correct": false,
+   "raw": "# Evaluation  **False**  Israeli court decisions are published by official sources (courts.gov.il, Takdin), not HuggingFace. HuggingFace hosts datasets but isn't an authoritative legal publisher."
+  },
+  {
+   "id": "il-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2110,
+   "verdict": false,
+   "correct": false,
+   "raw": "# Evaluation: FALSE  The Postal Ordinance [New Version] 5737-1976 is an official Israeli legal text, but attribution to \"Israel Knesset Data (Hasadna Open Source)\" with that specific 1976 date is inac"
+  },
+  {
+   "id": "il-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1345,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  HCJ 2150/07 does not correspond to Abu Safiyeh v. Minister of Defense. The case number and date combination appears inaccurate based on standard Israeli Supreme Court citation practices."
+  },
+  {
+   "id": "il-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2723,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Israeli Case Law Dataset (HuggingFace) does not publish individual family court decisions. This appears to be a fabricated citation mixing real institutional names with a fictional sour"
+  },
+  {
+   "id": "il-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1586,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Ports Ordinance [New Version] 1971 is an Israeli law, not a DIFC (Dubai International Financial Centre) source. DIFC publishes UAE financial law, not Israeli legislation."
+  },
+  {
+   "id": "il-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1281,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.**  HCJ 9232/02 is actually \"Adalah - The Legal Center for Arab Minority Rights in Israel v. Minister of Interior\" (2006), not the Noah animal protection case cited."
+  },
+  {
+   "id": "il-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1226,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The citation format and details provided do not correspond to verifiable Israeli official legal sources. The reference appears incomplete and lacks proper case number documentation required"
+  },
+  {
+   "id": "il-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1236,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Postal Ordinance (New Version), 5737-1976 is an Israeli law, not published by a Jordanian bureau. The publisher attribution is incorrect."
+  },
+  {
+   "id": "il-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1108,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The HCJ 2150/08 case identifier format and case name don't match documented Israeli Supreme Court records for that petition number and timeframe."
+  }
+ ]
+}

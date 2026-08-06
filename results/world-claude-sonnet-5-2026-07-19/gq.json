@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Equatorial Guinea — Source-Grounded Citation Reliability (GQ)",
+ "country": "GQ",
+ "jurisdiction": "Equatorial Guinea",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:54:26.682149+00:00",
+ "results": [
+  {
+   "id": "gq-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2356,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation exists; Equatorial Guinea's official gazette is the \"Boletín Oficial del Estado de Guinea Ecuatorial,\" and I cannot confirm this precise publication."
+  },
+  {
+   "id": "gq-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2310,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific bibliographic claim's accuracy—I lack reliable access to confirm this exact publication date and gazette entry."
+  },
+  {
+   "id": "gq-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2022,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific bibliographic claim; there's no reliable evidence confirming this exact title, date, or publication details in Equatorial Guinea's official gazette."
+  },
+  {
+   "id": "gq-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2143,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific bibliographic citation exists; Equatorial Guinea's gazette records are poorly indexed and unconfirmable, so accuracy cannot be established."
+  },
+  {
+   "id": "gq-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2056,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific citation; Equatorial Guinea's official gazette rarely publishes such condominium-law regulations, and this appears fabricated/unverifiable."
+  },
+  {
+   "id": "gq-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2034,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific bibliographic claim about an obscure Equatorial Guinea gazette entry; no reliable source confirms this exact publication detail."
+  },
+  {
+   "id": "gq-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2177,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific citation's existence—Equatorial Guinea's official gazette details, dates, and titles aren't reliably confirmable without access to authoritative records."
+  },
+  {
+   "id": "gq-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1928,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific citation's accuracy; I lack reliable access to confirm Equatorial Guinea's Boletín Oficial del Estado publications from that exact date."
+  },
+  {
+   "id": "gq-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1669,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Equatorial Guinea's official gazette is published by its own government (BOE/SGG Malabo), not Congo-Brazzaville's Official Journal, which is unrelated."
+  },
+  {
+   "id": "gq-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1855,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — Equatorial Guinea's legal instrument would not authentically be published through a DRC (Democratic Republic of Congo) legislation portal; jurisdictions mismatch."
+  },
+  {
+   "id": "gq-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2603,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific citation; Equatorial Guinea's legal gazette publications on horizontal property governance from this exact date are unconfirmed in available records."
+  },
+  {
+   "id": "gq-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1633,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific citation's accuracy—Equatorial Guinea's BOE records aren't reliably accessible to confirm this exact publication date and title."
+  }
+ ]
+}

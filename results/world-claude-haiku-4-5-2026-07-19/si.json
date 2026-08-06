@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Slovenia — Source-Grounded Citation Reliability (SI)",
+ "country": "SI",
+ "jurisdiction": "Slovenia",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.6667,
+ "correct": 8,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:44:47.636779+00:00",
+ "results": [
+  {
+   "id": "si-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1716,
+   "verdict": false,
+   "correct": false,
+   "raw": "# Answer: **False**  The title describes an amendment law, but PISRS publishes consolidated texts and original legislation, not specifically titled \"dopolnitve\" (amendments) as separate legislative ac"
+  },
+  {
+   "id": "si-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1750,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The case identifier format and date structure don't match Slovenian Administrative Court conventions. UPRS denotes the Constitutional Court, not the Administrative Court."
+  },
+  {
+   "id": "si-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1840,
+   "verdict": true,
+   "correct": true,
+   "raw": "# Answer: True  The ECLI format structure correctly encodes the court identifier (VSRS = Višje sodišče Republike Slovenije/Higher Court), case type (IPS), year (2009), and case number (360), matching "
+  },
+  {
+   "id": "si-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2210,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  This law title appears incomplete or incorrectly formatted. Slovenian legislation titles typically include the full descriptive name. PISRS publishes official acts, but this reference lacks"
+  },
+  {
+   "id": "si-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1702,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Slovenian Administrative Court (UPRS) issues decisions with different nomenclature. This reference format and future date (2026) appear inconsistent with standard Slovenian judicial publica"
+  },
+  {
+   "id": "si-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1760,
+   "verdict": true,
+   "correct": true,
+   "raw": "# Answer: **True**  The ECLI format correctly translates to the Slovenian case identifier. The \"X.IPS.216.2009\" corresponds to \"X Ips 216/2009,\" representing a Supreme Court decision from July 9, 2009"
+  },
+  {
+   "id": "si-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2036,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The title describes an amendment law, but the specific publication date and PISRS database entry cannot be verified without direct access to official Slovenian legislative records."
+  },
+  {
+   "id": "si-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2748,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The ECLI identifier format shows \"2025:I.U.1303.2024.16\" which indicates judgment 16, but the cited case references judgment 15. The numbers do not match."
+  },
+  {
+   "id": "si-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1161,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The ECLI identifier contains \"2010\" as the year component, but the cited judgment is from 2009. This temporal inconsistency indicates the ECLI does not correspond to this specific decision."
+  },
+  {
+   "id": "si-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1144,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The title is in Slovenian, not Bulgarian. The Slovenian legal gazette would be \"Uradni list Republike Slovenije,\" not the Bulgarian \"Državen vestnik.\""
+  },
+  {
+   "id": "si-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1995,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The designation indicates the Constitutional Court (UPRS), not the Administrative Court. UPRS decisions use \"Sklep\" (ruling) formatting, but this court has different jurisdiction than the Adm"
+  },
+  {
+   "id": "si-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1499,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The case reference \"X Ips 216/2009\" uses Slovenian notation (Ips = Odločba po pritožbi v pravdnem postopku). This decision would be from Slovenia's courts, not Georgia's Constitutional Cour"
+  }
+ ]
+}

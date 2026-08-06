@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Greece — Source-Grounded Citation Reliability (GR)",
+ "country": "GR",
+ "jurisdiction": "Greece",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:54:31.499365+00:00",
+ "results": [
+  {
+   "id": "gr-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1936,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated or unverifiable citation—2026 is a future date, so this specific opinion cannot yet exist or be authenticated."
+  },
+  {
+   "id": "gr-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2186,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific decision number, date, and content combination against actual Hellenic Competition Commission records, as I lack real-time database access to confirm it."
+  },
+  {
+   "id": "gr-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2067,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific FEK issue number, series, and date combination against actual Greek Government Gazette records or an authoritative database."
+  },
+  {
+   "id": "gr-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3330,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Legislation is officially published in the Government Gazette (ΦΕΚ); \"Raptarchis Greek Legal Code\" is a private compilation, not the official parliamentary source claimed."
+  },
+  {
+   "id": "gr-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2971,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — the date (2024-06-30) cannot correspond to Decision 13/2025, since a 2025-numbered ruling would postdate June 2024, indicating inconsistency."
+  },
+  {
+   "id": "gr-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 3518,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific decision citation exists; fabricated-sounding case numbers/dates require confirmation from official Hellenic Court of Audit publication records."
+  },
+  {
+   "id": "gr-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1967,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The decision is described as Greek (Γνωμοδότηση, Ολομέλεια are Greek terms), so attributing it to Romania's ICCJ is inconsistent and incorrect."
+  },
+  {
+   "id": "gr-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2349,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Greece's judiciary has no jurisdiction link to Montenegro's Constitutional Court; this appears to be a fabricated or mismatched citation with unverifiable, likely nonexistent details."
+  },
+  {
+   "id": "gr-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1768,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Greek Government Gazette (ΦΕΚ) is Greek official legislation; \"Turkish Legislation\" dataset attribution is an implausible, mismatched, incorrect bibliographic source."
+  },
+  {
+   "id": "gr-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2844,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Likumi.lv publishes Latvian legislation, not Greek legal acts; Greek official sources are ΦΕΚ/Εθνικό Τυπογραφείο, making this attribution incorrect."
+  },
+  {
+   "id": "gr-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1641,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Decision 13/2025 cannot be dated 2023-06-30—a 2025-numbered ruling logically postdates 2023, indicating an internal inconsistency/error."
+  },
+  {
+   "id": "gr-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1805,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. ΕΔΡΣΡ is Ukraine's Unified State Register of Court Decisions; Greek decisions aren't published there—Greece uses its own national court publication systems instead."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Angola — Source-Grounded Citation Reliability (AO)",
+ "country": "AO",
+ "jurisdiction": "Angola",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:48:45.419663+00:00",
+ "results": [
+  {
+   "id": "ao-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2540,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Angola's fiscal benefits framework is governed by the \"Código do Mecenato\" and tax incentive laws, but Lei n.º 8/22 designation/title requires verification against official Diário da Repúbl"
+  },
+  {
+   "id": "ao-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1963,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific citation's accuracy; Lex.ao content and precise publication details require direct confirmation from official Angolan sources."
+  },
+  {
+   "id": "ao-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1968,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Angola's Constitutional Court cannot have issued a 2026 decision before that date occurs, and I cannot verify this citation."
+  },
+  {
+   "id": "ao-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2068,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears fabricated: the date is future-dated (2026), and I cannot verify this specific case citation exists in official Tribunal Supremo records."
+  },
+  {
+   "id": "ao-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2285,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.**  Angola's Penal Code was approved by Law No. 38/20 — but AngoLEX is an unofficial database; the official source is Diário da República."
+  },
+  {
+   "id": "ao-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2144,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Lex.ao is a private/aggregator legal database, not the official publication source; Angolan norms are officially published in Diário da República."
+  },
+  {
+   "id": "ao-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2066,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.**  Angola's Código dos Benefícios Fiscais was enacted through Law No. 8/22, but I cannot verify the exact promulgation date or AngoLEX's specific publication details."
+  },
+  {
+   "id": "ao-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2091,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** I cannot verify this specific claim — I have no reliable data confirming this exact norm's publication details or Lex.ao's precise indexing record."
+  },
+  {
+   "id": "ao-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2493,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This appears to be a fabricated or unverifiable citation — the identifier's year (2027) mismatches the decision's stated year (2026), and 2027 is a future date."
+  },
+  {
+   "id": "ao-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1607,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify specific case identifiers, docket numbers, or decision dates from Angola's Supreme Court database against real records."
+  },
+  {
+   "id": "ao-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1528,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — Angola's Penal Code is published in the Diário da República (Angola's official gazette), not Cameroon's official acts publication."
+  },
+  {
+   "id": "ao-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1862,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Angolan regulatory norms (ARSEG/similar) are published in Angola's Diário da República, not via a Congolese (DRC) legal database portal."
+  }
+ ]
+}

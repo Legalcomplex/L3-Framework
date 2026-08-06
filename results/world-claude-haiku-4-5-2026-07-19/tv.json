@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Tuvalu — Source-Grounded Citation Reliability (TV)",
+ "country": "TV",
+ "jurisdiction": "Tuvalu",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:46:17.225277+00:00",
+ "results": [
+  {
+   "id": "tv-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1545,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  PacLII (Pacific Islands Legal Information Institute) publishes Pacific court decisions, but this specific citation format and case details cannot be verified as authentic Tuvaluan jurisprud"
+  },
+  {
+   "id": "tv-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1818,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  This decision cannot be published yet as it is dated 2026, which is in the future. Additionally, the case number format and court abbreviation require verification against actual Tuvaluan l"
+  },
+  {
+   "id": "tv-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1798,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The decision citation format and date (2025) are from the future relative to current knowledge. PacLII's Tuvalu database does not contain decisions from 2025, making this claim unverifiable"
+  },
+  {
+   "id": "tv-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1792,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  PacLII (Pacific Islands Legal Information Institute) is an independent nonprofit database, not an official government publisher. Official decisions are published by Tuvalu's national courts"
+  },
+  {
+   "id": "tv-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1667,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  PacLII (Pacific Islands Legal Information Institute) publishes Pacific court decisions, but the specific citation format and case details cannot be verified as accurate without access to ac"
+  },
+  {
+   "id": "tv-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1496,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.**  PacLII (Pacific Islands Legal Information Institute) publishes Pacific island court decisions, but this specific citation format and date cannot be verified as an official published decisi"
+  },
+  {
+   "id": "tv-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1477,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Tuvalu and Marshall Islands are separate Pacific island nations with distinct judicial systems. A Tuvaluan High Court decision cannot be published by the Marshall Islands judiciary."
+  },
+  {
+   "id": "tv-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1916,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The decision is attributed to Tuvalu's High Court (TVHC) but is claimed to be published by Tonga's Attorney General. These are different jurisdictions; Tuvalu and Tonga are separate Pacific"
+  },
+  {
+   "id": "tv-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1172,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.**   Tuvalu has a High Court, not a Federal Court. The citation format \"TVHC\" indicates Tuvalu High Court, not an Australian federal court."
+  },
+  {
+   "id": "tv-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1853,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  RONLAW is Nauru's online legal database and would not publish Tuvaluan High Court decisions. Tuvalu requires its own legal database or official reporter."
+  },
+  {
+   "id": "tv-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1360,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Open Australian Legal Corpus covers Australian jurisdictions only. Tuvalu is an independent Pacific island nation with its own separate legal system, not part of Australia."
+  },
+  {
+   "id": "tv-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1188,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Malosi v Funafuti is a Tuvalu High Court decision, not a Federal Court of Australia judgment. Tuvalu is an independent Pacific nation with its own court system."
+  }
+ ]
+}

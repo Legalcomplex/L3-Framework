@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Kenya — Source-Grounded Citation Reliability (KE)",
+ "country": "KE",
+ "jurisdiction": "Kenya",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:16:13.389726+00:00",
+ "results": [
+  {
+   "id": "ke-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2564,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify these specific regulations exist with that exact title and date; likely fabricated citation requiring independent confirmation."
+  },
+  {
+   "id": "ke-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2108,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-03-27 is in the future, making this citation implausible and likely fabricated or containing an erroneous decision date."
+  },
+  {
+   "id": "ke-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2048,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific case exists; the name, date, and details appear fabricated and should not be trusted."
+  },
+  {
+   "id": "ke-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2279,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation; details like the 1001 co-parties and appeal number appear fabricated or unconfirmed."
+  },
+  {
+   "id": "ke-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 5584,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.**  I cannot verify these specific Access to Information Regulations with that exact title and December 2023 publication date from Kenya Law."
+  },
+  {
+   "id": "ke-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 3271,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date (2026) is in the future, and \"Buidisa\" appears fabricated; this citation cannot be verified as authentic."
+  },
+  {
+   "id": "ke-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2126,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Kenya's Accountants Act regulations would be published in the Kenya Gazette, not the Seychelles Official Gazette—wrong jurisdiction."
+  },
+  {
+   "id": "ke-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2041,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Tax Appeals Tribunal handles first-instance appeals; however, without verifying this specific case, I cannot confirm accuracy."
+  },
+  {
+   "id": "ke-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2587,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific decision, case name, or date exists in CAK records; likely fabricated citation details."
+  },
+  {
+   "id": "ke-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2793,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. A Kenyan tribunal appeal decision would not be published by the Mauritius Supreme Court; wrong jurisdiction and court entirely."
+  },
+  {
+   "id": "ke-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2499,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Kenya's Access to Information Act (2016) exists, but I cannot verify these specific 2020 regulations were officially published as claimed."
+  },
+  {
+   "id": "ke-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1962,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The name \"Buidisa\" appears misspelled or fabricated; I cannot verify this specific decision's authenticity or accurate citation details."
+  }
+ ]
+}

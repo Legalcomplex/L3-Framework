@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Palestine — Source-Grounded Citation Reliability (PS)",
+ "country": "PS",
+ "jurisdiction": "Palestine",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:43:44.868553+00:00",
+ "results": [
+  {
+   "id": "ps-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2234,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The decision is dated 2026-03-23, which is a future date. No official legal source can publish decisions from future dates. This appears to be a fabricated citation."
+  },
+  {
+   "id": "ps-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2413,
+   "verdict": false,
+   "correct": false,
+   "raw": "# Evaluation: False  The citation format and reference structure don't align with documented Palestinian Supreme Constitutional Court publication practices. Verification of this specific decision's au"
+  },
+  {
+   "id": "ps-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1553,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Palestinian Authority issued emergency decrees in 2020, but verification of this specific decree's exact title, number, and publication date through DCAF requires direct source confirma"
+  },
+  {
+   "id": "ps-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2342,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.**  The decision is dated 2026-04-13, which is a future date. No court decision can be published before it occurs, making this claim implausible and unverifiable."
+  },
+  {
+   "id": "ps-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1382,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The citation format and numbering system don't match Palestinian Supreme Constitutional Court conventions. This appears to be a civil execution dispute case, not a constitutional court deci"
+  },
+  {
+   "id": "ps-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1484,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The Palestinian Authority has not enacted a \"Law by Decree No. 28 of 2020\" on cybercrime. This specific legal instrument cannot be verified in Palestinian official legal databases or records."
+  },
+  {
+   "id": "ps-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1433,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The decision is attributed to Palestine's Constitutional Court, not Saudi Arabia's Commercial Court. The jurisdiction and issuing body do not match the claimed publisher."
+  },
+  {
+   "id": "ps-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1578,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  ADGM Courts Judgments is the Abu Dhabi Global Market court system (United Arab Emirates), not a Palestinian legal authority. This decision should be attributed to Palestinian courts."
+  },
+  {
+   "id": "ps-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1212,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The publication date (2018-07-14) predates the decree (2020), making this chronologically impossible. A decree cannot be published before it was issued."
+  },
+  {
+   "id": "ps-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2197,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This decision cannot be from DIFC Courts (Dubai International Financial Centre). DIFC is a UAE jurisdiction, not Palestinian. The case number format and date don't match DIFC publishing con"
+  },
+  {
+   "id": "ps-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1479,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The decision's Arabic designation and date format indicate a Palestinian legal matter, not Saudi. Saudi Commercial Court Judgments would not publish Palestinian cases."
+  },
+  {
+   "id": "ps-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1450,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Palestinian legislative decrees from 2020 lack verified documentation in official public registries. The cited DCAF database entry cannot be independently confirmed as an authentic primary "
+  }
+ ]
+}

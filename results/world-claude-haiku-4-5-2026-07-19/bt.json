@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Bhutan — Source-Grounded Citation Reliability (BT)",
+ "country": "BT",
+ "jurisdiction": "Bhutan",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:34:32.679233+00:00",
+ "results": [
+  {
+   "id": "bt-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1627,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Bhutan Information, Communications and Media Authority (BICMA) is the regulatory body, not \"Bhutan InfoComm and Media Authority.\" The entity name in the claim is inaccurate."
+  },
+  {
+   "id": "bt-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2173,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Bhutan's primary customs legislation is the \"Customs Act of Bhutan 2007,\" not 2017. The 2007 Act is the official customs law. A 2017 publication date likely refers to a revision or reprint, not"
+  },
+  {
+   "id": "bt-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1598,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The Biodiversity Act of Bhutan was enacted in 2002, not 2003. While Bhutan Judiciary publishes official legal texts, the publication year in the claim is incorrect."
+  },
+  {
+   "id": "bt-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2159,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Bhutan's primary environmental legislation is the Environmental Assessment Act of 2000, but verification of the exact publisher attribution and date requires access to official Bhutanese legal "
+  },
+  {
+   "id": "bt-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1728,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Royal Monetary Authority of Bhutan publishes prudential regulations, but this specific 2022 title cannot be verified as an official RMA publication through standard legal databases."
+  },
+  {
+   "id": "bt-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1809,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Bhutan's primary ICT regulator is the Bhutan Kuen Nyam (BKN), not \"Bhutan InfoComm and Media Authority.\" This source cannot be verified as official."
+  },
+  {
+   "id": "bt-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1842,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This document concerns Bhutan, not Pakistan. The Pakistan Laws Dataset would not be the appropriate official source for Bhutanese cable television regulations."
+  },
+  {
+   "id": "bt-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2307,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Bhutan's legislation would be published in Bhutan's official gazette, not the Maldives Government Gazette. Maldives is a separate country with distinct legal systems."
+  },
+  {
+   "id": "bt-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1300,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Bhutan has its own official gazette (Bhutan Kuen Nyam), not India's. The Gazette of India would not be the official publisher of Bhutanese legislation."
+  },
+  {
+   "id": "bt-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1975,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Bhutan has its own Government Printing Department. Sri Lanka's printing authority would not publish Bhutanese legislation. The claim contains an incorrect publisher attribution."
+  },
+  {
+   "id": "bt-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1098,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Bhutan has its own government printing and gazette authority. A Bhutanese regulatory document would not be published through Sri Lanka's Department of Government Printing."
+  },
+  {
+   "id": "bt-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1438,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Bhutan has its own independent legal system and gazette. The Gazette of India is India's official publication; Bhutan would publish regulations through its own Bhutanese gazette."
+  }
+ ]
+}

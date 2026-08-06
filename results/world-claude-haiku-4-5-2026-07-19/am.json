@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Armenia — Source-Grounded Citation Reliability (AM)",
+ "country": "AM",
+ "jurisdiction": "Armenia",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.75,
+ "correct": 9,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:32:50.543371+00:00",
+ "results": [
+  {
+   "id": "am-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2194,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  This claim is questionable. While Armenian Government Decisions from January 1998 likely exist, the publication date (1998-04-06) appears inconsistent with typical ARLIS documentation practic"
+  },
+  {
+   "id": "am-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1781,
+   "verdict": true,
+   "correct": true,
+   "raw": "# Evaluation: **True**  ARLIS is Armenia's official legal information system established in the 1990s. Government decisions from May 1998 are within its documented publication scope and credible."
+  },
+  {
+   "id": "am-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1655,
+   "verdict": true,
+   "correct": true,
+   "raw": "# Evaluation Result: **True**  The Armenian Legal Information System (ARLIS) is Armenia's official legal database for government decisions and legislation. Government resolutions (կառավարության որոշու"
+  },
+  {
+   "id": "am-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1798,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The title translates to a 1997 annual report on disability issues, but ARLIS (established later) would not have been the original publisher in 1998. Government decisions are published throu"
+  },
+  {
+   "id": "am-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1602,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.**  The claim is problematic because it conflates a 1991 decision with a 1998 ARLIS publication date. ARLIS began operations in 1998, so it could not have originally published a 1991 governmen"
+  },
+  {
+   "id": "am-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1562,
+   "verdict": true,
+   "correct": true,
+   "raw": "**True**  ARLIS is Armenia's official legal information system established to publish government decisions and legislative acts. The 1998 date and government decree format are consistent with official"
+  },
+  {
+   "id": "am-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 4477,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This is an Armenian government decision (indicated by \"ՀՀ ԿԱՌԱՎԱՐՈՒԹՅԱՆ\"), not a Serbian official source. It cannot be published in Službeni glasnik RS."
+  },
+  {
+   "id": "am-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1585,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The title appears incomplete/truncated and lacks standard bibliographic identifiers (decree number, official gazette reference). ARLIS requires complete publication details for verification"
+  },
+  {
+   "id": "am-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1226,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The title appears incomplete/corrupted with trailing ellipsis. ARLIS does publish Armenian government decisions, but this truncated citation cannot be properly verified as an authentic offici"
+  },
+  {
+   "id": "am-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1192,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The document title is in Armenian, not Albanian. Armenia's official gazette is the Armenian Official Gazette, not the Albanian Official Gazette. Publication venue is incorrect."
+  },
+  {
+   "id": "am-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1312,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This document predates ARLIS's establishment. ARLIS was founded in 1998, so it could not have published a document on 1995-05-25."
+  },
+  {
+   "id": "am-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1178,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Lithuanian Legal Database (TAR) publishes Lithuanian legal acts, not Armenian government decisions. This is an Armenian governmental resolution that would appear in Armenian official so"
+  }
+ ]
+}

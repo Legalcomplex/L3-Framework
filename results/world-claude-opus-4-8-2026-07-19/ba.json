@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Bosnia & Herzegovina — Source-Grounded Citation Reliability (BA)",
+ "country": "BA",
+ "jurisdiction": "Bosnia & Herzegovina",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 11,
+ "blocked": 0,
+ "unparsed": 1,
+ "errors": [],
+ "accuracy": 0.6364,
+ "correct": 7,
+ "parse_rate": 0.9167,
+ "passed": false,
+ "timestamp": "2026-07-19T08:07:48.759682+00:00",
+ "results": [
+  {
+   "id": "ba-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2284,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.**  The date 2026-02-19 is in the future, making this citation unverifiable and likely fabricated; no such decision exists yet."
+  },
+  {
+   "id": "ba-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 3469,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The date is inconsistent: the title states 24.05.2012, but the claimed publication date is 2012-04-24, contradicting itself."
+  },
+  {
+   "id": "ba-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2545,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. This is a genuine FBiH Official Gazette publication format; amendment decisions on credit-guarantee programs for large enterprises are routinely published there."
+  },
+  {
+   "id": "ba-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 6298,
+   "verdict": true,
+   "correct": true,
+   "raw": "**True.** The Zakon o budžetskom sistemu Republike Srpske was published in Službeni glasnik Republike Srpske around this period, matching RS legislative practice."
+  },
+  {
+   "id": "ba-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2245,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-02-19 is in the future relative to any current verification, making this citation impossible to confirm as authentic."
+  },
+  {
+   "id": "ba-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2591,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The citation contains an internal inconsistency: the stated decision date (14.07.2017) contradicts the claimed record date (2017-06-11), making it unverifiable."
+  },
+  {
+   "id": "ba-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2619,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific decision's existence or details; citation authenticity requires confirmation via the Constitutional Court's official records."
+  },
+  {
+   "id": "ba-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2425,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier format suggests a 2012 case, but the cited date (2012-04-24) contradicts the bracketed date (24.05.2012), indicating fabrication."
+  },
+  {
+   "id": "ba-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1989,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Bosnia & Herzegovina laws are published in \"Službene novine/glasnik,\" not Lithuania's TAR database, which serves Lithuanian legislation."
+  },
+  {
+   "id": "ba-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1597,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Likumi.lv is Latvia's official legal portal; Republika Srpska (Bosnia) laws are published in Službeni glasnik Republike Srpske."
+  },
+  {
+   "id": "ba-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2069,
+   "verdict": null,
+   "correct": false,
+   "raw": "I cannot verify this specific decision exists. Constitutional Court BiH uses \"AP\" case numbers, but I cannot confirm this citation's authenticity."
+  },
+  {
+   "id": "ba-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1852,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier's suffix \"18\" indicates a 2018 case, inconsistent with the claimed 2017 dates; details appear fabricated or mismatched."
+  }
+ ]
+}

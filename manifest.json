@@ -1,0 +1,8459 @@
+{
+ "manifestVersion": 1,
+ "generatedAt": "2026-07-19T08:29:01.611717+00:00",
+ "benchmark": {
+  "id": "s3-world",
+  "name": "S3 World Citation Benchmark",
+  "description": "Half the items are true bibliographic statements about real, recently collected official legal documents (title, publishing source, date, identifier). The other half are the same statements with one controlled mutation: a wrong source, a mutated identifier, or a shifted date. The model judges true or false with a single yes/no call, temperature 0, one round, no retrieval and no web access.",
+  "packs": 227,
+  "itemsPerFullSweep": 2716,
+  "itemsPerPack": 12,
+  "mutationClasses": [
+   "wrong-source",
+   "id-mutation",
+   "date-shift"
+  ],
+  "statementShapes": [
+   "S1-published-via",
+   "S2-decision",
+   "S3-identifier"
+  ],
+  "chanceAccuracyPct": 50,
+  "gradingMethod": "Exact match against the first \\b(true|false)\\b token in the model response.",
+  "condition": "model-memory-no-retrieval",
+  "frameworkPath": "labs/benchmarks/s3-framework"
+ },
+ "runs": [
+  {
+   "id": "claude-opus-4-8-2026-07-19",
+   "modelId": "claude-opus-4-8",
+   "modelLabel": "Claude Opus 4.8",
+   "provider": "anthropic",
+   "runDate": "2026-07-19",
+   "s3FrameworkSha": "7c9132e",
+   "packsRun": 227,
+   "packsTotal": 227,
+   "itemCount": 2716,
+   "samplingMode": "full",
+   "aggregateAccuracyPct": 52.6,
+   "trueAccuracyPct": 7.4,
+   "falseAccuracyPct": 97.6,
+   "trueItemCount": 1342,
+   "falseItemCount": 1349,
+   "saidTruePct": 4.9,
+   "judgedCount": 2691,
+   "unparsedCount": 25,
+   "tokensIn": 357203,
+   "tokensOut": 137932,
+   "estimatedCostUsd": 5.23,
+   "wallTimeSeconds": 1334,
+   "notes": "Frontier tier, run so the finding cannot be dismissed as a small-model result. Thinking disabled to hold the condition identical across arms.",
+   "reportPath": "labs/benchmarks/s3-framework/SWEEP-REPORT-claude-opus-4-8-2026-07-19.md",
+   "mutationAccuracy": [
+    {
+     "mutation": "wrong-source",
+     "n": 718,
+     "accuracyPct": 100.0
+    },
+    {
+     "mutation": "id-mutation",
+     "n": 232,
+     "accuracyPct": 99.1
+    },
+    {
+     "mutation": "date-shift",
+     "n": 399,
+     "accuracyPct": 92.5
+    }
+   ],
+   "shapeAccuracy": [
+    {
+     "shape": "S1-published-via",
+     "n": 1532,
+     "accuracyPct": 51.8
+    },
+    {
+     "shape": "S3-identifier",
+     "n": 378,
+     "accuracyPct": 62.2
+    },
+    {
+     "shape": "S2-decision",
+     "n": 781,
+     "accuracyPct": 49.7
+    }
+   ],
+   "perJurisdiction": [
+    {
+     "rank": 1,
+     "flag": "🇦🇼",
+     "cc": "AW",
+     "jurisdiction": "Aruba",
+     "items": 12,
+     "accuracyPct": 83.0,
+     "pass": true
+    },
+    {
+     "rank": 2,
+     "flag": "🇰🇮",
+     "cc": "KI",
+     "jurisdiction": "Kiribati",
+     "items": 12,
+     "accuracyPct": 82.0,
+     "pass": false
+    },
+    {
+     "rank": 3,
+     "flag": "🇦🇺",
+     "cc": "AU",
+     "jurisdiction": "Australia",
+     "items": 12,
+     "accuracyPct": 75.0,
+     "pass": true
+    },
+    {
+     "rank": 4,
+     "flag": "🏰",
+     "cc": "COE",
+     "jurisdiction": "Council of Europe",
+     "items": 12,
+     "accuracyPct": 75.0,
+     "pass": true
+    },
+    {
+     "rank": 5,
+     "flag": "🇺🇳",
+     "cc": "UN",
+     "jurisdiction": "United Nations",
+     "items": 12,
+     "accuracyPct": 75.0,
+     "pass": true
+    },
+    {
+     "rank": 6,
+     "flag": "🇦🇩",
+     "cc": "AD",
+     "jurisdiction": "Andorra",
+     "items": 12,
+     "accuracyPct": 67.0,
+     "pass": true
+    },
+    {
+     "rank": 7,
+     "flag": "🇧🇶",
+     "cc": "BQ",
+     "jurisdiction": "Caribbean Netherlands",
+     "items": 12,
+     "accuracyPct": 67.0,
+     "pass": true
+    },
+    {
+     "rank": 8,
+     "flag": "🇩🇿",
+     "cc": "DZ",
+     "jurisdiction": "Algeria",
+     "items": 12,
+     "accuracyPct": 67.0,
+     "pass": true
+    },
+    {
+     "rank": 9,
+     "flag": "🇫🇮",
+     "cc": "FI",
+     "jurisdiction": "Finland",
+     "items": 12,
+     "accuracyPct": 67.0,
+     "pass": true
+    },
+    {
+     "rank": 10,
+     "flag": "🇬🇭",
+     "cc": "GH",
+     "jurisdiction": "Ghana",
+     "items": 12,
+     "accuracyPct": 67.0,
+     "pass": true
+    },
+    {
+     "rank": 11,
+     "flag": "🇮🇱",
+     "cc": "IL",
+     "jurisdiction": "Israel",
+     "items": 12,
+     "accuracyPct": 67.0,
+     "pass": true
+    },
+    {
+     "rank": 12,
+     "flag": "🇮🇸",
+     "cc": "IS",
+     "jurisdiction": "Iceland",
+     "items": 12,
+     "accuracyPct": 67.0,
+     "pass": true
+    },
+    {
+     "rank": 13,
+     "flag": "🇯🇪",
+     "cc": "JE",
+     "jurisdiction": "Jersey",
+     "items": 12,
+     "accuracyPct": 67.0,
+     "pass": true
+    },
+    {
+     "rank": 14,
+     "flag": "🇯🇵",
+     "cc": "JP",
+     "jurisdiction": "Japan",
+     "items": 12,
+     "accuracyPct": 67.0,
+     "pass": true
+    },
+    {
+     "rank": 15,
+     "flag": "🇱🇮",
+     "cc": "LI",
+     "jurisdiction": "Liechtenstein",
+     "items": 12,
+     "accuracyPct": 67.0,
+     "pass": true
+    },
+    {
+     "rank": 16,
+     "flag": "🇵🇱",
+     "cc": "PL",
+     "jurisdiction": "Poland",
+     "items": 12,
+     "accuracyPct": 67.0,
+     "pass": true
+    },
+    {
+     "rank": 17,
+     "flag": "🇹🇼",
+     "cc": "TW",
+     "jurisdiction": "Taiwan",
+     "items": 12,
+     "accuracyPct": 67.0,
+     "pass": true
+    },
+    {
+     "rank": 18,
+     "flag": "🇻🇦",
+     "cc": "VA",
+     "jurisdiction": "Vatican City",
+     "items": 12,
+     "accuracyPct": 67.0,
+     "pass": true
+    },
+    {
+     "rank": 19,
+     "flag": "🇧🇦",
+     "cc": "BA",
+     "jurisdiction": "Bosnia & Herzegovina",
+     "items": 12,
+     "accuracyPct": 64.0,
+     "pass": false
+    },
+    {
+     "rank": 20,
+     "flag": "🇨🇴",
+     "cc": "CO",
+     "jurisdiction": "Colombia",
+     "items": 12,
+     "accuracyPct": 64.0,
+     "pass": false
+    },
+    {
+     "rank": 21,
+     "flag": "🇵🇳",
+     "cc": "PN",
+     "jurisdiction": "Pitcairn Islands",
+     "items": 12,
+     "accuracyPct": 64.0,
+     "pass": false
+    },
+    {
+     "rank": 22,
+     "flag": "🇶🇦",
+     "cc": "QA",
+     "jurisdiction": "Qatar",
+     "items": 12,
+     "accuracyPct": 64.0,
+     "pass": false
+    },
+    {
+     "rank": 23,
+     "flag": "🇰🇷",
+     "cc": "KR",
+     "jurisdiction": "South Korea",
+     "items": 12,
+     "accuracyPct": 60.0,
+     "pass": false
+    },
+    {
+     "rank": 24,
+     "flag": "🇦🇴",
+     "cc": "AO",
+     "jurisdiction": "Angola",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 25,
+     "flag": "🇦🇷",
+     "cc": "AR",
+     "jurisdiction": "Argentina",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 26,
+     "flag": "🇧🇪",
+     "cc": "BE",
+     "jurisdiction": "Belgium",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 27,
+     "flag": "🇧🇹",
+     "cc": "BT",
+     "jurisdiction": "Bhutan",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 28,
+     "flag": "🇧🇼",
+     "cc": "BW",
+     "jurisdiction": "Botswana",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 29,
+     "flag": "🇨🇾",
+     "cc": "CY",
+     "jurisdiction": "Cyprus",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 30,
+     "flag": "🇫🇷",
+     "cc": "FR",
+     "jurisdiction": "France",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 31,
+     "flag": "🇭🇰",
+     "cc": "HK",
+     "jurisdiction": "Hong Kong",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 32,
+     "flag": "🇭🇹",
+     "cc": "HT",
+     "jurisdiction": "Haiti",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 33,
+     "flag": "🇮🇪",
+     "cc": "IE",
+     "jurisdiction": "Ireland",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 34,
+     "flag": "🇮🇳",
+     "cc": "IN",
+     "jurisdiction": "India",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 35,
+     "flag": "",
+     "cc": "INTL",
+     "jurisdiction": "International",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 36,
+     "flag": "🇮🇹",
+     "cc": "IT",
+     "jurisdiction": "Italy",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 37,
+     "flag": "🇰🇭",
+     "cc": "KH",
+     "jurisdiction": "Cambodia",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 38,
+     "flag": "🇱🇦",
+     "cc": "LA",
+     "jurisdiction": "Laos",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 39,
+     "flag": "🇱🇨",
+     "cc": "LC",
+     "jurisdiction": "Saint Lucia",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 40,
+     "flag": "🇱🇷",
+     "cc": "LR",
+     "jurisdiction": "Liberia",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 41,
+     "flag": "🇱🇹",
+     "cc": "LT",
+     "jurisdiction": "Lithuania",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 42,
+     "flag": "🇲🇱",
+     "cc": "ML",
+     "jurisdiction": "Mali",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 43,
+     "flag": "🇲🇽",
+     "cc": "MX",
+     "jurisdiction": "Mexico",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 44,
+     "flag": "🇳🇬",
+     "cc": "NG",
+     "jurisdiction": "Nigeria",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 45,
+     "flag": "🇳🇮",
+     "cc": "NI",
+     "jurisdiction": "Nicaragua",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 46,
+     "flag": "🇴🇲",
+     "cc": "OM",
+     "jurisdiction": "Oman",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 47,
+     "flag": "🇵🇪",
+     "cc": "PE",
+     "jurisdiction": "Peru",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 48,
+     "flag": "🇵🇰",
+     "cc": "PK",
+     "jurisdiction": "Pakistan",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 49,
+     "flag": "🇵🇸",
+     "cc": "PS",
+     "jurisdiction": "Palestine",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 50,
+     "flag": "🇸🇦",
+     "cc": "SA",
+     "jurisdiction": "Saudi Arabia",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 51,
+     "flag": "🇹🇬",
+     "cc": "TG",
+     "jurisdiction": "Togo",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 52,
+     "flag": "🇹🇲",
+     "cc": "TM",
+     "jurisdiction": "Turkmenistan",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 53,
+     "flag": "🇺🇸",
+     "cc": "US",
+     "jurisdiction": "United States",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 54,
+     "flag": "🇺🇿",
+     "cc": "UZ",
+     "jurisdiction": "Uzbekistan",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 55,
+     "flag": "🇻🇳",
+     "cc": "VN",
+     "jurisdiction": "Vietnam",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 56,
+     "flag": "🇿🇲",
+     "cc": "ZM",
+     "jurisdiction": "Zambia",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 57,
+     "flag": "🇿🇦",
+     "cc": "ZA",
+     "jurisdiction": "South Africa",
+     "items": 12,
+     "accuracyPct": 56.0,
+     "pass": false
+    },
+    {
+     "rank": 58,
+     "flag": "🇨🇰",
+     "cc": "CK",
+     "jurisdiction": "Cook Islands",
+     "items": 12,
+     "accuracyPct": 55.0,
+     "pass": false
+    },
+    {
+     "rank": 59,
+     "flag": "🇨🇷",
+     "cc": "CR",
+     "jurisdiction": "Costa Rica",
+     "items": 12,
+     "accuracyPct": 55.0,
+     "pass": false
+    },
+    {
+     "rank": 60,
+     "flag": "🇪🇨",
+     "cc": "EC",
+     "jurisdiction": "Ecuador",
+     "items": 12,
+     "accuracyPct": 55.0,
+     "pass": false
+    },
+    {
+     "rank": 61,
+     "flag": "🇳🇴",
+     "cc": "NO",
+     "jurisdiction": "Norway",
+     "items": 12,
+     "accuracyPct": 55.0,
+     "pass": false
+    },
+    {
+     "rank": 62,
+     "flag": "🇵🇼",
+     "cc": "PW",
+     "jurisdiction": "Palau",
+     "items": 12,
+     "accuracyPct": 55.0,
+     "pass": false
+    },
+    {
+     "rank": 63,
+     "flag": "🇹🇳",
+     "cc": "TN",
+     "jurisdiction": "Tunisia",
+     "items": 12,
+     "accuracyPct": 55.0,
+     "pass": false
+    },
+    {
+     "rank": 64,
+     "flag": "🇬🇧",
+     "cc": "UK",
+     "jurisdiction": "United Kingdom",
+     "items": 12,
+     "accuracyPct": 55.0,
+     "pass": false
+    },
+    {
+     "rank": 65,
+     "flag": "🇺🇾",
+     "cc": "UY",
+     "jurisdiction": "Uruguay",
+     "items": 12,
+     "accuracyPct": 55.0,
+     "pass": false
+    },
+    {
+     "rank": 66,
+     "flag": "🇾🇪",
+     "cc": "YE",
+     "jurisdiction": "Yemen",
+     "items": 12,
+     "accuracyPct": 55.0,
+     "pass": false
+    },
+    {
+     "rank": 67,
+     "flag": "🇦🇪",
+     "cc": "AE",
+     "jurisdiction": "United Arab Emirates",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 68,
+     "flag": "🇦🇬",
+     "cc": "AG",
+     "jurisdiction": "Antigua and Barbuda",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 69,
+     "flag": "🇦🇮",
+     "cc": "AI",
+     "jurisdiction": "Anguilla",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 70,
+     "flag": "🇦🇱",
+     "cc": "AL",
+     "jurisdiction": "Albania",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 71,
+     "flag": "🇦🇲",
+     "cc": "AM",
+     "jurisdiction": "Armenia",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 72,
+     "flag": "🇦🇸",
+     "cc": "AS",
+     "jurisdiction": "American Samoa",
+     "items": 6,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 73,
+     "flag": "🇦🇹",
+     "cc": "AT",
+     "jurisdiction": "Austria",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 74,
+     "flag": "🇦🇽",
+     "cc": "AX",
+     "jurisdiction": "Åland Islands",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 75,
+     "flag": "🇦🇿",
+     "cc": "AZ",
+     "jurisdiction": "Azerbaijan",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 76,
+     "flag": "🇧🇧",
+     "cc": "BB",
+     "jurisdiction": "Barbados",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 77,
+     "flag": "🇧🇩",
+     "cc": "BD",
+     "jurisdiction": "Bangladesh",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 78,
+     "flag": "🇧🇫",
+     "cc": "BF",
+     "jurisdiction": "Burkina Faso",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 79,
+     "flag": "🇧🇭",
+     "cc": "BH",
+     "jurisdiction": "Bahrain",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 80,
+     "flag": "🇧🇮",
+     "cc": "BI",
+     "jurisdiction": "Burundi",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 81,
+     "flag": "🇧🇯",
+     "cc": "BJ",
+     "jurisdiction": "Benin",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 82,
+     "flag": "🇧🇱",
+     "cc": "BL",
+     "jurisdiction": "Saint Barthélemy",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 83,
+     "flag": "🇧🇳",
+     "cc": "BN",
+     "jurisdiction": "Brunei",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 84,
+     "flag": "🇧🇴",
+     "cc": "BO",
+     "jurisdiction": "Bolivia",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 85,
+     "flag": "🇧🇸",
+     "cc": "BS",
+     "jurisdiction": "Bahamas",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 86,
+     "flag": "🇧🇿",
+     "cc": "BZ",
+     "jurisdiction": "Belize",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 87,
+     "flag": "🇨🇩",
+     "cc": "CD",
+     "jurisdiction": "Democratic Republic of the Congo",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 88,
+     "flag": "🇨🇫",
+     "cc": "CF",
+     "jurisdiction": "Central African Republic",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 89,
+     "flag": "🇨🇬",
+     "cc": "CG",
+     "jurisdiction": "Republic of the Congo",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 90,
+     "flag": "🇨🇭",
+     "cc": "CH",
+     "jurisdiction": "Switzerland",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 91,
+     "flag": "🇨🇮",
+     "cc": "CI",
+     "jurisdiction": "Côte d'Ivoire",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 92,
+     "flag": "🇨🇲",
+     "cc": "CM",
+     "jurisdiction": "Cameroon",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 93,
+     "flag": "🇨🇳",
+     "cc": "CN",
+     "jurisdiction": "China",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 94,
+     "flag": "🇨🇺",
+     "cc": "CU",
+     "jurisdiction": "Cuba",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 95,
+     "flag": "🇨🇻",
+     "cc": "CV",
+     "jurisdiction": "Cape Verde",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 96,
+     "flag": "🇨🇿",
+     "cc": "CZ",
+     "jurisdiction": "Czechia",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 97,
+     "flag": "🇩🇪",
+     "cc": "DE",
+     "jurisdiction": "Germany",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 98,
+     "flag": "🇩🇯",
+     "cc": "DJ",
+     "jurisdiction": "Djibouti",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 99,
+     "flag": "🇩🇰",
+     "cc": "DK",
+     "jurisdiction": "Denmark",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 100,
+     "flag": "🇩🇲",
+     "cc": "DM",
+     "jurisdiction": "Dominica",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 101,
+     "flag": "🇩🇴",
+     "cc": "DO",
+     "jurisdiction": "Dominican Republic",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 102,
+     "flag": "🇪🇪",
+     "cc": "EE",
+     "jurisdiction": "Estonia",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 103,
+     "flag": "🇪🇬",
+     "cc": "EG",
+     "jurisdiction": "Egypt",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 104,
+     "flag": "🇪🇷",
+     "cc": "ER",
+     "jurisdiction": "Eritrea",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 105,
+     "flag": "🇪🇸",
+     "cc": "ES",
+     "jurisdiction": "Spain",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 106,
+     "flag": "🇪🇺",
+     "cc": "EU",
+     "jurisdiction": "European Union",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 107,
+     "flag": "🇫🇯",
+     "cc": "FJ",
+     "jurisdiction": "Fiji",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 108,
+     "flag": "🇫🇰",
+     "cc": "FK",
+     "jurisdiction": "Falkland Islands",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 109,
+     "flag": "🇫🇲",
+     "cc": "FM",
+     "jurisdiction": "Micronesia",
+     "items": 10,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 110,
+     "flag": "🇫🇴",
+     "cc": "FO",
+     "jurisdiction": "Faroe Islands",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 111,
+     "flag": "🇬🇦",
+     "cc": "GA",
+     "jurisdiction": "Gabon",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 112,
+     "flag": "🇬🇩",
+     "cc": "GD",
+     "jurisdiction": "Grenada",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 113,
+     "flag": "🇬🇪",
+     "cc": "GE",
+     "jurisdiction": "Georgia",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": false
+    },
+    {
+     "rank": 114,
+     "flag": "🇬🇬",
+     "cc": "GG",
+     "jurisdiction": "Guernsey",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 115,
+     "flag": "🇬🇮",
+     "cc": "GI",
+     "jurisdiction": "Gibraltar",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 116,
+     "flag": "🇬🇱",
+     "cc": "GL",
+     "jurisdiction": "Greenland",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 117,
+     "flag": "🇬🇲",
+     "cc": "GM",
+     "jurisdiction": "Gambia",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 118,
+     "flag": "🇬🇳",
+     "cc": "GN",
+     "jurisdiction": "Guinea",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 119,
+     "flag": "🇬🇶",
+     "cc": "GQ",
+     "jurisdiction": "Equatorial Guinea",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 120,
+     "flag": "🇬🇷",
+     "cc": "GR",
+     "jurisdiction": "Greece",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 121,
+     "flag": "🇬🇺",
+     "cc": "GU",
+     "jurisdiction": "Guam",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 122,
+     "flag": "🇬🇼",
+     "cc": "GW",
+     "jurisdiction": "Guinea-Bissau",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 123,
+     "flag": "🇬🇾",
+     "cc": "GY",
+     "jurisdiction": "Guyana",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 124,
+     "flag": "🇭🇳",
+     "cc": "HN",
+     "jurisdiction": "Honduras",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 125,
+     "flag": "🇭🇺",
+     "cc": "HU",
+     "jurisdiction": "Hungary",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 126,
+     "flag": "🇮🇩",
+     "cc": "ID",
+     "jurisdiction": "Indonesia",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 127,
+     "flag": "🇮🇲",
+     "cc": "IM",
+     "jurisdiction": "Isle of Man",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 128,
+     "flag": "🇮🇶",
+     "cc": "IQ",
+     "jurisdiction": "Iraq",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 129,
+     "flag": "🇮🇷",
+     "cc": "IR",
+     "jurisdiction": "Iran",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 130,
+     "flag": "🇯🇲",
+     "cc": "JM",
+     "jurisdiction": "Jamaica",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 131,
+     "flag": "🇯🇴",
+     "cc": "JO",
+     "jurisdiction": "Jordan",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 132,
+     "flag": "🇰🇪",
+     "cc": "KE",
+     "jurisdiction": "Kenya",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 133,
+     "flag": "🇰🇬",
+     "cc": "KG",
+     "jurisdiction": "Kyrgyzstan",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 134,
+     "flag": "🇰🇲",
+     "cc": "KM",
+     "jurisdiction": "Comoros",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 135,
+     "flag": "🇰🇳",
+     "cc": "KN",
+     "jurisdiction": "Saint Kitts and Nevis",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 136,
+     "flag": "🇰🇾",
+     "cc": "KY",
+     "jurisdiction": "Cayman Islands",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 137,
+     "flag": "🇰🇿",
+     "cc": "KZ",
+     "jurisdiction": "Kazakhstan",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 138,
+     "flag": "🇱🇧",
+     "cc": "LB",
+     "jurisdiction": "Lebanon",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 139,
+     "flag": "🇱🇰",
+     "cc": "LK",
+     "jurisdiction": "Sri Lanka",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 140,
+     "flag": "🇱🇸",
+     "cc": "LS",
+     "jurisdiction": "Lesotho",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 141,
+     "flag": "🇱🇺",
+     "cc": "LU",
+     "jurisdiction": "Luxembourg",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 142,
+     "flag": "🇱🇻",
+     "cc": "LV",
+     "jurisdiction": "Latvia",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 143,
+     "flag": "🇱🇾",
+     "cc": "LY",
+     "jurisdiction": "Libya",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 144,
+     "flag": "🇲🇦",
+     "cc": "MA",
+     "jurisdiction": "Morocco",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 145,
+     "flag": "🇲🇨",
+     "cc": "MC",
+     "jurisdiction": "Monaco",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 146,
+     "flag": "🇲🇩",
+     "cc": "MD",
+     "jurisdiction": "Moldova",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 147,
+     "flag": "🇲🇪",
+     "cc": "ME",
+     "jurisdiction": "Montenegro",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 148,
+     "flag": "🇲🇫",
+     "cc": "MF",
+     "jurisdiction": "Saint Martin",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 149,
+     "flag": "🇲🇬",
+     "cc": "MG",
+     "jurisdiction": "Madagascar",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 150,
+     "flag": "🇲🇭",
+     "cc": "MH",
+     "jurisdiction": "Marshall Islands",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 151,
+     "flag": "🇲🇰",
+     "cc": "MK",
+     "jurisdiction": "North Macedonia",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 152,
+     "flag": "🇲🇳",
+     "cc": "MN",
+     "jurisdiction": "Mongolia",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 153,
+     "flag": "🇲🇷",
+     "cc": "MR",
+     "jurisdiction": "Mauritania",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 154,
+     "flag": "🇲🇸",
+     "cc": "MS",
+     "jurisdiction": "Montserrat",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 155,
+     "flag": "🇲🇹",
+     "cc": "MT",
+     "jurisdiction": "Malta",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 156,
+     "flag": "🇲🇻",
+     "cc": "MV",
+     "jurisdiction": "Maldives",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 157,
+     "flag": "🇲🇿",
+     "cc": "MZ",
+     "jurisdiction": "Mozambique",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 158,
+     "flag": "🇳🇦",
+     "cc": "NA",
+     "jurisdiction": "Namibia",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 159,
+     "flag": "🇳🇪",
+     "cc": "NE",
+     "jurisdiction": "Niger",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 160,
+     "flag": "🇳🇱",
+     "cc": "NL",
+     "jurisdiction": "Netherlands",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 161,
+     "flag": "🇳🇷",
+     "cc": "NR",
+     "jurisdiction": "Nauru",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 162,
+     "flag": "🇳🇺",
+     "cc": "NU",
+     "jurisdiction": "Niue",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 163,
+     "flag": "🇵🇦",
+     "cc": "PA",
+     "jurisdiction": "Panama",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 164,
+     "flag": "🇵🇫",
+     "cc": "PF",
+     "jurisdiction": "French Polynesia",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 165,
+     "flag": "🇵🇬",
+     "cc": "PG",
+     "jurisdiction": "Papua New Guinea",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 166,
+     "flag": "🇵🇭",
+     "cc": "PH",
+     "jurisdiction": "Philippines",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 167,
+     "flag": "🇵🇲",
+     "cc": "PM",
+     "jurisdiction": "Saint Pierre and Miquelon",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 168,
+     "flag": "🇵🇷",
+     "cc": "PR",
+     "jurisdiction": "Puerto Rico",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 169,
+     "flag": "🇵🇾",
+     "cc": "PY",
+     "jurisdiction": "Paraguay",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 170,
+     "flag": "🇷🇴",
+     "cc": "RO",
+     "jurisdiction": "Romania",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 171,
+     "flag": "🇷🇸",
+     "cc": "RS",
+     "jurisdiction": "Serbia",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 172,
+     "flag": "🇷🇺",
+     "cc": "RU",
+     "jurisdiction": "Russia",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 173,
+     "flag": "🇷🇼",
+     "cc": "RW",
+     "jurisdiction": "Rwanda",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 174,
+     "flag": "🇸🇧",
+     "cc": "SB",
+     "jurisdiction": "Solomon Islands",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 175,
+     "flag": "🇸🇨",
+     "cc": "SC",
+     "jurisdiction": "Seychelles",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 176,
+     "flag": "🇸🇩",
+     "cc": "SD",
+     "jurisdiction": "Sudan",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 177,
+     "flag": "🇸🇪",
+     "cc": "SE",
+     "jurisdiction": "Sweden",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 178,
+     "flag": "🇸🇭",
+     "cc": "SH",
+     "jurisdiction": "Saint Helena",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 179,
+     "flag": "🇸🇮",
+     "cc": "SI",
+     "jurisdiction": "Slovenia",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 180,
+     "flag": "🇸🇰",
+     "cc": "SK",
+     "jurisdiction": "Slovakia",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 181,
+     "flag": "🇸🇱",
+     "cc": "SL",
+     "jurisdiction": "Sierra Leone",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 182,
+     "flag": "🇸🇲",
+     "cc": "SM",
+     "jurisdiction": "San Marino",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 183,
+     "flag": "🇸🇳",
+     "cc": "SN",
+     "jurisdiction": "Senegal",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 184,
+     "flag": "🇸🇴",
+     "cc": "SO",
+     "jurisdiction": "Somalia",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 185,
+     "flag": "🇸🇷",
+     "cc": "SR",
+     "jurisdiction": "Suriname",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 186,
+     "flag": "🇸🇸",
+     "cc": "SS",
+     "jurisdiction": "South Sudan",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 187,
+     "flag": "🇸🇻",
+     "cc": "SV",
+     "jurisdiction": "El Salvador",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 188,
+     "flag": "🇸🇽",
+     "cc": "SX",
+     "jurisdiction": "Sint Maarten",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 189,
+     "flag": "🇸🇾",
+     "cc": "SY",
+     "jurisdiction": "Syria",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 190,
+     "flag": "🇸🇿",
+     "cc": "SZ",
+     "jurisdiction": "Eswatini",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 191,
+     "flag": "🇹🇨",
+     "cc": "TC",
+     "jurisdiction": "Turks and Caicos Islands",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 192,
+     "flag": "🇹🇩",
+     "cc": "TD",
+     "jurisdiction": "Chad",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 193,
+     "flag": "🇹🇭",
+     "cc": "TH",
+     "jurisdiction": "Thailand",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 194,
+     "flag": "🇹🇯",
+     "cc": "TJ",
+     "jurisdiction": "Tajikistan",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 195,
+     "flag": "🇹🇴",
+     "cc": "TO",
+     "jurisdiction": "Tonga",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 196,
+     "flag": "🇹🇷",
+     "cc": "TR",
+     "jurisdiction": "Turkey",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 197,
+     "flag": "🇹🇹",
+     "cc": "TT",
+     "jurisdiction": "Trinidad and Tobago",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 198,
+     "flag": "🇹🇻",
+     "cc": "TV",
+     "jurisdiction": "Tuvalu",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 199,
+     "flag": "🇹🇿",
+     "cc": "TZ",
+     "jurisdiction": "Tanzania",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 200,
+     "flag": "🇺🇬",
+     "cc": "UG",
+     "jurisdiction": "Uganda",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 201,
+     "flag": "🇻🇨",
+     "cc": "VC",
+     "jurisdiction": "Saint Vincent and the Grenadines",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 202,
+     "flag": "🇻🇪",
+     "cc": "VE",
+     "jurisdiction": "Venezuela",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 203,
+     "flag": "🇻🇬",
+     "cc": "VG",
+     "jurisdiction": "British Virgin Islands",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 204,
+     "flag": "🇻🇺",
+     "cc": "VU",
+     "jurisdiction": "Vanuatu",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 205,
+     "flag": "🇼🇫",
+     "cc": "WF",
+     "jurisdiction": "Wallis and Futuna",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 206,
+     "flag": "🇼🇸",
+     "cc": "WS",
+     "jurisdiction": "Samoa",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 207,
+     "flag": "🇽🇰",
+     "cc": "XK",
+     "jurisdiction": "Kosovo",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 208,
+     "flag": "🇿🇼",
+     "cc": "ZW",
+     "jurisdiction": "Zimbabwe",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 209,
+     "flag": "🇧🇲",
+     "cc": "BM",
+     "jurisdiction": "Bermuda",
+     "items": 12,
+     "accuracyPct": 45.0,
+     "pass": false
+    },
+    {
+     "rank": 210,
+     "flag": "🇪🇹",
+     "cc": "ET",
+     "jurisdiction": "Ethiopia",
+     "items": 12,
+     "accuracyPct": 45.0,
+     "pass": false
+    },
+    {
+     "rank": 211,
+     "flag": "🇬🇹",
+     "cc": "GT",
+     "jurisdiction": "Guatemala",
+     "items": 12,
+     "accuracyPct": 45.0,
+     "pass": false
+    },
+    {
+     "rank": 212,
+     "flag": "🇻🇮",
+     "cc": "VI",
+     "jurisdiction": "U.S. Virgin Islands",
+     "items": 12,
+     "accuracyPct": 45.0,
+     "pass": false
+    },
+    {
+     "rank": 213,
+     "flag": "🇧🇬",
+     "cc": "BG",
+     "jurisdiction": "Bulgaria",
+     "items": 12,
+     "accuracyPct": 42.0,
+     "pass": true
+    },
+    {
+     "rank": 214,
+     "flag": "🇧🇷",
+     "cc": "BR",
+     "jurisdiction": "Brazil",
+     "items": 12,
+     "accuracyPct": 42.0,
+     "pass": true
+    },
+    {
+     "rank": 215,
+     "flag": "🇨🇦",
+     "cc": "CA",
+     "jurisdiction": "Canada",
+     "items": 12,
+     "accuracyPct": 42.0,
+     "pass": true
+    },
+    {
+     "rank": 216,
+     "flag": "🇨🇱",
+     "cc": "CL",
+     "jurisdiction": "Chile",
+     "items": 12,
+     "accuracyPct": 42.0,
+     "pass": true
+    },
+    {
+     "rank": 217,
+     "flag": "🇨🇼",
+     "cc": "CW",
+     "jurisdiction": "Curaçao",
+     "items": 12,
+     "accuracyPct": 42.0,
+     "pass": true
+    },
+    {
+     "rank": 218,
+     "flag": "🇭🇷",
+     "cc": "HR",
+     "jurisdiction": "Croatia",
+     "items": 12,
+     "accuracyPct": 42.0,
+     "pass": true
+    },
+    {
+     "rank": 219,
+     "flag": "🇲🇲",
+     "cc": "MM",
+     "jurisdiction": "Myanmar",
+     "items": 12,
+     "accuracyPct": 42.0,
+     "pass": true
+    },
+    {
+     "rank": 220,
+     "flag": "🇲🇴",
+     "cc": "MO",
+     "jurisdiction": "Macao",
+     "items": 12,
+     "accuracyPct": 42.0,
+     "pass": true
+    },
+    {
+     "rank": 221,
+     "flag": "🇲🇺",
+     "cc": "MU",
+     "jurisdiction": "Mauritius",
+     "items": 12,
+     "accuracyPct": 42.0,
+     "pass": true
+    },
+    {
+     "rank": 222,
+     "flag": "🇲🇼",
+     "cc": "MW",
+     "jurisdiction": "Malawi",
+     "items": 12,
+     "accuracyPct": 42.0,
+     "pass": true
+    },
+    {
+     "rank": 223,
+     "flag": "🇳🇿",
+     "cc": "NZ",
+     "jurisdiction": "New Zealand",
+     "items": 12,
+     "accuracyPct": 42.0,
+     "pass": true
+    },
+    {
+     "rank": 224,
+     "flag": "🇵🇹",
+     "cc": "PT",
+     "jurisdiction": "Portugal",
+     "items": 12,
+     "accuracyPct": 42.0,
+     "pass": true
+    },
+    {
+     "rank": 225,
+     "flag": "🇸🇬",
+     "cc": "SG",
+     "jurisdiction": "Singapore",
+     "items": 12,
+     "accuracyPct": 42.0,
+     "pass": true
+    },
+    {
+     "rank": 226,
+     "flag": "🇹🇱",
+     "cc": "TL",
+     "jurisdiction": "Timor-Leste",
+     "items": 12,
+     "accuracyPct": 42.0,
+     "pass": true
+    },
+    {
+     "rank": 227,
+     "flag": "🇺🇦",
+     "cc": "UA",
+     "jurisdiction": "Ukraine",
+     "items": 12,
+     "accuracyPct": 42.0,
+     "pass": true
+    }
+   ]
+  },
+  {
+   "id": "claude-haiku-4-5-2026-07-19",
+   "modelId": "claude-haiku-4-5",
+   "modelLabel": "Claude Haiku 4.5",
+   "provider": "anthropic",
+   "runDate": "2026-07-19",
+   "s3FrameworkSha": "7c9132e",
+   "packsRun": 227,
+   "packsTotal": 227,
+   "itemCount": 2716,
+   "samplingMode": "full",
+   "aggregateAccuracyPct": 52.3,
+   "trueAccuracyPct": 6.6,
+   "falseAccuracyPct": 98.0,
+   "trueItemCount": 1355,
+   "falseItemCount": 1357,
+   "saidTruePct": 4.3,
+   "judgedCount": 2712,
+   "unparsedCount": 4,
+   "tokensIn": 255946,
+   "tokensOut": 128003,
+   "estimatedCostUsd": 0.9,
+   "wallTimeSeconds": 923,
+   "notes": "Fast tier. Same no-thinking, temperature-0, one-round condition as every other arm.",
+   "reportPath": "labs/benchmarks/s3-framework/SWEEP-REPORT-claude-haiku-4-5-2026-07-19.md",
+   "mutationAccuracy": [
+    {
+     "mutation": "wrong-source",
+     "n": 718,
+     "accuracyPct": 100.0
+    },
+    {
+     "mutation": "id-mutation",
+     "n": 233,
+     "accuracyPct": 98.7
+    },
+    {
+     "mutation": "date-shift",
+     "n": 406,
+     "accuracyPct": 94.1
+    }
+   ],
+   "shapeAccuracy": [
+    {
+     "shape": "S1-published-via",
+     "n": 1533,
+     "accuracyPct": 51.7
+    },
+    {
+     "shape": "S3-identifier",
+     "n": 381,
+     "accuracyPct": 62.2
+    },
+    {
+     "shape": "S2-decision",
+     "n": 798,
+     "accuracyPct": 48.7
+    }
+   ],
+   "perJurisdiction": [
+    {
+     "rank": 1,
+     "flag": "🇦🇲",
+     "cc": "AM",
+     "jurisdiction": "Armenia",
+     "items": 12,
+     "accuracyPct": 75.0,
+     "pass": true
+    },
+    {
+     "rank": 2,
+     "flag": "🇰🇲",
+     "cc": "KM",
+     "jurisdiction": "Comoros",
+     "items": 12,
+     "accuracyPct": 75.0,
+     "pass": true
+    },
+    {
+     "rank": 3,
+     "flag": "🇹🇩",
+     "cc": "TD",
+     "jurisdiction": "Chad",
+     "items": 12,
+     "accuracyPct": 75.0,
+     "pass": true
+    },
+    {
+     "rank": 4,
+     "flag": "🇺🇾",
+     "cc": "UY",
+     "jurisdiction": "Uruguay",
+     "items": 12,
+     "accuracyPct": 75.0,
+     "pass": true
+    },
+    {
+     "rank": 5,
+     "flag": "🇽🇰",
+     "cc": "XK",
+     "jurisdiction": "Kosovo",
+     "items": 12,
+     "accuracyPct": 75.0,
+     "pass": true
+    },
+    {
+     "rank": 6,
+     "flag": "🇧🇫",
+     "cc": "BF",
+     "jurisdiction": "Burkina Faso",
+     "items": 12,
+     "accuracyPct": 67.0,
+     "pass": true
+    },
+    {
+     "rank": 7,
+     "flag": "🇱🇻",
+     "cc": "LV",
+     "jurisdiction": "Latvia",
+     "items": 12,
+     "accuracyPct": 67.0,
+     "pass": true
+    },
+    {
+     "rank": 8,
+     "flag": "🇶🇦",
+     "cc": "QA",
+     "jurisdiction": "Qatar",
+     "items": 12,
+     "accuracyPct": 67.0,
+     "pass": true
+    },
+    {
+     "rank": 9,
+     "flag": "🇸🇮",
+     "cc": "SI",
+     "jurisdiction": "Slovenia",
+     "items": 12,
+     "accuracyPct": 67.0,
+     "pass": true
+    },
+    {
+     "rank": 10,
+     "flag": "🇹🇷",
+     "cc": "TR",
+     "jurisdiction": "Turkey",
+     "items": 12,
+     "accuracyPct": 67.0,
+     "pass": true
+    },
+    {
+     "rank": 11,
+     "flag": "🇹🇼",
+     "cc": "TW",
+     "jurisdiction": "Taiwan",
+     "items": 12,
+     "accuracyPct": 67.0,
+     "pass": true
+    },
+    {
+     "rank": 12,
+     "flag": "🇻🇳",
+     "cc": "VN",
+     "jurisdiction": "Vietnam",
+     "items": 12,
+     "accuracyPct": 67.0,
+     "pass": true
+    },
+    {
+     "rank": 13,
+     "flag": "🇧🇯",
+     "cc": "BJ",
+     "jurisdiction": "Benin",
+     "items": 12,
+     "accuracyPct": 60.0,
+     "pass": false
+    },
+    {
+     "rank": 14,
+     "flag": "🇦🇴",
+     "cc": "AO",
+     "jurisdiction": "Angola",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 15,
+     "flag": "🇦🇼",
+     "cc": "AW",
+     "jurisdiction": "Aruba",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 16,
+     "flag": "🇦🇽",
+     "cc": "AX",
+     "jurisdiction": "Åland Islands",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 17,
+     "flag": "🇧🇴",
+     "cc": "BO",
+     "jurisdiction": "Bolivia",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 18,
+     "flag": "🇧🇿",
+     "cc": "BZ",
+     "jurisdiction": "Belize",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 19,
+     "flag": "🇨🇦",
+     "cc": "CA",
+     "jurisdiction": "Canada",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 20,
+     "flag": "🇨🇫",
+     "cc": "CF",
+     "jurisdiction": "Central African Republic",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 21,
+     "flag": "🇨🇭",
+     "cc": "CH",
+     "jurisdiction": "Switzerland",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 22,
+     "flag": "🇨🇲",
+     "cc": "CM",
+     "jurisdiction": "Cameroon",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 23,
+     "flag": "🇨🇴",
+     "cc": "CO",
+     "jurisdiction": "Colombia",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 24,
+     "flag": "🇨🇾",
+     "cc": "CY",
+     "jurisdiction": "Cyprus",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 25,
+     "flag": "🇨🇿",
+     "cc": "CZ",
+     "jurisdiction": "Czechia",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 26,
+     "flag": "🇪🇬",
+     "cc": "EG",
+     "jurisdiction": "Egypt",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 27,
+     "flag": "🇪🇸",
+     "cc": "ES",
+     "jurisdiction": "Spain",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 28,
+     "flag": "🇪🇺",
+     "cc": "EU",
+     "jurisdiction": "European Union",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 29,
+     "flag": "🇫🇮",
+     "cc": "FI",
+     "jurisdiction": "Finland",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 30,
+     "flag": "🇫🇷",
+     "cc": "FR",
+     "jurisdiction": "France",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 31,
+     "flag": "🇬🇪",
+     "cc": "GE",
+     "jurisdiction": "Georgia",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 32,
+     "flag": "🇬🇭",
+     "cc": "GH",
+     "jurisdiction": "Ghana",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 33,
+     "flag": "🇬🇳",
+     "cc": "GN",
+     "jurisdiction": "Guinea",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 34,
+     "flag": "🇬🇹",
+     "cc": "GT",
+     "jurisdiction": "Guatemala",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 35,
+     "flag": "🇭🇹",
+     "cc": "HT",
+     "jurisdiction": "Haiti",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 36,
+     "flag": "🇮🇱",
+     "cc": "IL",
+     "jurisdiction": "Israel",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 37,
+     "flag": "🇮🇶",
+     "cc": "IQ",
+     "jurisdiction": "Iraq",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 38,
+     "flag": "🇯🇵",
+     "cc": "JP",
+     "jurisdiction": "Japan",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 39,
+     "flag": "🇱🇧",
+     "cc": "LB",
+     "jurisdiction": "Lebanon",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 40,
+     "flag": "🇱🇹",
+     "cc": "LT",
+     "jurisdiction": "Lithuania",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 41,
+     "flag": "🇱🇾",
+     "cc": "LY",
+     "jurisdiction": "Libya",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 42,
+     "flag": "🇲🇪",
+     "cc": "ME",
+     "jurisdiction": "Montenegro",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 43,
+     "flag": "🇲🇭",
+     "cc": "MH",
+     "jurisdiction": "Marshall Islands",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 44,
+     "flag": "🇲🇴",
+     "cc": "MO",
+     "jurisdiction": "Macao",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 45,
+     "flag": "🇳🇱",
+     "cc": "NL",
+     "jurisdiction": "Netherlands",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 46,
+     "flag": "🇳🇴",
+     "cc": "NO",
+     "jurisdiction": "Norway",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 47,
+     "flag": "🇵🇪",
+     "cc": "PE",
+     "jurisdiction": "Peru",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 48,
+     "flag": "🇵🇰",
+     "cc": "PK",
+     "jurisdiction": "Pakistan",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 49,
+     "flag": "🇵🇱",
+     "cc": "PL",
+     "jurisdiction": "Poland",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 50,
+     "flag": "🇸🇩",
+     "cc": "SD",
+     "jurisdiction": "Sudan",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 51,
+     "flag": "🇸🇭",
+     "cc": "SH",
+     "jurisdiction": "Saint Helena",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 52,
+     "flag": "🇸🇲",
+     "cc": "SM",
+     "jurisdiction": "San Marino",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 53,
+     "flag": "🇹🇭",
+     "cc": "TH",
+     "jurisdiction": "Thailand",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 54,
+     "flag": "🇹🇯",
+     "cc": "TJ",
+     "jurisdiction": "Tajikistan",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 55,
+     "flag": "🇹🇲",
+     "cc": "TM",
+     "jurisdiction": "Turkmenistan",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 56,
+     "flag": "🇹🇹",
+     "cc": "TT",
+     "jurisdiction": "Trinidad and Tobago",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 57,
+     "flag": "🇺🇳",
+     "cc": "UN",
+     "jurisdiction": "United Nations",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 58,
+     "flag": "🇺🇿",
+     "cc": "UZ",
+     "jurisdiction": "Uzbekistan",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 59,
+     "flag": "🇻🇦",
+     "cc": "VA",
+     "jurisdiction": "Vatican City",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 60,
+     "flag": "🇼🇸",
+     "cc": "WS",
+     "jurisdiction": "Samoa",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 61,
+     "flag": "🇦🇩",
+     "cc": "AD",
+     "jurisdiction": "Andorra",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 62,
+     "flag": "🇦🇪",
+     "cc": "AE",
+     "jurisdiction": "United Arab Emirates",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 63,
+     "flag": "🇦🇬",
+     "cc": "AG",
+     "jurisdiction": "Antigua and Barbuda",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 64,
+     "flag": "🇦🇮",
+     "cc": "AI",
+     "jurisdiction": "Anguilla",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 65,
+     "flag": "🇦🇱",
+     "cc": "AL",
+     "jurisdiction": "Albania",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 66,
+     "flag": "🇦🇷",
+     "cc": "AR",
+     "jurisdiction": "Argentina",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 67,
+     "flag": "🇦🇸",
+     "cc": "AS",
+     "jurisdiction": "American Samoa",
+     "items": 6,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 68,
+     "flag": "🇦🇹",
+     "cc": "AT",
+     "jurisdiction": "Austria",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 69,
+     "flag": "🇦🇿",
+     "cc": "AZ",
+     "jurisdiction": "Azerbaijan",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 70,
+     "flag": "🇧🇧",
+     "cc": "BB",
+     "jurisdiction": "Barbados",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 71,
+     "flag": "🇧🇩",
+     "cc": "BD",
+     "jurisdiction": "Bangladesh",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 72,
+     "flag": "🇧🇪",
+     "cc": "BE",
+     "jurisdiction": "Belgium",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 73,
+     "flag": "🇧🇬",
+     "cc": "BG",
+     "jurisdiction": "Bulgaria",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 74,
+     "flag": "🇧🇭",
+     "cc": "BH",
+     "jurisdiction": "Bahrain",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 75,
+     "flag": "🇧🇮",
+     "cc": "BI",
+     "jurisdiction": "Burundi",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 76,
+     "flag": "🇧🇱",
+     "cc": "BL",
+     "jurisdiction": "Saint Barthélemy",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 77,
+     "flag": "🇧🇲",
+     "cc": "BM",
+     "jurisdiction": "Bermuda",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 78,
+     "flag": "🇧🇳",
+     "cc": "BN",
+     "jurisdiction": "Brunei",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 79,
+     "flag": "🇧🇶",
+     "cc": "BQ",
+     "jurisdiction": "Caribbean Netherlands",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 80,
+     "flag": "🇧🇷",
+     "cc": "BR",
+     "jurisdiction": "Brazil",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 81,
+     "flag": "🇧🇹",
+     "cc": "BT",
+     "jurisdiction": "Bhutan",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 82,
+     "flag": "🇧🇼",
+     "cc": "BW",
+     "jurisdiction": "Botswana",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 83,
+     "flag": "🇨🇩",
+     "cc": "CD",
+     "jurisdiction": "Democratic Republic of the Congo",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 84,
+     "flag": "🇨🇬",
+     "cc": "CG",
+     "jurisdiction": "Republic of the Congo",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 85,
+     "flag": "🇨🇮",
+     "cc": "CI",
+     "jurisdiction": "Côte d'Ivoire",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 86,
+     "flag": "🇨🇰",
+     "cc": "CK",
+     "jurisdiction": "Cook Islands",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 87,
+     "flag": "🇨🇱",
+     "cc": "CL",
+     "jurisdiction": "Chile",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 88,
+     "flag": "🏰",
+     "cc": "COE",
+     "jurisdiction": "Council of Europe",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 89,
+     "flag": "🇨🇷",
+     "cc": "CR",
+     "jurisdiction": "Costa Rica",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 90,
+     "flag": "🇨🇺",
+     "cc": "CU",
+     "jurisdiction": "Cuba",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 91,
+     "flag": "🇨🇻",
+     "cc": "CV",
+     "jurisdiction": "Cape Verde",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 92,
+     "flag": "🇨🇼",
+     "cc": "CW",
+     "jurisdiction": "Curaçao",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 93,
+     "flag": "🇩🇪",
+     "cc": "DE",
+     "jurisdiction": "Germany",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 94,
+     "flag": "🇩🇯",
+     "cc": "DJ",
+     "jurisdiction": "Djibouti",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 95,
+     "flag": "🇩🇰",
+     "cc": "DK",
+     "jurisdiction": "Denmark",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 96,
+     "flag": "🇩🇲",
+     "cc": "DM",
+     "jurisdiction": "Dominica",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 97,
+     "flag": "🇩🇴",
+     "cc": "DO",
+     "jurisdiction": "Dominican Republic",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 98,
+     "flag": "🇩🇿",
+     "cc": "DZ",
+     "jurisdiction": "Algeria",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 99,
+     "flag": "🇪🇨",
+     "cc": "EC",
+     "jurisdiction": "Ecuador",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 100,
+     "flag": "🇪🇪",
+     "cc": "EE",
+     "jurisdiction": "Estonia",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 101,
+     "flag": "🇪🇷",
+     "cc": "ER",
+     "jurisdiction": "Eritrea",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 102,
+     "flag": "🇪🇹",
+     "cc": "ET",
+     "jurisdiction": "Ethiopia",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 103,
+     "flag": "🇫🇯",
+     "cc": "FJ",
+     "jurisdiction": "Fiji",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 104,
+     "flag": "🇫🇰",
+     "cc": "FK",
+     "jurisdiction": "Falkland Islands",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 105,
+     "flag": "🇫🇲",
+     "cc": "FM",
+     "jurisdiction": "Micronesia",
+     "items": 10,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 106,
+     "flag": "🇫🇴",
+     "cc": "FO",
+     "jurisdiction": "Faroe Islands",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 107,
+     "flag": "🇬🇦",
+     "cc": "GA",
+     "jurisdiction": "Gabon",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 108,
+     "flag": "🇬🇩",
+     "cc": "GD",
+     "jurisdiction": "Grenada",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 109,
+     "flag": "🇬🇬",
+     "cc": "GG",
+     "jurisdiction": "Guernsey",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 110,
+     "flag": "🇬🇮",
+     "cc": "GI",
+     "jurisdiction": "Gibraltar",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 111,
+     "flag": "🇬🇱",
+     "cc": "GL",
+     "jurisdiction": "Greenland",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 112,
+     "flag": "🇬🇲",
+     "cc": "GM",
+     "jurisdiction": "Gambia",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 113,
+     "flag": "🇬🇶",
+     "cc": "GQ",
+     "jurisdiction": "Equatorial Guinea",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 114,
+     "flag": "🇬🇷",
+     "cc": "GR",
+     "jurisdiction": "Greece",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 115,
+     "flag": "🇬🇼",
+     "cc": "GW",
+     "jurisdiction": "Guinea-Bissau",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 116,
+     "flag": "🇬🇾",
+     "cc": "GY",
+     "jurisdiction": "Guyana",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 117,
+     "flag": "🇭🇰",
+     "cc": "HK",
+     "jurisdiction": "Hong Kong",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 118,
+     "flag": "🇭🇳",
+     "cc": "HN",
+     "jurisdiction": "Honduras",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 119,
+     "flag": "🇭🇺",
+     "cc": "HU",
+     "jurisdiction": "Hungary",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 120,
+     "flag": "🇮🇩",
+     "cc": "ID",
+     "jurisdiction": "Indonesia",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 121,
+     "flag": "🇮🇪",
+     "cc": "IE",
+     "jurisdiction": "Ireland",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 122,
+     "flag": "🇮🇲",
+     "cc": "IM",
+     "jurisdiction": "Isle of Man",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 123,
+     "flag": "🇮🇳",
+     "cc": "IN",
+     "jurisdiction": "India",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 124,
+     "flag": "🇮🇷",
+     "cc": "IR",
+     "jurisdiction": "Iran",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 125,
+     "flag": "🇮🇸",
+     "cc": "IS",
+     "jurisdiction": "Iceland",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 126,
+     "flag": "🇮🇹",
+     "cc": "IT",
+     "jurisdiction": "Italy",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 127,
+     "flag": "🇯🇪",
+     "cc": "JE",
+     "jurisdiction": "Jersey",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 128,
+     "flag": "🇯🇲",
+     "cc": "JM",
+     "jurisdiction": "Jamaica",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 129,
+     "flag": "🇰🇪",
+     "cc": "KE",
+     "jurisdiction": "Kenya",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 130,
+     "flag": "🇰🇬",
+     "cc": "KG",
+     "jurisdiction": "Kyrgyzstan",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 131,
+     "flag": "🇰🇭",
+     "cc": "KH",
+     "jurisdiction": "Cambodia",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 132,
+     "flag": "🇰🇮",
+     "cc": "KI",
+     "jurisdiction": "Kiribati",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 133,
+     "flag": "🇰🇳",
+     "cc": "KN",
+     "jurisdiction": "Saint Kitts and Nevis",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 134,
+     "flag": "🇰🇷",
+     "cc": "KR",
+     "jurisdiction": "South Korea",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 135,
+     "flag": "🇰🇾",
+     "cc": "KY",
+     "jurisdiction": "Cayman Islands",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 136,
+     "flag": "🇰🇿",
+     "cc": "KZ",
+     "jurisdiction": "Kazakhstan",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 137,
+     "flag": "🇱🇦",
+     "cc": "LA",
+     "jurisdiction": "Laos",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 138,
+     "flag": "🇱🇨",
+     "cc": "LC",
+     "jurisdiction": "Saint Lucia",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 139,
+     "flag": "🇱🇰",
+     "cc": "LK",
+     "jurisdiction": "Sri Lanka",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 140,
+     "flag": "🇱🇷",
+     "cc": "LR",
+     "jurisdiction": "Liberia",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 141,
+     "flag": "🇱🇸",
+     "cc": "LS",
+     "jurisdiction": "Lesotho",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 142,
+     "flag": "🇱🇺",
+     "cc": "LU",
+     "jurisdiction": "Luxembourg",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 143,
+     "flag": "🇲🇦",
+     "cc": "MA",
+     "jurisdiction": "Morocco",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 144,
+     "flag": "🇲🇨",
+     "cc": "MC",
+     "jurisdiction": "Monaco",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 145,
+     "flag": "🇲🇩",
+     "cc": "MD",
+     "jurisdiction": "Moldova",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 146,
+     "flag": "🇲🇫",
+     "cc": "MF",
+     "jurisdiction": "Saint Martin",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 147,
+     "flag": "🇲🇬",
+     "cc": "MG",
+     "jurisdiction": "Madagascar",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 148,
+     "flag": "🇲🇰",
+     "cc": "MK",
+     "jurisdiction": "North Macedonia",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 149,
+     "flag": "🇲🇱",
+     "cc": "ML",
+     "jurisdiction": "Mali",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 150,
+     "flag": "🇲🇲",
+     "cc": "MM",
+     "jurisdiction": "Myanmar",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 151,
+     "flag": "🇲🇳",
+     "cc": "MN",
+     "jurisdiction": "Mongolia",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 152,
+     "flag": "🇲🇷",
+     "cc": "MR",
+     "jurisdiction": "Mauritania",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 153,
+     "flag": "🇲🇸",
+     "cc": "MS",
+     "jurisdiction": "Montserrat",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 154,
+     "flag": "🇲🇹",
+     "cc": "MT",
+     "jurisdiction": "Malta",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 155,
+     "flag": "🇲🇺",
+     "cc": "MU",
+     "jurisdiction": "Mauritius",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 156,
+     "flag": "🇲🇻",
+     "cc": "MV",
+     "jurisdiction": "Maldives",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 157,
+     "flag": "🇲🇼",
+     "cc": "MW",
+     "jurisdiction": "Malawi",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 158,
+     "flag": "🇲🇽",
+     "cc": "MX",
+     "jurisdiction": "Mexico",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 159,
+     "flag": "🇲🇿",
+     "cc": "MZ",
+     "jurisdiction": "Mozambique",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 160,
+     "flag": "🇳🇦",
+     "cc": "NA",
+     "jurisdiction": "Namibia",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 161,
+     "flag": "🇳🇪",
+     "cc": "NE",
+     "jurisdiction": "Niger",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 162,
+     "flag": "🇳🇬",
+     "cc": "NG",
+     "jurisdiction": "Nigeria",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 163,
+     "flag": "🇳🇮",
+     "cc": "NI",
+     "jurisdiction": "Nicaragua",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 164,
+     "flag": "🇳🇷",
+     "cc": "NR",
+     "jurisdiction": "Nauru",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 165,
+     "flag": "🇳🇺",
+     "cc": "NU",
+     "jurisdiction": "Niue",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 166,
+     "flag": "🇴🇲",
+     "cc": "OM",
+     "jurisdiction": "Oman",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 167,
+     "flag": "🇵🇦",
+     "cc": "PA",
+     "jurisdiction": "Panama",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 168,
+     "flag": "🇵🇫",
+     "cc": "PF",
+     "jurisdiction": "French Polynesia",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 169,
+     "flag": "🇵🇬",
+     "cc": "PG",
+     "jurisdiction": "Papua New Guinea",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 170,
+     "flag": "🇵🇭",
+     "cc": "PH",
+     "jurisdiction": "Philippines",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 171,
+     "flag": "🇵🇲",
+     "cc": "PM",
+     "jurisdiction": "Saint Pierre and Miquelon",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 172,
+     "flag": "🇵🇳",
+     "cc": "PN",
+     "jurisdiction": "Pitcairn Islands",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 173,
+     "flag": "🇵🇷",
+     "cc": "PR",
+     "jurisdiction": "Puerto Rico",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 174,
+     "flag": "🇵🇸",
+     "cc": "PS",
+     "jurisdiction": "Palestine",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 175,
+     "flag": "🇵🇹",
+     "cc": "PT",
+     "jurisdiction": "Portugal",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 176,
+     "flag": "🇵🇼",
+     "cc": "PW",
+     "jurisdiction": "Palau",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 177,
+     "flag": "🇷🇴",
+     "cc": "RO",
+     "jurisdiction": "Romania",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 178,
+     "flag": "🇷🇺",
+     "cc": "RU",
+     "jurisdiction": "Russia",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 179,
+     "flag": "🇷🇼",
+     "cc": "RW",
+     "jurisdiction": "Rwanda",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 180,
+     "flag": "🇸🇦",
+     "cc": "SA",
+     "jurisdiction": "Saudi Arabia",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 181,
+     "flag": "🇸🇧",
+     "cc": "SB",
+     "jurisdiction": "Solomon Islands",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 182,
+     "flag": "🇸🇨",
+     "cc": "SC",
+     "jurisdiction": "Seychelles",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 183,
+     "flag": "🇸🇪",
+     "cc": "SE",
+     "jurisdiction": "Sweden",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 184,
+     "flag": "🇸🇬",
+     "cc": "SG",
+     "jurisdiction": "Singapore",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 185,
+     "flag": "🇸🇰",
+     "cc": "SK",
+     "jurisdiction": "Slovakia",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 186,
+     "flag": "🇸🇱",
+     "cc": "SL",
+     "jurisdiction": "Sierra Leone",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 187,
+     "flag": "🇸🇴",
+     "cc": "SO",
+     "jurisdiction": "Somalia",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 188,
+     "flag": "🇸🇷",
+     "cc": "SR",
+     "jurisdiction": "Suriname",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 189,
+     "flag": "🇸🇸",
+     "cc": "SS",
+     "jurisdiction": "South Sudan",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 190,
+     "flag": "🇸🇻",
+     "cc": "SV",
+     "jurisdiction": "El Salvador",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 191,
+     "flag": "🇸🇽",
+     "cc": "SX",
+     "jurisdiction": "Sint Maarten",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 192,
+     "flag": "🇸🇾",
+     "cc": "SY",
+     "jurisdiction": "Syria",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 193,
+     "flag": "🇸🇿",
+     "cc": "SZ",
+     "jurisdiction": "Eswatini",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 194,
+     "flag": "🇹🇨",
+     "cc": "TC",
+     "jurisdiction": "Turks and Caicos Islands",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 195,
+     "flag": "🇹🇬",
+     "cc": "TG",
+     "jurisdiction": "Togo",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 196,
+     "flag": "🇹🇱",
+     "cc": "TL",
+     "jurisdiction": "Timor-Leste",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 197,
+     "flag": "🇹🇳",
+     "cc": "TN",
+     "jurisdiction": "Tunisia",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 198,
+     "flag": "🇹🇴",
+     "cc": "TO",
+     "jurisdiction": "Tonga",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 199,
+     "flag": "🇹🇻",
+     "cc": "TV",
+     "jurisdiction": "Tuvalu",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 200,
+     "flag": "🇺🇬",
+     "cc": "UG",
+     "jurisdiction": "Uganda",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 201,
+     "flag": "🇬🇧",
+     "cc": "UK",
+     "jurisdiction": "United Kingdom",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 202,
+     "flag": "🇺🇸",
+     "cc": "US",
+     "jurisdiction": "United States",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 203,
+     "flag": "🇻🇨",
+     "cc": "VC",
+     "jurisdiction": "Saint Vincent and the Grenadines",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 204,
+     "flag": "🇻🇪",
+     "cc": "VE",
+     "jurisdiction": "Venezuela",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 205,
+     "flag": "🇻🇬",
+     "cc": "VG",
+     "jurisdiction": "British Virgin Islands",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 206,
+     "flag": "🇻🇮",
+     "cc": "VI",
+     "jurisdiction": "U.S. Virgin Islands",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 207,
+     "flag": "🇻🇺",
+     "cc": "VU",
+     "jurisdiction": "Vanuatu",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 208,
+     "flag": "🇼🇫",
+     "cc": "WF",
+     "jurisdiction": "Wallis and Futuna",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 209,
+     "flag": "🇾🇪",
+     "cc": "YE",
+     "jurisdiction": "Yemen",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 210,
+     "flag": "🇿🇦",
+     "cc": "ZA",
+     "jurisdiction": "South Africa",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 211,
+     "flag": "🇿🇲",
+     "cc": "ZM",
+     "jurisdiction": "Zambia",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 212,
+     "flag": "🇿🇼",
+     "cc": "ZW",
+     "jurisdiction": "Zimbabwe",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 213,
+     "flag": "🇧🇸",
+     "cc": "BS",
+     "jurisdiction": "Bahamas",
+     "items": 12,
+     "accuracyPct": 45.0,
+     "pass": false
+    },
+    {
+     "rank": 214,
+     "flag": "🇵🇾",
+     "cc": "PY",
+     "jurisdiction": "Paraguay",
+     "items": 12,
+     "accuracyPct": 45.0,
+     "pass": false
+    },
+    {
+     "rank": 215,
+     "flag": "🇦🇺",
+     "cc": "AU",
+     "jurisdiction": "Australia",
+     "items": 12,
+     "accuracyPct": 42.0,
+     "pass": true
+    },
+    {
+     "rank": 216,
+     "flag": "🇧🇦",
+     "cc": "BA",
+     "jurisdiction": "Bosnia & Herzegovina",
+     "items": 12,
+     "accuracyPct": 42.0,
+     "pass": true
+    },
+    {
+     "rank": 217,
+     "flag": "🇨🇳",
+     "cc": "CN",
+     "jurisdiction": "China",
+     "items": 12,
+     "accuracyPct": 42.0,
+     "pass": true
+    },
+    {
+     "rank": 218,
+     "flag": "🇬🇺",
+     "cc": "GU",
+     "jurisdiction": "Guam",
+     "items": 12,
+     "accuracyPct": 42.0,
+     "pass": true
+    },
+    {
+     "rank": 219,
+     "flag": "🇭🇷",
+     "cc": "HR",
+     "jurisdiction": "Croatia",
+     "items": 12,
+     "accuracyPct": 42.0,
+     "pass": true
+    },
+    {
+     "rank": 220,
+     "flag": "",
+     "cc": "INTL",
+     "jurisdiction": "International",
+     "items": 12,
+     "accuracyPct": 42.0,
+     "pass": true
+    },
+    {
+     "rank": 221,
+     "flag": "🇯🇴",
+     "cc": "JO",
+     "jurisdiction": "Jordan",
+     "items": 12,
+     "accuracyPct": 42.0,
+     "pass": true
+    },
+    {
+     "rank": 222,
+     "flag": "🇱🇮",
+     "cc": "LI",
+     "jurisdiction": "Liechtenstein",
+     "items": 12,
+     "accuracyPct": 42.0,
+     "pass": true
+    },
+    {
+     "rank": 223,
+     "flag": "🇳🇿",
+     "cc": "NZ",
+     "jurisdiction": "New Zealand",
+     "items": 12,
+     "accuracyPct": 42.0,
+     "pass": true
+    },
+    {
+     "rank": 224,
+     "flag": "🇷🇸",
+     "cc": "RS",
+     "jurisdiction": "Serbia",
+     "items": 12,
+     "accuracyPct": 42.0,
+     "pass": true
+    },
+    {
+     "rank": 225,
+     "flag": "🇸🇳",
+     "cc": "SN",
+     "jurisdiction": "Senegal",
+     "items": 12,
+     "accuracyPct": 42.0,
+     "pass": true
+    },
+    {
+     "rank": 226,
+     "flag": "🇹🇿",
+     "cc": "TZ",
+     "jurisdiction": "Tanzania",
+     "items": 12,
+     "accuracyPct": 42.0,
+     "pass": true
+    },
+    {
+     "rank": 227,
+     "flag": "🇺🇦",
+     "cc": "UA",
+     "jurisdiction": "Ukraine",
+     "items": 12,
+     "accuracyPct": 42.0,
+     "pass": true
+    }
+   ]
+  },
+  {
+   "id": "grok-4-1-fast-non-reasoning-2026-06-20",
+   "modelId": "grok-4-1-fast-non-reasoning",
+   "modelLabel": "Grok 4.1 Fast (non-reasoning)",
+   "provider": "xai",
+   "runDate": "2026-06-20",
+   "s3FrameworkSha": "53cba04",
+   "packsRun": 227,
+   "packsTotal": 227,
+   "itemCount": 2716,
+   "samplingMode": "full",
+   "aggregateAccuracyPct": 51.9,
+   "trueAccuracyPct": 5.8,
+   "falseAccuracyPct": 98.1,
+   "trueItemCount": 1358,
+   "falseItemCount": 1358,
+   "saidTruePct": 3.9,
+   "tokensIn": 536107,
+   "tokensOut": 82961,
+   "estimatedCostUsd": 0.09,
+   "wallTimeSeconds": 624,
+   "isPrimary": true,
+   "notes": "Serves live /research and /monocle answers in production (self-honest arm: this is the model whose unaided memory the retrieval pipeline exists to correct for).",
+   "reportPath": "labs/benchmarks/s3-framework/SWEEP-REPORT.md",
+   "mutationAccuracy": [
+    {
+     "mutation": "wrong-source",
+     "n": 718,
+     "accuracyPct": 100
+    },
+    {
+     "mutation": "id-mutation",
+     "n": 234,
+     "accuracyPct": 97.9
+    },
+    {
+     "mutation": "date-shift",
+     "n": 406,
+     "accuracyPct": 94.8
+    }
+   ],
+   "shapeAccuracy": [
+    {
+     "shape": "S1-published-via",
+     "n": 1536,
+     "accuracyPct": 49.4
+    },
+    {
+     "shape": "S2-decision",
+     "n": 798,
+     "accuracyPct": 51.5
+    },
+    {
+     "shape": "S3-identifier",
+     "n": 382,
+     "accuracyPct": 63.1
+    }
+   ],
+   "perJurisdiction": [
+    {
+     "rank": 1,
+     "flag": "🇦🇼",
+     "cc": "AW",
+     "jurisdiction": "Aruba",
+     "items": 12,
+     "accuracyPct": 75,
+     "pass": true
+    },
+    {
+     "rank": 2,
+     "flag": "🇧🇴",
+     "cc": "BO",
+     "jurisdiction": "Bolivia",
+     "items": 12,
+     "accuracyPct": 75,
+     "pass": true
+    },
+    {
+     "rank": 3,
+     "flag": "🇮🇳",
+     "cc": "IN",
+     "jurisdiction": "India",
+     "items": 12,
+     "accuracyPct": 75,
+     "pass": true
+    },
+    {
+     "rank": 4,
+     "flag": "🇳🇴",
+     "cc": "NO",
+     "jurisdiction": "Norway",
+     "items": 12,
+     "accuracyPct": 75,
+     "pass": true
+    },
+    {
+     "rank": 5,
+     "flag": "🇹🇻",
+     "cc": "TV",
+     "jurisdiction": "Tuvalu",
+     "items": 12,
+     "accuracyPct": 75,
+     "pass": true
+    },
+    {
+     "rank": 6,
+     "flag": "🇨🇫",
+     "cc": "CF",
+     "jurisdiction": "Central African Republic",
+     "items": 12,
+     "accuracyPct": 67,
+     "pass": true
+    },
+    {
+     "rank": 7,
+     "flag": "🇨🇷",
+     "cc": "CR",
+     "jurisdiction": "Costa Rica",
+     "items": 12,
+     "accuracyPct": 67,
+     "pass": true
+    },
+    {
+     "rank": 8,
+     "flag": "🇨🇾",
+     "cc": "CY",
+     "jurisdiction": "Cyprus",
+     "items": 12,
+     "accuracyPct": 67,
+     "pass": true
+    },
+    {
+     "rank": 9,
+     "flag": "🇪🇬",
+     "cc": "EG",
+     "jurisdiction": "Egypt",
+     "items": 12,
+     "accuracyPct": 67,
+     "pass": true
+    },
+    {
+     "rank": 10,
+     "flag": "🇪🇸",
+     "cc": "ES",
+     "jurisdiction": "Spain",
+     "items": 12,
+     "accuracyPct": 67,
+     "pass": true
+    },
+    {
+     "rank": 11,
+     "flag": "🇬🇦",
+     "cc": "GA",
+     "jurisdiction": "Gabon",
+     "items": 12,
+     "accuracyPct": 67,
+     "pass": true
+    },
+    {
+     "rank": 12,
+     "flag": "🇭🇰",
+     "cc": "HK",
+     "jurisdiction": "Hong Kong",
+     "items": 12,
+     "accuracyPct": 67,
+     "pass": true
+    },
+    {
+     "rank": 13,
+     "flag": "🇱🇻",
+     "cc": "LV",
+     "jurisdiction": "Latvia",
+     "items": 12,
+     "accuracyPct": 67,
+     "pass": true
+    },
+    {
+     "rank": 14,
+     "flag": "🇵🇱",
+     "cc": "PL",
+     "jurisdiction": "Poland",
+     "items": 12,
+     "accuracyPct": 67,
+     "pass": true
+    },
+    {
+     "rank": 15,
+     "flag": "🇸🇮",
+     "cc": "SI",
+     "jurisdiction": "Slovenia",
+     "items": 12,
+     "accuracyPct": 67,
+     "pass": true
+    },
+    {
+     "rank": 16,
+     "flag": "🇧🇧",
+     "cc": "BB",
+     "jurisdiction": "Barbados",
+     "items": 12,
+     "accuracyPct": 58,
+     "pass": true
+    },
+    {
+     "rank": 17,
+     "flag": "🇧🇪",
+     "cc": "BE",
+     "jurisdiction": "Belgium",
+     "items": 12,
+     "accuracyPct": 58,
+     "pass": true
+    },
+    {
+     "rank": 18,
+     "flag": "🇧🇫",
+     "cc": "BF",
+     "jurisdiction": "Burkina Faso",
+     "items": 12,
+     "accuracyPct": 58,
+     "pass": true
+    },
+    {
+     "rank": 19,
+     "flag": "🇧🇮",
+     "cc": "BI",
+     "jurisdiction": "Burundi",
+     "items": 12,
+     "accuracyPct": 58,
+     "pass": true
+    },
+    {
+     "rank": 20,
+     "flag": "🇨🇩",
+     "cc": "CD",
+     "jurisdiction": "Democratic Republic of the Congo",
+     "items": 12,
+     "accuracyPct": 58,
+     "pass": true
+    },
+    {
+     "rank": 21,
+     "flag": "🇨🇬",
+     "cc": "CG",
+     "jurisdiction": "Republic of the Congo",
+     "items": 12,
+     "accuracyPct": 58,
+     "pass": true
+    },
+    {
+     "rank": 22,
+     "flag": "🇨🇰",
+     "cc": "CK",
+     "jurisdiction": "Cook Islands",
+     "items": 12,
+     "accuracyPct": 58,
+     "pass": true
+    },
+    {
+     "rank": 23,
+     "flag": "🇨🇿",
+     "cc": "CZ",
+     "jurisdiction": "Czechia",
+     "items": 12,
+     "accuracyPct": 58,
+     "pass": true
+    },
+    {
+     "rank": 24,
+     "flag": "🇩🇴",
+     "cc": "DO",
+     "jurisdiction": "Dominican Republic",
+     "items": 12,
+     "accuracyPct": 58,
+     "pass": true
+    },
+    {
+     "rank": 25,
+     "flag": "🇩🇿",
+     "cc": "DZ",
+     "jurisdiction": "Algeria",
+     "items": 12,
+     "accuracyPct": 58,
+     "pass": true
+    },
+    {
+     "rank": 26,
+     "flag": "🇪🇺",
+     "cc": "EU",
+     "jurisdiction": "European Union",
+     "items": 12,
+     "accuracyPct": 58,
+     "pass": true
+    },
+    {
+     "rank": 27,
+     "flag": "🇰🇮",
+     "cc": "KI",
+     "jurisdiction": "Kiribati",
+     "items": 12,
+     "accuracyPct": 58,
+     "pass": true
+    },
+    {
+     "rank": 28,
+     "flag": "🇱🇰",
+     "cc": "LK",
+     "jurisdiction": "Sri Lanka",
+     "items": 12,
+     "accuracyPct": 58,
+     "pass": true
+    },
+    {
+     "rank": 29,
+     "flag": "🇲🇩",
+     "cc": "MD",
+     "jurisdiction": "Moldova",
+     "items": 12,
+     "accuracyPct": 58,
+     "pass": true
+    },
+    {
+     "rank": 30,
+     "flag": "🇲🇬",
+     "cc": "MG",
+     "jurisdiction": "Madagascar",
+     "items": 12,
+     "accuracyPct": 58,
+     "pass": true
+    },
+    {
+     "rank": 31,
+     "flag": "🇳🇦",
+     "cc": "NA",
+     "jurisdiction": "Namibia",
+     "items": 12,
+     "accuracyPct": 58,
+     "pass": true
+    },
+    {
+     "rank": 32,
+     "flag": "🇳🇪",
+     "cc": "NE",
+     "jurisdiction": "Niger",
+     "items": 12,
+     "accuracyPct": 58,
+     "pass": true
+    },
+    {
+     "rank": 33,
+     "flag": "🇳🇬",
+     "cc": "NG",
+     "jurisdiction": "Nigeria",
+     "items": 12,
+     "accuracyPct": 58,
+     "pass": true
+    },
+    {
+     "rank": 34,
+     "flag": "🇳🇮",
+     "cc": "NI",
+     "jurisdiction": "Nicaragua",
+     "items": 12,
+     "accuracyPct": 58,
+     "pass": true
+    },
+    {
+     "rank": 35,
+     "flag": "🇵🇪",
+     "cc": "PE",
+     "jurisdiction": "Peru",
+     "items": 12,
+     "accuracyPct": 58,
+     "pass": true
+    },
+    {
+     "rank": 36,
+     "flag": "🇵🇾",
+     "cc": "PY",
+     "jurisdiction": "Paraguay",
+     "items": 12,
+     "accuracyPct": 58,
+     "pass": true
+    },
+    {
+     "rank": 37,
+     "flag": "🇸🇬",
+     "cc": "SG",
+     "jurisdiction": "Singapore",
+     "items": 12,
+     "accuracyPct": 58,
+     "pass": true
+    },
+    {
+     "rank": 38,
+     "flag": "🇹🇩",
+     "cc": "TD",
+     "jurisdiction": "Chad",
+     "items": 12,
+     "accuracyPct": 58,
+     "pass": true
+    },
+    {
+     "rank": 39,
+     "flag": "🇹🇬",
+     "cc": "TG",
+     "jurisdiction": "Togo",
+     "items": 12,
+     "accuracyPct": 58,
+     "pass": true
+    },
+    {
+     "rank": 40,
+     "flag": "🇹🇼",
+     "cc": "TW",
+     "jurisdiction": "Taiwan",
+     "items": 12,
+     "accuracyPct": 58,
+     "pass": true
+    },
+    {
+     "rank": 41,
+     "flag": "🇺🇸",
+     "cc": "US",
+     "jurisdiction": "United States",
+     "items": 12,
+     "accuracyPct": 58,
+     "pass": true
+    },
+    {
+     "rank": 42,
+     "flag": "🇺🇾",
+     "cc": "UY",
+     "jurisdiction": "Uruguay",
+     "items": 12,
+     "accuracyPct": 58,
+     "pass": true
+    },
+    {
+     "rank": 43,
+     "flag": "🇽🇰",
+     "cc": "XK",
+     "jurisdiction": "Kosovo",
+     "items": 12,
+     "accuracyPct": 58,
+     "pass": true
+    },
+    {
+     "rank": 44,
+     "flag": "🇿🇦",
+     "cc": "ZA",
+     "jurisdiction": "South Africa",
+     "items": 12,
+     "accuracyPct": 58,
+     "pass": true
+    },
+    {
+     "rank": 45,
+     "flag": "🇦🇩",
+     "cc": "AD",
+     "jurisdiction": "Andorra",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 46,
+     "flag": "🇦🇪",
+     "cc": "AE",
+     "jurisdiction": "United Arab Emirates",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 47,
+     "flag": "🇦🇬",
+     "cc": "AG",
+     "jurisdiction": "Antigua and Barbuda",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 48,
+     "flag": "🇦🇮",
+     "cc": "AI",
+     "jurisdiction": "Anguilla",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 49,
+     "flag": "🇦🇱",
+     "cc": "AL",
+     "jurisdiction": "Albania",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 50,
+     "flag": "🇦🇲",
+     "cc": "AM",
+     "jurisdiction": "Armenia",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 51,
+     "flag": "🇦🇴",
+     "cc": "AO",
+     "jurisdiction": "Angola",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 52,
+     "flag": "🇦🇸",
+     "cc": "AS",
+     "jurisdiction": "American Samoa",
+     "items": 6,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 53,
+     "flag": "🇦🇹",
+     "cc": "AT",
+     "jurisdiction": "Austria",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 54,
+     "flag": "🇦🇺",
+     "cc": "AU",
+     "jurisdiction": "Australia",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 55,
+     "flag": "🇦🇽",
+     "cc": "AX",
+     "jurisdiction": "Åland Islands",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 56,
+     "flag": "🇦🇿",
+     "cc": "AZ",
+     "jurisdiction": "Azerbaijan",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 57,
+     "flag": "🇧🇩",
+     "cc": "BD",
+     "jurisdiction": "Bangladesh",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 58,
+     "flag": "🇧🇬",
+     "cc": "BG",
+     "jurisdiction": "Bulgaria",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 59,
+     "flag": "🇧🇭",
+     "cc": "BH",
+     "jurisdiction": "Bahrain",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 60,
+     "flag": "🇧🇱",
+     "cc": "BL",
+     "jurisdiction": "Saint Barthélemy",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 61,
+     "flag": "🇧🇲",
+     "cc": "BM",
+     "jurisdiction": "Bermuda",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 62,
+     "flag": "🇧🇳",
+     "cc": "BN",
+     "jurisdiction": "Brunei",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 63,
+     "flag": "🇧🇶",
+     "cc": "BQ",
+     "jurisdiction": "Caribbean Netherlands",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 64,
+     "flag": "🇧🇷",
+     "cc": "BR",
+     "jurisdiction": "Brazil",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 65,
+     "flag": "🇧🇸",
+     "cc": "BS",
+     "jurisdiction": "Bahamas",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 66,
+     "flag": "🇧🇹",
+     "cc": "BT",
+     "jurisdiction": "Bhutan",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 67,
+     "flag": "🇧🇼",
+     "cc": "BW",
+     "jurisdiction": "Botswana",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 68,
+     "flag": "🇧🇿",
+     "cc": "BZ",
+     "jurisdiction": "Belize",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 69,
+     "flag": "🇨🇦",
+     "cc": "CA",
+     "jurisdiction": "Canada",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 70,
+     "flag": "🇨🇭",
+     "cc": "CH",
+     "jurisdiction": "Switzerland",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 71,
+     "flag": "🇨🇮",
+     "cc": "CI",
+     "jurisdiction": "Côte d'Ivoire",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 72,
+     "flag": "🇨🇱",
+     "cc": "CL",
+     "jurisdiction": "Chile",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 73,
+     "flag": "🇨🇲",
+     "cc": "CM",
+     "jurisdiction": "Cameroon",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 74,
+     "flag": "🇨🇳",
+     "cc": "CN",
+     "jurisdiction": "China",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 75,
+     "flag": "🇨🇴",
+     "cc": "CO",
+     "jurisdiction": "Colombia",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 76,
+     "flag": "🏰",
+     "cc": "COE",
+     "jurisdiction": "Council of Europe",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 77,
+     "flag": "🇨🇺",
+     "cc": "CU",
+     "jurisdiction": "Cuba",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 78,
+     "flag": "🇨🇻",
+     "cc": "CV",
+     "jurisdiction": "Cape Verde",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 79,
+     "flag": "🇨🇼",
+     "cc": "CW",
+     "jurisdiction": "Curaçao",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 80,
+     "flag": "🇩🇪",
+     "cc": "DE",
+     "jurisdiction": "Germany",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 81,
+     "flag": "🇩🇯",
+     "cc": "DJ",
+     "jurisdiction": "Djibouti",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 82,
+     "flag": "🇩🇰",
+     "cc": "DK",
+     "jurisdiction": "Denmark",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 83,
+     "flag": "🇩🇲",
+     "cc": "DM",
+     "jurisdiction": "Dominica",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 84,
+     "flag": "🇪🇨",
+     "cc": "EC",
+     "jurisdiction": "Ecuador",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 85,
+     "flag": "🇪🇪",
+     "cc": "EE",
+     "jurisdiction": "Estonia",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 86,
+     "flag": "🇪🇷",
+     "cc": "ER",
+     "jurisdiction": "Eritrea",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 87,
+     "flag": "🇪🇹",
+     "cc": "ET",
+     "jurisdiction": "Ethiopia",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 88,
+     "flag": "🇫🇮",
+     "cc": "FI",
+     "jurisdiction": "Finland",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 89,
+     "flag": "🇫🇯",
+     "cc": "FJ",
+     "jurisdiction": "Fiji",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 90,
+     "flag": "🇫🇰",
+     "cc": "FK",
+     "jurisdiction": "Falkland Islands",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 91,
+     "flag": "🇫🇲",
+     "cc": "FM",
+     "jurisdiction": "Micronesia",
+     "items": 10,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 92,
+     "flag": "🇫🇴",
+     "cc": "FO",
+     "jurisdiction": "Faroe Islands",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 93,
+     "flag": "🇬🇩",
+     "cc": "GD",
+     "jurisdiction": "Grenada",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 94,
+     "flag": "🇬🇪",
+     "cc": "GE",
+     "jurisdiction": "Georgia",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 95,
+     "flag": "🇬🇬",
+     "cc": "GG",
+     "jurisdiction": "Guernsey",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 96,
+     "flag": "🇬🇭",
+     "cc": "GH",
+     "jurisdiction": "Ghana",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 97,
+     "flag": "🇬🇮",
+     "cc": "GI",
+     "jurisdiction": "Gibraltar",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 98,
+     "flag": "🇬🇱",
+     "cc": "GL",
+     "jurisdiction": "Greenland",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 99,
+     "flag": "🇬🇲",
+     "cc": "GM",
+     "jurisdiction": "Gambia",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 100,
+     "flag": "🇬🇳",
+     "cc": "GN",
+     "jurisdiction": "Guinea",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 101,
+     "flag": "🇬🇶",
+     "cc": "GQ",
+     "jurisdiction": "Equatorial Guinea",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 102,
+     "flag": "🇬🇷",
+     "cc": "GR",
+     "jurisdiction": "Greece",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 103,
+     "flag": "🇬🇹",
+     "cc": "GT",
+     "jurisdiction": "Guatemala",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 104,
+     "flag": "🇬🇺",
+     "cc": "GU",
+     "jurisdiction": "Guam",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 105,
+     "flag": "🇬🇼",
+     "cc": "GW",
+     "jurisdiction": "Guinea-Bissau",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 106,
+     "flag": "🇬🇾",
+     "cc": "GY",
+     "jurisdiction": "Guyana",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 107,
+     "flag": "🇭🇳",
+     "cc": "HN",
+     "jurisdiction": "Honduras",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 108,
+     "flag": "🇭🇷",
+     "cc": "HR",
+     "jurisdiction": "Croatia",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 109,
+     "flag": "🇭🇹",
+     "cc": "HT",
+     "jurisdiction": "Haiti",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 110,
+     "flag": "🇭🇺",
+     "cc": "HU",
+     "jurisdiction": "Hungary",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 111,
+     "flag": "🇮🇩",
+     "cc": "ID",
+     "jurisdiction": "Indonesia",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 112,
+     "flag": "🇮🇪",
+     "cc": "IE",
+     "jurisdiction": "Ireland",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 113,
+     "flag": "🇮🇱",
+     "cc": "IL",
+     "jurisdiction": "Israel",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 114,
+     "flag": "🇮🇲",
+     "cc": "IM",
+     "jurisdiction": "Isle of Man",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 115,
+     "flag": "",
+     "cc": "INTL",
+     "jurisdiction": "International",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 116,
+     "flag": "🇮🇶",
+     "cc": "IQ",
+     "jurisdiction": "Iraq",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 117,
+     "flag": "🇮🇷",
+     "cc": "IR",
+     "jurisdiction": "Iran",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 118,
+     "flag": "🇮🇸",
+     "cc": "IS",
+     "jurisdiction": "Iceland",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 119,
+     "flag": "🇮🇹",
+     "cc": "IT",
+     "jurisdiction": "Italy",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 120,
+     "flag": "🇯🇪",
+     "cc": "JE",
+     "jurisdiction": "Jersey",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 121,
+     "flag": "🇯🇲",
+     "cc": "JM",
+     "jurisdiction": "Jamaica",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 122,
+     "flag": "🇯🇴",
+     "cc": "JO",
+     "jurisdiction": "Jordan",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 123,
+     "flag": "🇰🇪",
+     "cc": "KE",
+     "jurisdiction": "Kenya",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 124,
+     "flag": "🇰🇬",
+     "cc": "KG",
+     "jurisdiction": "Kyrgyzstan",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 125,
+     "flag": "🇰🇭",
+     "cc": "KH",
+     "jurisdiction": "Cambodia",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 126,
+     "flag": "🇰🇲",
+     "cc": "KM",
+     "jurisdiction": "Comoros",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 127,
+     "flag": "🇰🇳",
+     "cc": "KN",
+     "jurisdiction": "Saint Kitts and Nevis",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 128,
+     "flag": "🇰🇷",
+     "cc": "KR",
+     "jurisdiction": "South Korea",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 129,
+     "flag": "🇰🇾",
+     "cc": "KY",
+     "jurisdiction": "Cayman Islands",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 130,
+     "flag": "🇰🇿",
+     "cc": "KZ",
+     "jurisdiction": "Kazakhstan",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 131,
+     "flag": "🇱🇦",
+     "cc": "LA",
+     "jurisdiction": "Laos",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 132,
+     "flag": "🇱🇧",
+     "cc": "LB",
+     "jurisdiction": "Lebanon",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 133,
+     "flag": "🇱🇨",
+     "cc": "LC",
+     "jurisdiction": "Saint Lucia",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 134,
+     "flag": "🇱🇷",
+     "cc": "LR",
+     "jurisdiction": "Liberia",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 135,
+     "flag": "🇱🇸",
+     "cc": "LS",
+     "jurisdiction": "Lesotho",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 136,
+     "flag": "🇱🇹",
+     "cc": "LT",
+     "jurisdiction": "Lithuania",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 137,
+     "flag": "🇱🇺",
+     "cc": "LU",
+     "jurisdiction": "Luxembourg",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 138,
+     "flag": "🇱🇾",
+     "cc": "LY",
+     "jurisdiction": "Libya",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 139,
+     "flag": "🇲🇦",
+     "cc": "MA",
+     "jurisdiction": "Morocco",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 140,
+     "flag": "🇲🇨",
+     "cc": "MC",
+     "jurisdiction": "Monaco",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 141,
+     "flag": "🇲🇪",
+     "cc": "ME",
+     "jurisdiction": "Montenegro",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 142,
+     "flag": "🇲🇫",
+     "cc": "MF",
+     "jurisdiction": "Saint Martin",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 143,
+     "flag": "🇲🇭",
+     "cc": "MH",
+     "jurisdiction": "Marshall Islands",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 144,
+     "flag": "🇲🇰",
+     "cc": "MK",
+     "jurisdiction": "North Macedonia",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 145,
+     "flag": "🇲🇱",
+     "cc": "ML",
+     "jurisdiction": "Mali",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 146,
+     "flag": "🇲🇲",
+     "cc": "MM",
+     "jurisdiction": "Myanmar",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 147,
+     "flag": "🇲🇳",
+     "cc": "MN",
+     "jurisdiction": "Mongolia",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 148,
+     "flag": "🇲🇴",
+     "cc": "MO",
+     "jurisdiction": "Macao",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 149,
+     "flag": "🇲🇷",
+     "cc": "MR",
+     "jurisdiction": "Mauritania",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 150,
+     "flag": "🇲🇸",
+     "cc": "MS",
+     "jurisdiction": "Montserrat",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 151,
+     "flag": "🇲🇹",
+     "cc": "MT",
+     "jurisdiction": "Malta",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 152,
+     "flag": "🇲🇻",
+     "cc": "MV",
+     "jurisdiction": "Maldives",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 153,
+     "flag": "🇲🇼",
+     "cc": "MW",
+     "jurisdiction": "Malawi",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 154,
+     "flag": "🇲🇿",
+     "cc": "MZ",
+     "jurisdiction": "Mozambique",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 155,
+     "flag": "🇳🇱",
+     "cc": "NL",
+     "jurisdiction": "Netherlands",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 156,
+     "flag": "🇳🇷",
+     "cc": "NR",
+     "jurisdiction": "Nauru",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 157,
+     "flag": "🇳🇺",
+     "cc": "NU",
+     "jurisdiction": "Niue",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 158,
+     "flag": "🇳🇿",
+     "cc": "NZ",
+     "jurisdiction": "New Zealand",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 159,
+     "flag": "🇴🇲",
+     "cc": "OM",
+     "jurisdiction": "Oman",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 160,
+     "flag": "🇵🇦",
+     "cc": "PA",
+     "jurisdiction": "Panama",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 161,
+     "flag": "🇵🇫",
+     "cc": "PF",
+     "jurisdiction": "French Polynesia",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 162,
+     "flag": "🇵🇬",
+     "cc": "PG",
+     "jurisdiction": "Papua New Guinea",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 163,
+     "flag": "🇵🇭",
+     "cc": "PH",
+     "jurisdiction": "Philippines",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 164,
+     "flag": "🇵🇰",
+     "cc": "PK",
+     "jurisdiction": "Pakistan",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 165,
+     "flag": "🇵🇲",
+     "cc": "PM",
+     "jurisdiction": "Saint Pierre and Miquelon",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 166,
+     "flag": "🇵🇳",
+     "cc": "PN",
+     "jurisdiction": "Pitcairn Islands",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 167,
+     "flag": "🇵🇷",
+     "cc": "PR",
+     "jurisdiction": "Puerto Rico",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 168,
+     "flag": "🇵🇸",
+     "cc": "PS",
+     "jurisdiction": "Palestine",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 169,
+     "flag": "🇵🇹",
+     "cc": "PT",
+     "jurisdiction": "Portugal",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 170,
+     "flag": "🇵🇼",
+     "cc": "PW",
+     "jurisdiction": "Palau",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 171,
+     "flag": "🇶🇦",
+     "cc": "QA",
+     "jurisdiction": "Qatar",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 172,
+     "flag": "🇷🇴",
+     "cc": "RO",
+     "jurisdiction": "Romania",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 173,
+     "flag": "🇷🇸",
+     "cc": "RS",
+     "jurisdiction": "Serbia",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 174,
+     "flag": "🇷🇺",
+     "cc": "RU",
+     "jurisdiction": "Russia",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 175,
+     "flag": "🇷🇼",
+     "cc": "RW",
+     "jurisdiction": "Rwanda",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 176,
+     "flag": "🇸🇦",
+     "cc": "SA",
+     "jurisdiction": "Saudi Arabia",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 177,
+     "flag": "🇸🇧",
+     "cc": "SB",
+     "jurisdiction": "Solomon Islands",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 178,
+     "flag": "🇸🇨",
+     "cc": "SC",
+     "jurisdiction": "Seychelles",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 179,
+     "flag": "🇸🇩",
+     "cc": "SD",
+     "jurisdiction": "Sudan",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 180,
+     "flag": "🇸🇪",
+     "cc": "SE",
+     "jurisdiction": "Sweden",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 181,
+     "flag": "🇸🇭",
+     "cc": "SH",
+     "jurisdiction": "Saint Helena",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 182,
+     "flag": "🇸🇰",
+     "cc": "SK",
+     "jurisdiction": "Slovakia",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 183,
+     "flag": "🇸🇱",
+     "cc": "SL",
+     "jurisdiction": "Sierra Leone",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 184,
+     "flag": "🇸🇲",
+     "cc": "SM",
+     "jurisdiction": "San Marino",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 185,
+     "flag": "🇸🇳",
+     "cc": "SN",
+     "jurisdiction": "Senegal",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 186,
+     "flag": "🇸🇴",
+     "cc": "SO",
+     "jurisdiction": "Somalia",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 187,
+     "flag": "🇸🇷",
+     "cc": "SR",
+     "jurisdiction": "Suriname",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 188,
+     "flag": "🇸🇸",
+     "cc": "SS",
+     "jurisdiction": "South Sudan",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 189,
+     "flag": "🇸🇻",
+     "cc": "SV",
+     "jurisdiction": "El Salvador",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 190,
+     "flag": "🇸🇽",
+     "cc": "SX",
+     "jurisdiction": "Sint Maarten",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 191,
+     "flag": "🇸🇾",
+     "cc": "SY",
+     "jurisdiction": "Syria",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 192,
+     "flag": "🇸🇿",
+     "cc": "SZ",
+     "jurisdiction": "Eswatini",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 193,
+     "flag": "🇹🇨",
+     "cc": "TC",
+     "jurisdiction": "Turks and Caicos Islands",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 194,
+     "flag": "🇹🇭",
+     "cc": "TH",
+     "jurisdiction": "Thailand",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 195,
+     "flag": "🇹🇯",
+     "cc": "TJ",
+     "jurisdiction": "Tajikistan",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 196,
+     "flag": "🇹🇱",
+     "cc": "TL",
+     "jurisdiction": "Timor-Leste",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 197,
+     "flag": "🇹🇲",
+     "cc": "TM",
+     "jurisdiction": "Turkmenistan",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 198,
+     "flag": "🇹🇳",
+     "cc": "TN",
+     "jurisdiction": "Tunisia",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 199,
+     "flag": "🇹🇴",
+     "cc": "TO",
+     "jurisdiction": "Tonga",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 200,
+     "flag": "🇹🇷",
+     "cc": "TR",
+     "jurisdiction": "Turkey",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 201,
+     "flag": "🇹🇹",
+     "cc": "TT",
+     "jurisdiction": "Trinidad and Tobago",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 202,
+     "flag": "🇹🇿",
+     "cc": "TZ",
+     "jurisdiction": "Tanzania",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 203,
+     "flag": "🇺🇬",
+     "cc": "UG",
+     "jurisdiction": "Uganda",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 204,
+     "flag": "🇬🇧",
+     "cc": "UK",
+     "jurisdiction": "United Kingdom",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 205,
+     "flag": "🇺🇳",
+     "cc": "UN",
+     "jurisdiction": "United Nations",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 206,
+     "flag": "🇺🇿",
+     "cc": "UZ",
+     "jurisdiction": "Uzbekistan",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 207,
+     "flag": "🇻🇦",
+     "cc": "VA",
+     "jurisdiction": "Vatican City",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 208,
+     "flag": "🇻🇨",
+     "cc": "VC",
+     "jurisdiction": "Saint Vincent and the Grenadines",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 209,
+     "flag": "🇻🇬",
+     "cc": "VG",
+     "jurisdiction": "British Virgin Islands",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 210,
+     "flag": "🇻🇮",
+     "cc": "VI",
+     "jurisdiction": "U.S. Virgin Islands",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 211,
+     "flag": "🇻🇳",
+     "cc": "VN",
+     "jurisdiction": "Vietnam",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 212,
+     "flag": "🇻🇺",
+     "cc": "VU",
+     "jurisdiction": "Vanuatu",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 213,
+     "flag": "🇼🇫",
+     "cc": "WF",
+     "jurisdiction": "Wallis and Futuna",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 214,
+     "flag": "🇼🇸",
+     "cc": "WS",
+     "jurisdiction": "Samoa",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 215,
+     "flag": "🇾🇪",
+     "cc": "YE",
+     "jurisdiction": "Yemen",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 216,
+     "flag": "🇿🇲",
+     "cc": "ZM",
+     "jurisdiction": "Zambia",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 217,
+     "flag": "🇿🇼",
+     "cc": "ZW",
+     "jurisdiction": "Zimbabwe",
+     "items": 12,
+     "accuracyPct": 50,
+     "pass": true
+    },
+    {
+     "rank": 218,
+     "flag": "🇧🇦",
+     "cc": "BA",
+     "jurisdiction": "Bosnia & Herzegovina",
+     "items": 12,
+     "accuracyPct": 42,
+     "pass": true
+    },
+    {
+     "rank": 219,
+     "flag": "🇧🇯",
+     "cc": "BJ",
+     "jurisdiction": "Benin",
+     "items": 12,
+     "accuracyPct": 42,
+     "pass": true
+    },
+    {
+     "rank": 220,
+     "flag": "🇫🇷",
+     "cc": "FR",
+     "jurisdiction": "France",
+     "items": 12,
+     "accuracyPct": 42,
+     "pass": true
+    },
+    {
+     "rank": 221,
+     "flag": "🇯🇵",
+     "cc": "JP",
+     "jurisdiction": "Japan",
+     "items": 12,
+     "accuracyPct": 42,
+     "pass": true
+    },
+    {
+     "rank": 222,
+     "flag": "🇱🇮",
+     "cc": "LI",
+     "jurisdiction": "Liechtenstein",
+     "items": 12,
+     "accuracyPct": 42,
+     "pass": true
+    },
+    {
+     "rank": 223,
+     "flag": "🇲🇺",
+     "cc": "MU",
+     "jurisdiction": "Mauritius",
+     "items": 12,
+     "accuracyPct": 42,
+     "pass": true
+    },
+    {
+     "rank": 224,
+     "flag": "🇲🇽",
+     "cc": "MX",
+     "jurisdiction": "Mexico",
+     "items": 12,
+     "accuracyPct": 42,
+     "pass": true
+    },
+    {
+     "rank": 225,
+     "flag": "🇺🇦",
+     "cc": "UA",
+     "jurisdiction": "Ukraine",
+     "items": 12,
+     "accuracyPct": 42,
+     "pass": true
+    },
+    {
+     "rank": 226,
+     "flag": "🇻🇪",
+     "cc": "VE",
+     "jurisdiction": "Venezuela",
+     "items": 12,
+     "accuracyPct": 42,
+     "pass": true
+    },
+    {
+     "rank": 227,
+     "flag": "🇦🇷",
+     "cc": "AR",
+     "jurisdiction": "Argentina",
+     "items": 12,
+     "accuracyPct": 33,
+     "pass": true
+    }
+   ]
+  },
+  {
+   "id": "claude-sonnet-5-2026-07-19",
+   "modelId": "claude-sonnet-5",
+   "modelLabel": "Claude Sonnet 5",
+   "provider": "anthropic",
+   "runDate": "2026-07-19",
+   "s3FrameworkSha": "7c9132e",
+   "packsRun": 227,
+   "packsTotal": 227,
+   "itemCount": 2716,
+   "samplingMode": "full",
+   "aggregateAccuracyPct": 50.5,
+   "trueAccuracyPct": 1.5,
+   "falseAccuracyPct": 99.5,
+   "trueItemCount": 1358,
+   "falseItemCount": 1358,
+   "saidTruePct": 1.0,
+   "judgedCount": 2716,
+   "unparsedCount": 0,
+   "tokensIn": 357203,
+   "tokensOut": 154832,
+   "estimatedCostUsd": 2.26,
+   "wallTimeSeconds": 1086,
+   "notes": "Mid tier. Thinking explicitly disabled: it is on by default on this model, and with a small output budget the whole budget can go to thinking, returning empty text that scores as no answer.",
+   "reportPath": "labs/benchmarks/s3-framework/SWEEP-REPORT-claude-sonnet-5-2026-07-19.md",
+   "mutationAccuracy": [
+    {
+     "mutation": "wrong-source",
+     "n": 718,
+     "accuracyPct": 100.0
+    },
+    {
+     "mutation": "id-mutation",
+     "n": 234,
+     "accuracyPct": 99.6
+    },
+    {
+     "mutation": "date-shift",
+     "n": 406,
+     "accuracyPct": 98.5
+    }
+   ],
+   "shapeAccuracy": [
+    {
+     "shape": "S1-published-via",
+     "n": 1536,
+     "accuracyPct": 49.6
+    },
+    {
+     "shape": "S3-identifier",
+     "n": 382,
+     "accuracyPct": 61.5
+    },
+    {
+     "shape": "S2-decision",
+     "n": 798,
+     "accuracyPct": 47.0
+    }
+   ],
+   "perJurisdiction": [
+    {
+     "rank": 1,
+     "flag": "🇻🇦",
+     "cc": "VA",
+     "jurisdiction": "Vatican City",
+     "items": 12,
+     "accuracyPct": 75.0,
+     "pass": true
+    },
+    {
+     "rank": 2,
+     "flag": "🇭🇹",
+     "cc": "HT",
+     "jurisdiction": "Haiti",
+     "items": 12,
+     "accuracyPct": 67.0,
+     "pass": true
+    },
+    {
+     "rank": 3,
+     "flag": "🇦🇷",
+     "cc": "AR",
+     "jurisdiction": "Argentina",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 4,
+     "flag": "🇦🇺",
+     "cc": "AU",
+     "jurisdiction": "Australia",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 5,
+     "flag": "🇧🇩",
+     "cc": "BD",
+     "jurisdiction": "Bangladesh",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 6,
+     "flag": "🇧🇶",
+     "cc": "BQ",
+     "jurisdiction": "Caribbean Netherlands",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 7,
+     "flag": "🏰",
+     "cc": "COE",
+     "jurisdiction": "Council of Europe",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 8,
+     "flag": "🇫🇷",
+     "cc": "FR",
+     "jurisdiction": "France",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 9,
+     "flag": "🇬🇭",
+     "cc": "GH",
+     "jurisdiction": "Ghana",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 10,
+     "flag": "",
+     "cc": "INTL",
+     "jurisdiction": "International",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 11,
+     "flag": "🇯🇵",
+     "cc": "JP",
+     "jurisdiction": "Japan",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 12,
+     "flag": "🇸🇦",
+     "cc": "SA",
+     "jurisdiction": "Saudi Arabia",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 13,
+     "flag": "🇺🇳",
+     "cc": "UN",
+     "jurisdiction": "United Nations",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 14,
+     "flag": "🇻🇳",
+     "cc": "VN",
+     "jurisdiction": "Vietnam",
+     "items": 12,
+     "accuracyPct": 58.0,
+     "pass": true
+    },
+    {
+     "rank": 15,
+     "flag": "🇦🇩",
+     "cc": "AD",
+     "jurisdiction": "Andorra",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 16,
+     "flag": "🇦🇪",
+     "cc": "AE",
+     "jurisdiction": "United Arab Emirates",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 17,
+     "flag": "🇦🇬",
+     "cc": "AG",
+     "jurisdiction": "Antigua and Barbuda",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 18,
+     "flag": "🇦🇮",
+     "cc": "AI",
+     "jurisdiction": "Anguilla",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 19,
+     "flag": "🇦🇱",
+     "cc": "AL",
+     "jurisdiction": "Albania",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 20,
+     "flag": "🇦🇲",
+     "cc": "AM",
+     "jurisdiction": "Armenia",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 21,
+     "flag": "🇦🇴",
+     "cc": "AO",
+     "jurisdiction": "Angola",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 22,
+     "flag": "🇦🇸",
+     "cc": "AS",
+     "jurisdiction": "American Samoa",
+     "items": 6,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 23,
+     "flag": "🇦🇹",
+     "cc": "AT",
+     "jurisdiction": "Austria",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 24,
+     "flag": "🇦🇼",
+     "cc": "AW",
+     "jurisdiction": "Aruba",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 25,
+     "flag": "🇦🇽",
+     "cc": "AX",
+     "jurisdiction": "Åland Islands",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 26,
+     "flag": "🇦🇿",
+     "cc": "AZ",
+     "jurisdiction": "Azerbaijan",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 27,
+     "flag": "🇧🇦",
+     "cc": "BA",
+     "jurisdiction": "Bosnia & Herzegovina",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 28,
+     "flag": "🇧🇧",
+     "cc": "BB",
+     "jurisdiction": "Barbados",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 29,
+     "flag": "🇧🇪",
+     "cc": "BE",
+     "jurisdiction": "Belgium",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 30,
+     "flag": "🇧🇫",
+     "cc": "BF",
+     "jurisdiction": "Burkina Faso",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 31,
+     "flag": "🇧🇬",
+     "cc": "BG",
+     "jurisdiction": "Bulgaria",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 32,
+     "flag": "🇧🇭",
+     "cc": "BH",
+     "jurisdiction": "Bahrain",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 33,
+     "flag": "🇧🇮",
+     "cc": "BI",
+     "jurisdiction": "Burundi",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 34,
+     "flag": "🇧🇯",
+     "cc": "BJ",
+     "jurisdiction": "Benin",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 35,
+     "flag": "🇧🇱",
+     "cc": "BL",
+     "jurisdiction": "Saint Barthélemy",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 36,
+     "flag": "🇧🇲",
+     "cc": "BM",
+     "jurisdiction": "Bermuda",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 37,
+     "flag": "🇧🇳",
+     "cc": "BN",
+     "jurisdiction": "Brunei",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 38,
+     "flag": "🇧🇴",
+     "cc": "BO",
+     "jurisdiction": "Bolivia",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 39,
+     "flag": "🇧🇷",
+     "cc": "BR",
+     "jurisdiction": "Brazil",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 40,
+     "flag": "🇧🇸",
+     "cc": "BS",
+     "jurisdiction": "Bahamas",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 41,
+     "flag": "🇧🇹",
+     "cc": "BT",
+     "jurisdiction": "Bhutan",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 42,
+     "flag": "🇧🇼",
+     "cc": "BW",
+     "jurisdiction": "Botswana",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 43,
+     "flag": "🇧🇿",
+     "cc": "BZ",
+     "jurisdiction": "Belize",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 44,
+     "flag": "🇨🇦",
+     "cc": "CA",
+     "jurisdiction": "Canada",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 45,
+     "flag": "🇨🇩",
+     "cc": "CD",
+     "jurisdiction": "Democratic Republic of the Congo",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 46,
+     "flag": "🇨🇫",
+     "cc": "CF",
+     "jurisdiction": "Central African Republic",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 47,
+     "flag": "🇨🇬",
+     "cc": "CG",
+     "jurisdiction": "Republic of the Congo",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 48,
+     "flag": "🇨🇭",
+     "cc": "CH",
+     "jurisdiction": "Switzerland",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 49,
+     "flag": "🇨🇮",
+     "cc": "CI",
+     "jurisdiction": "Côte d'Ivoire",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 50,
+     "flag": "🇨🇰",
+     "cc": "CK",
+     "jurisdiction": "Cook Islands",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 51,
+     "flag": "🇨🇱",
+     "cc": "CL",
+     "jurisdiction": "Chile",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 52,
+     "flag": "🇨🇲",
+     "cc": "CM",
+     "jurisdiction": "Cameroon",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 53,
+     "flag": "🇨🇳",
+     "cc": "CN",
+     "jurisdiction": "China",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 54,
+     "flag": "🇨🇴",
+     "cc": "CO",
+     "jurisdiction": "Colombia",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 55,
+     "flag": "🇨🇷",
+     "cc": "CR",
+     "jurisdiction": "Costa Rica",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 56,
+     "flag": "🇨🇺",
+     "cc": "CU",
+     "jurisdiction": "Cuba",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 57,
+     "flag": "🇨🇻",
+     "cc": "CV",
+     "jurisdiction": "Cape Verde",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 58,
+     "flag": "🇨🇼",
+     "cc": "CW",
+     "jurisdiction": "Curaçao",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 59,
+     "flag": "🇨🇾",
+     "cc": "CY",
+     "jurisdiction": "Cyprus",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 60,
+     "flag": "🇨🇿",
+     "cc": "CZ",
+     "jurisdiction": "Czechia",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 61,
+     "flag": "🇩🇯",
+     "cc": "DJ",
+     "jurisdiction": "Djibouti",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 62,
+     "flag": "🇩🇰",
+     "cc": "DK",
+     "jurisdiction": "Denmark",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 63,
+     "flag": "🇩🇲",
+     "cc": "DM",
+     "jurisdiction": "Dominica",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 64,
+     "flag": "🇩🇴",
+     "cc": "DO",
+     "jurisdiction": "Dominican Republic",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 65,
+     "flag": "🇩🇿",
+     "cc": "DZ",
+     "jurisdiction": "Algeria",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 66,
+     "flag": "🇪🇨",
+     "cc": "EC",
+     "jurisdiction": "Ecuador",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 67,
+     "flag": "🇪🇪",
+     "cc": "EE",
+     "jurisdiction": "Estonia",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 68,
+     "flag": "🇪🇬",
+     "cc": "EG",
+     "jurisdiction": "Egypt",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 69,
+     "flag": "🇪🇷",
+     "cc": "ER",
+     "jurisdiction": "Eritrea",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 70,
+     "flag": "🇪🇸",
+     "cc": "ES",
+     "jurisdiction": "Spain",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 71,
+     "flag": "🇪🇹",
+     "cc": "ET",
+     "jurisdiction": "Ethiopia",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 72,
+     "flag": "🇪🇺",
+     "cc": "EU",
+     "jurisdiction": "European Union",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 73,
+     "flag": "🇫🇮",
+     "cc": "FI",
+     "jurisdiction": "Finland",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 74,
+     "flag": "🇫🇯",
+     "cc": "FJ",
+     "jurisdiction": "Fiji",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 75,
+     "flag": "🇫🇰",
+     "cc": "FK",
+     "jurisdiction": "Falkland Islands",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 76,
+     "flag": "🇫🇲",
+     "cc": "FM",
+     "jurisdiction": "Micronesia",
+     "items": 10,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 77,
+     "flag": "🇫🇴",
+     "cc": "FO",
+     "jurisdiction": "Faroe Islands",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 78,
+     "flag": "🇬🇦",
+     "cc": "GA",
+     "jurisdiction": "Gabon",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 79,
+     "flag": "🇬🇩",
+     "cc": "GD",
+     "jurisdiction": "Grenada",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 80,
+     "flag": "🇬🇪",
+     "cc": "GE",
+     "jurisdiction": "Georgia",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 81,
+     "flag": "🇬🇬",
+     "cc": "GG",
+     "jurisdiction": "Guernsey",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 82,
+     "flag": "🇬🇮",
+     "cc": "GI",
+     "jurisdiction": "Gibraltar",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 83,
+     "flag": "🇬🇱",
+     "cc": "GL",
+     "jurisdiction": "Greenland",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 84,
+     "flag": "🇬🇲",
+     "cc": "GM",
+     "jurisdiction": "Gambia",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 85,
+     "flag": "🇬🇳",
+     "cc": "GN",
+     "jurisdiction": "Guinea",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 86,
+     "flag": "🇬🇶",
+     "cc": "GQ",
+     "jurisdiction": "Equatorial Guinea",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 87,
+     "flag": "🇬🇷",
+     "cc": "GR",
+     "jurisdiction": "Greece",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 88,
+     "flag": "🇬🇹",
+     "cc": "GT",
+     "jurisdiction": "Guatemala",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 89,
+     "flag": "🇬🇺",
+     "cc": "GU",
+     "jurisdiction": "Guam",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 90,
+     "flag": "🇬🇼",
+     "cc": "GW",
+     "jurisdiction": "Guinea-Bissau",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 91,
+     "flag": "🇬🇾",
+     "cc": "GY",
+     "jurisdiction": "Guyana",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 92,
+     "flag": "🇭🇰",
+     "cc": "HK",
+     "jurisdiction": "Hong Kong",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 93,
+     "flag": "🇭🇳",
+     "cc": "HN",
+     "jurisdiction": "Honduras",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 94,
+     "flag": "🇭🇷",
+     "cc": "HR",
+     "jurisdiction": "Croatia",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 95,
+     "flag": "🇭🇺",
+     "cc": "HU",
+     "jurisdiction": "Hungary",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 96,
+     "flag": "🇮🇩",
+     "cc": "ID",
+     "jurisdiction": "Indonesia",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 97,
+     "flag": "🇮🇪",
+     "cc": "IE",
+     "jurisdiction": "Ireland",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 98,
+     "flag": "🇮🇱",
+     "cc": "IL",
+     "jurisdiction": "Israel",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 99,
+     "flag": "🇮🇲",
+     "cc": "IM",
+     "jurisdiction": "Isle of Man",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 100,
+     "flag": "🇮🇳",
+     "cc": "IN",
+     "jurisdiction": "India",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 101,
+     "flag": "🇮🇶",
+     "cc": "IQ",
+     "jurisdiction": "Iraq",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 102,
+     "flag": "🇮🇷",
+     "cc": "IR",
+     "jurisdiction": "Iran",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 103,
+     "flag": "🇮🇸",
+     "cc": "IS",
+     "jurisdiction": "Iceland",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 104,
+     "flag": "🇮🇹",
+     "cc": "IT",
+     "jurisdiction": "Italy",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 105,
+     "flag": "🇯🇪",
+     "cc": "JE",
+     "jurisdiction": "Jersey",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 106,
+     "flag": "🇯🇲",
+     "cc": "JM",
+     "jurisdiction": "Jamaica",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 107,
+     "flag": "🇯🇴",
+     "cc": "JO",
+     "jurisdiction": "Jordan",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 108,
+     "flag": "🇰🇪",
+     "cc": "KE",
+     "jurisdiction": "Kenya",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 109,
+     "flag": "🇰🇬",
+     "cc": "KG",
+     "jurisdiction": "Kyrgyzstan",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 110,
+     "flag": "🇰🇭",
+     "cc": "KH",
+     "jurisdiction": "Cambodia",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 111,
+     "flag": "🇰🇮",
+     "cc": "KI",
+     "jurisdiction": "Kiribati",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 112,
+     "flag": "🇰🇲",
+     "cc": "KM",
+     "jurisdiction": "Comoros",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 113,
+     "flag": "🇰🇳",
+     "cc": "KN",
+     "jurisdiction": "Saint Kitts and Nevis",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 114,
+     "flag": "🇰🇷",
+     "cc": "KR",
+     "jurisdiction": "South Korea",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 115,
+     "flag": "🇰🇾",
+     "cc": "KY",
+     "jurisdiction": "Cayman Islands",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 116,
+     "flag": "🇰🇿",
+     "cc": "KZ",
+     "jurisdiction": "Kazakhstan",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 117,
+     "flag": "🇱🇦",
+     "cc": "LA",
+     "jurisdiction": "Laos",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 118,
+     "flag": "🇱🇧",
+     "cc": "LB",
+     "jurisdiction": "Lebanon",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 119,
+     "flag": "🇱🇨",
+     "cc": "LC",
+     "jurisdiction": "Saint Lucia",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 120,
+     "flag": "🇱🇮",
+     "cc": "LI",
+     "jurisdiction": "Liechtenstein",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 121,
+     "flag": "🇱🇰",
+     "cc": "LK",
+     "jurisdiction": "Sri Lanka",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 122,
+     "flag": "🇱🇷",
+     "cc": "LR",
+     "jurisdiction": "Liberia",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 123,
+     "flag": "🇱🇸",
+     "cc": "LS",
+     "jurisdiction": "Lesotho",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 124,
+     "flag": "🇱🇹",
+     "cc": "LT",
+     "jurisdiction": "Lithuania",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 125,
+     "flag": "🇱🇺",
+     "cc": "LU",
+     "jurisdiction": "Luxembourg",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 126,
+     "flag": "🇱🇻",
+     "cc": "LV",
+     "jurisdiction": "Latvia",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 127,
+     "flag": "🇱🇾",
+     "cc": "LY",
+     "jurisdiction": "Libya",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 128,
+     "flag": "🇲🇦",
+     "cc": "MA",
+     "jurisdiction": "Morocco",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 129,
+     "flag": "🇲🇨",
+     "cc": "MC",
+     "jurisdiction": "Monaco",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 130,
+     "flag": "🇲🇩",
+     "cc": "MD",
+     "jurisdiction": "Moldova",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 131,
+     "flag": "🇲🇪",
+     "cc": "ME",
+     "jurisdiction": "Montenegro",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 132,
+     "flag": "🇲🇫",
+     "cc": "MF",
+     "jurisdiction": "Saint Martin",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 133,
+     "flag": "🇲🇬",
+     "cc": "MG",
+     "jurisdiction": "Madagascar",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 134,
+     "flag": "🇲🇭",
+     "cc": "MH",
+     "jurisdiction": "Marshall Islands",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 135,
+     "flag": "🇲🇰",
+     "cc": "MK",
+     "jurisdiction": "North Macedonia",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 136,
+     "flag": "🇲🇱",
+     "cc": "ML",
+     "jurisdiction": "Mali",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 137,
+     "flag": "🇲🇲",
+     "cc": "MM",
+     "jurisdiction": "Myanmar",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 138,
+     "flag": "🇲🇳",
+     "cc": "MN",
+     "jurisdiction": "Mongolia",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 139,
+     "flag": "🇲🇴",
+     "cc": "MO",
+     "jurisdiction": "Macao",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 140,
+     "flag": "🇲🇷",
+     "cc": "MR",
+     "jurisdiction": "Mauritania",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 141,
+     "flag": "🇲🇸",
+     "cc": "MS",
+     "jurisdiction": "Montserrat",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 142,
+     "flag": "🇲🇹",
+     "cc": "MT",
+     "jurisdiction": "Malta",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 143,
+     "flag": "🇲🇺",
+     "cc": "MU",
+     "jurisdiction": "Mauritius",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 144,
+     "flag": "🇲🇻",
+     "cc": "MV",
+     "jurisdiction": "Maldives",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 145,
+     "flag": "🇲🇼",
+     "cc": "MW",
+     "jurisdiction": "Malawi",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 146,
+     "flag": "🇲🇽",
+     "cc": "MX",
+     "jurisdiction": "Mexico",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 147,
+     "flag": "🇲🇿",
+     "cc": "MZ",
+     "jurisdiction": "Mozambique",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 148,
+     "flag": "🇳🇦",
+     "cc": "NA",
+     "jurisdiction": "Namibia",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 149,
+     "flag": "🇳🇪",
+     "cc": "NE",
+     "jurisdiction": "Niger",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 150,
+     "flag": "🇳🇬",
+     "cc": "NG",
+     "jurisdiction": "Nigeria",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 151,
+     "flag": "🇳🇮",
+     "cc": "NI",
+     "jurisdiction": "Nicaragua",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 152,
+     "flag": "🇳🇱",
+     "cc": "NL",
+     "jurisdiction": "Netherlands",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 153,
+     "flag": "🇳🇴",
+     "cc": "NO",
+     "jurisdiction": "Norway",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 154,
+     "flag": "🇳🇷",
+     "cc": "NR",
+     "jurisdiction": "Nauru",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 155,
+     "flag": "🇳🇺",
+     "cc": "NU",
+     "jurisdiction": "Niue",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 156,
+     "flag": "🇳🇿",
+     "cc": "NZ",
+     "jurisdiction": "New Zealand",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 157,
+     "flag": "🇴🇲",
+     "cc": "OM",
+     "jurisdiction": "Oman",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 158,
+     "flag": "🇵🇦",
+     "cc": "PA",
+     "jurisdiction": "Panama",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 159,
+     "flag": "🇵🇪",
+     "cc": "PE",
+     "jurisdiction": "Peru",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 160,
+     "flag": "🇵🇫",
+     "cc": "PF",
+     "jurisdiction": "French Polynesia",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 161,
+     "flag": "🇵🇬",
+     "cc": "PG",
+     "jurisdiction": "Papua New Guinea",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 162,
+     "flag": "🇵🇭",
+     "cc": "PH",
+     "jurisdiction": "Philippines",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 163,
+     "flag": "🇵🇰",
+     "cc": "PK",
+     "jurisdiction": "Pakistan",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 164,
+     "flag": "🇵🇱",
+     "cc": "PL",
+     "jurisdiction": "Poland",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 165,
+     "flag": "🇵🇲",
+     "cc": "PM",
+     "jurisdiction": "Saint Pierre and Miquelon",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 166,
+     "flag": "🇵🇳",
+     "cc": "PN",
+     "jurisdiction": "Pitcairn Islands",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 167,
+     "flag": "🇵🇷",
+     "cc": "PR",
+     "jurisdiction": "Puerto Rico",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 168,
+     "flag": "🇵🇸",
+     "cc": "PS",
+     "jurisdiction": "Palestine",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 169,
+     "flag": "🇵🇹",
+     "cc": "PT",
+     "jurisdiction": "Portugal",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 170,
+     "flag": "🇵🇼",
+     "cc": "PW",
+     "jurisdiction": "Palau",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 171,
+     "flag": "🇵🇾",
+     "cc": "PY",
+     "jurisdiction": "Paraguay",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 172,
+     "flag": "🇶🇦",
+     "cc": "QA",
+     "jurisdiction": "Qatar",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 173,
+     "flag": "🇷🇴",
+     "cc": "RO",
+     "jurisdiction": "Romania",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 174,
+     "flag": "🇷🇸",
+     "cc": "RS",
+     "jurisdiction": "Serbia",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 175,
+     "flag": "🇷🇺",
+     "cc": "RU",
+     "jurisdiction": "Russia",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 176,
+     "flag": "🇷🇼",
+     "cc": "RW",
+     "jurisdiction": "Rwanda",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 177,
+     "flag": "🇸🇧",
+     "cc": "SB",
+     "jurisdiction": "Solomon Islands",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 178,
+     "flag": "🇸🇨",
+     "cc": "SC",
+     "jurisdiction": "Seychelles",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 179,
+     "flag": "🇸🇩",
+     "cc": "SD",
+     "jurisdiction": "Sudan",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 180,
+     "flag": "🇸🇪",
+     "cc": "SE",
+     "jurisdiction": "Sweden",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 181,
+     "flag": "🇸🇭",
+     "cc": "SH",
+     "jurisdiction": "Saint Helena",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 182,
+     "flag": "🇸🇮",
+     "cc": "SI",
+     "jurisdiction": "Slovenia",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 183,
+     "flag": "🇸🇰",
+     "cc": "SK",
+     "jurisdiction": "Slovakia",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 184,
+     "flag": "🇸🇱",
+     "cc": "SL",
+     "jurisdiction": "Sierra Leone",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 185,
+     "flag": "🇸🇲",
+     "cc": "SM",
+     "jurisdiction": "San Marino",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 186,
+     "flag": "🇸🇳",
+     "cc": "SN",
+     "jurisdiction": "Senegal",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 187,
+     "flag": "🇸🇴",
+     "cc": "SO",
+     "jurisdiction": "Somalia",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 188,
+     "flag": "🇸🇷",
+     "cc": "SR",
+     "jurisdiction": "Suriname",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 189,
+     "flag": "🇸🇸",
+     "cc": "SS",
+     "jurisdiction": "South Sudan",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 190,
+     "flag": "🇸🇻",
+     "cc": "SV",
+     "jurisdiction": "El Salvador",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 191,
+     "flag": "🇸🇽",
+     "cc": "SX",
+     "jurisdiction": "Sint Maarten",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 192,
+     "flag": "🇸🇾",
+     "cc": "SY",
+     "jurisdiction": "Syria",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 193,
+     "flag": "🇸🇿",
+     "cc": "SZ",
+     "jurisdiction": "Eswatini",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 194,
+     "flag": "🇹🇨",
+     "cc": "TC",
+     "jurisdiction": "Turks and Caicos Islands",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 195,
+     "flag": "🇹🇩",
+     "cc": "TD",
+     "jurisdiction": "Chad",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 196,
+     "flag": "🇹🇬",
+     "cc": "TG",
+     "jurisdiction": "Togo",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 197,
+     "flag": "🇹🇭",
+     "cc": "TH",
+     "jurisdiction": "Thailand",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 198,
+     "flag": "🇹🇯",
+     "cc": "TJ",
+     "jurisdiction": "Tajikistan",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 199,
+     "flag": "🇹🇱",
+     "cc": "TL",
+     "jurisdiction": "Timor-Leste",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 200,
+     "flag": "🇹🇲",
+     "cc": "TM",
+     "jurisdiction": "Turkmenistan",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 201,
+     "flag": "🇹🇳",
+     "cc": "TN",
+     "jurisdiction": "Tunisia",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 202,
+     "flag": "🇹🇴",
+     "cc": "TO",
+     "jurisdiction": "Tonga",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 203,
+     "flag": "🇹🇷",
+     "cc": "TR",
+     "jurisdiction": "Turkey",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 204,
+     "flag": "🇹🇹",
+     "cc": "TT",
+     "jurisdiction": "Trinidad and Tobago",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 205,
+     "flag": "🇹🇻",
+     "cc": "TV",
+     "jurisdiction": "Tuvalu",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 206,
+     "flag": "🇹🇼",
+     "cc": "TW",
+     "jurisdiction": "Taiwan",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 207,
+     "flag": "🇹🇿",
+     "cc": "TZ",
+     "jurisdiction": "Tanzania",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 208,
+     "flag": "🇺🇦",
+     "cc": "UA",
+     "jurisdiction": "Ukraine",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 209,
+     "flag": "🇬🇧",
+     "cc": "UK",
+     "jurisdiction": "United Kingdom",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 210,
+     "flag": "🇺🇸",
+     "cc": "US",
+     "jurisdiction": "United States",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 211,
+     "flag": "🇺🇾",
+     "cc": "UY",
+     "jurisdiction": "Uruguay",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 212,
+     "flag": "🇺🇿",
+     "cc": "UZ",
+     "jurisdiction": "Uzbekistan",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 213,
+     "flag": "🇻🇨",
+     "cc": "VC",
+     "jurisdiction": "Saint Vincent and the Grenadines",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 214,
+     "flag": "🇻🇪",
+     "cc": "VE",
+     "jurisdiction": "Venezuela",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 215,
+     "flag": "🇻🇬",
+     "cc": "VG",
+     "jurisdiction": "British Virgin Islands",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 216,
+     "flag": "🇻🇮",
+     "cc": "VI",
+     "jurisdiction": "U.S. Virgin Islands",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 217,
+     "flag": "🇻🇺",
+     "cc": "VU",
+     "jurisdiction": "Vanuatu",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 218,
+     "flag": "🇼🇫",
+     "cc": "WF",
+     "jurisdiction": "Wallis and Futuna",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 219,
+     "flag": "🇼🇸",
+     "cc": "WS",
+     "jurisdiction": "Samoa",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 220,
+     "flag": "🇽🇰",
+     "cc": "XK",
+     "jurisdiction": "Kosovo",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 221,
+     "flag": "🇾🇪",
+     "cc": "YE",
+     "jurisdiction": "Yemen",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 222,
+     "flag": "🇿🇦",
+     "cc": "ZA",
+     "jurisdiction": "South Africa",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 223,
+     "flag": "🇿🇲",
+     "cc": "ZM",
+     "jurisdiction": "Zambia",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 224,
+     "flag": "🇿🇼",
+     "cc": "ZW",
+     "jurisdiction": "Zimbabwe",
+     "items": 12,
+     "accuracyPct": 50.0,
+     "pass": true
+    },
+    {
+     "rank": 225,
+     "flag": "🇩🇪",
+     "cc": "DE",
+     "jurisdiction": "Germany",
+     "items": 12,
+     "accuracyPct": 42.0,
+     "pass": true
+    },
+    {
+     "rank": 226,
+     "flag": "🇸🇬",
+     "cc": "SG",
+     "jurisdiction": "Singapore",
+     "items": 12,
+     "accuracyPct": 42.0,
+     "pass": true
+    },
+    {
+     "rank": 227,
+     "flag": "🇺🇬",
+     "cc": "UG",
+     "jurisdiction": "Uganda",
+     "items": 12,
+     "accuracyPct": 42.0,
+     "pass": true
+    }
+   ]
+  }
+ ],
+ "receipts": [
+  {
+   "id": "citation-nli-calibration",
+   "label": "Citation-NLI judge calibration",
+   "valuePct": 95.8,
+   "n": 24,
+   "model": "gemini-flash-lite",
+   "date": "2026-07-02",
+   "source": "labs/benchmarks/citation-nli/",
+   "note": "Support-accuracy of the judge that verifies citations inside Monocle answers (a different, retrieval-grounded task from the S3 memory test above). Single calibration run at this n; treat deltas as noise until re-run."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Democratic Republic of the Congo — Source-Grounded Citation Reliability (CD)",
+ "country": "CD",
+ "jurisdiction": "Democratic Republic of the Congo",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:34:45.763744+00:00",
+ "results": [
+  {
+   "id": "cd-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1579,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The citation format appears incomplete or potentially inaccurate. DRC Court of Cassation decisions require proper docket numbers and publication verification through official DRC legal databa"
+  },
+  {
+   "id": "cd-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1594,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. While the DRC legislative portal exists, verification of this specific decree's publication date and exact title cannot be confirmed without direct access to official DRC government archives or"
+  },
+  {
+   "id": "cd-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1983,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The identifier '146/2019' cannot simultaneously reference both a DRC Constitutional Court decision and a CCJA (West African Court of Justice) decision from Côte d'Ivoire, which are distinct"
+  },
+  {
+   "id": "cd-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1841,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The DRC Legislation Portal was not established until 2002. No official legal source from 1978 could have been published via this portal in real-time."
+  },
+  {
+   "id": "cd-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1838,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The date is in the future (December 22, 2025), making this decision non-existent and unpublishable at present. No court could have issued this ruling yet."
+  },
+  {
+   "id": "cd-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2383,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The \"Conseil national de la femme\" (National Women's Council) is an advisory body, not a legislative authority. Arrêtés are issued by competent administrative authorities, not councils."
+  },
+  {
+   "id": "cd-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1570,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The decision is from the Democratic Republic of Congo's Court of Cassation, not Gabon's Constitutional Court. These are different countries and different courts."
+  },
+  {
+   "id": "cd-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2404,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The decree's title references a human rights examination commission, but the date and publication venue attribution to Congo-Brazzaville (Republic of the Congo) appears inconsistent with DRC ju"
+  },
+  {
+   "id": "cd-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1239,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The identifier '146/2020' cannot correspond to a decision dated 09 mai 2019. The year designation (2020) conflicts with the decision's actual date (2019), indicating a cataloging error or m"
+  },
+  {
+   "id": "cd-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1453,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  AngoLEX is Angola's legislation portal, not Congo's. This DRC ordinance would be published through DRC's official sources, not an Angolan platform."
+  },
+  {
+   "id": "cd-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1300,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The citation references Democratic Republic of the Congo (DRC), but the publisher is identified as Congo-Brazzaville (Republic of the Congo), which are distinct countries with separate judi"
+  },
+  {
+   "id": "cd-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1711,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Journal Officiel de la République Gabonaise is Gabon's official gazette, not the Democratic Republic of the Congo's. The DRC uses the Journal Officiel de la République Démocratique du C"
+  }
+ ]
+}

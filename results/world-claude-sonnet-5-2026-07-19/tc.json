@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Turks and Caicos Islands — Source-Grounded Citation Reliability (TC)",
+ "country": "TC",
+ "jurisdiction": "Turks and Caicos Islands",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:03:28.432731+00:00",
+ "results": [
+  {
+   "id": "tc-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2263,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** UK Statutory Instruments extending to Turks and Caicos aren't published as \"Turks and Caicos Revised Laws\" by the Attorney General; they derive from separate UK legislative authority."
+  },
+  {
+   "id": "tc-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2255,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this decision has a future date (2026-02-19) that has not yet occurred, so it cannot be verified as a real published source."
+  },
+  {
+   "id": "tc-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2066,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific citation's accuracy regarding chapter number, exact title, or publication details for Turks and Caicos Revised Laws without access to authoritative sources."
+  },
+  {
+   "id": "tc-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2275,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This citation refers to a future date (March 2026) that has not yet occurred, making the decision's existence unverifiable and likely fabricated."
+  },
+  {
+   "id": "tc-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3361,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Integrity Commission Ordinance is not indexed as \"01.09\" in the Turks and Caicos Islands Revised Laws; this citation appears fabricated or unverifiable."
+  },
+  {
+   "id": "tc-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2587,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This citation appears fabricated — 2026 dates are future/nonexistent at present, and the case name/identifier combination cannot be verified as genuine."
+  },
+  {
+   "id": "tc-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2170,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Turks and Caicos Islands revised laws would not be published via Curaçao Government Legislation (Regelingen); Curaçao is an unrelated, separate Dutch Caribbean jurisdiction with its own dis"
+  },
+  {
+   "id": "tc-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2100,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The date (2026-02-19) is in the future/implausible, and the case number mismatch (CL 53 of 2021 vs. CL 53 of 2020) indicates inaccuracy."
+  },
+  {
+   "id": "tc-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1743,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** I cannot verify this specific citation's accuracy—ordinance numbering, exact titles, and publication details require confirmation against official Turks and Caicos Islands government source"
+  },
+  {
+   "id": "tc-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1593,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The claim mismatches identifiers (CL 17 of 2024 vs CL 17 of 2023) and cites a future 2026 date, indicating fabrication."
+  },
+  {
+   "id": "tc-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1891,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Integrity Commission Ordinance is not designated \"01.09\" in the Turks and Caicos Revised Laws; this specific citation/numbering cannot be verified as accurate."
+  },
+  {
+   "id": "tc-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1892,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** TCASC denotes the Turks and Caicos Supreme Court, not the BVI Commercial Court—the citation contradicts the claimed publishing source's jurisdiction."
+  }
+ ]
+}

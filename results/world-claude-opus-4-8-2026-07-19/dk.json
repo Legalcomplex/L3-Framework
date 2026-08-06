@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Denmark — Source-Grounded Citation Reliability (DK)",
+ "country": "DK",
+ "jurisdiction": "Denmark",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:11:25.346561+00:00",
+ "results": [
+  {
+   "id": "dk-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2886,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The quoted text is a case summary excerpt, not a citation; this description doesn't verify actual publication in Domsdatabasen."
+  },
+  {
+   "id": "dk-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2256,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-01-08 is in the future relative to verifiable records, making this claim unverifiable and likely fabricated."
+  },
+  {
+   "id": "dk-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3119,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Satsregulering circulars for January 1 take effect at year's start; a March 28, 2026 publication date is implausibly late."
+  },
+  {
+   "id": "dk-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2090,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Domsdatabasen launched in 2022; it couldn't have published a 2018 decision at that time. The citation appears fabricated."
+  },
+  {
+   "id": "dk-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2522,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-04-21 is in the future relative to a 2025 decision number, making this citation chronologically impossible."
+  },
+  {
+   "id": "dk-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2066,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-03-19 is in the future, making this citation implausible; the specific identifier-title-date combination cannot be verified."
+  },
+  {
+   "id": "dk-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2070,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific identifier, case description, or date correspond accurately in Domsdatabasen; likely fabricated details."
+  },
+  {
+   "id": "dk-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2505,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Finlex is Finland's legal database; Danish bekendtgørelser are published via Retsinformation, not Finlex. Jurisdictions clearly mismatched here."
+  },
+  {
+   "id": "dk-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1943,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Lovdata is Norway's legal database; Danish circulars are published via Retsinformation, not Lovdata. Wrong jurisdiction's platform."
+  },
+  {
+   "id": "dk-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1947,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The ECLI court code \"BOR\" is not a valid Danish court identifier, and the fabricated details cannot be verified."
+  },
+  {
+   "id": "dk-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2300,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Danish Supreme Court (Højesteret) decisions use different citation formats (e.g., UfR references); the date and numbering appear inconsistent/fabricated."
+  },
+  {
+   "id": "dk-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1958,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Landsskatteretten decisions are typically published as SKM references; the cited title, date, and attribution cannot be reliably verified as authentic."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Syria — Source-Grounded Citation Reliability (SY)",
+ "country": "SY",
+ "jurisdiction": "Syria",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:25:16.799404+00:00",
+ "results": [
+  {
+   "id": "sy-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2038,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated citation; \"Syria.Law — English Syrian Legislation & Case Law\" is not a verifiable official source."
+  },
+  {
+   "id": "sy-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2361,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-04-06 is in the future; no such decree could have been published yet, making the claim unverifiable."
+  },
+  {
+   "id": "sy-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2434,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears fabricated; no verifiable \"Syria.Law\" English database or such specifically dated 1956 judgment can be reliably confirmed."
+  },
+  {
+   "id": "sy-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1865,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date (2026-03-20) is in the future and cannot correspond to an already-published decree; claim is unverifiable/fabricated."
+  },
+  {
+   "id": "sy-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2059,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. \"Syria.Law\" is not a recognized official legal source; Syrian legislation is published via the official Official Gazette."
+  },
+  {
+   "id": "sy-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2369,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Ahmad al-Sharaa's decrees exist, but this specific 2026 dated citation cannot be verified as an authentic official source."
+  },
+  {
+   "id": "sy-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2089,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Syrian legal sources aren't published by ADGM Courts (Abu Dhabi Global Market), a UAE jurisdiction unrelated to Syria."
+  },
+  {
+   "id": "sy-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 4036,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. President \"al-Sharaa\" (al-Julani) took power in December 2024; on April 6, 2024, Assad still ruled Syria."
+  },
+  {
+   "id": "sy-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2043,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. DIFC Courts is a Dubai (UAE) common-law jurisdiction; it cannot publish Syrian court judgments from 1956."
+  },
+  {
+   "id": "sy-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2016,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This appears fabricated; no verifiable record confirms such a decree by al-Sharaa on that date via SANA."
+  },
+  {
+   "id": "sy-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1851,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. \"Syria.Law\" is not a verified official legal source; this citation appears fabricated, lacking authentication as genuine Syrian government legislation."
+  },
+  {
+   "id": "sy-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1843,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Ahmad al-Sharaa became Syria's president in 2025, not February 2024; Assad still ruled then. The date is inconsistent."
+  }
+ ]
+}

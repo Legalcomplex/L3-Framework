@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Germany — Source-Grounded Citation Reliability (DE)",
+ "country": "DE",
+ "jurisdiction": "Germany",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:35:59.210452+00:00",
+ "results": [
+  {
+   "id": "de-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1376,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  This decision cannot be from October 21, 2025, as that date is in the future. The claimed publication date is impossible as of the current date."
+  },
+  {
+   "id": "de-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1692,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.  This decision cannot be authenticated as it is dated 27.01.2026, which is in the future. No court decision can be published before it occurs.**"
+  },
+  {
+   "id": "de-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1420,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The identifier BJNR002089971 corresponds to the 'Beamtenversorgungsgesetz' (Civil Service Pensions Act), not the 1971 salary law cited."
+  },
+  {
+   "id": "de-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2384,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The citation format is incorrect. German Constitutional Court decisions use the format \"BVerfGE\" (for published decisions) or \"BVerfG\" with proper volume/page numbers, not abbreviated dates"
+  },
+  {
+   "id": "de-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1558,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The publication date of May 15, 2026 is in the future, making this claim impossible. Official legal sources cannot be published on dates that have not yet occurred."
+  },
+  {
+   "id": "de-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1747,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The ECLI identifier format appears malformed; \"150126\" doesn't properly encode 2026-01-15, and \"BIZA3.25.0\" doesn't match standard BGH ECLI structures for civil senate decisions."
+  },
+  {
+   "id": "de-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1754,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The ECLI identifier contains \"211025\" (October 21, 2025), but this date is in the future and cannot correspond to an actual decided case. ECLIs reference real, already-decided judgments."
+  },
+  {
+   "id": "de-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1686,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The ECLI identifier format appears invalid. German BFH ECLIs follow standardized patterns; this identifier's structure doesn't match established ECLI conventions for German Federal Finance "
+  },
+  {
+   "id": "de-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1095,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This law was published on March 23, 1973 (not March 18), as documented in the German Federal Law Gazette (BGBl. I)."
+  },
+  {
+   "id": "de-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1267,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Isle of Man Judgments Online publishes judgments from the Isle of Man courts, not German Federal Constitutional Court (BVerfG) decisions. BVerfG decisions are published by German official s"
+  },
+  {
+   "id": "de-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1362,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The title appears incomplete and the future date (2025-05-15) is implausible. German federal laws are published in the Bundesgesetzblatt (BGBl), not \"NeuRIS.\" Verification needed."
+  },
+  {
+   "id": "de-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1057,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  BGH (Bundesgerichtshof) is Germany's Federal Court of Justice. This decision would be published by German official sources, not the Luxembourg Administrative Tribunal."
+  }
+ ]
+}

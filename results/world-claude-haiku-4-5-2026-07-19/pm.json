@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Saint Pierre and Miquelon — Source-Grounded Citation Reliability (PM)",
+ "country": "PM",
+ "jurisdiction": "Saint Pierre and Miquelon",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:43:31.685176+00:00",
+ "results": [
+  {
+   "id": "pm-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1640,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The publication date (2026-04-08) is in the future, making this claim impossible. Official legal sources cannot be published on dates that have not yet occurred."
+  },
+  {
+   "id": "pm-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1598,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The publication date (2026-04-07) is in the future and cannot be verified. Official legal documents are published on or before their effective date, not in advance."
+  },
+  {
+   "id": "pm-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1493,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This decision cannot have been published in April 2026, as that date is in the future relative to the current time. The claim contains a temporal impossibility."
+  },
+  {
+   "id": "pm-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2878,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Saint Pierre and Miquelon is a French overseas collectivity whose official legal publications appear in the French Journal Officiel, not a separate local official journal with that title."
+  },
+  {
+   "id": "pm-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2294,
+   "verdict": false,
+   "correct": false,
+   "raw": "# Answer: **False**  The publication date is April 9, 2026—a future date. Official legal announcements cannot be published in advance of the current date, making this claim chronologically impossible."
+  },
+  {
+   "id": "pm-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2209,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The publication date of April 13, 2026 is in the future and therefore cannot represent a past official publication in the Journal Officiel de Saint-Pierre-et-Miquelon."
+  },
+  {
+   "id": "pm-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1605,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Saint Pierre and Miquelon is a French overseas collectivity. Market notices would be published through French official channels, not Washington State Legislative Web Services, which serves "
+  },
+  {
+   "id": "pm-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1404,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  Saint Pierre and Miquelon is a French overseas collectivity, not a federal jurisdiction. The \"Justice Laws Website\" is Canada's official legal source, making this attribution incorrect."
+  },
+  {
+   "id": "pm-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1110,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Saint Pierre and Miquelon is a French territory; its official legal sources are French decrees and journals, not US Code. This claim misidentifies the jurisdiction and legal source."
+  },
+  {
+   "id": "pm-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 890,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Saint Pierre and Miquelon is a French overseas collectivity; its legal documents are published through French official sources, not British Columbia's provincial legal website."
+  },
+  {
+   "id": "pm-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1239,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Saint Pierre and Miquelon uses the French Official Journal (*Journal Officiel de la République Française*), not a separate territorial journal for legal announcements."
+  },
+  {
+   "id": "pm-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1114,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Saint-Pierre and Miquelon's official journal is the \"Journal Officiel de la Collectivité Sui Generis de Saint-Pierre-et-Miquelon,\" not \"Journal Officiel de Saint-Pierre-et-Miquelon.\" The na"
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Andorra — Source-Grounded Citation Reliability (AD)",
+ "country": "AD",
+ "jurisdiction": "Andorra",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:32:28.605105+00:00",
+ "results": [
+  {
+   "id": "ad-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1744,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Andorra Portal Juridic publishes consolidated laws and regulations, but decree citations require verification against official Butlletí Oficial del Principat d'Andorra (BOPA) publication re"
+  },
+  {
+   "id": "ad-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1832,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The decree's publication date (2026-02-17) is in the future relative to the current date, making this a fictional or hypothetical document rather than an actual published legal source."
+  },
+  {
+   "id": "ad-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1612,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The identifier '2024-47-RE' cannot have a future date of 2026-03-13. Constitutional Court decisions are dated when issued, not three years in advance. This is temporally impossible."
+  },
+  {
+   "id": "ad-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1844,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  Andorra Portal Juridic publishes consolidated laws and decrees in the official gazette (Butlletí Oficial del Principat d'Andorra), not as a separate publication system. The format cited appea"
+  },
+  {
+   "id": "ad-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1989,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  This date is in the future (February 2026). No official legal sources can be published before the current date. The claim cannot be verified as authentic."
+  },
+  {
+   "id": "ad-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1752,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The identifier '2025-101-RE' cannot have a date of 2026-03-13, as this is a future date beyond the identifier's year (2025), creating a logical impossibility."
+  },
+  {
+   "id": "ad-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1898,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Andorra's legislation is published in the Butlletí Oficial de la Príncep d'Andorra (BOPA), not Fedlex, which is Switzerland's official legislative database."
+  },
+  {
+   "id": "ad-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1423,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Andorra is not a Dutch jurisdiction. The Dutch Legislation Portal (wetten.overheid.nl) publishes only Netherlands legislation, not Andorran decrets."
+  },
+  {
+   "id": "ad-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1621,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '2024-49-RE' cannot correspond to '2024-47-RE' as they are different case numbers. Identical cases have identical identifiers, not different ones."
+  },
+  {
+   "id": "ad-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1428,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This is an Andorran decree (indicated by \"Decret\" and Andorran legislative numbering), not a Gibraltar law. It should be published via Andorran official sources, not gibraltarlaws.gov.gi."
+  },
+  {
+   "id": "ad-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1175,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Irish Statute Database publishes Irish legislation, not Andorran legal acts. Andorran ministerial orders would be published through official Andorran legal databases, not Irish ones."
+  },
+  {
+   "id": "ad-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1136,
+   "verdict": false,
+   "correct": true,
+   "raw": "# Answer: False  The identifiers '2025-102-RE' and '2025-101-RE' are distinct case numbers. Different identifiers cannot correspond to the same decision, regardless of date."
+  }
+ ]
+}

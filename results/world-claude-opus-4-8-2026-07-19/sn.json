@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Senegal — Source-Grounded Citation Reliability (SN)",
+ "country": "SN",
+ "jurisdiction": "Senegal",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:24:49.684334+00:00",
+ "results": [
+  {
+   "id": "sn-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2661,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific identifier or decision exists; the identifier format and case details appear fabricated without authoritative confirmation."
+  },
+  {
+   "id": "sn-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2219,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Conseil constitutionnel is distinct from the Supreme Court (Cour suprême); its decisions aren't Supreme Court publications, despite Juricaf hosting both."
+  },
+  {
+   "id": "sn-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2265,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Senegal's Code Général des Collectivités Locales was enacted in 2013 (Law No. 2013-10), not 1996, invalidating this claim."
+  },
+  {
+   "id": "sn-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2301,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Cour des Comptes audit report on public finances was published in 2024, but I cannot verify this specific title/date."
+  },
+  {
+   "id": "sn-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2242,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific identifier or decision exists; the format appears plausible but is unconfirmed without authoritative source access."
+  },
+  {
+   "id": "sn-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2711,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. A Q1 2026 report cannot be published on 2026-01-01, as the quarter hasn't ended; data collection requires quarter completion."
+  },
+  {
+   "id": "sn-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2295,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier suffix '04' contradicts the cited decision number '03', indicating an inconsistency between the identifier and reference."
+  },
+  {
+   "id": "sn-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2018,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. A Senegalese Conseil constitutionnel decision would be published by Senegal's institution, not Côte d'Ivoire's Constitutional Council."
+  },
+  {
+   "id": "sn-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2070,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Senegal's Code Général des Collectivités Locales was enacted in 2013 (Law 2013-10), not 1994, invalidating this citation."
+  },
+  {
+   "id": "sn-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1936,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The jurisdiction is Senegal, not Nigeria; a Nigerian agency (NAFDAC) wouldn't publish a Senegalese source, indicating a mismatch."
+  },
+  {
+   "id": "sn-src-f05",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1642,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier ends in \"51\" but the cited decision number is \"47,\" creating an inconsistency between identifier and citation."
+  },
+  {
+   "id": "sn-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1623,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The IPSM is a Senegalese telecom price index, not published via Mauritania's legal codes; jurisdiction and source mismatch."
+  }
+ ]
+}

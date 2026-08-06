@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Cayman Islands — Source-Grounded Citation Reliability (KY)",
+ "country": "KY",
+ "jurisdiction": "Cayman Islands",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:56:48.668927+00:00",
+ "results": [
+  {
+   "id": "ky-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2196,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This appears to be a fabricated or unverifiable citation—the specific case name, ex tempore judgment, and 2026 date (future-dated) cannot be confirmed as authentic."
+  },
+  {
+   "id": "ky-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2026,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Cayman Islands Legislation as an official portal wasn't established in 1964; that date likely misattributes the platform's origin versus the law's actual revision/publication history."
+  },
+  {
+   "id": "ky-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2032,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this citation cannot be verified; it references a 2026 future-dated judgment, which is beyond current records and likely fabricated."
+  },
+  {
+   "id": "ky-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1940,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Interpretation Law exists in Cayman Islands legislation, but \"CAP. 70\" and the 1963 publication date are unverifiable/likely inaccurate citation details."
+  },
+  {
+   "id": "ky-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1939,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The date (2026-03-31) is in the future, making this claim unverifiable and likely fabricated or a hypothetical/placeholder citation, not a genuine published decision."
+  },
+  {
+   "id": "ky-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2395,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Cayman Islands' Companies Law traces to 1961, but a \"(1995 Revision)\" is a consolidated reissue, not the original 1961 publication."
+  },
+  {
+   "id": "ky-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2010,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — this citation cannot be verified; it references a future-dated 2026 judgment, which is implausible as an existing official record currently."
+  },
+  {
+   "id": "ky-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1932,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Cayman Islands' \"Bills of Exchange Law (1997 Revision)\" is a revision compiled in 1997, not published via a 1963 source."
+  },
+  {
+   "id": "ky-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2048,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This citation appears to be fabricated/unverifiable — dated 2026 (future), which cannot exist as an official published judgment record yet."
+  },
+  {
+   "id": "ky-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1597,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Interpretation Law (Cap. 70) is Cayman Islands legislation, not Sint Maarten Government Legislation, which governs a separate Caribbean jurisdiction entirely."
+  },
+  {
+   "id": "ky-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2201,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** I cannot verify this specific claim — I have no reliable data confirming this exact case name, date, and publication details exist on judicial.ky."
+  },
+  {
+   "id": "ky-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1657,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Cayman Islands' Companies Law is not published via \"Bahamas Consolidated Legislation\"—Bahamas and Cayman Islands are distinct, separate jurisdictions with independent legal systems."
+  }
+ ]
+}

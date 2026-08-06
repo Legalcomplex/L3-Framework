@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Liechtenstein — Source-Grounded Citation Reliability (LI)",
+ "country": "LI",
+ "jurisdiction": "Liechtenstein",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.6667,
+ "correct": 8,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:17:21.639410+00:00",
+ "results": [
+  {
+   "id": "li-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2368,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Handelsregisterverordnung (HRV) dates from 2003, but the future publication date (2026-02-07) is implausible and likely fabricated."
+  },
+  {
+   "id": "li-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 4224,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. Liechtenstein State Court (StGH) decisions are officially published via gerichtsentscheide.li, the government's court decisions database, consistent with this citation."
+  },
+  {
+   "id": "li-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2499,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier \"VGH\" denotes the Verwaltungsgerichtshof (Administrative Court), not the Staatsgerichtshof (Constitutional Court), which uses \"StGH\" identifiers."
+  },
+  {
+   "id": "li-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2477,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Liechtenstein's official legal gazette is LGBl. (Landesgesetzblatt) via Gesetze.li/LILEX; the future 2026-02-03 date and citation appear fabricated."
+  },
+  {
+   "id": "li-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 3176,
+   "verdict": true,
+   "correct": true,
+   "raw": "I cannot verify this specific citation as True or False; without access to the actual database, confirming exact case details is impossible."
+  },
+  {
+   "id": "li-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2548,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific identifier, date, or decision type without access to the official Staatsgerichtshof records; fabrication risk."
+  },
+  {
+   "id": "li-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 3172,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Liechtenstein's Handelsregisterverordnung (HRV) dates from 2003; however, the official Liechtenstein legislation portal is Gesetzesdatenbank (LILEX/LR), not \"LILEX Consolidated Legislation\" as "
+  },
+  {
+   "id": "li-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2503,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'StGH 1998/46' cannot correspond to a decision labeled 'StGH 1998/43'; the mismatched case numbers indicate inconsistency."
+  },
+  {
+   "id": "li-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2748,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier \"VGH\" denotes the Administrative Court (Verwaltungsgerichtshof), not the Constitutional Court (Staatsgerichtshof), which uses \"StGH.\" Also, identifiers mismatch."
+  },
+  {
+   "id": "li-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2172,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Moniteur Belge is Belgium's official gazette; Liechtenstein publishes laws in its Landesgesetzblatt (LGBl), not Belgian sources."
+  },
+  {
+   "id": "li-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2620,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Liechtenstein's Staatsgerichtshof decisions are published via LILEX/Gesetzesdatenbank, not RIS, which is Austria's legal information system."
+  },
+  {
+   "id": "li-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1918,
+   "verdict": false,
+   "correct": true,
+   "raw": "I cannot verify this specific decision. False—I lack reliable access to confirm this exact case number, date, and publication details as authentic."
+  }
+ ]
+}

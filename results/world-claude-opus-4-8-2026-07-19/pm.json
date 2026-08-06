@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Saint Pierre and Miquelon — Source-Grounded Citation Reliability (PM)",
+ "country": "PM",
+ "jurisdiction": "Saint Pierre and Miquelon",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:22:47.195438+00:00",
+ "results": [
+  {
+   "id": "pm-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2058,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-04-08 is in the future, making this citation impossible to verify and likely fabricated."
+  },
+  {
+   "id": "pm-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2096,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Saint-Pierre-et-Miquelon publishes acts in its Recueil des Actes Administratifs, not a dedicated \"Journal Officiel\"; this source appears fabricated."
+  },
+  {
+   "id": "pm-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2409,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Saint-Pierre-et-Miquelon does not have its own \"Journal Officiel\"; local acts appear in the Recueil des Actes Administratifs, not a JO."
+  },
+  {
+   "id": "pm-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2863,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Saint-Pierre-et-Miquelon has no separate \"Journal Officiel\"; local acts appear in the Recueil des actes administratifs, not a dedicated official journal."
+  },
+  {
+   "id": "pm-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2224,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Saint Pierre and Miquelon has no separate \"Journal Officiel\"; legal notices use French official publications. Also, 2026 date is future/unverifiable."
+  },
+  {
+   "id": "pm-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2326,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-04-13 is in the future, making this citation impossible to verify as a genuine published source."
+  },
+  {
+   "id": "pm-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2028,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Saint Pierre and Miquelon procurement notices aren't published via Washington State's legislative API; that source is entirely unrelated and geographically implausible."
+  },
+  {
+   "id": "pm-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2099,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Saint Pierre and Miquelon is a French overseas collectivity; a \"Délibération\" is published locally, not via Canada's Justice Laws Website."
+  },
+  {
+   "id": "pm-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2614,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Saint Pierre and Miquelon is a French territory; its legal decisions appear in French official gazettes, not US Code."
+  },
+  {
+   "id": "pm-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1593,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Saint Pierre and Miquelon is a French territory; its délibérations wouldn't be published via British Columbia's Canadian legal database."
+  },
+  {
+   "id": "pm-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2360,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Saint-Pierre-et-Miquelon has no separate \"Journal Officiel\"; legal announcements appear in the Journal Officiel de la République française or local authorized press."
+  },
+  {
+   "id": "pm-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2635,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Saint-Pierre-et-Miquelon lacks a distinct \"Journal Officiel\"; procurement notices appear in French official channels or local administrative bulletins, not this fabricated source."
+  }
+ ]
+}

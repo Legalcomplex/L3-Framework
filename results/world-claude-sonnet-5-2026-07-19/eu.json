@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — European Union — Source-Grounded Citation Reliability (EU)",
+ "country": "EU",
+ "jurisdiction": "European Union",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:53:12.227403+00:00",
+ "results": [
+  {
+   "id": "eu-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1910,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The date (2026-02-12) is in the future relative to my knowledge, and the case number format/celex \"62024CJ0313\" cannot be verified as an authentic, existing CJEU decision."
+  },
+  {
+   "id": "eu-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1999,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-02-16 is in the future relative to current knowledge, making verification impossible and the claim likely fabricated or inaccurate."
+  },
+  {
+   "id": "eu-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2237,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This appears to be a fabricated or unverifiable citation—I cannot confirm a real regulation with this specific number, date, and content exists in EUR-Lex."
+  },
+  {
+   "id": "eu-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1992,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated or unverifiable citation—no such CPVO Board of Appeal decision with this exact case number, name, and date is confirmed."
+  },
+  {
+   "id": "eu-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2618,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** ECJ decisions are officially published via EUR-Lex/Court Reports (ECLI), not \"ECJ Tax Cases,\" which is not an authentic EU legal publication source."
+  },
+  {
+   "id": "eu-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2657,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This claim references a future-dated judgment (March 2026), which cannot yet exist or be verified as an authentic official ECLI record."
+  },
+  {
+   "id": "eu-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1839,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The case number format (62024CJ0313) indicates a 2024 filing, which is inconsistent with the stated 2023-02-12 decision date."
+  },
+  {
+   "id": "eu-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1864,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Gibraltar Supreme Court Judgments would not publish an EU Commission-style \"reply to civil society open letter\" on spyware abuse; mismatched source and document type."
+  },
+  {
+   "id": "eu-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1808,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** LILEX is Liechtenstein's national legislation database, not an official EU publication source; EU regulations are published via EUR-Lex/Official Journal, not LILEX."
+  },
+  {
+   "id": "eu-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2483,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The decision number/date/name combination is unverifiable and likely fabricated; CPVO Board of Appeal cases don't match this citation pattern typically."
+  },
+  {
+   "id": "eu-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2309,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** ECJ decisions are officially published in the European Court Reports (ECR) or via EUR-Lex/CURIA, not \"ECJ Tax Cases,\" which is not an official EU publication source."
+  },
+  {
+   "id": "eu-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1654,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — this ECLI refers to a future date beyond current records; no verifiable judgment with this identifier and content exists yet in official databases."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Trinidad and Tobago — Source-Grounded Citation Reliability (TT)",
+ "country": "TT",
+ "jurisdiction": "Trinidad and Tobago",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:04:13.441792+00:00",
+ "results": [
+  {
+   "id": "tt-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2265,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This citation lacks specificity—\"1–36\" and \".. Act\" are incomplete identifiers, and the generic date/source cannot verify actual legislative authenticity or existence."
+  },
+  {
+   "id": "tt-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2532,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this citation exists—2026 is a future date, and I have no evidence confirming this specific Act or Gazette publication is real."
+  },
+  {
+   "id": "tt-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2591,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Family Proceedings Act is Chapter 45:52, originally enacted in 1990s Trinidad and Tobago, not 2004; the date/details appear inaccurate."
+  },
+  {
+   "id": "tt-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2066,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this appears to be a fabricated/future-dated citation; no such Act or Gazette publication can be verified as an actual official record."
+  },
+  {
+   "id": "tt-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2252,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** No such Act exists in Trinidad and Tobago's legislative record; the National Housing Authority operates under existing housing legislation, not this specific cited vesting statute."
+  },
+  {
+   "id": "tt-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2881,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this is a fabricated future-dated citation I cannot verify; no legitimate database can confirm unpublished/nonexistent 2026 Gazette content."
+  },
+  {
+   "id": "tt-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2053,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. \"1–36 .. Act\" is not a genuine identifiable statute title; it appears fabricated or malformed, lacking verifiable official designation or citation."
+  },
+  {
+   "id": "tt-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 3337,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Grenada's Laws would not publish Trinidad and Tobago legislation—each jurisdiction maintains separate statute books, courts, and official legal publication systems entirely."
+  },
+  {
+   "id": "tt-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 3491,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Family Proceedings Act (Trinidad and Tobago) is not published via \"Bahamas Consolidated Legislation\" — that source is jurisdictionally incorrect for T&T legislation."
+  },
+  {
+   "id": "tt-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1641,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Aruba's DWJZ Legislation Archive publishes Aruban legislation, not Trinidad and Tobago statutes; this attribution is implausible and unverifiable."
+  },
+  {
+   "id": "tt-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2476,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Sint Maarten is a Dutch Caribbean jurisdiction unrelated to Trinidad and Tobago; the correct publisher would be Trinidad and Tobago's official government printer/gazette."
+  },
+  {
+   "id": "tt-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2843,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Trinidad and Tobago's official legal notices aren't published via \"Cayman Islands Legislation\" — that's a distinct jurisdiction's separate publishing platform entirely."
+  }
+ ]
+}

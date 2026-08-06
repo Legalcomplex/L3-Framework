@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Monaco — Source-Grounded Citation Reliability (MC)",
+ "country": "MC",
+ "jurisdiction": "Monaco",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:18:11.709068+00:00",
+ "results": [
+  {
+   "id": "mc-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2288,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date (5 March 2026) is in the future relative to any plausible verification point, making publication impossible."
+  },
+  {
+   "id": "mc-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 8260,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date is in the future relative to verifiable records; I cannot confirm this specific publication exists in Journal de Monaco."
+  },
+  {
+   "id": "mc-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 3036,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date is in the future (April 2026), making this a fabricated or nonexistent decision that cannot currently exist."
+  },
+  {
+   "id": "mc-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 4061,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The specific ordonnance number, date, and content cannot be verified; this appears to be a fabricated or unverifiable citation."
+  },
+  {
+   "id": "mc-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2012,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date is in the future relative to reliable knowledge; I cannot verify this specific citation's existence or accuracy."
+  },
+  {
+   "id": "mc-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2283,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date is in the future relative to verifiable records, and the specific ordinance number and title cannot be confirmed."
+  },
+  {
+   "id": "mc-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2238,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The date 2026-03-05 is in the future, making this citation impossible to verify as a genuine existing decision."
+  },
+  {
+   "id": "mc-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2603,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. UK's legislation.gov.uk publishes British law only; Monaco's Décisions Souveraines appear in the Journal de Monaco, not legislation.gov.uk."
+  },
+  {
+   "id": "mc-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2051,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The date is 2026—a future date relative to verification—making this citation impossible to confirm as an existing, authentic decision."
+  },
+  {
+   "id": "mc-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1526,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Monaco publishes its Ordonnances Souveraines in the Journal de Monaco, not Portugal's Diário da República, which serves Portugal."
+  },
+  {
+   "id": "mc-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1999,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Monaco's Tribunal Suprême decisions are not published through the Irish Tax Appeals Commission; jurisdictions and institutions are entirely unrelated."
+  },
+  {
+   "id": "mc-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2235,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Monaco's Ordonnances Souveraines are published in the Journal de Monaco, not UK Legislation, which covers only UK law."
+  }
+ ]
+}

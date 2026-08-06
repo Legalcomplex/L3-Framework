@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Cambodia — Source-Grounded Citation Reliability (KH)",
+ "country": "KH",
+ "jurisdiction": "Cambodia",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:39:38.622933+00:00",
+ "results": [
+  {
+   "id": "kh-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1790,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Constitutional Council is not a court. Juricaf publishes court decisions, not constitutional council rulings. This source belongs to a different institutional category."
+  },
+  {
+   "id": "kh-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1963,
+   "verdict": false,
+   "correct": false,
+   "raw": "# Evaluation: False  The Law on Investment (enacted 2003, amended 2005) is an authentic Cambodian legal source, but Husky & Partners is not an official publisher. Official sources come from government"
+  },
+  {
+   "id": "kh-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 3058,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This decision concerns lawyer accreditation for the ECCC, but accreditation decisions are administrative rulings issued by the Bar Association, not the court itself."
+  },
+  {
+   "id": "kh-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1866,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The Arbitration Council of Cambodia does not publish decisions under this citation format. Cambodia's labor dispute resolution follows different procedural mechanisms and documentation practi"
+  },
+  {
+   "id": "kh-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1918,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Cambodian Constitutional Council decisions are not systematically published by Cambodia Courts. Juricaf archives such decisions, but they are official outputs of the Constitutional Coun"
+  },
+  {
+   "id": "kh-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1615,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this claim without access to the Husky & Partners Cambodian Legal Library database and its identifier system. Authentication requires direct source consultation."
+  },
+  {
+   "id": "kh-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1621,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This decision belongs to Cambodia's Constitutional Council, not Indonesia's Constitutional Court. The citation explicitly identifies \"Conseil constitutionnel\" (Cambodia), making the publish"
+  },
+  {
+   "id": "kh-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1546,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this claim as I lack access to the Husky & Partners Cambodian Legal Library database and its specific identifier-to-document mappings to confirm accuracy."
+  },
+  {
+   "id": "kh-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1410,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This decision concerns bar admission and would be issued by Cambodia's National Bar Association or relevant judicial authority, not the ECCC, which handles genocide crimes."
+  },
+  {
+   "id": "kh-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1384,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Arbitration Council of Cambodia did not publish decisions under this format in 2004. Cambodia's labor dispute resolution mechanisms and official publication systems were not formally establ"
+  },
+  {
+   "id": "kh-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1559,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This decision is a Cambodian Constitutional Council ruling, not a Philippine Supreme Court decision. Philippine Reports would not publish Cambodian constitutional decisions."
+  },
+  {
+   "id": "kh-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1228,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The identifier 'husky-9974e5218bbd' cannot be verified as corresponding to Cambodia's Law on Accounting and Auditing without access to the actual Husky & Partners library database documentati"
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Serbia — Source-Grounded Citation Reliability (RS)",
+ "country": "RS",
+ "jurisdiction": "Serbia",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.4167,
+ "correct": 5,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:44:08.919906+00:00",
+ "results": [
+  {
+   "id": "rs-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1688,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The decision number format \"Уж-1222/2022\" does not match Serbian Constitutional Court case nomenclature. Constitutional Court decisions use \"Уз\" prefix, not \"Уж\". The date is also implausib"
+  },
+  {
+   "id": "rs-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1503,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Law on Seals of State and Other Bodies was originally published in 2002, not 2021. The 2021 date likely refers to an amendment or republication, not the initial publication."
+  },
+  {
+   "id": "rs-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2813,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The cited decision format and reference structure do not conform to published Serbian Supreme Court (Vrhovni sud) decision numbering conventions. The notation appears fabricated or non-standa"
+  },
+  {
+   "id": "rs-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1641,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The identifier format and date structure are inconsistent with Serbian Commissioner's official documentation systems. No verifiable record matches these specific parameters in publicly acce"
+  },
+  {
+   "id": "rs-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1690,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Serbia's Supreme Court does not maintain a \"Supreme Court Practice Database (VKS)\" with this citation format. The reference structure and database name do not correspond to recognized Serbian j"
+  },
+  {
+   "id": "rs-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1412,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Law on State Seal of the Republic of Serbia exists, but its original publication date predates 2007. Serbia's legal information system was established later than the law itself."
+  },
+  {
+   "id": "rs-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1756,
+   "verdict": false,
+   "correct": true,
+   "raw": "# Evaluation: **FALSE**  The decision number format \"Уж-1222/2022\" does not match Serbian Constitutional Court's standard case nomenclature. Constitutional Court decisions typically use formats like \""
+  },
+  {
+   "id": "rs-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1973,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This law concerns Serbian state seals, not Croatian. It would be published in the Serbian Official Gazette (Službeni glasnik), not the Croatian Narodne novine."
+  },
+  {
+   "id": "rs-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1608,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The citation format \"Rev2 3486/2025 3.19.1.26.1.3; 3.19.1.26.1.4\" does not match Serbian Supreme Court decision nomenclature. Serbian court decisions use standard case number formats withou"
+  },
+  {
+   "id": "rs-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1173,
+   "verdict": false,
+   "correct": true,
+   "raw": "# Evaluation: **False**  The identifier format and dating are inconsistent with typical Serbian Commissioner documentation practices. The future date (2026-04-16) makes this claim implausible for veri"
+  },
+  {
+   "id": "rs-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1015,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The citation format and reference structure do not match BiH Judicial Practice Portal standards. The decision designation appears inconsistent with official BiH court decision nomenclature "
+  },
+  {
+   "id": "rs-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1285,
+   "verdict": true,
+   "correct": false,
+   "raw": "# Answer: **True**  The Law on the State Seal of the Republic of Serbia is a legitimate official legal source properly published through Serbia's official legal information system (Правно-информациони"
+  }
+ ]
+}

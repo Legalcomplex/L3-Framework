@@ -1,0 +1,121 @@
+{
+ "pack": "S3 — Micronesia — Source-Grounded Citation Reliability (FM)",
+ "country": "FM",
+ "jurisdiction": "Micronesia",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 10,
+ "items_in_pack": 10,
+ "parsed": 10,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 5,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:37:06.595317+00:00",
+ "results": [
+  {
+   "id": "fm-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2338,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  FSM decisions are published by official government sources and courts, not by \"FSM Legal Information System,\" which is not an official publisher of Micronesian legal materials."
+  },
+  {
+   "id": "fm-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 5568,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  FSM 13 Intrm. 178-186 appears to reference FSM Intermediate Appellate Court decisions, but the FSM Legal Information System's actual publication practices and official citation formats cann"
+  },
+  {
+   "id": "fm-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1859,
+   "verdict": false,
+   "correct": false,
+   "raw": "# Answer: **False**  The FSM Legal Information System did not exist in 1981. Micronesia's Compact of Free Association was signed in 1986, establishing the FSM as an independent nation with subsequent "
+  },
+  {
+   "id": "fm-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1590,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** FSM 1 Intrm. 209-231 appears to be a citation format for Micronesian court decisions, but \"FSM Legal Information System\" is not a recognized official publisher of FSM jurisprudence."
+  },
+  {
+   "id": "fm-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1937,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  FSM Legal Information System was not established until 2007. A 2004 decision could not have been published by this source in that year."
+  },
+  {
+   "id": "fm-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1457,
+   "verdict": false,
+   "correct": true,
+   "raw": "# Evaluation Result  **False**  The FSM Legal Information System does not publish intermediate court decisions in the \"FSM Intrm.\" reporter format. This citation format appears inconsistent with offic"
+  },
+  {
+   "id": "fm-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1484,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  FSM (Federated States of Micronesia) decisions are typically published in official reporters like the FSM Reports, not under a \"FSM Legal Information System\" designation. The citation forma"
+  },
+  {
+   "id": "fm-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2534,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The FSM Intermediate Appellate Court decision FSM 1 Intrm. 022-027 (1981) is a Micronesian legal source, not Australian. Open Australian Legal Corpus focuses on Australian law, making this at"
+  },
+  {
+   "id": "fm-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1105,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** FSM (Federated States of Micronesia) decisions are published by FSM courts, not the Republic of Marshall Islands Judiciary, which is a separate sovereign nation."
+  },
+  {
+   "id": "fm-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2485,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  FSM Legal Information System does not publish intermediate appellate decisions in this format. FSM intermediate court decisions are typically reported through official FSM Reports series, n"
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Faroe Islands — Source-Grounded Citation Reliability (FO)",
+ "country": "FO",
+ "jurisdiction": "Faroe Islands",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:53:37.601100+00:00",
+ "results": [
+  {
+   "id": "fo-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2237,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Kunngerð (executive notice) originates from the Faroese Government/Ministry of Fisheries, not the Løgting, which enacts løg (laws), not kunngerðir."
+  },
+  {
+   "id": "fo-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2095,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Løgting enacts laws (lóg), not kunngerðir; kunngerðir are executive regulations issued by ministries, and 2026-04-01 is a future date."
+  },
+  {
+   "id": "fo-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2785,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated or unverifiable citation; I cannot confirm such a specific \"Fráboðan nr. 33\" document exists with that date."
+  },
+  {
+   "id": "fo-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2520,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears fabricated/unverifiable; I cannot confirm a specific \"Kunngerð nr. 19\" exists with that title, date, or Løgting publication source."
+  },
+  {
+   "id": "fo-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2347,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated or unverifiable citation; I cannot confirm this specific Løgtingslóg's existence, number, or 2026 publication date."
+  },
+  {
+   "id": "fo-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2382,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears fabricated—I cannot verify a specific \"Kunngerð nr. 18\" on Løgtingsval 2026 exists at that exact date and source."
+  },
+  {
+   "id": "fo-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2288,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Faroese \"kunngerð\" notices are published via the Faroese legal gazette (Kunngerðablaðið/Løgting), not Denmark's Retsinformation database."
+  },
+  {
+   "id": "fo-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2737,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Faroese kunngerðir are published via Faroese authorities (Løgtingið/Kunngerðablaðið), not Denmark's Retsinformation, and the future date is implausible."
+  },
+  {
+   "id": "fo-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2353,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This appears to be a Landsstýri (government) executive notice on ministerial portfolio distribution, not Løgting legislation—wrong issuing authority attribution."
+  },
+  {
+   "id": "fo-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1610,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — I cannot verify this specific claim; there's no reliable evidence confirming Kunngerð nr. 19's existence, content, or exact publication date."
+  },
+  {
+   "id": "fo-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1702,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific bibliographic claim—the exact law number, date, and content combination cannot be confirmed against actual Løgting records."
+  },
+  {
+   "id": "fo-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1710,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Faroe Islands use \"Kunngerð,\" a Faroese/Danish legal instrument; SFS is Sweden's own statute collection, an unrelated jurisdiction's publication system entirely."
+  }
+ ]
+}

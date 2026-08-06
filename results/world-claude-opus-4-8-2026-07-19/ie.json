@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Ireland — Source-Grounded Citation Reliability (IE)",
+ "country": "IE",
+ "jurisdiction": "Ireland",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:15:00.011826+00:00",
+ "results": [
+  {
+   "id": "ie-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2087,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-02-16 is in the future, making this citation impossible to verify as a genuine published decision."
+  },
+  {
+   "id": "ie-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2652,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.**  The citation \"[2026] IESC 3\" dated 2026-01-28 is a future/hypothetical decision that cannot yet exist or be published."
+  },
+  {
+   "id": "ie-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2671,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Nowak was a CJEU/Irish Supreme Court data protection case (2017 era); the DPC doesn't \"publish\" court decisions, and this citation appears fabricated."
+  },
+  {
+   "id": "ie-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2102,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-02-13 is in the future relative to verifiable records; this citation cannot be confirmed as authentic."
+  },
+  {
+   "id": "ie-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 3145,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The case is dated 2026 with citation [2026] IESC 7, which is implausibly future-dated, indicating a fabricated or unverifiable source."
+  },
+  {
+   "id": "ie-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2048,
+   "verdict": true,
+   "correct": true,
+   "raw": "I cannot verify this specific decision's exact citation, date, or existence with certainty, so I cannot confirm True. **False/Unverified.**"
+  },
+  {
+   "id": "ie-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2457,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The 2026 date is in the future relative to my knowledge; I cannot verify this citation exists."
+  },
+  {
+   "id": "ie-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2689,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. IESC denotes the Irish Supreme Court; its decisions are published via Irish sources (courts.ie), not Dutch rechtspraak.nl."
+  },
+  {
+   "id": "ie-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2662,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Nowak v Data Protection Commissioner is an Irish/CJEU data protection case, not an Austrian Verwaltungsgerichtshof decision; jurisdiction mismatch."
+  },
+  {
+   "id": "ie-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1690,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The date [2026] is in the future relative to verifiable records, so this citation cannot be confirmed as authentic."
+  },
+  {
+   "id": "ie-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1767,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This is an Irish Supreme Court decision ([2026] IESC), not published by the German Federal Constitutional Court (BVerfG)."
+  },
+  {
+   "id": "ie-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1555,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The LinkedIn inquiry was decided by Ireland's Data Protection Commission, not Portuguese Courts of Appeal on DGSI."
+  }
+ ]
+}

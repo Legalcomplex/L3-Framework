@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Colombia — Source-Grounded Citation Reliability (CO)",
+ "country": "CO",
+ "jurisdiction": "Colombia",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:35:31.041975+00:00",
+ "results": [
+  {
+   "id": "co-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1601,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Sentencia T-522/25 cannot exist with a 2025-12-18 date, as this is a future date from the current perspective. The claim is temporally impossible."
+  },
+  {
+   "id": "co-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2806,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  This decision cannot exist. The date is 2026-01-30, which is in the future. Colombian court decisions are issued on actual dates, not future dates."
+  },
+  {
+   "id": "co-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1726,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Procuraduría's disciplinary decisions (fallos) are published through its official Relatoria, but the future date (2026-01-20) makes this citation impossible to verify as currently publi"
+  },
+  {
+   "id": "co-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1835,
+   "verdict": false,
+   "correct": false,
+   "raw": "# Evaluation: False  The Colombian competition authority is the \"Superintendencia de Industria y Comercio\" (SIC), but decision numbering and publication formats don't match typical Colombian administr"
+  },
+  {
+   "id": "co-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1543,
+   "verdict": true,
+   "correct": true,
+   "raw": "**True.**  LEY 605 DE 2000 is a legitimate Colombian law published through SUIN-Juriscol on July 28, 2000, establishing norms regarding commercial activities and regulations."
+  },
+  {
+   "id": "co-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1878,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  LEY 2429 was published in 2024, but the cited date (2024-01-01) appears imprecise. Colombian legislative databases require specific publication dates, not generic month-start dates."
+  },
+  {
+   "id": "co-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1653,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Sentencia T-522/25 cannot be from 2024-12-18 because it references year \"25\" (2025), which is future-dated relative to the claim's timestamp. The citation format is internally inconsistent."
+  },
+  {
+   "id": "co-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2580,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  **Explanation:** Colombian Constitutional Court decisions use the format \"Sentencia T-XXX/YY\" where YY represents the year. The year \"26\" (2025) is implausible for a January 2025 decision."
+  },
+  {
+   "id": "co-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1174,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This decision originates from Colombia's Procuraduría Provincial de Juzgamiento in Bucaramanga, not Peru's OSCE public procurement tribunal."
+  },
+  {
+   "id": "co-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2632,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The identifier format appears internally inconsistent. SIC resolution identifiers typically follow \"RE[year]-[number]\" format, but '28553' doesn't logically map to 'RE28552-2022' with a one-d"
+  },
+  {
+   "id": "co-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1493,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** LEY 605 DE 2000 is Colombian legislation. It cannot be published via Argentine Central Bank (BCRA) regulations, which are Argentine official sources."
+  },
+  {
+   "id": "co-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 988,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Querido Diário is a Brazilian municipal gazette platform. Colombian laws are published in the Diario Oficial, not Brazilian municipal databases."
+  }
+ ]
+}

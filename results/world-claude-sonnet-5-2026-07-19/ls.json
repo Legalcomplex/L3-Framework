@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Lesotho — Source-Grounded Citation Reliability (LS)",
+ "country": "LS",
+ "jurisdiction": "Lesotho",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:57:22.417728+00:00",
+ "results": [
+  {
+   "id": "ls-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2225,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific citation exists as stated; the exact title, date, and publication details appear unconfirmed or potentially fabricated for Lesotho's regulatory records."
+  },
+  {
+   "id": "ls-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2817,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Lesotho's Value Added Tax Act was enacted in 2001, but the Lesotho Revenue Authority was not yet operational to publish it then."
+  },
+  {
+   "id": "ls-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2973,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This citation appears fabricated/unverifiable—it references a future date (2026) beyond current knowledge, making authenticity unconfirmable."
+  },
+  {
+   "id": "ls-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2347,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation's exact publication details—Lesotho's legal instruments require confirmation via official Gazette records, not assumed database entries."
+  },
+  {
+   "id": "ls-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2404,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific PDF's authenticity, publication details, or exact update date from Lesotho Revenue Authority's actual records."
+  },
+  {
+   "id": "ls-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2095,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This citation appears fabricated—it references a future date (2026), an unverifiable case, making it unconfirmable as genuine."
+  },
+  {
+   "id": "ls-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2428,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Lesotho's legal instruments are published via Lesotho Law Reports/Gazette or Laws.Africa's Lesotho portal, not \"South Africa Open By-laws,\" which covers municipal by-laws."
+  },
+  {
+   "id": "ls-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2145,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Namibia LII (NamibLII) publishes Namibian legal materials, not Lesotho's; Lesotho's legislation is hosted via LesothoLII, a separate institution."
+  },
+  {
+   "id": "ls-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1657,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Lesotho's High Court decisions (LSHC) are published by Lesotho courts/LesothoLII, not the South Africa Constitutional Court Judgments source."
+  },
+  {
+   "id": "ls-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1611,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. EswatiniLII covers Eswatini's laws, not Lesotho's; a Lesotho regulation would be hosted on LesothoLII, not EswatiniLII."
+  },
+  {
+   "id": "ls-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1539,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Lesotho's Income Tax Act would not be published by Namibia's Legal Assistance Centre, which covers Namibian legislation only, not Lesotho."
+  },
+  {
+   "id": "ls-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1704,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Lesotho case citations (LSHC) belong to Lesotho High Court, not South Africa's Constitutional Court, which uses a different neutral citation system entirely."
+  }
+ ]
+}

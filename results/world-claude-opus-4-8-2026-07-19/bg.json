@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Bulgaria — Source-Grounded Citation Reliability (BG)",
+ "country": "BG",
+ "jurisdiction": "Bulgaria",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.4167,
+ "correct": 5,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:08:17.709868+00:00",
+ "results": [
+  {
+   "id": "bg-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2190,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Bulgarian State Gazette identifiers don't correspond to issuers this way; without verifiable records, this specific claim cannot be confirmed."
+  },
+  {
+   "id": "bg-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 5691,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-01-23 is in the future relative to any verifiable record, making the citation unverifiable and likely fabricated."
+  },
+  {
+   "id": "bg-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2444,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Without access to verify this specific citation, the identifier-to-decision mapping cannot be confirmed; likely fabricated bibliographic detail."
+  },
+  {
+   "id": "bg-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2258,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The 2026 date is in the future relative to verifiable records; this citation cannot be authenticated and appears fabricated."
+  },
+  {
+   "id": "bg-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2186,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-01-23 is in the future relative to any real publication; this citation cannot reference an actual existing decision."
+  },
+  {
+   "id": "bg-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 6015,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation; without access to authoritative Bulgarian court records, the claim's accuracy remains unconfirmed and likely fabricated."
+  },
+  {
+   "id": "bg-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2109,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Bulgarian State Gazette identifiers don't correspond to issuers this way; '1006' as an identifier lacks verifiable connection to that date."
+  },
+  {
+   "id": "bg-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 3230,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier \"3/2027\" cannot correspond to a decision dated 2026, since the year in the identifier postdates it."
+  },
+  {
+   "id": "bg-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1836,
+   "verdict": true,
+   "correct": false,
+   "raw": "I cannot verify this specific claim as True or False without access to Bulgarian court databases; citation details appear plausible but unconfirmed."
+  },
+  {
+   "id": "bg-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1832,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. A Bulgarian jurisdiction matter with a \"Забрана за нелоялна конкуренция\" (unfair competition) act wouldn't be issued by Ukraine's Constitutional Court."
+  },
+  {
+   "id": "bg-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 3358,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.**  The Bulgarian Constitutional Court issues \"Определение\" (rulings), but verifying this specific citation requires source confirmation; I cannot validate its authenticity."
+  },
+  {
+   "id": "bg-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2322,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. \"Решение № 361\" is Bulgarian Cyrillic terminology; Cyprus tribunals issue decisions in Greek/English, not Bulgarian, making this attribution incorrect."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Marshall Islands — Source-Grounded Citation Reliability (MH)",
+ "country": "MH",
+ "jurisdiction": "Marshall Islands",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:41:14.984427+00:00",
+ "results": [
+  {
+   "id": "mh-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2770,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Marshall Islands judiciary does not publish decisions under this case name and date format. No verifiable record exists of this specific decision in official Marshall Islands legal data"
+  },
+  {
+   "id": "mh-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3079,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  General Order 2005-001 would be a judicial order, not an administrative regulation. Marshall Islands administrative regulations have distinct citation formats and are not typically published "
+  },
+  {
+   "id": "mh-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1618,
+   "verdict": true,
+   "correct": true,
+   "raw": "# Evaluation: **True**  The Business Corporations Act, 1990 is a legitimate Marshall Islands statute enacted by the Nitijela (Parliament) and published on the specified date in 1990."
+  },
+  {
+   "id": "mh-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1517,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  PacLII (Pacific Islands Legal Information Institute) publishes Marshall Islands court decisions, but the specific citation format and case number provided cannot be verified as authentic wi"
+  },
+  {
+   "id": "mh-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1570,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The decision date is in the future (2026-02-27), making this a fictional or hypothetical case that cannot be an official published decision from the Marshall Islands Judiciary."
+  },
+  {
+   "id": "mh-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1361,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The Constitution of the Republic of the Marshall Islands is a foundational legal document adopted in 1979, not an administrative regulation from 2025. Constitutional documents are distinct fr"
+  },
+  {
+   "id": "mh-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1526,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Marshall Islands Judiciary does not publish individual case decisions in this formal citation manner. Official decisions appear through limited reporting channels with different formatt"
+  },
+  {
+   "id": "mh-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1476,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** General Orders from the Marshall Islands would not be published in Australia's Federal Register of Legislation, as they are distinct jurisdictions with separate legal publishing systems."
+  },
+  {
+   "id": "mh-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1296,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Marshall Islands has its own corporate law framework (Marshall Islands Business Corporation Act). This claim conflates Australian and Marshall Islands jurisdictions, making the attribut"
+  },
+  {
+   "id": "mh-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1271,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  RONLAW is Nauru's official legal database. Marshall Islands cases would be published through Marshall Islands National Courts system databases, not Nauru's legal repository."
+  },
+  {
+   "id": "mh-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2093,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No verifiable record exists of this decision in Marshall Islands Judiciary publications or standard legal databases for that date and citation format."
+  },
+  {
+   "id": "mh-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1518,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Constitution of the Republic of the Marshall Islands predates 2026 and is not published through Administrative Regulations, which handle secondary legislation, not constitutional docume"
+  }
+ ]
+}

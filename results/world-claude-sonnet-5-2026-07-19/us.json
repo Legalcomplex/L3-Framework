@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — United States — Source-Grounded Citation Reliability (US)",
+ "country": "US",
+ "jurisdiction": "United States",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:04:50.663660+00:00",
+ "results": [
+  {
+   "id": "us-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2078,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** California Labor Code § 510 exists, but I cannot verify this specific citation's date, source format, or accuracy without direct access to LegInfo."
+  },
+  {
+   "id": "us-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 3081,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.**  The Caselaw Access Project publishes scanned official case reporters, but the correct citation/case details (parties, date, court) must be verified against actual reporter volumes—this spe"
+  },
+  {
+   "id": "us-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2180,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation; docket number formatting and future-dated (2026) decisions strongly suggest a fabricated or unverifiable case reference."
+  },
+  {
+   "id": "us-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2270,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This matter's docket is ongoing/not yet resolved as of the training cutoff, so no such dated decision exists to verify or confirm."
+  },
+  {
+   "id": "us-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2353,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this decision's date (2026-04-24) is in the future, meaning it cannot yet exist as a published, verifiable federal court opinion."
+  },
+  {
+   "id": "us-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2897,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this case has not occurred as of my knowledge cutoff; 2026 is a future date, so this docket citation cannot be verified as legitimate."
+  },
+  {
+   "id": "us-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1990,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. California Labor Code § 510 is a U.S. state statute; BC Laws (bclaws.gov.bc.ca) publishes British Columbia, Canada legislation, not California law."
+  },
+  {
+   "id": "us-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2002,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify specific Caselaw Access Project identifiers correspond to particular cases without direct database access to confirm this claim."
+  },
+  {
+   "id": "us-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2929,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific citation—docket number, case name, and future date pairing appears fabricated or unverifiable against real court records."
+  },
+  {
+   "id": "us-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1577,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The FTC's insulin PBM case (In the Matter of Caremark, Zinc Health Services, etc.) was an administrative complaint/proceeding, not a final published Decision and Order."
+  },
+  {
+   "id": "us-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2367,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** I cannot verify this specific citation exists; no reliable record confirms this exact case, date, and court, risking a fabricated reference."
+  },
+  {
+   "id": "us-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2494,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Tax Court of Canada is a Canadian federal court and cannot publish decisions for U.S. jurisdictions like the District of Columbia."
+  }
+ ]
+}

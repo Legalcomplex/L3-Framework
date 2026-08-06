@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Djibouti — Source-Grounded Citation Reliability (DJ)",
+ "country": "DJ",
+ "jurisdiction": "Djibouti",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:11:20.951443+00:00",
+ "results": [
+  {
+   "id": "dj-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3034,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears fabricated; the citation format, future date (2026), and law number cannot be verified against actual Djibouti records."
+  },
+  {
+   "id": "dj-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2665,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The year 2026 is in the future relative to verifiable records, and this specific decree citation cannot be confirmed."
+  },
+  {
+   "id": "dj-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2474,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The \"PR\" designation indicates presidential decrees (décret), not arrêtés; this numbering format is inconsistent with Djiboutian ministerial arrêté conventions."
+  },
+  {
+   "id": "dj-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2001,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific 2026 arrêté; the citation appears fabricated, and I have no reliable confirmation of its existence."
+  },
+  {
+   "id": "dj-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2063,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific 2026 arrêté; the future date and precise details suggest a fabricated or unverifiable citation."
+  },
+  {
+   "id": "dj-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3030,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This citation cannot be verified; the future date, specific number, and details appear fabricated. No confirmable record exists."
+  },
+  {
+   "id": "dj-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2394,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The citation format \"9ème L\" indicates a legislative term inconsistent with a 2024 publication date; details appear fabricated and unverifiable."
+  },
+  {
+   "id": "dj-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2317,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Djibouti laws are published in the Journal Officiel de la République de Djibouti, not the Seychelles Official Gazette."
+  },
+  {
+   "id": "dj-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1523,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Djibouti legal instruments aren't published by Tanzania's Attorney General's Office; jurisdictions don't match, making this citation invalid."
+  },
+  {
+   "id": "dj-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2115,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Kenya Law reports Kenyan legislation only; Djibouti's arrêtés are published in its own Journal Officiel, not Kenya Law."
+  },
+  {
+   "id": "dj-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1641,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Kenya Law reports Kenyan legislation, not Djiboutian. Djibouti's official texts appear in its Journal Officiel de la République de Djibouti."
+  },
+  {
+   "id": "dj-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1938,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Djibouti legal instruments aren't published via Tanzania's Attorney General's Office; jurisdictions don't match, making this citation clearly implausible."
+  }
+ ]
+}

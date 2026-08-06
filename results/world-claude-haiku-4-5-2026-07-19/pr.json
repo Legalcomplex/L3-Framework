@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Puerto Rico — Source-Grounded Citation Reliability (PR)",
+ "country": "PR",
+ "jurisdiction": "Puerto Rico",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:43:41.229389+00:00",
+ "results": [
+  {
+   "id": "pr-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1467,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The publication date (2024-01-10) predates April 14, 2024, making it impossible for LexJuris to have published legislation about that date before it occurred."
+  },
+  {
+   "id": "pr-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2547,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The claim lacks verifiable details. The specific law number, year, and LexJuris publication date cannot be confirmed without accessing official Puerto Rico legislative records or the LexJur"
+  },
+  {
+   "id": "pr-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 4405,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  LexJuris publishes laws after official enactment, not on specific predetermined dates. The 2024-01-10 date lacks verification as an official publication date for this law."
+  },
+  {
+   "id": "pr-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1379,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The publication date (2024-01-10) predates typical legislative processing timelines for Act 11 of 2024, suggesting potential dating inaccuracy in the source attribution."
+  },
+  {
+   "id": "pr-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1648,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The publication date (2024-01-10) precedes any law numbered 10 of 2024, which would have been enacted later in the legislative session."
+  },
+  {
+   "id": "pr-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1750,
+   "verdict": false,
+   "correct": false,
+   "raw": "# Evaluation: **FALSE**  The cited date (2024-01-10) predates typical legislative processing timelines. Puerto Rico Laws require formal enactment procedures that would make January publication of a 20"
+  },
+  {
+   "id": "pr-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1611,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This law is a Puerto Rico statute, not Bahamian legislation. LexJuris is Puerto Rico's legal database, not a Bahamian source."
+  },
+  {
+   "id": "pr-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1588,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Aruba DWJZ Legislation Archive is not an official Puerto Rico legal source. Puerto Rico laws are published through Puerto Rico's official legislative channels (OClegislative.pr.gov), no"
+  },
+  {
+   "id": "pr-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2073,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This law pertains to Puerto Rico's public-private partnership legislation, not Grenada. The cited source jurisdiction is incorrect."
+  },
+  {
+   "id": "pr-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1690,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This law is Puerto Rican legislation (Ley Núm. 11 de 2024), not a Turks and Caicos legal source. The publisher attribution is incorrect."
+  },
+  {
+   "id": "pr-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2561,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This law is Puerto Rican legislation, not Bermudian. Bermuda Laws Online would not be the official publisher of Puerto Rico's statutes; the official source is Puerto Rico's legislative webs"
+  },
+  {
+   "id": "pr-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 937,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Puerto Rico laws are published in the Puerto Rico Official Gazette (Boletín Legislativo), not Saint Lucia Revised Laws. The jurisdiction attribution is incorrect."
+  }
+ ]
+}

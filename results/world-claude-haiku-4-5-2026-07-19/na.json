@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Namibia — Source-Grounded Citation Reliability (NA)",
+ "country": "NA",
+ "jurisdiction": "Namibia",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:42:21.811284+00:00",
+ "results": [
+  {
+   "id": "na-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2029,
+   "verdict": false,
+   "correct": false,
+   "raw": "# Evaluation Result: **False**  The 'Additional Appropriation Act, 2000' was published in the Namibia Government Gazette, not NamibLII. NamibLII consolidates legal information but isn't the primary of"
+  },
+  {
+   "id": "na-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1735,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The case citation format and future date (2025-05-30) are inconsistent with established Namibian High Court reporting conventions. Verification through official Namibia eJustice Portal is r"
+  },
+  {
+   "id": "na-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1595,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Inspection of Financial Institutions Act 38 of 1984 is South African legislation (RSA), not Namibian. Namibia Legal Assistance Centre would not annotate RSA acts as official Namibian source"
+  },
+  {
+   "id": "na-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2203,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** NAMFISA (Namibia Financial Institutions Supervisory Authority) publishes regulatory notices, but this specific title and date cannot be verified as an official published source in standard "
+  },
+  {
+   "id": "na-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1667,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Abolition of Payment by Cheque Act, 2022, was published in Namibia's Government Gazette, not specifically by Namibia Legal Information Institute as the primary official source."
+  },
+  {
+   "id": "na-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1657,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Admiralty Court Act predates Namibia's independence (1990) by 150 years. It's a British statute, not a Namibian Act, so NamibLII attribution is incorrect."
+  },
+  {
+   "id": "na-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1586,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Additional Appropriation Act, 2000 is a Namibian legislative instrument, not an Eswatini document. Eswatini (formerly Swaziland) is a separate country with distinct legislation."
+  },
+  {
+   "id": "na-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1680,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The case identifier and citation contain an internal inconsistency. The stated identifier ends in '04874' while the parenthetical citation references '04873', indicating a mismatch in the c"
+  },
+  {
+   "id": "na-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 993,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Inspection of Financial Institutions Act 38 of 1984 is South African legislation (RSA), not a Reserve Bank of Zimbabwe publication or directive."
+  },
+  {
+   "id": "na-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1273,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This document pertains to Namibia's FIM Act, not South Africa, so publishing it on a South African by-laws platform (Laws.Africa) is jurisdictionally inconsistent and likely incorrect."
+  },
+  {
+   "id": "na-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1206,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Abolition of Payment by Cheque Act, 2022 was not formally published by Namibia Legal Information Institute with that specific title and date format as an official legal source."
+  },
+  {
+   "id": "na-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1743,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Admiralty Court Act, 1840 is a British statute, not Namibian or Eswatini legislation. EswatiniLII would not be the appropriate publisher for this source."
+  }
+ ]
+}

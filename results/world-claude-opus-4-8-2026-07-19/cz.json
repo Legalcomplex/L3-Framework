@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Czechia — Source-Grounded Citation Reliability (CZ)",
+ "country": "CZ",
+ "jurisdiction": "Czechia",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:11:05.340081+00:00",
+ "results": [
+  {
+   "id": "cz-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 3192,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. District court (okresní soud) first-instance civil decisions are generally not published on rozhodnutí.justice.cz, which covers higher courts."
+  },
+  {
+   "id": "cz-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2277,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The e-Sbírka system launched January 1, 2024, not 2026; also, verifying a specific future collection number cannot be confirmed."
+  },
+  {
+   "id": "cz-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2587,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The ECLI encodes senate/case as \"3.US.3303.24\" matching III.ÚS 3303/24, but I cannot verify the specific date's accuracy."
+  },
+  {
+   "id": "cz-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2426,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2025-11-12 is in the future relative to verifiable records, and the citation cannot be authenticated as genuine."
+  },
+  {
+   "id": "cz-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2848,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The Nejvyšší soud (Supreme Court) issues and publishes its own usnesení (resolutions); the case number format \"Tcu\" fits its docket."
+  },
+  {
+   "id": "cz-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 3649,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated citation; I cannot verify this specific case number, date, and title combination as authentic."
+  },
+  {
+   "id": "cz-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2658,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The ECLI code \"OSMO\" designates Okresní soud v Ostravě, not Most; that court-identifier mismatch invalidates the claim."
+  },
+  {
+   "id": "cz-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2408,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. \"Sb.\" (Sbírka zákonů) is the Czech collection of laws; Riigi Teataja is Estonia's gazette, not Czechia's official source."
+  },
+  {
+   "id": "cz-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1938,
+   "verdict": true,
+   "correct": false,
+   "raw": "I cannot verify this specific ECLI identifier's validity without access to the Constitutional Court database; therefore I cannot confirm True."
+  },
+  {
+   "id": "cz-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1958,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The date 2026-11-12 is in the future, making this citation impossible to verify as a genuine published decision."
+  },
+  {
+   "id": "cz-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1955,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This is a decision of the Czech Supreme Court (Nejvyšší soud), not the Turkish Council of State (Danistay)."
+  },
+  {
+   "id": "cz-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2276,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Czech public procurement decisions (ÚOHS case numbers like S0324/2022/VZ) are issued by ÚOHS, not Moldova's courts portal."
+  }
+ ]
+}

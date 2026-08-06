@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Hungary — Source-Grounded Citation Reliability (HU)",
+ "country": "HU",
+ "jurisdiction": "Hungary",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:55:13.024002+00:00",
+ "results": [
+  {
+   "id": "hu-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2126,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific case identifier, decision type, and date combination from Hungary's Constitutional Court, and the date appears to be in the future."
+  },
+  {
+   "id": "hu-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2064,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. In January 2026, Hungary's 2025 legislative numbering couldn't plausibly reach CXXIX (129), making this citation implausible and likely fabricated."
+  },
+  {
+   "id": "hu-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 5170,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific fabricated case number, decision date, and content combination against actual Kúria records; such precise citations require direct source verification."
+  },
+  {
+   "id": "hu-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1956,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — the identifier and date refer to a future case (2026) that cannot be verified as an existing, authentic GVH resolution currently."
+  },
+  {
+   "id": "hu-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1989,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific bibliographic claim—no reliable source confirms this exact submission, date, or details about this particular parliamentary document."
+  },
+  {
+   "id": "hu-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2308,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This case number/date/subject combination cannot be verified as an actual Alkotmánybíróság decision; I cannot confirm specific unpublished or future-dated case identifiers exist."
+  },
+  {
+   "id": "hu-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2091,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This identifier format doesn't correspond to a verifiable Alkotmánybíróság decision; the date (2026) is future-dated and unverifiable, indicating fabrication."
+  },
+  {
+   "id": "hu-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2010,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Act CXXIX of 2025 could not be published in 2024; numbering follows the enactment year, so the date is inconsistent/impossible."
+  },
+  {
+   "id": "hu-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1697,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** \"Köf.\" is a Hungarian Kúria (Curia) case number prefix for municipal decree review cases, not a Serbian Constitutional Court decision."
+  },
+  {
+   "id": "hu-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1536,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — this identifier/date references a future 2026 decision that cannot be verified as an existing official GVH resolution record currently."
+  },
+  {
+   "id": "hu-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1667,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Narodne novine is Croatia's official gazette; a Hungarian parliamentary submitter designation (\"Benyújtó: Dr. Komáromi Zoltán, DK\") would not plausibly appear there."
+  },
+  {
+   "id": "hu-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1758,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** I cannot verify this specific decision exists—fabricated or unverifiable citation details like exact dates and titles risk being hallucinated without database confirmation."
+  }
+ ]
+}

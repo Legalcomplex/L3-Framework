@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Romania — Source-Grounded Citation Reliability (RO)",
+ "country": "RO",
+ "jurisdiction": "Romania",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:44:05.892465+00:00",
+ "results": [
+  {
+   "id": "ro-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1620,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The date inconsistency is problematic: the decision is numbered as \"9 mai 2025\" (May 9, 2025) but referenced as \"(2025-05-01)\" (May 1, 2025). These dates conflict, raising authenticity conc"
+  },
+  {
+   "id": "ro-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1339,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Portal Legislativ (Romanian Legislative Portal) did not exist in 1864. It is a modern digital platform established in the 21st century, not 1864."
+  },
+  {
+   "id": "ro-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1397,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Romanian Data Protection Authority (ANSPDCP) issues decisions on data protection matters, not on sanctioning regimes for the public sector. This falls outside their jurisdiction."
+  },
+  {
+   "id": "ro-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2178,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The date \"10 decembrie 2025\" is in the future relative to the claimed publication date of 2026-03-01, creating a logical impossibility. A decision cannot be published after it was issued."
+  },
+  {
+   "id": "ro-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2141,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  This law predates the Romanian Legislative Portal by over a century. The Portal Legislativ was established in the modern era (early 2000s), not 1864. Historical laws require archival verifica"
+  },
+  {
+   "id": "ro-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1642,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Romanian Data Protection Authority is called ANSPDCP (Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal), but this 2026 decision date is in the future, ma"
+  },
+  {
+   "id": "ro-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1599,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This decision cannot be from Moldova's National Courts Portal because the date (2025-05-01) is in the future relative to current knowledge, and the reference format doesn't match Moldova's "
+  },
+  {
+   "id": "ro-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1795,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Romanian Law 710/1864 would be published in Romanian official sources, not the Slovenian Legislation Database (PISRS). PISRS is Slovenia's official legislative database, not Romania's."
+  },
+  {
+   "id": "ro-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1055,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The Romanian Data Protection Authority (ANSPDCP) does not issue decisions titled \"Regimul sancționator pentru sectorul public.\" This appears to be a legislative or administrative document unr"
+  },
+  {
+   "id": "ro-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 3303,
+   "verdict": false,
+   "correct": true,
+   "raw": "# Evaluation: FALSE  **Explanation:** The decision date (10 decembrie 2025) is in the future relative to the publication date (2025-03-01), which is logically impossible. This indicates an error in th"
+  },
+  {
+   "id": "ro-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1229,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Romanian legislation would be published in the Romanian Official Gazette (Monitorul Oficial), not the Greek Government Gazette (FEK), regardless of the date or legislative body involved."
+  },
+  {
+   "id": "ro-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1342,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Romania's Constitutional Court would not publish decisions about GDPR violations in Romanian language with Romanian formatting. Ukraine's court system operates independently from Romania."
+  }
+ ]
+}

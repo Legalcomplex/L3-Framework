@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Niger — Source-Grounded Citation Reliability (NE)",
+ "country": "NE",
+ "jurisdiction": "Niger",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:59:32.927738+00:00",
+ "results": [
+  {
+   "id": "ne-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2147,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation exists; fabricated or unverifiable case citations are common, and I lack reliable access to confirm this exact decision's authenticity."
+  },
+  {
+   "id": "ne-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 6719,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This citation format resembles French Cour de cassation numbering conventions; I cannot verify a genuine Niger court decision matching this specific reference exists."
+  },
+  {
+   "id": "ne-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2087,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific identifier corresponds to an actual, authenticated Niger Court of Cassation decision from that database."
+  },
+  {
+   "id": "ne-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1992,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This citation appears fabricated or unverifiable—no credible record confirms this specific case number, date, and reporter combination exists officially."
+  },
+  {
+   "id": "ne-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2122,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific citation exists; case details, docket numbers, and dates for Niger's Cour de cassation aren't reliably confirmable."
+  },
+  {
+   "id": "ne-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2595,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This identifier format resembles French Cour de cassation conventions, and I cannot verify Niger's actual court cites this specific case authentically."
+  },
+  {
+   "id": "ne-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2588,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier references case number \"24042CIV\" but the stated citation \"24-041/Civ\" doesn't match—numbers 042 and 041 are inconsistent."
+  },
+  {
+   "id": "ne-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2389,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier ends in \"25094P,\" referencing case number 25-094-P, not 25-093-P as the claim states—a mismatch."
+  },
+  {
+   "id": "ne-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1755,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Niger's Cour de cassation rulings are not published via a \"Sierra Leone Web Laws Archive,\" an implausible, seemingly fabricated source unrelated to Nigerien jurisdiction."
+  },
+  {
+   "id": "ne-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2323,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Niger's Cour de cassation rulings would be published in Niger's own Journal Officiel, not Guinea's, making this citation implausible and likely fabricated."
+  },
+  {
+   "id": "ne-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1713,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Nigerien Cour de cassation ruling would not be published by Nigeria's Electricity Regulatory Commission—a mismatched country and unrelated regulatory body entirely."
+  },
+  {
+   "id": "ne-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1661,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Niger's Cour de cassation rulings would not be published by Côte d'Ivoire's CivLII platform; that source covers Ivorian jurisdiction, not Niger's judicial decisions."
+  }
+ ]
+}

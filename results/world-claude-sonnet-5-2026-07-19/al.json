@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Albania — Source-Grounded Citation Reliability (AL)",
+ "country": "AL",
+ "jurisdiction": "Albania",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:48:36.321453+00:00",
+ "results": [
+  {
+   "id": "al-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3117,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated or unverifiable citation; a 2026 publication date is future-dated and cannot be confirmed as an actual official Fletore Zyrtare entry."
+  },
+  {
+   "id": "al-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 3079,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This claim cannot be verified: a 2026 publication date and a 2025 decision date are inconsistent/future-dated, indicating fabricated citation."
+  },
+  {
+   "id": "al-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2351,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific identifier, title, and date combination against actual QBZ records; it appears fabricated or unverifiable, likely a hallucinated future-dated citation."
+  },
+  {
+   "id": "al-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2004,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific decision number, date, and publication details against actual Albanian Constitutional Court records without access to current official sources."
+  },
+  {
+   "id": "al-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2001,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The 2026-01-28 date is future/unverifiable, and this specific ratification decision citation cannot be confirmed as an authentic Official Gazette publication."
+  },
+  {
+   "id": "al-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1887,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The citation format \"vend.mosk.20'26\" is not a recognized Albanian Constitutional Court decision numbering convention, and the date appears fabricated/unverifiable."
+  },
+  {
+   "id": "al-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1991,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This appears to be a fabricated or unverifiable future-dated identifier; I cannot confirm actual QBZ records for 2026-01-28 publications."
+  },
+  {
+   "id": "al-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2100,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — the claim is internally inconsistent: it cites decision date 29.07.2025 alongside a 2024-02-25 date, which cannot both be accurate."
+  },
+  {
+   "id": "al-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1746,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This appears fabricated—the identifier references a 2026 future date, and I cannot verify specific QBZ law numbers/titles without access to authoritative records."
+  },
+  {
+   "id": "al-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1631,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Moldova's National Courts Portal would not publish an Albanian decision (\"Vendim\" is Albanian); jurisdictional mismatch makes this citation implausible and incorrect."
+  },
+  {
+   "id": "al-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2202,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Albanian legal acts are published in Albania's Official Gazette (Fletorja Zyrtare), not Bosnia's Službeni glasnik BiH, which serves different jurisdiction entirely."
+  },
+  {
+   "id": "al-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2297,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The citation format \"vend.mosk.20'26\" is not a recognizable or standard Albanian Constitutional Court decision citation format."
+  }
+ ]
+}

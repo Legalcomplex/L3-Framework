@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Marshall Islands — Source-Grounded Citation Reliability (MH)",
+ "country": "MH",
+ "jurisdiction": "Marshall Islands",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:58:16.726629+00:00",
+ "results": [
+  {
+   "id": "mh-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2112,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific case citation exists; I have no reliable data confirming this exact decision, date, or publication in Marshall Islands Judiciary records."
+  },
+  {
+   "id": "mh-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1957,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific citation exists in Marshall Islands administrative regulations; the claim's details appear fabricated or unverifiable from available sources."
+  },
+  {
+   "id": "mh-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2184,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Marshall Islands Business Corporations Act derives from the Trust Territory era/associated legislation, administered separately; the specific date/attribution requires verification, not"
+  },
+  {
+   "id": "mh-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2156,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This citation appears fabricated—no verifiable record of \"Declaro v Republic of the Marshall Islands\" [2024] MHSC 3 exists on PacLII or elsewhere."
+  },
+  {
+   "id": "mh-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2188,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this appears to be a fabricated/unverifiable citation; no such Marshall Islands Judiciary decision with this exact title and date is confirmed to exist."
+  },
+  {
+   "id": "mh-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1967,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Constitution of the Marshall Islands is the foundational governing document, not an administrative regulation—these are distinct legal source categories entirely."
+  },
+  {
+   "id": "mh-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2010,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific case citation exists; I have no reliable record of this particular Marshall Islands Judiciary decision or its details."
+  },
+  {
+   "id": "mh-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2325,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Federal Register of Legislation (Australia) publishes Australian law, not Marshall Islands general orders or attorney's fee guidance documents."
+  },
+  {
+   "id": "mh-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1654,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Marshall Islands' Business Corporations Act is not published via the Open Australian Legal Corpus, which exclusively contains Australian legal materials and jurisdictions, not Marshall "
+  },
+  {
+   "id": "mh-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2164,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. RONLAW covers Nauru's legal materials, not the Marshall Islands; Marshall Islands cases would appear in PacLII or MIJudiciary sources, not Nauru's database."
+  },
+  {
+   "id": "mh-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1505,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This appears to be a fabricated/unverifiable citation; no such specific decision with this exact title, date, and details can be confirmed as authentic."
+  },
+  {
+   "id": "mh-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1782,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Constitution is a foundational legal instrument, not part of Administrative Regulations, and 2026 postdates any verifiable publication."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Saint Helena — Source-Grounded Citation Reliability (SH)",
+ "country": "SH",
+ "jurisdiction": "Saint Helena",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:44:43.886836+00:00",
+ "results": [
+  {
+   "id": "sh-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2234,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. Saint Helena, Ascension & Tristan da Cunha is the official legislative authority for Saint Helena, and ordinances from 2013 would be published through official legislation channels."
+  },
+  {
+   "id": "sh-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1454,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Saint Helena, Ascension & Tristan da Cunha didn't exist as a unified jurisdiction in 1895; Tristan da Cunha was only incorporated administratively much later."
+  },
+  {
+   "id": "sh-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1948,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Saint Helena, Ascension & Tristan da Cunha did not exist as a unified political entity in 1944. Ascension and Tristan da Cunha were incorporated later, making this publication attribution h"
+  },
+  {
+   "id": "sh-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1588,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Saint Helena's official legislation is published through the Saint Helena Government Gazette, not \"Saint Helena, Ascension & Tristan da Cunha Legislation.\" The cited publisher appears to be inc"
+  },
+  {
+   "id": "sh-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2338,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.**  Saint Helena, Ascension & Tristan da Cunha did not exist as a unified legislative entity in 1940. Ascension Island and Tristan da Cunha were administered separately, making this attributio"
+  },
+  {
+   "id": "sh-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 4051,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Saint Helena's legislation is published through the Saint Helena Government Gazette, not \"Saint Helena, Ascension & Tristan da Cunha Legislation.\" The cited publisher name is incorrect."
+  },
+  {
+   "id": "sh-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1826,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Building Control Ordinance, 2013 is a Saint Helena legislative instrument, not a Zimbabwe Reserve Bank publication. The cited source is incorrect and from a different jurisdiction entir"
+  },
+  {
+   "id": "sh-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1476,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Saint Helena's legislation would not be published via South Africa Open By-laws. Saint Helena is a separate British Overseas Territory with its own independent legal system and legislative sour"
+  },
+  {
+   "id": "sh-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1113,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Animals (Diseases) Ordinance, 1944 is a Saint Helena law, not Namibian. Namibia Legal Information Institute would not be the appropriate publisher for Saint Helena legislation."
+  },
+  {
+   "id": "sh-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1321,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Bees Ordinance, 1995 is a Saint Helena legislative instrument, not a Lesotho central bank financial regulation. Jurisdictional and institutional mismatch."
+  },
+  {
+   "id": "sh-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1332,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Saint Helena's legislation would not be published through Namibia's financial authority. The source attribution is geographically and institutionally incorrect."
+  },
+  {
+   "id": "sh-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1045,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Saint Helena is a British Overseas Territory with its own legislation. An ordinance from Saint Helena would not be published by Zambia Legal Information Institute, which focuses on Zambian "
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Guinea — Source-Grounded Citation Reliability (GN)",
+ "country": "GN",
+ "jurisdiction": "Guinea",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:13:48.709960+00:00",
+ "results": [
+  {
+   "id": "gn-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2043,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific decision's existence or Juricaf publication details; caution is warranted regarding unconfirmed citation accuracy."
+  },
+  {
+   "id": "gn-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2185,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. \"DroitGuinéen — Guinea Legal Reference Platform\" appears fabricated; official Guinean legal texts are published in the Journal Officiel."
+  },
+  {
+   "id": "gn-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2472,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific 2026 future-dated issue number and publication details; such precise claims require confirmation from authentic sources."
+  },
+  {
+   "id": "gn-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2045,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated citation; no verifiable BCRG regulatory text with this title and date exists."
+  },
+  {
+   "id": "gn-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2856,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Guinea's official legal texts are published in the Journal Officiel, not a \"Supreme Court Legislative Texts Archive,\" which doesn't exist."
+  },
+  {
+   "id": "gn-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2182,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific identifier exists in Juricaf's Guinea collection; asserting its authenticity risks fabricating unconfirmed bibliographic details."
+  },
+  {
+   "id": "gn-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2262,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier ends in '003' but the cited case number is '002', creating an internal inconsistency between identifier and citation."
+  },
+  {
+   "id": "gn-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2343,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. \"DroitGuinéen — Guinea Legal Reference Platform\" appears fabricated; official Guinean texts publish via the Journal Officiel, not this source."
+  },
+  {
+   "id": "gn-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1668,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Journal officiel of Guinea is published by Guinea's government, not the Banque Centrale de Mauritanie, a different jurisdiction."
+  },
+  {
+   "id": "gn-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1776,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This appears to be a fabricated citation; no verifiable BCRG regulatory text with that title and date exists."
+  },
+  {
+   "id": "gn-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1791,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Guinea's decrees are published through Guinean official sources, not Benin's National Assembly, which serves a different country entirely."
+  },
+  {
+   "id": "gn-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1977,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier ends in '10', but the cited case number is '09', creating an inconsistency between identifier and reference."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Hong Kong — Source-Grounded Citation Reliability (HK)",
+ "country": "HK",
+ "jurisdiction": "Hong Kong",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:14:28.461074+00:00",
+ "results": [
+  {
+   "id": "hk-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2844,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. Cap. 104 refers to Landlord and Tenant (Consolidation) Ordinance; its subsidiary legislation \"A\" exists on Hong Kong e-Legislation."
+  },
+  {
+   "id": "hk-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2149,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Board of Review decisions began publication in later volumes; the citation format and 1981 date detail appear fabricated."
+  },
+  {
+   "id": "hk-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2861,
+   "verdict": false,
+   "correct": false,
+   "raw": "I cannot verify this specific citation. Without access to reliable Hong Kong Competition Tribunal records, I cannot confirm the identifier, parties, or date. **False/Unverifiable.**"
+  },
+  {
+   "id": "hk-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2748,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-03-25 is in the future, making this citation unverifiable and likely fabricated; details cannot be confirmed."
+  },
+  {
+   "id": "hk-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2179,
+   "verdict": false,
+   "correct": false,
+   "raw": "False—no verifiable record confirms this specific SFAT ruling exists with these exact citation details; likely fabricated or inaccurately described."
+  },
+  {
+   "id": "hk-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2450,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.**  Hong Kong e-Legislation (HKeL) launched in 2017, so it could not have published anything dated 1997."
+  },
+  {
+   "id": "hk-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2309,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Cap. 104 is a Hong Kong legislation citation, published via Hong Kong e-Legislation, not Macau's legal portal."
+  },
+  {
+   "id": "hk-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2291,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Decision reference D12/81 indicates a 1981 case, inconsistent with the stated 1979-11-25 date; the citation is unreliable."
+  },
+  {
+   "id": "hk-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1785,
+   "verdict": false,
+   "correct": true,
+   "raw": "I cannot verify this specific citation. Without access to authoritative Hong Kong legal databases, I cannot confirm this claim's accuracy. False."
+  },
+  {
+   "id": "hk-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1436,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The date is 2026-03-25, which is in the future; this citation cannot correspond to an actual decided case."
+  },
+  {
+   "id": "hk-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1926,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The citation number \"4/2021\" indicates a 2021 application, which cannot logically have a 2019 decision date—chronological inconsistency."
+  },
+  {
+   "id": "hk-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1850,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Hong Kong legislation (Cap. 101 sub. leg. B) is published via Hong Kong e-Legislation, not Korea's KLIC."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Guatemala — Source-Grounded Citation Reliability (GT)",
+ "country": "GT",
+ "jurisdiction": "Guatemala",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:37:59.865053+00:00",
+ "results": [
+  {
+   "id": "gt-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1325,
+   "verdict": true,
+   "correct": true,
+   "raw": "**True**  The Corte de Constitucionalidad is Guatemala's constitutional court and publishes amparo (constitutional protection) decisions and their appeals. This citation format aligns with institution"
+  },
+  {
+   "id": "gt-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1357,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Law on General Warehouses (Ley de Almacenes Generales de Depósito) is a legislative enactment published in Guatemala's official gazette, not by the Central Bank's legal framework compil"
+  },
+  {
+   "id": "gt-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1381,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Corte de Constitucionalidad handles constitutional matters and amparo cases, but amparo appeals (apelaciones de sentencia de amparo) are typically resolved by the Corte de Apelaciones, "
+  },
+  {
+   "id": "gt-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1390,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The law itself is published in Guatemala's official gazette (Diario de Centro América), not by Banco de Guatemala. The central bank compiles legal frameworks but doesn't publish legislation."
+  },
+  {
+   "id": "gt-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1642,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.  The Corte de Constitucionalidad handles amparo cases at first instance, not appeals. Amparo appeals (apelaciones) are decided by the Corte de Apelaciones in Guatemala's judicial structure.**"
+  },
+  {
+   "id": "gt-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1937,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The 'Ley de Sociedades Financieras Privadas' is official Guatemalan legislation published in the Official Gazette (Diario Oficial), not by Banco de Guatemala as a publisher."
+  },
+  {
+   "id": "gt-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1340,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The date (1999-04-03) predates the decision number (967-2000), which is logically inconsistent. Additionally, verification of this specific case is not readily confirmable."
+  },
+  {
+   "id": "gt-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1596,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The 'Ley de Almacenes Generales de Depósito' is Mexican legislation, not Guatemalan. The claim incorrectly attributes a Mexican law to Guatemala's jurisdiction."
+  },
+  {
+   "id": "gt-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1375,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.  The Corte de Constitucionalidad handles constitutional matters and amparo cases, but this citation lacks proper verification details. Guatemala's official legal databases don't confirm this "
+  },
+  {
+   "id": "gt-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1918,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This law is Guatemalan legislation, not Honduran. The Honduras TSC (Supreme Court of Accounts) would not be the official publisher of Guatemalan laws."
+  },
+  {
+   "id": "gt-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1676,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This decision is from Guatemala's amparo proceedings (Expediente 156-2001), not Mexico. Guatemala and Mexico have separate judicial systems. The SCJN is Mexico's Supreme Court, not Guatemal"
+  },
+  {
+   "id": "gt-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1521,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The 'Ley de Sociedades Financieras Privadas' is a legislative decree enacted by Guatemala's Congress, not published by Banco de Guatemala, which is the central bank and lacks legislative author"
+  }
+ ]
+}

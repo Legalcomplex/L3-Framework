@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Falkland Islands — Source-Grounded Citation Reliability (FK)",
+ "country": "FK",
+ "jurisdiction": "Falkland Islands",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:53:29.323557+00:00",
+ "results": [
+  {
+   "id": "fk-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2750,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation's accuracy—the ordinance's existence, date, or publication details cannot be confirmed without access to authoritative Falkland Islands legislative record"
+  },
+  {
+   "id": "fk-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2820,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This citation appears fabricated—there's no verifiable record of this specific inquest decision being published by Falkland Islands Court Decisions in official reports."
+  },
+  {
+   "id": "fk-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2135,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific claim — I have no reliable record confirming this exact ordinance, title, or publication date exists in Falkland Islands legislation."
+  },
+  {
+   "id": "fk-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1962,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This case citation appears fabricated—no verifiable official record confirms this specific decision exists in Falkland Islands Court Decisions publications."
+  },
+  {
+   "id": "fk-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2412,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific ordinance title, date, and publication details exist as an actual official Falkland Islands legal source without access to verify records."
+  },
+  {
+   "id": "fk-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1977,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated citation; no such case or official reporting series is verifiable in Falkland Islands legal records."
+  },
+  {
+   "id": "fk-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2467,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** I cannot verify this specific citation's accuracy—the ordinance's existence, exact title, year, and publication details require confirmation from official Falkland Islands legislative sourc"
+  },
+  {
+   "id": "fk-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 5247,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Colombia Datos Abiertos publishes Colombian Constitutional Court rulings, not Falkland Islands inquest decisions—jurisdictionally and institutionally mismatched sources entirely."
+  },
+  {
+   "id": "fk-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1894,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Uruguay's IMPO Open Data JSON API publishes Uruguayan legal materials, not Falkland Islands ordinances, which have separate official publication channels."
+  },
+  {
+   "id": "fk-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 5057,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This case name appears fabricated; I cannot verify it exists in Falkland Islands Court Decisions records or any legitimate legal database."
+  },
+  {
+   "id": "fk-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1838,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** I cannot verify this specific bibliographic claim—the precise title, date, and publication details cannot be confirmed as accurate without access to authoritative Falkland Islands legislati"
+  },
+  {
+   "id": "fk-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1779,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Falkland Islands are a UK overseas territory with its own courts; Argentina's Suprema Corte Buenos Aires (JUBA) has no jurisdiction there."
+  }
+ ]
+}

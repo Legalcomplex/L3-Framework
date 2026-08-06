@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Belize — Source-Grounded Citation Reliability (BZ)",
+ "country": "BZ",
+ "jurisdiction": "Belize",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:50:53.439274+00:00",
+ "results": [
+  {
+   "id": "bz-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2023,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific claim—Belize's Cap 67 designation and \"Banana Industry Loan Act\" title/date combination isn't confirmable from reliable available sources."
+  },
+  {
+   "id": "bz-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2018,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific case citation exists; fabricated or unverifiable case details are common, and this specific claim cannot be confirmed as accurate."
+  },
+  {
+   "id": "bz-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2198,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This citation appears fabricated/unverifiable—I cannot confirm this specific case exists in Belize Supreme Court Judgments' actual published records."
+  },
+  {
+   "id": "bz-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2429,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific citation exists; Belize's Central Bank amendment acts require confirmation through official Government Gazette publication records, not assumed dates."
+  },
+  {
+   "id": "bz-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2084,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this claim — I have no reliable record of this specific 2026 Act or publication, and I cannot confirm future-dated legal sources' accuracy or existence."
+  },
+  {
+   "id": "bz-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2230,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this claim references a future, unverifiable statutory instrument; no such SI can be confirmed as an authentic published Belize Gazette source yet."
+  },
+  {
+   "id": "bz-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2091,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** I cannot verify this specific claim—Belize's Cap 67 designation and \"Banana Industry Loan Act\" title/date combination isn't confirmable from reliable available sources."
+  },
+  {
+   "id": "bz-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2020,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Belize's Court of Appeal decisions aren't published by Mexico's SCJN Open Data Platform, an unrelated foreign judicial database for Mexican Supreme Court rulings."
+  },
+  {
+   "id": "bz-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1615,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This appears to be a fabricated or unverifiable citation; I cannot confirm this specific case exists in official Belize Supreme Court records."
+  },
+  {
+   "id": "bz-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1707,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Honduras's TSC Virtual Library is a Honduran audit institution repository, not an official Belizean legal publication source for such legislation."
+  },
+  {
+   "id": "bz-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1785,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Belize legislation is not published via Mexico's Orden Jurídico Nacional; that platform covers Mexican federal/state legislation, not Belizean statutes."
+  },
+  {
+   "id": "bz-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1629,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Belize's statutory instruments are published in the Belize Government Gazette/national legal database, not Mexico's Orden Jurídico Nacional state legislation portal."
+  }
+ ]
+}

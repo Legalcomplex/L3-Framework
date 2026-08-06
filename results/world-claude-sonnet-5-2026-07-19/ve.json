@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Venezuela — Source-Grounded Citation Reliability (VE)",
+ "country": "VE",
+ "jurisdiction": "Venezuela",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:05:15.402143+00:00",
+ "results": [
+  {
+   "id": "ve-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2137,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific law, publication date, or Gaceta Oficial entry exists; no reliable record confirms this exact citation's authenticity."
+  },
+  {
+   "id": "ve-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2501,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this citation references a future-dated decision (2026-01-08), which cannot be verified as an actual published TSJ ruling yet."
+  },
+  {
+   "id": "ve-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2025,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific gazette entry exists; likely a fabricated citation—I have no reliable record confirming this exact law's publication."
+  },
+  {
+   "id": "ve-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2055,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date (2026-02-19) is in the future relative to current knowledge, making this citation unverifiable and likely fabricated or erroneous."
+  },
+  {
+   "id": "ve-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2948,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This law dates from the 20th century (Gaceta Oficial No. 20.976, 1975) — it was not originally published via a 2022 digital Gaceta Oficial source."
+  },
+  {
+   "id": "ve-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2125,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation exists; TSJ identifiers, decision numbers, and dates should be confirmed directly against official records, not assumed accurate."
+  },
+  {
+   "id": "ve-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 3542,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific law, its 2021-02-23 publication date, or source exist as described in Venezuela's Gaceta Oficial records."
+  },
+  {
+   "id": "ve-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2152,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This claim references a 2026 date, which is in the future and cannot correspond to a verifiable, actual issued TSJ decision yet."
+  },
+  {
+   "id": "ve-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1695,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** IMPO is Uruguay's official gazette portal; a Venezuelan state decoration law would not be published through Uruguay's legal database system."
+  },
+  {
+   "id": "ve-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1839,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This claim cannot be verified as accurate—the future date (2026-02-19) postdates present knowledge, indicating fabricated or unverifiable citation details."
+  },
+  {
+   "id": "ve-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1558,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. InfoLEG is Argentina's legislative database, not Venezuela's; this Venezuelan law would appear in Gaceta Oficial de Venezuela, not InfoLEG."
+  },
+  {
+   "id": "ve-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2553,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — I cannot verify this specific citation; TSJ decision numbers, dates, and chamber attributions are frequently fabricated or misattributed in generated references."
+  }
+ ]
+}

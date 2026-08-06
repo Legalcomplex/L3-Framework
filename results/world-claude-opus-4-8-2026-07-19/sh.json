@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Saint Helena — Source-Grounded Citation Reliability (SH)",
+ "country": "SH",
+ "jurisdiction": "Saint Helena",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:24:23.642984+00:00",
+ "results": [
+  {
+   "id": "sh-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3273,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Saint Helena legislation exists but the specific \"2013-01-01\" publication date and this exact citation cannot be reliably verified."
+  },
+  {
+   "id": "sh-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3287,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Saint Helena, Ascension & Tristan da Cunha combined legislative structure and website postdate 1895; publication date appears fabricated or anachronistic."
+  },
+  {
+   "id": "sh-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3459,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Saint Helena, Ascension and Tristan da Cunha became a single territory in 2009; a 1944 publisher attribution is anachronistic."
+  },
+  {
+   "id": "sh-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2864,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Saint Helena's bee legislation predates 1995; the online legislation portal was established later, so this exact citation is unverifiable."
+  },
+  {
+   "id": "sh-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2196,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Saint Helena, Ascension & Tristan da Cunha are separate jurisdictions; the 1940-01-01 date appears fabricated and implausible."
+  },
+  {
+   "id": "sh-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3660,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific ordinance's existence or the exact 2017-01-01 date; details appear unreliable or fabricated."
+  },
+  {
+   "id": "sh-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2866,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Saint Helena legislation is published via official Saint Helena Government gazette, not the Reserve Bank of Zimbabwe."
+  },
+  {
+   "id": "sh-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2502,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Laws.Africa's Open By-laws covers South African municipalities, not Saint Helena; it would not publish Saint Helena's colonial ordinances."
+  },
+  {
+   "id": "sh-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2104,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Saint Helena legislation would not be published via Namibia Legal Information Institute; jurisdictions don't match, making this claim implausible."
+  },
+  {
+   "id": "sh-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1794,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. A \"Bees Ordinance\" concerns beekeeping in Saint Helena, not banking; the Central Bank of Lesotho is entirely unrelated jurisdictionally."
+  },
+  {
+   "id": "sh-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1772,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Saint Helena legislation wouldn't be published by a Namibian financial regulator; the jurisdiction and publishing body are entirely mismatched."
+  },
+  {
+   "id": "sh-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1709,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Saint Helena legislation would not be published via Zambia Legal Information Institute; jurisdictional mismatch makes this citation implausible."
+  }
+ ]
+}

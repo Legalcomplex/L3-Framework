@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Panama — Source-Grounded Citation Reliability (PA)",
+ "country": "PA",
+ "jurisdiction": "Panama",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:00:14.781309+00:00",
+ "results": [
+  {
+   "id": "pa-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2006,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated or unverifiable citation; I cannot confirm this specific decision exists in official Panamanian Supreme Court jurisprudence records."
+  },
+  {
+   "id": "pa-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2093,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Legispan is a legislative database that indexes legal texts; it does not \"publish\" laws, and the cited access date is a future/invalid reference point."
+  },
+  {
+   "id": "pa-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2668,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific citation's accuracy; without access to the official Gaceta Oficial or SBP registry, the claim's precision is unconfirmed."
+  },
+  {
+   "id": "pa-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2560,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific case citation exists—fabricated-sounding docket numbers/dates for court decisions require direct database confirmation, which I lack."
+  },
+  {
+   "id": "pa-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1905,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be an administrative resolution, not legislation from the National Assembly, and the future date (2026-01-21) is unverifiable/suspicious."
+  },
+  {
+   "id": "pa-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2074,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific Acuerdo's existence, exact number, content, or publication date against actual Superintendencia de Bancos records; risk of fabrication."
+  },
+  {
+   "id": "pa-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2532,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Panama's judicial decisions are not published by Mexico's SCJN Open Data Platform; that source covers Mexican jurisprudence, not Panamanian cases."
+  },
+  {
+   "id": "pa-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1975,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific citation's accuracy—exact decree numbers, dates, and publication details require confirmation from official Gaceta Oficial or Legispan records directly."
+  },
+  {
+   "id": "pa-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 6236,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — Panama's legal instruments (Acuerdos) are published through Panama's Gaceta Oficial or relevant regulatory body, not Honduras's Tribunal Superior de Cuentas library."
+  },
+  {
+   "id": "pa-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1712,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Panama's judicial decisions are not published by Mexico's SCJN Open Data Platform—that platform covers Mexican Supreme Court rulings, a different jurisdiction entirely."
+  },
+  {
+   "id": "pa-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1768,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Panamanian legal instruments are published in Panama's Gaceta Oficial, not Mexico's Orden Jurídico Nacional, which covers Mexican state legislation only."
+  },
+  {
+   "id": "pa-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1778,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — Panama's official legal source is Gaceta Oficial, not Mexico's Orden Jurídico Nacional, which publishes only Mexican federal/state legislation, not Panamanian acuerdos."
+  }
+ ]
+}

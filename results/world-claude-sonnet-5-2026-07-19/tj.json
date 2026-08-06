@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Tajikistan — Source-Grounded Citation Reliability (TJ)",
+ "country": "TJ",
+ "jurisdiction": "Tajikistan",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:03:46.504467+00:00",
+ "results": [
+  {
+   "id": "tj-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2285,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Tajikistan's official legal texts are published through the National Legislation Center/official gazette, not the Tax Committee directly, per standard practice."
+  },
+  {
+   "id": "tj-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1950,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated or unverifiable citation; I cannot confirm this specific decision exists in official Constitutional Court records."
+  },
+  {
+   "id": "tj-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2176,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Tajikistan's laws are officially published through the Majlisi Oli (Parliament) or \"Axbori Majlisi Oli,\" not the National Bank's regulatory publications channel."
+  },
+  {
+   "id": "tj-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2502,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This appears fabricated/unverifiable — I cannot confirm a specific issue №3/2022 exists at sud.tj with that exact publication date or title format."
+  },
+  {
+   "id": "tj-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2714,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Tax Code is enacted through legislative (Majlisi Oli) adoption and presidential signature, not published as an original source by the Tax Committee itself."
+  },
+  {
+   "id": "tj-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2083,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this appears fabricated/unverifiable; no confirmed official record exists of this specific Constitutional Court decision matching that date and case title."
+  },
+  {
+   "id": "tj-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 3444,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Lex.uz publishes Uzbekistan's legislation, not Tajikistan's. Tajik legal acts are officially published through Tajik state sources, not Uzbekistan's national database."
+  },
+  {
+   "id": "tj-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2412,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** I cannot verify this specific decision exists; fabricated or unverifiable citations to \"Санокиной Л.Г.\" case risk hallucination without confirmed official source access."
+  },
+  {
+   "id": "tj-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1796,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Adliya (Tajikistan) is the national legal database for Tajik laws; Adilet is Kazakhstan's system and wouldn't officially publish Tajikistan's banking law."
+  },
+  {
+   "id": "tj-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2501,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The publisher named (\"Нашрияи Суди Олии Ҷумҳурии Тоҷикистон\") is Tajikistan's Supreme Court publication, not Astana International Financial Centre Court, a Kazakhstani institution."
+  },
+  {
+   "id": "tj-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2488,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Adilet is Kazakhstan's legal database, not Tajikistan's official publisher; Tajikistan's Tax Code would be published through Tajik state legal sources, not a foreign country's system."
+  },
+  {
+   "id": "tj-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1606,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — this appears to be a fabricated or unverifiable citation; no confirmable record of this specific Constitutional Court decision exists in official Tajikistan sources."
+  }
+ ]
+}

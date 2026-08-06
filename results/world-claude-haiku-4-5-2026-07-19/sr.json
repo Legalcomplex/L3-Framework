@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Suriname — Source-Grounded Citation Reliability (SR)",
+ "country": "SR",
+ "jurisdiction": "Suriname",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:45:13.220008+00:00",
+ "results": [
+  {
+   "id": "sr-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 3007,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The decision date (2025-06-11) is in the future relative to when this query was made, making this claim implausible and unverifiable as an official published source."
+  },
+  {
+   "id": "sr-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2045,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The \"Wet auteursrecht 1913\" (Copyright Act 1913) predates modern online legislative databases. A 2025-04-16 publication date is implausible for an 1913 law's original publication."
+  },
+  {
+   "id": "sr-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1973,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The 'Arbeidswet 1963' exists as Surinamese labour legislation, but verification of this specific publication date and DNA attribution cannot be confirmed from reliable sources without access "
+  },
+  {
+   "id": "sr-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1546,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The publication date (2026-03-30) precedes the event date (2026-04-16), which is logically impossible for an invitation to a future event that hasn't occurred yet."
+  },
+  {
+   "id": "sr-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1397,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The decision is dated 2026-04-01 (future date), making it impossible to verify as a published official source in 2024."
+  },
+  {
+   "id": "sr-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1828,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The \"Wet auteursrecht 1913\" (Copyright Act 1913) predates modern Surinamese digital legislation databases. A 2025-04-16 publication date is implausible for an 1913 law's original promulgati"
+  },
+  {
+   "id": "sr-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1618,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The decision date (2026-06-11) is in the future, making this claim impossible. Official legal decisions cannot be published before they occur."
+  },
+  {
+   "id": "sr-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2566,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The publication date (2026-04-16) is in the future and therefore impossible. Additionally, an 1913 law would be historically published much earlier, not in 2026."
+  },
+  {
+   "id": "sr-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1177,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.**  The 'Arbeidswet 1963' is Surinamese legislation, not Brazilian. Brazil's Planalto publishes Brazilian federal laws, not Surinamese labor laws."
+  },
+  {
+   "id": "sr-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1309,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** BCN Ley Chile is Chile's National Congress Library, not a Surinamese legal source. Suriname's official legal publications use different institutional frameworks and languages (Dutch/English"
+  },
+  {
+   "id": "sr-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1716,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  SRU designation indicates Suriname jurisdiction, not Peru. Peru INDECOPI cannot issue decisions with Surinamese case identifiers. The source attribution is incorrect."
+  },
+  {
+   "id": "sr-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1394,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Wet auteursrecht 1913 predates Suriname's independence (1975), making a 2022 publication date for an 1913 law implausible as an original source."
+  }
+ ]
+}

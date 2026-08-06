@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Argentina — Source-Grounded Citation Reliability (AR)",
+ "country": "AR",
+ "jurisdiction": "Argentina",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:33:03.053530+00:00",
+ "results": [
+  {
+   "id": "ar-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1313,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.**  The date 2026-04-15 is in the future. This cannot be a published regulation. Additionally, the reference format appears fabricated or corrupted."
+  },
+  {
+   "id": "ar-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1940,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. InfoLEG is Argentina's legislative information system focused on laws, decrees, and regulatory acts—not administrative capture reserves for fish species. This appears to be a wildlife managemen"
+  },
+  {
+   "id": "ar-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1795,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Argentina's Supreme Court is the \"Corte Suprema de Justicia de la Nación,\" not \"Suprema Corte Buenos Aires.\" JUBA is not a recognized official publisher identifier for Argentine federal cou"
+  },
+  {
+   "id": "ar-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2155,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Law N° 5798 is a Buenos Aires city legislation from 2017, but the claim's formatting and specific details cannot be verified as accurate without access to official CEDOM records confirming "
+  },
+  {
+   "id": "ar-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1893,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  This decision cannot be from 2026 as that date is in the future. Additionally, no publicly available records confirm this specific case exists in Argentina's Federal Administrative Appeals Co"
+  },
+  {
+   "id": "ar-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1594,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The date 2025-11-19 is in the future, making this claim impossible. Additionally, no verification of this specific case exists in accessible Argentine labor court records."
+  },
+  {
+   "id": "ar-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1801,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The reference contains anachronistic elements (2026 future date) and lacks verifiable Argentine institutional documentation standards. CONAU circulars and RUNOR references cannot be authent"
+  },
+  {
+   "id": "ar-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1509,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The claim conflates jurisdictions. \"ESPECIE GATUZO - RESERVA ADMINISTRATIVA DE CAPTURA\" relates to Chilean fisheries regulation, not Argentine law, despite the question specifying Argentina"
+  },
+  {
+   "id": "ar-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 3379,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Argentina's supreme court is the Corte Suprema de Justicia de la Nación, not \"Suprema Corte Buenos Aires.\" JUBA is not a recognized official legal database abbreviation."
+  },
+  {
+   "id": "ar-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1437,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.**   Ley N° 5798 is an Argentine law, not a Brazilian municipal gazette. Querido Diário publishes Brazilian municipal documents, making this source attribution incorrect."
+  },
+  {
+   "id": "ar-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1793,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This decision appears to be from the Supreme Court of Justice of the Nation (CSJN), not the Federal Administrative Appeals Court, based on the case nature and citation patterns in Argentine jur"
+  },
+  {
+   "id": "ar-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1804,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The National Labor Appeals Court (Cámara Nacional de Apelaciones del Trabajo) is the correct issuing body for labor disputes in Argentina, but verification of this specific 2022 decision's "
+  }
+ ]
+}

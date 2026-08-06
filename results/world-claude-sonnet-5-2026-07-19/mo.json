@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Macao — Source-Grounded Citation Reliability (MO)",
+ "country": "MO",
+ "jurisdiction": "Macao",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:58:43.485440+00:00",
+ "results": [
+  {
+   "id": "mo-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2277,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this cites a future-dated 2026 issue that does not yet exist; I cannot verify unpublished or non-existent Boletim Oficial entries."
+  },
+  {
+   "id": "mo-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2825,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date (2026-01-23) is in the future relative to my knowledge, making this claim unverifiable and likely fabricated or inaccurate."
+  },
+  {
+   "id": "mo-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 3146,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This specific identifier-to-document mapping cannot be verified as accurate; Macau's Legal Portal identifiers and exact bibliographic details require direct database confirmation."
+  },
+  {
+   "id": "mo-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2254,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this cites a future/unverifiable 2026 Executive Order; no such Boletim Oficial publication can be confirmed as existing or authentic."
+  },
+  {
+   "id": "mo-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1932,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific case citation exists; the date (2025-12-05) is in the future relative to my knowledge cutoff, making verification impossible."
+  },
+  {
+   "id": "mo-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1922,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify specific identifiers like \"mo-pj-45920\" against Macau's Legal Portal database; this appears to be a fabricated or unverifiable reference."
+  },
+  {
+   "id": "mo-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2089,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This identifier appears fabricated—Macau's Boletim Oficial doesn't use such numbering, and 2026 is a future date, making verification impossible."
+  },
+  {
+   "id": "mo-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2062,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Macau court decisions are published by the Macau Courts (Tribunais de Macau/法院) official website, not a source named \"Macau Court Decisions.\""
+  },
+  {
+   "id": "mo-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2122,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This appears fabricated: identifier format, law number/year combination, and specific date cannot be verified against actual Macau Legal Portal records available."
+  },
+  {
+   "id": "mo-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1764,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Macao's Ordem Executiva is published in Macau's Boletim Oficial, not by China's State Taxation Administration website, an unrelated foreign authority."
+  },
+  {
+   "id": "mo-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1567,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The case number \"36/2023\" cannot correspond to a decision dated 2022-12-05, since 2023 cases postdate December 2022 filings."
+  },
+  {
+   "id": "mo-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1592,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Macao's official gazette is the \"Boletim Oficial de Macau,\" not KLIC—which is Korea's legal database, irrelevant to Macao legislation."
+  }
+ ]
+}

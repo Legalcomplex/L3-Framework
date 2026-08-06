@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Angola — Source-Grounded Citation Reliability (AO)",
+ "country": "AO",
+ "jurisdiction": "Angola",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:32:58.356960+00:00",
+ "results": [
+  {
+   "id": "ao-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2166,
+   "verdict": true,
+   "correct": true,
+   "raw": "# Evaluation: True  **Explanation:** AngoLEX is Angola's official legislative portal. Lei n.º 8/22 of April 14, 2022, concerning tax benefits, is a legitimate Angolan legal source properly documented "
+  },
+  {
+   "id": "ao-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1644,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  Lex.ao is a private legal database, not an official government publisher. Angola's official legal sources are published in the *Diário da República* (Official Gazette)."
+  },
+  {
+   "id": "ao-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1622,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The identifier format and date appear internally inconsistent. Constitutional court decision identifiers typically reference past decisions, not future dates (2026-03-11 is in the future fr"
+  },
+  {
+   "id": "ao-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1884,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Angola's Supreme Court is the \"Supremo Tribunal de Justiça,\" not \"Tribunal Supremo.\" Additionally, the 2026 date is in the future, making this claim implausible."
+  },
+  {
+   "id": "ao-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1582,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Penal Code is Lei n.º 14/92, de 6 de Julho. Lei n.º 38/20 exists but addresses a different legal matter, not the primary Penal Code."
+  },
+  {
+   "id": "ao-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1502,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Lex.ao is a free legal platform, but official Angolan legal norms are published in the Diário da República (Official Gazette), not exclusively through Lex.ao."
+  },
+  {
+   "id": "ao-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1560,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The publication date (2023-04-14) contradicts the law's enactment date (2022-04-14). AngoLEX could not have published a law four years before it was enacted."
+  },
+  {
+   "id": "ao-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1665,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Lex.ao is a free legal platform, but \"Norma Regulamentar n.º 6/23 de 09 de agosto\" cannot be verified as an authentic official Angolan legal source without access to Angola's official gazet"
+  },
+  {
+   "id": "ao-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 3291,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '1076/2027' cannot correspond to a 2026 decision ('Acórdão N.º 1076/2026'). The year in the identifier should match the decision year."
+  },
+  {
+   "id": "ao-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1519,
+   "verdict": false,
+   "correct": true,
+   "raw": "# Evaluation Result: **False**  **Explanation:** The decision date (2026-04-17) is in the future, making this claim impossible. Court decisions cannot be dated after the current date."
+  },
+  {
+   "id": "ao-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1014,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Angola's Penal Code (Lei n.º 38/20) was published in Angola's official gazette, not Cameroon's. Different African nations have separate legal publication systems."
+  },
+  {
+   "id": "ao-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 6188,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This document pertains to Angola, not the Democratic Republic of Congo (DRC). The source portal cited is inappropriate for Angolan legislation."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Kenya — Source-Grounded Citation Reliability (KE)",
+ "country": "KE",
+ "jurisdiction": "Kenya",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:39:31.173502+00:00",
+ "results": [
+  {
+   "id": "ke-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2444,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Accountants (Quality Assurance Review) Regulations are not a recognized official legal instrument published by Kenya Law as of the specified date. No evidence confirms this regulation e"
+  },
+  {
+   "id": "ke-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1537,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.**  The decision is dated 2026-03-27 (future date). No court decisions from 2026 exist yet, making this claim impossible to verify as accurate or authentic."
+  },
+  {
+   "id": "ke-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1642,
+   "verdict": false,
+   "correct": false,
+   "raw": "# Answer: **False**  The Kenya Competition Authority does not publish decisions in this format or with this case name structure. No verifiable record of this specific 2025 decision exists in official "
+  },
+  {
+   "id": "ke-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1588,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The Kenya National Environment Tribunal does not publish decisions under that case naming format. Case citations and tribunal structure do not align with standard Kenyan environmental tribuna"
+  },
+  {
+   "id": "ke-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1906,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The Access to Information Act 2016 exists in Kenya, but \"General Regulations\" with that exact title and 2023 publication date cannot be verified through official Kenya Law sources."
+  },
+  {
+   "id": "ke-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1889,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The decision is dated 2026-03-26, which is in the future. No official legal source can be published on a date that has not yet occurred."
+  },
+  {
+   "id": "ke-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2699,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Accountants (Quality Assurance Review) Regulations is a Kenyan legal instrument, not a Seychellois one. It would be published in Kenya's Official Gazette, not Seychelles'."
+  },
+  {
+   "id": "ke-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1498,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The citation format appears incomplete and lacks sufficient identifying information to verify publication by Kenya Tax Appeals Tribunal. The truncated title and missing case number prevent pr"
+  },
+  {
+   "id": "ke-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1202,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Kenya Competition Authority (CAK) publishes competition-related decisions, but this specific decision title and date cannot be verified as an official CAK publication without documentar"
+  },
+  {
+   "id": "ke-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1395,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This decision would be from Kenya's Environmental and Land Court or appellate tribunal, not Mauritius Supreme Court. The parties (NEMA) and case structure indicate a Kenyan jurisdiction mat"
+  },
+  {
+   "id": "ke-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1219,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Kenya's access to information framework operates under the Constitution (2010) and the Access to Information Act (2016), not standalone 2020 regulations of that title via NCLR."
+  },
+  {
+   "id": "ke-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1414,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The Kenya Tax Appeals Tribunal does not publish individual decisions under this formal citation format. Kenyan tribunal decisions are typically reported through Law Reports or official gazett"
+  }
+ ]
+}

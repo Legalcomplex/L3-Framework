@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Portugal — Source-Grounded Citation Reliability (PT)",
+ "country": "PT",
+ "jurisdiction": "Portugal",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.4167,
+ "correct": 5,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:23:09.268428+00:00",
+ "results": [
+  {
+   "id": "pt-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1851,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-03-12 is in the future, making this citation impossible to verify as a genuine published decision."
+  },
+  {
+   "id": "pt-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3116,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific fragment, date, or source attribution without access to the Portuguese Parliament's Open Data records."
+  },
+  {
+   "id": "pt-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2586,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific CAAD identifier or its 2026 date without access to the actual database records."
+  },
+  {
+   "id": "pt-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2574,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Acórdãos numbered like \"Acórdão 9/2026\" are typically Supreme Court/uniformizing decisions; Constitutional Court rulings use different numbering conventions, plus 2026 dating is suspect."
+  },
+  {
+   "id": "pt-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2953,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-02-05 is in the future and thus impossible; the citation cannot reference an actually published decision."
+  },
+  {
+   "id": "pt-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2543,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Tribunal de Contas issues \"Acórdãos,\" not \"Sentenças,\" and this citation format doesn't match its official publication conventions."
+  },
+  {
+   "id": "pt-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2528,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier ends in \".P2\" but the cited decision is \".P1\" — mismatched suffixes; also the 2026 date is implausible."
+  },
+  {
+   "id": "pt-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 3230,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific fragment, date, or attribution to Parliament Open Data without access to authoritative sources; unconfirmed."
+  },
+  {
+   "id": "pt-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2055,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. CAAD process identifiers embed the filing year; \"733/2026-T\" cannot correspond to \"Processo nº 733/2025-T\"—the year digits differ, indicating a mismatch."
+  },
+  {
+   "id": "pt-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1944,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Portuguese \"Acórdão\" jurisprudence is issued by Portuguese courts (e.g., Supremo Tribunal de Justiça), not Germany's Bundesfinanzhof."
+  },
+  {
+   "id": "pt-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2749,
+   "verdict": true,
+   "correct": false,
+   "raw": "Cannot verify as True. The case number format appears plausible, but I cannot confirm this specific decision's existence or details."
+  },
+  {
+   "id": "pt-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1435,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. A Portuguese court decision (Sentença) would be published in Portuguese official sources, not Gibraltar's legal database."
+  }
+ ]
+}

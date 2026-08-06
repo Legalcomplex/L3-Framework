@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Monaco — Source-Grounded Citation Reliability (MC)",
+ "country": "MC",
+ "jurisdiction": "Monaco",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:57:49.574973+00:00",
+ "results": [
+  {
+   "id": "mc-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1938,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this is a future date (2026-03-05), so the decision cannot have been rendered or published yet; the citation is unverifiable/fabricated."
+  },
+  {
+   "id": "mc-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2448,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — a Décision Souveraine dated 21 January 2026 cannot be published in the Journal de Monaco on that same day."
+  },
+  {
+   "id": "mc-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 3057,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This citation references a future date (April 2026) that has not yet occurred, making verification impossible and the claim unreliable."
+  },
+  {
+   "id": "mc-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2154,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears fabricated: a specific 2026 Ordonnance Souveraine number cannot be verified, and future-dated official publications cannot be confirmed as authentic in advance."
+  },
+  {
+   "id": "mc-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 4014,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This citation references a future date (2026) that has not yet occurred, making verification impossible and the claim unreliable/fabricated."
+  },
+  {
+   "id": "mc-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2073,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This is a future-dated, unverifiable claim—I cannot confirm a specific 2026 Sovereign Ordinance number, title, or Journal de Monaco publication details exist."
+  },
+  {
+   "id": "mc-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1828,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This date is in the future relative to my knowledge cutoff, and the identifier cannot be verified as a real, existing Juricaf record."
+  },
+  {
+   "id": "mc-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1957,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Monaco's official legal texts (Décisions Souveraines) are published in the Journal de Monaco, not on the UK's legislation.gov.uk platform."
+  },
+  {
+   "id": "mc-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1990,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This date is in the future relative to my knowledge cutoff, and I cannot verify a fabricated-looking identifier for an unpublished decision."
+  },
+  {
+   "id": "mc-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2284,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Monaco publishes official acts in the *Journal de Monaco*, not the *Diário da República*, which is Portugal's official gazette, not Monaco's."
+  },
+  {
+   "id": "mc-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1822,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Tribunal Suprême is Monaco's court; its decisions aren't published by Ireland's Tax Appeals Commission, an unrelated foreign body."
+  },
+  {
+   "id": "mc-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1710,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Monaco's official legal source is the *Journal de Monaco*, not \"UK Legislation\" — Sovereign Ordinances are never published via UK legislative channels."
+  }
+ ]
+}

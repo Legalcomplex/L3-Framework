@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Madagascar — Source-Grounded Citation Reliability (MG)",
+ "country": "MG",
+ "jurisdiction": "Madagascar",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:58:12.589297+00:00",
+ "results": [
+  {
+   "id": "mg-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2125,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific citation exists—Madagascar lacks a widely-accessible, verifiable official jurisprudence database matching this precise description and date."
+  },
+  {
+   "id": "mg-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2351,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This citation lacks verifiable specificity—case number \"161\" and Formation de contrôle details cannot be confirmed as accurately published via Juricaf's database."
+  },
+  {
+   "id": "mg-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3625,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** No legitimate legal system dated 2026-01-20 exists yet (future date), and \"Madagascar National Legislation Center\" is not a verifiable official publishing body/source."
+  },
+  {
+   "id": "mg-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2135,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This decision references a future date (2026-03-03) beyond current verifiable records, making it impossible to confirm as an authentic, existing official publication."
+  },
+  {
+   "id": "mg-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2241,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** \"Conseil de mise en état\" is a French procedural law term/institution, not a verifiable Malagasy Ministry of Justice database publication; the citation appears fabricated."
+  },
+  {
+   "id": "mg-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1995,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify specific Juricaf identifiers or case citations for Madagascar's Supreme Court without access to the actual database records."
+  },
+  {
+   "id": "mg-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2857,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This identifier and record appear fabricated—no verifiable public record matches this specific alphanumeric code in Madagascar's Ministry of Justice database."
+  },
+  {
+   "id": "mg-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2113,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier's docket number \"162\" mismatches the claimed docket number \"161,\" creating an internal inconsistency indicating a citation error."
+  },
+  {
+   "id": "mg-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1628,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Madagascar has no official body called \"National Legislation Center\"; this appears to be a fabricated or non-official citation source for legal texts."
+  },
+  {
+   "id": "mg-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1721,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Madagascar's High Constitutional Court (HCC) decisions are not published by the \"Mauritius Supreme Court Judgments\" — a different country's judicial body entirely."
+  },
+  {
+   "id": "mg-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1573,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** \"Conseil de mise en état\" is a French procedural law term, not a documented Madagascar Ministry of Justice database publication; this citation appears fabricated."
+  },
+  {
+   "id": "mg-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1537,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Madagascar's Cour suprême rulings would not be published by Tanzania's Attorney General's Office, an unrelated foreign jurisdiction's administrative system."
+  }
+ ]
+}

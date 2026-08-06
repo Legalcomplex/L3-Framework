@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Turks and Caicos Islands — Source-Grounded Citation Reliability (TC)",
+ "country": "TC",
+ "jurisdiction": "Turks and Caicos Islands",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:25:30.021667+00:00",
+ "results": [
+  {
+   "id": "tc-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1962,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Turks and Caicos Revised Laws are published by the Attorney General's Chambers; UK Statutory Instruments are separate, distinct sources."
+  },
+  {
+   "id": "tc-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2033,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-02-19 is in the future, making this bibliographic claim impossible to verify as currently published."
+  },
+  {
+   "id": "tc-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2594,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Turks and Caicos Islands lacks a Complaints Commissioner/Ombudsman Ordinance; this citation appears fabricated, not matching authentic Revised Laws."
+  },
+  {
+   "id": "tc-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2294,
+   "verdict": false,
+   "correct": false,
+   "raw": "False: The date [2026] and future publication (March 2026) are implausible for verification; this citation appears fabricated or unverifiable."
+  },
+  {
+   "id": "tc-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2720,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify the specific \"01.09\" citation format or 2021 publication date; this appears fabricated without reliable confirmation."
+  },
+  {
+   "id": "tc-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2227,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The citation year [2026] with a 2026 decision date is internally inconsistent with a 2025 case identifier; likely fabricated."
+  },
+  {
+   "id": "tc-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2487,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Turks and Caicos Islands legislation is not published via Curaçao Government channels; these are separate, unrelated jurisdictions entirely."
+  },
+  {
+   "id": "tc-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2340,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier states CL 53 of 2021, but the cited case is CL 53 of 2020—the years conflict."
+  },
+  {
+   "id": "tc-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1788,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific citation; the Turks and Caicos Islands Ombudsman legislation and its exact 2019 publication details remain unconfirmed."
+  },
+  {
+   "id": "tc-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1995,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier says \"CL 17 of 2024\" but the citation shows \"CL 17 of 2023\"—mismatched years indicate inconsistency."
+  },
+  {
+   "id": "tc-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1832,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. While the Integrity Commission Ordinance exists in TCI law, I cannot verify this specific citation format or 2018 publication details."
+  },
+  {
+   "id": "tc-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1832,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. TCASC denotes Turks and Caicos Supreme Court, not the BVI Commercial Court; the publisher attribution is incorrect."
+  }
+ ]
+}

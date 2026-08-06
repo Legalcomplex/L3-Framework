@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Uzbekistan — Source-Grounded Citation Reliability (UZ)",
+ "country": "UZ",
+ "jurisdiction": "Uzbekistan",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:27:27.115189+00:00",
+ "results": [
+  {
+   "id": "uz-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1868,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The publication date 2025-12-30 is in the future and cannot be verified; likely fabricated or inaccurate bibliographic detail."
+  },
+  {
+   "id": "uz-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2689,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a court ruling or procedural document on bankruptcy liquidation, not a registered departmental normative act."
+  },
+  {
+   "id": "uz-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2040,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The truncated title references a constitutional law about the Constitutional Court, suggesting legislation—not a court decision—making the attribution likely incorrect."
+  },
+  {
+   "id": "uz-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3083,
+   "verdict": true,
+   "correct": true,
+   "raw": "I cannot verify this specific claim as True or False without access to regulation.gov.uz records; I lack reliable confirmation of this document."
+  },
+  {
+   "id": "uz-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2432,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2025-12-29 is in the future and cannot be verified; this citation appears fabricated or unconfirmed."
+  },
+  {
+   "id": "uz-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2235,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Ministry of Justice registry timeline and this tax-deferral title don't match a verified 2001-09-28 departmental act registration."
+  },
+  {
+   "id": "uz-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2571,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The 2026-12-30 date is in the future, making this citation impossible to verify as legitimately published."
+  },
+  {
+   "id": "uz-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2550,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Adilet is Kazakhstan's legal system, but this document concerns Uzbekistan's jurisdiction, creating a mismatch inconsistent with the stated source."
+  },
+  {
+   "id": "uz-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 4147,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.**  The truncated title references a law \"On the Constitutional Court,\" suggesting a legislative act, not a court decision; details appear unverifiable/inconsistent."
+  },
+  {
+   "id": "uz-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 3051,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The title is in Uzbek and concerns Uzbekistan's legislation; Kazakhstan's Adilet system wouldn't publish Uzbek regulations—likely Lex.uz instead."
+  },
+  {
+   "id": "uz-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1613,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The date 2026-12-29 is in the future, making this citation impossible to verify as a published source."
+  },
+  {
+   "id": "uz-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 3926,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This titles a Presidential Decree or Cabinet Resolution on tax debt relief, not a departmental act requiring ministerial registration."
+  }
+ ]
+}

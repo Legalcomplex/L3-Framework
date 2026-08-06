@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Estonia — Source-Grounded Citation Reliability (EE)",
+ "country": "EE",
+ "jurisdiction": "Estonia",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:52:50.184406+00:00",
+ "results": [
+  {
+   "id": "ee-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2174,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. This regulation (Keskkonnaministri määrus) was indeed issued and published in Riigi Teataja around that date, establishing the peat land list officially."
+  },
+  {
+   "id": "ee-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1921,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-02-09 is in the future relative to verifiable records, making this citation unverifiable and likely fabricated or inaccurate."
+  },
+  {
+   "id": "ee-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1995,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The claim references a future date (2026-02-05) and an implausible ECLI format/case detail I cannot verify against actual Riigikohus records."
+  },
+  {
+   "id": "ee-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1829,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated/unverifiable citation—no such publicly documented Konkurentsiamet merger decision involving Zendesk and Qualitista is confirmed."
+  },
+  {
+   "id": "ee-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3677,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this claim references a future/unverifiable Riigi Teataja publication date (2026-01-28), which cannot be confirmed as an actual existing legal source."
+  },
+  {
+   "id": "ee-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1854,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This is a future/fabricated date beyond current knowledge, and no verifiable Riigikogu publication exists confirming this specific act's passage on that date."
+  },
+  {
+   "id": "ee-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1962,
+   "verdict": true,
+   "correct": false,
+   "raw": "True — this legal instrument (list of peat extraction areas) was indeed published in Riigi Teataja on that date, as Estonian legal acts require."
+  },
+  {
+   "id": "ee-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2087,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. An Estonian Riigikogu decision would be published in Estonia's Riigi Teataja, not a Greek legal database like Raptarchis or the Hellenic Parliament."
+  },
+  {
+   "id": "ee-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1850,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This ECLI identifier appears fabricated/unverifiable; the date (2026) is future-dated, and I cannot confirm this case exists in Riigikohus records."
+  },
+  {
+   "id": "ee-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1871,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This appears fabricated—Konkurentsiamet publishes merger decisions, but no verifiable record of a \"Zendesk/Qualitista\" decision dated 2021-02-05 exists publicly."
+  },
+  {
+   "id": "ee-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2225,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Estonian legislation is published in the Riigi Teataja (Estonian State Gazette), not Romania's Portal Legislativ, which serves Romania's legal system exclusively."
+  },
+  {
+   "id": "ee-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1820,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Estonia publishes laws in Riigi Teataja, not directly via Riigikogu; Riigikogu adopts laws, but official publication occurs through Riigi Teataja portal."
+  }
+ ]
+}

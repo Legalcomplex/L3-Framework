@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Cook Islands — Source-Grounded Citation Reliability (CK)",
+ "country": "CK",
+ "jurisdiction": "Cook Islands",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:51:28.631621+00:00",
+ "results": [
+  {
+   "id": "ck-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1850,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Cook Islands does not have a \"Statistics Act 2015-16\" in this format; the actual statute is the Statistics Act 2008."
+  },
+  {
+   "id": "ck-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2610,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific citation exists in PacLII's Cook Islands database; the title, date, and source combination appears potentially fabricated or unverifiable."
+  },
+  {
+   "id": "ck-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2161,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Cook Islands' banking legislation is the Banking Act 2003 (or similar), and I cannot verify this specific 2011 citation's accuracy."
+  },
+  {
+   "id": "ck-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1788,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific citation exists in PacLII's database; case numbers, dates, and details may be fabricated."
+  },
+  {
+   "id": "ck-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1773,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this citation exists—no Cook Islands \"Trading Hours Act 1993-94\" is confirmed in known legislative records or databases."
+  },
+  {
+   "id": "ck-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2488,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation exists in PacLII's Cook Islands database; the case details appear fabricated or unconfirmed."
+  },
+  {
+   "id": "ck-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1767,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Cook Islands Statistics Act is dated 2015, but \"2015-16\" as a citation format and the specific publication details cannot be verified as accurate."
+  },
+  {
+   "id": "ck-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1886,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The \"Accommodation Levy Act 1978-79\" is a Cook Islands statute, not published via Tonga's Attorney General Legislation & Judgments source."
+  },
+  {
+   "id": "ck-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1587,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Laws of Fiji (laws.gov.fj) publishes Fiji's legislation, not the Cook Islands' — a Banking Act 2011 there would belong to Fiji's official legal source, not Cook Islands'."
+  },
+  {
+   "id": "ck-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1594,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. \"CKHC\" denotes Cook Islands High Court; the citation is inconsistent with Federal Court of Australia Judgments as claimed publisher."
+  },
+  {
+   "id": "ck-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2225,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** I cannot verify this citation exists — I have no reliable record of a \"Trading Hours Act 1993-94\" in Cook Islands legislation via that portal/date."
+  },
+  {
+   "id": "ck-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2658,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** CKHC denotes Cook Islands High Court, not Marshall Islands Judiciary. The citation neutral code \"CKHC\" specifically identifies Cook Islands as the jurisdiction."
+  }
+ ]
+}

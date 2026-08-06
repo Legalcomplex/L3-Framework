@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Singapore — Source-Grounded Citation Reliability (SG)",
+ "country": "SG",
+ "jurisdiction": "Singapore",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:44:39.829179+00:00",
+ "results": [
+  {
+   "id": "sg-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1587,
+   "verdict": true,
+   "correct": true,
+   "raw": "**True**  The Competition Commission of Singapore (CCCS) regularly publishes enforcement decisions regarding competition law violations. Price-fixing cases are typical CCCS enforcement matters publish"
+  },
+  {
+   "id": "sg-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1535,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The case citation format \"[2026] SGHC(I) 3\" indicates Singapore High Court (International), not Singapore International Commercial Court. These are distinct judicial bodies in Singapore's c"
+  },
+  {
+   "id": "sg-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1437,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Agency for Science, Technology and Research Act was enacted in 1991, not 1990. Singapore Statutes Online would reflect the correct enactment date of 1991."
+  },
+  {
+   "id": "sg-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2827,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  This decision cannot be verified as a genuine Singapore eLitigation Court Judgment. The future date (2026-03-19) and the specific case name lack confirmation in accessible official Singapore "
+  },
+  {
+   "id": "sg-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1809,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The date format (2025-07-31) is in the future relative to the knowledge cutoff. I cannot verify this decision's authenticity or confirm CCCS publication."
+  },
+  {
+   "id": "sg-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1578,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The case citation [2025] SGHC(I) 22 indicates Singapore High Court (International), not Singapore International Commercial Court. These are distinct judicial entities with different jurisdi"
+  },
+  {
+   "id": "sg-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1443,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Competition Commission of Singapore (CCS) was renamed to Competition and Consumer Commission of Singapore (CCCS) only in 2016. In 2012, the issuing body would have been called CCS, not "
+  },
+  {
+   "id": "sg-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2414,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The citation format [2026] SGHC(I) 3 indicates Singapore High Court (International), not Indonesia Constitutional Court. SGHC is Singapore's court designation."
+  },
+  {
+   "id": "sg-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1069,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Agency for Science, Technology and Research Act is a Singapore statute, not Vietnamese legislation. Thu Vien Phap Luat is a Vietnamese legal database, making this source attribution incorre"
+  },
+  {
+   "id": "sg-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2139,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Singapore eLitigation publishes court documents and filings, not official judgment compilations. Official judgments are published through Singapore Law Reports or the Singapore Courts websi"
+  },
+  {
+   "id": "sg-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1295,
+   "verdict": true,
+   "correct": false,
+   "raw": "# Evaluation: TRUE  **Explanation:** The CCCS regularly publishes enforcement decisions and press releases regarding competition violations. This decision aligns with CCCS's statutory mandate and typi"
+  },
+  {
+   "id": "sg-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1255,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This is a Singapore High Court (International) decision, not a Philippine Supreme Court decision. The citation format [2025] SGHC(I) clearly indicates Singapore jurisdiction, not Philippine"
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Colombia — Source-Grounded Citation Reliability (CO)",
+ "country": "CO",
+ "jurisdiction": "Colombia",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 11,
+ "blocked": 0,
+ "unparsed": 1,
+ "errors": [],
+ "accuracy": 0.6364,
+ "correct": 7,
+ "parse_rate": 0.9167,
+ "passed": false,
+ "timestamp": "2026-07-19T08:10:35.668257+00:00",
+ "results": [
+  {
+   "id": "co-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 5752,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Sentencia T-522/25 dated 2025-12-18 is implausible; the date is in the future relative to typical publication, and unverifiable."
+  },
+  {
+   "id": "co-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2411,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Colombian Constitutional Court rulings are officially published by the Court itself; \"Datos Abiertos\" isn't the authoritative source. Also, 2026 dating is suspect."
+  },
+  {
+   "id": "co-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 4183,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date (2026-01-20) is in the future relative to any current knowledge, making this citation unverifiable and likely fabricated."
+  },
+  {
+   "id": "co-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2948,
+   "verdict": true,
+   "correct": true,
+   "raw": "I cannot verify this specific decision's authenticity or publication details, so I cannot confirm this claim as True.  False — insufficient basis to confirm this exact citation, date, and issuing auth"
+  },
+  {
+   "id": "co-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2583,
+   "verdict": null,
+   "correct": false,
+   "raw": "I cannot reliably verify this specific claim. Ley 605 de 2000's existence, exact date, and SUIN-Juriscol publication require checking authoritative Colombian sources directly."
+  },
+  {
+   "id": "co-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 7038,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Colombian laws numbered 2429 in 2024 is doubtful; the date 2024-01-01 appears fabricated, lacking verifiable official publication details."
+  },
+  {
+   "id": "co-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2553,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Colombian Constitutional Court \"T\" sentence numbering resets yearly; a T-522/25 dated 2024-12-18 mismatches the 2025 year suffix."
+  },
+  {
+   "id": "co-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2579,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Sentencia T-008/26 dated 2025-01-30 is implausible: T-numbered rulings from 2026 wouldn't exist in early 2025. Fabricated citation."
+  },
+  {
+   "id": "co-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1887,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Jurisdiction is Colombia (Procuraduría Provincial de Bucaramanga), not Peru's OSCE; also the 2026 date is implausibly future."
+  },
+  {
+   "id": "co-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2174,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '28553' would not correspond to a document labeled 'RE28552-2022'; the numbers are mismatched, indicating inconsistency."
+  },
+  {
+   "id": "co-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2592,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Colombian laws are published in the Diario Oficial, not Argentina's BCRA Communications, which govern Argentine banking regulations entirely."
+  },
+  {
+   "id": "co-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 4089,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. \"Querido Diário\" is a Brazilian project for municipal gazettes; Colombian laws are published via Diario Oficial, not Brazilian sources."
+  }
+ ]
+}

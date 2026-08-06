@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — United Arab Emirates — Source-Grounded Citation Reliability (AE)",
+ "country": "AE",
+ "jurisdiction": "United Arab Emirates",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:48:17.815238+00:00",
+ "results": [
+  {
+   "id": "ae-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2040,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This appears to be a fabricated or unverifiable citation—the date (2026-01-30) is in the future, making authenticity impossible to confirm currently."
+  },
+  {
+   "id": "ae-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 5207,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific citation's accuracy—exact regulation numbers, dates, and publication details require direct confirmation from official ADGM legal sources."
+  },
+  {
+   "id": "ae-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1834,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This claim references a future-dated decision (2026-05-05) that cannot be verified as an actual existing published DIFC Courts judgment."
+  },
+  {
+   "id": "ae-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2136,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** DIFC Contract Law No. 6 of 2004 is a genuine DIFC law, but claimed \"updated 2024\" status and specific database citation details cannot be verified as stated."
+  },
+  {
+   "id": "ae-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2187,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This claim cites unverifiable specifics—exact issue numbering, edition labeling, and precise publication date—that cannot be confirmed as accurate."
+  },
+  {
+   "id": "ae-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2029,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The date (2026-03-27) is in the future relative to current knowledge, making this citation unverifiable and likely fabricated or speculative."
+  },
+  {
+   "id": "ae-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 5494,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — this citation appears fabricated/unverifiable; 2026 is a future date and I cannot confirm ADGM Courts issued this specific judgment record."
+  },
+  {
+   "id": "ae-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2132,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** ADGM (Abu Dhabi Global Market) is a UAE financial free zone; the Saudi Central Bank (SAMA) has no jurisdiction to publish its courts regulations."
+  },
+  {
+   "id": "ae-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2172,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This citation appears fabricated—no verifiable DIFC Courts record matches this case number, parties, and date combination in official databases."
+  },
+  {
+   "id": "ae-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1659,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The DIFC Contract Law No. 6 of 2004 is issued by the Dubai International Financial Centre Authority, not Israel's Knesset Open Data project."
+  },
+  {
+   "id": "ae-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1819,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Jordan Legislation & Opinion Bureau publishes Jordanian legal materials, not UAE's Abu Dhabi Official Gazette, which is issued by Abu Dhabi's own government authorities."
+  },
+  {
+   "id": "ae-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1661,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — I cannot verify this specific gazette issue number, date, and publisher combination exists; likely a fabricated or unverifiable citation detail."
+  }
+ ]
+}

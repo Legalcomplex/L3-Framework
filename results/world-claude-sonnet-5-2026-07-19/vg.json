@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — British Virgin Islands — Source-Grounded Citation Reliability (VG)",
+ "country": "VG",
+ "jurisdiction": "British Virgin Islands",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:05:20.726975+00:00",
+ "results": [
+  {
+   "id": "vg-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2624,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This decision is dated 2026-09-02, a future date, making it impossible to verify or confirm as an actual published judgment currently."
+  },
+  {
+   "id": "vg-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2154,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this appears to be a fabricated/unverifiable citation; no such BVI Commercial Court decision with this exact case name and future date can be confirmed authentic."
+  },
+  {
+   "id": "vg-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2270,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears fabricated: the case name, future-dated judgment (2026), and specific claim number combination cannot be verified as an authentic BVI Commercial Court record."
+  },
+  {
+   "id": "vg-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2222,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this appears to be a fabricated or unverifiable citation; no such BVI Commercial Court decision with that date/parties is publicly confirmed."
+  },
+  {
+   "id": "vg-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2383,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific case citation, docket number, and date combination against actual BVI Commercial Court records or databases."
+  },
+  {
+   "id": "vg-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2149,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific claim numbers, case names, and dates in legal citations are frequently fabricated or misremembered by AI systems."
+  },
+  {
+   "id": "vg-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2145,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific case citation—the identifier, parties, and date combination appears fabricated or unverifiable against actual BVI court records."
+  },
+  {
+   "id": "vg-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2207,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** I cannot verify this specific case citation exists in official BVI Commercial Court records; the case name, date, or publisher details cannot be confirmed as accurate."
+  },
+  {
+   "id": "vg-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1846,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** I cannot verify this specific case citation exists — I have no reliable record of this decision, party names, or date, and fabricated legal citations are common errors."
+  },
+  {
+   "id": "vg-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1973,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The case name/parties suggest a different jurisdiction (likely Egypt/Saudi Arabia related), and BVI courts, not Bermuda Supreme Court, would publish BVI decisions."
+  },
+  {
+   "id": "vg-src-f05",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 3166,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific claim—case numbers, party names, and dates for BVI Commercial Court judgments require direct confirmation from official court records."
+  },
+  {
+   "id": "vg-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1664,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The BVI is a distinct jurisdiction from the Bahamas; Bahamas Supreme Court Judgments would not publish BVI decisions, and the date is future/unverifiable."
+  }
+ ]
+}

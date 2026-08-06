@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Oman — Source-Grounded Citation Reliability (OM)",
+ "country": "OM",
+ "jurisdiction": "Oman",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:00:06.634593+00:00",
+ "results": [
+  {
+   "id": "om-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2157,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** No verified official Omani decree titled exactly this exists on decree.om for that date; this appears to be a fabricated or unverifiable bibliographic citation requiring confirmation from p"
+  },
+  {
+   "id": "om-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2494,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Oman's Currency Law/Monetary Council originates from 1974 decrees, but this specific citation format/number combination cannot be verified as accurate without direct source access."
+  },
+  {
+   "id": "om-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2886,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific bibliographic claim — I have no reliable record confirming this exact regulation, issuer, or publication date from Oman's CMA."
+  },
+  {
+   "id": "om-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2192,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — Oman's Supreme Committee COVID-19 decisions were announced via official media/press statements, not formally published in the Qanoon.om legal database."
+  },
+  {
+   "id": "om-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2117,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This appears to be a fabricated/unverifiable citation; Oman lacks a \"decree.om\" portal, and this specific FSA decision cannot be authenticated."
+  },
+  {
+   "id": "om-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2891,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Oman's modern legal/legislative framework and Royal Decree system began after 1970, but a decree numbered 21/74 with this specific citation format is unverifiable without direct source conf"
+  },
+  {
+   "id": "om-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2153,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — Oman lacks a public \"Decrees Portal\" (decree.om) as an official gazette; laws are officially published via the Official Gazette (Sultanate of Oman)."
+  },
+  {
+   "id": "om-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2398,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — Oman's Currency Law dates from 1974 (per the citation itself), so a 1976-03-27 publication date is inconsistent and unverifiable."
+  },
+  {
+   "id": "om-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1662,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Jordan's Legislation & Opinion Bureau publishes Jordanian law, not Omani regulations; this citation misattributes an Oman-related instrument's official source."
+  },
+  {
+   "id": "om-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1630,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Oman's Supreme Committee decisions are not published by Saudi Arabia's central bank (SAMA); this mismatches jurisdiction, issuing authority, and publication source entirely."
+  },
+  {
+   "id": "om-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1626,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Oman's regulator is the Financial Services Authority, but Israel's Knesset open-source data platform would not publish Omani regulatory decisions officially."
+  },
+  {
+   "id": "om-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2538,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — Oman's modern legal/decree system began after Sultan Qaboos's 1970 accession, and Royal Decree numbering like 21/74 corresponds to 1974, not 1972."
+  }
+ ]
+}

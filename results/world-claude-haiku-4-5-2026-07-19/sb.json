@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Solomon Islands — Source-Grounded Citation Reliability (SB)",
+ "country": "SB",
+ "jurisdiction": "Solomon Islands",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:44:23.793038+00:00",
+ "results": [
+  {
+   "id": "sb-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1465,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** \"Chapter 180\" is not a standard legislative citation format in Solomon Islands law. The jurisdiction uses cap numbers and section references, not chapter designations."
+  },
+  {
+   "id": "sb-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1563,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Solomon Islands Parliament has not published an 'Education Act 2023' as of available records. No verifiable official legislative document with this title and date exists in Solomon Islands "
+  },
+  {
+   "id": "sb-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1522,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Act is from 2002, predating the 2024 portal date. While the portal may host it, the publication date refers to original enactment, not portal hosting."
+  },
+  {
+   "id": "sb-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1682,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** No evidence exists that a 'Citizenship (Amendment) Act 2023' was enacted by Solomon Islands Parliament. This appears to be a fabricated legislative reference."
+  },
+  {
+   "id": "sb-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1564,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The citation format is inconsistent with Solomon Islands legislative numbering conventions. LN 15/2015 would typically indicate a 2015 legislative notice, not a 2014 ordinance. The date misma"
+  },
+  {
+   "id": "sb-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2354,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The title is internally inconsistent. An act cannot be from 2022 and simultaneously be published in 2023 under a different year designation. The naming convention appears contradictory."
+  },
+  {
+   "id": "sb-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2059,
+   "verdict": false,
+   "correct": true,
+   "raw": "# Answer: False  **Explanation:** Solomon Islands legislation is organized by statute name, not generic chapter numbers. \"Chapter 180\" lacks proper legal citation format and specificity required for o"
+  },
+  {
+   "id": "sb-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1779,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Solomon Islands is an independent nation, not part of Australia. The Open Australian Legal Corpus would not contain Solomon Islands legislation as an official legal source."
+  },
+  {
+   "id": "sb-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2743,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The publication date (2026-10-21) is in the future, making this claim impossible. Legal acts cannot be published before the current date."
+  },
+  {
+   "id": "sb-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1183,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Citizenship (Amendment) Act 2023 would be a Solomon Islands legislative instrument, not a Tongan one. Tonga Attorney General's office would not publish Solomon Islands legislation."
+  },
+  {
+   "id": "sb-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1028,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The future publication date (2025-10-28) is impossible, and verification of this ordinance through official Solomon Islands legal databases cannot be confirmed as accurate."
+  },
+  {
+   "id": "sb-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1508,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The '2022 Supplementary Appropriation Act 2023' pertains to Solomon Islands, not Nauru. RONLAW is Nauru's legal database and would not be the appropriate official source for Solomon Islands leg"
+  }
+ ]
+}

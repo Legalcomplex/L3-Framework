@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Turkmenistan — Source-Grounded Citation Reliability (TM)",
+ "country": "TM",
+ "jurisdiction": "Turkmenistan",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:03:55.734942+00:00",
+ "results": [
+  {
+   "id": "tm-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2035,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific bibliographic claim's accuracy—exact publication details, dates, and source attribution require confirmation from official Turkmenistan legal databases directly."
+  },
+  {
+   "id": "tm-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2751,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This citation cannot be verified; Turkmenistan's presidential decree numbering, this specific list, and publication details appear fabricated or unconfirmed."
+  },
+  {
+   "id": "tm-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2107,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Turkmenistan's Code of Administrative Procedure (Administratiw iş ýörediş kodeksi) was actually adopted in 2016, not 2020-10-24, per Mejlis records."
+  },
+  {
+   "id": "tm-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1968,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be an unverifiable or fabricated citation; I cannot confirm this specific publication detail exists in official Turkmenistan legal sources."
+  },
+  {
+   "id": "tm-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 4082,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This law is enacted by parliament and officially published in state legal gazettes/Mejlis records, not attributed to Central Bank as publishing source."
+  },
+  {
+   "id": "tm-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2164,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific bibliographic claim; Turkmenistan's official legal publication details for this exact document are not reliably confirmed in available sources."
+  },
+  {
+   "id": "tm-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2110,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific regulation's publication details—Turkmenistan's legal acts require confirmation from official gazettes, not unverifiable claims."
+  },
+  {
+   "id": "tm-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2285,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Lex.uz publishes Uzbekistan's legislation, not Turkmenistan's; a Turkmen presidential decree would not be officially published through Uzbekistan's national legal database."
+  },
+  {
+   "id": "tm-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1673,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Turkmenistan's Administrative Procedure Code (Administratiw iş ýörediş kodeksi) was actually adopted in 2016, not on the stated 2022 date."
+  },
+  {
+   "id": "tm-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1776,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Adilet is Kazakhstan's legal database for Kazakh legislation; Turkmenistan's tax law texts wouldn't be officially published through a foreign country's legal information system."
+  },
+  {
+   "id": "tm-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1857,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Turkmenistan's laws are officially published in Türkmenistan/Neýtralnyý Türkmenistan and the Mejlis gazette, not by the Central Bank."
+  },
+  {
+   "id": "tm-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1974,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Lex.uz publishes Uzbekistan's legislation, not Turkmenistan's; a Turkmenistan legal source would not be officially published through Uzbekistan's national database."
+  }
+ ]
+}

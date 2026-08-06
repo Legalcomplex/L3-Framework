@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Uruguay — Source-Grounded Citation Reliability (UY)",
+ "country": "UY",
+ "jurisdiction": "Uruguay",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.75,
+ "correct": 9,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:46:48.130349+00:00",
+ "results": [
+  {
+   "id": "uy-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1666,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The IMPO Open Data JSON API provides access to official legislative and regulatory documents, but this specific resolution identifier and date cannot be verified as a legitimate published s"
+  },
+  {
+   "id": "uy-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1563,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This title appears to reference a law on integral waste management, but the format and dating suggest it may be a legislative notice rather than the official law publication itself."
+  },
+  {
+   "id": "uy-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1946,
+   "verdict": true,
+   "correct": true,
+   "raw": "# Evaluation: TRUE  The Tribunal de Apelaciones en lo Penal (3rd Court) is an official Uruguayan judicial body, and such sentencias are legitimately published in official case law databases maintained"
+  },
+  {
+   "id": "uy-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1848,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. While Decreto Ley 14990/1980 exists in Uruguay's legal framework, the IMPO Open Data JSON API was not operational in 1980; it is a modern digital service."
+  },
+  {
+   "id": "uy-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1917,
+   "verdict": true,
+   "correct": true,
+   "raw": "# Answer: **True**  IMPO (Instituto de Información Oficial) is Uruguay's official legal information center. The cited document format, date structure, and subject matter (bearer shareholdings, benefic"
+  },
+  {
+   "id": "uy-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1551,
+   "verdict": true,
+   "correct": true,
+   "raw": "**True**  The Uruguayan Judicial Branch maintains official case law databases where appellate court decisions, including those from the Tribunal de Apelaciones en lo Penal, are systematically publishe"
+  },
+  {
+   "id": "uy-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 3282,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** SUIN-Juriscol is Colombia's normative system, not Uruguay's. Uruguay uses SUIN (Sistema Único de Información Normativa), a distinct platform."
+  },
+  {
+   "id": "uy-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1571,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This appears to be a document title/subject rather than a complete bibliographic reference with proper publication details for an official Uruguayan legal source."
+  },
+  {
+   "id": "uy-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1879,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The decision is from Uruguay's Third Criminal Appeals Court, not Colombia's Constitutional Court. The source attribution is jurisdictionally incorrect."
+  },
+  {
+   "id": "uy-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1202,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Decreto Ley 14990/1980 is a Chilean law, not Uruguayan. The claim incorrectly attributes this Chilean diplomatic service statute to Uruguay's jurisdiction."
+  },
+  {
+   "id": "uy-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1106,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This appears to be a document title/subject matter rather than a complete bibliographic reference with proper publication details from IMPO."
+  },
+  {
+   "id": "uy-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1174,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This decision is from Uruguay's Court of Appeals (Tribunal de Apelaciones Penal), not Argentina's Supreme Court. The publisher attribution is incorrect."
+  }
+ ]
+}

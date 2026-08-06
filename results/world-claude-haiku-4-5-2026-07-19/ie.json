@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Ireland — Source-Grounded Citation Reliability (IE)",
+ "country": "IE",
+ "jurisdiction": "Ireland",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:38:38.657027+00:00",
+ "results": [
+  {
+   "id": "ie-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 4507,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. A 2026 decision cannot exist in February 2026 as we are currently in 2024. This is a future-dated case that has not yet occurred."
+  },
+  {
+   "id": "ie-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1368,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The decision is dated 2026-01-28, which is in the future. No court decision can exist with a future date."
+  },
+  {
+   "id": "ie-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1582,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The date specified (29 September 2025) is in the future. No decision with this date could have been published yet by the Irish DPC."
+  },
+  {
+   "id": "ie-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1975,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  This decision cannot exist as it has a future date (2026-02-13). As of my knowledge cutoff in April 2024, this date has not yet occurred, making this an invalid claim."
+  },
+  {
+   "id": "ie-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1267,
+   "verdict": false,
+   "correct": false,
+   "raw": "# Answer: False  **Explanation:** This decision is dated 2026, which is in the future. BAILII cannot have published a decision that has not yet occurred. The date is impossible."
+  },
+  {
+   "id": "ie-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1403,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Irish Data Protection Commission issues formal decisions on specific legal matters. An \"Inquiry\" document from October 2024 does not constitute an official published decision in the rec"
+  },
+  {
+   "id": "ie-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2156,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier [2026] IEHC 79 cannot be verified as corresponding to this case, as 2026 is a future year and such records are not yet publicly available or confirmed."
+  },
+  {
+   "id": "ie-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1346,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  [2026] IESC 3 is an Irish Supreme Court decision (IESC = Ireland Supreme Court), not Dutch. Rechtspraak.nl publishes Dutch court decisions, not Irish ones."
+  },
+  {
+   "id": "ie-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 990,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Nowak v Data Protection Commission is an Irish case decided by the Court of Justice of the European Union (CJEU), not the Austrian Supreme Administrative Court. The DPC is Irish."
+  },
+  {
+   "id": "ie-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1093,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The citation format [2026] IECA 14 refers to a 2026 Court of Appeal judgment, but this future date makes verification impossible. Official Irish case law citations require confirmed publica"
+  },
+  {
+   "id": "ie-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1228,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Brophy v Director of Public Prosecutions citation format [2026] IESC 7 indicates an Irish Supreme Court decision, not a German Federal Constitutional Court (BVerfG) decision."
+  },
+  {
+   "id": "ie-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1113,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This decision concerns LinkedIn Ireland and would be published by Irish authorities, not Portuguese courts. DGSI publishes Portuguese judicial decisions, not Irish ones."
+  }
+ ]
+}

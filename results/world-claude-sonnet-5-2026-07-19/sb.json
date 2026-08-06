@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Solomon Islands — Source-Grounded Citation Reliability (SB)",
+ "country": "SB",
+ "jurisdiction": "Solomon Islands",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:01:55.942373+00:00",
+ "results": [
+  {
+   "id": "sb-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2070,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify specific chapter numbers, publication dates, or portal details for Solomon Islands legislation without access to current official sources."
+  },
+  {
+   "id": "sb-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2367,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation exists; Solomon Islands has an Education Act but no confirmed 2023 version with that exact date."
+  },
+  {
+   "id": "sb-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2628,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Solomon Islands' relevant legislation is the \"Money Laundering and Proceeds of Crime Act 2002,\" but its exact number and portal citation cannot be verified reliably."
+  },
+  {
+   "id": "sb-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2003,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific citation exists; Solomon Islands legislative records should be checked directly via the official Gazette or Parliament website for confirmation."
+  },
+  {
+   "id": "sb-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2287,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated citation; no verifiable record exists of this specific Ordinance and Legal Notice combination in official Solomon Islands sources."
+  },
+  {
+   "id": "sb-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2092,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This appears to be a fabricated or unverifiable citation; I cannot confirm the existence of this specific Act, source, or publication date from Solomon Islands Parliament records."
+  },
+  {
+   "id": "sb-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2889,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** I cannot verify this specific bibliographic claim—no reliable way exists to confirm \"Chapter 180\" details or that exact 2021-10-25 publication date/source."
+  },
+  {
+   "id": "sb-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1938,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Solomon Islands' Education Act is not published via the Open Australian Legal Corpus, which covers Australian law, not Solomon Islands legislation."
+  },
+  {
+   "id": "sb-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1768,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Solomon Islands' relevant statute is the \"Money Laundering and Proceeds of Crime Act 2002,\" but citation details need verification against official gazette records."
+  },
+  {
+   "id": "sb-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1673,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Tonga's Attorney General Legislation database publishes Tongan law, not Solomon Islands legislation, so this jurisdictional source pairing is incorrect."
+  },
+  {
+   "id": "sb-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1937,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This appears to be a fabricated or unverifiable citation; no confirmed record exists of this specific Ordinance and Legal Notice combination in official Solomon Islands legislation sources."
+  },
+  {
+   "id": "sb-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1755,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Nauru's RONLAW hosts Nauruan legislation, not Solomon Islands acts; a \"Supplementary Appropriation Act\" for Solomon Islands wouldn't be published there."
+  }
+ ]
+}

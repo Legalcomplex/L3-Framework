@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Falkland Islands — Source-Grounded Citation Reliability (FK)",
+ "country": "FK",
+ "jurisdiction": "Falkland Islands",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:12:41.667418+00:00",
+ "results": [
+  {
+   "id": "fk-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 6136,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific ordinance, date, or publication detail; asserting authenticity risks fabrication without reliable confirmation of these facts."
+  },
+  {
+   "id": "fk-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2386,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date \"2018-01-01\" is a placeholder, not a genuine decision date, undermining the citation's authenticity and reliability."
+  },
+  {
+   "id": "fk-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2576,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific ordinance's existence or publication date; treat unconfirmed citations skeptically without authoritative source checking."
+  },
+  {
+   "id": "fk-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2366,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date \"2023-01-01\" is implausibly generic, and I cannot verify this specific decision exists as cited."
+  },
+  {
+   "id": "fk-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2545,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific ordinance or publication date exists; such precise claims require checking authoritative Falkland Islands legal databases."
+  },
+  {
+   "id": "fk-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2443,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated citation; no verifiable record exists of this case or party names in Falkland Islands jurisprudence."
+  },
+  {
+   "id": "fk-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2533,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific ordinance, publication channel, or 2024 date; asserting authenticity risks fabricating unconfirmed bibliographic details."
+  },
+  {
+   "id": "fk-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 4188,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Falkland Islands inquest would not be published by a Colombian open-data portal for Constitutional Court rulings."
+  },
+  {
+   "id": "fk-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2025,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Falkland Islands publish legislation through their own government gazette, not Uruguay's IMPO system, which covers Uruguayan law only."
+  },
+  {
+   "id": "fk-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2117,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The date \"2025-01-01\" (New Year's Day) is implausible for a court decision; likely a placeholder, casting doubt on authenticity."
+  },
+  {
+   "id": "fk-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1890,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific ordinance or publication date exists; I lack reliable data on Falkland Islands legislation records."
+  },
+  {
+   "id": "fk-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1650,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Falkland Islands are a British Overseas Territory; their legal decisions wouldn't be published by an Argentine provincial court database."
+  }
+ ]
+}

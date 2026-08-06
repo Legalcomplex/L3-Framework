@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Israel — Source-Grounded Citation Reliability (IL)",
+ "country": "IL",
+ "jurisdiction": "Israel",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:55:25.008091+00:00",
+ "results": [
+  {
+   "id": "il-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1896,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated/unverifiable citation; I cannot confirm this specific case number, judge, and dataset combination exists as described."
+  },
+  {
+   "id": "il-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2397,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Ports Ordinance [New Version] is an official consolidated ordinance published in Israel's official gazette (Divrei HaKnesset/Reshumot), not via Knesset Open Data/Hasadna."
+  },
+  {
+   "id": "il-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2131,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** HCJ 9232/01 is actually \"Yoram Barak v. State of Israel\" or similar; the Noah case citation/date pairing appears misattributed here."
+  },
+  {
+   "id": "il-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1861,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated/non-verifiable citation; no such specific case can be authenticated from the described dataset source."
+  },
+  {
+   "id": "il-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2454,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.**  The Postal Ordinance [New Version] is an official consolidated ordinance published in Divrei HaChukah/Nusach Chadash, not by Knesset Data or Hasadna."
+  },
+  {
+   "id": "il-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 3431,
+   "verdict": true,
+   "correct": true,
+   "raw": "**True.** HCJ 2150/07, *Yassin v. Government of Israel* (also cited as *Abu Safiyeh v. Minister of Defense*), concerned the closure of the Route 443 road in the West Bank, decided December 29, 2009."
+  },
+  {
+   "id": "il-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1995,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The case number format (35124-07-23) indicates filing year 2023, making a decision date of 2024-01-24 chronologically implausible/unverifiable."
+  },
+  {
+   "id": "il-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2108,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Ports Ordinance [New Version] is an Israeli legal enactment; it would be published in Israel's official Reshumot, not the DIFC (Dubai) Legal Database."
+  },
+  {
+   "id": "il-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2088,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** HCJ 9232/02 is actually \"Noach\" v. Attorney General concerning force-feeding geese for foie gras, but I cannot verify this exact citation's accuracy confidently."
+  },
+  {
+   "id": "il-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1575,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This appears to be an unverifiable/fabricated citation—I cannot confirm this specific case, judge attribution, or dataset entry actually exists as described."
+  },
+  {
+   "id": "il-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1848,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Postal Ordinance [New Version] is Israeli law, published in Israel's official Nusach Chadash compilation, not by any Jordanian legislative authority."
+  },
+  {
+   "id": "il-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2197,
+   "verdict": true,
+   "correct": false,
+   "raw": "True. HCJ 2150/08, Abu Safiyeh v. Minister of Defense, decided December 29, 2009, concerned the road closure in the Hebron area."
+  }
+ ]
+}

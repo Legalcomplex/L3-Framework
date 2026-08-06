@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Portugal — Source-Grounded Citation Reliability (PT)",
+ "country": "PT",
+ "jurisdiction": "Portugal",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:01:17.166715+00:00",
+ "results": [
+  {
+   "id": "pt-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2026,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — the date 2026-03-12 is future/impossible for verification, and TRP process numbers don't reliably map to fabricated DGSI-published decisions."
+  },
+  {
+   "id": "pt-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2052,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific bibliographic claim's accuracy; without access to the actual database record, confirming the exact title, source, and date is impossible."
+  },
+  {
+   "id": "pt-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2033,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. CAAD arbitration cases numbered 733/2025-T would relate to proceedings filed in 2025, not decided/dated in 2026, and specific verification isn't possible."
+  },
+  {
+   "id": "pt-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1902,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This claim references a future date (2026) that has not yet occurred, making the source unverifiable and its publication unconfirmed."
+  },
+  {
+   "id": "pt-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 5785,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — the case number format is plausible, but 2026 is a future date not yet occurred, so this citation cannot be verified as real."
+  },
+  {
+   "id": "pt-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2161,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This appears to be a fabricated or unverifiable citation; I cannot confirm the existence of this specific decision in official Tribunal de Contas records."
+  },
+  {
+   "id": "pt-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1990,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The suffix \".P2\" versus \".P1\" mismatches the cited case number, and the date 2026-03-12 is implausibly future-dated for verification."
+  },
+  {
+   "id": "pt-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2383,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — I cannot verify this specific bibliographic claim; I lack access to confirm this exact document, date, and source combination in Assembleia da República's records."
+  },
+  {
+   "id": "pt-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1864,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. CAAD case numbers use the filing year matching the process itself; \"733/2026-T\" would not correspond to a \"2025-T\" designated process—the years must align consistently."
+  },
+  {
+   "id": "pt-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2176,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Bundesfinanzhof is a German court, not a Portuguese one, so it cannot publish \"Acórdão 9/2026\" under Portugal's jurisdiction system."
+  },
+  {
+   "id": "pt-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1658,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific STJ case number, date, and content combination exists; fabricated-sounding citations require actual database confirmation."
+  },
+  {
+   "id": "pt-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2398,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Gibraltar's official legislation portal would not publish a Portuguese \"Sentença\" (court judgment); Portuguese decisions are published through Portuguese official sources like DRE or Tribun"
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Bolivia — Source-Grounded Citation Reliability (BO)",
+ "country": "BO",
+ "jurisdiction": "Bolivia",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:50:19.784302+00:00",
+ "results": [
+  {
+   "id": "bo-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2490,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Ley Nº 1691 (Ley de Áreas Protegidas) was enacted October 10, 1996, not November 2025 — the date/number combination is fabricated."
+  },
+  {
+   "id": "bo-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2106,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This citation appears fabricated/unverifiable—no confirmed record of \"SAN-S1-0001-2017\" exists in official Tribunal Agroambiental repositories or recognized legal databases."
+  },
+  {
+   "id": "bo-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2483,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Ley Nº 1694 was enacted years earlier (not 2025); Bolivia's numbering sequence had already surpassed 1694 well before that date."
+  },
+  {
+   "id": "bo-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 9510,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation's accuracy—the exact case number, date, and details appear potentially fabricated or unverifiable through reliable sources."
+  },
+  {
+   "id": "bo-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2131,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Ley Nº 1688 (Bolivia) is a much older law, not dated 2025; the citation's number-date-publication combination is anachronistic/inaccurate."
+  },
+  {
+   "id": "bo-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2021,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific decision number, date, and content combination exists in the Tribunal Agroambiental's official records or database."
+  },
+  {
+   "id": "bo-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1998,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Querido Diário covers Brazilian municipal gazettes only, not Bolivian national legislation, and \"Ley Nº 1691\" (1996) predates 2025."
+  },
+  {
+   "id": "bo-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2351,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** A \"Sentencia Agroambiental Nacional\" is issued by Bolivia's Agroenvironmental Tribunal, not Peru's OSCE Public Procurement Tribunal—mismatched jurisdiction and institution entirely."
+  },
+  {
+   "id": "bo-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1993,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Bolivia's official gazette is Gaceta Oficial de Bolivia, not Brazil's Planalto (REFLEGIS), which publishes only Brazilian federal legislation, not Bolivian law."
+  },
+  {
+   "id": "bo-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2013,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Tribunal Agroambiental issues Bolivian agroambiental sentences; Colombia's Procuraduría Disciplinary Relatoría is an unrelated foreign institution and jurisdiction."
+  },
+  {
+   "id": "bo-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1617,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Ley Nº 1688 is Bolivia's 1996 Forestry Law, not a 2025 enactment—the citation misrepresents its actual date and content."
+  },
+  {
+   "id": "bo-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1787,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. A \"Sentencia Agroambiental Nacional\" is issued by Bolivia's Agroenvironmental Tribunal, not Peru's INDECOPI, which handles competition/IP matters."
+  }
+ ]
+}

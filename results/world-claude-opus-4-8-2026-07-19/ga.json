@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Gabon — Source-Grounded Citation Reliability (GA)",
+ "country": "GA",
+ "jurisdiction": "Gabon",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:13:05.371581+00:00",
+ "results": [
+  {
+   "id": "ga-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2783,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The citation number \"RANDOM510644569\" is clearly a placeholder, not a genuine case reference, indicating a fabricated bibliographic claim."
+  },
+  {
+   "id": "ga-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2094,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. \"Ministère des Comptes Publics et de la Dette\" is a government ministry name, not a publishable legal document or official source."
+  },
+  {
+   "id": "ga-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 3169,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The citation shows internal inconsistency: a decision dated 27/05/2021 cannot have a publication date preceding it as 2021-07-01... actually that's consistent.  Let me reconsider: **True.** Gab"
+  },
+  {
+   "id": "ga-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2668,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The docket number \"RANDOM1645329917\" is clearly a placeholder/fabricated identifier, not a genuine citation format used by Gabonese courts."
+  },
+  {
+   "id": "ga-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2576,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. An \"ordonnance\" dated 2025 cannot bear a 2024 number; the date-number mismatch signals a fabricated or erroneous citation."
+  },
+  {
+   "id": "ga-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2690,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The stated decision date (16/07/2020) and publication date (2020-08-24) mismatch raises authenticity concerns; details appear unverifiable or fabricated."
+  },
+  {
+   "id": "ga-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2277,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier ends in 510644570 but the cited case number is 510644569; the mismatched digits indicate inconsistency."
+  },
+  {
+   "id": "ga-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2307,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. \"Ministère des Comptes Publics et de la Dette\" is a government ministry, not a publication or legal document itself."
+  },
+  {
+   "id": "ga-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1828,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Gabon decisions with \"Décision N° .../CC\" are issued by Gabon's Cour Constitutionnelle, not Angola's Supreme Court."
+  },
+  {
+   "id": "ga-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2169,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier ends in ...18 but the cited case number ends in ...17; the mismatched numbers indicate fabrication."
+  },
+  {
+   "id": "ga-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1768,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Gabon's legal sources are published in Gabon's Official Journal, not Congo-Brazzaville's SGG; jurisdictions differ entirely."
+  },
+  {
+   "id": "ga-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1861,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Gabon's decision (Décision N° 040/CC) belongs to Gabon's Constitutional Court, not Congo-Brazzaville's, mismatching the stated jurisdiction."
+  }
+ ]
+}

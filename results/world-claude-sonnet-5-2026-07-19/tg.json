@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Togo — Source-Grounded Citation Reliability (TG)",
+ "country": "TG",
+ "jurisdiction": "Togo",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:03:37.515552+00:00",
+ "results": [
+  {
+   "id": "tg-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2329,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific Juricaf identifier corresponds to that exact Togo Cour suprême decision without access to the database."
+  },
+  {
+   "id": "tg-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2137,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify unpublished/obscure regulatory citations; this specific arrêté's existence, number, and JO publication date aren't confirmed in my knowledge."
+  },
+  {
+   "id": "tg-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2324,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific citation's accuracy—the decision number, date, and content details may be fabricated or unconfirmed without access to official Togolese court records."
+  },
+  {
+   "id": "tg-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2145,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify specific Juricaf identifiers or case numbers for Togo's Cour suprême without access to the actual database records."
+  },
+  {
+   "id": "tg-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2999,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This appears to be a fabricated citation; I cannot verify this specific decree number, title, or publication date exist in Togo's actual Journal Officiel records."
+  },
+  {
+   "id": "tg-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2577,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific decision's existence, number, date, or publication details against actual Togolese Constitutional Court records or official gazette sources."
+  },
+  {
+   "id": "tg-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2139,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This appears to be a fabricated citation—I cannot verify specific Juricaf identifiers or Togo Cour suprême decision numbers without access to the actual database."
+  },
+  {
+   "id": "tg-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2438,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — Togo's official gazette is published by the SGG Togo, not \"Mali Consolidated Legal Codes,\" which is an implausible/mismatched source name for this jurisdiction."
+  },
+  {
+   "id": "tg-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2933,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Togo's legal decisions would be published by Togolese authorities, not the Nigeria Securities and Exchange Commission, which is a distinct national jurisdiction's regulator."
+  },
+  {
+   "id": "tg-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1606,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify specific Juricaf identifiers or case numbers against actual records, so this precise bibliographic claim is unconfirmed."
+  },
+  {
+   "id": "tg-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2505,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This citation appears fabricated—Togo's official gazette isn't \"CivLII\" (Côte d'Ivoire's platform), and the decree number/title lacks verifiable authenticity."
+  },
+  {
+   "id": "tg-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1722,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Law Hub Gambia covers Gambian law, not Togolese decisions; Togo's official gazette/court publisher would be the legitimate source, not a Gambia-focused platform."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Bosnia & Herzegovina — Source-Grounded Citation Reliability (BA)",
+ "country": "BA",
+ "jurisdiction": "Bosnia & Herzegovina",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.4167,
+ "correct": 5,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:33:30.044885+00:00",
+ "results": [
+  {
+   "id": "ba-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1528,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The decision reference format and date (2026-02-19) appear inconsistent with Bosnia & Herzegovina Constitutional Court's actual publication practices and cataloging systems for official dec"
+  },
+  {
+   "id": "ba-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1619,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The decision date (2012-04-24) precedes the publication date (24.05.2012), which is chronologically impossible. This inconsistency suggests the source information is unreliable or incorrectly"
+  },
+  {
+   "id": "ba-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2342,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The cited decision appears to lack verifiable publication confirmation. The specific gazette issue date and number cannot be authenticated without access to the official FBiH gazette record"
+  },
+  {
+   "id": "ba-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1472,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Republika Srpska is an entity within Bosnia & Herzegovina, not its central government. This law applies to Republika Srpska specifically, not Bosnia & Herzegovina as a whole jurisdiction."
+  },
+  {
+   "id": "ba-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1603,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The decision date (2026-02-19) is in the future, making this claim implausible. Constitutional Court decisions cannot be published before they occur."
+  },
+  {
+   "id": "ba-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2684,
+   "verdict": false,
+   "correct": false,
+   "raw": "# Answer: False  **Explanation:** The identifier format and date discrepancies (2017-06-11 vs. 14.07.2017) suggest inconsistency with BiH Judicial Practice Portal standards. Unable to verify this spec"
+  },
+  {
+   "id": "ba-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1819,
+   "verdict": false,
+   "correct": true,
+   "raw": "# Evaluation: FALSE  The decision reference format and date structure don't match standard Constitutional Court of Bosnia & Herzegovina citation conventions. Unable to verify this specific decision ex"
+  },
+  {
+   "id": "ba-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1585,
+   "verdict": false,
+   "correct": true,
+   "raw": "# Answer: **False**  The date discrepancy (2012-04-24 vs. 24.05.2012) and the identifier format suggest this record either doesn't exist or the metadata contains errors in the BiH Judicial Practice Po"
+  },
+  {
+   "id": "ba-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1617,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This document title refers to a Bosnian & Herzegovinian legal act (indicated by \"Odluka\" - Bosnian/Serbian term), not a Lithuanian one. TAR publishes Lithuanian legislation only."
+  },
+  {
+   "id": "ba-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1416,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This law is Bosnian/Serbian legislation, not Latvian. Likumi.lv is Latvia's official legal portal and would not host laws from Bosnia & Herzegovina's Republic of Srpska entity."
+  },
+  {
+   "id": "ba-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1350,
+   "verdict": true,
+   "correct": false,
+   "raw": "# Answer: True  **Explanation:** The Constitutional Court of Bosnia and Herzegovina regularly publishes decisions with the \"AP\" designation (administrative proceedings). The date and reference format "
+  },
+  {
+   "id": "ba-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2075,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier format and date inconsistency (judgment dated 2017-06-11 but attributed to 2017-07-14) suggests a mismatch or data entry error in the BiH Judicial Practice Portal documentation."
+  }
+ ]
+}

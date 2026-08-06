@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Curaçao — Source-Grounded Citation Reliability (CW)",
+ "country": "CW",
+ "jurisdiction": "Curaçao",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:35:45.964801+00:00",
+ "results": [
+  {
+   "id": "cw-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2236,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The cited title appears to be a tax notice (aanschrijving) rather than formal legislation (regelingen). Government notices and administrative circulars differ from official legal regulation"
+  },
+  {
+   "id": "cw-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2781,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The ECLI identifier \"NL:OGHACMB\" indicates this is a Netherlands (NL) court decision from the Joint Court of Justice, not a Curaçao-specific court publication."
+  },
+  {
+   "id": "cw-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1529,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this claim as I lack access to Curaçao's official Government Legislation database (Regelingen) and cannot confirm the identifier CVDR143525_1 or its associated document deta"
+  },
+  {
+   "id": "cw-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1595,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.**  The ECLI identifier indicates this decision is from the Joint Court of Justice (Gemeenschappelijk Hof), which serves multiple Caribbean territories, not exclusively Curaçao's court system."
+  },
+  {
+   "id": "cw-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1674,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This appears to be a Dutch-language tax directive title, but no such specific publication can be verified in Curaçao's official legislation database for that exact date and title."
+  },
+  {
+   "id": "cw-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1833,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The ECLI identifier format contains the year 2026, which is in the future. Court decisions cannot be officially published with future dates, making this claim implausible."
+  },
+  {
+   "id": "cw-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2334,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific identifier against Curaçao's official legislative database without access to the current CVDR registry system to confirm the exact correspondence between identifie"
+  },
+  {
+   "id": "cw-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1612,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This decision from the Joint Court of Justice (Gemeenschappelijk Hof) of Aruba, Curaçao, Sint Maarten, and Bonaire would be published by Curaçao/Caribbean authorities, not Bermuda's governm"
+  },
+  {
+   "id": "cw-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2574,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  I cannot verify this claim about Curaçao's official legislation collection. The specific identifier format and document mapping cannot be reliably confirmed without direct access to the off"
+  },
+  {
+   "id": "cw-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1077,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The ECLI identifier and court name indicate this decision is from the Joint Court of Justice of Aruba, Curaçao, Sint Maarten and Bonaire, not Bermuda Supreme Court."
+  },
+  {
+   "id": "cw-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1736,
+   "verdict": false,
+   "correct": true,
+   "raw": "# Answer: False  **Explanation:** This appears to be a Dutch tax directive title, but no verifiable official Curaçao Government Legislation (Regelingen) publication with this exact title and date can "
+  },
+  {
+   "id": "cw-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1989,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The decision belongs to the Joint Court of Justice of Aruba, Curaçao, Sint Maarten and Bonaire, not the Cayman Islands. It would be published by Caribbean judicial authorities, not judicial"
+  }
+ ]
+}

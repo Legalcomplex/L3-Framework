@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Sudan — Source-Grounded Citation Reliability (SD)",
+ "country": "SD",
+ "jurisdiction": "Sudan",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:24:10.119150+00:00",
+ "results": [
+  {
+   "id": "sd-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2751,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No verifiable \"Draft Press Law (2021)\" is documented via REDRESS Bilingual Laws with that publication date; likely fabricated citation."
+  },
+  {
+   "id": "sd-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2337,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Central Bank of Sudan issues annual policies, but the exact title and January 1 publication date appear fabricated."
+  },
+  {
+   "id": "sd-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2754,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Sudan's stamp duty legislation is enacted by the legislature and published in official gazettes, not attributed to SudanTax."
+  },
+  {
+   "id": "sd-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2020,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such \"Constitutional and Administrative Law Act (1996)\" exists in Sudan; this appears to be a fabricated citation."
+  },
+  {
+   "id": "sd-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2472,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Central Bank of Sudan issues annual policies, but the exact title, publisher formatting, and precise January 1 date are unverifiable."
+  },
+  {
+   "id": "sd-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2422,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Capital Gains Tax Act was enacted in 1986, but publication attribution and exact date details appear unverifiable/inaccurate."
+  },
+  {
+   "id": "sd-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2804,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Sudan's laws are published in Sudan's official gazette, not Seychelles'. Jurisdictional mismatch invalidates this bibliographic claim entirely."
+  },
+  {
+   "id": "sd-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2362,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Central Bank of Sudan policies would be published by Sudanese authorities, not Tanzania's Attorney General's Office—jurisdictionally inconsistent."
+  },
+  {
+   "id": "sd-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2268,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Kenya Law (National Council for Law Reporting) publishes Kenyan legislation, not Sudanese law; jurisdiction mismatch invalidates this claim."
+  },
+  {
+   "id": "sd-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1961,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Sudan legislation isn't published by Tanzania's Attorney General's Office; this fabricated citation confuses jurisdictions and lacks authentic sourcing."
+  },
+  {
+   "id": "sd-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1791,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Sudan's central bank policies would be published in Sudan's official gazette, not Seychelles'; these are separate sovereign jurisdictions."
+  },
+  {
+   "id": "sd-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1552,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Capital Gains Tax Act of Sudan would be published in Sudan's Official Gazette, not Seychelles' Gazette."
+  }
+ ]
+}

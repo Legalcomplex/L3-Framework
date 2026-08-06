@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Guinea-Bissau — Source-Grounded Citation Reliability (GW)",
+ "country": "GW",
+ "jurisdiction": "Guinea-Bissau",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:38:05.753540+00:00",
+ "results": [
+  {
+   "id": "gw-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1989,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. \"Declaração de Bissau (2015)\" is not a recognized official legal document from Guinea-Bissau's National People's Assembly with the specified publication details and date."
+  },
+  {
+   "id": "gw-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1286,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The publication date (2021-01-31) contradicts the claim of including \"LGT de 2022\" updates. A 2021 document cannot contain 2022 legislation."
+  },
+  {
+   "id": "gw-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1631,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** 'Actos Assinados entre Portugal e Guiné-Bissau' is a collection of bilateral treaties/agreements, not a constitutional document originating from the Assembly's legislative functions on that"
+  },
+  {
+   "id": "gw-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1531,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  Guinea-Bissau's official legal sources are published in the *Boletim Oficial* (Official Gazette). Ministry dispatches require official gazette publication for legal validity, not direct minis"
+  },
+  {
+   "id": "gw-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1384,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No verifiable evidence supports this specific publication claim for Guinea-Bissau's National People's Assembly on that date. Documentation of official treaty lists requires reliable archival co"
+  },
+  {
+   "id": "gw-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1530,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** IS n° 08/2021 cannot be verified as an official Guinea-Bissau legal source. The document's existence, publication date, and attribution require confirmation from authentic government reposi"
+  },
+  {
+   "id": "gw-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1441,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The \"Declaração de Bissau\" (Declaration of Bissau) is a Guinea-Bissau document, not a Ghana Parliament publication. Ghana's institutional repository would not be the official publisher of G"
+  },
+  {
+   "id": "gw-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1442,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Central Bank of Guinea-Bissau (BCRG) publishes monetary and banking regulations, not tax codes. Tax legislation would be published by the Ministry of Finance or official government gaze"
+  },
+  {
+   "id": "gw-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1855,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The document title refers to acts signed between Portugal and Guinea-Bissau (international treaties), which would typically be published through the government or foreign ministry, not the Nati"
+  },
+  {
+   "id": "gw-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1066,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Banque Centrale de Mauritanie is Mauritania's central bank, not Guinea-Bissau's official publisher. Guinea-Bissau's official legal documents are published in the Boletim Oficial da Repú"
+  },
+  {
+   "id": "gw-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1815,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Guinea-Bissau's National People's Assembly would not typically publish international treaties in a \"Laws & Constitution\" category dated 2005. No reliable documentation confirms this specific pu"
+  },
+  {
+   "id": "gw-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1378,
+   "verdict": false,
+   "correct": true,
+   "raw": "# Answer: **False**  The cited publication date (2021-02-08) precedes Guinea-Bissau's typical official gazette publication cycles. Verification against official DIGV records is necessary to confirm au"
+  }
+ ]
+}

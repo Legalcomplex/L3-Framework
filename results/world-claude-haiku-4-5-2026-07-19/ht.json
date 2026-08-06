@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Haiti — Source-Grounded Citation Reliability (HT)",
+ "country": "HT",
+ "jurisdiction": "Haiti",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:38:24.721124+00:00",
+ "results": [
+  {
+   "id": "ht-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1569,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The citation format is inconsistent with JURICAF standards, which typically use different reference numbering conventions and lack the \"RG\" designation in this manner."
+  },
+  {
+   "id": "ht-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1582,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Budget Général is typically published by the Haitian Parliament (Legislature) as a law, not directly by the Ministry. The date format and attribution require verification against offici"
+  },
+  {
+   "id": "ht-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1712,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Haiti's legislative documents are published through official state institutions like the Moniteur de la République or Assemblée Nationale, not through a \"Jeunesse\" youth assembly repository"
+  },
+  {
+   "id": "ht-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1585,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The document title contains formatting inconsistencies, and no verifiable CONATEL publication from October 12, 1977 with this exact designation exists in accessible official records."
+  },
+  {
+   "id": "ht-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1395,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. Le Moniteur is Haiti's official government journal (journal officiel), and the Digital Library of the Caribbean is a recognized repository for Haitian historical documents and publications."
+  },
+  {
+   "id": "ht-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1744,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The citation lacks specificity regarding the complete title and official publication venue. Haiti's official legal gazette is the Moniteur, not a ministry-specific listing, making this sour"
+  },
+  {
+   "id": "ht-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2212,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier shows RG49484416, but the citation references RG4948-4415—the final digit differs (6 vs 5), indicating a mismatch."
+  },
+  {
+   "id": "ht-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1585,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Budget Général de la République d'Haïti is a Haitian official document that would be published by Haiti's government, not by Curaçao's government legislation system."
+  },
+  {
+   "id": "ht-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 948,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Haiti's official legislation is published through the Haitian government, not Aruba's DWJZ archive. The source jurisdiction is incorrect."
+  },
+  {
+   "id": "ht-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1045,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The date format and reference structure are inconsistent with CONATEL's documented regulatory publication standards and archival records from Haiti's telecommunications authority."
+  },
+  {
+   "id": "ht-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1469,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Le Moniteur is Haiti's official journal. It cannot be simultaneously published as \"Laws of Grenada,\" a different jurisdiction's legal publication. These are separate official gazettes."
+  },
+  {
+   "id": "ht-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1376,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This law is Haitian legislation, not Bahamian. Haiti and the Bahamas are separate Caribbean nations with distinct legal systems and official gazettes."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Brazil — Source-Grounded Citation Reliability (BR)",
+ "country": "BR",
+ "jurisdiction": "Brazil",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:34:25.758890+00:00",
+ "results": [
+  {
+   "id": "br-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1471,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The date 2026-04-14 is in the future (beyond current date), making this claim temporally impossible. Legislative bills cannot be published from future dates."
+  },
+  {
+   "id": "br-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2090,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  This law cannot exist as cited. The date (2026-04-06) is in the future. As of now, laws cannot be prospectively published with future dates in Brazil's official legislative system."
+  },
+  {
+   "id": "br-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2259,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The date 2026-03-21 is in the future (beyond the current date), making this claim impossible to verify as a published official source."
+  },
+  {
+   "id": "br-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1472,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The date 2026-03-25 is in the future, making this decision impossible to have been published. TST decisions cannot predate their actual issuance."
+  },
+  {
+   "id": "br-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1509,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  This resolution cannot exist as of my knowledge cutoff (April 2024). The claimed publication date is November 7, 2025, which is in the future relative to my training data."
+  },
+  {
+   "id": "br-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1668,
+   "verdict": true,
+   "correct": true,
+   "raw": "# Answer: True  **Explanation:** RESOLUÇÃO NORMATIVA (RN) is the correct format for official normative resolutions issued by ANVISA (Brazil's National Health Agency), with proper date attribution (Apr"
+  },
+  {
+   "id": "br-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1898,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** PL 1828/2026 is a Brazilian bill, not Colombian legislation. Colombia's Senado would not publish Brazilian parliamentary proposals."
+  },
+  {
+   "id": "br-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2261,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This law cannot exist because the date is in the future (2026). Additionally, InfoLEG is Argentina's legislative system, not Brazil's. Brazil uses different official sources."
+  },
+  {
+   "id": "br-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1096,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Mogi Guaçu is a Brazilian municipality in São Paulo state. Its official gazette would be published through Brazilian channels, not Uruguay's IMPO (Imprenta Nacional) system. The source juri"
+  },
+  {
+   "id": "br-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1516,
+   "verdict": true,
+   "correct": false,
+   "raw": "**True**  The TST (Tribunal Superior do Trabalho) is Brazil's highest labor court and regularly publishes \"Acordãos\" (appellate decisions). The citation format and date align with TST's standard docum"
+  },
+  {
+   "id": "br-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1032,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Anatel is Brazil's telecommunications regulator. BCRA (Argentina's Central Bank) would not publish Brazilian telecommunications resolutions. Wrong jurisdiction for the publisher."
+  },
+  {
+   "id": "br-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1816,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  RESOLUÇÃO NORMATIVA Nº 216 is a Brazilian regulatory resolution issued by ANVISA (National Health Surveillance Agency). It could not have been published via Chile's BCN (Biblioteca del Cong"
+  }
+ ]
+}

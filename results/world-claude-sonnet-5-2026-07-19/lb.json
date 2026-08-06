@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Lebanon — Source-Grounded Citation Reliability (LB)",
+ "country": "LB",
+ "jurisdiction": "Lebanon",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:57:01.764560+00:00",
+ "results": [
+  {
+   "id": "lb-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2033,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — the citation lacks a case/decision number and section details, and I cannot verify this specific Juricaf publication independently."
+  },
+  {
+   "id": "lb-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2812,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this describes a Constitutional Council decision annulling a law, not a properly promulgated, published law itself, contradicting the claimed status."
+  },
+  {
+   "id": "lb-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1968,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific circular citation; no reliable record confirms \"BCCL Circular No. 1-IEF\" exists with this exact title and date."
+  },
+  {
+   "id": "lb-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3340,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Lebanon's Capital Markets Authority was established by Law No. 161 (2011), not Law No. 706, and not dated 2005."
+  },
+  {
+   "id": "lb-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2413,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Lebanese Cour de cassation decisions aren't verifiably indexed this way; citation lacks specific chamber/case detail confirmation, making authenticity unverifiable and likely fabricated."
+  },
+  {
+   "id": "lb-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2001,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated or unverifiable citation; no confirmed 2026 Lebanese Parliament publication matches this specific title and date exists."
+  },
+  {
+   "id": "lb-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1946,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier date \"20210617\" corresponds to 17 June 2021, not 16 June 2021, creating a mismatch with the stated citation date."
+  },
+  {
+   "id": "lb-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2131,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. SAMA regulates Saudi banking; it has no authority over Lebanese legislation or Constitutional Council rulings concerning Lebanese Public Security personnel."
+  },
+  {
+   "id": "lb-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1904,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — I cannot verify this specific circular citation exists; it appears fabricated or unverifiable, as no such document is traceable in official BCCL records."
+  },
+  {
+   "id": "lb-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1537,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Lebanon's Capital Markets Authority was established by Law No. 161 (2011), not Law No. 706; no such 2006 regulation matches."
+  },
+  {
+   "id": "lb-src-f05",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2403,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify Juricaf identifier-to-citation mappings for specific Lebanese court decisions; this database entry claim isn't reliably confirmable from available knowledge."
+  },
+  {
+   "id": "lb-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1633,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Lebanon's official legal texts are not published by the Israeli Knesset's open-source data project; that source lacks jurisdictional authority."
+  }
+ ]
+}

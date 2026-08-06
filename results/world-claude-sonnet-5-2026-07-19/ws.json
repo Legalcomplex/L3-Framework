@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Samoa — Source-Grounded Citation Reliability (WS)",
+ "country": "WS",
+ "jurisdiction": "Samoa",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:05:43.467906+00:00",
+ "results": [
+  {
+   "id": "ws-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2414,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific citation exists—Samoa's actual legislation naming, the Consolidated Acts compilation date, and enactment year require official verification, not assumption."
+  },
+  {
+   "id": "ws-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2448,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Samoa's Attorney General consolidated legislation is an actual repository, but I cannot verify this specific title, date, and citation combination independently."
+  },
+  {
+   "id": "ws-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2198,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.**  Samoa's \"Administration Act 1975\" cannot be verified as an actual official title within the Attorney General's Consolidated Laws 2023 without confirmed source citation."
+  },
+  {
+   "id": "ws-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2291,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific citation's accuracy—Samoa's Accident Compensation legislation details, exact title, dates, and consolidation source require direct primary verification."
+  },
+  {
+   "id": "ws-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2140,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific citation exists in Samoa's legal corpus; the Act's existence, exact title, and consolidation details require confirmation from official sources."
+  },
+  {
+   "id": "ws-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2388,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Samoa's Acts Interpretation Act is dated 1974, not 2015; no verified \"Acts Interpretation Act 2015\" exists in official Samoan legislative consolidation records."
+  },
+  {
+   "id": "ws-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2869,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Samoa's official legislation is published through the Samoa Law Reform Commission/PULP, not the Open Australian Legal Corpus, which covers Australian law only."
+  },
+  {
+   "id": "ws-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2182,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Alienation of Freehold Land Act 1972 is Samoan legislation; RONLAW is Nauru's legal database, an incorrect jurisdictional source pairing."
+  },
+  {
+   "id": "ws-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1897,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Administration Act 1975 relates to Samoa's legal system, not Tonga's Attorney General Legislation & Judgments publication source."
+  },
+  {
+   "id": "ws-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1946,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Accident Compensation Act 1989 is Samoan legislation; it would be published through Samoa's official legal publisher, not the Marshall Islands Judiciary."
+  },
+  {
+   "id": "ws-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1750,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Samoa's laws are not published via Australia's Federal Register of Legislation—that platform covers Australian federal legislation, not Samoan statutes, which have separate official sources"
+  },
+  {
+   "id": "ws-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 3048,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Acts Interpretation Act 2015 is Samoan legislation published via Samoa's official legal sources (e.g., Palemene o Samoa/PacLII), not Fiji's laws.gov.fj."
+  }
+ ]
+}

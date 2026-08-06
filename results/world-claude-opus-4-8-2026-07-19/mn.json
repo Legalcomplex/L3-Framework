@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Mongolia — Source-Grounded Citation Reliability (MN)",
+ "country": "MN",
+ "jurisdiction": "Mongolia",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:19:12.117297+00:00",
+ "results": [
+  {
+   "id": "mn-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3031,
+   "verdict": false,
+   "correct": false,
+   "raw": "I cannot verify this specific claim's accuracy with confidence, so I'll respond **False** as a cautionary default.  The title \"АГААРЫН ТУХАЙ ХУУЛИЙГ ХҮЧИНГҮЙ БОЛСОНД ТООЦОХ ТУХАЙ\" (Law on Invalidating"
+  },
+  {
+   "id": "mn-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2269,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The citation \"МА2017/0052\" indicates an Administrative Appellate Court (давж заалдах) decision, not a Supreme Court publication."
+  },
+  {
+   "id": "mn-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2439,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The 2026 date is in the future relative to verifiable records; this citation appears fabricated and cannot be confirmed."
+  },
+  {
+   "id": "mn-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1940,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. While Mongolia's Unified Legal Information System (legalinfo.mn) hosts such laws, I cannot verify this specific title and date's accuracy."
+  },
+  {
+   "id": "mn-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2184,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. First-instance administrative court decisions are published on shuukh.mn's court portal, not under \"Supreme Court Decisions\" specifically."
+  },
+  {
+   "id": "mn-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2143,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-04-02 is in the future, making this citation impossible to verify as a genuine published decision."
+  },
+  {
+   "id": "mn-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2699,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Mongolia's Unified Legal Information System (legalinfo.mn) launched around 2009; however, I cannot verify this specific repeal law's exact publication date."
+  },
+  {
+   "id": "mn-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2107,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier ends in 0053, but the cited title references 0052—these differ, indicating a mismatched or fabricated citation."
+  },
+  {
+   "id": "mn-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 5053,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Mongolian Цэц (Constitutional Court) decisions are published in Mongolia, not by Macau Court Decisions; jurisdictions and institutions clearly mismatch."
+  },
+  {
+   "id": "mn-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1928,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. KLIC is South Korea's legal database; it does not publish Mongolian laws. This Mongolian air law source is misattributed."
+  },
+  {
+   "id": "mn-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2195,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. First-instance administrative court decisions appear on shüükh.mn, but they are not \"Supreme Court Decisions\"; the publisher attribution is incorrect."
+  },
+  {
+   "id": "mn-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1850,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This is a Mongolian Constitutional Court (Цэц) decision, published by Mongolian authorities, not Macau Court Decisions."
+  }
+ ]
+}

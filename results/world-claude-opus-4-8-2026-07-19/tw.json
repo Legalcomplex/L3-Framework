@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Taiwan — Source-Grounded Citation Reliability (TW)",
+ "country": "TW",
+ "jurisdiction": "Taiwan",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.6667,
+ "correct": 8,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:26:44.307194+00:00",
+ "results": [
+  {
+   "id": "tw-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2389,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. Taiwan's Judicial Yuan operates the official judgment search system (司法院法學資料檢索系統), publishing Supreme Court civil rulings including this one."
+  },
+  {
+   "id": "tw-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2554,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Interpretation No. 805 was issued by the Justices of the Constitutional Court under the older Grand Justices interpretation system."
+  },
+  {
+   "id": "tw-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2145,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-04-27 is in the future, making this bibliographic claim impossible to verify as authentically published."
+  },
+  {
+   "id": "tw-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 3476,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The Judicial Yuan's Law and Regulations Retrieving System publishes Supreme Court decisions, including civil rulings identified by this standard case-number format."
+  },
+  {
+   "id": "tw-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 3169,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Interpretation No. 812 was issued by the Judicial Yuan's Council of Grand Justices; the Constitutional Court replaced this system in 2022."
+  },
+  {
+   "id": "tw-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3172,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This describes a hypothetical future event (2026) with fabricated specifics; such a Gazette record cannot be verified as authentic."
+  },
+  {
+   "id": "tw-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2862,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '114,台聲,104' should correspond to case number 104, not 103; the numbers don't match."
+  },
+  {
+   "id": "tw-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2359,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier \"Interpretation-806\" would correspond to Interpretation No. 806, not No. 805; the numbers mismatch."
+  },
+  {
+   "id": "tw-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1994,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This is Taiwan's Legislative Yuan committee agenda, not a Macau legal source; jurisdictional mismatch invalidates the bibliographic claim."
+  },
+  {
+   "id": "tw-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1927,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Case number \"114年度\" indicates ROC year 114 (2025), inconsistent with the stated 2022-01-23 decision date."
+  },
+  {
+   "id": "tw-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2047,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Interpretation No. 812 was issued in 2021, not 2024. Since 2022, the Constitutional Court issues \"Judgments,\" not \"Interpretations.\""
+  },
+  {
+   "id": "tw-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2045,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Taiwan presidential nominations appear in the Legislative Yuan Gazette, not Hong Kong e-Legislation, which covers Hong Kong law."
+  }
+ ]
+}

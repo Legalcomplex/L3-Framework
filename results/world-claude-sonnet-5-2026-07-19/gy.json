@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Guyana — Source-Grounded Citation Reliability (GY)",
+ "country": "GY",
+ "jurisdiction": "Guyana",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:54:50.033035+00:00",
+ "results": [
+  {
+   "id": "gy-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2192,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This references a future-dated Gazette (April 18, 2026), which cannot be verified as an existing official publication currently."
+  },
+  {
+   "id": "gy-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2006,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a garbled/malformed citation combining unrelated titles and codes, not a verifiable authentic official Guyana EPA regulation publication."
+  },
+  {
+   "id": "gy-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1834,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This references a future date (2026-04-11), making it impossible to verify as an actual published legal gazette currently."
+  },
+  {
+   "id": "gy-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2067,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific citation exists; Guyana EPA's publication records don't confirm this exact title, volume, and date combination."
+  },
+  {
+   "id": "gy-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1864,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This references a future-dated Gazette (2026), which cannot be verified as an existing, actually published official legal source yet."
+  },
+  {
+   "id": "gy-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2243,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific bibliographic claim—no reliable record confirms this exact title, volume, publisher, and date combination for Guyana's EPA."
+  },
+  {
+   "id": "gy-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2107,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Guyana's Extraordinary Gazettes are published by Guyana's official Gazette Office, not Chile's BCN Linked Open Data SPARQL platform."
+  },
+  {
+   "id": "gy-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2993,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The citation garbles unrelated regulations into one entry, conflating a litter enforcement instrument with hazardous wastes regulations—an implausible, malformed bibliographic reference."
+  },
+  {
+   "id": "gy-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1938,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Guyana's Extraordinary Gazettes are published by Guyana's official government, not Brazil's Planalto REFLEGIS federal legislation database."
+  },
+  {
+   "id": "gy-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1856,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This appears to be a fabricated or unverifiable citation; I cannot confirm this specific document, date, or publication details exist officially."
+  },
+  {
+   "id": "gy-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1549,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Guyana is not Brazil; Querido Diário indexes Brazilian municipal gazettes only, so it cannot publish Guyana's Extraordinary Gazette."
+  },
+  {
+   "id": "gy-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2328,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — I cannot verify this specific bibliographic claim; no reliable record confirms this exact title, volume, publisher, and date combination for Guyana's EPA."
+  }
+ ]
+}

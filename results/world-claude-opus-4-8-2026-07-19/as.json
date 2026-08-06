@@ -1,0 +1,81 @@
+{
+ "pack": "S3 — American Samoa — Source-Grounded Citation Reliability (AS)",
+ "country": "AS",
+ "jurisdiction": "American Samoa",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 6,
+ "items_in_pack": 6,
+ "parsed": 6,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 3,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:07:14.241746+00:00",
+ "results": [
+  {
+   "id": "as-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1931,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The American Samoa Code Annotated contains statutes, not case decisions; court opinions appear in American Samoa Reports."
+  },
+  {
+   "id": "as-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2072,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Court decisions are published in reporters like the American Samoa Reports, not in the American Samoa Code Annotated."
+  },
+  {
+   "id": "as-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2223,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The American Samoa Code Annotated is a statutory code, not a case reporter; court decisions aren't published there."
+  },
+  {
+   "id": "as-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1735,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The American Samoa Code Annotated is a statutory code, not a case reporter; court decisions appear in American Samoa Reports."
+  },
+  {
+   "id": "as-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2548,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. American Samoa cases aren't published by the Marshall Islands Judiciary; these are separate jurisdictions with distinct court systems entirely."
+  },
+  {
+   "id": "as-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 4965,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The American Samoa Code Annotated is a statutory compilation, not a case reporter; court decisions appear in separate reporters."
+  }
+ ]
+}

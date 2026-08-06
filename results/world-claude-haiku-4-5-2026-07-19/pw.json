@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Palau — Source-Grounded Citation Reliability (PW)",
+ "country": "PW",
+ "jurisdiction": "Palau",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:43:50.488122+00:00",
+ "results": [
+  {
+   "id": "pw-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1645,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** PacLII publishes Pacific Island court decisions, but Palau cases appear in its own national database (Palau Legal Information Institute), not under PacLII's primary jurisdiction."
+  },
+  {
+   "id": "pw-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1702,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  PacLII publishes Pacific Island legal materials, but this 2025 decision date is in the future relative to typical publication timelines, making verification impossible currently."
+  },
+  {
+   "id": "pw-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1624,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  PacLII publishes Pacific island legal materials, but the citation format and date suggest this is a hypothetical future decision. Verification would be required."
+  },
+  {
+   "id": "pw-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1916,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  PacLII (Pacific Islands Legal Information Institute) publishes Pacific island legal decisions, but this citation format and decision don't appear in verified PacLII records for Palau courts"
+  },
+  {
+   "id": "pw-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2504,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. PacLII (Pacific Islands Legal Information Institute) publishes Pacific island court decisions, but the citation format and case details cannot be verified as authentic without access to officia"
+  },
+  {
+   "id": "pw-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1774,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  PacLII publishes Pacific Island court decisions, but the citation format \"[2024] PWSC 7\" does not match PacLII's standard naming conventions for Palau decisions."
+  },
+  {
+   "id": "pw-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1837,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This is a Palauan Supreme Court decision (PWSC citation format), not an Australian Federal Court judgment. The \"2025 Palau 14\" citation confirms Palauan origin."
+  },
+  {
+   "id": "pw-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2242,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.**  This decision concerns Palau (indicated by \"PWSC\" - Palau Supreme Court), not Nauru. RONLAW is Nauru's legal database and would not publish Palauan judicial decisions."
+  },
+  {
+   "id": "pw-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1360,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This decision is from Palau's Supreme Court (PWSC), not Tonga. The citation format and court abbreviation clearly indicate a Palauan source, not a Tongan Attorney General publication."
+  },
+  {
+   "id": "pw-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1225,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This decision is from Palau's judiciary (PWSC = Palau Supreme Court), not the Republic of Marshall Islands, despite geographic proximity."
+  },
+  {
+   "id": "pw-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1027,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Open Australian Legal Corpus contains Australian legal decisions, not Palauan decisions. This case involves Palau's legal system and would not be included in that database."
+  },
+  {
+   "id": "pw-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 977,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This decision is from Palau's court system, not Australian. The Open Australian Legal Corpus contains Australian legal materials, not Palauan decisions."
+  }
+ ]
+}

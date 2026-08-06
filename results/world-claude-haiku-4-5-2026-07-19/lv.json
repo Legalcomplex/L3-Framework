@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Latvia — Source-Grounded Citation Reliability (LV)",
+ "country": "LV",
+ "jurisdiction": "Latvia",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.6667,
+ "correct": 8,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:40:44.552147+00:00",
+ "results": [
+  {
+   "id": "lv-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1556,
+   "verdict": true,
+   "correct": true,
+   "raw": "**True**  The Latvian Constitutional Court (Satversmes tiesa) is the official publisher of decisions with this format and designation. The date, case number, and institution name confirm authentic off"
+  },
+  {
+   "id": "lv-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1468,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The title describes a ministerial recognition document, not legislation. Likumi.lv publishes laws and regulations, not individual administrative awards or certificates."
+  },
+  {
+   "id": "lv-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2017,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The ECLI format indicates a court decision, not a case collection category. The identifier structure suggests a specific judgment rather than a general \"Civillietas\" collection designation."
+  },
+  {
+   "id": "lv-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2812,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The decision title references Estonian entities (OÜ and AS are Estonian legal forms). Latvia's Competition Council would issue decisions about Latvian entities or those operating in Latvia un"
+  },
+  {
+   "id": "lv-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2050,
+   "verdict": true,
+   "correct": true,
+   "raw": "**True**  The Latvian Constitutional Court (Satversmes tiesa) is the official body that publishes its own decisions. This decision from May 18, 2015, with case number 61/2015 is a legitimate official "
+  },
+  {
+   "id": "lv-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3401,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The citation format and details appear inconsistent with standard Latvian legal documentation practices. The phrase \"Zaudējis spēku\" (lost force) typically appears in official gazettes, not a"
+  },
+  {
+   "id": "lv-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2688,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This is a Latvian Constitutional Court decision, not Croatian. The source \"odluke.sudovi.hr\" is a Croatian court decisions database, which would not publish Latvian court rulings."
+  },
+  {
+   "id": "lv-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 3240,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The document title suggests a Cabinet of Ministers commendation letter, which is an administrative act unlikely to be published as formal legislation on Likumi.lv, Latvia's official legal por"
+  },
+  {
+   "id": "lv-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1161,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The ECLI identifier format contains inconsistencies. \"AT\" suggests Austria, not Latvia (which uses \"LV\"), and the structure doesn't match standard Latvian Supreme Court citation formats."
+  },
+  {
+   "id": "lv-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1314,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This decision concerns Estonian companies (FITEK OÜ and Unifiedpost AS are Estonian entities). Latvia's Competition Council would not issue decisions about mergers of foreign companies outs"
+  },
+  {
+   "id": "lv-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1481,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This decision is from Latvia's Constitutional Court (Satversmes tiesa), not Georgia's Supreme Court. The title explicitly identifies it as a Latvian institution deciding a Latvian constitut"
+  },
+  {
+   "id": "lv-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1480,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This claim is contradictory. A Latvian legal instrument (indicated by Latvian language text) cannot be published by the Hellenic (Greek) Parliament. These are different jurisdictions."
+  }
+ ]
+}

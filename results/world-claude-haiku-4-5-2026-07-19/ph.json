@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Philippines — Source-Grounded Citation Reliability (PH)",
+ "country": "PH",
+ "jurisdiction": "Philippines",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:43:16.129851+00:00",
+ "results": [
+  {
+   "id": "ph-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 3475,
+   "verdict": false,
+   "correct": false,
+   "raw": "# Answer: **False**  **Explanation:** The date 2026-01-15 is in the future. As of the knowledge cutoff (April 2024), this decision cannot exist or be published yet."
+  },
+  {
+   "id": "ph-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1697,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  A 2026 decision cannot exist as of now (2024). Additionally, CTA case numbers and decision formats should be verified against official Philippine Court of Tax Appeals records for accuracy."
+  },
+  {
+   "id": "ph-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2956,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This decision predates Corpus Juris's establishment and lacks verifiable publication records matching these exact specifications in Philippine legal databases."
+  },
+  {
+   "id": "ph-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1761,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** G.R. No. 276927 with a 2026 date is a future decision that cannot exist yet, making this claim impossible to verify or authenticate as a real published source."
+  },
+  {
+   "id": "ph-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1543,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The date 2025-12-03 is in the future and cannot represent an actual published decision. Supreme Court decisions are published after their issuance."
+  },
+  {
+   "id": "ph-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1449,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The claim appears inconsistent. A 2026 date is in the future, making it impossible for a decision to exist with that publication date as of now."
+  },
+  {
+   "id": "ph-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1569,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Judicial Integrity Board v. Aviles decision appears to be an administrative disciplinary case, not typically published in Philippine Reports, which publishes Supreme Court decisions on "
+  },
+  {
+   "id": "ph-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1480,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.**  The identifier '10931' does not match the case number '10930' cited in the description. The numbers are inconsistent and suggest a cataloging or reference error in the source material."
+  },
+  {
+   "id": "ph-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1427,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  This decision predates Corpus Juris' establishment (founded 1998). The 1898 date and case format suggest it's from early Philippine jurisprudence, likely from official Philippine Reports, not"
+  },
+  {
+   "id": "ph-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2896,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** G.R. numbers denote Philippine Supreme Court decisions, not Indonesian Constitutional Court rulings. Indonesia uses different citation formats."
+  },
+  {
+   "id": "ph-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1462,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Judicial Integrity Office v. Judge Alfonso M. Cinco IV involves Philippine courts (Regional Trial Court, Catbalogan City). The Philippines has its own Supreme Court, not Indonesia's Con"
+  },
+  {
+   "id": "ph-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1105,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The identifier '11254' does not match the case number '11253' referenced in the description. The numerals are inconsistent, indicating a cataloging or transcription error in this bibliograp"
+  }
+ ]
+}

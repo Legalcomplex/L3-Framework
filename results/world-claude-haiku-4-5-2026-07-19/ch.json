@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Switzerland — Source-Grounded Citation Reliability (CH)",
+ "country": "CH",
+ "jurisdiction": "Switzerland",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:35:01.213955+00:00",
+ "results": [
+  {
+   "id": "ch-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1449,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  This decision cannot be verified as published by Entscheidsuche. The date is in the future (2026-01-07), and the citation format appears questionable for Swiss court decisions."
+  },
+  {
+   "id": "ch-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1464,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Fedlex publishes official legislation and international treaties, not tribunal notifications. This appears to be a tribunal administrative document, not a primary legislative source."
+  },
+  {
+   "id": "ch-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1521,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier '301.112' in Kanton Aargau's SAR does not correspond to a 2022 health pilot projects ordinance based on standard Swiss cantonal classification systems."
+  },
+  {
+   "id": "ch-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2090,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The title appears incomplete and lacks specificity. Swiss cantonal ordinances require full, precise titles. The truncated form prevents verification of actual publication in the Bern Legal "
+  },
+  {
+   "id": "ch-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2157,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  This law regulates publication procedures itself rather than being published as a separate dated act. It's a procedural/organizational law, not a substantive law with a specific publication"
+  },
+  {
+   "id": "ch-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2085,
+   "verdict": true,
+   "correct": true,
+   "raw": "# Answer: **True**  The identifier '2023/A/9438' with date 2023-10-27 correctly matches CAS arbitration case numbering conventions, where 2023 denotes the year and the sequential number is accurate."
+  },
+  {
+   "id": "ch-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1678,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  This decision is from Swiss district courts (Zürich Bezirksgerichte), not Portuguese courts. DGSI publishes Portuguese judicial decisions, not Swiss ones."
+  },
+  {
+   "id": "ch-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1606,
+   "verdict": false,
+   "correct": true,
+   "raw": "# Answer: **False**  The Tribunal administratif fédéral (Federal Administrative Court) is a judicial body, not a legislative source. Fedlex publishes legislation, not court notifications or decisions."
+  },
+  {
+   "id": "ch-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 5309,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The identifier 301.115 in Kanton Aargau's SAR typically corresponds to healthcare regulations, but verification of the exact 2022-01-01 date and specific ordinance title requires consultati"
+  },
+  {
+   "id": "ch-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1172,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The identifier '832.522' in the Kanton Bern Gesetzessammlung (BSG) does not correspond to this 1983 regulation. The numbering system and document classification cannot be verified as accura"
+  },
+  {
+   "id": "ch-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1183,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The title references a law about official publications and legal collection procedures. However, the claim lacks verifiable publication details and proper citation formatting for Swiss cant"
+  },
+  {
+   "id": "ch-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1091,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Switzerland's official legal decisions use a different citation format and are published through SwissLex or the Federal Statistical Office, not Germany's NeuRIS portal."
+  }
+ ]
+}

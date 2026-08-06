@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Wallis and Futuna — Source-Grounded Citation Reliability (WF)",
+ "country": "WF",
+ "jurisdiction": "Wallis and Futuna",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:28:08.275625+00:00",
+ "results": [
+  {
+   "id": "wf-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2120,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This is a future-dated issue; it cannot yet be verified as published, and the specific number appears fabricated."
+  },
+  {
+   "id": "wf-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2882,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific issue number, date, or content exists without access to authoritative Wallis-et-Futuna official gazette records."
+  },
+  {
+   "id": "wf-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2656,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Publication date (2026-02-04) cannot postdate the issue's stated date (2025-12-19) by nearly two months; this is inconsistent."
+  },
+  {
+   "id": "wf-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2232,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-01-31 is in the future; no such issue can currently be verified as published."
+  },
+  {
+   "id": "wf-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1935,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific issue number, date, or its existence without access to authenticated JOWF publication records."
+  },
+  {
+   "id": "wf-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2797,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. November 30, 2025 falls on a Sunday; official journals aren't typically published on Sundays, making this publication date implausible."
+  },
+  {
+   "id": "wf-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2500,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Wallis and Futuna's official journal (JOWF) is a French territorial publication, not published via Fiji's legal database."
+  },
+  {
+   "id": "wf-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2081,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Wallis and Futuna's official journal (JOWF) is a French territorial publication; it has no connection to Solomon Islands."
+  },
+  {
+   "id": "wf-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1788,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The publication date (2024-02-04) contradicts the cited issue date (19 December 2025), making the claim internally inconsistent and unreliable."
+  },
+  {
+   "id": "wf-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2094,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Wallis and Futuna's official journal (JOWF) is published locally/via French administration, not through Nauru's RONLAW database—different jurisdictions entirely."
+  },
+  {
+   "id": "wf-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2347,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Wallis and Futuna is a French overseas collectivity; the JOWF is published by French authorities, not Australia's Federal Register."
+  },
+  {
+   "id": "wf-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 3387,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. JOWF (Journal Officiel de Wallis-et-Futuna) is a French territorial publication, not associated with the Marshall Islands Judiciary."
+  }
+ ]
+}

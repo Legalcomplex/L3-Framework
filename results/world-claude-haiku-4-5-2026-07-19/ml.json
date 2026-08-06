@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Mali — Source-Grounded Citation Reliability (ML)",
+ "country": "ML",
+ "jurisdiction": "Mali",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:41:21.347070+00:00",
+ "results": [
+  {
+   "id": "ml-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1515,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Mali's customs code was enacted in 2000, not 2001. The SGG (Secrétariat Général du Gouvernement) publishes consolidated codes, but the date appears inaccurate."
+  },
+  {
+   "id": "ml-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1574,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Mali's Cour suprême was abolished in 2019 and replaced by the Constitutional Court and Court of Cassation. A 2024 decision cannot be attributed to the defunct institution."
+  },
+  {
+   "id": "ml-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1509,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The claim lacks verifiable publication details. No documented evidence confirms this specific article's publication by Mali's Supreme Court on the stated date in 2025."
+  },
+  {
+   "id": "ml-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1530,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Mali's official legal codes are published by the Journal Officiel de la République du Mali, not \"Mali Consolidated Legal Codes (SGG)\". SGG typically refers to a different governmental entit"
+  },
+  {
+   "id": "ml-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1658,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  Mali's Supreme Court does not maintain a publicly accessible official legal database or publication system for case decisions. This citation cannot be verified through official channels."
+  },
+  {
+   "id": "ml-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1679,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Mali's Supreme Court (Cour Suprême) does not systematically publish civil decisions with this numbering format in an official jurisprudence database. Official publication records are limited."
+  },
+  {
+   "id": "ml-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1370,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Code des douanes 2001 is Mali's customs code, not a Nigerian telecommunications regulation. The Nigerian Communications Commission publishes telecom determinations, not Malian customs c"
+  },
+  {
+   "id": "ml-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1550,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier's case number \"194\" does not match the bibliographic reference's \"193,\" indicating a discrepancy in the source documentation."
+  },
+  {
+   "id": "ml-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1149,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The publication date of September 7, 2026 is in the future and cannot be verified as a legitimate historical record from Mali's Supreme Court."
+  },
+  {
+   "id": "ml-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1065,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The 'Code de l'artisanat 1995' is a Malian legal text, not a Nigerian publication. Nigeria's NAFDAC could not have published Mali's crafts code."
+  },
+  {
+   "id": "ml-src-f05",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1287,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The identifier ends in '072' but the cited decision number is '071'. The numeric identifiers do not match, indicating a discrepancy in the bibliographic reference."
+  },
+  {
+   "id": "ml-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1617,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The decision's citation format and date suggest a Senegalese court decision, not Malian. Mali and Senegal are distinct West African nations with separate judicial systems."
+  }
+ ]
+}

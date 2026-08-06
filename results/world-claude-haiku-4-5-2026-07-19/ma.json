@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Morocco — Source-Grounded Citation Reliability (MA)",
+ "country": "MA",
+ "jurisdiction": "Morocco",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:40:51.679694+00:00",
+ "results": [
+  {
+   "id": "ma-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1868,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  This citation format lacks essential details. Moroccan Court of Cassation decisions require the decision number and year, but the citation appears incomplete or improperly formatted for stand"
+  },
+  {
+   "id": "ma-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1458,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  Bank Al-Maghrib does not publish official legislative texts through circulars. The banking law would be published in Morocco's official gazette (Bulletin Officiel), not through central bank c"
+  },
+  {
+   "id": "ma-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1884,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The citation format and specificity lack verifiable details. Moroccan official legal sources require precise publication dates in the Official Gazette (*Bulletin Officiel*), not vague year-on"
+  },
+  {
+   "id": "ma-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1526,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The claimed publication date (2025-11-01) is in the future and therefore impossible. No official document can be published on a date that hasn't occurred yet."
+  },
+  {
+   "id": "ma-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1878,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The document date (2026-04-23) is in the future, making this claim impossible. Official legal sources cannot be published on dates that have not yet occurred."
+  },
+  {
+   "id": "ma-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2390,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The publication date is in the future (2026-03-09), making this claim impossible to verify or validate as an actual official legal source at present."
+  },
+  {
+   "id": "ma-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1518,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The identifier ends in '466' but the cited decision number is '465'. These numerals do not match, indicating a discrepancy in the official reference documentation."
+  },
+  {
+   "id": "ma-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1443,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.**   The Egyptian Legal Corpus covers Egyptian law, not Moroccan law. This document concerns Moroccan banking law and would not be part of an Egyptian legal database."
+  },
+  {
+   "id": "ma-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1454,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The AMMC (Autorité Marocaine du Marché des Capitaux) publishes circulars, not \"Arrêtés\" (ministerial decrees). This appears to be a regulatory instrument mismatch."
+  },
+  {
+   "id": "ma-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1319,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  This document cannot be verified as an official ANRT publication. The filename lacks standard ANRT document identifiers, official reference numbers, and formal publication formatting typical "
+  },
+  {
+   "id": "ma-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1215,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This document cannot originate from Egyptian Legal Corpus as a Moroccan official source. Morocco has its own legal institutions; Egyptian corpora would not be authoritative for Moroccan com"
+  },
+  {
+   "id": "ma-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1321,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Egyptian Legal Corpus cannot be an official Moroccan legal source. Morocco publishes its official gazette as \"Bulletin Officiel du Maroc,\" not through Egyptian databases."
+  }
+ ]
+}

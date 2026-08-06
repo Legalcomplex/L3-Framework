@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Denmark — Source-Grounded Citation Reliability (DK)",
+ "country": "DK",
+ "jurisdiction": "Denmark",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:36:11.035224+00:00",
+ "results": [
+  {
+   "id": "dk-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1654,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The decision cannot be verified as published by Domsdatabasen based on the incomplete citation. The truncated text lacks sufficient identifying information (case number, court, parties) for"
+  },
+  {
+   "id": "dk-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1542,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The future date (2026-01-08) is implausible for a historical publication claim. Official Danish legislation cannot be published on future dates."
+  },
+  {
+   "id": "dk-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1538,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The publication date (2026-03-28) is in the future relative to the stated effective date (2026-01-01), which is implausible for a Danish circular. The timing is inconsistent."
+  },
+  {
+   "id": "dk-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2540,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.  This decision title appears fictional or incorrectly cited. Danish Courts Database (Domsdatabasen) publishes court decisions, but this specific reference lacks proper case identifiers (court"
+  },
+  {
+   "id": "dk-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1607,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Decision '82/2025' cannot be from April 21, 2026, as that date is in the future. Danish Supreme Court decisions use year-based numbering that wouldn't predate their publication."
+  },
+  {
+   "id": "dk-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2079,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The identifier format and specific case details cannot be verified against Denmark's National Tax Tribunal's actual database records without direct access to official sources."
+  },
+  {
+   "id": "dk-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1494,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The identifier format 'BS-19699/2021-VLR' does not match standard Danish court decision database conventions, which typically use different naming structures for cases in Domsdatabasen."
+  },
+  {
+   "id": "dk-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 6192,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This Danish administrative regulation (Bekendtgørelse) would be published in the Danish legal database (RetsinfoOgKunnebase), not Finlex, which is Finland's official legal database."
+  },
+  {
+   "id": "dk-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1349,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.**   This document concerns Danish (\"Cirkulære\") regulations but Lovdata is exclusively a Norwegian legal database. Danish circulars are published through Retsinformation, not Lovdata."
+  },
+  {
+   "id": "dk-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1501,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The ECLI identifier format indicates a 2021 decision, but the case description references 2018-10-10, creating a chronological inconsistency that contradicts the matching claim."
+  },
+  {
+   "id": "dk-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1408,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The decision number format '82/2025' with a 2023 date is internally inconsistent. Danish Supreme Court decisions use year-based citation formats, and a 2025-numbered decision cannot predate"
+  },
+  {
+   "id": "dk-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1234,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The Denmark National Tax Tribunal (Landsskatteretten) publishes decisions, but this specific decision title and date cannot be verified as an authentic official source without access to the t"
+  }
+ ]
+}

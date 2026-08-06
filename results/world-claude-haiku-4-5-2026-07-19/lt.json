@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Lithuania — Source-Grounded Citation Reliability (LT)",
+ "country": "LT",
+ "jurisdiction": "Lithuania",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:40:37.838865+00:00",
+ "results": [
+  {
+   "id": "lt-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1469,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The citation is incomplete and truncated, making it impossible to verify as a legitimate TAR publication. A proper Lithuanian legal source citation requires the full title and complete refe"
+  },
+  {
+   "id": "lt-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1356,
+   "verdict": true,
+   "correct": true,
+   "raw": "**True**  The Lithuanian Constitutional Court (Konstitucinis Teismas) publishes decisions on constitutional matters, including those regarding presidential acts and appeals from lower courts seeking c"
+  },
+  {
+   "id": "lt-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2608,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The identifier format and case type designation don't align with standard Lithuanian Supreme Court criminal case nomenclature. BIK prefix typically indicates lower court jurisdictions rathe"
+  },
+  {
+   "id": "lt-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1698,
+   "verdict": true,
+   "correct": true,
+   "raw": "**True**  The Lithuanian Parliament (Seimas) routinely publishes committee meeting agendas through official channels. The date format and committee reference are consistent with standard Seimas docume"
+  },
+  {
+   "id": "lt-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1720,
+   "verdict": false,
+   "correct": false,
+   "raw": "# Evaluation: False  The future date (2026-04-02) makes this claim impossible. No decision can be published from the future. This appears to be a fictional or test record."
+  },
+  {
+   "id": "lt-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1688,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The document title indicates a municipal-level resolution about partner selection procedures, which typically wouldn't be published in TAR (the official national legal acts database), only in m"
+  },
+  {
+   "id": "lt-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2168,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Lithuanian legislation would be published in Lithuanian official sources (Teisės aktų registras), not in Hungary's Nemzeti Jogszabálytár database."
+  },
+  {
+   "id": "lt-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1416,
+   "verdict": true,
+   "correct": false,
+   "raw": "**True**  The Lithuanian Constitutional Court (Konstitucinis Teismas) publishes decisions on constitutional matters, including those examining presidential acts. This decision's format and subject mat"
+  },
+  {
+   "id": "lt-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2173,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The case identifier format appears inconsistent. Lithuanian Supreme Court criminal cases use \"BIK\" prefix, but the year in the identifier (2025) should match the case number year (2024), no"
+  },
+  {
+   "id": "lt-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1758,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This document is a Lithuanian parliamentary committee agenda, not Turkish legislation. It would be published through Lithuanian official sources, not the Turkish Mevzuat Bilgi Sistemi syste"
+  },
+  {
+   "id": "lt-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1326,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This decision's title and format indicate it concerns administrative review of a ministerial decision, which falls under Lithuania's administrative courts or ombudsman jurisdiction, not com"
+  },
+  {
+   "id": "lt-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1152,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The title format and specificity suggest this is a municipal-level administrative document rather than a national legal act requiring TAR publication. TAR publishes primarily state-level le"
+  }
+ ]
+}

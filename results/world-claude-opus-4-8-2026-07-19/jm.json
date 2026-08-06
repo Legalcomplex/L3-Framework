@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Jamaica — Source-Grounded Citation Reliability (JM)",
+ "country": "JM",
+ "jurisdiction": "Jamaica",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:15:58.893363+00:00",
+ "results": [
+  {
+   "id": "jm-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2636,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date (2026) is in the future relative to any verifiable record; this citation appears fabricated and cannot be confirmed."
+  },
+  {
+   "id": "jm-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 3787,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date (2026) is in the future relative to plausible verification; the citation cannot be confirmed as authentic."
+  },
+  {
+   "id": "jm-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2088,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific guideline title, exact publication date, or its details from reliable sources; therefore unconfirmed."
+  },
+  {
+   "id": "jm-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2363,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Jamaica's Constitution derives from the 1962 Order in Council (UK), not a 2022 Proclamation; this citation appears fabricated."
+  },
+  {
+   "id": "jm-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2498,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-03-27 is in the future, making this citation impossible to verify as a genuine published decision."
+  },
+  {
+   "id": "jm-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2041,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date [2026] indicates a future year; such a judgment cannot yet exist, making this citation unverifiable and fabricated."
+  },
+  {
+   "id": "jm-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2145,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific case exists in Jamaica Court of Appeal records; the citation appears fabricated or unconfirmed."
+  },
+  {
+   "id": "jm-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2534,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The year 2026 is in the future relative to verifiable records; I cannot confirm this citation's authenticity or accuracy."
+  },
+  {
+   "id": "jm-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1773,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Jamaican insurance guidelines are published by the Financial Services Commission (FSC), not Aruba's DWJZ Legislation Archive, which is jurisdictionally irrelevant."
+  },
+  {
+   "id": "jm-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1925,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Jamaica's constitutional instruments are published via Jamaican government sources, not Sint Maarten's; the attribution is jurisdictionally incorrect."
+  },
+  {
+   "id": "jm-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1387,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific case citation, party name format, or date without access to authoritative Jamaican court records."
+  },
+  {
+   "id": "jm-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2137,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The date 2026-03-06 is in the future relative to verifiable records; I cannot confirm this citation's authenticity."
+  }
+ ]
+}

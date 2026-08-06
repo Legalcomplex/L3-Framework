@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Burundi — Source-Grounded Citation Reliability (BI)",
+ "country": "BI",
+ "jurisdiction": "Burundi",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:34:00.129903+00:00",
+ "results": [
+  {
+   "id": "bi-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1631,
+   "verdict": false,
+   "correct": false,
+   "raw": "# Answer: **False**  **Explanation:** Burundi's Official Gazette format and numbering conventions do not match this ministerial ordinance structure. The citation lacks proper verification markers and "
+  },
+  {
+   "id": "bi-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1594,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The citation format appears fabricated. Burundi's legal database structures and official Supreme Court case reporting do not match this citation pattern or reference code (R.P.C.1.558)."
+  },
+  {
+   "id": "bi-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3068,
+   "verdict": false,
+   "correct": false,
+   "raw": "# Evaluation: False  Unable to verify this specific ministerial ordinance's publication in Burundi's Official Gazette. The citation lacks completeness (truncated title) and cannot be authenticated aga"
+  },
+  {
+   "id": "bi-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1645,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Juricaf is a French database aggregating African court decisions, not the official Burundi Supreme Court publisher. The cited source format cannot be verified as an official publication."
+  },
+  {
+   "id": "bi-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1716,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Ordonnance ministérielle 540/005 dated 02/01/2018 cannot be verified as published in Burundi's Official Gazette on that specific date. The citation lacks confirmable publication details and"
+  },
+  {
+   "id": "bi-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1796,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The identifier format and structure do not align with standard Burundi Supreme Court cataloging conventions. The claim's specificity cannot be independently verified without access to Juric"
+  },
+  {
+   "id": "bi-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1792,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Kenya Law reports Kenyan legislation, not Burundian. This ordonnance ministérielle concerns Burundi and would be published through Burundian official sources, not Kenya's NCLR."
+  },
+  {
+   "id": "bi-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1833,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The case identifier ends in 1559, but the bibliographic citation references R.P.C.1.558, indicating a discrepancy in the case number that makes them non-corresponding."
+  },
+  {
+   "id": "bi-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1318,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  An Ordonnance ministérielle from Burundi cannot be published by Tanzania's Attorney General's Office. The source jurisdiction is incorrect; Burundi has its own official publication channels"
+  },
+  {
+   "id": "bi-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 3354,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier contains \"RAA610\" but the case citation references \"R.A.A.609,\" representing different case numbers that are internally inconsistent."
+  },
+  {
+   "id": "bi-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 3009,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Burundi's official legal sources are published in the *Journal Officiel de la République du Burundi*, not the Seychelles Official Gazette. Seychelles is a separate country with its own lega"
+  },
+  {
+   "id": "bi-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1671,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The citation describes a Burundian Supreme Court decision, not a Mauritius Supreme Court judgment. Different jurisdictions have distinct court systems and publications."
+  }
+ ]
+}

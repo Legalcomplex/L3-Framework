@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Jordan — Source-Grounded Citation Reliability (JO)",
+ "country": "JO",
+ "jurisdiction": "Jordan",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:56:07.342509+00:00",
+ "results": [
+  {
+   "id": "jo-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2087,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Jordan's General Budget Law for 2024 was published in the Official Gazette (الجريدة الرسمية) around late December 2023, not January 1 exactly."
+  },
+  {
+   "id": "jo-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1978,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Credit Information Law (Temporary Law No. 15 of 2010) is national legislation published in Jordan's Official Gazette, not a Central Bank regulatory circular."
+  },
+  {
+   "id": "jo-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2013,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This instrument's exact publication date, edition, or issuing details cannot be verified without direct access to official Jordan Securities Commission records."
+  },
+  {
+   "id": "jo-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2691,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.**  I cannot verify this specific bibliographic claim — no reliable record confirms these exact instructions were published via that bureau on 2025-03-02."
+  },
+  {
+   "id": "jo-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2062,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Jordan has no such statute; the Jordanian National Commission for Women's Affairs operates under royal/executive directive, not a dedicated parliamentary law."
+  },
+  {
+   "id": "jo-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2913,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific circular number, date, and content combination against actual Central Bank of Jordan records; unable to confirm authenticity independently."
+  },
+  {
+   "id": "jo-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2018,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** ADGM (Abu Dhabi Global Market) is a UAE financial free zone framework, not a Jordanian legal publication source for national budget laws."
+  },
+  {
+   "id": "jo-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2662,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Jordan's Credit Information Law No. 15 of 2010 is a Jordanian national statute, not published through DIFC Legal Database, which covers Dubai International Financial Centre laws."
+  },
+  {
+   "id": "jo-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2718,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This citation lacks verifiable specificity—exact date, instrument number, and publication details cannot be confirmed against actual Jordan Securities Commission official records available."
+  },
+  {
+   "id": "jo-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 3013,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This instructions title/date cannot be verified as an authentic official publication by Jordan's Legislation and Opinion Bureau; likely fabricated or unconfirmed citation."
+  },
+  {
+   "id": "jo-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2306,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** No such law exists in Jordan; the Jordanian National Commission for Women's Affairs operates administratively, not under a dedicated named statute like this."
+  },
+  {
+   "id": "jo-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1501,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — SAMA is Saudi Arabia's central bank, not Jordan's; this circular concerns Jordanian jurisdiction, so the publisher attribution is incorrect."
+  }
+ ]
+}

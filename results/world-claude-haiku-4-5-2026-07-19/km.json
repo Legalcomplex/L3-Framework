@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Comoros — Source-Grounded Citation Reliability (KM)",
+ "country": "KM",
+ "jurisdiction": "Comoros",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.75,
+ "correct": 9,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:39:45.265639+00:00",
+ "results": [
+  {
+   "id": "km-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1549,
+   "verdict": true,
+   "correct": true,
+   "raw": "# Answer: True  **Explanation:** This citation format matches Juricaf's standard documentation of Comorian Supreme Court decisions. The date, court designation, and reference number are consistent wit"
+  },
+  {
+   "id": "km-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1515,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The citation format and ministerial publication attribution cannot be verified against accessible Comoros legal databases. Official promulgation details for this specific decree require confi"
+  },
+  {
+   "id": "km-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1748,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The identifier format appears inconsistent with standard Juricaf conventions. Comoros Supreme Court decisions typically use different structural formatting for case identifiers and dating pro"
+  },
+  {
+   "id": "km-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1714,
+   "verdict": true,
+   "correct": true,
+   "raw": "# Answer: **True**  The citation format, date structure, and reference to Comoros Ministry of Justice publication align with standard Comorian legislative documentation practices for laws from this pe"
+  },
+  {
+   "id": "km-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2103,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Juricaf is a database aggregating court decisions from French-speaking countries, not an official Comoros court publisher. The citation format appears incomplete and lacks proper verificati"
+  },
+  {
+   "id": "km-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1578,
+   "verdict": true,
+   "correct": true,
+   "raw": "# Answer: True  **Explanation:** This law establishing the Development Bank of Comoros follows standard Comorian legislative citation format with proper date (10 June 1981) and ministerial publication"
+  },
+  {
+   "id": "km-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2125,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The identifier ending in \"2017CIVIL008\" contradicts the case number \"2017-civil-007\" in the claimed citation. The numerals do not match."
+  },
+  {
+   "id": "km-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1665,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  A Comorian decree (Décret n°11-147/PR) cannot be officially published via Tanzania's Attorney General's Office. Comoros has its own official publication channels, not Tanzania's."
+  },
+  {
+   "id": "km-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1286,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The identifier ends in \"03\" but the citation references \"02\". The numeric suffix in the Juricaf identifier does not match the case number cited, indicating a discrepancy."
+  },
+  {
+   "id": "km-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1098,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Laws passed by Comoros are published in the *Journal Officiel de l'Union des Comores*, not the Seychelles Official Gazette. Seychelles is a separate nation."
+  },
+  {
+   "id": "km-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1576,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The citation references Comoros Supreme Court, not Mauritius Supreme Court. These are distinct jurisdictions, making the publication source attribution incorrect."
+  },
+  {
+   "id": "km-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1965,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Kenya Law reports Kenyan legislation, not Comorian law. This law should be documented through official Comorian legal sources, not Kenya's national reporting body."
+  }
+ ]
+}

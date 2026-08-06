@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Laos — Source-Grounded Citation Reliability (LA)",
+ "country": "LA",
+ "jurisdiction": "Laos",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:17:06.783515+00:00",
+ "results": [
+  {
+   "id": "la-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2305,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific document, date, or publication details; asserting its authenticity risks confirming fabricated bibliographic information."
+  },
+  {
+   "id": "la-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3043,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The Lao Trade Portal officially publishes trade-related legal documents, including plant/plant-product regulations, making this plausibly authentic."
+  },
+  {
+   "id": "la-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3629,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Laos's court law is the \"Law on People's Courts\"; UNDP hosted translations, but exact 2006-03-20 date and title need verification."
+  },
+  {
+   "id": "la-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2764,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific decision, title, publication date, or attribution; treat as fabricated absent authoritative Lao regulatory confirmation."
+  },
+  {
+   "id": "la-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 4396,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears fabricated; the future 2026 date, unverifiable decree number, and specific title cannot be confirmed as authentic."
+  },
+  {
+   "id": "la-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2767,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Laos' Constitution was amended in 2003, not 2006; UNDP translations exist, but this specific date/citation appears inaccurate or fabricated."
+  },
+  {
+   "id": "la-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 3525,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific document, exact title, publication channel, or 2023-06-23 date; likely fabricated or unverifiable citation details."
+  },
+  {
+   "id": "la-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2130,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Laos is not part of Indonesia's JDIHN legal network; Lao legal sources wouldn't be published through Indonesia's system."
+  },
+  {
+   "id": "la-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1962,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Laos's court law is the \"Law on People's Courts\"; UNDP's translation collection doesn't clearly match this specific 2008 citation."
+  },
+  {
+   "id": "la-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1521,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Husky & Partners is a Cambodian legal library, not an authoritative source for Laos jurisdiction legal documents."
+  },
+  {
+   "id": "la-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 3479,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. \"Thu Vien Phap Luat\" is a Vietnamese legal database, not Laotian; also the future 2026 date is unverifiable."
+  },
+  {
+   "id": "la-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2454,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Lao Constitution was amended in 2003, not 2007; UNDP translation dates and this specific citation appear unreliable."
+  }
+ ]
+}

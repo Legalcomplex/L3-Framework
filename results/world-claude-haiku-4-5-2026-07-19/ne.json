@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Niger — Source-Grounded Citation Reliability (NE)",
+ "country": "NE",
+ "jurisdiction": "Niger",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:42:24.857523+00:00",
+ "results": [
+  {
+   "id": "ne-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1600,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Niger's Court of Cassation does not publish decisions with this citation format. Niger lacks established official legal databases for systematic judicial publication comparable to this stan"
+  },
+  {
+   "id": "ne-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1620,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 02 avril 2025 is in the future (as of current knowledge cutoff in April 2024), making this citation impossible to verify as an actual published decision."
+  },
+  {
+   "id": "ne-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1503,
+   "verdict": false,
+   "correct": false,
+   "raw": "False  The identifier format does not match Niger's standard Court of Cassation citation conventions. The numerical structure \"21130CIV\" appears inconsistent with typical Nigerien judicial case number"
+  },
+  {
+   "id": "ne-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1701,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The citation format lacks standard official publication details. Niger's Court of Cassation decisions require verification through official Nigerien legal databases or official gazettes, not "
+  },
+  {
+   "id": "ne-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1492,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Niger's highest court is the Constitutional Court, not a Court of Cassation. This citation format does not correspond to Niger's actual judicial structure or official publications."
+  },
+  {
+   "id": "ne-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1531,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The identifier format doesn't match Niger's Court of Cassation citation standards. The identifier includes \"COURDECASSATION\" while the proper citation uses \"Cour de cassation,\" suggesting i"
+  },
+  {
+   "id": "ne-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2795,
+   "verdict": false,
+   "correct": true,
+   "raw": "# Answer: False  The identifier contains \"24042CIV\" but the cited case reference is \"24-041/Civ\"—the case numbers do not match (24042 vs. 24-041), indicating inconsistent documentation."
+  },
+  {
+   "id": "ne-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1493,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier contains \"25094P\" but the case citation shows \"25-093-P\"—the numbers don't match (25094 vs 25-093)."
+  },
+  {
+   "id": "ne-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1155,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Sierra Leone Web Laws Archive would not publish Niger's Court of Cassation decisions. Niger and Sierra Leone are separate countries with distinct legal systems and archives."
+  },
+  {
+   "id": "ne-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1296,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Niger and Guinea are separate countries with distinct official journals. A Niger Court of Cassation decision would be published in Niger's official journal, not Guinea's."
+  },
+  {
+   "id": "ne-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1055,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Cour de cassation is Niger's supreme court, not the Nigerian Electricity Regulatory Commission. These are entirely separate institutions in different countries with different legal syst"
+  },
+  {
+   "id": "ne-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1509,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Niger's Cour de cassation decisions are not systematically published on CivLII/Laws.Africa. This citation lacks verifiable publication confirmation from that platform."
+  }
+ ]
+}

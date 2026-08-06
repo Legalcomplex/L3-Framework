@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Fiji — Source-Grounded Citation Reliability (FJ)",
+ "country": "FJ",
+ "jurisdiction": "Fiji",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:53:22.282736+00:00",
+ "results": [
+  {
+   "id": "fj-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1969,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Allied Health Practitioners Act 2011 is a genuine Fijian statute, but I cannot verify the specific 2016 laws.gov.fj publication citation as accurate."
+  },
+  {
+   "id": "fj-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1971,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this cites a future-dated decision (2026), which cannot exist yet; the case details cannot be verified as authentic."
+  },
+  {
+   "id": "fj-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2022,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Fiji has no such standalone Act; airport development/modernisation matters are governed under different legislation, so this citation appears fabricated or inaccurate."
+  },
+  {
+   "id": "fj-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1947,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this decision has a future date (27 March 2026), meaning it cannot yet exist or be verifiably published as an official record."
+  },
+  {
+   "id": "fj-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2202,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Fiji's Arbitration Act is Cap. 38, originally enacted 1965, but the 2018 currency claim needs verification against actual Laws of Fiji revised edition records for accuracy."
+  },
+  {
+   "id": "fj-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2160,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific case citation exists in Fiji Courts Online records; unable to confirm details independently without database access."
+  },
+  {
+   "id": "fj-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2021,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Allied Health Practitioners Act in Fiji was enacted in 2010 (Decree No. 61 of 2010), not published as a 2011 Act."
+  },
+  {
+   "id": "fj-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2052,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The claim mismatches identifiers: HBC 362.2016 versus HBC 362.2015 in the title, and the future date is implausible/unverifiable."
+  },
+  {
+   "id": "fj-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1756,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Fiji has no \"Airports (Development and Modernisation) Act 2012\" in its official legislation database; this title does not correspond to any actual enacted Fijian statute."
+  },
+  {
+   "id": "fj-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1726,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Fiji civil actions (HBC) are heard in Fiji's High Court, not the Federal Court of Australia, which lacks jurisdiction over Fijian labor disputes."
+  },
+  {
+   "id": "fj-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2641,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Arbitration Act 1965 is a Fiji statute, but RONLAW is Nauru's legal database, not Fiji's official publication source—jurisdictions don't match."
+  },
+  {
+   "id": "fj-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1685,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The claim mismatches identifiers—HBJ 38.2024 versus HBJ 38.2023—making the citation internally inconsistent and unverifiable as accurately stated."
+  }
+ ]
+}

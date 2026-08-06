@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Nigeria — Source-Grounded Citation Reliability (NG)",
+ "country": "NG",
+ "jurisdiction": "Nigeria",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:20:18.584029+00:00",
+ "results": [
+  {
+   "id": "ng-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2094,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. NigeriaLII publishes Nigerian court decisions freely online, including Supreme Court judgments identified by suit numbers like SC.373/2015."
+  },
+  {
+   "id": "ng-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2410,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Agricultural and Rural Management Training Institute Act dates from 1993, not 1980; publisher and date appear incorrect."
+  },
+  {
+   "id": "ng-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2195,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This is a Guardian newspaper article, not an official FCCPC publication; also the 2026 date is implausibly future-dated."
+  },
+  {
+   "id": "ng-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2102,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific document's existence, title format, or publication date without access to NERC's official records."
+  },
+  {
+   "id": "ng-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2224,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date (2026) is in the future, making this citation impossible to verify as a genuine published source."
+  },
+  {
+   "id": "ng-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3045,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify NAFDAC published this specific guideline with that exact title and January 2025 date; likely fabricated citation."
+  },
+  {
+   "id": "ng-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2737,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This is a Nigerian Supreme Court case (SC. suit number), not decided by Mali's Cour Suprême."
+  },
+  {
+   "id": "ng-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1922,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Agricultural and Rural Management Training Institute Act dates to 1993, not 1977; the cited date is inaccurate."
+  },
+  {
+   "id": "ng-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1506,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Guardian is a newspaper article, not an official FCCPC publication; the source attribution is incorrect."
+  },
+  {
+   "id": "ng-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2287,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.**  EKEDP (Eko Electricity Distribution) MYTO is a Nigerian regulatory document; it wouldn't be published via Côte d'Ivoire's CivLII platform."
+  },
+  {
+   "id": "ng-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2274,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The SEC recapitalisation directive followed CBN's March 2024 policy; no such publication existed on 2023-04-16 with that figure."
+  },
+  {
+   "id": "ng-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2592,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. NAFDAC issues guidelines and regulations, but I cannot verify this specific title, exact date, or publication existence."
+  }
+ ]
+}

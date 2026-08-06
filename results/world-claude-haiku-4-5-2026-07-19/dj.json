@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Djibouti — Source-Grounded Citation Reliability (DJ)",
+ "country": "DJ",
+ "jurisdiction": "Djibouti",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:36:04.837754+00:00",
+ "results": [
+  {
+   "id": "dj-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2183,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The publication date is in the future (2026-03-29), making this claim temporally impossible. Official legal sources cannot be published before the present date."
+  },
+  {
+   "id": "dj-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1507,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The decree is dated 2026, which is a future year. As of now (2024), this document cannot have been published in April 2026."
+  },
+  {
+   "id": "dj-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 5623,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The date 2026-03-29 is in the future relative to the current date, making this publication impossible. Additionally, the internal date reference (2025-03-11) predates the purported publicat"
+  },
+  {
+   "id": "dj-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1610,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  This claim cannot be verified as accurate. The date is in the future (2026), making this a hypothetical or fabricated reference rather than an actual published legal document from Djibouti'"
+  },
+  {
+   "id": "dj-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2385,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The date 2026-03-26 is in the future and cannot be a valid publication date. This claim references an event that has not yet occurred."
+  },
+  {
+   "id": "dj-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1546,
+   "verdict": false,
+   "correct": false,
+   "raw": "# Answer: False  ## Explanation: The cited publication date (2026-03-29) is in the future, making this claim impossible to verify as a published official source as of now."
+  },
+  {
+   "id": "dj-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1500,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Djibouti's legislative numbering system and publication formats cannot be verified for this specific citation. The reference lacks standard official gazette confirmation details required fo"
+  },
+  {
+   "id": "dj-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1469,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This decree belongs to Djibouti's legal system, not Seychelles. Djibouti has its own official gazette; publication via Seychelles Official Gazette is incorrect."
+  },
+  {
+   "id": "dj-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1194,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This document cannot originate from Tanzania's Attorney General's Office, as it concerns Djibouti. The reference number format and dating are also inconsistent with verified Djiboutian lega"
+  },
+  {
+   "id": "dj-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 3094,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Kenya Law reports Kenyan legislation, not Djiboutian decrees. This Djiboutian arrêté should be published through official Djibouti legal sources, not Kenya's national law reporting platform"
+  },
+  {
+   "id": "dj-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1784,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Kenya Law reports Kenyan legislation, not Djiboutian decrees. This Djiboutian arrêté would not be published through Kenya's official legal reporting platform."
+  },
+  {
+   "id": "dj-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1116,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This claim is implausible because the cited source (Tanzania Attorney General's Office) has no jurisdiction over Djibouti legislation, and the date (2026) is in the future."
+  }
+ ]
+}

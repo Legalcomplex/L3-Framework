@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Iran — Source-Grounded Citation Reliability (IR)",
+ "country": "IR",
+ "jurisdiction": "Iran",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:39:00.179131+00:00",
+ "results": [
+  {
+   "id": "ir-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2922,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Islamic Penal Code is Iran's official legislation, but this specific title appears to be an editorial summary rather than an official legal source designation. The actual law has differ"
+  },
+  {
+   "id": "ir-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1541,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The IRIB (Islamic Republic of Iran Broadcasting) organizational policies would be published by the organization itself or Iranian government bodies, not by the Iran Human Rights Documentati"
+  },
+  {
+   "id": "ir-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1836,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The identifier '3430' in the Abdorrahman Boroumand Center collection does not correspond to this specific Islamic Penal Code entry. The identifier-to-document mapping differs from the claim p"
+  },
+  {
+   "id": "ir-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1411,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The Iran Human Rights Documentation Center is a non-governmental organization, not an official Iranian legal source. Official Iranian legal codes are published through government channels, no"
+  },
+  {
+   "id": "ir-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1584,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Judiciary Chief Larijani's directives are official Iranian judicial documents, not primary publications by the Boroumand Center, which archives translations rather than issues original dire"
+  },
+  {
+   "id": "ir-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1503,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Islamic Penal Code Book Five is an official Iranian legal text, but Iran Human Rights Documentation Center is not its official publisher—Iran's government is."
+  },
+  {
+   "id": "ir-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2085,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The document identifier and title don't align with standard Iranian legal cataloging. The Boroumand Center uses different naming conventions for penal code provisions, and this exact title form"
+  },
+  {
+   "id": "ir-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1542,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The IRIB (Islamic Republic of Iran Broadcasting) is a state media organization, not a legal code. This document establishes broadcasting policies, not statutory law subject to official legal "
+  },
+  {
+   "id": "ir-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1291,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Abdorrahman Boroumand Center's database structure and identifier assignments cannot be verified against the specific claim. The identifier-to-document mapping requires direct database c"
+  },
+  {
+   "id": "ir-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1837,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The Iran Human Rights Documentation Center is an independent NGO, not an official Iranian legal publisher. Official translations would come directly from Iranian government sources."
+  },
+  {
+   "id": "ir-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1100,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This claim contains a geographic inconsistency. A directive by Iran's Judiciary Chief would be published through Iranian official channels, not Jordan's Legislation & Opinion Bureau."
+  },
+  {
+   "id": "ir-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1418,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The DIFC (Dubai International Financial Centre) Legal Database primarily covers UAE and international commercial law, not Iranian domestic penal legislation."
+  }
+ ]
+}

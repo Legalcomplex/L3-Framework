@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Andorra — Source-Grounded Citation Reliability (AD)",
+ "country": "AD",
+ "jurisdiction": "Andorra",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.6667,
+ "correct": 8,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:06:33.634590+00:00",
+ "results": [
+  {
+   "id": "ad-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2610,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific decree exists; the citation details and publication claim require confirmation against the actual Butlletí Oficial."
+  },
+  {
+   "id": "ad-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3963,
+   "verdict": true,
+   "correct": true,
+   "raw": "I cannot verify this claim as True. It references a 2026 future date, and I lack access to Andorra's BOPA records confirming this specific decree's publication."
+  },
+  {
+   "id": "ad-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2170,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-03-13 is in the future relative to a 2024 case identifier, making this bibliographic claim implausible."
+  },
+  {
+   "id": "ad-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2508,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Andorran decrees are published in the BOPA (Butlletí Oficial del Principat d'Andorra), not \"Andorra Portal Juridic\"; publication typically follows approval date."
+  },
+  {
+   "id": "ad-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3055,
+   "verdict": true,
+   "correct": true,
+   "raw": "I cannot verify this specific claim as True, since the date (2026) is in the future and unverifiable.  False: future-dated source, cannot confirm existence or BOPA publication details without access t"
+  },
+  {
+   "id": "ad-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2173,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-03-13 postdates identifier \"2025-101-RE,\" and I cannot verify this fabricated-looking citation against actual Tribunal Constitucional records."
+  },
+  {
+   "id": "ad-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2304,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Andorran decrees are published in the Butlletí Oficial del Principat d'Andorra (BOPA), not Fedlex, which is Switzerland's platform."
+  },
+  {
+   "id": "ad-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2214,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Andorran legislation is published in the Butlletí Oficial del Principat d'Andorra (BOPA), not the Dutch legislation portal."
+  },
+  {
+   "id": "ad-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1751,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this identifier mapping; the claim appears fabricated, with an implausible future date and inconsistent case numbers."
+  },
+  {
+   "id": "ad-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1937,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Andorran decrees are published in the Butlletí Oficial del Principat d'Andorra (BOPA), not Gibraltar's legal repository."
+  },
+  {
+   "id": "ad-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2471,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Andorran ministerial orders are published in the Butlletí Oficial del Principat d'Andorra (BOPA), not the Irish Statute Database."
+  },
+  {
+   "id": "ad-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1883,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify these fabricated identifiers or dates; the claim contains internally inconsistent references and lacks credible authentication for Andorran Constitutional Court records."
+  }
+ ]
+}

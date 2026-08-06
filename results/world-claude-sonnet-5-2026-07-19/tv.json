@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Tuvalu — Source-Grounded Citation Reliability (TV)",
+ "country": "TV",
+ "jurisdiction": "Tuvalu",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:04:17.853959+00:00",
+ "results": [
+  {
+   "id": "tv-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2286,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This citation appears fabricated—no verifiable record of this specific case, parties, or citation exists in PacLII's actual Tuvalu database."
+  },
+  {
+   "id": "tv-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2215,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This citation refers to a future date (2026, not yet occurred) and cannot be verified as an actual published PacLII decision."
+  },
+  {
+   "id": "tv-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2297,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated/unverifiable citation; no such Tuvalu High Court decision can be confirmed as actually published on PacLII."
+  },
+  {
+   "id": "tv-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 3371,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this citation appears fabricated; I cannot verify \"Sulani Trading Ltd v Tuvalu Government's Chancery Taskforce\" exists in actual PacLII Tuvalu records."
+  },
+  {
+   "id": "tv-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2037,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This citation cannot be verified as an authentic PacLII record; it appears fabricated, and I cannot confirm actual Tuvalu High Court decisions or citations."
+  },
+  {
+   "id": "tv-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2166,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation exists in PacLII's database; it appears fabricated, as I have no confirmed record of this case."
+  },
+  {
+   "id": "tv-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2291,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Tuvalu's court decisions (TVHC) are published by Tuvalu's judiciary via Pacific Islands Legal Information Institute, not the Marshall Islands Judiciary."
+  },
+  {
+   "id": "tv-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2432,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Tuvalu decisions (TVHC) are published via Pacific Islands Legal Information Institute/Tuvalu courts, not Tonga's Attorney General Legislation & Judgments database."
+  },
+  {
+   "id": "tv-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2263,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Tuvalu's High Court decisions (\"TVHC\") are published via Pacific Islands Legal Information Institute (PacLII), not the Federal Court of Australia Judgments database."
+  },
+  {
+   "id": "tv-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2138,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** TVHC citations refer to Tuvalu's High Court, published via PacLII, not RONLAW, which covers Nauru's legal database exclusively."
+  },
+  {
+   "id": "tv-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2194,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — I cannot verify this specific citation exists; it appears fabricated, as I have no record of this exact Tuvalu High Court decision or dataset entry."
+  },
+  {
+   "id": "tv-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1608,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Tuvalu's High Court decisions are not published by the Federal Court of Australia Judgments; that is a distinct Australian court reporting series."
+  }
+ ]
+}

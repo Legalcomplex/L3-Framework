@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Vanuatu — Source-Grounded Citation Reliability (VU)",
+ "country": "VU",
+ "jurisdiction": "Vanuatu",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:28:02.651437+00:00",
+ "results": [
+  {
+   "id": "vu-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2153,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date (2026) is in the future relative to verifiable records, and this specific decision cannot be confirmed."
+  },
+  {
+   "id": "vu-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2430,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date \"2025-01-01\" and truncated title \"Am Act No. of 2025\" appear fabricated; citation lacks verifiable, specific bibliographic details."
+  },
+  {
+   "id": "vu-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2227,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Vanuatu legislation is published in English/Bislama, not French; \"Loi No.19 de 2013 modificative\" appears fabricated with implausible French naming."
+  },
+  {
+   "id": "vu-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2191,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Vanuatu insurance regulation falls under the Insurance Act; the Reserve Bank of Vanuatu isn't the publishing authority, and details appear fabricated."
+  },
+  {
+   "id": "vu-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1960,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-04-10 is in the future, making this citation impossible to verify; likely fabricated or hallucinated reference."
+  },
+  {
+   "id": "vu-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2327,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The citation lacks a bill number, and the \"2025-01-01\" date appears fabricated; no verifiable evidence supports this specific bill's existence."
+  },
+  {
+   "id": "vu-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2737,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The date 2026-04-14 is in the future relative to a 2025 identifier, making this bibliographic claim implausible and unverifiable."
+  },
+  {
+   "id": "vu-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2153,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Vanuatu legislation is not published on Australia's Federal Register of Legislation; these are separate jurisdictions with distinct legal publication systems."
+  },
+  {
+   "id": "vu-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1907,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Vanuatu legislation is published in English/Bislama, not French; the French-language title and unverifiable citation indicate fabrication."
+  },
+  {
+   "id": "vu-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2539,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier references \"no16-of-2007\" but the claimed title states 2006, creating a year mismatch inconsistency."
+  },
+  {
+   "id": "vu-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2329,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific case exists; I have no reliable record confirming its details or publication on courts.gov.vu."
+  },
+  {
+   "id": "vu-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1752,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Open Australian Legal Corpus covers Australian jurisdictions, not Vanuatu, so it wouldn't publish Vanuatu legislation like this."
+  }
+ ]
+}

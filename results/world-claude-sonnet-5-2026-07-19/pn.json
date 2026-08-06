@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Pitcairn Islands — Source-Grounded Citation Reliability (PN)",
+ "country": "PN",
+ "jurisdiction": "Pitcairn Islands",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:01:02.708429+00:00",
+ "results": [
+  {
+   "id": "pn-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2653,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated/unverifiable citation; no such Pitcairn Islands Supreme Court decision with this exact case name and citation is confirmed on PacLII."
+  },
+  {
+   "id": "pn-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2175,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this citation cannot be verified; no such PNCA 2025 decision \"Warren v Attorney General of Pitcairn\" is confirmed in actual PacLII records."
+  },
+  {
+   "id": "pn-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 4798,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This citation appears fabricated/unverifiable—no confirmed PacLII record exists for this specific case, date, and citation number."
+  },
+  {
+   "id": "pn-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2245,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific citation exists; PacLII's Pitcairn database coverage is limited, and this case/citation appears fabricated or unconfirmed."
+  },
+  {
+   "id": "pn-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2537,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific citation exists; PacLII's Pitcairn database has limited coverage, and this exact case may be fabricated."
+  },
+  {
+   "id": "pn-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2026,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. PacLII does host Pitcairn Islands court decisions, but I cannot verify this specific citation's accuracy or actual existence in the database."
+  },
+  {
+   "id": "pn-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2063,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Pitcairn Islands Supreme Court is not the Federal Court of Australia; \"PNSC\" denotes Pitcairn's own judiciary, not Australian federal courts."
+  },
+  {
+   "id": "pn-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2738,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Pitcairn Islands cases are published on Pacific Islands Legal Information Institute (PacLII), not RONLAW, which covers Nauru's legal materials specifically."
+  },
+  {
+   "id": "pn-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1660,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — I cannot verify this specific citation exists; Pitcairn Islands cases are rare, and this appears to be a fabricated/unverifiable reference."
+  },
+  {
+   "id": "pn-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2280,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Pitcairn Islands Supreme Court is not the Republic of Marshall Islands Judiciary; citation \"PNSC\" denotes Pitcairn, not Marshall Islands courts."
+  },
+  {
+   "id": "pn-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2033,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Pitcairn Islands cases would be published by Pitcairn's own courts/PITCAIRN citation, not by Tonga's Attorney General Legislation & Judgments database."
+  },
+  {
+   "id": "pn-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1530,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This is a Pitcairn Islands Court of Appeal decision (PNCA), not a Federal Court of Australia Judgments publication or database."
+  }
+ ]
+}

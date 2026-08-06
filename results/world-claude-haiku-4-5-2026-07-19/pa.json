@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Panama — Source-Grounded Citation Reliability (PA)",
+ "country": "PA",
+ "jurisdiction": "Panama",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:43:01.735492+00:00",
+ "results": [
+  {
+   "id": "pa-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1723,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  \"Entrada\" refers to case file intake numbers, not published judicial decisions. Supreme Court jurisprudence is published as formal opinions/sentences, not entrada registrations."
+  },
+  {
+   "id": "pa-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 7110,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The document's future publication date (2026-01-15) is impossible for a decree from 2014. Official legal sources cannot be published years in advance of their actual issuance."
+  },
+  {
+   "id": "pa-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3768,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The specific citation format, document number sequence, and publication date (2025-05-12) cannot be verified as authentic official Panama banking regulation sources without access to curren"
+  },
+  {
+   "id": "pa-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1692,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Panama's Supreme Court decisions are typically published with different citation formats. The expediente number and date format provided lacks verification as an officially published jurisp"
+  },
+  {
+   "id": "pa-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1640,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The publication date of 2026-01-21 is in the future and therefore impossible. This appears to be a data entry error in the Legispan database."
+  },
+  {
+   "id": "pa-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2945,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The citation format and details provided lack verifiable specificity. Panamanian banking regulations require precise official gazette publication (Gaceta Oficial) references for authenticit"
+  },
+  {
+   "id": "pa-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1906,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The decision identifier and date format suggest a Panamanian administrative decision, not a Mexican Supreme Court (SCJN) ruling, contradicting the stated source attribution."
+  },
+  {
+   "id": "pa-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1651,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Decree No. 165 of July 1, 2014, predates January 15, 2024, making a 2024 publication date for an extension decree implausible without additional clarification of which extension is referenc"
+  },
+  {
+   "id": "pa-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1156,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Honduras TSC (Tribunal Superior de Cuentas) is Honduras's supreme audit institution, not Panama's. Panama's audit body is the Contraloría General de la República, making this attributio"
+  },
+  {
+   "id": "pa-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1206,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This decision is from Panama's judicial system (Expediente format and date structure), not Mexico's SCJN. The jurisdiction stated conflicts with the claimed publisher."
+  },
+  {
+   "id": "pa-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1339,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This document cannot originate from Mexico's legal system while being about Panama's Administrative Court of Public Function, and the future date (2026-01-21) is implausible for publication"
+  },
+  {
+   "id": "pa-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1297,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.**  Acuerdo No. 1 (2024) is a Panamanian legal instrument, not Mexican legislation. Mexico Orden Juridico Nacional publishes Mexican state laws, not Panamanian legal sources."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Dominica — Source-Grounded Citation Reliability (DM)",
+ "country": "DM",
+ "jurisdiction": "Dominica",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:11:32.910254+00:00",
+ "results": [
+  {
+   "id": "dm-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2165,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2006-01-01 is implausible for a Christmas 2006 stamp order; details appear fabricated or unverifiable in official records."
+  },
+  {
+   "id": "dm-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2801,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Dominica statutory instruments use \"S.R.O.\" numbering, but publication attribution to \"Financial Services Unit Legislation\" and the placeholder 2002-01-01 date appear fabricated/unverifiable."
+  },
+  {
+   "id": "dm-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2219,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears fabricated; no verifiable record exists of such a Dominica statutory instrument commemorating Marilyn Monroe with these citation details."
+  },
+  {
+   "id": "dm-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2061,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Dominica's Money Laundering (Prevention) Act dates from 2011, but the exact publisher/date citation appears unverified and likely inaccurate."
+  },
+  {
+   "id": "dm-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2688,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Dominica's SROs are published in the Official Gazette, not \"Laws of Dominica,\" and the generic 2005-01-01 date appears fabricated."
+  },
+  {
+   "id": "dm-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 7558,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Dominica's Financial Services Unit Act is officially published in the Official Gazette, not via a Financial Services Unit \"Legislation\" source."
+  },
+  {
+   "id": "dm-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2131,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Dominica and Grenada are separate jurisdictions; a Dominica statutory instrument would not be published via Laws of Grenada."
+  },
+  {
+   "id": "dm-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2215,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Curaçao is a different jurisdiction; Dominica's subsidiary legislation appears in its own Official Gazette, not Curaçao's Regelingen."
+  },
+  {
+   "id": "dm-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2077,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Dominica jurisdiction claim cites Saint Lucia Revised Laws as publisher, a jurisdictional mismatch; likely fabricated citation with implausible commemorative stamp SRO."
+  },
+  {
+   "id": "dm-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 4239,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Dominica's money laundering legislation would be published by the Government of Dominica, not Sint Maarten, a separate jurisdiction."
+  },
+  {
+   "id": "dm-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1746,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Dominica's legal sources are not published via Turks and Caicos Revised Laws; these are separate, distinct jurisdictions entirely."
+  },
+  {
+   "id": "dm-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1669,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Dominica's Financial Services Unit Act would be published by Dominica's government, not Cayman Islands Legislation, a different jurisdiction."
+  }
+ ]
+}

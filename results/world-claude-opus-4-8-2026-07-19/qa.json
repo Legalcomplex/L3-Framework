@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Qatar — Source-Grounded Citation Reliability (QA)",
+ "country": "QA",
+ "jurisdiction": "Qatar",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 11,
+ "blocked": 0,
+ "unparsed": 1,
+ "errors": [],
+ "accuracy": 0.6364,
+ "correct": 7,
+ "parse_rate": 0.9167,
+ "passed": false,
+ "timestamp": "2026-07-19T08:23:26.854694+00:00",
+ "results": [
+  {
+   "id": "qa-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2460,
+   "verdict": null,
+   "correct": false,
+   "raw": "I cannot verify this specific citation as authentic. Al Meezan is Qatar's official legal portal, but I lack confirmation of these exact details."
+  },
+  {
+   "id": "qa-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2650,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Supreme Council for Environment and Natural Reserves issued regulations, but this specific decision number, date, and title cannot be verified."
+  },
+  {
+   "id": "qa-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3562,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Qatar Free Zones typically issue regulations, not \"explanatory notes.\" This citation appears fabricated with unverifiable title and vague date."
+  },
+  {
+   "id": "qa-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2670,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. That dispute would fall under the QFC Civil and Commercial Court, not the Regulatory Tribunal, which handles regulatory appeals."
+  },
+  {
+   "id": "qa-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2752,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Qatar's Court of Cassation (محكمة التمييز) began functioning around 2005-2007; citation details cannot be verified as authentic from Al Meezan."
+  },
+  {
+   "id": "qa-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2439,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. Law No. 10 of 1987 on Public and Private State Property exists in Qatar's Al Meezan legal portal."
+  },
+  {
+   "id": "qa-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 3049,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Qatar Court of Cassation (محكمة التمييز) is a Qatari court; ADGM Courts is a separate Abu Dhabi jurisdiction."
+  },
+  {
+   "id": "qa-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2434,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. ADGM (Abu Dhabi Global Market) is a UAE financial free zone, unrelated to Qatar's environmental legislation and publication."
+  },
+  {
+   "id": "qa-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2159,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Qatar Free Zones legislation lacks a verifiable \"explanatory notes to company regulations\" published under that exact title and date."
+  },
+  {
+   "id": "qa-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 3451,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The [2020] QIC (F) citation denotes the First Instance Circuit of the QICDRC Court, not the Regulatory Tribunal."
+  },
+  {
+   "id": "qa-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1733,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Court of Cassation (محكمة التمييز) is a Qatari court; its judgments aren't published by DIFC Courts, a Dubai institution."
+  },
+  {
+   "id": "qa-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1935,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Qatar's laws aren't published via DIFC (Dubai International Financial Centre) database; DIFC is a UAE jurisdiction, not Qatar."
+  }
+ ]
+}

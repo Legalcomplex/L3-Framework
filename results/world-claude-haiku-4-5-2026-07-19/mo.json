@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Macao — Source-Grounded Citation Reliability (MO)",
+ "country": "MO",
+ "jurisdiction": "Macao",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:41:38.179867+00:00",
+ "results": [
+  {
+   "id": "mo-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1548,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited dispatch is from 2026, a future date. As of now, no official publications from 2026 exist, making this claim temporally impossible."
+  },
+  {
+   "id": "mo-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2785,
+   "verdict": true,
+   "correct": true,
+   "raw": "# Answer: True  **Explanation:** Macau Court Decisions (法院裁判) is the official publication platform for judicial decisions in Macao, including civil appeal cases (Recurso em processo civil) like TUI - "
+  },
+  {
+   "id": "mo-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2225,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier mo-pj-46277 cannot correspond to a law dated 2025-12-29 with a 2026 budget title, as this date is in the future relative to current knowledge cutoff."
+  },
+  {
+   "id": "mo-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1551,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This document cannot exist as cited because the publication date (2026-04-13) is in the future relative to the current date, making it impossible to verify or authenticate."
+  },
+  {
+   "id": "mo-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1716,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The decision date (2025-12-05) is in the future, making this bibliographic claim impossible. Official court decisions cannot be published before they occur."
+  },
+  {
+   "id": "mo-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1613,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  I cannot verify this claim as I lack access to the Macau Legal Portal database and cannot confirm whether identifier 'mo-pj-45920' corresponds to this specific law or its publication date."
+  },
+  {
+   "id": "mo-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1655,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The identifier references a 2026 document, which is a future date. Official Gazettes only publish current or past legal acts, not prospective ones from the future."
+  },
+  {
+   "id": "mo-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1909,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The decision identifier format and reference style do not match Macao's official court decision citation system. Macao uses distinct case numbering conventions that differ from this format."
+  },
+  {
+   "id": "mo-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1170,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The identifier references a 2025 law, but the claimed date (2025-12-29) and budget year (2026) create an internal inconsistency that cannot be verified without access to the actual portal d"
+  },
+  {
+   "id": "mo-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 3117,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.  Executive Orders (Ordens Executivas) are Macanese legal instruments issued by the Chief Executive under Macao's Basic Law. They would not be published via China's State Taxation Administrati"
+  },
+  {
+   "id": "mo-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1020,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The decision's date (2022-12-05) precedes its case number designation (2023), which is internally inconsistent and suggests unreliable bibliographic data."
+  },
+  {
+   "id": "mo-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1548,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Macao's official legal sources are published through Macao's Official Gazette or legal databases, not Korea's Law Information Center, which serves Korean legislation exclusively."
+  }
+ ]
+}

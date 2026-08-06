@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Honduras — Source-Grounded Citation Reliability (HN)",
+ "country": "HN",
+ "jurisdiction": "Honduras",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:38:16.984216+00:00",
+ "results": [
+  {
+   "id": "hn-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1593,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The publication date of 2026-01-23 is in the future, making this claim temporally impossible and therefore unreliable as a bibliographic reference."
+  },
+  {
+   "id": "hn-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1490,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Resolution 237-7/2020 would typically be issued by Honduras's legislative or executive bodies, not the Central Bank's regulations division, which handles monetary policy circulars."
+  },
+  {
+   "id": "hn-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1471,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The date 2025-08-25 is in the future (beyond current knowledge cutoff of April 2024), making verification impossible and the claim unverifiable."
+  },
+  {
+   "id": "hn-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1648,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The publication date of 2026-02-12 is in the future, making this claim impossible. Official legal sources cannot be published before the current date."
+  },
+  {
+   "id": "hn-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1632,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The Banco Central de Honduras publishes monetary circulars and banking regulations, but ACUERDO No.13/2021 from September 27, 2021, is not verifiable through that specific official channel ba"
+  },
+  {
+   "id": "hn-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1962,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The date 2025-09-24 is in the future relative to current knowledge cutoff (April 2024). This circular cannot have been verified as published on that date."
+  },
+  {
+   "id": "hn-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2042,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The TSC (Tribunal Superior de Cuentas) is Honduras's audit court, not a legislative publisher. Laws are published in the Official Gazette (Diario Oficial)."
+  },
+  {
+   "id": "hn-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1424,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Resolution No. 237-7/2020 is a Honduran legal instrument, not Mexican. Mexico's \"Orden Jurídico Nacional\" would not publish Honduras legislation as state legislation."
+  },
+  {
+   "id": "hn-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1919,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  CNBS (Comisión Nacional de Bancos y Seguros) is Honduras's financial regulator. A Honduran circular cannot be officially published through Mexico's Orden Jurídico Nacional database."
+  },
+  {
+   "id": "hn-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1266,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The TSC (Tribunal Superior de Cuentas) is Honduras's audit court, not a legislative publisher. Laws are officially published in La Gaceta, Honduras's official gazette."
+  },
+  {
+   "id": "hn-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1104,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  ACUERDO No. 13/2021 would be a Mexican legal instrument, not Honduran legislation. The claim incorrectly attributes a Mexican source to Honduras jurisdiction."
+  },
+  {
+   "id": "hn-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1691,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** CNBS (Comisión Nacional de Bancos y Seguros) is Honduras's financial regulator. Mexican Orden Jurídico Nacional would not be the official publisher of Honduran regulatory circulars."
+  }
+ ]
+}

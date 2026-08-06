@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — United Arab Emirates — Source-Grounded Citation Reliability (AE)",
+ "country": "AE",
+ "jurisdiction": "United Arab Emirates",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:06:37.958004+00:00",
+ "results": [
+  {
+   "id": "ae-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2046,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-01-30 is in the future and cannot correspond to an already-published decision; likely fabricated citation."
+  },
+  {
+   "id": "ae-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2157,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The citation details appear fabricated or unverifiable; specific amendment numbers, exact dates, and publication claims require confirmation against official ADGM records."
+  },
+  {
+   "id": "ae-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2088,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-05-05 is in the future relative to a 2024 case number, indicating an inconsistent, likely fabricated citation."
+  },
+  {
+   "id": "ae-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2732,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.**  DIFC Contract Law is Law No. 6 of 2004, but a \"2024 updated\" version wouldn't carry a 2004-01-01 publication date."
+  },
+  {
+   "id": "ae-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3475,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The UAE federal system and Abu Dhabi lack a distinctively titled \"2023 Edition 2\" gazette; this citation appears fabricated and unverifiable."
+  },
+  {
+   "id": "ae-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2093,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This is a future date (2026) with an unverifiable issue number; I cannot confirm this specific publication exists."
+  },
+  {
+   "id": "ae-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2041,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This citation references a future date (2026) and cannot be verified; I have no record confirming this specific judgment exists."
+  },
+  {
+   "id": "ae-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2156,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. ADGM (Abu Dhabi Global Market) regulations are published by ADGM authorities, not Saudi Arabia's SAMA—wrong jurisdiction and publisher entirely."
+  },
+  {
+   "id": "ae-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1724,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The decision number references 2024, but the cited date is 2023-05-05, showing an internal inconsistency indicating unreliability."
+  },
+  {
+   "id": "ae-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1745,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. DIFC laws are published by the Dubai International Financial Centre, not the Israeli Knesset; the attribution is incorrect."
+  },
+  {
+   "id": "ae-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1471,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Jordan Legislation & Opinion Bureau is Jordan's official body, unrelated to publishing Abu Dhabi's UAE Official Gazette."
+  },
+  {
+   "id": "ae-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2225,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific issue number, date, or publisher combination; Dubai's Official Gazette details require authoritative confirmation I lack."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Cambodia — Source-Grounded Citation Reliability (KH)",
+ "country": "KH",
+ "jurisdiction": "Cambodia",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:16:23.711785+00:00",
+ "results": [
+  {
+   "id": "kh-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2235,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Juricaf is a francophone case-law database, not \"Cambodia Courts\"; it aggregates decisions but isn't the official publisher."
+  },
+  {
+   "id": "kh-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3359,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Official Cambodian laws are promulgated by Royal Kram and published in the Royal Gazette, not private legal libraries."
+  },
+  {
+   "id": "kh-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2127,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. This is an ECCC decision on accrediting Me SAY Bory as defense counsel for KHIEU Samphan, published by ECCC."
+  },
+  {
+   "id": "kh-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 4209,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The Arbitration Council of Cambodia publishes labor arbitration decisions, and this format matches their case numbering and dating conventions."
+  },
+  {
+   "id": "kh-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2449,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Juricaf aggregates Francophone case law but is not an official publisher; Cambodia's Constitutional Council itself is the official source."
+  },
+  {
+   "id": "kh-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2703,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This citation appears fabricated; the identifier format and specific date cannot be verified against genuine Cambodian legal sources or databases."
+  },
+  {
+   "id": "kh-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 3388,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. A Cambodian Constitutional Council decision would be published by Cambodia's Constitutional Council, not Indonesia's Constitutional Court."
+  },
+  {
+   "id": "kh-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 4410,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific identifier or private library catalog; \"Husky & Partners\" appears fabricated and unverifiable as a source."
+  },
+  {
+   "id": "kh-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1841,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. In January 2006, the ECCC was not yet operational; judges were sworn in July 2006, making this date implausible."
+  },
+  {
+   "id": "kh-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2124,
+   "verdict": true,
+   "correct": false,
+   "raw": "True. The Arbitration Council of Cambodia issues labor dispute decisions, and this numbered case follows their standard citation format."
+  },
+  {
+   "id": "kh-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1730,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. A Cambodian Constitutional Council decision would not be published by the Philippine Supreme Court E-Library; jurisdictions differ entirely."
+  },
+  {
+   "id": "kh-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1915,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific identifier or catalog entry; such precise bibliographic claims require authoritative source confirmation I lack."
+  }
+ ]
+}

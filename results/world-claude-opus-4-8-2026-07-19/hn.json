@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Honduras — Source-Grounded Citation Reliability (HN)",
+ "country": "HN",
+ "jurisdiction": "Honduras",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:14:32.745642+00:00",
+ "results": [
+  {
+   "id": "hn-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2507,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The 2026 date is future/implausible, and this specific law title and TSC Virtual Library attribution cannot be verified."
+  },
+  {
+   "id": "hn-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2448,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific resolution number, date, or publication details. Fabricated-looking citations require confirmation against official Banco Central de Honduras records."
+  },
+  {
+   "id": "hn-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2381,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific circular's existence, number, or publication date from CNBS without access to authoritative records."
+  },
+  {
+   "id": "hn-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2265,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The 2026 date is in the future, making publication impossible. This appears to be a fabricated or unverifiable citation."
+  },
+  {
+   "id": "hn-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2724,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific document exists; I lack reliable access to confirm the Banco Central de Honduras publication details."
+  },
+  {
+   "id": "hn-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2257,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific circular's existence or publication date without access to CNBS official records; unconfirmed."
+  },
+  {
+   "id": "hn-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2260,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This appears to be a fabricated citation; no such law exists in Honduras, and the TSC doesn't publish legislation."
+  },
+  {
+   "id": "hn-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2619,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Honduran resolutions are published in \"La Gaceta,\" not Mexico's Orden Jurídico Nacional, which covers Mexican state legislation exclusively."
+  },
+  {
+   "id": "hn-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1728,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. CNBS (Comisión Nacional de Bancos y Seguros) is a Honduran regulator; its circulars aren't published through Mexico's legal system."
+  },
+  {
+   "id": "hn-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1841,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This appears to be a fabricated title; no verifiable record confirms such a law published by TSC on that date."
+  },
+  {
+   "id": "hn-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1755,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Honduras jurisdiction cannot be sourced from Mexico's Orden Jurídico Nacional, which publishes Mexican legislation, not Honduran legal documents."
+  },
+  {
+   "id": "hn-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1899,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. CNBS (Comisión Nacional de Bancos y Seguros) is a Honduran regulator; its circulars aren't published through Mexico's legislative portal."
+  }
+ ]
+}

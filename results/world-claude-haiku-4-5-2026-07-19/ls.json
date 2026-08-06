@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Lesotho — Source-Grounded Citation Reliability (LS)",
+ "country": "LS",
+ "jurisdiction": "Lesotho",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:40:34.306254+00:00",
+ "results": [
+  {
+   "id": "ls-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1860,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Central Bank of Lesotho does not publish regulations through a department titled \"Financial Sector Regulations.\" Official guidelines would be issued directly by the Central Bank under i"
+  },
+  {
+   "id": "ls-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1939,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. While a VAT Act of 2001 likely exists in Lesotho, the specific attribution to \"Lesotho Revenue Authority — Public Rulings & Tax Legislation\" cannot be verified from the filename alone without a"
+  },
+  {
+   "id": "ls-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2001,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Lesotho Legal Information Institute (LesothoLII) does not exist as an official legal publisher. Lesotho's primary official legal sources are the government gazette and court decisions publi"
+  },
+  {
+   "id": "ls-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1553,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Central Bank of Lesotho's financial regulations framework does not formally include regulations by this exact title and date in official published sources."
+  },
+  {
+   "id": "ls-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1498,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The Lesotho Revenue Authority did not exist in 1993. It was established later, making the attribution of a 1993 Act to this authority historically inaccurate."
+  },
+  {
+   "id": "ls-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2293,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Lesotho Legal Information Institute (LII) does not exist as an official legal publisher in Lesotho. Official court decisions are published through government legal gazettes and court regist"
+  },
+  {
+   "id": "ls-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1635,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Lesotho and South Africa are separate jurisdictions. A Lesotho financial institutions document would not be published through South Africa's legal database or by-laws portal."
+  },
+  {
+   "id": "ls-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2217,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The VAT Act 2001 is Lesotho legislation, not Namibian. Namibia Legal Information Institute would not be the official publisher of Lesotho's domestic legislation."
+  },
+  {
+   "id": "ls-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1163,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The citation format and case number (CCT) indicate this is a South African Constitutional Court judgment, not a Lesotho court decision, despite the jurisdiction question."
+  },
+  {
+   "id": "ls-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1359,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This regulation pertains to Lesotho, not Eswatini. EswatiniLII is Eswatini's legal database and would not be the official publisher of Lesotho legislation."
+  },
+  {
+   "id": "ls-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1148,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The document concerns Lesotho's Income Tax Act, not Namibia's. The Namibia Legal Assistance Centre would not be the publisher of Lesotho legislation."
+  },
+  {
+   "id": "ls-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1141,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The case citation format and court designation (LSHC = Lesotho Supreme Court) indicate this is a Lesotho court decision, not a South African Constitutional Court judgment."
+  }
+ ]
+}

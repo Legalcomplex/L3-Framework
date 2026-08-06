@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Chad — Source-Grounded Citation Reliability (TD)",
+ "country": "TD",
+ "jurisdiction": "Chad",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.75,
+ "correct": 9,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:45:40.335755+00:00",
+ "results": [
+  {
+   "id": "td-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1642,
+   "verdict": true,
+   "correct": true,
+   "raw": "**True**  The citation format matches Chadian Supreme Court decisions published on Juricaf (a major African legal database). The date (20 mars 2015) and case number (014) follow standard documentation"
+  },
+  {
+   "id": "td-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 4803,
+   "verdict": true,
+   "correct": true,
+   "raw": "**True**  The citation format matches Chad's Supreme Court (Cour Suprême) official documentation standards. Juricaf is a recognized African legal database that archives official court decisions from m"
+  },
+  {
+   "id": "td-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1766,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The identifier format and case number don't align systematically. The identifier contains \"04719\" while the case reference shows \"047/19,\" suggesting inconsistent numbering conventions in t"
+  },
+  {
+   "id": "td-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2178,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The citation format appears malformed and lacks standard Chadian court documentation structure. Juricaf records typically require complete case information and proper formatting verificatio"
+  },
+  {
+   "id": "td-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1896,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  This citation lacks proper formatting and verifiable publication details. Chad's Supreme Court decisions require complete case identifiers, parties, and official gazette publication confirmat"
+  },
+  {
+   "id": "td-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2078,
+   "verdict": true,
+   "correct": true,
+   "raw": "# Evaluation: True  The identifier format matches Juricaf's standard structure for Chad Supreme Court decisions: country code (TCHAD), court (COURSUPREME), date (20191213), and case number (042)."
+  },
+  {
+   "id": "td-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1491,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The identifier suffix differs: \"015\" in the claim versus \"014\" in the reference, indicating they are distinct Supreme Court decisions from the same date."
+  },
+  {
+   "id": "td-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1516,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The identifier format does not match the citation structure. The identifier contains \"11\" at the end, while the citation references \"10\" (year 2010), indicating inconsistent case numbering "
+  },
+  {
+   "id": "td-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1294,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  A Chadian Supreme Court decision would be published in Chad's Official Journal (JO), not Congo-Brazzaville's. Different countries maintain separate official gazettes."
+  },
+  {
+   "id": "td-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 999,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Chad's Supreme Court decisions are not published in Equatorial Guinea's Official State Gazette. Each country maintains separate official legal publications."
+  },
+  {
+   "id": "td-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1275,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The citation references Chad's Supreme Court (Cour suprême), but LegalRDC publishes DRC (Democratic Republic of Congo) decisions, not Chadian ones. Wrong jurisdiction."
+  },
+  {
+   "id": "td-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1081,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The cited case is from Chad's Supreme Court (Cour suprême), not Gabon's Constitutional Court (Cour Constitutionnelle du Gabon). The publisher attribution is incorrect."
+  }
+ ]
+}

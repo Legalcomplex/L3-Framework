@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Cuba — Source-Grounded Citation Reliability (CU)",
+ "country": "CU",
+ "jurisdiction": "Cuba",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:10:45.400102+00:00",
+ "results": [
+  {
+   "id": "cu-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2622,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific 2026 resolution exists; the future date and unconfirmed details make this claim unreliable and likely fabricated."
+  },
+  {
+   "id": "cu-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2274,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This citation cannot be verified; a 2026 date is future/implausible, and the vague \"S/N\" designation suggests a fabricated source."
+  },
+  {
+   "id": "cu-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3592,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation; 2026 dates are future/unverifiable, and I lack access to confirm its existence."
+  },
+  {
+   "id": "cu-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2594,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific 2026 resolution exists; the date is future/near-future and citation details cannot be confirmed reliably."
+  },
+  {
+   "id": "cu-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2553,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific 2026 resolution; the date is future-dated and details appear fabricated without authentic source confirmation."
+  },
+  {
+   "id": "cu-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2164,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This citation appears fabricated; I cannot verify such a specific 2026 acuerdo, gazette date, or \"Digital Archive\" naming."
+  },
+  {
+   "id": "cu-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 3206,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Cuban resolutions are published in the Gaceta Oficial de la República de Cuba, not through \"Laws of Grenada.\""
+  },
+  {
+   "id": "cu-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2250,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Cuba's Consejo de Estado publishes through Gaceta Oficial de Cuba, not Turks and Caicos legal channels, which are entirely unrelated jurisdictions."
+  },
+  {
+   "id": "cu-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1585,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Cuban ministerial resolutions are published in the Gaceta Oficial de Cuba, not Curaçao's legislation platform, which covers unrelated jurisdiction."
+  },
+  {
+   "id": "cu-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1463,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Cuba publishes official legal norms in the Gaceta Oficial de la República de Cuba, not Bermuda Laws Online."
+  },
+  {
+   "id": "cu-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2094,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Cuban resolutions are published in the Gaceta Oficial de Cuba, not Saint Lucia's Attorney General revised laws."
+  },
+  {
+   "id": "cu-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1955,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Cuban legal instruments are published in the Gaceta Oficial de la República de Cuba, not via Bahamas Consolidated Legislation."
+  }
+ ]
+}

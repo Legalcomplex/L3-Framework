@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Aruba — Source-Grounded Citation Reliability (AW)",
+ "country": "AW",
+ "jurisdiction": "Aruba",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.8333,
+ "correct": 10,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:07:30.370307+00:00",
+ "results": [
+  {
+   "id": "aw-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2457,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Aruba's council of ministers procedures are set by \"landsbesluit,\" not \"landsverordening\"; the citation and details appear fabricated."
+  },
+  {
+   "id": "aw-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2840,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The ECLI code OGHACMB confirms the Joint Court of Justice, matching the stated publisher for this 2011 Aruba decision."
+  },
+  {
+   "id": "aw-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2563,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The citation format and metadata appear fabricated; I cannot verify this specific source exists as described with confidence."
+  },
+  {
+   "id": "aw-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2578,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The ECLI prefix OGHACMB denotes the Gemeenschappelijk Hof van Justitie, the joint appellate court publishing decisions for these Caribbean jurisdictions."
+  },
+  {
+   "id": "aw-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2173,
+   "verdict": true,
+   "correct": true,
+   "raw": "I cannot verify this specific citation as True or False; I lack reliable access to Aruba's Afkondigingsblad archive records for verification."
+  },
+  {
+   "id": "aw-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2118,
+   "verdict": true,
+   "correct": true,
+   "raw": "I cannot verify this specific ECLI identifier, court decision title, or date against authoritative sources; therefore I cannot confirm True."
+  },
+  {
+   "id": "aw-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2010,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Aruba's Council of Ministers rules of order are typically established by Landsbesluit, not Landsverordening; citation appears fabricated."
+  },
+  {
+   "id": "aw-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2401,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this ECLI mapping; the identifier BQ0629 shouldn't correspond to a differently-numbered decision (BQ0628), suggesting fabrication."
+  },
+  {
+   "id": "aw-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1745,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The citation format \"01.02AB91.123\" appears fabricated; Aruba's DWJZ uses different reference conventions, and details seem unverifiable."
+  },
+  {
+   "id": "aw-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2146,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify that a differently-numbered ECLI (BQ0636) corresponds to a distinct BQ0635 record; identifiers don't match, so unreliable."
+  },
+  {
+   "id": "aw-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1613,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Afkondigingsblad van Aruba is Aruba's official publication, not published via Curaçao Government Legislation, which serves a separate jurisdiction."
+  },
+  {
+   "id": "aw-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2071,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. ECLI:NL:OGHACMB codes belong to the Dutch Caribbean Joint Court of Justice, not Cayman Islands courts or judicial.ky."
+  }
+ ]
+}

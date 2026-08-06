@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Germany — Source-Grounded Citation Reliability (DE)",
+ "country": "DE",
+ "jurisdiction": "Germany",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.4167,
+ "correct": 5,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:52:18.485441+00:00",
+ "results": [
+  {
+   "id": "de-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2125,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this date is in the future relative to my knowledge, so the decision's existence, docket number, and details cannot be verified."
+  },
+  {
+   "id": "de-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1918,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date is in the future (2026), making this decision impossible to verify as an actual published BFH ruling currently."
+  },
+  {
+   "id": "de-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 3307,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. BJNR002089971 does not correspond to that Besoldungsneuregelungsgesetz; the identifier structure and dating do not verify accurately against Gesetze im Internet records."
+  },
+  {
+   "id": "de-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2078,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This exact case citation (docket number, date, decision type combination) cannot be verified as an actual documented BVerfG decision from available records."
+  },
+  {
+   "id": "de-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1938,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-05-15 is in the future relative to current knowledge, making this claim unverifiable and likely fabricated or incorrect."
+  },
+  {
+   "id": "de-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2016,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This ECLI references a future 2026 decision that cannot yet exist or be verifiable, making the claim unverifiable/fabricated."
+  },
+  {
+   "id": "de-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2230,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The ECLI decodes to Senate 9, Urteil, date 21.10.2025, case 9 AZR 266/24 — but this date is in the future, unverifiable."
+  },
+  {
+   "id": "de-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2050,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This ECLI references a future decision (2026), which cannot yet exist or be verifiably confirmed as an actual official court record."
+  },
+  {
+   "id": "de-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2022,
+   "verdict": true,
+   "correct": false,
+   "raw": "**True.**  The \"Erstes Besoldungsvereinheitlichungs- und -neuregelungsgesetz\" (1. BesVNG) was indeed enacted on 18 March 1973, published in the Bundesgesetzblatt (BGBl. I 1973, S. 170)."
+  },
+  {
+   "id": "de-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2401,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** BVerfG (German Federal Constitutional Court) decisions are German official publications; Isle of Man Judgments Online has no jurisdictional connection to German court rulings."
+  },
+  {
+   "id": "de-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1623,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The IVS-Gesetz (Intelligente Verkehrssysteme-Gesetz) predates NeuRIS; it was originally published via Bundesgesetzblatt, not this newer 2025 portal."
+  },
+  {
+   "id": "de-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2402,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** BGH is Germany's Federal Court of Justice, not the Luxembourg Administrative Tribunal; also the date is future/fictitious, making verification impossible."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Sweden — Source-Grounded Citation Reliability (SE)",
+ "country": "SE",
+ "jurisdiction": "Sweden",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:44:36.239509+00:00",
+ "results": [
+  {
+   "id": "se-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1634,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This law cannot have been published on 2026-01-29 because that date is in the future. SFS publishes enacted legislation, not prospective laws."
+  },
+  {
+   "id": "se-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1544,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This claim is implausible because the publication date (2026-02-10) is in the future, making it impossible for a document to have already been published at that time."
+  },
+  {
+   "id": "se-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1629,
+   "verdict": false,
+   "correct": false,
+   "raw": "# Answer: **False**  **Explanation:** The identifier format and future date (2026-02-04) are inconsistent with established Swedish Supreme Administrative Court citation practices and current records."
+  },
+  {
+   "id": "se-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2747,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The citation format and date (2025-12-29) are inconsistent with Swedish Supreme Court decisions. Swedish Supreme Court cases use \"NJA\" citations, not \"Ö\" designations."
+  },
+  {
+   "id": "se-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2677,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The reference format and date are inconsistent with Swedish court decisions. Swedish court citations use specific formats (like case numbers with court abbreviations), and future dates (202"
+  },
+  {
+   "id": "se-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2200,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The date 2025-12-11 is in the future. As of the knowledge cutoff, this regulation cannot have been published yet, making the claim temporally impossible."
+  },
+  {
+   "id": "se-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1844,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.  Swedish laws are published via Swedish Legal Database (Regeringskansliet/Riksdagen), not Finlex. Finlex is Finland's official legal database. The year 2026 is also implausible.**"
+  },
+  {
+   "id": "se-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1672,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  I cannot verify this specific identifier mapping exists in the Riksdag's official collection. Swedish parliamentary document identifiers and their corresponding titles require confirmation "
+  },
+  {
+   "id": "se-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 3323,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '3034-25' and 'Mål: 3034-24' are different case numbers. They cannot correspond to the same case, as the numbers differ sequentially."
+  },
+  {
+   "id": "se-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1559,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The citation format and case number (Ö 1052-25) indicate this is a Court of Appeal (Hovrätt) decision, not a Swedish Supreme Court (Högsta domstolen) ruling."
+  },
+  {
+   "id": "se-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1298,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The notation \"(ÖM 6378-25)\" does not correspond to Swedish Courts' official decision format. Swedish court decisions use different reference systems (case numbers like T 1234-23), not this "
+  },
+  {
+   "id": "se-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1173,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Swedish statutory instruments (förordningar) are published by the Swedish Government or relevant Swedish authorities, not by Norway's parliament data service (Stortingets datatjeneste)."
+  }
+ ]
+}

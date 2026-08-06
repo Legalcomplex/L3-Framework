@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Azerbaijan — Source-Grounded Citation Reliability (AZ)",
+ "country": "AZ",
+ "jurisdiction": "Azerbaijan",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:49:12.765578+00:00",
+ "results": [
+  {
+   "id": "az-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1932,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This decision is dated in the future (26.01.2026), so it cannot yet be verified as an actual published official Constitutional Court source."
+  },
+  {
+   "id": "az-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2599,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated or unverifiable citation—road/route lists aren't typical e-Qanun legal acts, and specifics can't be confirmed as authentic."
+  },
+  {
+   "id": "az-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2398,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific citation—\"Decision № 308\" from Azerbaijan's Central Bank on that exact date—without access to authoritative primary source verification."
+  },
+  {
+   "id": "az-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1943,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific decision's existence, date, or details, as it likely postdates my training data and cannot be confirmed."
+  },
+  {
+   "id": "az-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2035,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This citation format describes a Presidential Decree's approval, but e-Qanun is a database platform, not the original publication source itself."
+  },
+  {
+   "id": "az-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2055,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific regulation's title, publication date, or issuing details against actual Central Bank of Azerbaijan records or archives."
+  },
+  {
+   "id": "az-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2524,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The date 2026-01-26 is in the future relative to available verifiable records, making this claim unconfirmable and likely fabricated or erroneous."
+  },
+  {
+   "id": "az-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 3488,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This appears to be a fabricated or unverifiable road/route description, not an authentic e-Qanun legal document citation with proper structure."
+  },
+  {
+   "id": "az-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1872,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** I cannot verify this specific citation — \"Decision № 308\" dated 2014-10-28 from the Central Bank of Azerbaijan lacks independent confirmation of authenticity or existence."
+  },
+  {
+   "id": "az-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1542,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific identifier-content pairing from Azerbaijan Constitutional Court's database without direct access to confirm it exists."
+  },
+  {
+   "id": "az-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1613,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Likumi.lv is a Latvian legal portal for Latvian legislation; it would not publish Azerbaijani presidential decrees like this one."
+  },
+  {
+   "id": "az-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2025,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Azerbaijan's banking archive regulations would be published through Azerbaijani official gazettes; the Hellenic Parliament's Raptarchis Greek Legal Code has no jurisdictional connection."
+  }
+ ]
+}

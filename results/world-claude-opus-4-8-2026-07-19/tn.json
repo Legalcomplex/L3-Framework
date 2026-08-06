@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Tunisia — Source-Grounded Citation Reliability (TN)",
+ "country": "TN",
+ "jurisdiction": "Tunisia",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 11,
+ "blocked": 0,
+ "unparsed": 1,
+ "errors": [],
+ "accuracy": 0.5455,
+ "correct": 6,
+ "parse_rate": 0.9167,
+ "passed": false,
+ "timestamp": "2026-07-19T08:26:16.945668+00:00",
+ "results": [
+  {
+   "id": "tn-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2727,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific identifier or ruling; asserting its authenticity risks fabrication without access to Tunisia's official records."
+  },
+  {
+   "id": "tn-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 5301,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Loi n° 2005-51 du 27 juin 2005 concerns electronic funds transfer, but verify exact title and publication details independently."
+  },
+  {
+   "id": "tn-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2172,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific case identifier, date, or citation format against Tunisia's Court of Cassation records without authoritative confirmation."
+  },
+  {
+   "id": "tn-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2606,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific law reference; such precise citations require authoritative confirmation, and I risk fabricating nonexistent legislation."
+  },
+  {
+   "id": "tn-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 3070,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation's authenticity; identifier and date details cannot be confirmed against official Tunisian Cassation records."
+  },
+  {
+   "id": "tn-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2173,
+   "verdict": null,
+   "correct": false,
+   "raw": "I cannot verify this specific decree exists. Without access to authenticate this citation against actual JORT records, I recommend independent verification."
+  },
+  {
+   "id": "tn-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2040,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '50712-0018' does not match the cited case ending in '50712-0017'; the identifiers are inconsistent."
+  },
+  {
+   "id": "tn-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 3275,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Loi n° 2005-51 du 27 juin 2005 concerns electronic fund transfer; the 2026 publication date is implausible/fabricated, invalidating claim."
+  },
+  {
+   "id": "tn-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2990,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '60342' does not match the cited case number '60341'; these are inconsistent, indicating an incorrect bibliographic reference."
+  },
+  {
+   "id": "tn-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2764,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Tunisian laws are officially published in the Journal Officiel de la République Tunisienne (JORT), not an Egyptian Hugging Face corpus."
+  },
+  {
+   "id": "tn-src-f05",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2209,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '17074' does not match the cited decision number '17073'; the numbers are inconsistent, indicating a mismatch."
+  },
+  {
+   "id": "tn-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2307,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Tunisian decrees are published in the Journal Officiel de la République Tunisienne (JORT), not an Egyptian corpus source."
+  }
+ ]
+}

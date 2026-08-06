@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Azerbaijan — Source-Grounded Citation Reliability (AZ)",
+ "country": "AZ",
+ "jurisdiction": "Azerbaijan",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:33:26.361477+00:00",
+ "results": [
+  {
+   "id": "az-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1400,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The date format \"26.01.26\" is ambiguous and potentially refers to 2026, which is a future date. Constitutional Court decisions cannot be prospectively published for future dates."
+  },
+  {
+   "id": "az-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1459,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The text appears to be a geographic route description rather than legislative content suitable for official Azerbaijan Legislation (e-Qanun) publication standards."
+  },
+  {
+   "id": "az-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1439,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Without access to Azerbaijan's Central Bank official database for October 28, 2016, I cannot verify this specific decision number's publication details independently."
+  },
+  {
+   "id": "az-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2046,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The date format (2025-10-20) is in the future relative to publication standards, and the citation style appears incomplete or malformed. Verification with official Constitutional Court reco"
+  },
+  {
+   "id": "az-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1992,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  A Presidential Decree from May 24, 2010 (No. 274) could not have been published via e-Qanun on September 19, 2023, as the publication date predates the decree by 13 years."
+  },
+  {
+   "id": "az-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2162,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** No verifiable evidence exists that the Central Bank of Azerbaijan published regulations specifically titled \"Regulations on archivation in the banking system\" on that date in publicly acces"
+  },
+  {
+   "id": "az-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1751,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The date \"26.01.26\" (January 26, 2026) is in the future, making this bibliographic claim impossible. Constitutional Court decisions cannot exist for dates that have not yet occurred."
+  },
+  {
+   "id": "az-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1568,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The claim contains a future date (2025-10-03) that hasn't occurred yet, making it impossible to verify as an actual publication from Azerbaijan's official e-Qanun legislation portal."
+  },
+  {
+   "id": "az-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1312,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The claim lacks sufficient specificity to verify authenticity. Without the complete decision title, subject matter, or official gazette reference, verification against Central Bank of Azerb"
+  },
+  {
+   "id": "az-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2434,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The date format \"2025-10-20\" is in the future, making this claim impossible. Official constitutional court decisions cannot be dated beyond the current date (2024)."
+  },
+  {
+   "id": "az-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2887,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.**   This presidential decree from Azerbaijan would be published on Azerbaijan's official legal portal (Qanun.az), not Latvia's Likumi.lv portal, which exclusively hosts Latvian legislation."
+  },
+  {
+   "id": "az-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1272,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Hellenic Parliament is Greece's legislative body, not Azerbaijan's. Azerbaijan's regulations would be published through Azerbaijani governmental institutions, not Greek ones."
+  }
+ ]
+}

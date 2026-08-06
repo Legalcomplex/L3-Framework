@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Saint Kitts and Nevis — Source-Grounded Citation Reliability (KN)",
+ "country": "KN",
+ "jurisdiction": "Saint Kitts and Nevis",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:16:44.462533+00:00",
+ "results": [
+  {
+   "id": "kn-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2748,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Saint Kitts and Nevis has no \"Law Commission\" publishing statutes; laws are officially published via government gazette. Details appear fabricated."
+  },
+  {
+   "id": "kn-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2305,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Saint Kitts and Nevis CRS legislation was enacted via official Gazette, not the Ministry of Finance; date is also suspect."
+  },
+  {
+   "id": "kn-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2978,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The truncated title, generic date (Jan 1), and unverifiable \"Law Commission\" publisher suggest a fabricated or unreliable citation."
+  },
+  {
+   "id": "kn-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2749,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Citation details are unreliable; publication date (Jan 1) appears fabricated, and I cannot verify this specific SRO's authenticity."
+  },
+  {
+   "id": "kn-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 11037,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation; the Law Commission's role, exact act number, title, and 2023-01-01 date appear unreliable."
+  },
+  {
+   "id": "kn-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2201,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Saint Kitts and Nevis has no \"Law Commission\" publisher; official acts are published via government gazette. Likely fabricated citation."
+  },
+  {
+   "id": "kn-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2742,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The claim cites Saint Lucia's publisher for a Saint Kitts and Nevis jurisdiction claim; jurisdictional mismatch, and details appear fabricated."
+  },
+  {
+   "id": "kn-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2282,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The CRS in Saint Kitts and Nevis wasn't published via Cayman Islands Legislation, which governs a separate jurisdiction."
+  },
+  {
+   "id": "kn-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1976,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Saint Kitts and Nevis legislation would not be published via \"Laws of Grenada\"; jurisdictions maintain separate legal gazettes and databases."
+  },
+  {
+   "id": "kn-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2086,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Saint Kitts and Nevis legislation would not be published via Aruba's DWJZ archive; jurisdictions maintain separate official legal repositories."
+  },
+  {
+   "id": "kn-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1772,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Saint Kitts and Nevis laws are not published via Bermuda Laws Online; that platform serves Bermuda, a different jurisdiction."
+  },
+  {
+   "id": "kn-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 3072,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Turks and Caicos is a separate jurisdiction; Saint Kitts and Nevis legislation would not be published through their Attorney General."
+  }
+ ]
+}

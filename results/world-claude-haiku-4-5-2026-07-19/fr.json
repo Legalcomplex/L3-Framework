@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — France — Source-Grounded Citation Reliability (FR)",
+ "country": "FR",
+ "jurisdiction": "France",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:37:13.152422+00:00",
+ "results": [
+  {
+   "id": "fr-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1736,
+   "verdict": true,
+   "correct": true,
+   "raw": "# Evaluation: True  **Explanation:** This law establishing France's General Inspector of Places of Deprivation of Liberty was officially published in the Official Journal on October 31, 2007, and is c"
+  },
+  {
+   "id": "fr-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1536,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The French Commercial Code (Code de commerce) exists, but Article L110-2 was not published on 2000-09-21. The PISTE API is a legitimate French legal database, but this specific date-article"
+  },
+  {
+   "id": "fr-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1735,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier format and date are implausible. French Competition Authority decisions use different reference systems, and a 2026 date is a future projection rather than an official published "
+  },
+  {
+   "id": "fr-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1595,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The cited decision format and date structure (2025-11-06) appear inconsistent with actual AMF enforcement decisions. French AMF sanctions decisions follow specific publication protocols requi"
+  },
+  {
+   "id": "fr-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1496,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The ANC (Autorité des Normes Comptables) was established in 2009, not 1984. The publication date provided is therefore incorrect."
+  },
+  {
+   "id": "fr-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1579,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  This appears to be an incomplete bill title lacking essential identification elements (bill number, sponsor names). A complete official citation requires full bibliographic data for verific"
+  },
+  {
+   "id": "fr-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1654,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** LEGITEXT000006057170 corresponds to the original 1945 Preamble to the French Constitution, not the 2007 law on the prison ombudsman."
+  },
+  {
+   "id": "fr-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2103,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The LEGIARTI identifier format and article numbering cannot be verified against PISTE API without direct database access. This claim requires official confirmation from the source system."
+  },
+  {
+   "id": "fr-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2069,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Autorité de la Concurrence publishes merger control decisions on specific transactions. This title's vague phrasing (\"relative à la prise de contrôle...\") and lack of case number sugges"
+  },
+  {
+   "id": "fr-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1853,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The decision reference \"SAN-2025-10\" and date format suggest a French administrative decision, not a Luxembourg tribunal decision. French jurisdiction was specified."
+  },
+  {
+   "id": "fr-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 864,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Autorité des Normes Comptables (ANC) was established in 2009, not 1982, making the publication date impossibly early for this source."
+  },
+  {
+   "id": "fr-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1282,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Fedlex is Switzerland's official legal publication platform. A French \"proposition de loi\" (legislative proposal) would be published through French channels like the National Assembly websi"
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Republic of the Congo — Source-Grounded Citation Reliability (CG)",
+ "country": "CG",
+ "jurisdiction": "Republic of the Congo",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:34:54.451190+00:00",
+ "results": [
+  {
+   "id": "cg-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1429,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The date 2025-04-30 is in the future from the knowledge cutoff of April 2024, making verification of this specific decision's existence impossible."
+  },
+  {
+   "id": "cg-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2135,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Republic of the Congo's supreme court is the \"Cour Constitutionnelle\" (Constitutional Court), not \"Cour suprême.\" The citation format and court designation appear inaccurate for Congo-B"
+  },
+  {
+   "id": "cg-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1570,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The date 2026-02-19 is in the future and cannot represent a past publication. Official journals document enacted legislation and cannot be published before their stated date occurs."
+  },
+  {
+   "id": "cg-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2003,
+   "verdict": false,
+   "correct": false,
+   "raw": "# Evaluation Result: **FALSE**  The date (2026-03-28) is in the future relative to my knowledge cutoff (April 2024), making verification impossible. Additionally, no such decision can be confirmed in "
+  },
+  {
+   "id": "cg-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1703,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The date format and case numbering appear questionable for Congo's Supreme Court. Juricaf's coverage of Congo-Brazzaville decisions is incomplete and inconsistently documented."
+  },
+  {
+   "id": "cg-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1635,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The date 2026-02-26 is in the future (as of 2024), making this publication impossible. The claim contains an anachronistic date that cannot be verified."
+  },
+  {
+   "id": "cg-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2751,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The decision number format (002/DCC/SVA/25) indicates 2025, not 2022. The date inconsistency (2022-04-30 versus /25) suggests this is either misdated or not from 2022."
+  },
+  {
+   "id": "cg-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1625,
+   "verdict": false,
+   "correct": true,
+   "raw": "# Evaluation: FALSE  The identifier's case number suffix differs: '14GCS025' in the identifier versus '14/GCS-024' in the cited decision. This numerical discrepancy indicates a mismatch between the so"
+  },
+  {
+   "id": "cg-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2497,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The Journal Officiel de la République du Congo is Congo's official gazette, not Angola's. AngoLEX is an Angolan portal and would not be the primary publisher of Congolese official documents."
+  },
+  {
+   "id": "cg-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1092,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Republic of the Congo has its own Constitutional Court, not a Constitutional Council of Cameroon. This decision would be from Congo's institutions, not Cameroon's."
+  },
+  {
+   "id": "cg-src-f05",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2138,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The identifier suffix differs: the claim shows \"43GCS024\" but the cited decision references \"43/GCS.023\"—these do not match, indicating a transcription or reference error."
+  },
+  {
+   "id": "cg-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1242,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Journal Officiel de la République du Congo is Congo's official gazette, not Cameroon's. It cannot be published by Cameroon's Presidency. The source attribution is incorrect."
+  }
+ ]
+}

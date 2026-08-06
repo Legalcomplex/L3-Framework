@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Switzerland — Source-Grounded Citation Reliability (CH)",
+ "country": "CH",
+ "jurisdiction": "Switzerland",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:10:02.740547+00:00",
+ "results": [
+  {
+   "id": "ch-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2230,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-01-07 is in the future relative to any current evaluation, making this citation implausible and unverifiable."
+  },
+  {
+   "id": "ch-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2455,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Fedlex publishes legislation, not court notifications. Federal Administrative Tribunal decisions appear elsewhere; also 2026 date is implausibly future."
+  },
+  {
+   "id": "ch-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2124,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This SAR identifier and title appear fabricated; I cannot verify this specific ordinance exists in Aargau's collection."
+  },
+  {
+   "id": "ch-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2735,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The federal ARV (Chauffeurverordnung) is federal law; cantonal execution ordinances exist, but this specific citation and 1983 BSG publication appears fabricated."
+  },
+  {
+   "id": "ch-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2157,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such combined statute exists under that title; Basel-Stadt's publication law is the \"Publikationsgesetz,\" not this fabricated designation."
+  },
+  {
+   "id": "ch-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 3350,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific CAS case identifier or its date; such details require authoritative database confirmation, not fabricated assertion."
+  },
+  {
+   "id": "ch-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2432,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. A Zürich district court (Mietgericht) decision is Swiss; it cannot be published by Portugal's DGSI appellate database system."
+  },
+  {
+   "id": "ch-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2227,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Fedlex publishes legislation, not court notifications. Federal Administrative Tribunal (TAF) decisions/notifications appear in other official channels, not Fedlex."
+  },
+  {
+   "id": "ch-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1838,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This SAR identifier and title appear fabricated; I cannot verify such a health-pilot-project ordinance exists in Aargau's collection."
+  },
+  {
+   "id": "ch-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2625,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific BSG identifier and title correspond accurately; fabricated-seeming details require checking the official Bernese systematic collection."
+  },
+  {
+   "id": "ch-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 4602,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Basel-Stadt's publication law is the \"Publikationsgesetz\"; the cited title appears fabricated and doesn't match actual Systematische Gesetzessammlung entries."
+  },
+  {
+   "id": "ch-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2045,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The jurisdiction is Switzerland, but the cited source is Germany's portal; case citation format also appears inconsistent and unverifiable."
+  }
+ ]
+}

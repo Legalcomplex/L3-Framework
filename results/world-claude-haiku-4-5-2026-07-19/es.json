@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Spain — Source-Grounded Citation Reliability (ES)",
+ "country": "ES",
+ "jurisdiction": "Spain",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:36:39.912824+00:00",
+ "results": [
+  {
+   "id": "es-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1581,
+   "verdict": true,
+   "correct": true,
+   "raw": "**True**  The format matches BOE publication standards: ministerial order (Orden), proper date structure, and April 1, 2020 is plausible for BOE publication. The reference structure is authentic."
+  },
+  {
+   "id": "es-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1553,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The AEPD does not publish decisions with this format. Spanish Data Protection Authority decisions use different reference systems and publication protocols that don't match this nomenclatur"
+  },
+  {
+   "id": "es-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1534,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This document cannot have been published in 2026, as that date is in the future. The claim references a resolution dated February 4, 2026, which has not yet occurred."
+  },
+  {
+   "id": "es-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2330,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The BOPV (Boletín Oficial del País Vasco) publishes official legislation, but Presidential Resolutions from price commissions are typically not formally published there as primary legal sou"
+  },
+  {
+   "id": "es-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1674,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This decree cannot have been published in 2026, as that date is in the future. The claim describes a document that does not yet exist."
+  },
+  {
+   "id": "es-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1606,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The ECLI identifier format suggests a 2025 decision, but the specific date (May 26, 2025) cannot be verified as it lies in the future from any realistic knowledge cutoff perspective."
+  },
+  {
+   "id": "es-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2289,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The \"Orden\" prefix and \"APA\" designation indicate a Spanish administrative order, not a Portuguese parliamentary document. Portuguese Parliament would not publish Spanish legislation."
+  },
+  {
+   "id": "es-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1526,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The identifier format and procedural designation don't align with standard AEPD documentation practices. The claim conflates identifier numbering with procedure nomenclature inconsistently."
+  },
+  {
+   "id": "es-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1255,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.**  LILEX is Liechtenstein's legal database. A Spanish \"Resolución de la Delegación Territorial de Justicia\" cannot be published through a Liechtenstein legal source. Jurisdictional mismatch."
+  },
+  {
+   "id": "es-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2058,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Euskadi Price Commission is a Basque regional body whose resolutions are published in the Basque Official Gazette (BOPV), not the Italian Official Gazette."
+  },
+  {
+   "id": "es-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1261,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  A Catalan decree (Decret) cannot be published through Isle of Man Legislation. Isle of Man is a British Crown Dependency; Spain publishes legislation through its official gazettes (BOE, DOG"
+  },
+  {
+   "id": "es-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1262,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The ECLI identifier structure indicates AUTO 49/2025, not 47/2025. The number in the ECLI string (49A) should correspond to the actual decision number, not a different one."
+  }
+ ]
+}

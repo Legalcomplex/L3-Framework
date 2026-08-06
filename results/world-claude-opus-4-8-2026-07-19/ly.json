@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Libya — Source-Grounded Citation Reliability (LY)",
+ "country": "LY",
+ "jurisdiction": "Libya",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:17:59.009357+00:00",
+ "results": [
+  {
+   "id": "ly-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2244,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. DCAF's Libyan Security Sector Legislation database focuses on security/military laws, not judicial appointment decrees; this citation appears fabricated."
+  },
+  {
+   "id": "ly-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2563,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such verifiable source called \"Libya Law Society\" exists as an official gazette; Libya's official publication is الجريدة الرسمية."
+  },
+  {
+   "id": "ly-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2667,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The specific circular number, exact title, and precise publication date (2023-01-01) cannot be reliably verified from available sources."
+  },
+  {
+   "id": "ly-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2382,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The 1969 Constitutional Declaration was published in Libya's official gazette, not via a fabricated-sounding \"Leiden/Benghazi Academic Collection\" publisher."
+  },
+  {
+   "id": "ly-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2527,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The citation lacks a specific decree number and date; such vague bibliographic details cannot be verified as authentic."
+  },
+  {
+   "id": "ly-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2687,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No verifiable \"Libya Law Society\" official gazette exists; Libya's official legislation is published through the government gazette, not this source."
+  },
+  {
+   "id": "ly-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 3396,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The DCAF database is a secondary compilation, not the original official gazette; royal decrees were published in الجريدة الرسمية."
+  },
+  {
+   "id": "ly-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 4664,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The claim references Libyan jurisdiction, but citing an \"Egyptian Legal Corpus\" as source is inconsistent; also 2026 dating appears fabricated."
+  },
+  {
+   "id": "ly-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1979,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Hugging Face's \"Egyptian Legal Corpus\" covers Egyptian, not Libyan, sources; a Libyan Central Bank circular wouldn't appear there."
+  },
+  {
+   "id": "ly-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 3165,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Libya's Constitutional Declaration was issued December 11, 1969 (not January 1), and an Egyptian Legal Corpus wouldn't authoritatively publish Libyan law."
+  },
+  {
+   "id": "ly-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2209,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This appears to be a fabricated citation; the vague year, missing decree number, and unverifiable DCAF database publication details suggest inauthenticity."
+  },
+  {
+   "id": "ly-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 3493,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The 2026 date is future/implausible, and an \"Egyptian Legal Corpus\" wouldn't authoritatively publish Libyan Council of Ministers decisions. Unverifiable claim."
+  }
+ ]
+}

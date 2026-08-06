@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Malta — Source-Grounded Citation Reliability (MT)",
+ "country": "MT",
+ "jurisdiction": "Malta",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:19:34.174232+00:00",
+ "results": [
+  {
+   "id": "mt-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2606,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such \"Coal (Sale) Ordinance\" or \"Act II of 2015\" repeal exists in Malta's legal records; likely fabricated citation."
+  },
+  {
+   "id": "mt-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1966,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated citation; I cannot verify this specific MCCAA decision reference, number, or details as genuine."
+  },
+  {
+   "id": "mt-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2359,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-03-23 is in the future relative to a 2025 case reference, making this citation implausible and likely fabricated."
+  },
+  {
+   "id": "mt-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3367,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Code of Organization and Civil Procedure (Chapter 12) dates to 1855, not a 2026 Gazette publication."
+  },
+  {
+   "id": "mt-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2810,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears fabricated; Malta's MCCAA competition decisions don't follow this citation format, and details seem invented rather than verifiable."
+  },
+  {
+   "id": "mt-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2019,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-04-17 is in the future relative to a 2025 case reference, making this citation implausible and likely fabricated."
+  },
+  {
+   "id": "mt-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2386,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Normattiva is Italy's legal database, not Malta's. Maltese legislation is published via \"Laws of Malta\" (legislation.mt), not Normattiva."
+  },
+  {
+   "id": "mt-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1943,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The date 2026-09-18 is in the future, making this citation impossible to verify and likely fabricated."
+  },
+  {
+   "id": "mt-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2046,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The citation contains an internal inconsistency: a 2025 decision number (ASF 287/2025) cannot carry a 2023 date."
+  },
+  {
+   "id": "mt-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 5538,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Code of Organization and Civil Procedure is Maltese law, published via Malta's Laws (legislation.mt), not Swiss Fedlex."
+  },
+  {
+   "id": "mt-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2419,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. A Maltese MCCAA competition decision would appear in Maltese official sources, not the Dutch court database rechtspraak.nl."
+  },
+  {
+   "id": "mt-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2076,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific decision exists; the citation format, date-year mismatch (2025 vs 2024), and details appear fabricated."
+  }
+ ]
+}

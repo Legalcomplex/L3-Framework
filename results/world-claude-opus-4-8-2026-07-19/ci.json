@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Côte d'Ivoire — Source-Grounded Citation Reliability (CI)",
+ "country": "CI",
+ "jurisdiction": "Côte d'Ivoire",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:10:07.409175+00:00",
+ "results": [
+  {
+   "id": "ci-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2449,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. CIVLII/Laws.Africa is a hypothetical or unreliable citation; I cannot verify this specific bilateral agreement's existence, publisher, or date."
+  },
+  {
+   "id": "ci-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 4183,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation exists or is authentically published by that source; details appear unverifiable without confirmation."
+  },
+  {
+   "id": "ci-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2597,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The citation format appears fabricated; Côte d'Ivoire Constitutional Council decision numbering and structure don't match this implausible, overly complex reference pattern."
+  },
+  {
+   "id": "ci-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2377,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-02-28 is in the future, making this citation implausible. Also, loidici.biz is an unofficial private source, not authoritative."
+  },
+  {
+   "id": "ci-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2025,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Côte d'Ivoire has no established CivLII/Laws.Africa portal; this platform attribution is fabricated, making the citation unreliable and unverifiable."
+  },
+  {
+   "id": "ci-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2528,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific decision's existence, number, or publisher; the citation lacks confirmable details in accessible Ivorian legal sources."
+  },
+  {
+   "id": "ci-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2590,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. A bilateral Côte d'Ivoire–Mali cooperation accord would not be published by Senegal's Prime Minister Office; wrong jurisdiction entirely."
+  },
+  {
+   "id": "ci-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2474,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. A Côte d'Ivoire Cour suprême decision would be published by Ivorian authorities, not Senegal's Cour des Comptes."
+  },
+  {
+   "id": "ci-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2057,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Côte d'Ivoire's constitutional decisions come from its Conseil Constitutionnel, not Mali's Cour Suprême—a jurisdictional mismatch invalidating the claim."
+  },
+  {
+   "id": "ci-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1992,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. \"loidici.biz\" is a private/unofficial website, not an official state source like the Journal Officiel de la République de Côte d'Ivoire."
+  },
+  {
+   "id": "ci-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2215,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. An Ivorian (Côte d'Ivoire) arrêté would not be published via Guinea-Bissau's Ministry of Economy & Finance; jurisdictions mismatch."
+  },
+  {
+   "id": "ci-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2136,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Côte d'Ivoire Cour suprême decisions would be published by Ivorian authorities, not Liberia Legal Information Institute—wrong jurisdiction entirely."
+  }
+ ]
+}

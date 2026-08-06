@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Turks and Caicos Islands — Source-Grounded Citation Reliability (TC)",
+ "country": "TC",
+ "jurisdiction": "Turks and Caicos Islands",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:45:35.528202+00:00",
+ "results": [
+  {
+   "id": "tc-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1569,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Turks and Caicos Islands does not publish \"UK Statutory Instruments\" as official law. It publishes its own domestic legislation through the Attorney General's office."
+  },
+  {
+   "id": "tc-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2255,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  This decision cannot have been published in 2026—that date is in the future. Additionally, no verifiable record of this specific case citation exists in accessible Turks and Caicos Islands "
+  },
+  {
+   "id": "tc-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1511,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Complaints Commissioner (Ombudsman) Ordinance exists in TCI law, but the 2021 Revised Laws compilation does not use this specific citation format or numbering system."
+  },
+  {
+   "id": "tc-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1602,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The decision date (2026) is in the future, making this claim impossible to verify as authentic or published. Future decisions cannot exist in official legal repositories."
+  },
+  {
+   "id": "tc-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1611,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Integrity Commission is established under the Integrity Commission Ordinance, but the 2021 Revised Laws compilation does not use the specific citation format '01.09' for this legislation."
+  },
+  {
+   "id": "tc-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1484,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The citation format contains an internal inconsistency. A case filed in 2025 (CL 52 of 2025) cannot have a reported decision date of 2026 with a 2026 case number designation."
+  },
+  {
+   "id": "tc-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1702,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The 2021 Revised Laws are a Turks and Caicos Islands official compilation, not published by Curaçao Government Legislation, which is a separate Caribbean jurisdiction's legal source."
+  },
+  {
+   "id": "tc-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1789,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The identifier year mismatch is fatal: CL 53 of 2021 cannot correspond to a case cited as CL 53 of 2020. The years must match for accurate legal citation."
+  },
+  {
+   "id": "tc-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1837,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Complaints Commissioner (Ombudsman) Ordinance exists in Turks and Caicos law, but the specific citation format and 2019 publication date cannot be verified as accurate for this official"
+  },
+  {
+   "id": "tc-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1310,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The case identifier CL 17 of 2024 cannot correspond to a 2023 case or a judgment dated 2026, creating temporal inconsistencies within the citation."
+  },
+  {
+   "id": "tc-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1006,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Integrity Commission is governed by the Integrity Commission Act (2012), not an \"Ordinance.\" The title and citation format provided appear inaccurate for TCI legislation."
+  },
+  {
+   "id": "tc-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1052,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The citation indicates a Turks and Caicos Islands case (TCASC = Turks and Caicos Islands Supreme Court), not a BVI Commercial Court judgment. The jurisdiction is incorrect."
+  }
+ ]
+}

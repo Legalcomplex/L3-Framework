@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Saudi Arabia — Source-Grounded Citation Reliability (SA)",
+ "country": "SA",
+ "jurisdiction": "Saudi Arabia",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:01:51.930555+00:00",
+ "results": [
+  {
+   "id": "sa-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2183,
+   "verdict": true,
+   "correct": true,
+   "raw": "**True.**  The Capital Market Law was indeed enacted by Royal Decree No. M/30, dated 2/6/1424H, corresponding to July 31, 2003."
+  },
+  {
+   "id": "sa-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2838,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Securities Exchanges and Depository Centers Regulations were issued by the CMA earlier (originally around 2016-2017), not dated 2022-06-01."
+  },
+  {
+   "id": "sa-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1939,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The date (2026-01-01) is a future date, making it impossible to verify as an actual official publication currently."
+  },
+  {
+   "id": "sa-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2759,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This date is in the future (2026-01-01), so the claim cannot be verified as an existing official publication record."
+  },
+  {
+   "id": "sa-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2190,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific citation's accuracy (title, publisher, exact date) against authoritative CMA records; treat as unverified."
+  },
+  {
+   "id": "sa-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2247,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific publication exists; the CMA has no confirmed \"Cross-Border Passporting Guide for Investment Funds\" issued on this exact date."
+  },
+  {
+   "id": "sa-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2170,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Saudi Arabia's Capital Market Law was actually issued via Royal Decree No. M/30 dated 2/6/1424H, corresponding to **31 July 2003**, not 2000."
+  },
+  {
+   "id": "sa-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2162,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** I cannot verify this specific citation's accuracy — exact publication dates, titles, and issuing details require confirmation from CMA's official website directly."
+  },
+  {
+   "id": "sa-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1734,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** DIFC Legal Database publishes Dubai International Financial Centre laws, not Saudi Arabian regulations; Saudi law is issued via official Saudi government/Ministry sources."
+  },
+  {
+   "id": "sa-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1614,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Saudi securities regulations are issued by Saudi Arabia's Capital Market Authority, not Israel's Knesset or Hasadna open-source legislative database platform."
+  },
+  {
+   "id": "sa-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1610,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — this date is in the future relative to my knowledge, and I cannot verify an unpublished/upcoming CMA regulation's actual issuance details."
+  },
+  {
+   "id": "sa-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2320,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** No such officially titled publication is verifiable; the CMA issues Investment Funds Regulations, but this specific \"Cross-Border Passporting Guide\" citation appears fabricated."
+  }
+ ]
+}

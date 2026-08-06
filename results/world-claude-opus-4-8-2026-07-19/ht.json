@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Haiti — Source-Grounded Citation Reliability (HT)",
+ "country": "HT",
+ "jurisdiction": "Haiti",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:14:46.182878+00:00",
+ "results": [
+  {
+   "id": "ht-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 4197,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The \"RG\" docket format is Belgian/French, not Haitian; this citation structure and case number appear fabricated for Haiti."
+  },
+  {
+   "id": "ht-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2455,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Haiti's 2023-2024 fiscal year budget details and exact publication dates cannot be verified; I cannot confirm this specific citation's accuracy."
+  },
+  {
+   "id": "ht-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2840,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Haiti has no \"Assemblée Nationale de la Jeunesse\" as an official legal publisher; this fabricated source and decree lack legitimate authority."
+  },
+  {
+   "id": "ht-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2639,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The filename suggests a 2017 concession document, inconsistent with a 1977 publication date; likely fabricated or mismatched metadata."
+  },
+  {
+   "id": "ht-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2819,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. Le Moniteur is Haiti's official gazette, and the Digital Library of the Caribbean (dLOC) hosts digitized historical issues from this period."
+  },
+  {
+   "id": "ht-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2526,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This law was published in Le Moniteur, Haiti's official gazette—not via the Ministry of Economy and Finance."
+  },
+  {
+   "id": "ht-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 3067,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier's RG number (49484416) doesn't match the cited RG4948-4415; discrepancy indicates fabricated or inconsistent bibliographic reference details."
+  },
+  {
+   "id": "ht-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2717,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Haiti's national budget is published in Haiti's official gazette (Le Moniteur), not Curaçao's legislative database (Regelingen)."
+  },
+  {
+   "id": "ht-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 5012,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Haiti's official legal source is *Le Moniteur*, not Aruba's DWJZ archive, which covers Aruban—not Haitian—legislation. Claim is fabricated."
+  },
+  {
+   "id": "ht-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2124,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The 1976-10-12 date cannot match a document titled \"8 dec 17\" (December 2017); dates are inconsistent and unverifiable."
+  },
+  {
+   "id": "ht-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2837,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. \"Le Moniteur\" is Haiti's official gazette, not connected to Grenada's laws; the attributed publisher is entirely incorrect."
+  },
+  {
+   "id": "ht-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2193,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Haitian laws are published in \"Le Moniteur,\" Haiti's official journal—not Bahamas Consolidated Legislation, which serves a different jurisdiction entirely."
+  }
+ ]
+}

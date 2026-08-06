@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Cayman Islands — Source-Grounded Citation Reliability (KY)",
+ "country": "KY",
+ "jurisdiction": "Cayman Islands",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:39:58.983735+00:00",
+ "results": [
+  {
+   "id": "ky-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1766,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  This decision cannot be verified as published by judicial.ky because the date (2026-03-18) is in the future. Official court judgments are published retrospectively, not prospectively."
+  },
+  {
+   "id": "ky-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2237,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Bills of Exchange Law (1997 Revision) is a revised statute published in 1997, not through 1964 legislation. The date reference appears conflated or incorrect."
+  },
+  {
+   "id": "ky-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1957,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  I cannot verify this claim as I lack access to the judicial.ky database and cannot confirm whether this 2026-dated judgment exists or its accuracy."
+  },
+  {
+   "id": "ky-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1402,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Interpretation Law (Cap. 70) is part of the Cayman Islands' revised laws compilation system, not originally published as standalone legislation in 1963."
+  },
+  {
+   "id": "ky-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1483,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The judgment date (2026-03-31) is in the future, making this claim impossible. Official decisions cannot be published before they occur."
+  },
+  {
+   "id": "ky-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1754,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Companies Law (Cap. 22) is a Caymanian statute, but the 1995 Revision postdates the 1961 legislation reference, making the attribution chronologically inconsistent."
+  },
+  {
+   "id": "ky-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1534,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Cayman Islands Court of Appeal case identifier format and this specific citation cannot be verified as authentic through official sources as of my knowledge cutoff (April 2024)."
+  },
+  {
+   "id": "ky-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1525,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Bills of Exchange Law (1997 Revision) is a revised statute, not originally published in 1963. The 1963 date refers to the original enactment, not the 1997 revision's publication."
+  },
+  {
+   "id": "ky-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1415,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The identifier format and future date (2026) suggest this is a hypothetical or fabricated citation rather than an actual existing Cayman Islands judicial record in the official database."
+  },
+  {
+   "id": "ky-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1023,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The Interpretation Law (Cap. 70) is a Cayman Islands statute, not Sint Maarten legislation. Sint Maarten and Cayman Islands are separate jurisdictions with distinct legal systems."
+  },
+  {
+   "id": "ky-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1333,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The judicial.ky domain is not the official Cayman Islands court judgments repository. Official judgments are published through the Cayman Islands Judicial Administration's official channels"
+  },
+  {
+   "id": "ky-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1725,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Companies Law (Cap. 22) is Caymanian legislation, not Bahamian. It could not be published via Bahamas Consolidated Legislation."
+  }
+ ]
+}

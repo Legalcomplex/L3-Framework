@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Hungary — Source-Grounded Citation Reliability (HU)",
+ "country": "HU",
+ "jurisdiction": "Hungary",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:38:30.086573+00:00",
+ "results": [
+  {
+   "id": "hu-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1561,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier format \"IV/2018/2025\" appears inconsistent with standard Hungarian Constitutional Court citation conventions, and the date (2026-02-05) is in the future relative to typical legal"
+  },
+  {
+   "id": "hu-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1558,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The citation contains an internal inconsistency: it references a 2025 law but claims publication on 2026-01-23, which is a future date from the 2025 law's perspective and logically problema"
+  },
+  {
+   "id": "hu-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1739,
+   "verdict": false,
+   "correct": false,
+   "raw": "# Answer: False  **Explanation:** The identifier format differs—'f.5.002/2012/13' lacks the 'Köf' prefix present in the actual case designation 'Köf.5.002/2012/13.' Prefixes are essential for accurate"
+  },
+  {
+   "id": "hu-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1602,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier format appears problematic—GVH resolutions use different citation conventions, and a 2026 date is a future date that cannot be verified as an official source yet."
+  },
+  {
+   "id": "hu-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1882,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The date 2025-12-16 is in the future relative to current knowledge. Official parliamentary documents cannot be published on dates that haven't occurred yet."
+  },
+  {
+   "id": "hu-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1591,
+   "verdict": false,
+   "correct": false,
+   "raw": "# FALSE  The identifier format and date are inconsistent. Hungarian Constitutional Court decisions use different numbering conventions, and 2026 dates are not yet applicable for historical records."
+  },
+  {
+   "id": "hu-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2280,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier format and date are inconsistent with Hungarian Constitutional Court cataloging. The year in the identifier (2018) conflicts with the decision date (2026), which is in the future"
+  },
+  {
+   "id": "hu-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1389,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The publication date (2024-01-23) predates the law's year (2025), which is chronologically impossible for an official enactment."
+  },
+  {
+   "id": "hu-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1651,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This decision cannot be from the Serbian Constitutional Court because the reference format and numbering system (Köf.5.002/2012/13) follows Hungarian administrative conventions, not Serbian con"
+  },
+  {
+   "id": "hu-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 3803,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier format appears invalid for Hungary's Competition Authority. The year 2026 is in the future, making this a non-existent resolution unlikely to be documented currently."
+  },
+  {
+   "id": "hu-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1142,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The text \"Benyújtó: Dr. Komáromi Zoltán (DK)\" is Hungarian (meaning \"Submitted by\"), not Croatian, and would not be published in the Croatian Official Gazette."
+  },
+  {
+   "id": "hu-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1422,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The title translates to \"Decision on Rejection of Judicial Initiative,\" which is not an official Constitutional Court decision type. The Constitutional Court publishes határozatok (rulings)"
+  }
+ ]
+}

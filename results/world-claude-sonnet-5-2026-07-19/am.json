@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Armenia — Source-Grounded Citation Reliability (AM)",
+ "country": "AM",
+ "jurisdiction": "Armenia",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:48:40.958875+00:00",
+ "results": [
+  {
+   "id": "am-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2134,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be an unverifiable/fabricated citation; I cannot confirm ARLIS actually published this specific decision on that exact date."
+  },
+  {
+   "id": "am-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1755,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific citation; no reliable record confirms this exact decree title, date, or ARLIS publication details."
+  },
+  {
+   "id": "am-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 4635,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific decision's existence, exact title, or 1998-05-10 publication date in ARLIS without access to authoritative source records."
+  },
+  {
+   "id": "am-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2184,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be an internal report/notice on disability issues, unlikely officially published via ARLIS, which mainly hosts normative legal acts, not annual reports."
+  },
+  {
+   "id": "am-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1750,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this predates ARLIS, which began operating later (around 2000s); such a 1998 government decision could not have been published via ARLIS."
+  },
+  {
+   "id": "am-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1834,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific citation exists in ARLIS; the decree number, date, and content combination appear unconfirmed or fabricated."
+  },
+  {
+   "id": "am-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2996,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. \"Službeni glasnik RS\" is Serbia's official gazette, not Armenia's; Armenian government decisions are published in Armenia's official legal bulletin (\"Հայաստանի Հանրապետության պաշտոնական տեղեկագ"
+  },
+  {
+   "id": "am-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1819,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — I cannot verify this specific ARLIS citation; no reliable record confirms this exact decree title, date, or publication details in Armenian legal sources."
+  },
+  {
+   "id": "am-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1910,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — I cannot verify this specific ARLIS citation (decree number, exact date, and title match) against actual records; unconfirmed bibliographic claims should not be assumed accurate."
+  },
+  {
+   "id": "am-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1911,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Armenian government decisions are published in Armenia's official gazette (Arlis/Hayastani Hանրապետություն), not Albania's Qendra e Botimeve Zyrtare."
+  },
+  {
+   "id": "am-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2601,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — ARLIS did not exist in 1995 (established later, ~2000s); this predates the system, so sourcing is anachronistic/unverifiable."
+  },
+  {
+   "id": "am-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1788,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Armenia's legal acts are published via ARLIS (Armenia's official legal database), not Lithuania's TAR system, which serves Lithuania only."
+  }
+ ]
+}

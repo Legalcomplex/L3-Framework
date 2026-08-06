@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Democratic Republic of the Congo — Source-Grounded Citation Reliability (CD)",
+ "country": "CD",
+ "jurisdiction": "Democratic Republic of the Congo",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:09:46.052647+00:00",
+ "results": [
+  {
+   "id": "cd-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2498,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The citation format appears inconsistent and unverifiable; DRC Cassation Court references and Juricaf coverage make this claim doubtful."
+  },
+  {
+   "id": "cd-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2044,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific decree's existence, title, or publication details; the claim appears fabricated or unverifiable against reliable sources."
+  },
+  {
+   "id": "cd-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 6245,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. CCJA is the OHADA regional court based in Abidjan, not a DRC Constitutional or Cassation Court decision."
+  },
+  {
+   "id": "cd-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2492,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. DRC has no official online legislation portal; laws appear in the Journal Officiel, not a \"Legislation Portal.\""
+  },
+  {
+   "id": "cd-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2191,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date (22 December 2025) is in the future relative to any verifiable record, making this citation unverifiable and fabricated."
+  },
+  {
+   "id": "cd-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2734,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific arrêté's existence or publication details on that portal; treat unconfirmed citations as unreliable without primary verification."
+  },
+  {
+   "id": "cd-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2128,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. A DRC Cour de cassation decision would not be published by Gabon's Constitutional Court—different countries and jurisdictions entirely."
+  },
+  {
+   "id": "cd-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 3155,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The DRC (Kinshasa) and Congo-Brazzaville are separate countries; a DRC decree wouldn't appear in Congo-Brazzaville's Official Journal."
+  },
+  {
+   "id": "cd-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 3042,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. CCJA is OHADA's Abidjan-based court, not a DRC Constitutional or Cassation body; also identifier year mismatches (146/2020 vs 2019)."
+  },
+  {
+   "id": "cd-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2526,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. AngoLEX covers Angolan legislation, not DRC sources; a Congolese ordonnance would appear in the Journal Officiel, not AngoLEX."
+  },
+  {
+   "id": "cd-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1905,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The DRC (Congo-Kinshasa) source wouldn't be published by Congo-Brazzaville's Constitutional Court; these are separate countries with distinct institutions."
+  },
+  {
+   "id": "cd-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2107,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The jurisdiction is DR Congo, but the cited gazette is Gabon's Journal Officiel—a country mismatch invalidating the claim."
+  }
+ ]
+}

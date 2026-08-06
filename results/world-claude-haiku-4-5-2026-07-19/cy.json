@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Cyprus — Source-Grounded Citation Reliability (CY)",
+ "country": "CY",
+ "jurisdiction": "Cyprus",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:35:49.998265+00:00",
+ "results": [
+  {
+   "id": "cy-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1701,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  This decision appears to be from Cyprus's Supreme Court (Αναθεωρητική Έφεση = Revision Appeal), not the Tax Tribunal, based on the case type designation."
+  },
+  {
+   "id": "cy-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1519,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  This decision cannot be authentic. The cited date is 30/1/2026, which is in the future. No court can publish decisions from dates that have not yet occurred."
+  },
+  {
+   "id": "cy-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1633,
+   "verdict": false,
+   "correct": false,
+   "raw": "# Answer: **False**  The identifier format and database structure do not correspond to standard Cyprus official legislation cataloging systems. UUID-style identifiers are not typically used in CY-Law'"
+  },
+  {
+   "id": "cy-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1533,
+   "verdict": true,
+   "correct": true,
+   "raw": "# True  The Cyprus Commission for the Protection of Competition (CPC) publishes merger control decisions, including notifications of concentrations. This decision format and date align with CPC's offi"
+  },
+  {
+   "id": "cy-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1550,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The case reference format and date suggest this may be a Court of Appeal decision rather than a Supreme Court decision. Cyprus case citation conventions typically distinguish between these "
+  },
+  {
+   "id": "cy-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1673,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The identifier format and ECLI reference are inconsistent. The \"2024\" in the first identifier contradicts the \"2015\" in the ECLI, and the claim lacks verifiable source confirmation."
+  },
+  {
+   "id": "cy-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1644,
+   "verdict": false,
+   "correct": true,
+   "raw": "# Evaluation: Unable to Verify - False  **Explanation:** I cannot verify this specific Cyprus Tax Tribunal decision identifier, case name, or date against authoritative sources. The claim cannot be co"
+  },
+  {
+   "id": "cy-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 3052,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This decision is from the Cyprus Supreme Court, not Montenegro's Constitutional Court. The case name, case number format, and Greek language clearly indicate Cypriot jurisdiction."
+  },
+  {
+   "id": "cy-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2510,
+   "verdict": false,
+   "correct": true,
+   "raw": "# Evaluation: Unable to Verify  **Answer: Cannot Determine (False by Default)**  **Explanation:** The CY-Law database identifier and document title cannot be independently verified without direct acce"
+  },
+  {
+   "id": "cy-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1181,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This decision concerns a concentration/merger notification under competition law, which falls under Ukraine's competition authority's jurisdiction, not the Supreme Court of Ukraine."
+  },
+  {
+   "id": "cy-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1281,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The case involves Cypriot parties (Iakovos Dimitriou v. KPMG Ltd) and a Cypriot appeals court reference, not Ukraine's Constitutional Court. This is a Cypriot judicial decision."
+  },
+  {
+   "id": "cy-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1282,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The ECLI format \"CY:AD:2015:C240\" indicates an Administrative Court decision, not a Tax Tribunal decision. The \"AD\" designator refers to Cyprus Administrative Courts, not tax-specific tribu"
+  }
+ ]
+}

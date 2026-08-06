@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — El Salvador — Source-Grounded Citation Reliability (SV)",
+ "country": "SV",
+ "jurisdiction": "El Salvador",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:25:08.568557+00:00",
+ "results": [
+  {
+   "id": "sv-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2083,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The decision date (2026-03-05) is in the future relative to the case number 145-P-2025, making it implausible."
+  },
+  {
+   "id": "sv-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2736,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-03-13 is in the future relative to decision number 559-2025, making this citation chronologically implausible and unverifiable."
+  },
+  {
+   "id": "sv-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1836,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-04-29 is in the future, making publication impossible; this bibliographic claim cannot be verified as accurate."
+  },
+  {
+   "id": "sv-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2123,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated case; no verifiable record exists of \"Caso Agencia de Viajes Escamilla\" from that source."
+  },
+  {
+   "id": "sv-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2265,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-03-03 is in the future relative to a 2025 decision number, indicating a fabricated or inconsistent citation."
+  },
+  {
+   "id": "sv-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1858,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-03-05 is in the future relative to a 2025 identifier, making this citation chronologically implausible and unverifiable."
+  },
+  {
+   "id": "sv-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2869,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The citation number \"145-P-2025\" (year 2025) contradicts the stated decision date of 2024-03-05; this inconsistency invalidates the claim."
+  },
+  {
+   "id": "sv-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2629,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '559-2026' contradicts the cited case '559-2025', and a March 2026 date is implausibly future-dated."
+  },
+  {
+   "id": "sv-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1944,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Salvadoran law wouldn't be published via Honduras's TSC; jurisdictions differ. Also, the 2026 date is implausibly future."
+  },
+  {
+   "id": "sv-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1605,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This appears to be a fabricated citation; no verifiable record exists of this specific decision from El Salvador's Superintendencia de Competencia."
+  },
+  {
+   "id": "sv-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2008,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. A Salvadoran Supreme Court decision would not be published by Mexico's SCJN platform; jurisdictions and institutions don't match."
+  },
+  {
+   "id": "sv-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1965,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '80-P-2026' cannot correspond to a document labeled '80-P-2025' since the case numbers differ inconsistently."
+  }
+ ]
+}

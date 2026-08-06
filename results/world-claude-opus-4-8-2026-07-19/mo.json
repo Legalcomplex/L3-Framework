@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Macao — Source-Grounded Citation Reliability (MO)",
+ "country": "MO",
+ "jurisdiction": "Macao",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.4167,
+ "correct": 5,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:19:17.424131+00:00",
+ "results": [
+  {
+   "id": "mo-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1742,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-04-01 is in the future; this claim cannot be verified as an actual published source."
+  },
+  {
+   "id": "mo-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2534,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-01-23 is in the future, making this citation impossible to verify as a genuine published decision."
+  },
+  {
+   "id": "mo-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2335,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier 'mo-pj-46277' appears fabricated, and I cannot verify this specific law citation, date, or budget content exist."
+  },
+  {
+   "id": "mo-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 4103,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The 2026 date is future/fabricated; I cannot verify this specific Ordem Executiva exists in Macao's Boletim Oficial."
+  },
+  {
+   "id": "mo-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2743,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2025-12-05 is in the future and implausible for a cited decision, making this bibliographic claim unverifiable and unreliable."
+  },
+  {
+   "id": "mo-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 3181,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific identifier, law number, title, or date; these details appear fabricated and unverifiable against actual records."
+  },
+  {
+   "id": "mo-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2369,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'mo-bo-46548' and a 2026-dated dispatch cannot be verified; these appear fabricated, lacking confirmable authentic bibliographic correspondence."
+  },
+  {
+   "id": "mo-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2272,
+   "verdict": true,
+   "correct": false,
+   "raw": "I cannot verify this specific decision's existence or publication details, so I cannot confirm the claim as True.  False—unverifiable."
+  },
+  {
+   "id": "mo-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 3171,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'mo-pj-46279' appears fabricated, and I cannot verify this specific law, date, or citation as authentic."
+  },
+  {
+   "id": "mo-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 3029,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Macao Executive Orders are published in the Boletim Oficial de Macau (io.gov.mo), not China's State Taxation Administration."
+  },
+  {
+   "id": "mo-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1764,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The case number \"36/2023\" indicates a 2023 filing, which contradicts the stated 2022-12-05 decision date—an inconsistency."
+  },
+  {
+   "id": "mo-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2341,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Macao law is published in the Boletim Oficial de Macau, not Korea's KLIC, which covers Korean legislation only."
+  }
+ ]
+}

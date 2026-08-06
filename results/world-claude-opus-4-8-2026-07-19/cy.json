@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Cyprus — Source-Grounded Citation Reliability (CY)",
+ "country": "CY",
+ "jurisdiction": "Cyprus",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:11:00.470678+00:00",
+ "results": [
+  {
+   "id": "cy-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2100,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Revisional appeals (Αναθεωρητική Έφεση) are decided by the Supreme Court, not published by any Cyprus Tax Tribunal."
+  },
+  {
+   "id": "cy-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2047,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 30/1/2026 is in the future, making this citation impossible to verify as a genuine published decision."
+  },
+  {
+   "id": "cy-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 3476,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific UUID identifier corresponds to that customs legislation title or 2004 date without access to CY-Law database."
+  },
+  {
+   "id": "cy-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2041,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Merger control notifications in Cyprus fall under the Commission for the Protection of Competition, but citation authenticity cannot be verified."
+  },
+  {
+   "id": "cy-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2046,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. Cyprus Supreme Court hears civil appeals (Πολιτική Έφεση); the citation format and appeal number are consistent with its published decisions."
+  },
+  {
+   "id": "cy-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2518,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This identifier and ECLI appear fabricated; Cyprus lacks a standardized \"Tax Tribunal Decisions\" collection with such format, indicating unverifiable claim."
+  },
+  {
+   "id": "cy-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2208,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The case name concerns public service commission (administrative review appeal), not a tax matter, and the identifier appears fabricated."
+  },
+  {
+   "id": "cy-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2567,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This is a Cyprus administrative case; publisher would be Cypriot courts, not Montenegro's Constitutional Court. Jurisdictions clearly mismatch entirely."
+  },
+  {
+   "id": "cy-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2053,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific identifier, database, or date correspondence; such precise bibliographic claims require authoritative confirmation I cannot provide."
+  },
+  {
+   "id": "cy-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2077,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Concentration notifications (case code CPC) are handled by Cyprus's Commission for the Protection of Competition, not Ukraine's Supreme Court."
+  },
+  {
+   "id": "cy-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2122,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This is a Cyprus civil appeal (\"Πολιτική Έφεση\") decided by the Supreme Court of Cyprus, not Ukraine's Constitutional Court."
+  },
+  {
+   "id": "cy-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2036,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The ECLI \"AD\" code denotes Cyprus Supreme Court (Ανώτατο Δικαστήριο) decisions, not a Tax Tribunal publication."
+  }
+ ]
+}

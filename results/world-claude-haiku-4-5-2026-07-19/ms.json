@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Montserrat — Source-Grounded Citation Reliability (MS)",
+ "country": "MS",
+ "jurisdiction": "Montserrat",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:41:45.507187+00:00",
+ "results": [
+  {
+   "id": "ms-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2118,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  SRO No. 33 of 2025 cannot have been published on 2025-01-01 as that date predates the regulation's issuance and official gazette publication in Montserrat."
+  },
+  {
+   "id": "ms-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2029,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The publication date of 2026-05-07 is in the future, making this claim impossible to verify as accurate. Future dates cannot represent past legislative publications."
+  },
+  {
+   "id": "ms-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1480,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Financial Services Commission (Amendment) Act 2013 would be published in Montserrat's official gazette or legislation compilations, not specifically via \"Montserrat Financial Services Commi"
+  },
+  {
+   "id": "ms-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1820,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The publication date of 2026-05-07 is in the future, making this claim impossible to verify as accurate. No legislation can be officially published on a date that has not yet occurred."
+  },
+  {
+   "id": "ms-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1992,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** S.R.O. 44 of 2025 cannot have been published on 2025-01-01 as this date is in the future relative to current knowledge cutoff (April 2024). The claim is temporally impossible."
+  },
+  {
+   "id": "ms-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3908,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The publication date of 2026-05-07 is in the future, making this claim implausible. No official legal source can be published on a date that has not yet occurred."
+  },
+  {
+   "id": "ms-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1439,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  SRO No. 33 of 2025 pertains to Montserrat, not Turks and Caicos. The publication source cited is incorrect for this jurisdiction."
+  },
+  {
+   "id": "ms-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1691,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Children (Care and Adoption) Act does not appear in Montserrat's official legislative records as published on May 7, 2024. Verification with current Montserrat legislative databases is requ"
+  },
+  {
+   "id": "ms-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1180,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The 'Financial Services Commission (Amendment) Act 2013' is a Montserrat law, not a Saint Lucia law. Saint Lucia Revised Laws would not be the correct official legal source for Montserrat l"
+  },
+  {
+   "id": "ms-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1124,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Montserrat's legislative assembly records and official gazettes do not document a 'Child Abduction and Custody Act' with this publication date. The act does not appear in verified legislati"
+  },
+  {
+   "id": "ms-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1869,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  S.R.O. 44 of 2025 cannot be a Montserrat regulation published via Bermuda Laws Online. Bermuda Laws Online publishes Bermuda legislation, not Montserrat legislation."
+  },
+  {
+   "id": "ms-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1084,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. While Montserrat does have legislation addressing criminal matters, there is no verifiable evidence of an Act with this specific title published by the Legislative Assembly on that date."
+  }
+ ]
+}

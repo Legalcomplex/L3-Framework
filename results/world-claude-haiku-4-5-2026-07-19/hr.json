@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Croatia — Source-Grounded Citation Reliability (HR)",
+ "country": "HR",
+ "jurisdiction": "Croatia",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.4167,
+ "correct": 5,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:38:21.665098+00:00",
+ "results": [
+  {
+   "id": "hr-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1569,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The decision number format and date structure don't match Croatian court decision cataloging systems. The prefix \"Ovrv\" and reference code structure appear inconsistent with standard Croati"
+  },
+  {
+   "id": "hr-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2217,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  This decision cannot be from 2026 as that is a future date beyond the current time. Additionally, the decision number format and designation appear inconsistent with standard Croatian Constit"
+  },
+  {
+   "id": "hr-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1381,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The identifier format and future date (2026) are inconsistent with the actual Narodne novine cataloging system. This appears to be a fabricated reference without verifiable documentation."
+  },
+  {
+   "id": "hr-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1929,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The Croatian High Administrative Court (Visoki upravni sud Republike Hrvatske) does not issue decisions with case numbers formatted as \"Su - Uzp-24/2025-5.\" This format doesn't match standard"
+  },
+  {
+   "id": "hr-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1852,
+   "verdict": false,
+   "correct": false,
+   "raw": "# Evaluation: False  **Explanation:** The decision number format and date (2025-10-13) appear inconsistent with Croatian Supreme Court's standard nomenclature and current publication protocols. The re"
+  },
+  {
+   "id": "hr-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1326,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The identifier format and date (2026-03-26) reference a future date beyond the current time, making this claim impossible to verify as an actual official Croatian Competition Agency decisio"
+  },
+  {
+   "id": "hr-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1806,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This decision cannot be from the Latvian Constitutional Court because the reference format \"Ovrv-88340/2024-6 - OGSZG\" and the date format follow Croatian administrative procedures, not Lat"
+  },
+  {
+   "id": "hr-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1232,
+   "verdict": true,
+   "correct": false,
+   "raw": "**True**  The Croatian Constitutional Court (Ustavni sud) publishes decisions with U-series designations. The reference format and court name match official Croatian constitutional jurisprudence docum"
+  },
+  {
+   "id": "hr-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1567,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.  The identifier format '2026/13/118' appears invalid for Croatian Official Gazette citations. Standard Narodne novine references use year/issue format (e.g., NN 118/2026), not this structure."
+  },
+  {
+   "id": "hr-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1266,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The decision designation \"Su - Uzp-24/2025-5\" uses Croatian case numbering conventions (Su = municipal court, Uzp = civil procedure). Moldova's courts use different systems. Geographic mism"
+  },
+  {
+   "id": "hr-src-f05",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1211,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The date 2025-10-13 is in the future and cannot be a valid publication date for an existing court decision document."
+  },
+  {
+   "id": "hr-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 3109,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The decision numbering format (UP/I) and case parties (Zagreb-based companies) indicate this is a Croatian Constitutional Court decision, not Montenegro's."
+  }
+ ]
+}

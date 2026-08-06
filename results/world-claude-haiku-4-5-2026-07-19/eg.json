@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Egypt — Source-Grounded Citation Reliability (EG)",
+ "country": "EG",
+ "jurisdiction": "Egypt",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:36:32.774919+00:00",
+ "results": [
+  {
+   "id": "eg-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1881,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  This decision's language and procedural content (urgent matter handling, execution suspension) are characteristic of lower court civil/administrative proceedings, not constitutional court j"
+  },
+  {
+   "id": "eg-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1720,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The cited decision date (2002-12-30) and case number format don't match Egypt's Supreme Constitutional Court's official publication records and constitutional review procedures for that per"
+  },
+  {
+   "id": "eg-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2206,
+   "verdict": true,
+   "correct": true,
+   "raw": "# Answer: **True**  ## Explanation:  This decision reflects Egypt's Supreme Constitutional Court's jurisdiction to review constitutional conformity of penal code provisions, a documented function of t"
+  },
+  {
+   "id": "eg-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2016,
+   "verdict": true,
+   "correct": true,
+   "raw": "# Evaluation: TRUE  The Egyptian Supreme Constitutional Court (المحكمة الدستورية العليا) regularly issues constitutional decisions (قرارات دستورية) regarding the constitutionality of legal provisions."
+  },
+  {
+   "id": "eg-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1537,
+   "verdict": true,
+   "correct": true,
+   "raw": "**True**  The Egyptian Supreme Constitutional Court (المحكمة الدستورية العليا) regularly issues constitutional decisions on the constitutionality of penal code provisions. This decision format and dat"
+  },
+  {
+   "id": "eg-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1462,
+   "verdict": true,
+   "correct": true,
+   "raw": "**True**  This is an authentic Egyptian Supreme Constitutional Court (المحكمة الدستورية العليا) decision from 2010. The Arabic text's formal petition language and institutional reference are character"
+  },
+  {
+   "id": "eg-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1767,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The decision's language and format indicate it is a provisional/urgent ruling (حكم مستعجل) from an ordinary court, not Egypt's Supreme Constitutional Court, which issues constitutional ruling"
+  },
+  {
+   "id": "eg-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1384,
+   "verdict": true,
+   "correct": false,
+   "raw": "**True**  The Supreme Constitutional Court of Egypt (المحكمة الدستورية العليا) regularly issues decisions on constitutional matters regarding criminal law provisions. This citation format and date are"
+  },
+  {
+   "id": "eg-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1345,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The decision concerns Egyptian Penal Code articles and constitutional compatibility—an Egyptian constitutional matter. Morocco's Competition Council would not issue rulings on Egyptian dome"
+  },
+  {
+   "id": "eg-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1235,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The decision's Arabic reference to articles from Egyptian Penal Code (عقوبات) and Egyptian Criminal Procedure Code indicates this is an Egyptian Constitutional Court decision, not Algeria's"
+  },
+  {
+   "id": "eg-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1630,
+   "verdict": true,
+   "correct": false,
+   "raw": "**True**  The Egyptian Supreme Constitutional Court (المحكمة الدستورية العليا) regularly issues decisions on constitutional matters concerning penal code articles. This citation format and date are co"
+  },
+  {
+   "id": "eg-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1450,
+   "verdict": true,
+   "correct": false,
+   "raw": "# Evaluation Result  **True**  This is a legitimate Egyptian Supreme Constitutional Court (المحكمة الدستورية العليا) decision from 2009. The Arabic text's format, terminology, and reference to the Cou"
+  }
+ ]
+}

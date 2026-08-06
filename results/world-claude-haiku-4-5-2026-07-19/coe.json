@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Council of Europe — Source-Grounded Citation Reliability (CoE)",
+ "country": "COE",
+ "jurisdiction": "Council of Europe",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:35:56.285234+00:00",
+ "results": [
+  {
+   "id": "coe-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1436,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Venice Commission CODICES Database catalogs constitutional court decisions, not corporate scandal reports. No decision matching this title and date exists in the database."
+  },
+  {
+   "id": "coe-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1890,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** HUDOC publishes official Court decisions and documents, not commercial publisher translations. N. P. Engel Verlag is a private German publisher, not HUDOC."
+  },
+  {
+   "id": "coe-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1669,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The European Interim Agreement on Social Security Schemes dates to 1953, but the Council of Europe Treaty Office system using \"ETS\" numbers was not established until 1955."
+  },
+  {
+   "id": "coe-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1715,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.**  Separate dissenting opinions are not independently published decisions. They are annexed to main decisions and not catalogued as separate entries in HUDOC-ESC databases."
+  },
+  {
+   "id": "coe-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1620,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  HUDOC-EXEC monitors execution of judgments through Committee of Ministers decisions. The cited format appears inconsistent with standard HUDOC-EXEC bibliographic conventions for official pu"
+  },
+  {
+   "id": "coe-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1793,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Venice Commission's CODICES Database catalogs constitutional court decisions, not generic decisions. The identifier format and date don't match typical CODICES entries for published mat"
+  },
+  {
+   "id": "coe-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1630,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Venice Commission CODICES Database primarily catalogs constitutional court decisions, not administrative decisions about corporate scandals. This source doesn't match the database's foc"
+  },
+  {
+   "id": "coe-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1715,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The ECLI identifier format and structure do not align with actual HUDOC case citations. ECLI identifiers for ECHR cases follow different conventions and the claim contains inconsistent elem"
+  },
+  {
+   "id": "coe-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1388,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The European Interim Agreement on Social Security is a Council of Europe treaty, not Isle of Man domestic legislation. It would be published through official Council of Europe channels, not"
+  },
+  {
+   "id": "coe-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1206,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  HUDOC-ESC publishes decisions and conclusions on the merits of cases, not separate dissenting opinions as standalone documents. Dissenting opinions appear within full decisions, not as separa"
+  },
+  {
+   "id": "coe-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1323,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Council of Europe decisions are published by the Council of Europe itself, not by Jersey Legal Information Board. Jersey is not a Council of Europe member and has no authority to publish of"
+  },
+  {
+   "id": "coe-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1323,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  DGSI (Direção-Geral da Administração da Justiça) is Portugal's judicial administration database, but the decision reference format \"ESP-1996-1-003\" does not correspond to standard Portugues"
+  }
+ ]
+}

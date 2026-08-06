@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Chile — Source-Grounded Citation Reliability (CL)",
+ "country": "CL",
+ "jurisdiction": "Chile",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.4167,
+ "correct": 5,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:10:18.075038+00:00",
+ "results": [
+  {
+   "id": "cl-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3308,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-05-07 is in the future, making publication impossible; this claim cannot be verified as authentic."
+  },
+  {
+   "id": "cl-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2131,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The 2026-02-11 date is in the future, making this citation unverifiable; also, such specific publication details cannot be confirmed."
+  },
+  {
+   "id": "cl-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 6509,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The SURBTC (Buda) v. banks cryptocurrency case was resolved by TDLC around 2018-2020, not 2024; details appear fabricated."
+  },
+  {
+   "id": "cl-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2830,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. CMF's General Regulation (NCG) on market conduct self-assessment for insurers postdates 2017; CMF replaced SVS in 2018."
+  },
+  {
+   "id": "cl-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2335,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. TDLC sentences are issued by the Tribunal de Defensa de la Libre Competencia, not the FNE, a separate agency."
+  },
+  {
+   "id": "cl-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2340,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. Tribunales Tributarios y Aduaneros adjudicate tax and customs disputes in Chile, publishing such decisions involving Servicio de Impuestos Internos."
+  },
+  {
+   "id": "cl-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2722,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Chile's radio broadcasting concessions are published in Diario Oficial, not Colombia's Senado. The jurisdictions and sources are mismatched; date is future."
+  },
+  {
+   "id": "cl-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2293,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Chilean laws are published via BCN/Diario Oficial, not Uruguay's IMPO. The source jurisdiction mismatch invalidates this claim."
+  },
+  {
+   "id": "cl-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2386,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The date (2021-04-23) contradicts the \"2023\" case number, and identifying details appear inconsistent, suggesting a fabricated or erroneous citation."
+  },
+  {
+   "id": "cl-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2277,
+   "verdict": true,
+   "correct": false,
+   "raw": "True. The CMF (Chile's financial market regulator) issued NCG on market conduct principles self-assessment for insurers around 2018."
+  },
+  {
+   "id": "cl-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1447,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. TDLC sentences are issued by the Tribunal de Defensa de la Libre Competencia, not the FNE, which prosecutes cases."
+  },
+  {
+   "id": "cl-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2253,
+   "verdict": true,
+   "correct": false,
+   "raw": "True. Chilean Tribunales Tributarios y Aduaneros (TTA) are specialized courts publishing tax and customs rulings, including regional decisions like Rancagua's."
+  }
+ ]
+}

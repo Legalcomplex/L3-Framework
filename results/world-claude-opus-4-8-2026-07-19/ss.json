@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — South Sudan — Source-Grounded Citation Reliability (SS)",
+ "country": "SS",
+ "jurisdiction": "South Sudan",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:25:04.472283+00:00",
+ "results": [
+  {
+   "id": "ss-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 4590,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. South Sudan gained independence in 2011; no 2007 South Sudan law exists. The Civil Procedure Act dates to 2007 under Sudan."
+  },
+  {
+   "id": "ss-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2482,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. \"Statistical Bulletin\" is economic data, not a regulation or circular; likely misclassified, and publication date appears unreliable."
+  },
+  {
+   "id": "ss-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2324,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. South Sudan has no \"Advocates Act (55 of 2013)\"; this citation appears fabricated, with implausible numbering and generic date."
+  },
+  {
+   "id": "ss-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2042,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. \"Statistical bulletin table-May\" is statistical data, not a regulation or circular; it doesn't belong under Regulations & Circulars."
+  },
+  {
+   "id": "ss-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2380,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. South Sudan gained independence in July 2011; the exact January 1 date appears fabricated, and citation details are unverifiable."
+  },
+  {
+   "id": "ss-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2662,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific document exists in Bank of South Sudan's official publications; insufficient reliable sourcing to confirm."
+  },
+  {
+   "id": "ss-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2528,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. South Sudan's Civil Procedure Act is from 2007, but Tanzania's Attorney General's Office wouldn't publish South Sudanese legislation; jurisdictions mismatch."
+  },
+  {
+   "id": "ss-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2088,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. A statistical bulletin table is data/statistics, not a regulation or circular; the source category and details appear fabricated."
+  },
+  {
+   "id": "ss-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 3483,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Kenya Law (NCLR) publishes Kenyan legislation, not South Sudan's laws; it cannot be an official source for South Sudan."
+  },
+  {
+   "id": "ss-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2175,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The date 2026-12-05 is in the future, making this citation impossible to verify as a legitimately published source."
+  },
+  {
+   "id": "ss-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2096,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. South Sudan's legislation is published in its own official gazette, not Seychelles'—two entirely separate, unrelated sovereign jurisdictions."
+  },
+  {
+   "id": "ss-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2762,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. \"BoSS\" refers to Bank of South Sudan; a Madagascar Justice database publishing South Sudanese banking supervision documents is implausible and jurisdictionally inconsistent."
+  }
+ ]
+}

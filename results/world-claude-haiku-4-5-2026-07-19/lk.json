@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Sri Lanka — Source-Grounded Citation Reliability (LK)",
+ "country": "LK",
+ "jurisdiction": "Sri Lanka",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:40:24.552233+00:00",
+ "results": [
+  {
+   "id": "lk-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1883,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The claim references a future date (2026-02-17) that has not yet occurred. As of now, this act cannot have been published, making the bibliographic claim temporally impossible and therefore"
+  },
+  {
+   "id": "lk-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2122,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The decision is dated 2026-03-23, which is in the future. No court decision can be published with a future date, making this claim implausible."
+  },
+  {
+   "id": "lk-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1911,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  CommonLII (Common Law, Civil Law and Indigenous Law Legal Information Institute) is a secondary legal database aggregator, not the original publisher. The Supreme Court of Sri Lanka publish"
+  },
+  {
+   "id": "lk-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1407,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The PUCSL Act No. 35 of 2002 is the principal legislation establishing the Commission, not an output of its Electricity Regulations publication."
+  },
+  {
+   "id": "lk-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1452,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  This act cannot exist yet; the date is in the future (2026). As of the current date, this legislation has not been enacted or published."
+  },
+  {
+   "id": "lk-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2366,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  Unable to verify. The future date (2026-03-26) is inconsistent with a 2018 case identifier and current knowledge of Sri Lankan Supreme Court records in LawNet."
+  },
+  {
+   "id": "lk-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1538,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Act No. 04/2026 is a Sri Lankan statute, not Indian legislation. The Gazette of India cannot be the official publisher of Sri Lankan laws; Sri Lanka's official gazette is the Government Gaz"
+  },
+  {
+   "id": "lk-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1594,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.**  The date 2026-03-23 is in the future, making this claim implausible. Legal decisions cannot be dated after the current date, indicating a factual or bibliographic error."
+  },
+  {
+   "id": "lk-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1315,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This decision is from the Supreme Court of Sri Lanka (LKSC), not Islamabad High Court. The NLR (National Law Reports) is a Sri Lankan legal publication, not Pakistani."
+  },
+  {
+   "id": "lk-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1275,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The PUCSL Act (Public Utilities Commission of Sri Lanka Act) is a Sri Lankan law, not Pakistani. The source attribution to \"Pakistan Laws Dataset\" is incorrect and misleading."
+  },
+  {
+   "id": "lk-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1187,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This act belongs to Maldives, not Sri Lanka. The question asks about Sri Lankan jurisdiction, making this source jurisdictionally irrelevant and invalid."
+  },
+  {
+   "id": "lk-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1790,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The date 2026-03-26 is in the future and cannot correspond to a Supreme Court decision. This appears to be a data error or fabricated citation."
+  }
+ ]
+}

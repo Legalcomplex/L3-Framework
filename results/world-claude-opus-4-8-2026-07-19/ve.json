@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Venezuela — Source-Grounded Citation Reliability (VE)",
+ "country": "VE",
+ "jurisdiction": "Venezuela",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:27:41.864118+00:00",
+ "results": [
+  {
+   "id": "ve-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2112,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such law exists; this appears fabricated. Venezuela lacks a \"Ley de Participación Estudiantil en el Subsistema de Educación Básica.\""
+  },
+  {
+   "id": "ve-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2149,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date (2026-01-08) is in the future relative to verifiable records; this citation appears fabricated and cannot be confirmed."
+  },
+  {
+   "id": "ve-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2026,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No verifiable record exists of this specific law or Gaceta Oficial publication on that date; likely fabricated citation."
+  },
+  {
+   "id": "ve-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1943,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-02-19 is in the future, making this citation impossible to verify as a genuine published decision."
+  },
+  {
+   "id": "ve-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2870,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such law with this exact title was published in Venezuela's Gaceta Oficial on that date; likely fabricated."
+  },
+  {
+   "id": "ve-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2428,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-02-19 is in the future and internally inconsistent with a 2025 identifier; claim appears fabricated."
+  },
+  {
+   "id": "ve-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2159,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No such law exists in Venezuela's Gaceta Oficial; this appears to be a fabricated citation with unverifiable publication details."
+  },
+  {
+   "id": "ve-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2210,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific citation; the 2026 date is future-dated relative to my knowledge, making verification impossible."
+  },
+  {
+   "id": "ve-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2015,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Venezuelan laws are published in Venezuela's Gaceta Oficial, not Uruguay's IMPO system, which handles Uruguayan legislation only."
+  },
+  {
+   "id": "ve-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1562,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The date 2026-02-19 is in the future and implausible for a 2023 identifier; this citation cannot be verified."
+  },
+  {
+   "id": "ve-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1774,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. InfoLEG is Argentina's legislative database, not Venezuela's. Venezuelan laws are published in the Gaceta Oficial de la República."
+  },
+  {
+   "id": "ve-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2153,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Sala Político-Administrativa and Sala Plena are distinct chambers; a single decision cannot originate from both simultaneously, indicating fabrication."
+  }
+ ]
+}

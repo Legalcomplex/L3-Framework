@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — South Korea — Source-Grounded Citation Reliability (KR)",
+ "country": "KR",
+ "jurisdiction": "South Korea",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 10,
+ "blocked": 0,
+ "unparsed": 2,
+ "errors": [],
+ "accuracy": 0.6,
+ "correct": 6,
+ "parse_rate": 0.8333,
+ "passed": false,
+ "timestamp": "2026-07-19T08:16:48.974483+00:00",
+ "results": [
+  {
+   "id": "kr-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2457,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such statute exists; 112 emergency reporting is governed by the 112신고의 운영 및 처리에 관한 법률, effective July 2024, not a 시행령."
+  },
+  {
+   "id": "kr-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2501,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The \"누\" case prefix indicates a High Court appellate case, but I cannot verify this specific identifier's exact title reliably."
+  },
+  {
+   "id": "kr-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2047,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier '2026제카0252' is fabricated; I cannot verify this specific KFTC decision, date, or case details as authentic."
+  },
+  {
+   "id": "kr-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2475,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The Korea Legislation Research Institute operates the Korea Law Translation Center, providing official English translations of Korean statutes via API."
+  },
+  {
+   "id": "kr-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2477,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such law exists; \"119긴급신고\" matters fall under 소방기본법 or related emergency response statutes, not this fabricated title."
+  },
+  {
+   "id": "kr-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2043,
+   "verdict": null,
+   "correct": false,
+   "raw": "I cannot verify this specific case identifier against the CLIS database, so I cannot confirm the claim's accuracy."
+  },
+  {
+   "id": "kr-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2568,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No such statute exists; 112 emergency reporting was governed by police regulations until the \"112신고의 운영 및 처리에 관한 법률\" (2023)."
+  },
+  {
+   "id": "kr-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2359,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier format '2020누10651' indicates a High Court appellate case, but I cannot verify these specific details reliably."
+  },
+  {
+   "id": "kr-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2464,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This describes a KFTC penalty payment deferral/installment application decision, an administrative disposition, not published in official KFTC Decisions reporter."
+  },
+  {
+   "id": "kr-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1942,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This is a South Korean act; it would be published via Korea's National Law Information Center, not Hong Kong e-Legislation."
+  },
+  {
+   "id": "kr-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1905,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Macau's legal portal publishes Macau legislation, not South Korean laws; Korean statutes appear on 국가법령정보센터 (law.go.kr)."
+  },
+  {
+   "id": "kr-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1536,
+   "verdict": null,
+   "correct": false,
+   "raw": "I cannot verify this specific case identifier and its details against the actual CLIS database, so I cannot confirm accuracy."
+  }
+ ]
+}

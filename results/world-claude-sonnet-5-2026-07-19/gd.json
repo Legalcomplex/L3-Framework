@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Grenada — Source-Grounded Citation Reliability (GD)",
+ "country": "GD",
+ "jurisdiction": "Grenada",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:53:49.843208+00:00",
+ "results": [
+  {
+   "id": "gd-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2552,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this cites a future/unverifiable date beyond current records; no such Gazette No. 17 of 2026 can be confirmed as authentic or published."
+  },
+  {
+   "id": "gd-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2140,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated or unverifiable future-dated citation; I cannot confirm this specific Grenada Gazette issue exists or was published accordingly."
+  },
+  {
+   "id": "gd-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1990,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this is a future-dated, unverifiable citation; no such Grenada Gazette No. 25 of 2026 dated 29 May 2026 can currently be confirmed as published."
+  },
+  {
+   "id": "gd-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2723,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — the stated publication date (20 March 2026) conflicts with the given date (2026-04-11); the identifier's internal date is inconsistent."
+  },
+  {
+   "id": "gd-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2532,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this cites a future date beyond current knowledge cutoff, making verification impossible; such prospective gazette entries cannot be confirmed as authentic sources."
+  },
+  {
+   "id": "gd-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2042,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The stated publication date (2026-04-11) postdates the gazette's own title date (Friday 27th March 2026), an internal inconsistency."
+  },
+  {
+   "id": "gd-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1911,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Grenada legislation is not published via \"Bahamas Consolidated Legislation\" — that source belongs to the Bahamas, a different jurisdiction entirely."
+  },
+  {
+   "id": "gd-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1849,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier says \"march-11th-2027\" but the title says \"March 11th, 2026,\" and the date 2026-03-13 is inconsistent with both."
+  },
+  {
+   "id": "gd-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1565,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Grenada laws aren't published via \"Bermuda Laws Online\"—Bermuda is a separate jurisdiction with its own distinct legal publication system entirely."
+  },
+  {
+   "id": "gd-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1904,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This is a future/fabricated date discrepancy—March 20, 2026 gazette cannot be published April 11, 2026 with mismatched sequential ordering claims."
+  },
+  {
+   "id": "gd-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1535,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — Grenada's official legislation isn't published via Curaçao Government Legislation (Regelingen); that source relates to Curaçao's own legal publications system."
+  },
+  {
+   "id": "gd-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1728,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Grenada's official legal publications are issued through Grenada's own government gazette/legislation system, not \"Cayman Islands Legislation,\" which is a distinct jurisdiction's separate l"
+  }
+ ]
+}

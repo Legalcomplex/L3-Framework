@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Russia — Source-Grounded Citation Reliability (RU)",
+ "country": "RU",
+ "jurisdiction": "Russia",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:23:46.623927+00:00",
+ "results": [
+  {
+   "id": "ru-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2834,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Such a Duma personnel appointment resolution would not be published on pravo.gov.ru, which launched officially around 2011-2013."
+  },
+  {
+   "id": "ru-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 3138,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Case number А62 indicates an arbitration (commercial) court, not general jurisdiction; Sudact publishes arbitrazh decisions under separate classification."
+  },
+  {
+   "id": "ru-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2683,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This describes a draft bill (законопроект), not enacted law; pravo.gov.ru publishes official adopted acts, not parliamentary drafts under consideration."
+  },
+  {
+   "id": "ru-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2804,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Case number prefix \"А68\" indicates an arbitrazh (commercial) court, not general jurisdiction; Sudact publishes both, but categorization is wrong."
+  },
+  {
+   "id": "ru-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2246,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This is a generic title fragment lacking specific specialty, order number, and details; unverifiable as a concrete source citation."
+  },
+  {
+   "id": "ru-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2921,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The \"А62\" prefix indicates an arbitrazh (commercial) court case, not general jurisdiction; also, this specific decision cannot be verified."
+  },
+  {
+   "id": "ru-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 4212,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This appears to be a Duma internal personnel resolution, unlikely officially published on pravo.gov.ru, which launched around 2011-2012."
+  },
+  {
+   "id": "ru-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2476,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier \"А62-4962/2026\" contradicts the cited case number \"А62-4962/2025\"; mismatched year suffixes indicate an inconsistent, likely fabricated reference."
+  },
+  {
+   "id": "ru-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2663,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Draft bills (проект федерального закона) are processed through the State Duma system (sozd.duma.gov.ru), not published on pravo.gov.ru."
+  },
+  {
+   "id": "ru-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2185,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier \"А68-6852/2026\" contradicts the case number \"А68-6852/2025\"; also \"А68\" designates arbitration (arbitrazh) courts, not general jurisdiction."
+  },
+  {
+   "id": "ru-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1511,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This is a Russian federal education standard order; it would be published in Russian official sources, not Croatia's Narodne novine."
+  },
+  {
+   "id": "ru-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2700,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Case number \"А62\" indicates a Russian arbitrazh court (Smolensk region), not the Georgian Supreme Court; jurisdiction mismatch entirely."
+  }
+ ]
+}

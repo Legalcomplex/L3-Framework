@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Saint Martin — Source-Grounded Citation Reliability (MF)",
+ "country": "MF",
+ "jurisdiction": "Saint Martin",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:58:08.747344+00:00",
+ "results": [
+  {
+   "id": "mf-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2080,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This appears to be a fabricated or unverifiable citation; no legitimate record of \"CE 141-03-2026\" matching this format exists in verifiable public deliberations."
+  },
+  {
+   "id": "mf-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1992,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This appears to be a fabricated/unverifiable citation—I cannot confirm the existence of this specific deliberation, document number, or its actual publication details."
+  },
+  {
+   "id": "mf-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2043,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this appears to be a fabricated/unverifiable citation; no such official Conseil Territorial deliberation record can be confirmed as genuinely published."
+  },
+  {
+   "id": "mf-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2304,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this appears to be a fabricated or unverifiable future-dated citation; no genuine record confirms this specific deliberation's actual publication or existence."
+  },
+  {
+   "id": "mf-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2061,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this appears to be a fabricated or unverifiable citation; I cannot confirm any such deliberation exists in official Saint-Martin Territorial Council records for that date."
+  },
+  {
+   "id": "mf-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2010,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this citation cites an unverifiable future-dated deliberation; I cannot confirm such a specific document exists in official records."
+  },
+  {
+   "id": "mf-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1906,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — this appears to be a fabricated/unverifiable citation; no such official Sint Maarten Government Legislation record with this format exists."
+  },
+  {
+   "id": "mf-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2936,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Saint-Martin legal acts wouldn't be published via \"Bahamas Consolidated Legislation\" — a mismatched, implausible jurisdictional source for this territorial council deliberation."
+  },
+  {
+   "id": "mf-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 6376,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This appears to be a fabricated or unverifiable citation—Bermuda Laws Online would not publish Saint Martin urbanisme permit decisions from Conseil d'État."
+  },
+  {
+   "id": "mf-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2555,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — Saint Martin's legal instruments are not published via Turks and Caicos Revised Laws; that's an unrelated jurisdiction's distinct official publication source entirely."
+  },
+  {
+   "id": "mf-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1943,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Saint Martin isn't Curaçao; a French-style \"CE\" DIA/preemption text wouldn't be published under Curaçao's Regelingen government legislation portal."
+  },
+  {
+   "id": "mf-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1714,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This citation mixes mismatched jurisdictions/sources (Saint Martin, Aruba's DWJZ archive, \"CE\" format), appearing fabricated with no verifiable authentic legal reference."
+  }
+ ]
+}

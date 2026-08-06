@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Gambia — Source-Grounded Citation Reliability (GM)",
+ "country": "GM",
+ "jurisdiction": "Gambia",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:37:46.832791+00:00",
+ "results": [
+  {
+   "id": "gm-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1582,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The date discrepancy is problematic. The source is listed as published 2022-01-01 (January), but the document title references May 18, 2022, creating a temporal inconsistency that undermine"
+  },
+  {
+   "id": "gm-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1822,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Law Hub Gambia is a legal database, not a publisher of official court decisions. Court decisions are published by the judiciary or official government legal repositories, not private platfo"
+  },
+  {
+   "id": "gm-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1939,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The date discrepancy is problematic. The document title specifies \"June 22 2022\" but the alleged publication date is \"2022-01-01\" (January 1, 2022), which is chronologically impossible."
+  },
+  {
+   "id": "gm-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1728,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Law Hub Gambia is a legal database/portal, not a publisher. Court decisions are officially published through government gazettes or court records, not by Law Hub Gambia."
+  },
+  {
+   "id": "gm-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1930,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The date discrepancy is problematic. A document titled \"June 8, 2022\" cannot have a publication date of January 1, 2022, making this bibliographic claim internally inconsistent and unreliab"
+  },
+  {
+   "id": "gm-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1708,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Law Hub Gambia is a digital legal repository established later (circa 2015+), not a publisher of legislation in 2010. The Women's Act 2010 would have been published through official Gambian"
+  },
+  {
+   "id": "gm-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1797,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  CBG (Central Bank of The Gambia) bills notice cannot be published via Nigeria's Laws of the Federation. Gambia and Nigeria are separate jurisdictions with distinct legal systems and publica"
+  },
+  {
+   "id": "gm-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1706,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Denton v Director-General NIA (2006) is a Gambian case, not a Senegalese one. The Cour des Comptes du Sénégal is Senegal's court of accounts, not Gambia's judicial publisher."
+  },
+  {
+   "id": "gm-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1230,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The claim is inconsistent. A document titled \"CBG BILLS APPLICATION FORM JUNE 22 2022\" would originate from Gambia's Central Bank (CBG), not Mali's consolidated legal codes (SGG). The juris"
+  },
+  {
+   "id": "gm-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1523,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Sabally v Inspector General of Police (2001) is a Gambian case, not Senegalian. It would be published by Gambian courts, not Senegal's Supreme Court (Cour suprême)."
+  },
+  {
+   "id": "gm-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1205,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The document title references \"CBG\" (Central Bank of Gambia) and a June 2022 date, but attributes it to Benin LEGIS database—a mismatch indicating incorrect source jurisdiction attribution."
+  },
+  {
+   "id": "gm-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2556,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The 'Women's Act 2010' is Gambian legislation, not Guinean. DroitGuinéen is Guinea's legal reference platform and would not be the official publisher of Gambian laws."
+  }
+ ]
+}

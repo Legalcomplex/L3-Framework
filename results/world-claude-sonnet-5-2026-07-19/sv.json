@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — El Salvador — Source-Grounded Citation Reliability (SV)",
+ "country": "SV",
+ "jurisdiction": "El Salvador",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:03:02.592936+00:00",
+ "results": [
+  {
+   "id": "sv-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2839,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — the decision date (2026-03-05) is in the future relative to verifiable records, making this citation unverifiable and likely fabricated."
+  },
+  {
+   "id": "sv-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2056,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-03-13 is future/inconsistent with a 2025-numbered decision, making this citation unverifiable and likely fabricated or erroneous."
+  },
+  {
+   "id": "sv-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1955,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-04-29 is in the future relative to current knowledge, making this publication claim unverifiable and almost certainly inaccurate."
+  },
+  {
+   "id": "sv-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2024,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific case citation exists; I have no reliable record of this decision matching that name, date, and issuing body."
+  },
+  {
+   "id": "sv-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1832,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date (2026-03-03) is in the future relative to current knowledge, making this citation unverifiable and likely fabricated or inaccurate."
+  },
+  {
+   "id": "sv-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2093,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify unpublished or unspecified case identifiers against official Salvadoran judicial records, and this citation appears unverifiable or fabricated."
+  },
+  {
+   "id": "sv-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2025,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The citation is internally inconsistent—case number \"145-P-2025\" cannot correspond to a decision dated 2024-03-05, an earlier year."
+  },
+  {
+   "id": "sv-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2256,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier year (2026) mismatches the case number (559-2025), and I cannot verify unpublished/future-dated records against actual official sources."
+  },
+  {
+   "id": "sv-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1649,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Honduras' TSC Virtual Library publishes Honduran government/audit oversight materials, not Salvadoran legislation like FONAVIPO's special property transfer law."
+  },
+  {
+   "id": "sv-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2141,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — I cannot verify this specific case citation exists; the name, date, and publisher combination appears fabricated or unconfirmed in official records."
+  },
+  {
+   "id": "sv-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1979,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** El Salvador's Corte Suprema de Justicia rulings would not be published by Mexico's SCJN platform—mismatched jurisdictions, incompatible institutional sources."
+  },
+  {
+   "id": "sv-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1564,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The identifier year (2026) mismatches the cited document's own reference number (80-P-2025), indicating an inconsistent or fabricated citation."
+  }
+ ]
+}

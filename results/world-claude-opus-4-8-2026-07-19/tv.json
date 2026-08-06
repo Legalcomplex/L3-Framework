@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Tuvalu — Source-Grounded Citation Reliability (TV)",
+ "country": "TV",
+ "jurisdiction": "Tuvalu",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:26:39.703158+00:00",
+ "results": [
+  {
+   "id": "tv-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2421,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated citation; I cannot verify this specific case exists in PacLII's Tuvalu records."
+  },
+  {
+   "id": "tv-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2449,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date is in the future (2026), making this citation implausible as a genuine, published PacLII decision."
+  },
+  {
+   "id": "tv-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2961,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False (uncertain).**  I cannot verify this specific citation exists; it appears plausibly formatted but may be fabricated. Verify directly via PacLII."
+  },
+  {
+   "id": "tv-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2203,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears fabricated; \"Chancery Taskforce\" is implausible for Tuvalu, and I cannot verify this specific citation as genuine."
+  },
+  {
+   "id": "tv-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2313,
+   "verdict": false,
+   "correct": false,
+   "raw": "I cannot verify this specific citation as genuine. Without access to PacLII's database, I cannot confirm this decision exists. False."
+  },
+  {
+   "id": "tv-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 6198,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation's authenticity; details like case number, date, and neutral citation cannot be confirmed reliable."
+  },
+  {
+   "id": "tv-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2266,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. A Tuvalu High Court (TVHC) decision would be published by Tuvalu's judiciary, not the Marshall Islands Judiciary."
+  },
+  {
+   "id": "tv-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2361,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Tuvalu High Court (TVHC) decisions are published by PacLII, not Tonga's Attorney General; jurisdictions are mismatched."
+  },
+  {
+   "id": "tv-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2868,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Tuvalu High Court decisions (TVHC) are published via PacLII, not the Federal Court of Australia Judgments database."
+  },
+  {
+   "id": "tv-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2282,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Tuvalu decisions (TVHC) are published by PacLII, not RONLAW, which serves Nauru. The jurisdiction and database mismatch."
+  },
+  {
+   "id": "tv-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2068,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Open Australian Legal Corpus covers Australian jurisdictions, not Tuvalu; Tuvaluan cases appear on PacLII, not this corpus."
+  },
+  {
+   "id": "tv-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1887,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Tuvalu High Court decisions (TVHC) are published by PacLII, not the Federal Court of Australia Judgments database."
+  }
+ ]
+}

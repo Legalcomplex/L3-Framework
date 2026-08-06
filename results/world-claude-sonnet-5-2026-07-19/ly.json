@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Libya — Source-Grounded Citation Reliability (LY)",
+ "country": "LY",
+ "jurisdiction": "Libya",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:57:40.524698+00:00",
+ "results": [
+  {
+   "id": "ly-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 5139,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This claim cannot be verified as accurate; the specific royal decree citation, date, and DCAF database attribution require independent confirmation for authenticity."
+  },
+  {
+   "id": "ly-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3288,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This references a future-dated 2026 decision with implausible pre-announcement details and no verifiable independent source confirms this specific gazette entry's authenticity."
+  },
+  {
+   "id": "ly-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1990,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific circular's existence, number, date, or exact content against authoritative Central Bank of Libya publication records."
+  },
+  {
+   "id": "ly-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1966,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Constitutional Declaration of 1969 was issued by Libya's Revolutionary Command Council as an official state instrument, not published via an academic collection."
+  },
+  {
+   "id": "ly-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2219,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific citation's accuracy; Libyan legislative records from 1960 require primary source confirmation, not assumption of database accuracy."
+  },
+  {
+   "id": "ly-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2127,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This claims a 2026 publication date for a future/non-existent decision, and \"Libya Law Society\" is not Libya's recognized official gazette authority."
+  },
+  {
+   "id": "ly-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2124,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This citation cannot be reliably verified as an authentic official source; details like exact decree number and DCAF database attribution require independent confirmation."
+  },
+  {
+   "id": "ly-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2118,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — this is a Libyan Cabinet decision, not part of Egypt's legal system; Egyptian Legal Corpus wouldn't host Libyan administrative holiday declarations."
+  },
+  {
+   "id": "ly-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1630,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This is a Libyan central bank circular, not part of the Egyptian Legal Corpus; jurisdiction and source attribution are mismatched/incorrect."
+  },
+  {
+   "id": "ly-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1647,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Libya's Constitutional Declaration was issued in 1969 by the RCC, but it is a Libyan legal source, not part of an Egyptian Legal Corpus dataset."
+  },
+  {
+   "id": "ly-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1709,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** I cannot verify this specific 1960 decision's existence, exact title, or publication details in the cited database without access to confirm authenticity."
+  },
+  {
+   "id": "ly-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 3101,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This claim references a future-dated 2026 decision from Libya sourced via an Egyptian dataset, which cannot verify authenticity or existence."
+  }
+ ]
+}

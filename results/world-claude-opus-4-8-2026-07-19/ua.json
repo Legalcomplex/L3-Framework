@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Ukraine — Source-Grounded Citation Reliability (UA)",
+ "country": "UA",
+ "jurisdiction": "Ukraine",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.4167,
+ "correct": 5,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:26:53.424093+00:00",
+ "results": [
+  {
+   "id": "ua-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2279,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2025-12-22 is in the future relative to verifiable records, making this specific decision impossible to confirm as genuine."
+  },
+  {
+   "id": "ua-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 3697,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Unified State Register of Court Decisions (ЄДРСР) launched in 2006 but began publishing decisions later; 2006 citation is anachronistic."
+  },
+  {
+   "id": "ua-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2038,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-02-26 is in the future, making this citation impossible to verify as an already-published official source."
+  },
+  {
+   "id": "ua-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2483,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Case number 160/33992/24 indicates a Dnipropetrovsk administrative court case; also the date 2025-12-30 is future/implausible for verification."
+  },
+  {
+   "id": "ua-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1905,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2025-12-31 is in the future and implausible; the case number format and citation cannot be verified."
+  },
+  {
+   "id": "ua-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2266,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-05-27 is in the future, making this citation impossible to verify as a genuine published source."
+  },
+  {
+   "id": "ua-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2668,
+   "verdict": true,
+   "correct": false,
+   "raw": "**True.**  The Constitutional Court of Ukraine issues ухвали (rulings) through its senates and publishes them as official acts of the Court."
+  },
+  {
+   "id": "ua-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2188,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. A Ukrainian jurisdiction cannot have decisions published by the Turkish Council of State (Danıştay); these are incompatible legal systems."
+  },
+  {
+   "id": "ua-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2270,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific law's existence, exact title, or 2025 publication date without access to authoritative Verkhovna Rada records."
+  },
+  {
+   "id": "ua-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2037,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '160/33992/25' contradicts the cited case number '160/33992/24'; the year suffixes differ, indicating inconsistent, unverifiable data."
+  },
+  {
+   "id": "ua-src-f05",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2319,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific identifier-to-case mapping; the date is future/end-of-year and I lack access to confirm authenticity."
+  },
+  {
+   "id": "ua-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1895,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Ukrainian NBU acts are published in Ukrainian official sources, not Lithuania's TAR; also the 2026 date is implausible."
+  }
+ ]
+}

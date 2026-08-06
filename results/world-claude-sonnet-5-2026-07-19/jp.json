@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Japan — Source-Grounded Citation Reliability (JP)",
+ "country": "JP",
+ "jurisdiction": "Japan",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:56:12.243892+00:00",
+ "results": [
+  {
+   "id": "jp-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2986,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Antimonopoly Act was promulgated April 14, 1947, but Japanese Law Translation (MOJ) is a modern database, not the 1947 publication venue."
+  },
+  {
+   "id": "jp-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2558,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific case identifier, case name, and date combination against the actual Japanese Courts Case Law Database records."
+  },
+  {
+   "id": "jp-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1835,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The JFTC regularly issues and publishes cease and desist orders and surcharge payment orders against bid-rigging participants on its official website."
+  },
+  {
+   "id": "jp-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 3150,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The abbreviation \"裁決事例集\" refers to compiled decisions of the National Tax Tribunal (国税不服審判所), so the citation format is plausible, but verifying the exact page/date match requires confirmin"
+  },
+  {
+   "id": "jp-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2135,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Act on Marine Accident Inquiries dates from 2008 (or earlier predecessor laws), not 1947; Japanese Law Translation metadata wouldn't show that date."
+  },
+  {
+   "id": "jp-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1886,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This case number and date describe a future/unverifiable record; I cannot confirm this specific identifier matches that case title in the actual database."
+  },
+  {
+   "id": "jp-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2151,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Japan's Antimonopoly Act is published in Japan's Official Gazette (Kanpō), not Macau's Boletim Oficial, which has no jurisdiction over Japanese law."
+  },
+  {
+   "id": "jp-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1998,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific case identifier, title, and date combination against the actual Japanese Courts database; the future date is suspicious."
+  },
+  {
+   "id": "jp-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1819,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** JFTC issues press releases announcing orders in English, but formal legal decisions/orders are published in Japanese; this English title format resembles a JFTC press release, not an offici"
+  },
+  {
+   "id": "jp-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1658,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The date notation \"平4\" corresponds to Heisei 4, meaning 1992, not 1991 — so the given date (1991-05-12) is inconsistent/incorrect."
+  },
+  {
+   "id": "jp-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2897,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Hong Kong e-Legislation publishes Hong Kong law, not Japanese statutes; Japan's official gazette/e-Gov, not Hong Kong, would publish this Act."
+  },
+  {
+   "id": "jp-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2072,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This case number/date combination cannot be verified as an actual entry; it appears fabricated, and the future date (2026) makes it suspicious."
+  }
+ ]
+}

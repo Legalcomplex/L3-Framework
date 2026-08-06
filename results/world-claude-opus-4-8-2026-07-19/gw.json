@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Guinea-Bissau — Source-Grounded Citation Reliability (GW)",
+ "country": "GW",
+ "jurisdiction": "Guinea-Bissau",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:14:17.908167+00:00",
+ "results": [
+  {
+   "id": "gw-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2267,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such \"Declaração de Bissau (2015)\" is a verifiable law from Guinea-Bissau's Assembleia Nacional Popular; likely fabricated."
+  },
+  {
+   "id": "gw-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2319,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This citation appears fabricated; the internal date inconsistency (2021 update citing 2022 LGT) and unverifiable publisher details indicate unreliability."
+  },
+  {
+   "id": "gw-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2169,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Bilateral acts between Portugal and Guinea-Bissau would be treaty documents, not legislation published by the National People's Assembly."
+  },
+  {
+   "id": "gw-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2097,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific despacho's existence, number, date, or publication details; likely fabricated citation requiring independent confirmation."
+  },
+  {
+   "id": "gw-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2421,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Guinea-Bissau's official legal gazette is the Boletim Oficial; no verifiable record confirms this specific title, publisher, or date."
+  },
+  {
+   "id": "gw-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2203,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This citation appears fabricated; specific document numbers, dates, and \"Kontaktu\" source cannot be verified as authentic Guinea-Bissau legal references."
+  },
+  {
+   "id": "gw-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2407,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Guinea-Bissau's official legal sources are published in its national Boletim Oficial, not Ghana's Parliament Institutional Repository—jurisdictionally inconsistent."
+  },
+  {
+   "id": "gw-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2454,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Guinea-Bissau uses BCEAO (regional central bank), not \"BCRG\"; tax codes are published by government/finance ministry, not central banks."
+  },
+  {
+   "id": "gw-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1995,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The title concerns Portugal–Guinea-Bissau agreements, likely published bilaterally or by executive/diplomatic channels, not the National People's Assembly."
+  },
+  {
+   "id": "gw-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2419,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Guinea-Bissau uses the BCEAO (West African Economic Monetary Union), not Mauritania's central bank, making this attribution incorrect."
+  },
+  {
+   "id": "gw-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2298,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This appears to be a fabricated citation; no verifiable record confirms such a document with these specific publication details exists."
+  },
+  {
+   "id": "gw-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1937,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific citation; \"Guinea Journal Officiel\" misnames Guinea-Bissau's Boletim Oficial, suggesting a fabricated or unreliable source."
+  }
+ ]
+}

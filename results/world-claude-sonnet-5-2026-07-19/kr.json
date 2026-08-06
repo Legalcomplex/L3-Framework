@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — South Korea — Source-Grounded Citation Reliability (KR)",
+ "country": "KR",
+ "jurisdiction": "South Korea",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:56:44.517349+00:00",
+ "results": [
+  {
+   "id": "kr-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2266,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The correct title is \"112신고의 운영 및 처리에 관한 법률\" itself has a corresponding enforcement decree, but the naming convention and existence require verification—this specific title/date combination"
+  },
+  {
+   "id": "kr-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2085,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify specific case numbers, dates, and case titles in Korean court databases without access to real-time official records."
+  },
+  {
+   "id": "kr-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1960,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier references 2026, a future date not yet occurring/verifiable as an official KFTC decision record at present."
+  },
+  {
+   "id": "kr-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 5242,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This law exists in Korean legal databases, but I cannot verify the specific claimed publication date or API retrieval details as accurate."
+  },
+  {
+   "id": "kr-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2192,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.**  There is no such statute as '119긴급신고의 관리 및 운영에 관한 법률' — the actual law is '119구조·구급에 관한 법률' governing emergency rescue services."
+  },
+  {
+   "id": "kr-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1965,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify specific Korean case identifiers, decision types, or dates against CLIS records without access to that database."
+  },
+  {
+   "id": "kr-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 4907,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The correct title is \"112신고의 운영·처리에 관한 법률 시행령\" (using a middle dot), and I cannot verify the specific API publication date claimed."
+  },
+  {
+   "id": "kr-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2194,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** I cannot verify this specific case identifier, case name, and date combination against actual Korean court records (CLIS), as I lack reliable access to confirm this precise citation's accur"
+  },
+  {
+   "id": "kr-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2337,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This appears to be an internal administrative payment deadline/installment decision, not a formally published KFTC precedent-setting Decision in official reports."
+  },
+  {
+   "id": "kr-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 3063,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Hong Kong e-Legislation publishes Hong Kong statutes only; a South Korean act would appear via Korea Law Translation Center, not Hong Kong's official legislation database."
+  },
+  {
+   "id": "kr-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2344,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This is a Korean law (119긴급신고의 관리 및 운영에 관한 법률); it would be published via Korea's official legal database, not Macau's Legal Portal."
+  },
+  {
+   "id": "kr-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 3123,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Case number 2002후322 does not reliably correspond to that specific date and case type in Korea's official Comprehensive Legal Information System records without verification."
+  }
+ ]
+}

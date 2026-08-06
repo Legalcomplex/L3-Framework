@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Tajikistan — Source-Grounded Citation Reliability (TJ)",
+ "country": "TJ",
+ "jurisdiction": "Tajikistan",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:45:51.950524+00:00",
+ "results": [
+  {
+   "id": "tj-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1899,
+   "verdict": false,
+   "correct": false,
+   "raw": "# Evaluation: **False**  The claim's publication date (2024-01-01) contradicts the document date (2024-06-20). Official legislative sources maintain consistent dating between enactment and publication"
+  },
+  {
+   "id": "tj-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1693,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The decision title references a personal petition (ходатайство) rather than a constitutional case. Constitutional Courts typically issue decisions on constitutional matters, not individual "
+  },
+  {
+   "id": "tj-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1557,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The reference format lacks standard bibliographic elements (proper title, official gazette citation, or verifiable publication details) required for credible Tajik legal sources."
+  },
+  {
+   "id": "tj-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1710,
+   "verdict": true,
+   "correct": true,
+   "raw": "# Assessment: True  **Explanation:** \"Нашрияи Суди Олии Ҷумҳурии Тоҷикистон\" is the official bulletin of Tajikistan's Supreme Court, published regularly with numbered issues like №3/2022."
+  },
+  {
+   "id": "tj-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1711,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The date notation is inconsistent (19 07 2019 vs. 2019-01-01). Tajikistan's Tax Code was adopted in 2011, not 2019. No verification of this specific source exists."
+  },
+  {
+   "id": "tj-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1654,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The decision title indicates it concerns a limited liability company (\"Чамъияти дорои масъулияти махдуди\"), which falls under civil/commercial law jurisdiction, not constitutional matters handl"
+  },
+  {
+   "id": "tj-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1761,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Lex.uz is Uzbekistan's official legal portal. Tajikistan's legislation would be published through Tajik official sources, not an Uzbek platform."
+  },
+  {
+   "id": "tj-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1501,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. While this appears to be a legitimate Tajikistani Constitutional Court decision from 2022, I cannot verify the specific publication claim without access to official Constitutional Court databas"
+  },
+  {
+   "id": "tj-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1169,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Adilet is Kazakhstan's legal information system, not Tajikistan's. This source would belong in Tajikistan's legal database, not Kazakhstan's system."
+  },
+  {
+   "id": "tj-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2717,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This publication is from Tajikistan's Supreme Court, not the Astana International Financial Centre Court, which is a separate Kazakhstani institution."
+  },
+  {
+   "id": "tj-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1347,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Tajikistan's Tax Code would be published through Tajik legal systems, not Kazakhstan's Adilet. Adilet is Kazakhstan's official legal portal, not Tajikistan's."
+  },
+  {
+   "id": "tj-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1345,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The decision title indicates a local administrative matter from Isfara city, not a constitutional question. Constitutional Courts typically address constitutional issues, not routine corporate/"
+  }
+ ]
+}

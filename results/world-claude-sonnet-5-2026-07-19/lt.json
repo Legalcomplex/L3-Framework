@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Lithuania — Source-Grounded Citation Reliability (LT)",
+ "country": "LT",
+ "jurisdiction": "Lithuania",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:57:26.087511+00:00",
+ "results": [
+  {
+   "id": "lt-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1996,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific claim, as I lack access to TAR records confirming this exact order's publication details on that precise date."
+  },
+  {
+   "id": "lt-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1895,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific case citation; the exact date, title fragment, and content combination may be fabricated or inaccurate."
+  },
+  {
+   "id": "lt-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2112,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify specific LITEKO case identifiers, dates, or rulings; such granular claims require direct database confirmation, which I lack access to."
+  },
+  {
+   "id": "lt-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2181,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This is a plausible-looking but unverifiable citation; I cannot confirm this specific committee agenda document actually exists as described."
+  },
+  {
+   "id": "lt-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2037,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this appears to be a fabricated/unverifiable future-dated citation; I cannot confirm such a Competition Council decision exists."
+  },
+  {
+   "id": "lt-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2244,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific claim's accuracy; without direct access to TAR records, the exact document, date, and details cannot be confirmed as genuine."
+  },
+  {
+   "id": "lt-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2128,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Nemzeti Jogszabálytár publishes Hungarian legislation only; a Lithuanian environment ministry order would appear in Lithuania's Teisės aktų registras, not this Hungarian database."
+  },
+  {
+   "id": "lt-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1839,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Constitutional Court doesn't issue rulings on Presidential decrees dated with that specific description; this citation appears fabricated or unverifiable."
+  },
+  {
+   "id": "lt-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1523,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier year (2025) mismatches the decision's stated case number year (2024), indicating an inconsistency I cannot verify as accurate."
+  },
+  {
+   "id": "lt-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1770,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This is a Lithuanian parliamentary committee agenda; Turkey's Mevzuat Bilgi Sistemi publishes Turkish legislation, not Lithuanian Seimas committee documents."
+  },
+  {
+   "id": "lt-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1611,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — I cannot verify this specific decision exists; the title/date/issuer combination appears fabricated and unconfirmed in official Lithuanian Competition Council records."
+  },
+  {
+   "id": "lt-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1611,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — this appears to be a fabricated or unverifiable municipal legal act citation; without confirmed TAR registry data, its authenticity cannot be substantiated."
+  }
+ ]
+}

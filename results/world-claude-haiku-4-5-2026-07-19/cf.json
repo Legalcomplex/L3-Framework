@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Central African Republic — Source-Grounded Citation Reliability (CF)",
+ "country": "CF",
+ "jurisdiction": "Central African Republic",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:34:50.519972+00:00",
+ "results": [
+  {
+   "id": "cf-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1518,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Central African Republic has a Court of Appeal as its highest court, not a \"Cour de cassation.\" The cassation court structure does not exist in CAR's judicial system."
+  },
+  {
+   "id": "cf-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1474,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Central African Republic does not have a \"Cour de cassation\" (Court of Cassation). Its supreme court is the \"Cour constitutionnelle\" or \"Cour suprême,\" making this citation inaccurate."
+  },
+  {
+   "id": "cf-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1643,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The identifier's case number \"7923\" does not match the cited case number \"79/23.\" The format and numerical designation are inconsistent."
+  },
+  {
+   "id": "cf-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1548,
+   "verdict": true,
+   "correct": true,
+   "raw": "# Evaluation: **True**  The Central African Republic's Court of Cassation (Cour de cassation) did publish decisions on January 5, 2023. Juricaf is a legitimate aggregator of African court decisions."
+  },
+  {
+   "id": "cf-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1498,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Central African Republic does not have a \"Cour de cassation\" (Court of Cassation). Its highest court is the Supreme Court of Appeal, making this citation inaccurate."
+  },
+  {
+   "id": "cf-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1644,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The identifier format and date structure don't align with standard Juricaf Central African Republic Supreme Court citation conventions, which typically use different formatting patterns for"
+  },
+  {
+   "id": "cf-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1669,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The identifier suffix '049' does not match the case number '048' cited in the bibliographic description. These numerical references are inconsistent."
+  },
+  {
+   "id": "cf-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1597,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The identifier ends in '046' while the cited decision references '045'. The case numbers do not match, indicating a discrepancy in the bibliographic claim."
+  },
+  {
+   "id": "cf-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 3277,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The citation references the Central African Republic's Court of Cassation, not Angola's Constitutional Court. The source attribution is geographically and institutionally incorrect."
+  },
+  {
+   "id": "cf-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 930,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The citation references Central African Republic's Court of Cassation, not Congo-Brazzaville's Constitutional Court, making the publication attribution incorrect."
+  },
+  {
+   "id": "cf-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1279,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The citation references the Central African Republic's Court of Cassation, but the publication source (Droit Congolais) is a Democratic Republic of Congo portal, creating a jurisdictional misma"
+  },
+  {
+   "id": "cf-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1013,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The cited source is from the Central African Republic's Court of Cassation, not Cameroon. The publication venue is incorrectly identified as Cameroon Official Acts."
+  }
+ ]
+}

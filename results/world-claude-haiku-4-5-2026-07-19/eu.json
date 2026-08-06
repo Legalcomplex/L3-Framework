@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — European Union — Source-Grounded Citation Reliability (EU)",
+ "country": "EU",
+ "jurisdiction": "European Union",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:36:46.834869+00:00",
+ "results": [
+  {
+   "id": "eu-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1700,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.**  The case reference format is invalid. EU Court of Justice cases use the format \"C-XXXX/XX\" (e.g., C-313/20), not \"62024CJ0313\". The date 2026-02-12 is also in the future."
+  },
+  {
+   "id": "eu-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2419,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The date 2026-02-16 is in the future (beyond the current date), making this claim about a published document impossible to verify as authentic or real."
+  },
+  {
+   "id": "eu-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1938,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This regulation cannot exist as of 2026-02-18 because the current date is in 2024. Future regulations cannot be published retroactively."
+  },
+  {
+   "id": "eu-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1634,
+   "verdict": true,
+   "correct": true,
+   "raw": "**True**  The Community Plant Variety Office (CPVO) Board of Appeal is the correct issuing body for decisions on plant variety protection disputes within the EU, matching the cited decision format and"
+  },
+  {
+   "id": "eu-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1674,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Case C-151/24 has not yet been decided as of my knowledge cutoff (April 2024). A 2026 decision date is in the future, making this claim unverifiable and premature."
+  },
+  {
+   "id": "eu-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1756,
+   "verdict": false,
+   "correct": false,
+   "raw": "# Answer: False  **Explanation:** ECLI:EU:T:2026:220 references a 2026 judgment, which is a future date. As of the knowledge cutoff (April 2024), this case has not yet been decided and cannot be verif"
+  },
+  {
+   "id": "eu-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2105,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The case reference format is incorrect. EU Court of Justice cases use formats like \"C-313/20,\" not \"62024CJ0313.\" The date also doesn't align with proper CURIA case documentation."
+  },
+  {
+   "id": "eu-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1618,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Gibraltar Supreme Court Judgments would not publish EU-level policy responses to civil society letters. This appears to be a fictional or misattributed source for such a document."
+  },
+  {
+   "id": "eu-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2070,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.**   LILEX is Liechtenstein's legislation database. Commission Implementing Regulations are EU legal acts published in the EU Official Journal, not in Liechtenstein's national legislation syst"
+  },
+  {
+   "id": "eu-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1312,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The date 2000-05-15 predates the CPVO's establishment (1995) and the Board of Appeal's operational period. The case reference format and publication details appear inconsistent with CPVO's "
+  },
+  {
+   "id": "eu-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1269,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Case 62024CJ0151 follows CJEU case numbering conventions, but \"ECJ Tax Cases\" is not an official EU legal publisher. Official sources are the CJEU Reports or EUR-Lex."
+  },
+  {
+   "id": "eu-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1241,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The ECLI identifier format indicates a 2026 date, but this is a future date beyond the current temporal scope of actual judgments in the ECLI database."
+  }
+ ]
+}

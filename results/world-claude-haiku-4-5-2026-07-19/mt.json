@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Malta — Source-Grounded Citation Reliability (MT)",
+ "country": "MT",
+ "jurisdiction": "Malta",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:41:51.896843+00:00",
+ "results": [
+  {
+   "id": "mt-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1533,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Coal (Sale) Ordinance is an outdated colonial-era law unlikely to be repealed by modern legislation. No Act II of 2015 specifically repeals it via that gazette date."
+  },
+  {
+   "id": "mt-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1520,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The reference format and decision numbering do not match Malta's Competition Authority's standard published decision structure or naming conventions for acquisition assessments."
+  },
+  {
+   "id": "mt-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1584,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The decision number format and future publication date (2026-03-23) are inconsistent with Malta's Arbiter for Financial Services' documented practices and numbering conventions."
+  },
+  {
+   "id": "mt-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1851,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The 'Code of Organization and Civil Procedure' is a principal legislation in Malta, originally enacted in 1930, not a 2026 publication. That date is future-dated and implausible."
+  },
+  {
+   "id": "mt-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1374,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The cited decision format and publication details do not match official Malta Competition Authority documentation standards or publicly available decision records from that institution."
+  },
+  {
+   "id": "mt-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1848,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The decision number format and future publication date (2026-04-17) are inconsistent with Malta's Arbiter for Financial Services documentation practices and standards."
+  },
+  {
+   "id": "mt-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1855,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Coal (Sale) Ordinance is a Maltese law, not Italian. Normattiva is the Italian legal database and would not be the official publisher of Maltese legislation. Malta's official source is "
+  },
+  {
+   "id": "mt-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1464,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The date 2026-09-18 is in the future, making this bibliographic claim impossible. Official legal decisions cannot be published before they occur."
+  },
+  {
+   "id": "mt-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1237,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The decision number format and date (2025 vs 2023) are inconsistent. Additionally, verification of this specific decision's existence and publisher cannot be confirmed from standard Malta l"
+  },
+  {
+   "id": "mt-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1063,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Malta has its own legal publication system (legislation.mt). The Code of Organization and Civil Procedure is Maltese legislation, not Swiss, so it wouldn't be published on Fedlex."
+  },
+  {
+   "id": "mt-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1050,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This decision is a Maltese competition authority assessment, not a Dutch court decision, so it would not be published on the Dutch rechtspraak.nl platform."
+  },
+  {
+   "id": "mt-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 4852,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The decision identifier \"ASF 275/2025\" indicates a 2025 decision, but the cited date is 2024-04-17, creating a chronological inconsistency that undermines the claim's accuracy."
+  }
+ ]
+}

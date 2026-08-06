@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Tajikistan — Source-Grounded Citation Reliability (TJ)",
+ "country": "TJ",
+ "jurisdiction": "Tajikistan",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:25:57.819964+00:00",
+ "results": [
+  {
+   "id": "tj-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2329,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Tajikistan's Tax Code was substantially revised in 2021 (effective 2022); the citation details and date appear fabricated/unverifiable."
+  },
+  {
+   "id": "tj-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2507,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The name \"Санокина Л.Г.\" appears Russian, not Tajik; this citation seems fabricated and lacks verifiable authenticity in Tajikistan's records."
+  },
+  {
+   "id": "tj-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3580,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date \"07032025\" (March 7, 2025) contradicts the claimed publication date of 2025-01-01, indicating inconsistency."
+  },
+  {
+   "id": "tj-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2251,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The citation format and date (2022-01-01) appear fabricated; I cannot verify this specific bulletin issue as authentic."
+  },
+  {
+   "id": "tj-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2311,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Tajikistan's Tax Code was adopted in 2012 (with later amendments); the cited date and vague publisher details appear inaccurate."
+  },
+  {
+   "id": "tj-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2279,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Tajikistan's Constitutional Court issues formal \"Qaror\" decisions, but LLC business disputes fall under economic courts, not constitutional jurisdiction."
+  },
+  {
+   "id": "tj-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2862,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Lex.uz is Uzbekistan's legal database; Tajikistan uses Adlia (mmk.tj). A Tajik Tax Code wouldn't appear on Uzbekistan's system."
+  },
+  {
+   "id": "tj-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 3275,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The name \"Санокиной Л.Г.\" appears Russian, not Tajik, casting doubt on this being an authentic Tajikistan Constitutional Court decision."
+  },
+  {
+   "id": "tj-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1948,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. \"Adlia,\" not Kazakhstan's Adilet, is Tajikistan's legal database; the title concerns Tajik Islamic banking law, not Kazakh."
+  },
+  {
+   "id": "tj-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1915,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The \"Нашрияи Суди Олии\" (Bulletin of the Supreme Court) is a Tajikistan publication; AIFC Court operates in Kazakhstan."
+  },
+  {
+   "id": "tj-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1961,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Adilet is Kazakhstan's legal system; Tajikistan uses its own official sources (e.g., Adliya/Ministry of Justice), not Kazakhstan's Adilet."
+  },
+  {
+   "id": "tj-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2071,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Tajikistan's Constitutional Court decisions are typically dated by session; verification of this specific 2019 citation and source cannot be confirmed."
+  }
+ ]
+}

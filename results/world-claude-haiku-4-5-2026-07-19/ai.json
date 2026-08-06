@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Anguilla — Source-Grounded Citation Reliability (AI)",
+ "country": "AI",
+ "jurisdiction": "Anguilla",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:32:42.269104+00:00",
+ "results": [
+  {
+   "id": "ai-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1751,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The cited regulation does not appear in official Anguilla legal records. The publication details and regulation title cannot be verified through standard Anguilla legal databases or archive"
+  },
+  {
+   "id": "ai-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2110,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No evidence confirms this Act exists or was published by the FSC on that date. Anguilla's official legislative records do not document such 2024 legislation."
+  },
+  {
+   "id": "ai-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1679,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Anguilla's primary legislation is compiled in the Revised Laws of Anguilla, not \"Revised Statutes and Regulations.\" The 2000 consolidation used different terminology for official legal codi"
+  },
+  {
+   "id": "ai-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2136,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Digital Asset Business Act, 2020 is Anguilla's primary digital asset legislation. No regulations specifically titled 'Digital Asset Business Regulations, 2023' appear in official AFSC r"
+  },
+  {
+   "id": "ai-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 6243,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The official compilation is titled \"Revised Laws of Anguilla\" (not \"Revised Statutes and Regulations\"), reflecting Anguilla's legal publication framework."
+  },
+  {
+   "id": "ai-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1531,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The claim cannot be verified. No publicly available evidence confirms an \"Anguilla Utility Token Offering Act, 2024\" exists or was published by the FSC on that date."
+  },
+  {
+   "id": "ai-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1877,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The 'Exemption to Barclays Finance Corporation of the Leeward and Windward Islands Limited (1976) Regulations' is not verifiable as an official Anguilla legal source in standard compilations."
+  },
+  {
+   "id": "ai-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1607,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This Act pertains to Bahamas legislation, not Anguilla. The claim incorrectly attributes Bahamian legislation to Anguilla's jurisdiction, which are separate Caribbean nations with distinct "
+  },
+  {
+   "id": "ai-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1161,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The 'Administration of Estates by Consular Officers Act' is not found in Anguilla's Revised Statutes and Regulations (1999). This appears to be a non-existent or incorrectly attributed legislat"
+  },
+  {
+   "id": "ai-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1117,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The 'Digital Asset Business Regulations, 2023' would be Caymanian legislation, not Anguillan. This claim incorrectly attributes Cayman Islands law to Anguilla's jurisdiction."
+  },
+  {
+   "id": "ai-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1276,
+   "verdict": false,
+   "correct": true,
+   "raw": "# Answer: False  **Explanation:** The legislation is titled 'Alien Holding of Land Act' (not 'Aliens Land Holding Regulation Act') in Anguilla's revised statutes, representing an inaccurate title cita"
+  },
+  {
+   "id": "ai-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1828,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Sint Maarten and Anguilla are separate Caribbean jurisdictions with independent legislative systems. Anguilla legislation would not be published through Sint Maarten's government channels."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Kyrgyzstan — Source-Grounded Citation Reliability (KG)",
+ "country": "KG",
+ "jurisdiction": "Kyrgyzstan",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:56:22.633175+00:00",
+ "results": [
+  {
+   "id": "kg-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2410,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific citation's accuracy—the exact decision date, content, and publication details require confirmation from official Kyrgyz court records or gazette sources."
+  },
+  {
+   "id": "kg-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 3093,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this citation appears fabricated; I cannot verify such a specific decision number, date, or court record exists in that database."
+  },
+  {
+   "id": "kg-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2268,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — the date is in 2026, a future date relative to now, so this identifier cannot be verified as an existing, genuine court decision."
+  },
+  {
+   "id": "kg-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2030,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific citation independently—without access to official Kyrgyzstan Constitutional Court records, this claim's accuracy cannot be confirmed reliably."
+  },
+  {
+   "id": "kg-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2107,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this citation format appears fabricated; Kyrgyzstan lacks a unified public \"Judicial Acts Database\" indexing such decisions with this specific identifier structure."
+  },
+  {
+   "id": "kg-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2437,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this identifier references a 2026 decision, a future date, making it impossible for the citation to correspond to an actual existing verifiable court record now."
+  },
+  {
+   "id": "kg-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2724,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** A \"Решение\" of the Constitutional Court dated 1996-12-30 attributed to Kazakhstan mismatches jurisdiction Kyrgyzstan; source misattribution suggests incorrect publisher/jurisdiction pairing"
+  },
+  {
+   "id": "kg-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1896,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier suffix \"Т6\" does not match the cited record's suffix \"Т5\" — a mismatched, likely fabricated citation."
+  },
+  {
+   "id": "kg-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1627,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier includes a future date (2026-03-25) and a mismatched case number, indicating a fabricated, unverifiable citation, not a real record."
+  },
+  {
+   "id": "kg-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1701,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Astana International Financial Centre Court is part of Kazakhstan's jurisdiction, not Kyrgyzstan's, making this attribution jurisdictionally inconsistent and incorrect."
+  },
+  {
+   "id": "kg-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1797,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. A Kyrgyz district court decision (Тюпский районный суд) cannot be published by Uzbekistan's Constitutional Court, a mismatched foreign jurisdiction entirely."
+  },
+  {
+   "id": "kg-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2823,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The claim mismatches jurisdictions: a Kyrgyz Supreme Court decision cannot be published by Tajikistan's Constitutional Court Decisions database or repository."
+  }
+ ]
+}

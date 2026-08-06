@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Botswana — Source-Grounded Citation Reliability (BW)",
+ "country": "BW",
+ "jurisdiction": "Botswana",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:34:36.113278+00:00",
+ "results": [
+  {
+   "id": "bw-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1783,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Botswana does not have a \"Non-Bank Financial Institutions Regulatory Authority.\" Financial regulation is handled by the Bank of Botswana and the Financial Intelligence Agency, among other b"
+  },
+  {
+   "id": "bw-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1583,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The publication date is in the future (2026-05-29), making this claim temporally impossible. Official legal documents cannot be published on dates that have not yet occurred."
+  },
+  {
+   "id": "bw-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2374,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The publication date of April 18, 2026, is in the future and therefore impossible. This document cannot have been published on a date that has not yet occurred."
+  },
+  {
+   "id": "bw-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2188,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Botswana has no \"Non-Bank Financial Institutions Regulatory Authority.\" The NBFIRA does not exist as an official regulatory body in Botswana's institutional framework."
+  },
+  {
+   "id": "bw-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1670,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Botswana does not have a \"Non-Bank Financial Institutions Regulatory Authority.\" The central bank, Bank of Botswana, and the Financial Intelligence Agency regulate financial institutions un"
+  },
+  {
+   "id": "bw-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1671,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Botswana does not have a \"Non-Bank Financial Institutions Regulatory Authority\" as a standalone entity. Financial regulation in Botswana is primarily handled by the Bank of Botswana and the"
+  },
+  {
+   "id": "bw-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2095,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Botswana lacks a dedicated Non-Bank Financial Institutions Regulatory Authority. Financial regulation falls under the Bank of Botswana and the Financial Intelligence Agency, not a separate "
+  },
+  {
+   "id": "bw-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2027,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** A tender notice for project management services would not be published via the South African Constitutional Court Judgments database, which publishes court decisions, not procurement docume"
+  },
+  {
+   "id": "bw-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1829,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This document cannot have been published by the South African Constitutional Court in April 2026 (a future date). Additionally, Botswana's anti-money laundering materials would originate fr"
+  },
+  {
+   "id": "bw-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1132,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Botswana has no official regulatory authority called \"Botswana Non-Bank Financial Institutions Regulatory Authority.\" Non-bank financial regulation falls under existing entities like the Ba"
+  },
+  {
+   "id": "bw-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1670,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The case number format \"NBFIT–0003/2023\" indicates a Botswana tribunal (NBFIT = National Board for Financial Intelligence Tribunal), not South Africa's Constitutional Court, which uses diff"
+  },
+  {
+   "id": "bw-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1081,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The case number format \"NBFIT-0002/2022\" indicates a 2022 case, contradicting the stated date of 2020-10-13, creating an internal chronological inconsistency."
+  }
+ ]
+}

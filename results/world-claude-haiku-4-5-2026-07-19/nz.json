@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — New Zealand — Source-Grounded Citation Reliability (NZ)",
+ "country": "NZ",
+ "jurisdiction": "New Zealand",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.4167,
+ "correct": 5,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:42:51.121281+00:00",
+ "results": [
+  {
+   "id": "nz-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1358,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The future date (2026-04-24) makes this claim impossible to verify as authentic. No decision can be published from a future date in 2026."
+  },
+  {
+   "id": "nz-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1361,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Fiji Food Distributors is a Fiji-based company. This decision would fall under Fiji's jurisdiction, not New Zealand's Employment Relations Authority."
+  },
+  {
+   "id": "nz-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1333,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The date 2026-04-24 is in the future, making this an impossible publication date for an actual legal decision as of the current time."
+  },
+  {
+   "id": "nz-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2507,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The decision date of 2026-04-24 is in the future, making this claim impossible to verify as a genuine published determination from the Employment Relations Authority."
+  },
+  {
+   "id": "nz-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1698,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The date 2026-04-24 is in the future (beyond the current date), making this an impossible publication record. Official legal determinations cannot be published before they occur."
+  },
+  {
+   "id": "nz-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2897,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The date 2026-04-23 is in the future, making this decision impossible to have been published. Official legal determinations cannot predate their actual issuance."
+  },
+  {
+   "id": "nz-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2650,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The date 2025-04-24 is in the future (from the current perspective of 2024), making this decision not yet published or verifiable as an official legal source."
+  },
+  {
+   "id": "nz-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1538,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This decision concerns Fiji Food Distributors Limited and appears to involve Fijian parties/jurisdiction, not a New Zealand Employment Relations Authority determination."
+  },
+  {
+   "id": "nz-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1472,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  New Zealand decisions are published by New Zealand courts, not Republic of Marshall Islands Judiciary. The case name and date suggest a New Zealand matter, making this attribution incorrect"
+  },
+  {
+   "id": "nz-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1291,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** New Zealand has no \"Federal Court of Australia.\" This court is Australian, not New Zealand. The claim contains a jurisdictional error."
+  },
+  {
+   "id": "nz-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1648,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The Employment Relations Authority does not publish decisions with case names involving company liquidations and civil disputes. This appears to be a civil court matter, likely District or Hi"
+  },
+  {
+   "id": "nz-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1097,
+   "verdict": true,
+   "correct": false,
+   "raw": "**True**  The Employment Relations Authority publishes determinations in New Zealand. The case name, date format, and description match the Authority's official publication practices for employment di"
+  }
+ ]
+}

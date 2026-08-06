@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Turkmenistan — Source-Grounded Citation Reliability (TM)",
+ "country": "TM",
+ "jurisdiction": "Turkmenistan",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:26:11.640999+00:00",
+ "results": [
+  {
+   "id": "tm-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2537,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific regulation, date, or publication source; asserting authenticity without reliable confirmation risks propagating unverifiable bibliographic claims."
+  },
+  {
+   "id": "tm-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2306,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears fabricated; specific decree number, title, and publication details cannot be verified and likely don't exist as described."
+  },
+  {
+   "id": "tm-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2303,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. Turkmenistan's Administrative Procedure Code was adopted by the Mejlis in 2020, entering into force January 2021, regulating administrative proceedings."
+  },
+  {
+   "id": "tm-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2343,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Turkmenistan's Tax Code (\"Salgytlar hakynda Türkmenistanyň Bitewi kanuny\") exists, but I cannot verify this specific publication date or source attribution."
+  },
+  {
+   "id": "tm-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2360,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This law on currency regulation exists, but official publication occurs through state gazettes, not the Central Bank's website."
+  },
+  {
+   "id": "tm-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3117,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated citation; no verifiable record confirms this specific title, publisher, or date exists."
+  },
+  {
+   "id": "tm-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 6908,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific regulation, date, or publication channel with confidence; asserting authenticity risks fabricating uncertain bibliographic details."
+  },
+  {
+   "id": "tm-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2490,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Lex.uz is Uzbekistan's legal database, not Turkmenistan's; it cannot be the official source for Turkmen presidential decrees."
+  },
+  {
+   "id": "tm-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1842,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Turkmenistan has no \"Administrative Procedure Code\" enacted on that date; this appears to be a fabricated or unverifiable citation."
+  },
+  {
+   "id": "tm-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 4064,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This is a Turkmenistan Tax Code document; Adilet is Kazakhstan's legal database and wouldn't publish Turkmen national legislation."
+  },
+  {
+   "id": "tm-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2565,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This law on currency regulation/control in foreign economic relations is officially published in Türkmenistanyň Mejlisi, not Central Bank."
+  },
+  {
+   "id": "tm-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 5774,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Lex.uz is Uzbekistan's legal database, not Turkmenistan's; it cannot serve as the official source for Turkmenistan jurisdiction claims."
+  }
+ ]
+}

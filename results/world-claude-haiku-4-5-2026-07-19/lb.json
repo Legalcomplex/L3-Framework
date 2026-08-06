@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Lebanon — Source-Grounded Citation Reliability (LB)",
+ "country": "LB",
+ "jurisdiction": "Lebanon",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:40:08.651585+00:00",
+ "results": [
+  {
+   "id": "lb-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1710,
+   "verdict": true,
+   "correct": true,
+   "raw": "**True**  Juricaf (Jurisprudence Francophone) is an official database that publishes decisions from francophone courts, including Lebanon's Court of Cassation. The citation format and date are consist"
+  },
+  {
+   "id": "lb-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1787,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  This law was invalidated by the Constitutional Council's decision, so it cannot be considered a valid approved law despite parliamentary passage. Unconstitutional laws lack legal force."
+  },
+  {
+   "id": "lb-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1793,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Banking Control Commission of Lebanon (BCCL) does not exist as an official Lebanese institution. Lebanon's banking regulator is the Central Bank of Lebanon (Banque du Liban/BDL), not BC"
+  },
+  {
+   "id": "lb-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2831,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Lebanon's Capital Markets Authority (established 2002) issues regulations, but \"Law No. 706\" would be a parliamentary statute, not a CMA regulation. Different legislative sources."
+  },
+  {
+   "id": "lb-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1543,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The citation format appears incomplete or improperly formatted. Standard Lebanese Court of Cassation civil chamber decisions require complete case numbers and proper documentation to verify"
+  },
+  {
+   "id": "lb-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1593,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The reference lacks verifiable publication details, proper legislative numbering, and cannot be authenticated as an official Lebanese Parliament document from the stated date."
+  },
+  {
+   "id": "lb-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1710,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The identifier indicates June 17, 2021 (20210617), but the claimed date is June 16, 2021 (2021-06-16). The dates do not match."
+  },
+  {
+   "id": "lb-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1658,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  This claim is incorrect because Lebanese laws are published by official Lebanese government entities (Parliament, Official Gazette), not by Saudi Arabia's Central Bank (SAMA), which has no ju"
+  },
+  {
+   "id": "lb-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1318,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Lebanon's central bank is \"Banque du Liban\" (BDL), not \"Banking Control Commission of Lebanon\" (BCCL). BCCL is not the correct official entity name."
+  },
+  {
+   "id": "lb-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1071,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Lebanon's Capital Markets Authority (established 1995) issues regulations, but Law No. 706 is a legislative act requiring parliamentary approval, not a regulatory publication."
+  },
+  {
+   "id": "lb-src-f05",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1085,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The identifier ends in '20', but the case reference ends in '19'. The numbers don't match, indicating a discrepancy in the official citation data."
+  },
+  {
+   "id": "lb-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1147,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The title is in Arabic but references Israeli Knesset data. Lebanon's official sources would not be published through Israeli parliamentary databases. This is a jurisdictional mismatch."
+  }
+ ]
+}

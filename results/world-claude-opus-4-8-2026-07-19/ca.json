@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Canada — Source-Grounded Citation Reliability (CA)",
+ "country": "CA",
+ "jurisdiction": "Canada",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.4167,
+ "correct": 5,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:09:39.803072+00:00",
+ "results": [
+  {
+   "id": "ca-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1779,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-03-20 is in the future, making this citation impossible to verify as a legitimate published decision."
+  },
+  {
+   "id": "ca-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 7137,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. British Columbia's statute is the \"Administrative Tribunals Act\" (2004), not the cited title; no such 2003 Act exists."
+  },
+  {
+   "id": "ca-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2194,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Agricultural and Rural Development Act (ARDA) dates from the 1960s and isn't currently active federal legislation on Justice Laws."
+  },
+  {
+   "id": "ca-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2627,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. This Act (CQLR c. A-2.01) was enacted in 2000 and is officially published via LegisQuébec, Quebec's provincial legislation platform."
+  },
+  {
+   "id": "ca-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1949,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The 2026 date is in the future and cannot be verified; this citation appears fabricated and should not be trusted."
+  },
+  {
+   "id": "ca-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1980,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The year 2026 is in the future; no 2026 TCC decision with this citation can be verified as existing."
+  },
+  {
+   "id": "ca-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2175,
+   "verdict": true,
+   "correct": false,
+   "raw": "I cannot verify this specific citation as true or false without access to A2AJ's database; recommend confirming through official Canadian court records directly."
+  },
+  {
+   "id": "ca-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2326,
+   "verdict": false,
+   "correct": true,
+   "raw": "I cannot verify this specific claim with certainty. The identifier format and exact title matching would require direct API access. **Likely False**—unverifiable."
+  },
+  {
+   "id": "ca-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2199,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. ARDA is Canadian federal legislation; Washington State Legislative Web Services publishes U.S. state laws, not Canadian statutes."
+  },
+  {
+   "id": "ca-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2473,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This is Quebec provincial legislation published via Quebec's official publisher (LégisQuébec), not California Legislative Information, which handles U.S. state law."
+  },
+  {
+   "id": "ca-src-f05",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1875,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This citation appears fabricated; I cannot verify a 2026 SCC decision, and future-dated citations should be treated skeptically."
+  },
+  {
+   "id": "ca-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2375,
+   "verdict": true,
+   "correct": false,
+   "raw": "I cannot verify this specific citation as authentic; the case name, date, and details appear fabricated. Cannot confirm True without reliable sourcing."
+  }
+ ]
+}

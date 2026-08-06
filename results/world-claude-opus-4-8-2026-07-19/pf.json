@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — French Polynesia — Source-Grounded Citation Reliability (PF)",
+ "country": "PF",
+ "jurisdiction": "French Polynesia",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:22:18.176195+00:00",
+ "results": [
+  {
+   "id": "pf-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2292,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date is in the future (2026); I cannot verify this specific arrêté, and details appear fabricated or unverifiable."
+  },
+  {
+   "id": "pf-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2427,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Publication date cannot equal the arrêté's signing date; official journal publication typically follows adoption by days or weeks."
+  },
+  {
+   "id": "pf-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2563,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The publication date cannot match the arrêté's signing date; JOPF publication normally occurs days after official signature."
+  },
+  {
+   "id": "pf-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2241,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The publication date cannot match the arrêté's signing date; JOPF publication typically occurs days after the decree's signature."
+  },
+  {
+   "id": "pf-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2382,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The citation cannot be verified; the 2026 date is future/speculative, and specific arrêté details appear fabricated without authentic JOPF confirmation."
+  },
+  {
+   "id": "pf-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2059,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date is in the future (2026); I cannot verify a specific arrêté number or its actual publication."
+  },
+  {
+   "id": "pf-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2206,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. French Polynesian arrêtés are published in the Journal Officiel de la Polynésie française (JOPF), not Nauru's RONLAW database."
+  },
+  {
+   "id": "pf-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 3052,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. French Polynesia's arrêtés are published in the Journal Officiel de la Polynésie française, not Fiji's laws.gov.fj portal."
+  },
+  {
+   "id": "pf-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1946,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. French Polynesia's arrêtés are published in its own Journal Officiel, not by the Marshall Islands Judiciary—unrelated jurisdiction."
+  },
+  {
+   "id": "pf-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2204,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. French Polynesia is a French overseas collectivity; its arrêtés appear in the Journal officiel, not Australia's Federal Register."
+  },
+  {
+   "id": "pf-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1452,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. French Polynesian arrêtés are published in the Journal Officiel de la Polynésie Française, not a Solomon Islands portal."
+  },
+  {
+   "id": "pf-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1711,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. French Polynesia legal sources are published in Journal Officiel de la Polynésie française, not Tonga's Attorney General portal."
+  }
+ ]
+}

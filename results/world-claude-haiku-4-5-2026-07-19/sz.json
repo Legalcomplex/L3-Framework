@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Eswatini — Source-Grounded Citation Reliability (SZ)",
+ "country": "SZ",
+ "jurisdiction": "Eswatini",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:45:32.201127+00:00",
+ "results": [
+  {
+   "id": "sz-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1262,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** No verifiable evidence exists of a \"Fast Payments Directive 1 of 2025 A1\" published by Eswatini's Central Bank on this date. The citation format appears fabricated."
+  },
+  {
+   "id": "sz-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1311,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Income Tax Order 1975 is an official legal instrument from Eswatini, but it was not published by the Eswatini Revenue Service as a dedicated source in 1975."
+  },
+  {
+   "id": "sz-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1485,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Authentication of Documents Act predates 1965's publication claim. EswatiniLII's 1998 date reflects digitization, not original enactment. The act's original publication occurred earlier"
+  },
+  {
+   "id": "sz-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1664,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The National Pension Scheme (NPS) Vision and Strategy Document would more likely be published by the Ministry of Public Service or pension authority, not the Central Bank's financial regula"
+  },
+  {
+   "id": "sz-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1601,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Graded Tax Act is a legitimate Eswatini statute, but the cited publisher \"Eswatini Revenue Service — Tax Legislation & Practice Notes\" cannot be verified as an official legal source for its"
+  },
+  {
+   "id": "sz-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1231,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The 'Apportionment of Damages Act, 1970' predates EswatiniLII's establishment. EswatiniLII (launched 1998) could not have published legislation from 1970 as an original source."
+  },
+  {
+   "id": "sz-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1832,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The cited source is Lesotho Revenue Authority, but the jurisdiction specified is Eswatini. These are separate countries with different legal systems and authorities."
+  },
+  {
+   "id": "sz-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1576,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The 'Income Tax Order 1975' is an Eswatini (formerly Swaziland) law, not a Lesotho law. Lesotho Legal Information Institute would not be the official publisher of Eswatini legislation."
+  },
+  {
+   "id": "sz-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1075,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The 'Authentication of Documents Act, 1965' predates EswatiniLII's publication date of 1996-12-01, creating an impossibility for initial publication then."
+  },
+  {
+   "id": "sz-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1472,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The claim contains jurisdictional inconsistencies. NPS (National Payment System) documents should be published by Eswatini's central bank, not Lesotho's. Additionally, a 2025 publication da"
+  },
+  {
+   "id": "sz-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 984,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Graded Tax Act 1968 is an Eswatini statute, not a Zambian publication. Eswatini and Zambia are separate countries with distinct legal systems."
+  },
+  {
+   "id": "sz-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1537,
+   "verdict": false,
+   "correct": true,
+   "raw": "# Evaluation: False  **Explanation:** The Apportionment of Damages Act, 1970 predates EswatiniLII's establishment in 1997. A 1970 Act cannot be \"published\" by a service founded in 1997; it would be re"
+  }
+ ]
+}

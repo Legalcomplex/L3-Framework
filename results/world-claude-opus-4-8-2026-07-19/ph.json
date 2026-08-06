@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Philippines — Source-Grounded Citation Reliability (PH)",
+ "country": "PH",
+ "jurisdiction": "Philippines",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:22:31.073561+00:00",
+ "results": [
+  {
+   "id": "ph-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2111,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-01-15 is in the future, making this citation impossible to verify as a genuine published decision."
+  },
+  {
+   "id": "ph-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2828,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date (2026-04-23) is in the future, making this citation impossible to verify as a genuine, existing published decision."
+  },
+  {
+   "id": "ph-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 3218,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Corpus Juris is a private online database, not an official publisher; official Philippine reports are the SCRA/Philippine Reports."
+  },
+  {
+   "id": "ph-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2670,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. G.R. No. 276927 with a 2026 date is implausibly future-dated and unverifiable; this citation appears fabricated, not genuinely published."
+  },
+  {
+   "id": "ph-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1966,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date (2025-12-03) is in the future, making this bibliographic claim unverifiable and likely fabricated."
+  },
+  {
+   "id": "ph-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2126,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The 2026 date is implausibly future-dated, and I cannot verify this specific CTA case identifier or classification as authentic."
+  },
+  {
+   "id": "ph-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2425,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Administrative matters against court personnel are typically reported in SCRA or E-Library, but Philippine Reports contains selected decisions, unlikely including this."
+  },
+  {
+   "id": "ph-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2421,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '10931' should not correspond to \"CTA Case No. 10930\"; the numbers mismatch, and the 2026 date is implausible."
+  },
+  {
+   "id": "ph-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1901,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Corpus Juris is an unofficial private database; official Philippine jurisprudence is published by the Supreme Court Reports Annotated/Official Gazette."
+  },
+  {
+   "id": "ph-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1989,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. G.R. numbers are Philippine Supreme Court case citations, not Indonesian Constitutional Court decisions; jurisdictions clearly mismatch."
+  },
+  {
+   "id": "ph-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2172,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Philippine judicial decisions are published by Philippine courts (e.g., Supreme Court), not the Indonesia Constitutional Court—wrong jurisdiction entirely."
+  },
+  {
+   "id": "ph-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2156,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '11254' should not correspond to case number '11253'—mismatched numbers indicate an inconsistent or fabricated bibliographic record."
+  }
+ ]
+}

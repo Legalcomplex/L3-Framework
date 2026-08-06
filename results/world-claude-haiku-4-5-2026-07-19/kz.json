@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Kazakhstan — Source-Grounded Citation Reliability (KZ)",
+ "country": "KZ",
+ "jurisdiction": "Kazakhstan",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:40:02.668325+00:00",
+ "results": [
+  {
+   "id": "kz-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1656,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The document is dated December 18, 2025, with a publication date of March 18, 2026. This is temporally impossible and indicates a fabricated or erroneous citation."
+  },
+  {
+   "id": "kz-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1662,
+   "verdict": false,
+   "correct": false,
+   "raw": "# Answer: **False**  The decision is dated 2026-04-30, which is a future date. No court can publish decisions from the future. This appears to be either a fabricated or incorrectly dated document."
+  },
+  {
+   "id": "kz-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2275,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  A decision dated 2026-04-30 cannot exist as an official published source today. This date is in the future, making the claim temporally impossible and therefore invalid."
+  },
+  {
+   "id": "kz-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1699,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The publication date (2026-05-05) is in the future, making this claim impossible. Additionally, sugar import regulations would typically fall under government or customs authority, not the Nati"
+  },
+  {
+   "id": "kz-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2679,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The document date (December 18, 2025) is in the future relative to the publication date (March 18, 2026), creating a logical impossibility. The decision cannot predate its amendment."
+  },
+  {
+   "id": "kz-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1945,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The date 2026-03-31 is in the future, making this claim implausible. Official case records cannot be assigned dates that have not yet occurred."
+  },
+  {
+   "id": "kz-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1714,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The document title references Atbasar District (Kazakhstan), but Lex.uz is Uzbekistan's official legislation portal and would not publish Kazakhstani regional legislation."
+  },
+  {
+   "id": "kz-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 3679,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The AIFC Court case identifier format and numbering appear inconsistent. The claim lists two different case numbers (0020 and 0025) for a single case, which is procedurally irregular and su"
+  },
+  {
+   "id": "kz-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1088,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Constitutional Court of Kazakhstan issues decisions, but \"Kazakhstan Constitutional Court & Council Decisions\" is not the official publisher name. The correct official source is the Con"
+  },
+  {
+   "id": "kz-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1228,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The title indicates a document about sugar-raw imports, which falls under trade/customs regulation, not monetary policy. Kazakhstan National Bank issues monetary regulations, not trade impo"
+  },
+  {
+   "id": "kz-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1749,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The document references a Kazakhstan jurisdiction (Atbasar district maslikhat), yet claims publication on Lex.uz, Uzbekistan's legal database. This is a jurisdictional mismatch indicating a"
+  },
+  {
+   "id": "kz-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1137,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The AIFC Court case identifier format and numbering system cannot be verified against this specific case details claim. No public database confirms this exact 2026 case correspondence."
+  }
+ ]
+}

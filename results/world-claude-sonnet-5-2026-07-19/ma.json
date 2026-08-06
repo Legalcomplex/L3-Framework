@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Morocco — Source-Grounded Citation Reliability (MA)",
+ "country": "MA",
+ "jurisdiction": "Morocco",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:57:45.347705+00:00",
+ "results": [
+  {
+   "id": "ma-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2735,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific citation exists in Juricaf's database; the exact case details appear unverifiable/possibly fabricated."
+  },
+  {
+   "id": "ma-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2140,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Bank Al-Maghrib publishes circulars/directives as binding regulatory texts; a \"Présentation\" document is explanatory/informational material, not an official circular itself."
+  },
+  {
+   "id": "ma-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2663,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this is an AMMC-related arrêté requiring ministerial issuance and Bulletin Officiel publication, not classification as an AMMC circular itself."
+  },
+  {
+   "id": "ma-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1996,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a specific administrative document lacking verifiable publication details; I cannot confirm ANRT's authentic official records or authenticate this exact citation."
+  },
+  {
+   "id": "ma-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1783,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this cites a future date (2026-04-23), which cannot be verified as an actual publication, making the claim currently unverifiable/false."
+  },
+  {
+   "id": "ma-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2271,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This claim references a future date (March 9, 2026) that cannot be verified as an actual published official bulletin issue at this time."
+  },
+  {
+   "id": "ma-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1971,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier ends in \"466\" but the claim describes decision number \"465\" — a mismatch between the identifier's number and the cited decision number."
+  },
+  {
+   "id": "ma-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1897,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** \"Egyptian Legal Corpus\" is unrelated to Morocco's banking law; a Hugging Face dataset is not an official legal publication source for authenticating this claim."
+  },
+  {
+   "id": "ma-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1798,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. AMMC circulars aren't the source for this arrêté; ministerial arrêtés fixing dossier content are published in the Bulletin Officiel, not AMMC circulars."
+  },
+  {
+   "id": "ma-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1889,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — this appears to be a specific operator/service-provider suspension notice, not a verifiable, officially indexed ANRT decision publication I can confirm."
+  },
+  {
+   "id": "ma-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1654,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — the Conseil de la Concurrence is a Moroccan authority; its communiqué would appear in Moroccan legal sources, not an Egyptian Legal Corpus."
+  },
+  {
+   "id": "ma-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2822,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This date is in the future relative to my knowledge, and \"Bulletin Officiel\" is Moroccan, not part of the Egyptian Legal Corpus dataset."
+  }
+ ]
+}

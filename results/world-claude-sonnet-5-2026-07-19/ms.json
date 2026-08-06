@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Montserrat — Source-Grounded Citation Reliability (MS)",
+ "country": "MS",
+ "jurisdiction": "Montserrat",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:58:53.733742+00:00",
+ "results": [
+  {
+   "id": "ms-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2625,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific SRO citation exists; Montserrat legislative records aren't reliably accessible to confirm this precise 2025 regulation."
+  },
+  {
+   "id": "ms-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2092,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific citation; Montserrat's legislation database doesn't confirm this exact Act title, date, or publication details independently."
+  },
+  {
+   "id": "ms-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2030,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation—Montserrat's legislative publication details require confirmation from official government or gazette sources directly."
+  },
+  {
+   "id": "ms-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2222,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The stated future publication date (2026-05-07) is not verifiable, and Montserrat's legislation is officially published via the Government Gazette/Attorney General's Chambers."
+  },
+  {
+   "id": "ms-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2274,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific S.R.O. citation exists—Montserrat legislative instrument numbers and dates require direct official gazette confirmation, not assumption."
+  },
+  {
+   "id": "ms-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3057,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This dating is implausible—2026 is a future date, and legislative sourcing claims require verifiable historical publication records, not speculative future dates."
+  },
+  {
+   "id": "ms-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2115,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Montserrat legislation is published via Montserrat's own Gazette/Government Printer, not Turks and Caicos Revised Laws, an unrelated jurisdiction's publisher."
+  },
+  {
+   "id": "ms-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2007,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** I cannot verify this specific citation's accuracy—Montserrat's legislation details, exact titles, and publication dates require confirmation from official government sources directly."
+  },
+  {
+   "id": "ms-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1587,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Montserrat's laws are not published via \"Saint Lucia Revised Laws\"; that source pertains to Saint Lucia, a distinct jurisdiction entirely."
+  },
+  {
+   "id": "ms-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1563,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Montserrat's Child Abduction and Custody Act would be enacted through its legislative process, but I cannot verify this specific publication date claim."
+  },
+  {
+   "id": "ms-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 4176,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Bermuda Laws Online publishes Bermuda's legislation, not Montserrat's; Montserrat instruments would appear via Montserrat's official gazette or legislation portal, not Bermuda's system."
+  },
+  {
+   "id": "ms-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2666,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Montserrat's \"Rewards for Apprehension of Criminals Act\" is a longstanding colonial-era statute; it wasn't newly published or enacted on 2023-05-07 as claimed."
+  }
+ ]
+}

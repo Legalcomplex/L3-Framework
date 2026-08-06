@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Cape Verde — Source-Grounded Citation Reliability (CV)",
+ "country": "CV",
+ "jurisdiction": "Cape Verde",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:51:57.325943+00:00",
+ "results": [
+  {
+   "id": "cv-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2126,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this cites a future/unverifiable 2026 gazette entry; I cannot confirm its existence, so the claim's accuracy is unverifiable and likely fabricated."
+  },
+  {
+   "id": "cv-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1927,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated or unverifiable citation; no such specific decision can be confirmed as an actual published Cabo Verde Supreme Court ruling."
+  },
+  {
+   "id": "cv-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2385,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This citation appears fabricated or unverifiable—no legitimate record confirms this deliberação's publication in Boletim Oficial on that specified 2026 date."
+  },
+  {
+   "id": "cv-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1996,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation's accuracy—the exact case number, title, date, and source combination isn't confirmable in available records."
+  },
+  {
+   "id": "cv-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2381,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date (2026-03-25) is in the future relative to plausible verification, and this specific citation cannot be authenticated as accurate."
+  },
+  {
+   "id": "cv-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1951,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific identifier, case title, and date against actual Cabo Verde Supreme Court records, as I lack access to that database."
+  },
+  {
+   "id": "cv-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1928,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Cape Verde's official gazette is the Boletim Oficial, not the Togo Journal Officiel, which is Togo's publication."
+  },
+  {
+   "id": "cv-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1904,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '78/2024' implies year 2024, but the cited decision is labeled \"78-2023\" and dated 2023, a mismatch."
+  },
+  {
+   "id": "cv-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2077,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — the citation is internally inconsistent: a 2025-numbered deliberation cannot have been published on 2024-04-16, before it existed."
+  },
+  {
+   "id": "cv-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1614,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '22/2024' implies a 2024 decision, but the title references \"Acórdão 22-2023,\" indicating a mismatched year inconsistency."
+  },
+  {
+   "id": "cv-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1710,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific bibliographic claim's accuracy—no reliable database confirms this exact deliberation number, date, and Boletim Oficial publication details."
+  },
+  {
+   "id": "cv-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1565,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The claim mismatches jurisdictions — Cape Verde's legal decisions would be issued by Cape Verdean courts, not Benin's Constitutional Court."
+  }
+ ]
+}

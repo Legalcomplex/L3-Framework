@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Armenia — Source-Grounded Citation Reliability (AM)",
+ "country": "AM",
+ "jurisdiction": "Armenia",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:06:58.723809+00:00",
+ "results": [
+  {
+   "id": "am-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2197,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The claim contains fabricated/unverifiable details; specific decree numbers, dates, and ARLIS publication date cannot be confirmed as authentic without verification."
+  },
+  {
+   "id": "am-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1952,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific government decision exists in ARLIS with that title and date; unverifiable claim."
+  },
+  {
+   "id": "am-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2677,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific 1998 ARLIS government decision; the truncated title and date lack confirmable details, risking fabrication."
+  },
+  {
+   "id": "am-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2380,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific decree's existence, exact title, or 1998-04-02 ARLIS publication date without reliable confirmation."
+  },
+  {
+   "id": "am-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2468,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The claim contains an internal inconsistency: it references a 1991 Council of Ministers decree while attributing a 1998 government decision—terminology and dating require verification against A"
+  },
+  {
+   "id": "am-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2462,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The claim cannot be verified; ARLIS metadata, decision number, and date details appear fabricated or unconfirmable, warranting skepticism absent authoritative citation."
+  },
+  {
+   "id": "am-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2081,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The document is an Armenian Government decision, which would be published in Armenia's official gazette, not Serbia's Službeni glasnik."
+  },
+  {
+   "id": "am-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2226,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific decree's existence, exact title, or ARLIS publication date; unverifiable claims should not be confirmed."
+  },
+  {
+   "id": "am-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1582,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific 1996 government decision's existence or ARLIS publication date; the truncated citation prevents reliable confirmation."
+  },
+  {
+   "id": "am-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2278,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The title is Armenian (RA Government decision), but \"Qendra e Botimeve Zyrtare\" is Albania's official gazette publisher—jurisdictional mismatch."
+  },
+  {
+   "id": "am-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2140,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The claim contains an internal inconsistency: it references a 1991 Council of Ministers decision while asserting a 1995 ARLIS publication date—chronologically and institutionally implausible wi"
+  },
+  {
+   "id": "am-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 3925,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Armenian government decisions (ՀՀ Կառավարության որոշում) are published in official Armenian sources like Հայաստանի Հանրապետության պաշտոնական տեղեկագիր, not Lithuania's TAR database."
+  }
+ ]
+}

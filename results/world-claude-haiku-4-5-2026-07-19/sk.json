@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Slovakia — Source-Grounded Citation Reliability (SK)",
+ "country": "SK",
+ "jurisdiction": "Slovakia",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:44:51.480024+00:00",
+ "results": [
+  {
+   "id": "sk-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2257,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The date 2026-01-31 is in the future. As of my knowledge cutoff (April 2024), this document cannot have been published yet."
+  },
+  {
+   "id": "sk-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1739,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The citation format and reference to \"I. ÚS 123/2010\" indicates this is a Constitutional Court (Ústavný súd) decision, not a Supreme Court (Najvyšší súd) decision."
+  },
+  {
+   "id": "sk-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1672,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The decision date (2026-04-17) is in the future, making this claim impossible. Additionally, the case name suggests EU/EFTA parties rather than Slovak antimonopoly matters."
+  },
+  {
+   "id": "sk-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2069,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The Zbierka zákonov publishes laws and decrees, not ministerial announcements (Oznámenia). Ministerial notices are published in the Register of Legal Acts or official ministry channels instea"
+  },
+  {
+   "id": "sk-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2158,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Supreme Court issues decisions on cases, not standalone rulings on procedural topics. This appears to be a legal opinion or guidance document, not a published court decision."
+  },
+  {
+   "id": "sk-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 3679,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The date 2026-04-16 is in the future, making this decision impossible to have been published. Additionally, no such decision appears in PMU's official records."
+  },
+  {
+   "id": "sk-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2333,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The identifier format appears inconsistent with standard Slovak legal numbering conventions. The date reference (2026) is in the future, making this claim invalid or speculative."
+  },
+  {
+   "id": "sk-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2763,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The citation format and reference number (I. ÚS 123/2010) indicate this is a Constitutional Court (Ústavný súd) decision, not a Supreme Court (Najvyšší súd) decision."
+  },
+  {
+   "id": "sk-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2166,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The Antimonopoly Office of the Slovak Republic (PMÚ) does not publish decisions with this case designation format or parties. This appears to be a misattributed or fictitious decision record."
+  },
+  {
+   "id": "sk-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1467,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The identifier format appears structurally invalid for Slovak Collection of Laws. Official SK/ZZ identifiers follow different conventions and the future date (2026) is implausible for current"
+  },
+  {
+   "id": "sk-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1456,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This decision originates from a Slovak court (the title is in Slovak language regarding victim status in misdemeanor proceedings), not the Turkish Constitutional Court. The jurisdiction and"
+  },
+  {
+   "id": "sk-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1050,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Emirates Telecommunications Group Company PJSC decisions would be published by UAE courts, not Georgian Supreme Court. The jurisdiction and court origin don't match."
+  }
+ ]
+}

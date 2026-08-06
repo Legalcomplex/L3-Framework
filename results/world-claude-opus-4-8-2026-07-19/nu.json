@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Niue — Source-Grounded Citation Reliability (NU)",
+ "country": "NU",
+ "jurisdiction": "Niue",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:21:43.113100+00:00",
+ "results": [
+  {
+   "id": "nu-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2273,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Niue lacks such an Act; in 1945 Niue was under New Zealand administration, not issuing independent atomic energy legislation."
+  },
+  {
+   "id": "nu-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2553,
+   "verdict": false,
+   "correct": false,
+   "raw": "I cannot verify this specific citation as authentic; without access to PacLII records, I cannot confirm its accuracy. False."
+  },
+  {
+   "id": "nu-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3167,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Niue was administered under New Zealand in 1938 and had no independent official legislation; this citation appears fabricated."
+  },
+  {
+   "id": "nu-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2296,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. PacLII hosts Niue court decisions, but I cannot verify this specific citation's authenticity; treat unconfirmed details cautiously."
+  },
+  {
+   "id": "nu-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2417,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Niue's constitution is the Niue Constitution Act 1974 (NZ legislation); no such 2022 official publication with that title exists."
+  },
+  {
+   "id": "nu-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2144,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation's authenticity; details like the case number and date may be fabricated or inaccurate."
+  },
+  {
+   "id": "nu-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2631,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Niue's legal sources aren't published by the Republic of Marshall Islands Judiciary; these are separate, unrelated jurisdictions entirely."
+  },
+  {
+   "id": "nu-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2146,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Niue court decisions are published by PacLII (Pacific Legal Information Institute), not the Open Australian Legal Corpus, which covers Australian jurisdictions."
+  },
+  {
+   "id": "nu-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2171,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Niue's legal sources aren't published via the Solomon Islands portal; different jurisdictions maintain separate legislative databases, making this incorrect."
+  },
+  {
+   "id": "nu-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1943,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The neutral citation \"NUHC\" denotes the Niue High Court, not the Federal Court of Australia, which handles Australian matters."
+  },
+  {
+   "id": "nu-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1917,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Niue's Constitution stems from the Niue Constitution Act 1974 (NZ); no such 2021 official publication is verifiably documented."
+  },
+  {
+   "id": "nu-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2148,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The citation \"NUHC\" indicates Niue High Court; it would be published by PacLII, not Nauru's RONLAW database."
+  }
+ ]
+}

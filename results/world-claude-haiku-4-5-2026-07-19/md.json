@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Moldova — Source-Grounded Citation Reliability (MD)",
+ "country": "MD",
+ "jurisdiction": "Moldova",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:40:58.252447+00:00",
+ "results": [
+  {
+   "id": "md-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1623,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Moldova National Courts Portal publishes court decisions, but this citation lacks proper formatting verification and the specific case details cannot be confirmed as authentic without d"
+  },
+  {
+   "id": "md-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1580,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The decision date (March 5, 2026) is in the future relative to the knowledge cutoff, making verification impossible. Additionally, the citation format appears non-standard for Moldovan Cons"
+  },
+  {
+   "id": "md-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2120,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The claim is incomplete and unverifiable as presented. The regulation title is truncated, lacking the full name and specific regulatory reference number necessary to confirm publication authent"
+  },
+  {
+   "id": "md-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2177,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The citation format appears malformed and inconsistent with Moldova's official court decision numbering system. The date placement and structure don't match standard Moldovan judicial datab"
+  },
+  {
+   "id": "md-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1754,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The date 2026-03-10 is in the future relative to the current time, making this claim temporally impossible and therefore unverifiable as an actual published decision."
+  },
+  {
+   "id": "md-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1627,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The National Bank of Moldova publishes regulations through official channels, but this specific regulation number and date combination cannot be verified as an authentic official source wit"
+  },
+  {
+   "id": "md-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1775,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier contains '01022022' (January 2022) but the cited decision is dated 2021-03-23 (March 2021), creating a temporal inconsistency in the bibliographic reference."
+  },
+  {
+   "id": "md-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1732,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  A Moldovan decision (indicated by \"Decizia nr.35\") cannot be published by Cyprus Tax Tribunal Decisions. The jurisdiction mismatch makes this claim incorrect."
+  },
+  {
+   "id": "md-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1875,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Moldova's regulations would be published through Moldovan official sources, not the Hellenic (Greek) Parliament or Greek legal code databases."
+  },
+  {
+   "id": "md-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1165,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier suffix differs: the claim references '02022019' but the listed source shows '02022018', indicating a date mismatch in the case number."
+  },
+  {
+   "id": "md-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1286,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This decision originates from Moldova's Constitutional Court, not Romania's ICCJ. The date (2026) is also future and cannot currently be verified."
+  },
+  {
+   "id": "md-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1201,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This regulation is Moldovan legislation, not Polish. Dziennik Ustaw is Poland's official journal, not Moldova's. Moldova's official gazette is the Official Monitor of the Republic of Moldov"
+  }
+ ]
+}

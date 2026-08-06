@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Norway — Source-Grounded Citation Reliability (NO)",
+ "country": "NO",
+ "jurisdiction": "Norway",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:42:41.295052+00:00",
+ "results": [
+  {
+   "id": "no-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1944,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The year 2026 is in the future; this decision cannot exist yet. Norwegian Supreme Court decisions are published with actual dates of issuance, not prospective dates."
+  },
+  {
+   "id": "no-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1831,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The publication date (2025-12-03) is in the future relative to the knowledge cutoff, making verification impossible. Additionally, the format appears non-standard for Norwegian legislative docu"
+  },
+  {
+   "id": "no-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1797,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.**  KFIR (Patentstyret's appeals board) handles patent/trademark appeals, not decisions titled \"ROUTE 66.\" This appears to be a fictional or misattributed decision lacking verification in offi"
+  },
+  {
+   "id": "no-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1526,
+   "verdict": true,
+   "correct": true,
+   "raw": "# True  KOFA (Norwegian Public Procurement Complaints Board) issues binding decisions on public procurement disputes. Decision 2004/2 from August 9, 2004 is consistent with KOFA's official publication"
+  },
+  {
+   "id": "no-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2049,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Norwegian Equality and Anti-Discrimination Tribunal (Likestillings- og diskrimineringsombudet) does not issue decisions with this case numbering format. This tribunal issues recommendat"
+  },
+  {
+   "id": "no-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1454,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** PVN-2003-05 was issued by the Data Protection Authority (Datatilsynet), not the Privacy Appeals Board (Personvernnemnda), which is a separate appellate body."
+  },
+  {
+   "id": "no-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1631,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This is a Norwegian Supreme Court decision (HR prefix, Norwegian case format). It would be published by Norwegian legal databases (Lovdata, Domstolverket), not Finland's Finlex system."
+  },
+  {
+   "id": "no-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2607,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  'Lovvedtak 1 (2025-2026)' is a Norwegian legislative document, but Retsinformation is Denmark's official legal database, not Norway's. Norwegian laws are published via Lovdata or Odelstingtid"
+  },
+  {
+   "id": "no-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1142,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** KFIR (Norwegian Board of Appeal for Industrial Property Rights) does not publish decisions under the name \"ROUTE 66.\" This appears to be a trademark or case reference rather than an officia"
+  },
+  {
+   "id": "no-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1213,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  KOFA identifier '2004/5' and 'KOFA 2004/2' are distinct case numbers from different years or sequences within the Norwegian Public Procurement Complaints Board's records."
+  },
+  {
+   "id": "no-src-f05",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1595,
+   "verdict": false,
+   "correct": true,
+   "raw": "# Answer: False  **Explanation:** The identifiers don't match—'22/164' and '22/163' are different case numbers. The date alone cannot establish equivalence between distinct case identifiers."
+  },
+  {
+   "id": "no-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1514,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This decision concerns a Norwegian entity (Gjensidige Nor Sparebank ASA) and would be published by Norwegian authorities, not Finlex, which is Finland's legal database."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Timor-Leste — Source-Grounded Citation Reliability (TL)",
+ "country": "TL",
+ "jurisdiction": "Timor-Leste",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.4167,
+ "correct": 5,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:26:03.501184+00:00",
+ "results": [
+  {
+   "id": "tl-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2148,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Law No. 1/2003 concerns immovable property; it was enacted in 2003, not published December 2002, contradicting the stated date."
+  },
+  {
+   "id": "tl-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3464,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The specific instruction number, exact title, and 2023-01-01 date appear unverifiable and likely fabricated; I cannot confirm authenticity."
+  },
+  {
+   "id": "tl-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2819,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This is a fabricated citation; I cannot verify a Law No. 6/2026 exists, especially with a future 2026 date."
+  },
+  {
+   "id": "tl-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2239,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Law No. 1/2002 concerns Land and Property, not \"Publication of Acts.\" The cited title appears fabricated or misattributed."
+  },
+  {
+   "id": "tl-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3255,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The citation appears fabricated; the exact regulation number, title, and precise 2018-01-01 publication date cannot be reliably verified."
+  },
+  {
+   "id": "tl-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 5676,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The claim references a 2026 future date and cannot be verified; I lack access to confirm this specific publication."
+  },
+  {
+   "id": "tl-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2190,
+   "verdict": true,
+   "correct": false,
+   "raw": "True. Law No. 1/2003 on the Juridical Regime of Immovable Property (Part I - Ownership) exists; English translations were published."
+  },
+  {
+   "id": "tl-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2659,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Timor-Leste is a sovereign nation; its BCTL instructions aren't published through Indonesia's JDIHN legal network. The attribution is incorrect."
+  },
+  {
+   "id": "tl-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1643,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Timor-Leste laws are published in the Jornal da República, not Thailand's Royal Gazette. The source is jurisdictionally incorrect."
+  },
+  {
+   "id": "tl-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1999,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Thu Vien Phap Luat is a Vietnamese legal database, not Timor-Leste's official gazette (Jornal da República) for authoritative publication."
+  },
+  {
+   "id": "tl-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1831,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Timor-Leste's central bank (BCTL) publishes regulations through official channels; a Cambodian legal library is an implausible, unverifiable source."
+  },
+  {
+   "id": "tl-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1606,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Timor-Leste laws are published in Jornal da República, not a Cambodian legal library; the cited source is implausible."
+  }
+ ]
+}

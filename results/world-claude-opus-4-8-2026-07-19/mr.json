@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Mauritania — Source-Grounded Citation Reliability (MR)",
+ "country": "MR",
+ "jurisdiction": "Mauritania",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:19:22.131786+00:00",
+ "results": [
+  {
+   "id": "mr-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2003,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation exists in Juricaf or confirm its details; asserting authenticity without confirmation risks fabrication."
+  },
+  {
+   "id": "mr-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2830,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Mauritania lacks a consolidated code series called \"MSGG\"; civil aviation law appears in official gazette texts, not this citation."
+  },
+  {
+   "id": "mr-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2500,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific instruction reference, exact date, or publisher details; the citation appears fabricated or unconfirmed."
+  },
+  {
+   "id": "mr-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2059,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation exists; Juricaf's Mauritania coverage is limited, and fabricated case details should not be trusted."
+  },
+  {
+   "id": "mr-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2382,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Mauritania's fisheries law governs maritime/marine waters; no such \"eaux continentales\" aquaculture code exists via this MSGG citation."
+  },
+  {
+   "id": "mr-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2114,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Mauritania's banking regulations and debt recovery laws aren't published by the Central Bank; official texts appear in the Journal Officiel."
+  },
+  {
+   "id": "mr-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2107,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific identifier exists in Juricaf; asserting its accuracy without confirmation risks fabricating bibliographic details."
+  },
+  {
+   "id": "mr-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1938,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Mauritania's legal sources come from its own government, not Guinea-Bissau's National People's Assembly, a different sovereign state."
+  },
+  {
+   "id": "mr-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2339,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Loidici.biz is a Côte d'Ivoire legal source; it wouldn't publish Mauritanian instructions. The citation conflates unrelated jurisdictions and is unreliable."
+  },
+  {
+   "id": "mr-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2701,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific identifier or decision exists in Juricaf's Mauritania collection; fabricating citation details risks misinformation."
+  },
+  {
+   "id": "mr-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2165,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Mauritanian legal codes are published in the official Journal Officiel, not via \"Law Hub Gambia,\" a fabricated/unreliable source."
+  },
+  {
+   "id": "mr-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2112,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The claim misattributes a Mauritanian law to Nigeria's food/drug agency (NAFDAC), which is jurisdictionally and institutionally incompatible with Mauritanian legislation."
+  }
+ ]
+}

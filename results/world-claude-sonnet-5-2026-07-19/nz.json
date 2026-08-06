@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — New Zealand — Source-Grounded Citation Reliability (NZ)",
+ "country": "NZ",
+ "jurisdiction": "New Zealand",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:00:01.898843+00:00",
+ "results": [
+  {
+   "id": "nz-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1976,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This decision has a future date (2026-04-24) and appears to reference a fabricated or non-existent case name, making verification impossible."
+  },
+  {
+   "id": "nz-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1915,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this decision has a future date (2026-04-21), which is impossible for an already-published determination; it cannot be verified as genuine."
+  },
+  {
+   "id": "nz-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2040,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated/unverifiable citation with a future date (2026), which cannot exist as a genuine published decision yet."
+  },
+  {
+   "id": "nz-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2371,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this decision has a future date (2026-04-24), which cannot yet exist or be verified as an official published source."
+  },
+  {
+   "id": "nz-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2067,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated future-dated decision; \"BNS Group Limited\" case naming and 2026 date are not verifiable NZ Employment Relations Authority records."
+  },
+  {
+   "id": "nz-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1925,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated/unverifiable citation with a future date (2026), which cannot be confirmed as an authentic NZ Employment Relations Authority determination."
+  },
+  {
+   "id": "nz-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1920,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This appears to be a fabricated or unverifiable citation; I cannot confirm a case with this name, date, and source exists in official NZ records."
+  },
+  {
+   "id": "nz-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2020,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This case name and citation format does not match known NZ Employment Relations Authority determination conventions or verifiable published records."
+  },
+  {
+   "id": "nz-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1877,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The case name indicates a New Zealand jurisdiction matter, so it would be published by New Zealand's judiciary, not the Marshall Islands."
+  },
+  {
+   "id": "nz-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1529,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** New Zealand jurisdiction cannot produce a decision published by the Federal Court of Australia, which is a separate country's court system."
+  },
+  {
+   "id": "nz-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1676,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This case name/style (\"... [In Liquidation] and ANOR v ...\") reflects a civil/company liquidation matter, not an Employment Relations Authority determination."
+  },
+  {
+   "id": "nz-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1660,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific case citation exists; I have no reliable record confirming this exact determination's title, date, or details."
+  }
+ ]
+}

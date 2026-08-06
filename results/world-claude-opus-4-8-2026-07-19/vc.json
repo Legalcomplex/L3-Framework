@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Saint Vincent and the Grenadines — Source-Grounded Citation Reliability (VC)",
+ "country": "VC",
+ "jurisdiction": "Saint Vincent and the Grenadines",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:27:37.557455+00:00",
+ "results": [
+  {
+   "id": "vc-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2258,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.**  The year 2026 is in the future; no such Gazette exists yet, and volume numbering cannot be verified as authentic."
+  },
+  {
+   "id": "vc-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2008,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific regulation's existence, number, exact title, or the January 1, 2008 publication date."
+  },
+  {
+   "id": "vc-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2774,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific future-dated 2026 gazette volume/issue; details appear fabricated and unverifiable against actual records."
+  },
+  {
+   "id": "vc-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3990,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated citation; I cannot verify these specific regulations, number, or publication details as authentic."
+  },
+  {
+   "id": "vc-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2304,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific 2026 gazette volume/number exists; the future date and precise details appear fabricated."
+  },
+  {
+   "id": "vc-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2447,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This citation appears fabricated; specific regulation number, date, and publisher details cannot be verified as authentic SVG legislation."
+  },
+  {
+   "id": "vc-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2951,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Saint Vincent and the Grenadines and Grenada are separate jurisdictions; SVG Gazettes aren't published via Laws of Grenada."
+  },
+  {
+   "id": "vc-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2629,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Saint Vincent and the Grenadines legislation would not be published via Turks and Caicos Attorney General; wrong jurisdiction entirely."
+  },
+  {
+   "id": "vc-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1805,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Bermuda Laws Online serves Bermuda, not Saint Vincent and the Grenadines, which publishes its Gazette through its own government."
+  },
+  {
+   "id": "vc-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 3152,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The claim misattributes the source to Cayman Islands Legislation, but the jurisdiction is Saint Vincent and the Grenadines."
+  },
+  {
+   "id": "vc-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1848,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The SVG Government Gazette is published by St. Vincent's own government/Attorney General, not Saint Lucia's authorities. Different jurisdictions."
+  },
+  {
+   "id": "vc-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 3410,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Saint Vincent and the Grenadines legislation would not be published via Sint Maarten Government sources; jurisdictions differ entirely."
+  }
+ ]
+}

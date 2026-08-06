@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Greece — Source-Grounded Citation Reliability (GR)",
+ "country": "GR",
+ "jurisdiction": "Greece",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:13:58.744686+00:00",
+ "results": [
+  {
+   "id": "gr-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2414,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-01-01 is implausible (future/New Year's Day), and the citation details cannot be verified as authentic."
+  },
+  {
+   "id": "gr-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2248,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Decision 892/2025 dated 2025-11-03 cannot be verified; this appears to be a fabricated citation with no confirmable existence."
+  },
+  {
+   "id": "gr-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2317,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. FEK citations require a specific issue number and date; without verification, the claimed 2024-04-06 publication date cannot be confirmed accurate."
+  },
+  {
+   "id": "gr-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2313,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Legislative act numbers restart yearly; a 1951 emergency law cannot be No. 1923, indicating a citation/dating error."
+  },
+  {
+   "id": "gr-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2349,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The decision number 13/2025 conflicts with the 2024-06-30 date; a 2025 decision cannot predate its year."
+  },
+  {
+   "id": "gr-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2265,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2025-01-01 is implausible (New Year's Day); decision numbering and metadata appear fabricated or unverifiable without authentic source confirmation."
+  },
+  {
+   "id": "gr-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2962,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. A Greek jurisdiction source (Γνωμοδότηση, Ολομέλεια) cannot be published by Romania's ICCJ; institutions and countries clearly mismatch here."
+  },
+  {
+   "id": "gr-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2293,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Jurisdiction is Greece, but the cited court is Montenegro's Constitutional Court—a mismatch. Also, the future date is implausible."
+  },
+  {
+   "id": "gr-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2836,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. ΦΕΚ (Government Gazette) is Greece's official legal source; a Turkish Legislation Hugging Face dataset is not an authoritative publisher."
+  },
+  {
+   "id": "gr-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2679,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Likumi.lv is Latvia's legal portal; a Greek Αναγκαστικός Νόμος would appear in the Greek Government Gazette (ΦΕΚ), not there."
+  },
+  {
+   "id": "gr-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1900,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The citation is internally inconsistent: a 2025 decision number cannot bear a 2023 date, indicating unreliable bibliographic data."
+  },
+  {
+   "id": "gr-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1454,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Unified State Register of Court Decisions (ЄДРСР) is Ukraine's judicial database, not Greece's official legal source."
+  }
+ ]
+}

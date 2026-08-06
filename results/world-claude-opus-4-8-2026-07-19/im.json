@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Isle of Man — Source-Grounded Citation Reliability (IM)",
+ "country": "IM",
+ "jurisdiction": "Isle of Man",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:15:13.938296+00:00",
+ "results": [
+  {
+   "id": "im-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2031,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific case citation, and \"Isle of Man Judgments Online\" is not a confirmed official publisher."
+  },
+  {
+   "id": "im-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2266,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Isle of Man Acts of Tynwald aren't dated 1 January; that generic date signals a fabricated or unverified citation."
+  },
+  {
+   "id": "im-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1828,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Isle of Man does not operate a service called \"Isle of Man Judgments Online\"; this citation appears fabricated."
+  },
+  {
+   "id": "im-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2645,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Isle of Man Income Tax Act dates from 1970; no \"AT 4 of 2025\" Income Tax Act exists."
+  },
+  {
+   "id": "im-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2211,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific case exists; \"Isle of Man Judgments Online\" is not a confirmed official publisher name."
+  },
+  {
+   "id": "im-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 8697,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Isle of Man legislative identifiers don't follow this format; \"SM\" and this identifier structure appear fabricated and unverifiable."
+  },
+  {
+   "id": "im-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2647,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific case exists or that \"Isle of Man Judgments Online\" is the accurate publisher name."
+  },
+  {
+   "id": "im-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2972,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier \"PRINCIPAL/2024-0006\" implies AT 6, contradicting the cited \"AT 5 of 2024\"; details appear fabricated and inconsistent."
+  },
+  {
+   "id": "im-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1567,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific case exists; the Isle of Man does not operate a service called \"Judgments Online.\""
+  },
+  {
+   "id": "im-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1954,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Isle of Man Acts use \"AT\" numbering and citation formats that don't match this identifier structure; details appear fabricated."
+  },
+  {
+   "id": "im-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1704,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Isle of Man is a distinct jurisdiction; Gibraltar's laws database wouldn't publish Manx decisions, and citation appears fabricated."
+  },
+  {
+   "id": "im-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1518,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Isle of Man legislation is published by its own government, not the Jersey Legal Information Board; jurisdictions differ."
+  }
+ ]
+}

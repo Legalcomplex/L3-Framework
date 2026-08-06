@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Mauritius — Source-Grounded Citation Reliability (MU)",
+ "country": "MU",
+ "jurisdiction": "Mauritius",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:42:02.481492+00:00",
+ "results": [
+  {
+   "id": "mu-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 10579,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The decision date (2026-04-09) is in the future, making this claim impossible. Official court judgments cannot be published before they occur."
+  },
+  {
+   "id": "mu-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1897,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  This decision cannot be verified as a genuine publication. The future date (2026-02-11) is impossible, and no confirmation of this specific merger decision exists in accessible Mauritian Co"
+  },
+  {
+   "id": "mu-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1769,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The citation format lacks standard components (case name, parties, or docket number). Juricaf typically provides complete bibliographic data for official decisions, which this abbreviated r"
+  },
+  {
+   "id": "mu-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1505,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Mauritius Supreme Court (SCJ) publishes Supreme Court decisions, not a \"Mauritius FCC Court Decisions\" publisher. The citation format is correct, but the publisher attribution is inaccu"
+  },
+  {
+   "id": "mu-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2052,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Additional Remuneration (No. 2) Act 2009 is a genuine Mauritian statute, but the 2017-06-30 publication date likely refers to when LII indexed or updated it, not its original enactment."
+  },
+  {
+   "id": "mu-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1482,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  This decision cannot be published yet—the date is April 17, 2026, which is in the future. Official judgments are published after they are delivered, not before."
+  },
+  {
+   "id": "mu-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1487,
+   "verdict": false,
+   "correct": true,
+   "raw": "# Answer: False  **Explanation:** The Mauritius Supreme Court does not publish decisions under the title \"Police v M. S. Durgahee & Ors\" dated 2024-04-09 in official records. This case cannot be verif"
+  },
+  {
+   "id": "mu-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1727,
+   "verdict": false,
+   "correct": true,
+   "raw": "# Answer: **False**  **Explanation:** No evidence confirms this specific 2025 merger decision exists in Mauritius Competition Commission's official published decisions database as of the current date."
+  },
+  {
+   "id": "mu-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2058,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Kenya Law publishes Kenyan court decisions. This decision is from Mauritius's Supreme Court and would be published by Mauritian legal authorities, not Kenya's NCLR."
+  },
+  {
+   "id": "mu-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1521,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The decision cites Mauritian jurisdiction (SCJ = Supreme Court of Judicature) but claims publication by Madagascar's Ministry of Justice. These are separate countries with distinct legal sy"
+  },
+  {
+   "id": "mu-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1447,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Additional Remuneration (No. 2) Act 2009 is a Mauritian statute enacted in 2009, not published by LII in 2020. The 2020 date likely reflects when LII digitized/uploaded existing legislation"
+  },
+  {
+   "id": "mu-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1085,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The decision date (2025-04-17) is in the future relative to the knowledge cutoff and cannot be verified as an official published source from Mauritius Supreme Court Judgments."
+  }
+ ]
+}

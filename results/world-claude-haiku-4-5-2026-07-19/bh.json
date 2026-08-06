@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Bahrain — Source-Grounded Citation Reliability (BH)",
+ "country": "BH",
+ "jurisdiction": "Bahrain",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:33:55.140539+00:00",
+ "results": [
+  {
+   "id": "bh-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 4526,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Issue 3873 has not been published as of April 2026, which is a future date beyond current publication records of Bahrain's Official Gazette."
+  },
+  {
+   "id": "bh-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1542,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The date (2026-04-28) is in the future, making this claim impossible. Official Gazettes are published documents recording past legal acts, not future ones."
+  },
+  {
+   "id": "bh-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1336,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Issue 3880 cannot have been published in May 2026, as that date is in the future. Official Gazettes are published with actual historical dates."
+  },
+  {
+   "id": "bh-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2495,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The publication date of April 16, 2026 is in the future, making this claim impossible to verify as an authentic historical record at present."
+  },
+  {
+   "id": "bh-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1630,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The publication date of April 21, 2026 is in the future and therefore cannot have already been published. This is a fictional or incorrectly dated reference."
+  },
+  {
+   "id": "bh-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1647,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The date 2026-04-23 is in the future (from any current perspective). Official Gazettes document past legal enactments, not future publications. This claim is temporally impossible."
+  },
+  {
+   "id": "bh-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1611,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The Official Gazette of Bahrain publishes regularly, but Issue 3873 with a future date (2025-04-09) cannot be verified as an existing official publication as of the knowledge cutoff date."
+  },
+  {
+   "id": "bh-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1280,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Official Gazette of Bahrain is published by the Ministry of Justice, not the Ministry of Information. The publishing ministry in the claim is incorrect."
+  },
+  {
+   "id": "bh-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1449,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The DIFC Legal Database primarily covers United Arab Emirates law, not Bahrain legislation. Bahrain's official gazette would be published through Bahraini government channels, not DIFC data"
+  },
+  {
+   "id": "bh-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1007,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Official Gazette of Bahrain is published by Bahraini authorities, not Jordan's Legislation & Opinion Bureau. The publisher attribution is incorrect."
+  },
+  {
+   "id": "bh-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1603,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The Official Gazette of Bahrain is published by the Ministry of Justice, not the Ministry of Information. This is a fundamental institutional error in the source attribution."
+  },
+  {
+   "id": "bh-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 4602,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Official Gazette of Bahrain is published by the Ministry of Justice, not the Ministry of Information. Additionally, a 2025 publication date is in the future and cannot be verified as au"
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Jersey — Source-Grounded Citation Reliability (JE)",
+ "country": "JE",
+ "jurisdiction": "Jersey",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:39:14.475586+00:00",
+ "results": [
+  {
+   "id": "je-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3483,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Jersey's independent taxation reforms occurred in the 1990s, not 2024. No such 2024 amendment law exists in Jersey's official legislation records."
+  },
+  {
+   "id": "je-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1664,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Jersey Employment & Discrimination Tribunal decisions are cited as '[2025] JET' not '[2025] TRE'. The citation format does not match official Jersey tribunal reporting conventions."
+  },
+  {
+   "id": "je-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2050,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  This identifier and case details cannot be verified as authentic Jersey legal documents. The date format and reference structure don't align with documented Jersey Planning & Environment Tr"
+  },
+  {
+   "id": "je-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1653,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Jersey has no record of this law. The Jersey Legal Information Board (JerseyLaw) maintains official legislation, but this specific 2025 enactment cannot be verified as genuine or published."
+  },
+  {
+   "id": "je-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1694,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Jersey tribunal decisions use citation format \"[year] JER [number]\" or similar standardized formats. \"TRE\" is not a recognized Jersey tribunal reporting abbreviation."
+  },
+  {
+   "id": "je-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1613,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  I cannot verify this claim. Jersey's Planning & Environment Tribunal records are not publicly accessible in formats I can confirm, and the specific identifier format and case details cannot"
+  },
+  {
+   "id": "je-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2139,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Jersey is a British Crown Dependency with its own legislature, not Portugal. This law would be published by the States Assembly of Jersey, not the Portuguese Parliament."
+  },
+  {
+   "id": "je-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2312,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The citation format '[2025] TRE 16' and date 2025-07-23 indicate a Jersey tribunal decision, not a German court ruling. TRE denotes Jersey's Tax Review Tribunal."
+  },
+  {
+   "id": "je-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1121,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.  The identifier format and structure appear inconsistent with established Jersey planning tribunal documentation systems. Jersey references typically use different numbering conventions for p"
+  },
+  {
+   "id": "je-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1393,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Jersey is a Crown Dependency with independent legislation. Jersey laws are not published on Légifrance, which is exclusively for French consolidated legislation."
+  },
+  {
+   "id": "je-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1027,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The citation format '[2025] TRE 010' and reference to \"Entscheidsuche - Swiss Court Decisions\" do not correspond to Jersey's legal reporting system, which uses different citation convention"
+  },
+  {
+   "id": "je-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1066,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Unable to verify. Jersey Planning & Environment Tribunal records with this identifier and details cannot be confirmed as authentic official sources through accessible public documentation c"
+  }
+ ]
+}

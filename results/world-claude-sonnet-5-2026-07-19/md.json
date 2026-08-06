@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Moldova — Source-Grounded Citation Reliability (MD)",
+ "country": "MD",
+ "jurisdiction": "Moldova",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:57:54.106122+00:00",
+ "results": [
+  {
+   "id": "md-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1938,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated/unverifiable case citation; specific case details cannot be confirmed as an authentic published court decision without access."
+  },
+  {
+   "id": "md-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1900,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This date is in the future relative to my knowledge cutoff, so I cannot verify the decision's actual existence or content."
+  },
+  {
+   "id": "md-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2091,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific claim — I have no reliable data confirming this exact regulation, title, or publication date from the National Bank of Moldova."
+  },
+  {
+   "id": "md-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1982,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated or unverifiable citation; I cannot confirm this specific decision's existence, accuracy, or publication details independently."
+  },
+  {
+   "id": "md-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1919,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This date is in the future relative to my knowledge cutoff, so the decision's existence and publication cannot be verified as factual."
+  },
+  {
+   "id": "md-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1999,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This regulation was actually issued by/relevant to the National Committee for Financial Stability or NBM, but exact number/date/title combination cannot be verified as accurate."
+  },
+  {
+   "id": "md-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1902,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier date suffix \"01022022\" doesn't match the case description's \"01022021\" and the given decision date 2021-03-23."
+  },
+  {
+   "id": "md-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2364,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. A Moldovan Constitutional Court decision cannot be published by the Cyprus Tax Tribunal—wrong jurisdiction, wrong institution, and mismatched subject matter entirely."
+  },
+  {
+   "id": "md-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1837,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Moldova's official legal publication source is Monitorul Oficial al Republicii Moldova, not the Hellenic Parliament's Greek \"Raptarchis\" legal code system."
+  },
+  {
+   "id": "md-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1681,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier's date suffix (02022019) doesn't match the stated case description (02022018), indicating a mismatched or fabricated citation reference."
+  },
+  {
+   "id": "md-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1710,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This appears to be a Constitutional Court of Moldova decision (Decizia), unrelated to Romania's ICCJ, which lacks jurisdiction there."
+  },
+  {
+   "id": "md-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2588,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Moldova's official journal is \"Monitorul Oficial,\" not \"Dziennik Ustaw,\" which is Poland's official journal for legal publications."
+  }
+ ]
+}

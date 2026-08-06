@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Faroe Islands — Source-Grounded Citation Reliability (FO)",
+ "country": "FO",
+ "jurisdiction": "Faroe Islands",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:12:52.028605+00:00",
+ "results": [
+  {
+   "id": "fo-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2378,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The claim's 2026 date is in the future, making publication impossible; also, kunngerð (executive regulations) are issued administratively, not by Løgting."
+  },
+  {
+   "id": "fo-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2028,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Faroese executive regulations (kunngerð) are issued by ministries/government, not enacted by the Løgting; also the 2026 date is implausible."
+  },
+  {
+   "id": "fo-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2251,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-04-13 is in the future, making publication impossible to verify; likely fabricated citation with invented details."
+  },
+  {
+   "id": "fo-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2402,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. \"Kunngerð\" (executive order/regulation) is issued by government/ministry, not the Løgting (Parliament). Also, the future 2026 date is unverifiable."
+  },
+  {
+   "id": "fo-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2192,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The 2026 date is in the future relative to typical verifiable records, and this specific citation cannot be confirmed."
+  },
+  {
+   "id": "fo-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2352,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific Kunngerð exists; the citation details appear fabricated, and I lack reliable confirmation."
+  },
+  {
+   "id": "fo-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 3448,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Faroese fisheries regulations (kunngerð) are published via Faroese legal channels (Løgtingslóg/Kunngerðablaðið), not Denmark's Retsinformation database; the future date also raises concern."
+  },
+  {
+   "id": "fo-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2920,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Faroese fisheries regulations (kunngerð) are published via Løgtingið/Lógasavnið, not Denmark's Retsinformation; also the 2026 date is implausible."
+  },
+  {
+   "id": "fo-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2374,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. \"Fráboðan\" (announcement) about ministerial portfolio distribution is an administrative/governmental act, not Løgting parliamentary legislation; likely issued by landsstýri."
+  },
+  {
+   "id": "fo-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2776,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. \"Kunngerð\" (executive order/regulation) is issued by government ministries, not the Løgting (Parliament), which enacts \"Løgtingslóg\" (laws)."
+  },
+  {
+   "id": "fo-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2148,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific law number, title, or date; these precise details appear fabricated and unverifiable against actual Faroese records."
+  },
+  {
+   "id": "fo-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 3566,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Faroese legislation (\"Kunngerð\") is published in Faroese official sources, not the Swedish SFS, which handles Sweden's national legislation."
+  }
+ ]
+}

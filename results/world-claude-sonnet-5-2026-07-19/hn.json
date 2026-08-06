@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Honduras — Source-Grounded Citation Reliability (HN)",
+ "country": "HN",
+ "jurisdiction": "Honduras",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:54:58.200138+00:00",
+ "results": [
+  {
+   "id": "hn-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1912,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears fabricated: TSC (Tribunal Superior de Cuentas) doesn't publish legislation, and the future date (2026) makes verification impossible."
+  },
+  {
+   "id": "hn-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2183,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific resolution number, subject matter, and publication date without access to actual BCH regulatory records or databases."
+  },
+  {
+   "id": "hn-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1782,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific circular number, date, and content combination against actual CNBS records; likely fabricated or unconfirmed citation."
+  },
+  {
+   "id": "hn-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1918,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated/unverifiable citation—the date is future-dated (2026), and TSC isn't a typical legislative publisher for Honduran laws."
+  },
+  {
+   "id": "hn-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3678,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific citation exists; fabricated-sounding official document references require confirmation from Honduras's actual Banco Central publication records."
+  },
+  {
+   "id": "hn-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2355,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific circular number, date, or content — I have no reliable access to confirm this exact CNBS publication exists."
+  },
+  {
+   "id": "hn-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2026,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — TSC (Tribunal Superior de Cuentas) audits public funds; it doesn't publish laws. Official Honduran legislation appears in \"La Gaceta,\" not TSC's virtual library."
+  },
+  {
+   "id": "hn-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1972,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Honduran legal resolutions are published in Honduras's official gazette (La Gaceta), not Mexico's Orden Jurídico Nacional state legislation database."
+  },
+  {
+   "id": "hn-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1534,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Mexico's Orden Jurídico Nacional publishes Mexican state/federal legislation, not Honduran CNBS circulars, which are issued domestically by Honduras's banking regulator."
+  },
+  {
+   "id": "hn-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1520,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This claim cannot be verified; I have no reliable record of this specific law or its publication via TSC's Virtual Library on that date."
+  },
+  {
+   "id": "hn-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1567,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The source cited (Mexico Orden Jurídico Nacional - State Legislation) is a Mexican legal repository, inconsistent with Honduras jurisdiction claimed."
+  },
+  {
+   "id": "hn-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1538,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Honduras's CNBS circulars are official Honduran financial regulatory issuances, not published through Mexico's Orden Jurídico Nacional state legislation database."
+  }
+ ]
+}

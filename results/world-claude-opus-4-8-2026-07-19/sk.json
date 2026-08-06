@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Slovakia — Source-Grounded Citation Reliability (SK)",
+ "country": "SK",
+ "jurisdiction": "Slovakia",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:24:36.410519+00:00",
+ "results": [
+  {
+   "id": "sk-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2055,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The claim references a future date (2026); such an act cannot be verified as published and is fabricated."
+  },
+  {
+   "id": "sk-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2628,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The spisová značka \"I. ÚS\" designates the Constitutional Court (Ústavný súd), not the Supreme Court (Najvyšší súd)."
+  },
+  {
+   "id": "sk-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1909,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-04-17 is in the future, making this citation impossible to verify as a genuine published decision."
+  },
+  {
+   "id": "sk-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1971,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-01-09 is in the future, making verification impossible; the claim cannot be confirmed as authentic."
+  },
+  {
+   "id": "sk-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2073,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Priestupkové konanie (misdemeanor proceedings) are administrative matters handled by administrative authorities, not decided or published by the Supreme Court."
+  },
+  {
+   "id": "sk-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2055,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-04-16 is in the future, making this citation impossible to verify as a genuine published decision."
+  },
+  {
+   "id": "sk-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 8212,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier format is fabricated, and no verifiable 2026 Zbierka zákonov entry with these exact details can be confirmed."
+  },
+  {
+   "id": "sk-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2207,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The case designation \"I. ÚS\" denotes the Constitutional Court (Ústavný súd), not the Supreme Court (Najvyšší súd)."
+  },
+  {
+   "id": "sk-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2594,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Slovak Antimonopoly Office is abbreviated \"PMÚ\" (Protimonopolný úrad), and this claim's authenticity and citation details cannot be verified."
+  },
+  {
+   "id": "sk-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1686,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier encodes date 2026-01-10, contradicting the stated 2026-01-09 promulgation date; this inconsistency invalidates the claim."
+  },
+  {
+   "id": "sk-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2166,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Slovakia's jurisdiction and Slovak-language title indicate a Slovak court; the Turkish Constitutional Court is irrelevant and geographically inconsistent here."
+  },
+  {
+   "id": "sk-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2189,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Jurisdiction is Slovakia, not Georgia; a Georgian Supreme Court publisher is inconsistent, and the 2026 date is future-dated."
+  }
+ ]
+}

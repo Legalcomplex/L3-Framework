@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Sweden — Source-Grounded Citation Reliability (SE)",
+ "country": "SE",
+ "jurisdiction": "Sweden",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:02:11.028160+00:00",
+ "results": [
+  {
+   "id": "se-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2683,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This citation references a future-dated law (2026) that cannot be verified as existing; I cannot confirm fabricated legal citations."
+  },
+  {
+   "id": "se-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2297,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This appears to be a fabricated or unverifiable future-dated source; I cannot confirm a Riksdag publication with this exact title and date exists."
+  },
+  {
+   "id": "se-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2382,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Case number 3034-24 would be from 2024 (per numbering convention), and 2026-02-04 is a future date, making verification impossible."
+  },
+  {
+   "id": "se-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2249,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The date 2025-12-29 is in the future relative to current knowledge, and I cannot verify this specific case citation exists."
+  },
+  {
+   "id": "se-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2461,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This appears to be a fabricated citation—the date is in the future (2026), making verification of this specific decision's existence and publication impossible."
+  },
+  {
+   "id": "se-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2109,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated citation—I cannot verify SFS 2025:1536 exists; specific future-dated instructions require verification against actual Swedish legislative records."
+  },
+  {
+   "id": "se-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2968,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — Finlex is Finland's official legal database, not Sweden's; Swedish statutes (SFS) are published via Svensk författningssamling/Regeringskansliet, not Finlex."
+  },
+  {
+   "id": "se-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2019,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Riksdag committee report identifiers don't match this format (\"HD03120\"), and I cannot verify this specific document's existence or accuracy."
+  },
+  {
+   "id": "se-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1762,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '3034-25' implies case year 2025, inconsistent with 'Mål: 3034-24' (2024) and an unissued future 2026 decision date."
+  },
+  {
+   "id": "se-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1615,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The case number format (Ö 1052-25) indicates a 2025 case, inconsistent with the stated 2023-12-29 decision date, making the citation erroneous."
+  },
+  {
+   "id": "se-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1664,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** ÖM 6378-25's numbering indicates registration year 2025, contradicting the stated 2023-02-17 decision date, making the citation internally inconsistent."
+  },
+  {
+   "id": "se-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 4358,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Norwegian Parliament (Stortinget) does not publish Swedish statutory instruments; Swedish förordningar are published via Svensk författningssamling (SFS), not Norwegian sources."
+  }
+ ]
+}

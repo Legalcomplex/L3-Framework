@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Guinea-Bissau — Source-Grounded Citation Reliability (GW)",
+ "country": "GW",
+ "jurisdiction": "Guinea-Bissau",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:54:45.632677+00:00",
+ "results": [
+  {
+   "id": "gw-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2581,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — no verifiable official record confirms a \"Declaração de Bissau (2015)\" issued by Guinea-Bissau's National People's Assembly on that specific date exists."
+  },
+  {
+   "id": "gw-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1957,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this appears to be a fabricated or unverifiable citation; I cannot confirm Guinea-Bissau's Ministry of Economy & Finance published such a specific tax code compilation."
+  },
+  {
+   "id": "gw-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2118,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated or unverifiable citation; no such specific official publication record can be confirmed as accurate or genuine."
+  },
+  {
+   "id": "gw-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2245,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific despacho number, date, or content exists; likely a fabricated or unverifiable citation lacking reliable confirmation."
+  },
+  {
+   "id": "gw-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2047,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific citation; Guinea-Bissau's official gazette is the Boletim Oficial, and no such Assembleia record is confirmably authentic."
+  },
+  {
+   "id": "gw-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2140,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific instructional order (IS n° 08/2021) exists with that exact title, date, or source in official Guinea-Bissau records."
+  },
+  {
+   "id": "gw-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2271,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** A \"Declaração de Bissau\" concerning Guinea-Bissau would not be officially published through Ghana's Parliament Institutional Repository; this attribution is implausible and unverifiable."
+  },
+  {
+   "id": "gw-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2109,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Código do Imposto Profissional is a tax law under Guinea-Bissau's Ministry of Finance, not a Central Bank (BCRG) regulatory publication."
+  },
+  {
+   "id": "gw-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1644,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This appears to be a fabricated or unverifiable citation; no such specific official publication record can be confirmed for Guinea-Bissau's legislature on that date."
+  },
+  {
+   "id": "gw-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1753,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Banque Centrale de Mauritanie is Mauritania's central bank, unrelated to Guinea-Bissau's legal gazette (Boletim Oficial), making this an implausible, mismatched publication source."
+  },
+  {
+   "id": "gw-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2478,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — I cannot verify this specific bibliographic claim; Guinea-Bissau's legislative records are poorly indexed, and this citation appears unverifiable or fabricated."
+  },
+  {
+   "id": "gw-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2759,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** I cannot verify this specific citation's accuracy—details like instrument number, title, publication source, and date require confirmation from Guinea-Bissau's official gazette records."
+  }
+ ]
+}

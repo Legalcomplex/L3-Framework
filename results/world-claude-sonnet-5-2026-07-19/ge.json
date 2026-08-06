@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Georgia — Source-Grounded Citation Reliability (GE)",
+ "country": "GE",
+ "jurisdiction": "Georgia",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:53:54.765496+00:00",
+ "results": [
+  {
+   "id": "ge-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2008,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated or unverifiable future-dated case; I cannot confirm such a decision exists in Georgian Constitutional Court records."
+  },
+  {
+   "id": "ge-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1957,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific case citation exists; the case number, date, and content appear unverifiable and likely fabricated or hallucinated."
+  },
+  {
+   "id": "ge-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1938,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify specific Matsne database identifiers, dates, and law titles correspond accurately without access to the actual database records."
+  },
+  {
+   "id": "ge-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2818,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this appears to be a fabricated or unverifiable future-dated citation; no such ordinance can be confirmed in actual Georgian legal publication records."
+  },
+  {
+   "id": "ge-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2074,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific bibliographic claim's precise publication date, source details, or existence without access to authoritative NBG regulatory databases directly."
+  },
+  {
+   "id": "ge-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2815,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This identifier/date format cannot be verified against actual Georgian Supreme Court records; the future date (2026) suggests fabricated or unverifiable citation."
+  },
+  {
+   "id": "ge-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2129,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The date 2026-02-12 is in the future and unverifiable; identifier format also doesn't match actual Georgian Constitutional Court numbering conventions typically used."
+  },
+  {
+   "id": "ge-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2110,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. A single case identifier (ბს-1354(კ-25)) cannot correspond to a different case number (ბს-701(კ-25)); mismatched identifiers indicate an inaccurate or fabricated citation."
+  },
+  {
+   "id": "ge-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2979,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Georgia's relevant law is \"სოფლის მეურნეობის სამინისტროს დებულების დამტკიცების შესახებ\" or similar acts—this exact title/date combination cannot be verified as accurate."
+  },
+  {
+   "id": "ge-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1828,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — Georgia's official gazette is not Croatia's Narodne novine; a Georgian legal act would be published in Georgia's Legislative Herald (Matsne), not Croatia's gazette."
+  },
+  {
+   "id": "ge-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2139,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This is a Georgian (National Bank of Georgia) banking regulation, not Turkish legislation; the dataset attribution/source mismatches the jurisdiction."
+  },
+  {
+   "id": "ge-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1706,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific citation exists; case numbers and dates for Georgian Supreme Court decisions require direct database confirmation, which I lack."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Guatemala — Source-Grounded Citation Reliability (GT)",
+ "country": "GT",
+ "jurisdiction": "Guatemala",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:54:36.924774+00:00",
+ "results": [
+  {
+   "id": "gt-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2161,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific case citation (Expediente 967-2000, dated 2001-04-03) as an authentic, confirmed decision from Guatemala's Corte de Constitucionalidad without direct source ac"
+  },
+  {
+   "id": "gt-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2151,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Ley de Almacenes Generales de Depósito is a Guatemalan decree (Decreto 1746) published officially in the Diario de Centro América, not via Banco de Guatemala's compilation."
+  },
+  {
+   "id": "gt-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2073,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific case citation exists; Corte de Constitucionalidad expediente numbers and dates require direct database confirmation to authenticate."
+  },
+  {
+   "id": "gt-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1939,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Guatemala's savings and loan institutions are governed by general banking law and Ley de Bancos y Grupos Financieros, not this specific named statute."
+  },
+  {
+   "id": "gt-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1942,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific case citation, docket number, and date correspond to an actual published Corte de Constitucionalidad decision."
+  },
+  {
+   "id": "gt-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2265,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Ley de Sociedades Financieras Privadas (Decreto 208) is published via the Congreso/Diario de Centro América, not Banco de Guatemala's Marco Legal."
+  },
+  {
+   "id": "gt-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2060,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The date (1999-04-03) precedes the case number's implied year 2000, an internal inconsistency indicating fabricated or inaccurate citation details."
+  },
+  {
+   "id": "gt-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2066,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Guatemala's law would be published in Guatemala's official gazette (Diario de Centro América), not through Mexico's Orden Jurídico Nacional state legislation portal."
+  },
+  {
+   "id": "gt-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1628,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** I cannot verify this specific case citation (Expediente 1392-1996, dated 1996-06-25) exists in Guatemala's Corte de Constitucionalidad official records."
+  },
+  {
+   "id": "gt-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2359,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Honduras's Tribunal Superior de Cuentas is not an official publisher of Guatemalan legislation, which requires publication in Guatemala's Diario de Centro América."
+  },
+  {
+   "id": "gt-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 3358,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Guatemala's Corte de Constitucionalidad decisions (\"Apelación de Sentencia de Amparo\") would not be published by Mexico's SCJN, a distinct national judicial institution."
+  },
+  {
+   "id": "gt-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1917,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Guatemala's Ley de Sociedades Financieras Privadas (Decreto 208) is officially published in Diario de Centro América, not Banco de Guatemala's compilation site."
+  }
+ ]
+}

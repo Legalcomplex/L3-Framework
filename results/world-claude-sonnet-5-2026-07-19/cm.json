@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Cameroon — Source-Grounded Citation Reliability (CM)",
+ "country": "CM",
+ "jurisdiction": "Cameroon",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:51:36.529887+00:00",
+ "results": [
+  {
+   "id": "cm-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2233,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific citation's accuracy—decision numbers, dates, and content from Cameroon's Constitutional Council require confirmation against official sources I cannot access r"
+  },
+  {
+   "id": "cm-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2550,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific law number, date, or content exists; likely fabricated or unconfirmed citation lacking authoritative source verification."
+  },
+  {
+   "id": "cm-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2046,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This identifier appears fabricated; I cannot verify such a specific Cameroon Supreme Court citation exists in any authenticated official database or reporter."
+  },
+  {
+   "id": "cm-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2089,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific citation's authenticity—case numbers, dates, and rulings from Cameroon's Constitutional Council require direct source confirmation before accepting as accurate"
+  },
+  {
+   "id": "cm-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2536,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this citation exists; no such law appears in confirmed Cameroonian legislative records, suggesting a fabricated or unverifiable reference."
+  },
+  {
+   "id": "cm-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1972,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific identifier-citation correspondence against actual Cameroon Supreme Court records; such precise details are unconfirmable."
+  },
+  {
+   "id": "cm-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1842,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Lex.ao is an Angolan legal database; a Cameroonian Constitutional Council decision would not plausibly be published there."
+  },
+  {
+   "id": "cm-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2100,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Cameroon's laws are published in Cameroon's own Official Gazette (SGG Yaoundé), not Congo-Brazzaville's Official Journal, an unrelated jurisdiction."
+  },
+  {
+   "id": "cm-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2136,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier contains \"035PFD2024\" but the citation references \"035/P/FD/2023\" — the years are mismatched, indicating a fabricated or inconsistent reference."
+  },
+  {
+   "id": "cm-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1601,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** LegalRDC covers DR Congo jurisprudence, not Cameroon; a Cameroonian Constitutional Council decision would not be published there."
+  },
+  {
+   "id": "cm-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1592,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Cameroon's legal instruments cannot be authoritatively published via \"Droit Congolais,\" which is a distinct DRC-focused legal portal, not Cameroonian."
+  },
+  {
+   "id": "cm-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1517,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier suffix \"03COM\" doesn't match the cited case number \"02/COM,\" indicating a mismatch between the stated identifier and description."
+  }
+ ]
+}

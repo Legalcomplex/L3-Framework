@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Tanzania — Source-Grounded Citation Reliability (TZ)",
+ "country": "TZ",
+ "jurisdiction": "Tanzania",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:04:26.656235+00:00",
+ "results": [
+  {
+   "id": "tz-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2245,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this claim; I have no reliable record confirming this specific Act's existence, number, or that exact publication date/source."
+  },
+  {
+   "id": "tz-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1898,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Acquisition of Buildings Regulations, 1971 stem from the Acquisition of Buildings Act, but TanzLII's publication date/details cannot be verified as stated."
+  },
+  {
+   "id": "tz-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2089,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated or unverifiable citation; no confirmed official CMSA regulation titled exactly this exists publicly."
+  },
+  {
+   "id": "tz-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2073,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This case falls under the jurisdiction of the Energy and Water Utilities Regulatory Authority appeals process, not the Fair Competition Tribunal's Case Digest publication."
+  },
+  {
+   "id": "tz-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2042,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Employment and Labour Relations Act (No. 6 of 2004) was originally enacted long before 2025; that date cannot mark original publication."
+  },
+  {
+   "id": "tz-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2659,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.**  TanzLII (Tanzania Legal Information Institute) is an online legal database that republishes legal instruments; it did not originally \"publish\" this 1992 regulation on that date—it merely h"
+  },
+  {
+   "id": "tz-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1987,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Tanzania's laws are published in the Tanzania Government Gazette, not Seychelles Official Gazette, which is a different jurisdiction's publication entirely."
+  },
+  {
+   "id": "tz-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 3213,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** TanzLII publishes court judgments and legislation texts but did not \"publish\" this 1971 regulation on that specific 2005 date originally."
+  },
+  {
+   "id": "tz-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1890,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Kenya Law (National Council for Law Reporting) publishes Kenyan legal materials, not Tanzanian regulatory documents like CMS/foreign listing requirements from Tanzania's jurisdiction."
+  },
+  {
+   "id": "tz-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2618,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Madagascar's Ministry of Justice would not publish Tanzanian appeal decisions; this is a jurisdictional mismatch, indicating a fabricated or incorrect source attribution."
+  },
+  {
+   "id": "tz-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1656,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Employment and Labour Relations Act (Cap. 366) originates from Tanzania's Parliament (2004), not the Attorney General's Management Information System publication date/source."
+  },
+  {
+   "id": "tz-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1710,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** TanzLII is a legal database that hosts documents but is not the original publisher; the Regulations were published in the Government Gazette by government authority."
+  }
+ ]
+}

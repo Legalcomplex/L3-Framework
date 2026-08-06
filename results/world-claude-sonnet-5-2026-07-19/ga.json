@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Gabon — Source-Grounded Citation Reliability (GA)",
+ "country": "GA",
+ "jurisdiction": "Gabon",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:53:46.020849+00:00",
+ "results": [
+  {
+   "id": "ga-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2347,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This citation appears fabricated—the case number format \"RANDOM510644569\" is implausible and cannot be verified as an authentic Juricaf record."
+  },
+  {
+   "id": "ga-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1991,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific claim — I lack reliable access to Gabon's Journal Officiel database to confirm this exact publication date and title."
+  },
+  {
+   "id": "ga-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1986,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This citation cannot be verified; the specific decision number, name, date, and content combination appears fabricated or unconfirmed against official Gabonese Constitutional Court records."
+  },
+  {
+   "id": "ga-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2011,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This citation appears fabricated—the case reference \"RANDOM1645329917\" is not a legitimate identifier format used by Juricaf's databases."
+  },
+  {
+   "id": "ga-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2005,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The date sequence is inconsistent—an ordinance numbered with \"2024\" dated 22/01/2025 is internally contradictory and likely fabricated/inaccurate."
+  },
+  {
+   "id": "ga-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 4272,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific decision's exact date, number, and content match, as I lack reliable access to Gabon's Cour Constitutionnelle database for confirmation."
+  },
+  {
+   "id": "ga-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2166,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier ends in \"570\" but the citation references \"569\" — a mismatched/inconsistent suffix indicates fabricated, non-corresponding identifiers."
+  },
+  {
+   "id": "ga-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2503,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** I cannot verify this specific bibliographic claim—the exact publication, date, and ministerial title combination cannot be confirmed as accurate from available sources."
+  },
+  {
+   "id": "ga-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2057,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Gabon's Constitutional Court decisions cannot be published by Angola's Supreme Court—different countries have separate, unrelated judicial institutions and publication systems."
+  },
+  {
+   "id": "ga-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1671,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier suffix \"RANDOM1645329918\" and cited case number \"RANDOM1645329917\" mismatch, indicating fabricated, non-corresponding, or inconsistent reference identifiers."
+  },
+  {
+   "id": "ga-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2352,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — this ordinance concerns Gabon's own institution (École Nationale d'Administration), so it would be published in Gabon's Official Journal, not Congo-Brazzaville's."
+  },
+  {
+   "id": "ga-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1518,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Gabon's Constitutional Court decisions cannot be published by Congo-Brazzaville's Constitutional Court Decisions source; jurisdictions are distinct national bodies."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Comoros — Source-Grounded Citation Reliability (KM)",
+ "country": "KM",
+ "jurisdiction": "Comoros",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:56:35.095494+00:00",
+ "results": [
+  {
+   "id": "km-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2554,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This citation cannot be verified; case numbers, dates, and details for Comorian Cour suprême decisions are not reliably indexed or confirmable through accessible sources."
+  },
+  {
+   "id": "km-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2570,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific decree/loi citation exists in official Comorian sources; the reference details cannot be confirmed as authentic."
+  },
+  {
+   "id": "km-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2167,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific Juricaf identifier corresponds to an actual documented Comoros Supreme Court decision from that exact date."
+  },
+  {
+   "id": "km-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2083,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This citation cannot be verified as accurate; specific details like number, date, and title may be fabricated or unconfirmed against official Comorian sources."
+  },
+  {
+   "id": "km-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2169,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this citation cannot be verified as a genuine official record; specific case details (docket \"p1-civil\") appear fabricated or unconfirmed."
+  },
+  {
+   "id": "km-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1921,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation's accuracy—the law number, date, title, or publication details may be fabricated or unconfirmed."
+  },
+  {
+   "id": "km-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1982,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — the identifier ends in \"2017CIVIL008,\" but the cited case number is \"2017-civil-007,\" a mismatched docket number."
+  },
+  {
+   "id": "km-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2169,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Comorian legal texts are officially published in Comoros' Journal Officiel, not through Tanzania's Attorney General's Office Management Information System, an unrelated foreign institution."
+  },
+  {
+   "id": "km-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1847,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier ends in \"03,\" but the citation references decision \"02\" — a mismatch between the stated identifier and corresponding case number."
+  },
+  {
+   "id": "km-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1543,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Seychelles Official Gazette publishes Seychellois law, not Comorian legislation; Comoros uses its own official journal for legal publications."
+  },
+  {
+   "id": "km-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1792,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This citation belongs to Comoros' Cour suprême, not Mauritius; the claimed publication source misattributes jurisdiction entirely, making it incorrect."
+  },
+  {
+   "id": "km-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1549,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Kenya Law (National Council for Law Reporting) publishes Kenyan legal materials, not Comorian legislation; this citation's source attribution is implausible."
+  }
+ ]
+}

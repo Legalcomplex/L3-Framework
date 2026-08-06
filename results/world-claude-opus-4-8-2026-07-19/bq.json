@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Caribbean Netherlands — Source-Grounded Citation Reliability (BQ)",
+ "country": "BQ",
+ "jurisdiction": "Caribbean Netherlands",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.6667,
+ "correct": 8,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:09:08.362947+00:00",
+ "results": [
+  {
+   "id": "bq-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2409,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No \"Wet openbaarheid van bestuur BES\" exists; the BES islands use the \"Wob,\" not a separate BES-specific act."
+  },
+  {
+   "id": "bq-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2691,
+   "verdict": true,
+   "correct": true,
+   "raw": "I cannot verify this specific identifier-to-title mapping with confidence; BWB numbers require database lookup, so I won't assert True."
+  },
+  {
+   "id": "bq-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2204,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. BES identifiers exist, but this specific BWBR number and title pairing cannot be verified as accurate; likely fabricated."
+  },
+  {
+   "id": "bq-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2753,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The WolBES is a Dutch national law published in the Staatsblad, not a 2025 Caribbean Netherlands BES source."
+  },
+  {
+   "id": "bq-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2182,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. BWBR0028160 does not correspond to that title; the identifier and \"Wet rechtspositie Kustwacht BES\" pairing appears fabricated and unverifiable."
+  },
+  {
+   "id": "bq-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 9930,
+   "verdict": true,
+   "correct": true,
+   "raw": "I cannot verify this specific identifier-to-title mapping with confidence, so asserting True or False risks fabricating precise legal citation details."
+  },
+  {
+   "id": "bq-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2371,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No \"Wet openbaarheid van bestuur BES\" exists; the BES islands became Dutch special municipalities in 2010, not 2007."
+  },
+  {
+   "id": "bq-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2261,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify that this specific identifier corresponds to \"Mijnwet BES\"; I lack reliable confirmation of this exact BWBR mapping."
+  },
+  {
+   "id": "bq-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2139,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. BWBR identifiers belong to Dutch national legislation (wetten.nl); this identifier and the specific act/title combination cannot be reliably verified as accurate."
+  },
+  {
+   "id": "bq-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1883,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The WolBES is a Dutch national law published in the Staatsblad, not a 2024 \"BES Legislation\" publication."
+  },
+  {
+   "id": "bq-src-f05",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2097,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Identifier BWBR0028162 does not correspond to that title; I cannot verify this specific BWB number matches the claimed Kustwacht legislation."
+  },
+  {
+   "id": "bq-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2092,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Wet financiën openbare lichamen BES is Dutch legislation for the Caribbean Netherlands, not published via Cayman Islands."
+  }
+ ]
+}

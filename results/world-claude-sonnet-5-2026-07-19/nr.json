@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Nauru — Source-Grounded Citation Reliability (NR)",
+ "country": "NR",
+ "jurisdiction": "Nauru",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:59:53.198715+00:00",
+ "results": [
+  {
+   "id": "nr-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2905,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated/placeholder citation—no verifiable \"Sports Act 2026\" exists on RONLAW as of available records."
+  },
+  {
+   "id": "nr-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2224,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this citation appears fabricated/unverifiable; I cannot confirm a real 2026 NRSC decision with these specifics exists on PacLII."
+  },
+  {
+   "id": "nr-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1981,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated future-dated entry; I cannot verify this specific identifier-title correspondence in RONLAW's actual database records."
+  },
+  {
+   "id": "nr-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2152,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this citation refers to a future date (2026) not yet occurred, so it cannot be a verifiable, existing published PacLII decision."
+  },
+  {
+   "id": "nr-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1914,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The publication date (2026-03-01) precedes the certification date (31 March 2026), which is logically impossible for an official legal source."
+  },
+  {
+   "id": "nr-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2205,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This citation appears fabricated—no verifiable \"Akaruro v Akaruwo\" case exists in PacLII's Nauru Court Decisions records for that date."
+  },
+  {
+   "id": "nr-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2137,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This appears fabricated—Nauru's legal database identifiers aren't publicly verifiable in this format, and 2026 legislation cannot be confirmed as enacted yet."
+  },
+  {
+   "id": "nr-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2726,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. NRSC denotes Nauru Supreme Court decisions—published by Nauru's Judiciary, not the Republic of Marshall Islands Judiciary, which is a different jurisdiction entirely."
+  },
+  {
+   "id": "nr-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1666,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This claim cites an unverifiable database identifier and a future-dated 2026 Act, which cannot be confirmed as an authentic official record."
+  },
+  {
+   "id": "nr-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1566,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This citation references a future date (2026), making it impossible to verify as an existing published decision in the corpus currently."
+  },
+  {
+   "id": "nr-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1522,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — the certification date (31 March 2026) postdates the publication date (2026-03-01), an impossible sequence indicating a fabricated citation."
+  },
+  {
+   "id": "nr-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1639,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Nauru Supreme Court decisions (NRSC) are published via PacLII/Nauru courts, not the Federal Court of Australia Judgments database."
+  }
+ ]
+}

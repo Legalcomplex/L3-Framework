@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Benin — Source-Grounded Citation Reliability (BJ)",
+ "country": "BJ",
+ "jurisdiction": "Benin",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 10,
+ "blocked": 0,
+ "unparsed": 2,
+ "errors": [],
+ "accuracy": 0.6,
+ "correct": 6,
+ "parse_rate": 0.8333,
+ "passed": false,
+ "timestamp": "2026-07-19T07:34:03.295794+00:00",
+ "results": [
+  {
+   "id": "bj-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1617,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The citation format appears malformed for Benin's Supreme Court. Standard Beninese court citations require proper case numbering and publication details not fully evident here."
+  },
+  {
+   "id": "bj-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1731,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  Decision \"EL-25-002\" appears to reference a 2025 decision, but this date is in the future. As of now, such a decision cannot exist or be verified as published."
+  },
+  {
+   "id": "bj-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2340,
+   "verdict": null,
+   "correct": false,
+   "raw": "# Evaluation: **Unable to Determine**  I cannot verify this claim as I lack access to Benin's LEGIS Legal Database to confirm the law's publication date or existence. Independent verification would be"
+  },
+  {
+   "id": "bj-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1743,
+   "verdict": null,
+   "correct": false,
+   "raw": "# Evaluation: **CANNOT DETERMINE**  **Explanation:** Without access to Benin's official legislative records from July 9, 1998, I cannot verify this specific law's publication date or authenticity. Off"
+  },
+  {
+   "id": "bj-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2033,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The citation format appears problematic. Benin's Supreme Court (Cour suprême) was reorganized into the Constitutional Court and Court of Cassation, making this reference ambiguous and potential"
+  },
+  {
+   "id": "bj-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 3065,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier references a 2026 date, which is in the future and cannot represent an existing official decision from Benin's Constitutional Court."
+  },
+  {
+   "id": "bj-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1916,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier shows \"89CJS\" but the cited decision reference is \"88/CJ-S,\" indicating a mismatch in the case number sequence."
+  },
+  {
+   "id": "bj-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1826,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The date 2026-12-26 is in the future (beyond current date), making this decision impossible to have been published. Future decisions cannot exist as official legal sources."
+  },
+  {
+   "id": "bj-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1309,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The law number and date format are Beninese, but NAFDAC is Nigeria's agency, not Benin's. Benin's pharmaceutical authority is AEMPS, not a Nigerian agency."
+  },
+  {
+   "id": "bj-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1303,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This is a Beninese law (indicated by \"Loi N°\" and reference to Benin jurisdiction), not a Nigerian legal instrument. The Nigerian Communications Commission would not be the publisher of Ben"
+  },
+  {
+   "id": "bj-src-f05",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1260,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier contains '92CJCM' but the cited decision reference is '90/CJ-CM', indicating a mismatch in the case number designation that contradicts the bibliographic claim."
+  },
+  {
+   "id": "bj-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1334,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Constitutional Court of Benin uses the nomenclature \"DCC\" for decisions, but the specific decision number and date format require verification against official court records to confirm "
+  }
+ ]
+}

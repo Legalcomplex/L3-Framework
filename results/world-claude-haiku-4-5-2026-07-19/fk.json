@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Falkland Islands — Source-Grounded Citation Reliability (FK)",
+ "country": "FK",
+ "jurisdiction": "Falkland Islands",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:37:01.024435+00:00",
+ "results": [
+  {
+   "id": "fk-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1660,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Administration of Estates Ordinance 1949 predates the Falkland Islands Legislation database (established 2022), so it couldn't have been originally published through that source in 2022."
+  },
+  {
+   "id": "fk-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2595,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Inquest decisions are typically published by coroners' offices or judicial authorities, not by a body specifically named \"Falkland Islands Court Decisions.\" The publisher attribution appear"
+  },
+  {
+   "id": "fk-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1380,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Falkland Islands does not have an ordinance by this title published on that date. Verification would require access to the official Falkland Islands Legislation database."
+  },
+  {
+   "id": "fk-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2085,
+   "verdict": false,
+   "correct": false,
+   "raw": "# Answer: False  **Explanation:** The Falkland Islands does not have a dedicated \"Court Decisions\" publisher. Official judgments are published through the Falkland Islands Government or judicial archi"
+  },
+  {
+   "id": "fk-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1681,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Ordinance predates 1940 by decades as an official legal source in the Falkland Islands legislative collection system, which was formally organized much later than the claimed 2017 publicati"
+  },
+  {
+   "id": "fk-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1466,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The Falkland Islands has no established court decision publication system called \"Falkland Islands Court Decisions.\" Court decisions are not systematically published under this official name."
+  },
+  {
+   "id": "fk-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1903,
+   "verdict": false,
+   "correct": true,
+   "raw": "# Evaluation: False  The 'Administration of Estates Ordinance 1949' predates Falkland Islands Legislation's 2024 publication by approximately 75 years, making a 2024 publication date implausible for t"
+  },
+  {
+   "id": "fk-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1500,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Falkland Islands have their own court system and legal publications. This decision would be published by Falkland Islands authorities, not Colombia's Constitutional Court or Colombian o"
+  },
+  {
+   "id": "fk-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1210,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Falkland Islands has its own legal system and publishes ordinances through official Falkland Islands channels, not through Uruguay's IMPO (Imprenta Nacional) database."
+  },
+  {
+   "id": "fk-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1078,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The decision date (2025-01-01) is in the future relative to when this claim would be verified. Additionally, no such case can be confirmed in Falkland Islands official court records."
+  },
+  {
+   "id": "fk-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1176,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Falkland Islands Legislation database was established in 2009, making a 1940 ordinance's first publication through it in 2015 implausible as the original source."
+  },
+  {
+   "id": "fk-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1031,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Falkland Islands has its own independent judiciary and legal system. Argentina's courts would not publish decisions from Falkland Islands cases."
+  }
+ ]
+}

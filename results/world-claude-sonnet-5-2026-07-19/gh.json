@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Ghana — Source-Grounded Citation Reliability (GH)",
+ "country": "GH",
+ "jurisdiction": "Ghana",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:54:04.611009+00:00",
+ "results": [
+  {
+   "id": "gh-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2291,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** While Ghana enacted the Accident and Incident Investigation and Prevention Bureau Act, 2020 (Act 1028), GhaLII was not established/operational hosting this content in October 2020."
+  },
+  {
+   "id": "gh-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2701,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Ghana's Bank of Ghana has not verifiably published this specific \"Draft Open Banking Directive\" with that exact title and date; citation appears fabricated or unverifiable."
+  },
+  {
+   "id": "gh-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 5817,
+   "verdict": true,
+   "correct": true,
+   "raw": "**True**  The Community Water and Sanitation Agency Act, 1998 (Act 564) is a genuine Ghanaian statute enacted around that date, plausibly archived accordingly."
+  },
+  {
+   "id": "gh-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2125,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific bibliographic claim—no confirmed record of an \"Environmental Protection Bill, 2024\" exists in accessible Ghanaian parliamentary sources as described."
+  },
+  {
+   "id": "gh-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2188,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Act 864 (2013), not Act 754, is the Communications Service Tax (Amendment) Act; Act 754 predates 2013 and is misattributed here."
+  },
+  {
+   "id": "gh-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2412,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Ghana's Alternative Dispute Resolution Act is Act 798, enacted in 2010, but it was signed/dated 31 May 2010 as Act 798 — however, GhaLII did not exist in 2010; it launched later, so this at"
+  },
+  {
+   "id": "gh-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1977,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Ghana's Act would be published by Ghana's Parliament/Assembly of Ghana, not Burkina Faso's Assemblée Nationale — mismatched jurisdiction entirely."
+  },
+  {
+   "id": "gh-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2004,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This appears fabricated — Bank of Ghana has no verifiable \"Draft Open Banking Directive\" dated 201224 with a 2026 publication timestamp confirmed."
+  },
+  {
+   "id": "gh-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1635,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Community Water and Sanitation Agency Act, 1998 (Act 564) is Ghanaian legislation, properly published via Ghana Legal Information Institute, not Sierra Leone's."
+  },
+  {
+   "id": "gh-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1757,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Nigeria's National Pension Commission is unrelated to Ghana's environmental legislation; a pensions regulator cannot publish an \"Environmental Protection Bill\" for Ghana's jurisdiction."
+  },
+  {
+   "id": "gh-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1802,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Ghana's Communications Service Tax (Amendment) Act is not published via Nigeria's Laws of the Federation (PLAC); Ghana has its own separate legal publication system."
+  },
+  {
+   "id": "gh-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1873,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Ghana's Alternative Dispute Resolution Act is Act 798 (2010), published in Ghana's Gazette, not Guinea's Journal Officiel."
+  }
+ ]
+}

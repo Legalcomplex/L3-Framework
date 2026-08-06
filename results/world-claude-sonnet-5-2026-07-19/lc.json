@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Saint Lucia — Source-Grounded Citation Reliability (LC)",
+ "country": "LC",
+ "jurisdiction": "Saint Lucia",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:57:06.160213+00:00",
+ "results": [
+  {
+   "id": "lc-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2056,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific bibliographic claim against actual Saint Lucia Government Gazette records; the exact publication date/content is unconfirmed."
+  },
+  {
+   "id": "lc-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2920,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation exists; Saint Lucia's 2025 legislative record for this exact act/date is unconfirmed in available sources."
+  },
+  {
+   "id": "lc-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1897,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated or unverifiable citation; I cannot confirm a Saint Lucia S.I. No. 6 of 2026 exists officially."
+  },
+  {
+   "id": "lc-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2060,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Saint Lucia's Financial Services Regulatory Authority Act would be published via the Government Printery/official Gazette, not by the Authority itself, which the Act creates."
+  },
+  {
+   "id": "lc-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1999,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — Collective agreements are not official legislation; Saint Lucia's Government Legislation Portal publishes statutes and statutory instruments, not labor union agreements."
+  },
+  {
+   "id": "lc-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2087,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific gazette citation exists; Saint Lucia Government Gazette publication dates and content require official confirmation from primary government sources."
+  },
+  {
+   "id": "lc-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1944,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Saint Lucia is not the Bahamas; jurisdictions differ, and Bahamas Consolidated Legislation cannot publish a Saint Lucia legal source or date."
+  },
+  {
+   "id": "lc-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2253,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Cayman Islands Legislation would not officially publish a Saint Lucia act; jurisdictional mismatch makes this citation implausible and unverifiable."
+  },
+  {
+   "id": "lc-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1939,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Saint Lucia legislation isn't published via Aruba's DWJZ Legislation Archive; this source pairing is fabricated and jurisdictionally implausible."
+  },
+  {
+   "id": "lc-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1838,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Saint Lucia's Financial Services Regulatory Authority Act is published through Saint Lucia's official legal publisher, not Curaçao's government legislation system."
+  },
+  {
+   "id": "lc-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2219,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Saint Lucia's collective agreement would not be published via \"Laws of Grenada,\" a separate jurisdiction's distinct official legal publication database."
+  },
+  {
+   "id": "lc-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2334,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Saint Lucia is a separate Commonwealth jurisdiction; Sint Maarten Government Legislation cannot publish Saint Lucian legal sources—they belong to different legal systems entirely."
+  }
+ ]
+}

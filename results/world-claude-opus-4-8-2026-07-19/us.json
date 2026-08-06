@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — United States — Source-Grounded Citation Reliability (US)",
+ "country": "US",
+ "jurisdiction": "United States",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:27:15.959179+00:00",
+ "results": [
+  {
+   "id": "us-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3133,
+   "verdict": true,
+   "correct": true,
+   "raw": "**True.**  California Labor Code § 510 exists (governing overtime/workday) and is officially published through California Legislative Information; the date is plausible."
+  },
+  {
+   "id": "us-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2362,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific case's existence, parties, or date; asserting CAP publication without confirmation risks fabricated citation."
+  },
+  {
+   "id": "us-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2449,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation; the future date (2026) and details appear fabricated, warranting caution against confident confirmation."
+  },
+  {
+   "id": "us-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2334,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears fabricated; the date is in the future and I cannot verify this specific FTC decision exists."
+  },
+  {
+   "id": "us-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2410,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-04-24 is in the future; no such decision could yet exist or be published today."
+  },
+  {
+   "id": "us-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2526,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Federal district courts use format like \"No. 1:26-cv-00792\"; \"Civil Action No. 2026-0792\" resembles Delaware Chancery Court numbering, not federal court identifiers."
+  },
+  {
+   "id": "us-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2708,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. \"Labor Code § 510\" is California labor law, not British Columbia. BCLaws publishes Canadian provincial statutes, and the future date is implausible."
+  },
+  {
+   "id": "us-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2263,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific identifier-to-case mapping in the Caselaw Access Project; citation details appear fabricated and unconfirmable, warranting caution."
+  },
+  {
+   "id": "us-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 4494,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier format '25-60112' appears to be a docket number, not a citation; also, the 2026 date is unverifiable/future."
+  },
+  {
+   "id": "us-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2031,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The FTC's insulin case against Caremark and Zinc Health Services was filed September 2024, not decided March 2023."
+  },
+  {
+   "id": "us-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1909,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific case exists or its publication details; insufficient reliable information to confirm this citation."
+  },
+  {
+   "id": "us-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1532,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. A U.S. case named \"v. District of Columbia\" would not be published by a Canadian court reporter."
+  }
+ ]
+}

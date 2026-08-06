@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Greece — Source-Grounded Citation Reliability (GR)",
+ "country": "GR",
+ "jurisdiction": "Greece",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:37:56.603090+00:00",
+ "results": [
+  {
+   "id": "gr-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1403,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Hellenic Court of Audit (Ελεγκτικό Συνέδριο) cannot have published a decision dated 2026-01-01, as this is a future date from the present moment."
+  },
+  {
+   "id": "gr-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2929,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The date 2025-11-03 is in the future (November 3, 2025). No official legal decisions can be published with future dates. This claim is temporally impossible."
+  },
+  {
+   "id": "gr-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1481,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  ΦΕΚ issue 50/2024 was published on 2024-03-08, not 2024-04-06. The date provided in the claim is incorrect."
+  },
+  {
+   "id": "gr-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1770,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The citation contains internal inconsistencies: it references an \"Emergency Law 1923\" but dates it to 1951, and the publication claim (1923-01-01) contradicts the stated enactment date (27/31 A"
+  },
+  {
+   "id": "gr-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1552,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The decision is dated 2024-06-30 but numbered 13/2025, creating a chronological inconsistency. The year designation should align with the decision date."
+  },
+  {
+   "id": "gr-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2071,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Decision 1648/2025 - Tenth Division pertains to the Court of Cassation ( Άρειος Πάγος), not the Hellenic Court of Audit. The numbering system and departmental structure indicate judicial, n"
+  },
+  {
+   "id": "gr-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1689,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The decision's Greek title and 2026 date indicate a Greek source, not Romanian. The ICCJ is Romania's highest court, not Greece's."
+  },
+  {
+   "id": "gr-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1528,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The decision numbering and date format don't align with Montenegro's constitutional court publication practices. Additionally, the claim contains an inconsistency regarding jurisdiction spe"
+  },
+  {
+   "id": "gr-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 925,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  ΦΕΚ (Greek Government Gazette) is an official Greek legal source, not Turkish legislation. The source attribution is incorrect."
+  },
+  {
+   "id": "gr-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1128,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The claim is inconsistent. The document is a Greek emergency law (ΑΝΑΓΚ. ΝΟΜΟΣ) from 1951, but Likumi.lv is Latvia's official legal portal, not Greece's."
+  },
+  {
+   "id": "gr-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1189,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The decision number format (13/2025) indicates a 2025 decision, contradicting the stated date of 2023-06-30. This is temporally inconsistent and suggests a bibliographic error."
+  },
+  {
+   "id": "gr-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1155,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Greece does not use ЄДРСР (Ukrainian/Russian registry). Greek court decisions are published in the Greek Court Decisions Register (ΔΕΔΔΗ)."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Lesotho — Source-Grounded Citation Reliability (LS)",
+ "country": "LS",
+ "jurisdiction": "Lesotho",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:17:34.948064+00:00",
+ "results": [
+  {
+   "id": "ls-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2466,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. \"Financial Instituions\" contains a typo; exact title and 2021-01-01 date appear fabricated. I cannot verify this specific citation."
+  },
+  {
+   "id": "ls-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2722,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Lesotho's VAT was introduced by the Value Added Tax Act 2001, but the specific filename, publisher, and exact date require verification."
+  },
+  {
+   "id": "ls-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2317,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-02-05 is in the future relative to plausible verification, and the citation [2026] LSHC is implausible."
+  },
+  {
+   "id": "ls-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2560,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The precise title, exact publication date (2016-01-01), and citation details cannot be verified as an authentic official Lesotho source."
+  },
+  {
+   "id": "ls-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2843,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The 1993 publication date contradicts the \"updated to 2012\" title; consolidated versions postdate original enactment, and attribution details appear unverified."
+  },
+  {
+   "id": "ls-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2633,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The citation contains a future date (2026) and inconsistent case number format (CCT prefix), indicating a fabricated, non-existent decision."
+  },
+  {
+   "id": "ls-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 4496,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Lesotho financial guidelines aren't published via South Africa Open By-laws; that platform covers municipal by-laws, plus \"Instituions\" is misspelled."
+  },
+  {
+   "id": "ls-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2242,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Lesotho's VAT Act was enacted in 2001, but it would be published via Lesotho Legal Information Institute, not Namibia's."
+  },
+  {
+   "id": "ls-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1942,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The neutral citation \"LSHC\" indicates Lesotho High Court, not South Africa's Constitutional Court, which uses \"ZACC.\""
+  },
+  {
+   "id": "ls-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1578,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This is a Lesotho jurisdiction query, but EswatiniLII covers Eswatini legislation, not Lesotho; source attribution is incorrect."
+  },
+  {
+   "id": "ls-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1484,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Income Tax Act 1993 is Lesotho legislation; Namibia's Legal Assistance Centre would not be its official publisher."
+  },
+  {
+   "id": "ls-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1470,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The citation \"LSHC\" denotes Lesotho High Court, not South Africa's Constitutional Court; it's a Lesotho jurisdiction case."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Lithuania — Source-Grounded Citation Reliability (LT)",
+ "country": "LT",
+ "jurisdiction": "Lithuania",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:17:39.764262+00:00",
+ "results": [
+  {
+   "id": "lt-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2901,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. A 2006 ministerial order predates TAR, which began operating on 2014-01-01; original publication would have been in \"Valstybės žinios.\""
+  },
+  {
+   "id": "lt-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2658,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Lithuanian Constitutional Court does not review presidential decrees on individual matters at courts' request; jurisdiction and framing appear inconsistent."
+  },
+  {
+   "id": "lt-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2047,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The prefix \"BIK\" is not a recognized Lithuanian Supreme Court case identifier format; this citation appears fabricated or incorrect."
+  },
+  {
+   "id": "lt-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1990,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The Seimas publishes committee meeting agendas (posėdžio darbotvarkė) on its official website, typically days before the scheduled session."
+  },
+  {
+   "id": "lt-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2073,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-04-02 is in the future, making this claim fabricated or impossible to verify as an authentic decision."
+  },
+  {
+   "id": "lt-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2954,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Municipal legal acts are typically published via TAR under specific registration numbers; I cannot verify this exact citation's authenticity."
+  },
+  {
+   "id": "lt-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2654,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The document is a Lithuanian environment minister's order; it would be published in TAR/Teisės aktų registras, not Hungary's database."
+  },
+  {
+   "id": "lt-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2652,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Constitutional Court reviews laws against the Constitution; a President's decree challenge exists, but I cannot verify this specific citation's authenticity."
+  },
+  {
+   "id": "lt-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1808,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier states 2025 but the cited case number reads BIK-514/2024, creating an internal inconsistency that invalidates the claim."
+  },
+  {
+   "id": "lt-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2145,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This is a Lithuanian Foreign Affairs Committee meeting agenda, not published via Turkey's Mevzuat Bilgi Sistemi legislation system."
+  },
+  {
+   "id": "lt-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2739,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Lithuanian Competition Council decisions concern competition law, not agriculture ministry subsidies; this describes a Seimas Ombudsman decision."
+  },
+  {
+   "id": "lt-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2055,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Municipal-level legal acts like Kretinga district orders are published in TAR, but I cannot verify this specific document's existence or date."
+  }
+ ]
+}

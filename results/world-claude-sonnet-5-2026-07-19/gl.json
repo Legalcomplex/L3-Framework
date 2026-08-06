@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Greenland — Source-Grounded Citation Reliability (GL)",
+ "country": "GL",
+ "jurisdiction": "Greenland",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:54:13.045262+00:00",
+ "results": [
+  {
+   "id": "gl-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2608,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific bekendtgørelse's existence, title, or 2026-02-23 publication date in Nalunaarutit against actual Greenlandic legislative records."
+  },
+  {
+   "id": "gl-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2119,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated or unverifiable citation; Greenland court decisions aren't systematically published this way with such specific identifiable titles/dates."
+  },
+  {
+   "id": "gl-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2213,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This Anordning is a real Danish/Greenland instrument, but the given publication venue and date (2026-03-10, future) cannot be verified as accurate."
+  },
+  {
+   "id": "gl-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2302,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific decision's existence, date, or publication details, as I lack access to Domsdatabasen's actual records for this case."
+  },
+  {
+   "id": "gl-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1999,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific bekendtgørelse's existence, exact title, or publication date, and 2026 is a future date beyond my knowledge."
+  },
+  {
+   "id": "gl-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2034,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This citation references a future-dated (2026) decision, which cannot be verified as an actual published official Greenland court record currently."
+  },
+  {
+   "id": "gl-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2284,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — Finlex is Finland's legal database; Greenland's \"Selvstyrets bekendtgørelse\" would be published via Greenland/Danish official channels, not Finlex."
+  },
+  {
+   "id": "gl-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2098,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This appears to be a fabricated or unverifiable citation; no such specific decision can be confirmed as published by Greenland's official Domsdatabasen court database."
+  },
+  {
+   "id": "gl-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1670,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This is a Danish royal decree (Anordning) extending Danish marriage law to Greenland, not published via Norway's Stortinget data service."
+  },
+  {
+   "id": "gl-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1784,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This appears to be a fabricated or unverifiable citation; I cannot confirm this specific case exists in the Domsdatabasen database records."
+  },
+  {
+   "id": "gl-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2274,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — I cannot verify this specific bekendtgørelse, its publication date, or its existence in Nalunaarutit without access to authoritative Greenlandic legal databases."
+  },
+  {
+   "id": "gl-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1529,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific decision's existence, exact citation, date, or publication details in Greenland's court database without fabricating information."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Hong Kong — Source-Grounded Citation Reliability (HK)",
+ "country": "HK",
+ "jurisdiction": "Hong Kong",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:38:13.635679+00:00",
+ "results": [
+  {
+   "id": "hk-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1650,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Cap. 104 sub. leg. A refers to the Inland Revenue Ordinance subsidiary legislation. The citation format and date provided do not correspond to standard Hong Kong e-Legislation publication r"
+  },
+  {
+   "id": "hk-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2212,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The Board of Review is an independent appellate body, not part of the Inland Revenue Department. It publishes decisions independently under its own authority, not \"by\" the Inland Revenue."
+  },
+  {
+   "id": "hk-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1478,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The date 2025-10-21 (October 21, 2025) is in the future. No court decision can be issued on a future date, making this bibliographic claim impossible and therefore false."
+  },
+  {
+   "id": "hk-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1680,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The decision date is 2026, which is in the future. No court decision from 2026 can currently exist or be published, making this claim impossible and false."
+  },
+  {
+   "id": "hk-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1536,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Securities and Futures Appeals Tribunal (SFAT) issues decisions, but this citation format and reference number do not correspond to verified official SFAT publications in Hong Kong's le"
+  },
+  {
+   "id": "hk-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1985,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Cap. 101 sub. leg. B refers to the Securities and Futures Ordinance's subsidiary legislation. Hong Kong e-Legislation only commenced operations in 2000, not 1997."
+  },
+  {
+   "id": "hk-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1760,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Cap. 104 is Hong Kong legislation (Inland Revenue Ordinance), not Macau law. The Macau Legal Portal publishes Macau legislation, not Hong Kong ordinances."
+  },
+  {
+   "id": "hk-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1538,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The decision date (1979-11-25) precedes the reference number designation \"D12/81,\" which suggests 1981. This chronological inconsistency indicates a bibliographic error in the claim."
+  },
+  {
+   "id": "hk-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1175,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The case identifier '[2025] HKCT 5' cannot correspond to a decision dated 2025-10-21, as that date is in the future relative to current knowledge cutoffs and verification possibilities."
+  },
+  {
+   "id": "hk-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1279,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The case citation format and future date (2026) are implausible. Hong Kong District Court decisions are not typically cited with brackets in this manner, and a March 2026 judgment cannot cu"
+  },
+  {
+   "id": "hk-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1474,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The application number indicates 2021, but the cited date is 2019. This temporal inconsistency suggests the bibliographic information contains errors regarding either the decision identifie"
+  },
+  {
+   "id": "hk-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1030,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Cap. 101 sub. leg. B refers to Hong Kong's Laws of Hong Kong Ordinance chapter format. KLIC is a Korean legal database, not a Hong Kong legal source publisher."
+  }
+ ]
+}

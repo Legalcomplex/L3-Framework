@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Poland — Source-Grounded Citation Reliability (PL)",
+ "country": "PL",
+ "jurisdiction": "Poland",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:00:53.500676+00:00",
+ "results": [
+  {
+   "id": "pl-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2026,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific regulation's existence, exact title, or publication date in Dziennik Ustaw without access to official sources."
+  },
+  {
+   "id": "pl-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2225,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific citation—case number, date, and content combination may be fabricated or inaccurate; actual Trybunał Konstytucyjny records should be checked directly."
+  },
+  {
+   "id": "pl-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2311,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This case identifier references a future date (2026), making it impossible to verify as an existing official record currently."
+  },
+  {
+   "id": "pl-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2093,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** K 1/87 is a Constitutional Tribunal judgment, published in OTK (Orzecznictwo Trybunału Konstytucyjnego), not primarily in SAOS, which covers common/administrative courts."
+  },
+  {
+   "id": "pl-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2258,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific citation (V KK 137/16, dated 2016-06-21) as an actual, confirmed Polish Supreme Court decision without access to official records."
+  },
+  {
+   "id": "pl-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2289,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific regulation's existence, date, or publication details; likely a fabricated or unconfirmed citation requiring official Dziennik Ustaw database verification."
+  },
+  {
+   "id": "pl-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2144,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** PISRS is Slovenia's official legal database, not Poland's. Polish legal acts are published in Dziennik Ustaw or Monitor Polski, not PISRS."
+  },
+  {
+   "id": "pl-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2477,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier \"P 54/15\" would denote a case registered in 2015, so it cannot correspond to case \"P 54/14,\" a mismatched signature."
+  },
+  {
+   "id": "pl-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2059,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier \"III FSK 142/27\" doesn't match the cited case \"III FSK 142/26,\" and the future date suggests a fabricated citation."
+  },
+  {
+   "id": "pl-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1800,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The date 1984 precedes the case number \"K 1/87,\" which implies a 1987 filing—an internal inconsistency making this citation unreliable/incorrect."
+  },
+  {
+   "id": "pl-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1639,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** \"V KK 137/16\" is a Polish Supreme Court (Sąd Najwyższy) criminal chamber case number format, not associated with Georgia's Constitutional Court."
+  },
+  {
+   "id": "pl-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1956,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Poland uses Dziennik Ustaw, not e-Sbírka—that is the Czech Republic's official legal publication system, not Poland's."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Brazil — Source-Grounded Citation Reliability (BR)",
+ "country": "BR",
+ "jurisdiction": "Brazil",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.4167,
+ "correct": 5,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:09:13.131868+00:00",
+ "results": [
+  {
+   "id": "br-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2567,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. PL 1828/2026 cannot be verified; the 2026 date is future/implausible, and Lei 12.068/2009 details appear fabricated or unverifiable."
+  },
+  {
+   "id": "br-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2367,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Laws are numbered sequentially over time; number 15,380 in April 2026 cannot be verified and appears fabricated."
+  },
+  {
+   "id": "br-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1855,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-03-21 is in the future, making this citation impossible to verify as a genuine published gazette."
+  },
+  {
+   "id": "br-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 3442,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-03-25 is in the future and thus cannot represent an already-published decision, making the claim invalid."
+  },
+  {
+   "id": "br-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2423,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific resolution exists; the future date and details require checking ANATEL's official records for confirmation."
+  },
+  {
+   "id": "br-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3340,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. RN nº 216 was issued by ANS (Agência Nacional de Saúde Suplementar) but dated 2010-01-14, not April 14."
+  },
+  {
+   "id": "br-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2522,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The citation attributes a Brazilian bill (PL) to Colombia's Senate publisher—a jurisdictional mismatch—rendering the bibliographic source claim invalid."
+  },
+  {
+   "id": "br-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2618,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.**  InfoLEG is Argentina's legislative database, not Brazil's. Brazilian federal laws are published via Planalto (planalto.gov.br) or Diário Oficial da União."
+  },
+  {
+   "id": "br-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1639,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. IMPO is Uruguay's official gazette agency; it does not publish Brazilian municipal gazettes like Mogi Guaçu's Diário Oficial."
+  },
+  {
+   "id": "br-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2396,
+   "verdict": true,
+   "correct": false,
+   "raw": "True. The case number format (NNNNNNN-DD.AAAA.5.TT.OOOO) and AIRR acronym indicate a Labor Court appeal decided by TST."
+  },
+  {
+   "id": "br-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1771,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Anatel is Brazil's telecommunications agency; its resolutions are published in Brazil's Diário Oficial, not Argentina's Central Bank Communications."
+  },
+  {
+   "id": "br-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1921,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Brazilian ANS resolutions are published in the Diário Oficial da União, not Chile's BCN Linked Open Data platform."
+  }
+ ]
+}

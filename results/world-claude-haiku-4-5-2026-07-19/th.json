@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Thailand — Source-Grounded Citation Reliability (TH)",
+ "country": "TH",
+ "jurisdiction": "Thailand",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:45:47.672556+00:00",
+ "results": [
+  {
+   "id": "th-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1781,
+   "verdict": true,
+   "correct": true,
+   "raw": "# Evaluation Result  **True**  This Royal Decree citation follows Thailand's official naming convention and was legitimately published in the Royal Gazette on the specified date through Open Law Data "
+  },
+  {
+   "id": "th-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1322,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The claim contains a future date (2025-11-03). As of the knowledge cutoff, this publication date hasn't occurred yet, making the claim unverifiable and potentially fabricated."
+  },
+  {
+   "id": "th-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1887,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The Thailand Securities and Exchange Commission (SEC) does not publish criminal complaint decisions. Criminal matters fall under the jurisdiction of Thai courts and the Department of Special "
+  },
+  {
+   "id": "th-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1990,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The date 2025-11-21 is in the future. No official legal decision can be published on a date that has not yet occurred, making this bibliographic claim invalid."
+  },
+  {
+   "id": "th-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1347,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Royal Gazette publication date format and ministerial regulation structure appear inconsistent with Thailand's official gazette documentation standards and verification processes."
+  },
+  {
+   "id": "th-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1943,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The claim contains an inconsistency. The case number \"ล.9091/2568\" references Buddhist Era 2568 (CE 2025), yet the source claims a future publication date of 2025-11-03, making the timeline"
+  },
+  {
+   "id": "th-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1799,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This royal decree title references Thailand's tax code, not Cambodia. Attribution to a \"Cambodian Legal Library\" is inconsistent with Thai official legal sources and appears erroneous."
+  },
+  {
+   "id": "th-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2403,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Thailand's official legal publications are issued through Thai government channels (Royal Gazette, courts, ministries), not Indonesia's JDIHN National Legal Network. Cross-jurisdiction publ"
+  },
+  {
+   "id": "th-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1079,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Thai Securities and Exchange Commission (SEC) does not publish criminal complaint decisions. Criminal matters fall under Thailand's courts and prosecutorial authorities, not the SEC's r"
+  },
+  {
+   "id": "th-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1396,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The citation lacks essential bibliographic elements: no case number, incomplete party names (truncated with \"&\"), missing official publication details, and unclear official source verificat"
+  },
+  {
+   "id": "th-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1114,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The publication date (2022-03-29) predates the Buddhist year 2567 (2024 CE), making simultaneous publication impossible. The dates are internally inconsistent."
+  },
+  {
+   "id": "th-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2277,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Royal Gazette OCR Dataset is a digitized collection, not an official publication source. Official Thai legal documents are published through the Government Gazette (Royal Gazette), not "
+  }
+ ]
+}

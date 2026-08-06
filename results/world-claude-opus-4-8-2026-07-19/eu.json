@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — European Union — Source-Grounded Citation Reliability (EU)",
+ "country": "EU",
+ "jurisdiction": "European Union",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:12:25.389634+00:00",
+ "results": [
+  {
+   "id": "eu-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2708,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Cases dated 2026-02-12 cannot be reliably verified; the future date and CELEX-style number appear fabricated or unverifiable."
+  },
+  {
+   "id": "eu-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2438,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date (2026) is in the future relative to typical knowledge, and I cannot verify this specific document's existence."
+  },
+  {
+   "id": "eu-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3105,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific 2026 regulation exists; the citation appears fabricated, and I lack reliable confirmation."
+  },
+  {
+   "id": "eu-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2593,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The CPVO Board of Appeal case citation format and this specific decision appear fabricated; I cannot verify its authenticity."
+  },
+  {
+   "id": "eu-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2204,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The CJEU publishes decisions via the Court of Justice/EUR-Lex; \"ECJ Tax Cases\" is not an official publisher."
+  },
+  {
+   "id": "eu-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2753,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. ECLI year 2026 with future/uncertain date; this specific identifier and case details cannot be verified as authentic."
+  },
+  {
+   "id": "eu-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 3426,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.**  The CELEX number \"62024\" indicates a 2024 case, which cannot have a 2023-02-12 decision date; the dates are inconsistent."
+  },
+  {
+   "id": "eu-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2596,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Gibraltar Supreme Court is not an EU institution; spyware-related civil society correspondence would come from European Commission or Parliament bodies."
+  },
+  {
+   "id": "eu-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1978,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Liechtenstein is an EFTA/EEA state, not an EU member; EU Implementing Regulations are published in the Official Journal, not LILEX."
+  },
+  {
+   "id": "eu-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 4329,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. CPVO Board of Appeal case numbered A008-013/2002 cannot logically bear a 2000 decision date, indicating fabricated or inconsistent bibliographic details."
+  },
+  {
+   "id": "eu-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1645,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The ECJ (Court of Justice of the EU) publishes decisions in the European Court Reports, not \"ECJ Tax Cases.\""
+  },
+  {
+   "id": "eu-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2024,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The year 2026 is in the future; no ECLI identifier for a 2026 judgment could currently exist."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Guam — Source-Grounded Citation Reliability (GU)",
+ "country": "GU",
+ "jurisdiction": "Guam",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:14:13.315315+00:00",
+ "results": [
+  {
+   "id": "gu-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2623,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-03-09 is in the future relative to any verifiable record; this citation cannot be confirmed authentic."
+  },
+  {
+   "id": "gu-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 6676,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific Public Law's existence, exact title, section numbers, or publication date without reliable confirmation."
+  },
+  {
+   "id": "gu-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2244,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific identifier, case, or future-dated decision (2025-12-09), so the claim cannot be confirmed accurate."
+  },
+  {
+   "id": "gu-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2005,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-03-20 is in the future, making this citation unverifiable and almost certainly fabricated or erroneous."
+  },
+  {
+   "id": "gu-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2208,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Guam Public Laws follow a numbering format I cannot verify; specific details like date and section appear fabricated without confirmation."
+  },
+  {
+   "id": "gu-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2301,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The party name \"Waathdad\" appears fabricated, and the December 2025 date is implausibly future-dated; I cannot verify this citation."
+  },
+  {
+   "id": "gu-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2545,
+   "verdict": false,
+   "correct": true,
+   "raw": "I cannot verify this specific case exists in Supreme Court of Guam records; unable to confirm the citation as authentic. **False/Unverifiable**"
+  },
+  {
+   "id": "gu-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2263,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Guam laws are published through the Guam Compiler of Laws, not Nauru's RONLAW database—jurisdictionally mismatched source."
+  },
+  {
+   "id": "gu-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 6861,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific identifier, case, or future-dated (2025-12-09) decision exists in Guam Superior Court records."
+  },
+  {
+   "id": "gu-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2464,
+   "verdict": false,
+   "correct": true,
+   "raw": "I cannot verify this specific citation as accurate. Without access to confirm the exact date, parties, and publication details, I answer False."
+  },
+  {
+   "id": "gu-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2015,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Guam public laws are published by Guam's legislature/Compiler of Laws, not the Solomon Islands Attorney General Legislation Portal."
+  },
+  {
+   "id": "gu-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1566,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The 2025-12-23 date is in the future, and I cannot verify this specific identifier or case citation."
+  }
+ ]
+}

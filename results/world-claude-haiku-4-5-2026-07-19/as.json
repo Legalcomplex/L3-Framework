@@ -1,0 +1,81 @@
+{
+ "pack": "S3 — American Samoa — Source-Grounded Citation Reliability (AS)",
+ "country": "AS",
+ "jurisdiction": "American Samoa",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 6,
+ "items_in_pack": 6,
+ "parsed": 6,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 3,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:33:04.518009+00:00",
+ "results": [
+  {
+   "id": "as-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1302,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited format appears fabricated. American Samoa's official legal sources are the American Samoa Code Annotated and American Samoa Reporter, not a combined \"Code Annotated & Case Law\" publis"
+  },
+  {
+   "id": "as-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1460,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  American Samoa case decisions are published in the American Samoa Reports (A.S.R.), not \"American Samoa Code Annotated & Case Law.\" This source title appears inaccurate."
+  },
+  {
+   "id": "as-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1228,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  American Samoa Code Annotated & Case Law is not an official publisher of court decisions. Official American Samoa cases are published through the American Samoa Reporter or government sourc"
+  },
+  {
+   "id": "as-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1383,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. American Samoa Code Annotated & Case Law is not an official publisher of American Samoa court decisions. Official decisions are published through American Samoa Reports or government channels."
+  },
+  {
+   "id": "as-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1378,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** American Samoa and the Republic of the Marshall Islands are distinct jurisdictions. American Samoa decisions would be published by American Samoa courts, not Marshall Islands courts."
+  },
+  {
+   "id": "as-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1358,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. American Samoa Code Annotated & Case Law is not an official publisher of American Samoa court decisions. Official decisions are published through the American Samoa Reporter."
+  }
+ ]
+}

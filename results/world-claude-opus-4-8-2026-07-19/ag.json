@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Antigua and Barbuda — Source-Grounded Citation Reliability (AG)",
+ "country": "AG",
+ "jurisdiction": "Antigua and Barbuda",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:06:43.332866+00:00",
+ "results": [
+  {
+   "id": "ag-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2760,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Official Gazette publications are final authoritative versions; an \"Editor's Final Draft\" designation is inconsistent with genuine official gazette publication."
+  },
+  {
+   "id": "ag-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2667,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The citation details appear fabricated; ONDCP is a drug/money-laundering enforcement body, not a legislative publisher, and specifics seem unverifiable."
+  },
+  {
+   "id": "ag-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2655,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Official Gazette publications do not carry \"Editor's Final Draft\" labels; official sources are finalized, not drafts, invalidating this citation."
+  },
+  {
+   "id": "ag-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 5370,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The ONDCP (Office of National Drug Control Policy) was established later; it isn't the official gazette publisher for 1993 legislation."
+  },
+  {
+   "id": "ag-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2671,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Official Gazette publications are final versions, not \"Editor's Final Draft\"; such draft designations don't appear in official gazette titles."
+  },
+  {
+   "id": "ag-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2515,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Citation details appear fabricated; the ONDCP is not a legal publisher, and the specific act number/date cannot be verified."
+  },
+  {
+   "id": "ag-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 3250,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. \"Editor's Final Draft\" indicates an unofficial working document, not an authoritative published gazette; also jurisdiction mismatches Cayman Islands citation."
+  },
+  {
+   "id": "ag-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1997,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The jurisdiction is Antigua and Barbuda, not the Bahamas; citing Bahamas Consolidated Legislation is inconsistent with the stated jurisdiction."
+  },
+  {
+   "id": "ag-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1897,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Antigua and Barbuda legislation isn't published via Curaçao's Regelingen; \"Editor's Final Draft\" also isn't an official gazette designation."
+  },
+  {
+   "id": "ag-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1812,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The jurisdiction is Antigua and Barbuda, but the cited source is \"Laws of Grenada,\" a different sovereign state."
+  },
+  {
+   "id": "ag-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2654,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Antigua and Barbuda's Gazette wouldn't be published by Saint Lucia's Attorney General; \"Editor's Final Draft\" also isn't official gazette terminology."
+  },
+  {
+   "id": "ag-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1981,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Antigua and Barbuda legislation is not published via Sint Maarten Government; the publisher attribution is jurisdictionally incorrect and implausible."
+  }
+ ]
+}

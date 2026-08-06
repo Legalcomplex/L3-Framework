@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Italy — Source-Grounded Citation Reliability (IT)",
+ "country": "IT",
+ "jurisdiction": "Italy",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:39:10.989218+00:00",
+ "results": [
+  {
+   "id": "it-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1647,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The claim is invalid because the future date (2025-11-26) is impossible for a past publication, and the truncated title lacks sufficient information for verification on Normattiva."
+  },
+  {
+   "id": "it-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1649,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The decision is dated 2026, a future date. No court decision from 2026 can currently exist or be published, making this bibliographic claim impossible."
+  },
+  {
+   "id": "it-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1452,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The ECLI identifier format and document type designation don't align with standard Council of State citation practices. The claim requires verification against official Italian court databa"
+  },
+  {
+   "id": "it-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1871,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The date format is inconsistent (decision dated 2000-12-15 but numbered 2001), and ordinanze are typically interim measures, not standard Constitutional Court decisions published in officia"
+  },
+  {
+   "id": "it-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3459,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Demetra database (Emilia-Romagna's official legislation portal) was established in the 1990s, making a 1972 publication attribution to it anachronistic and impossible."
+  },
+  {
+   "id": "it-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1628,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The claim lacks sufficient specificity to verify. No law number, official gazette reference, or complete legislative citation is provided to confirm this publication through Lazio Regional Legi"
+  },
+  {
+   "id": "it-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 5119,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The claim is incomplete and unverifiable. The regulation title is truncated (\"in…\"), making it impossible to confirm publication details or authenticity through Normattiva."
+  },
+  {
+   "id": "it-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 3321,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The ECLI identifier structure doesn't match the stated decision number. ECLI:IT:CASS:2026:snciv2026502571S suggests decision 502571, not 02570/2026, indicating inconsistent bibliographic in"
+  },
+  {
+   "id": "it-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1251,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The ECLI identifier ends in \"202300059SENT\" but the sentence number cited is \"202300058/2023\" — the numerical references do not match, indicating a mismatch between identifier and document."
+  },
+  {
+   "id": "it-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2006,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Ordinanza 7/2001 was decided in 2001, not published in 2002. The date 2002-12-15 appears inconsistent with the ordinanza's designation year."
+  },
+  {
+   "id": "it-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1396,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Fedlex is the official Swiss legislative database. This document concerns Emilia-Romagna (an Italian region), so it would be published through Italian official sources, not Swiss ones."
+  },
+  {
+   "id": "it-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1279,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This claim is inconsistent because an Italian regional law (Lazio Region) cannot be published through Swiss Cantonal Legislation, which governs Swiss cantons exclusively, not Italian regions."
+  }
+ ]
+}

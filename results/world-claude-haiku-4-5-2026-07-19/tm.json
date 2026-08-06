@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Turkmenistan — Source-Grounded Citation Reliability (TM)",
+ "country": "TM",
+ "jurisdiction": "Turkmenistan",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:45:58.942700+00:00",
+ "results": [
+  {
+   "id": "tm-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1434,
+   "verdict": false,
+   "correct": false,
+   "raw": "# Answer: **False**  The cited source title and publication details cannot be verified through standard Turkmenistan legal databases. The document's exact provenance and official status remain uncerta"
+  },
+  {
+   "id": "tm-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2091,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Presidential decrees in Turkmenistan are typically published in the official gazette \"Türkmenistanyň Prezidentiniň Resmi Habarlary,\" not through the State Customs Service as a primary sourc"
+  },
+  {
+   "id": "tm-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2118,
+   "verdict": true,
+   "correct": true,
+   "raw": "# Answer: **True**  Turkmenistan's Administrative Procedure Code (Administratiw iş ýörediş kodeksi) was indeed adopted by Parliament and enacted in 2020, making this citation accurate."
+  },
+  {
+   "id": "tm-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1936,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The citation is incomplete and lacks verifiable publication details. The truncated title (\"we…\") and absence of document number make verification impossible against official Turkmen legal r"
+  },
+  {
+   "id": "tm-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1723,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited source appears to be a Turkmen-language law title, but there is insufficient verifiable information to confirm its publication details, date, and official status through Central Bank "
+  },
+  {
+   "id": "tm-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1668,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** No verifiable evidence confirms this specific publication by Turkmenistan State Customs Service in 2020. Turkmenistan's customs procedures lack transparent, accessible public documentation."
+  },
+  {
+   "id": "tm-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2424,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The title translates to regulations on cashless settlements in Turkmenistan. While plausible as a Central Bank instrument, the specific publication date and attribution cannot be verified fro"
+  },
+  {
+   "id": "tm-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1502,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Lex.uz is Uzbekistan's official legal database, not Turkmenistan's. A Turkmenistan presidential decree would be published through Turkmenistan's official legal sources, not Uzbekistan's por"
+  },
+  {
+   "id": "tm-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1501,
+   "verdict": false,
+   "correct": true,
+   "raw": "# Evaluation: **False**  Turkmenistan's Administrative Procedure Code (Administratiw iş ýörediş kodeksi) was adopted in 2012, not 2022. The cited date appears inaccurate."
+  },
+  {
+   "id": "tm-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1611,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This claim is contradictory. The document title is in Turkmen language (indicated by Turkmen characters and syntax), yet Adilet is Kazakhstan's legal system, which publishes Kazakh legislat"
+  },
+  {
+   "id": "tm-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2287,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The title appears to be in Turkmen language regarding currency regulation and control in foreign economic relations, but verification of this specific publication through Central Bank of Turkme"
+  },
+  {
+   "id": "tm-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1832,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Lex.uz is Uzbekistan's official legal portal, not Turkmenistan's. This document would belong to Turkmenistan's legal system, making the source attribution incorrect for this jurisdiction."
+  }
+ ]
+}

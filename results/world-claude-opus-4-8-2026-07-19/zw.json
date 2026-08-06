@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Zimbabwe — Source-Grounded Citation Reliability (ZW)",
+ "country": "ZW",
+ "jurisdiction": "Zimbabwe",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:28:42.584465+00:00",
+ "results": [
+  {
+   "id": "zw-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2475,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such Act exists in Zimbabwe; this appears to be a fabricated title with no verifiable ZimLII publication record."
+  },
+  {
+   "id": "zw-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1993,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Exchange Control Directives govern currency and foreign exchange matters, not cybersecurity; the date and source attribution appear fabricated."
+  },
+  {
+   "id": "zw-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2688,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific Act, date, or ZimLII publication exists; details appear fabricated and require authoritative confirmation."
+  },
+  {
+   "id": "zw-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2518,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific circular's existence or publication date; fabricated citation details are plausible without authoritative confirmation."
+  },
+  {
+   "id": "zw-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2262,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific Act's existence or exact 1983 date; ZimLII hosts case law and legislation, but details require confirmation."
+  },
+  {
+   "id": "zw-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2968,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.**  Monetary Policy Statements are issued by the RBZ Governor directly, not through Exchange Control Directives; the cited publication channel is incorrect."
+  },
+  {
+   "id": "zw-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2330,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No such \"Acquisition of Farm Equipment or Material Act\" is recognized as genuine Zimbabwean legislation; likely fabricated title."
+  },
+  {
+   "id": "zw-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 3361,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Zimbabwe legal sources aren't published via Saint Helena legislation; the jurisdiction mismatch and inconsistent dates indicate a fabricated citation."
+  },
+  {
+   "id": "zw-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2140,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific Act's existence, exact title, or 1983 publication date via ZimLII; details appear unreliable."
+  },
+  {
+   "id": "zw-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 5093,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Exchange Control Circulars in Zimbabwe are issued by the Reserve Bank of Zimbabwe, not Zambia's National Assembly."
+  },
+  {
+   "id": "zw-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1746,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific Act's existence or the 1980-12-09 date; details appear fabricated without reliable confirmation."
+  },
+  {
+   "id": "zw-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2117,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Zimbabwe's Monetary Policy Statements are issued by the Reserve Bank of Zimbabwe, not Lesotho Legal Information Institute; jurisdiction mismatch invalidates this claim."
+  }
+ ]
+}

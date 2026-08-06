@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Netherlands — Source-Grounded Citation Reliability (NL)",
+ "country": "NL",
+ "jurisdiction": "Netherlands",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:59:45.563659+00:00",
+ "results": [
+  {
+   "id": "nl-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2032,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-02-17 is in the future relative to current knowledge, making this ECLI citation unverifiable and likely fabricated or nonexistent."
+  },
+  {
+   "id": "nl-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2356,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The claim lacks a verifiable Staatsblad number/year for confirmation, and inwerkingtredingsbesluiten details cannot be validated without specific citation reference."
+  },
+  {
+   "id": "nl-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2045,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. BWBR0001827 corresponds to the Wetboek van Burgerlijke Rechtsvordering (non-digital version); the digital procedure variant uses a different BWBR identifier."
+  },
+  {
+   "id": "nl-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2029,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This appears to be a fabricated/unverifiable citation—the future date (2026-02-11) makes it impossible to confirm as an actual published decision currently."
+  },
+  {
+   "id": "nl-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2119,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The date 2026-03-19 is in the future relative to my knowledge, so this decision cannot be verified as an authentic, existing ECLI record."
+  },
+  {
+   "id": "nl-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2879,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This is a future-dated, unverifiable ECLI citation I cannot confirm exists; I cannot validate fabricated or unconfirmable case identifiers or details."
+  },
+  {
+   "id": "nl-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2189,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Dutch ECLI case law is published via rechtspraak.nl, the Netherlands' official judiciary database, not a Gibraltar government legal source."
+  },
+  {
+   "id": "nl-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2012,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Stb-2019-179 identifiers and titles vary; I cannot verify this specific correspondence without access to the actual official Staatsblad register."
+  },
+  {
+   "id": "nl-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1823,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. BWBR0001828 corresponds to the Wetboek van Burgerlijke Rechtsvordering (non-digital version); the digital procederen variant uses a different BWBR identifier."
+  },
+  {
+   "id": "nl-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1721,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** I cannot verify this specific bibliographic claim—the exact decision title, date, and details cannot be confirmed against actual Autoriteit Persoonsgegevens publications from available info"
+  },
+  {
+   "id": "nl-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1740,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** ECLI:NL:CRVB refers to the Dutch Centrale Raad van Beroep, not Portuguese courts—\"NL\" denotes the Netherlands, not Portugal (DGSI)."
+  },
+  {
+   "id": "nl-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2379,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. ECLI:NL indicates a Dutch source—the Hoge Raad (Dutch Supreme Court)—not the German Bundesfinanzhof, which uses ECLI:DE."
+  }
+ ]
+}

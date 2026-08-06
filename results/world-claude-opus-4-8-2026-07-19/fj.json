@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Fiji — Source-Grounded Citation Reliability (FJ)",
+ "country": "FJ",
+ "jurisdiction": "Fiji",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:12:35.527019+00:00",
+ "results": [
+  {
+   "id": "fj-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2572,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Fiji legislation is hosted at laws.gov.fj is questionable; the official portal is the Fiji Legislation website. Verification uncertain."
+  },
+  {
+   "id": "fj-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1807,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 25.03.2026 is in the future relative to plausible verification; the citation appears fabricated and unverifiable."
+  },
+  {
+   "id": "fj-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 4815,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such Act exists in Fiji's legal database; the title appears fabricated and cannot be verified as authentic."
+  },
+  {
+   "id": "fj-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2273,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The decision date (18-03-2026) is in the future relative to typical verification; this citation appears fabricated and unverifiable."
+  },
+  {
+   "id": "fj-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3068,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Fiji's arbitration law is the Arbitration Act 1965 (Cap 38), but \"laws.gov.fj\" is not Fiji's official legal domain."
+  },
+  {
+   "id": "fj-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2606,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date format is implausible: a 2026 judgment with \"25.03.26\" prefix and 2026-04-01 date exceeds current knowledge; unverifiable."
+  },
+  {
+   "id": "fj-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2495,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Fiji's official legislation portal is laws.gov.fj is not standard; official source is the Fiji Government/Attorney-General's Office (laws.gov.fj unverified)."
+  },
+  {
+   "id": "fj-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2525,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'HBC 362.2016' contradicts the cited case number 'HBC 362.2015'; mismatched years indicate the claim is inaccurate."
+  },
+  {
+   "id": "fj-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2183,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No such Act exists in Fiji's legal database; this appears to be a fabricated citation with an invented title."
+  },
+  {
+   "id": "fj-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1900,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Fiji cases are published by Fiji courts (High Court/PacLII), not the Federal Court of Australia; different jurisdiction entirely."
+  },
+  {
+   "id": "fj-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1689,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Fiji's laws are published via PacLII or the Fiji Government, not RONLAW, which is Nauru's legal database."
+  },
+  {
+   "id": "fj-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2283,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'HBJ 38.2024' contradicts the cited case 'HBJ 38.2023'; the year designations differ, so they don't correspond."
+  }
+ ]
+}

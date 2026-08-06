@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Jersey — Source-Grounded Citation Reliability (JE)",
+ "country": "JE",
+ "jurisdiction": "Jersey",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.6667,
+ "correct": 8,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:15:54.387985+00:00",
+ "results": [
+  {
+   "id": "je-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3041,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The precise title, exact 2024-01-01 date, and citation appear fabricated; I cannot verify this specific enactment's authentic existence."
+  },
+  {
+   "id": "je-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2544,
+   "verdict": true,
+   "correct": true,
+   "raw": "I cannot verify this specific claim as True or False without access to authoritative Jersey Tribunal records; citation format appears plausible but unconfirmed."
+  },
+  {
+   "id": "je-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2924,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This identifier and future-dated 2026 decision cannot be verified; the format and details appear fabricated, not genuine."
+  },
+  {
+   "id": "je-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2847,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The specific title, exact date (2025-01-01), and existence cannot be verified; likely fabricated. JerseyLaw publishes legislation, but this appears unconfirmed."
+  },
+  {
+   "id": "je-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2110,
+   "verdict": true,
+   "correct": true,
+   "raw": "I cannot verify this specific citation as True or False; I lack reliable access to confirm this decision's existence or details."
+  },
+  {
+   "id": "je-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2030,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-02-20 is in the future relative to verifiable records, and I cannot confirm this identifier exists."
+  },
+  {
+   "id": "je-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1967,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Jersey laws are published by the States of Jersey/Jersey Legal Information Board, not Portugal's Assembleia da República."
+  },
+  {
+   "id": "je-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 3288,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. \"TRE\" denotes a Jersey court citation (Tribunal/Royal Court), not the German Bundesfinanzhof, which uses German neutral citations, not Jersey ones."
+  },
+  {
+   "id": "je-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1812,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This appears fabricated; the identifier format, future date, and specific citation details cannot be verified as authentic."
+  },
+  {
+   "id": "je-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1419,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Jersey is a Crown Dependency with its own legislature; its laws appear on the Jersey Legal Information Board, not Légifrance."
+  },
+  {
+   "id": "je-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1667,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Jersey citations (TRE = Jersey Employment Tribunal) are not published by Entscheidsuche, a Swiss court decisions database."
+  },
+  {
+   "id": "je-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1747,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The 2026 date is in the future relative to verifiable records, and I cannot confirm this specific identifier's authenticity."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Bahrain — Source-Grounded Citation Reliability (BH)",
+ "country": "BH",
+ "jurisdiction": "Bahrain",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:08:25.212925+00:00",
+ "results": [
+  {
+   "id": "bh-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2013,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-04-09 is in the future, making this citation unverifiable; issue number and publisher details cannot be confirmed."
+  },
+  {
+   "id": "bh-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2640,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026 is in the future; this publication cannot be verified as an existing, published Gazette issue."
+  },
+  {
+   "id": "bh-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 7499,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-05-07 is in the future, making this citation unverifiable. Bahrain's Official Gazette is published by the Ministry of Justice."
+  },
+  {
+   "id": "bh-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2367,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-04-16 is in the future, making this citation impossible to verify; likely fabricated or erroneous claim."
+  },
+  {
+   "id": "bh-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2362,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-04-21 is in the future, making this citation impossible to verify; also, gazette publication oversight differs."
+  },
+  {
+   "id": "bh-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2549,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-04-23 is in the future, making this citation unverifiable. Bahrain's Official Gazette is also published by the Legislation & Legal Opinion Commission."
+  },
+  {
+   "id": "bh-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2446,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific issue number, date, or publisher without access to authoritative Bahraini Official Gazette records."
+  },
+  {
+   "id": "bh-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 3230,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific issue number, date, or that the Ministry of Information (not Justice) publishes Bahrain's Gazette."
+  },
+  {
+   "id": "bh-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2146,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Bahrain's Official Gazette is published by Bahrain's government, not the DIFC (Dubai International Financial Centre) Legal Database. Also, 2026 date is implausible."
+  },
+  {
+   "id": "bh-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1857,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Bahrain's Official Gazette is published by Bahrain's own government, not Jordan's Bureau; the 2026 date is also implausible."
+  },
+  {
+   "id": "bh-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1970,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific issue number, date, or that the Ministry of Information (not Justice) publishes it."
+  },
+  {
+   "id": "bh-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1710,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific issue number, date, or that the Ministry of Information publishes Bahrain's Official Gazette."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — El Salvador — Source-Grounded Citation Reliability (SV)",
+ "country": "SV",
+ "jurisdiction": "El Salvador",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:45:19.049175+00:00",
+ "results": [
+  {
+   "id": "sv-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1626,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The decision date (2026-03-05) is in the future relative to the publication year (2026), creating a chronological impossibility that undermines the source's authenticity."
+  },
+  {
+   "id": "sv-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2601,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The decision number format and date appear inconsistent with El Salvador's Constitutional Chamber (Sala de lo Constitucional) standard documentation practices and publication timelines."
+  },
+  {
+   "id": "sv-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1571,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This law cannot have been published in 2026, as that date is in the future. The claim contains an impossible publication date."
+  },
+  {
+   "id": "sv-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1530,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Superintendencia de Competencia (now Superintendencia de Competencia y Protección al Consumidor) is El Salvador's competition authority, but no verified record confirms this specific 20"
+  },
+  {
+   "id": "sv-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1834,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The date format is inconsistent and implausible. A 2025 decision cannot be published in 2026, and the \"341-P-2025\" nomenclature cannot be verified as authentic El Salvadoran jurisprudence c"
+  },
+  {
+   "id": "sv-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2752,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The identifier '80-P-2025' cannot correspond to a document dated 2026-03-05, as this future date is impossible for an official 2025 document classification."
+  },
+  {
+   "id": "sv-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1480,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The decision date (2024-03-05) predates the decision number designation (145-P-2025), which is chronologically inconsistent and indicates an unreliable or fabricated source reference."
+  },
+  {
+   "id": "sv-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1463,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The identifier '559-2026' does not match '559-2025'. The document numbers differ by one digit, indicating these are distinct legal documents in the collection."
+  },
+  {
+   "id": "sv-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1185,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** El Salvador's laws are published by the Legislative Assembly (Asamblea Legislativa), not Honduras's Court of Accounts (TSC). Attribution error and future date are invalid."
+  },
+  {
+   "id": "sv-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1298,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Superintendencia de Competencia in El Salvador does not publish decisions under case names like \"Caso Agencia de Viajes Escamilla.\" Official decisions follow institutional naming conven"
+  },
+  {
+   "id": "sv-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1072,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The decision originates from El Salvador's Supreme Court of Justice (Corte Suprema de Justicia), not Mexico's SCJN. Mexico's platform would not publish Salvadoran judicial decisions."
+  },
+  {
+   "id": "sv-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1381,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The identifier '80-P-2026' cannot correspond to '80-P-2025' as they are distinct reference numbers. Identifier sequences must match precisely in official documentation systems."
+  }
+ ]
+}

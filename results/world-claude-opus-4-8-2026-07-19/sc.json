@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Seychelles — Source-Grounded Citation Reliability (SC)",
+ "country": "SC",
+ "jurisdiction": "Seychelles",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:24:05.816676+00:00",
+ "results": [
+  {
+   "id": "sc-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2259,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The claim contains a typo (\"Agecy\"), an implausible January 1 gazette date, and lacks verifiable authenticity for this citation."
+  },
+  {
+   "id": "sc-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2263,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The 2025-01-01 publication date appears implausibly generic; I cannot verify this specific Act's existence or exact gazette details."
+  },
+  {
+   "id": "sc-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2874,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific Act exists; the January 1 date is implausible for gazette publication and appears fabricated."
+  },
+  {
+   "id": "sc-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2380,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this citation; the specific act, number, and date appear fabricated and lack confirmable authoritative sourcing."
+  },
+  {
+   "id": "sc-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2044,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific Act number, title, or the January 1, 2025 gazette date without authoritative confirmation."
+  },
+  {
+   "id": "sc-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2273,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific Act number, title, or the January 1, 2025 publication date without authoritative confirmation."
+  },
+  {
+   "id": "sc-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2860,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Kenya Law publishes Kenyan legislation, not Seychelles laws. A Seychelles Act wouldn't be published via Kenya's council."
+  },
+  {
+   "id": "sc-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1931,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The National Institute of Science, Technology and Innovation Act is Tanzanian legislation, not Seychelles; jurisdiction mismatch."
+  },
+  {
+   "id": "sc-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2895,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Kenya Law reports Kenyan legislation, not Seychelles laws. A Seychelles Act would be published via Seychelles' official gazette."
+  },
+  {
+   "id": "sc-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1941,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Seychelles legislation would be published by Seychelles authorities, not Tanzania's Attorney General's Office; jurisdictions don't publish each other's laws."
+  },
+  {
+   "id": "sc-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1925,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Kenya Law reports Kenyan legislation, not Seychelles Acts. Seychelles laws are published via SeyLII or the official Gazette."
+  },
+  {
+   "id": "sc-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2379,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Kenya Law reports Kenyan legislation, not Seychelles. Seychelles laws are published via Seychelles Legal Information Institute (SeyLII) or Official Gazette."
+  }
+ ]
+}

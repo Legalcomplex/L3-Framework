@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Pakistan — Source-Grounded Citation Reliability (PK)",
+ "country": "PK",
+ "jurisdiction": "Pakistan",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:00:49.315930+00:00",
+ "results": [
+  {
+   "id": "pk-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2104,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This citation references a case dated 2026, a future date not yet occurred, making verification impossible and the claim likely fabricated or erroneous."
+  },
+  {
+   "id": "pk-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2081,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This is a pre-partition British India colonial-era enactment from 1938; a HuggingFace dataset is not an official legal publication source."
+  },
+  {
+   "id": "pk-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2750,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** A civil appeal numbered \"1120 OF 2009\" cannot have a decision date of 2008-06-05, since the case was filed/registered in 2009, after that date."
+  },
+  {
+   "id": "pk-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2150,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The date 2026-01-02 is in the future and cannot represent an already published judgment; Islamabad High Court decisions cannot predate their actual issuance verifiably now."
+  },
+  {
+   "id": "pk-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2315,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.**  The Mines Maternity Benefit Act, 1941 is a genuine pre-partition statute, but the HuggingFace dataset is a modern digital compilation, not an official government publication or original ga"
+  },
+  {
+   "id": "pk-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2191,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Titles like \"IN THE SUPREME COURT OF PAKISTAN\" are generic headers, not verifiable citations; authenticity requires official case numbers, parties, and reporter verification."
+  },
+  {
+   "id": "pk-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 3740,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The dates (2027/2026) are in the future relative to real records, and this specific identifier-case pairing cannot be verified as authentic."
+  },
+  {
+   "id": "pk-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2197,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Manoeuvres, Field Firing and Artillery Practice Act, 1938 is a Pakistani/British Indian statute, not published via Maldives Government Gazette."
+  },
+  {
+   "id": "pk-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1770,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** I cannot verify specific case citations, docket numbers, or dataset contents without access to that source, so I can't confirm this claim's accuracy."
+  },
+  {
+   "id": "pk-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1455,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This citation refers to a future-dated 2026 case, which cannot be verified as an existing official record at present."
+  },
+  {
+   "id": "pk-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2311,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Pakistan's pre-1947 laws originate from the Gazette of India, but this Act should be verified against actual promulgation records, not assumed accurate."
+  },
+  {
+   "id": "pk-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 6773,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This is not a verifiable, specific citation—it lacks case name, citation number, and parties, making the bibliographic claim unconfirmable and likely fabricated or generic."
+  }
+ ]
+}

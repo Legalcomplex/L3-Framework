@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — International — Source-Grounded Citation Reliability (INTL)",
+ "country": "INTL",
+ "jurisdiction": "International",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:15:23.365396+00:00",
+ "results": [
+  {
+   "id": "intl-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1785,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The African Charter on Democracy, Elections and Governance was adopted by the African Union on 30 January 2007."
+  },
+  {
+   "id": "intl-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2092,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Constitute Project catalogs modern national constitutions, not the 1818 Baden constitution of a historical German state."
+  },
+  {
+   "id": "intl-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2241,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. ECOLEX indexes environmental legislation; the \"2024-01-01\" date appears fabricated/placeholder, and manufacturing-practice orders fall outside its scope."
+  },
+  {
+   "id": "intl-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2041,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific case, series number, or future-dated 2025 decision; details appear fabricated or unverifiable."
+  },
+  {
+   "id": "intl-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2113,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier 'ICC-01/04-00/00' appears malformed; ICC case numbers don't use '00/00' format, indicating a fabricated citation."
+  },
+  {
+   "id": "intl-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2076,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-04-02 is in the future, making this a fabricated or unverifiable citation that cannot presently be confirmed."
+  },
+  {
+   "id": "intl-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2254,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.**  The African Charter on Democracy, Elections and Governance was adopted by the African Union, not published via Austria's RIS system."
+  },
+  {
+   "id": "intl-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2806,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. LILEX is Liechtenstein's legal database; Baden was a German state. Its 1818 constitution wouldn't appear in Liechtenstein's system."
+  },
+  {
+   "id": "intl-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2054,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. ECOLEX is an environmental law database; GMP manufacturing orders concern pharmaceuticals/medicines, not environmental law, plus suspicious 2025-01-01 date."
+  },
+  {
+   "id": "intl-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2303,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Inter-American Court publishes decisions; however, I cannot verify this specific case name, number, or date as authentic."
+  },
+  {
+   "id": "intl-src-f05",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2018,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier format is malformed; ICC situation/case numbers use patterns like ICC-01/04-01/06, not ICC-01/04-00/01."
+  },
+  {
+   "id": "intl-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2362,
+   "verdict": false,
+   "correct": true,
+   "raw": "I cannot verify this specific claim. **False** (tentatively): I lack reliable confirmation of this exact document, date, and publisher combination."
+  }
+ ]
+}

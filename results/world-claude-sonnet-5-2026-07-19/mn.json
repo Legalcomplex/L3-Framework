@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Mongolia — Source-Grounded Citation Reliability (MN)",
+ "country": "MN",
+ "jurisdiction": "Mongolia",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:58:39.435976+00:00",
+ "results": [
+  {
+   "id": "mn-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2361,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Mongolia's Law on Air (\"Агаарын тухай хууль\") was adopted/amended around that period, not repealed; no such nullification law exists dated 2012-05-17."
+  },
+  {
+   "id": "mn-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1918,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific decision number, date, and case identifier combination exists in shuukh.mn's actual published records database."
+  },
+  {
+   "id": "mn-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2188,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this citation refers to a future-dated (2026) decision that cannot yet exist or be verified as an authentic official Tsets publication."
+  },
+  {
+   "id": "mn-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2934,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific citation's accuracy—the law's existence, exact title, publication date, or Unified Legal Information System indexing may be incorrect or unconfirmed."
+  },
+  {
+   "id": "mn-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2496,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Darkhan-Uul's first-instance Administrative Court decisions are published through the relevant local/administrative court records or legal databases, not specifically Supreme Court's shuukh.mn "
+  },
+  {
+   "id": "mn-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2069,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this appears to be a fabricated/future-dated citation; no verifiable 2026 Tsets decision on this matter exists in official records."
+  },
+  {
+   "id": "mn-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 5339,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** No verifiable record confirms this exact repeal law titled this way was published on that specific date via the Unified Legal Information System."
+  },
+  {
+   "id": "mn-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2435,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier ends in 0053, but the cited decision title references 0052, an internal mismatch indicating incorrect citation correspondence."
+  },
+  {
+   "id": "mn-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1799,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Mongolia's Constitutional Court (Цэц) decisions cannot be published by \"Macau Court Decisions,\" an unrelated Macau judicial database with no jurisdictional connection to Mongolia."
+  },
+  {
+   "id": "mn-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2014,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** KLIC (Korean Law Information Center) publishes Korean legislation, not Mongolian law. Mongolian legal sources use \"Legalinfo.mn\" as the official database."
+  },
+  {
+   "id": "mn-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1749,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Darkhan-Uul provincial administrative court decisions are first-instance rulings, not Supreme Court decisions; shuukh.mn misattributes the issuing judicial authority."
+  },
+  {
+   "id": "mn-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 5384,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Mongolia's Constitutional Court decisions are not published by \"Macau Court Decisions\"; that source covers Macau judiciary rulings, not Mongolian legal acts."
+  }
+ ]
+}

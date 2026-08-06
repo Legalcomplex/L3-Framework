@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Marshall Islands — Source-Grounded Citation Reliability (MH)",
+ "country": "MH",
+ "jurisdiction": "Marshall Islands",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:18:42.520211+00:00",
+ "results": [
+  {
+   "id": "mh-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2026,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific case exists; I have no reliable record confirming this decision, citation, or publication details."
+  },
+  {
+   "id": "mh-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2318,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Marshall Islands does not publish administrative regulations in this form; this citation appears fabricated and unverifiable."
+  },
+  {
+   "id": "mh-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2502,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Marshall Islands Business Corporations Act is part of the Associations Law, not dated September 13, 1990."
+  },
+  {
+   "id": "mh-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2069,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation exists; details like case number and date appear fabricated without reliable confirmation."
+  },
+  {
+   "id": "mh-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2205,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date (2026) is in the future, and this specific case citation appears fabricated; I cannot verify its existence."
+  },
+  {
+   "id": "mh-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2267,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Constitution is a foundational constitutional document, not an administrative regulation, and predates 2025 (adopted 1979)."
+  },
+  {
+   "id": "mh-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2013,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific case exists; I have no reliable record of it, so I cannot confirm authenticity."
+  },
+  {
+   "id": "mh-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2569,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Federal Register of Legislation is Australia's official source; it would not publish Marshall Islands legal materials."
+  },
+  {
+   "id": "mh-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 3396,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Open Australian Legal Corpus covers Australian law, not Marshall Islands legislation, making this attribution implausible and incorrect."
+  },
+  {
+   "id": "mh-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2102,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. RONLAW is Nauru's database; Marshall Islands legal decisions would be published through PacLII or Marshall Islands official sources."
+  },
+  {
+   "id": "mh-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1673,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific decision exists; the citation details appear fabricated and lack corroboration in accessible Marshall Islands legal records."
+  },
+  {
+   "id": "mh-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1534,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Constitution is a foundational constitutional document, not published through administrative regulations, and 2026 is implausible/future-dated."
+  }
+ ]
+}

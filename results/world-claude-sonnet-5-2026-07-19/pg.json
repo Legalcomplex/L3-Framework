@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Papua New Guinea — Source-Grounded Citation Reliability (PG)",
+ "country": "PG",
+ "jurisdiction": "Papua New Guinea",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:00:30.199778+00:00",
+ "results": [
+  {
+   "id": "pg-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2886,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The National Information and Communications Technology Act 2009 was enacted by PNG's National Parliament, not \"published\" by NICTA via Gazette Instruments."
+  },
+  {
+   "id": "pg-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2023,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific citation exists; no reliable record confirms this instrument's publication details, so it appears fabricated."
+  },
+  {
+   "id": "pg-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2334,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The described publication details (2017-09-21 Gazette, NICTA source) appear fabricated or unverifiable; no reliable evidence confirms this exact instrument's authentic official publication."
+  },
+  {
+   "id": "pg-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2270,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific instrument's existence, title, or publication date against official PNG NICTA gazette records; unconfirmed citation."
+  },
+  {
+   "id": "pg-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 5878,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. There is no verified official record confirming a \"SIM Card Registration Regulation, 2016\" published on that date by PNG's NICTA gazette instruments."
+  },
+  {
+   "id": "pg-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2176,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific citation exists; NICTA gazette instruments with this exact title, date, and publication details appear fabricated or unconfirmed."
+  },
+  {
+   "id": "pg-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2163,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The National ICT Act was enacted in 2009 by Parliament; NICTA gazette instruments in 2011 wouldn't be the original publishing authority/source."
+  },
+  {
+   "id": "pg-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1960,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The date (2020-03-22) predates the cited instrument's title year (2022), making the publication timeline internally inconsistent and unverifiable as stated."
+  },
+  {
+   "id": "pg-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2393,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Open Australian Legal Corpus covers Australian law, not Papua New Guinea legislation, so this source attribution is incorrect."
+  },
+  {
+   "id": "pg-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1632,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Papua New Guinea's legal instruments would not be officially published via the Solomon Islands Attorney General's Legislation Portal; jurisdictions maintain separate official gazettes/regis"
+  },
+  {
+   "id": "pg-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1807,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Papua New Guinea's SIM Card Registration Regulation would not be published by the Republic of Marshall Islands Judiciary—an unrelated foreign jurisdiction's court authority."
+  },
+  {
+   "id": "pg-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1592,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The date (2020-03-22) precedes the instrument's title year (2022), an internal inconsistency indicating fabricated or inaccurate citation details."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Maldives — Source-Grounded Citation Reliability (MV)",
+ "country": "MV",
+ "jurisdiction": "Maldives",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:19:44.709358+00:00",
+ "results": [
+  {
+   "id": "mv-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2339,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific 2026 law exists; the citation appears fabricated, as my knowledge lacks confirmation of it."
+  },
+  {
+   "id": "mv-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2351,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation; the title, date, and CMDA attribution appear fabricated and unconfirmed in available records."
+  },
+  {
+   "id": "mv-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2000,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific gazette entry; the December 2025 date and act number appear fabricated or unverifiable to me."
+  },
+  {
+   "id": "mv-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3001,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific regulation, title, publishing authority, or 2011 date; details appear unconfirmed and likely fabricated."
+  },
+  {
+   "id": "mv-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1956,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific law number, title, or gazette date; the future publication date makes verification impossible currently."
+  },
+  {
+   "id": "mv-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2208,
+   "verdict": true,
+   "correct": true,
+   "raw": "I cannot verify this specific claim as True or False without access to CMDA's authoritative publication records; treat as unverified."
+  },
+  {
+   "id": "mv-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2895,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Maldivian laws are published in the official Government Gazette (Dhivehi Sarukaaru Gazette), not a Pakistan-focused HuggingFace dataset."
+  },
+  {
+   "id": "mv-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2504,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific citation; custodial services regulation typically falls under CMDA, but exact title and date are unconfirmed."
+  },
+  {
+   "id": "mv-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1614,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Gazette of India publishes Indian laws, not Maldivian legislation. Maldives laws appear in the Maldives Government Gazette (gazette.gov.mv)."
+  },
+  {
+   "id": "mv-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 3273,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific regulation, title, publisher, or date; likely fabricated. Maldivian CMDA regulations require independent confirmation before acceptance."
+  },
+  {
+   "id": "mv-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2194,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Maldives laws are published in the Maldives Government Gazette, not Sri Lanka's printing department; jurisdictions maintain separate official gazettes."
+  },
+  {
+   "id": "mv-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2278,
+   "verdict": true,
+   "correct": false,
+   "raw": "I cannot verify this specific citation as True or False; I lack reliable access to confirm this exact document's existence and publication date."
+  }
+ ]
+}

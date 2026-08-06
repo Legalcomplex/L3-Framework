@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Gibraltar — Source-Grounded Citation Reliability (GI)",
+ "country": "GI",
+ "jurisdiction": "Gibraltar",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:37:39.538305+00:00",
+ "results": [
+  {
+   "id": "gi-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2203,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The claim references a 2026 regulation, which is a future date. No legislation from future years can have been published to date. This appears to be hypothetical or fictional."
+  },
+  {
+   "id": "gi-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2515,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  I cannot verify this specific case identifier against Gibraltar's official Supreme Court judgment collection. No reliable source confirms this particular citation format or case details."
+  },
+  {
+   "id": "gi-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1388,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This notice cannot have been published on 2026-04-09 as that date is in the future. The claim contains an impossible publication date."
+  },
+  {
+   "id": "gi-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1861,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The decision date (2024-12-11) is in the future relative to knowledge cutoff. I cannot verify this decision's existence or publisher authenticity."
+  },
+  {
+   "id": "gi-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1730,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This regulation cannot exist as of the claim date. As of my knowledge cutoff (April 2024), April 2026 lies in the future, making this publication date impossible to verify."
+  },
+  {
+   "id": "gi-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1573,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The identifier format and case details cannot be verified against official Gibraltar Supreme Court Judgment collections. No reliable source confirms this specific 2024GibLR reference."
+  },
+  {
+   "id": "gi-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1391,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Gibraltar's official legal gazette is the Gibraltar Gazette, not Moniteur Belge/Belgisch Staatsblad, which is Belgium's official journal."
+  },
+  {
+   "id": "gi-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1802,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this citation format or case details against authoritative Gibraltar legal databases. The identifier format and case information cannot be reliably confirmed without access to o"
+  },
+  {
+   "id": "gi-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1084,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Gibraltar's official legal gazette is the Gibraltar Gazette, not the Italian Official Gazette (Gazzetta Ufficiale della Repubblica Italiana). The source is incorrect."
+  },
+  {
+   "id": "gi-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1333,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The identifier format and specific citation details cannot be verified against official Gibraltar Supreme Court judgment records without access to the authoritative GibLR database."
+  },
+  {
+   "id": "gi-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1192,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Gibraltar has its own independent legal system and gazette. Regulations would be published in the Gibraltar Gazette, not Malta's, regardless of jurisdiction alignment."
+  },
+  {
+   "id": "gi-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1284,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No Gibraltar Supreme Court judgment with this citation details (case name, parties, and date of 2025-08-21) exists in publicly available official records or databases as of current knowledge."
+  }
+ ]
+}

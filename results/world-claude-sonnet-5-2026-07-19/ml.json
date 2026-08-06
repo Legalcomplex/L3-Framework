@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Mali — Source-Grounded Citation Reliability (ML)",
+ "country": "ML",
+ "jurisdiction": "Mali",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:58:26.866556+00:00",
+ "results": [
+  {
+   "id": "ml-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2164,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This citation appears fabricated or unverifiable; \"Mali Consolidated Legal Codes (SGG)\" is not a recognized official publisher name for Malian legal texts."
+  },
+  {
+   "id": "ml-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1984,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This citation lacks verifiable details—case number \"193\" alone, without parties or section, cannot confirm authenticity as an official published decision."
+  },
+  {
+   "id": "ml-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2000,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify unpublished/unindexed claims about specific court announcements; this appears to be an unverifiable or fabricated citation lacking confirmable sourcing."
+  },
+  {
+   "id": "ml-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 6149,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated or unverifiable citation; Mali's official gazette is the Journal Officiel, not \"Mali Consolidated Legal Codes (SGG).\""
+  },
+  {
+   "id": "ml-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1893,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific citation exists—no reliable access to Mali's Cour Suprême database confirms this decision's authenticity or details."
+  },
+  {
+   "id": "ml-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1857,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific decision exists — I have no reliable access to Cour Suprême du Mali's jurisprudence database to confirm this citation's accuracy."
+  },
+  {
+   "id": "ml-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1838,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Nigerian Communications Commission is a Nigerian telecom regulator, irrelevant to Mali's Customs Code, an unrelated national fiscal/legal instrument."
+  },
+  {
+   "id": "ml-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1746,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier number \"194\" does not match the cited decision number \"193,\" creating an internal inconsistency in the bibliographic reference."
+  },
+  {
+   "id": "ml-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1690,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — this appears to be a future-dated (2026-09-07), unverifiable claim; I cannot confirm such specific publication details or their authenticity."
+  },
+  {
+   "id": "ml-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1741,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Mali's Code de l'artisanat is a Malian legal instrument; Nigeria's food/drug agency is unrelated, jurisdictionally and institutionally, to its publication."
+  },
+  {
+   "id": "ml-src-f05",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1586,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier ends in \"072\" but the described decision number is \"071,\" a mismatch indicating inconsistent, likely fabricated citation details."
+  },
+  {
+   "id": "ml-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1666,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The jurisdiction specified is Mali, but the claim attributes the decision to Senegal's Supreme Court—a jurisdictional mismatch making the citation inconsistent."
+  }
+ ]
+}

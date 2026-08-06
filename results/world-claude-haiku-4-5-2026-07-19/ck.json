@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Cook Islands — Source-Grounded Citation Reliability (CK)",
+ "country": "CK",
+ "jurisdiction": "Cook Islands",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:35:10.299457+00:00",
+ "results": [
+  {
+   "id": "ck-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1924,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Cook Islands does not have a \"Statistics Act 2015-16\" with that specific designation. Cook Islands legislation typically uses different naming conventions and year formats."
+  },
+  {
+   "id": "ck-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2141,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Accommodation Levy Act 1978-79 predates PacLII's establishment (founded 2000), making this publication attribution chronologically impossible."
+  },
+  {
+   "id": "ck-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1671,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Cook Islands Consolidated Legislation Portal does not list a \"Banking Act 2011\" with that publication date. The actual Banking Act in Cook Islands legislation has different designation deta"
+  },
+  {
+   "id": "ck-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1760,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  PacLII (Pacific Islands Legal Information Institute) publishes Pacific Island court decisions, but this specific citation format and date cannot be verified as an authentic official Cook Is"
+  },
+  {
+   "id": "ck-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1697,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Cook Islands Consolidated Legislation Portal does not publish legislation with dual-year citations (1993-94). Official Cook Islands legislation uses single-year designations."
+  },
+  {
+   "id": "ck-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1700,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  PacLII (Pacific Islands Legal Information Institute) publishes Cook Islands cases, but the citation format and case details cannot be verified as authentic without confirmation from officia"
+  },
+  {
+   "id": "ck-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 5919,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The Statistics Act 2015-16 does not appear in the Cook Islands Consolidated Legislation Portal as a published statute with that specific title or date designation."
+  },
+  {
+   "id": "ck-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1378,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Accommodation Levy Act 1978-79 belongs to Cook Islands legislation, not Tonga. Different Pacific nations maintain separate legal systems and publication authorities."
+  },
+  {
+   "id": "ck-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1282,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This claim is inaccurate. The Banking Act 2011 is a Cook Islands law, not a Fiji law. It should be published via Cook Islands official sources, not laws.gov.fj (Fiji's legal database)."
+  },
+  {
+   "id": "ck-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1316,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This decision is from the Cook Islands High Court (CKHC), not the Federal Court of Australia. The citation format and court designation confirm Cook Islands jurisdiction, not Australian."
+  },
+  {
+   "id": "ck-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1292,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Trading Hours Act 1993-94 would have been enacted in 1993-94, not published on 1993-01-01, and the Cook Islands Consolidated Legislation Portal publishes consolidated versions, not original"
+  },
+  {
+   "id": "ck-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1014,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The decision cites Cook Islands High Court (CKHC) jurisdiction and case number format, indicating it belongs to Cook Islands courts, not Marshall Islands Judiciary."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Mozambique — Source-Grounded Citation Reliability (MZ)",
+ "country": "MZ",
+ "jurisdiction": "Mozambique",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:19:59.639098+00:00",
+ "results": [
+  {
+   "id": "mz-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1801,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-04-20 is in the future, making this citation impossible to verify as a genuine published decision."
+  },
+  {
+   "id": "mz-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2351,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Mozambican laws are published in the Boletim da República (official gazette), not via a Supreme Court legislation portal."
+  },
+  {
+   "id": "mz-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2479,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This cannot be verified; the identifier, case number, and future date (2026) suggest fabricated bibliographic details lacking authenticity."
+  },
+  {
+   "id": "mz-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2006,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Mozambique laws are published in the Boletim da República, not a \"Supreme Court Legislation Portal,\" which doesn't exist."
+  },
+  {
+   "id": "mz-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1787,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-04-20 is in the future relative to any verifiable record, making this citation unverifiable and likely fabricated."
+  },
+  {
+   "id": "mz-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2337,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this identifier or citation; the labor law claim and hash-style identifier appear fabricated and unverifiable."
+  },
+  {
+   "id": "mz-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2735,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This appears fabricated; the 2026 date is in the future, and I cannot verify this identifier or citation format exists."
+  },
+  {
+   "id": "mz-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2332,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific identifier or exact citation details, and fabricated-looking hash identifiers with truncated titles warrant skepticism absent confirmation."
+  },
+  {
+   "id": "mz-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1670,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific citation format or decision exists; Mozambique's Supreme Court citation conventions and details appear unreliable here."
+  },
+  {
+   "id": "mz-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2683,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Mozambican laws are published in the Boletim da República, not Kenya Law, which is Kenya's jurisdiction-specific reporting body."
+  },
+  {
+   "id": "mz-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1832,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Mozambican case citations don't follow this format, and I cannot verify this specific decision exists as described."
+  },
+  {
+   "id": "mz-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2967,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Mozambican laws are published in the Boletim da República, not the Seychelles Official Gazette; jurisdictions differ entirely."
+  }
+ ]
+}

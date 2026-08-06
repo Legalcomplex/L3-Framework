@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Democratic Republic of the Congo — Source-Grounded Citation Reliability (CD)",
+ "country": "CD",
+ "jurisdiction": "Democratic Republic of the Congo",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:51:01.940682+00:00",
+ "results": [
+  {
+   "id": "cd-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2863,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific citation's authenticity—case numbers, dates, and details may be fabricated or unconfirmable through reliable sources."
+  },
+  {
+   "id": "cd-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2427,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific decree's existence, exact title, or publication details on that portal without access to authoritative DRC legal databases."
+  },
+  {
+   "id": "cd-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2176,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The CCJA (OHADA court, Abidjan) ruling on Côte d'Ivoire matters isn't part of DRC's Constitutional Court/Cassation collection—jurisdictional mismatch invalidates this attribution."
+  },
+  {
+   "id": "cd-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2121,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The number \"78-054bis\" is not a standard DRC ordonnance format, and no \"DRC Legislation Portal\" exists as an official government publication source—the Journal Officiel is authoritative."
+  },
+  {
+   "id": "cd-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2154,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this citation cannot be verified: the DRC's Cour de cassation matter and date, and \"RP057-CR\" reference appear fabricated or unconfirmed as published on Juricaf."
+  },
+  {
+   "id": "cd-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2008,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific arrêté's existence, exact date, or publication details against authoritative Congolese sources or gazette records."
+  },
+  {
+   "id": "cd-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1969,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Cour de cassation is a DRC judicial body; decisions by DRC's Cour de cassation cannot be published by Gabon's Cour Constitutionnelle, a distinct foreign institution."
+  },
+  {
+   "id": "cd-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 3132,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This decree relates to human rights review preparation, but the \"SGG\" and precise gazette attribution requires verification; jurisdiction confusion (DRC vs Congo-Brazzaville) undermines the"
+  },
+  {
+   "id": "cd-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1637,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier \"146/2020\" implies a 2020 DRC case, but the description cites CCJA 2019 Côte d'Ivoire case—mismatched year, court, and jurisdiction entirely."
+  },
+  {
+   "id": "cd-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2710,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. AngoLEX publishes Angolan legislation, not DRC ordinances; a DRC ordinance would appear in the Journal Officiel de la RDC, not AngoLEX."
+  },
+  {
+   "id": "cd-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1755,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The label \"Congo démocratique\" refers to DR Congo, but \"Congo-Brazzaville Constitutional Court Decisions\" is a different country's different court entirely."
+  },
+  {
+   "id": "cd-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1926,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The \"Journal Officiel de la République Gabonaise\" is Gabon's official gazette, not the DRC's, making this attribution jurisdictionally inconsistent and incorrect."
+  }
+ ]
+}

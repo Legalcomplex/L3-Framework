@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Poland — Source-Grounded Citation Reliability (PL)",
+ "country": "PL",
+ "jurisdiction": "Poland",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:43:28.803243+00:00",
+ "results": [
+  {
+   "id": "pl-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1548,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The regulation date (22 December 2024) precedes the publication date (31 December 2024) by only 9 days, which is implausibly brief for Polish ministerial regulation processing and Dziennik "
+  },
+  {
+   "id": "pl-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1937,
+   "verdict": true,
+   "correct": true,
+   "raw": "**True**  The Polish Constitutional Court (Trybunał Konstytucyjny) publishes decisions in the format \"Postanowienie\" (ruling/order). The reference P 54/14 follows standard Polish Constitutional Court "
+  },
+  {
+   "id": "pl-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2692,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The date 2026-03-19 is in the future and cannot be a decided case. Court decisions must have past dates. This appears to be a fabricated or speculative reference."
+  },
+  {
+   "id": "pl-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1682,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. K 1/87 is a Constitutional Tribunal ruling, published by the Constitutional Tribunal itself, not by SAOS (which analyzes court decisions, not constitutional rulings)."
+  },
+  {
+   "id": "pl-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1901,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The case designation \"V KK 137/16\" indicates a Criminal Chamber (Kk) decision, but the date format and reference structure do not match official Polish Supreme Court publication standards o"
+  },
+  {
+   "id": "pl-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1910,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  As of my knowledge cutoff (April 2024), I cannot verify publications from December 2024. This date is beyond my training data, so I cannot confirm this regulation's authenticity or publicat"
+  },
+  {
+   "id": "pl-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1633,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** PISRS is Slovenia's legislation database. Polish regulations are published in the Polish Official Journal (Dziennik Ustaw), not in Slovenian databases."
+  },
+  {
+   "id": "pl-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 7520,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier designation is inconsistent. \"P 54/15\" indicates a case from 2015, while \"P 54/14\" indicates a case from 2014—these are different case numbers with different year designations."
+  },
+  {
+   "id": "pl-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1220,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The identifiers don't match (142/27 vs 142/26), and a 2026 date is in the future, making this claim bibliographically incorrect."
+  },
+  {
+   "id": "pl-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1268,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  K 1/87 is a Constitutional Court decision from 1987, not 1984. SAOS publishes court decisions, but the date attribution here is incorrect."
+  },
+  {
+   "id": "pl-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2177,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This decision cannot be from the Georgian Constitutional Court because the case number format \"V KK 137/16\" and the designation system are characteristic of Polish courts, not Georgian ones"
+  },
+  {
+   "id": "pl-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1103,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This is a Polish regulation (Rozporządzenie Rady Ministrów), not Czech law. e-Sbírka is the Czech legal database and would not publish Polish legislative acts."
+  }
+ ]
+}

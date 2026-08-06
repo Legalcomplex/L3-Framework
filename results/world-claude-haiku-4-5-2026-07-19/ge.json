@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Georgia — Source-Grounded Citation Reliability (GE)",
+ "country": "GE",
+ "jurisdiction": "Georgia",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:37:29.091098+00:00",
+ "results": [
+  {
+   "id": "ge-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1498,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The Georgian Constitutional Court publishes decisions with case numbers and formal citations. This title appears to be a case name rather than an official court decision document reference fo"
+  },
+  {
+   "id": "ge-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1617,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The date 2025-11-20 is in the future (from present perspective), making this claimed publication impossible. Official court decisions cannot be published before they occur."
+  },
+  {
+   "id": "ge-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2113,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The Georgian Legislation Database (Matsne) uses document identifiers, but verification of this specific claim requires access to the actual database. Without direct confirmation, I cannot val"
+  },
+  {
+   "id": "ge-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3947,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This ordinance cannot have been published on 2026-03-26 as that date is in the future. Additionally, ordinances from governing board chairs are not typically published through Parliament."
+  },
+  {
+   "id": "ge-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1552,
+   "verdict": true,
+   "correct": true,
+   "raw": "# Answer: **True**  The Georgia National Bank is the authoritative source for publishing regulations governing commercial bank administrators in Georgia, making this publication credible and consisten"
+  },
+  {
+   "id": "ge-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1751,
+   "verdict": false,
+   "correct": false,
+   "raw": "# Answer: False  **Explanation:** The identifier format and date (2026-01-28) suggest a future decision. Georgia Supreme Court case citations use specific formatting conventions that this notation doe"
+  },
+  {
+   "id": "ge-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2046,
+   "verdict": false,
+   "correct": true,
+   "raw": "I cannot verify this claim with certainty. The identifier format and case title appear plausible for Georgian Constitutional Court records, but I lack access to current Georgian Constitutional Court d"
+  },
+  {
+   "id": "ge-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1621,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The identifiers differ fundamentally: 'ბს-1354(კ-25)' and 'ბს-701(კ-25)' represent distinct case numbers, making them separate proceedings regardless of the date provided."
+  },
+  {
+   "id": "ge-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2168,
+   "verdict": false,
+   "correct": true,
+   "raw": "# Evaluation: False  The claim cannot be verified as accurate. Georgian Legislation Database (Matsne) is a legitimate official source, but the specific publication date (2022-06-12) for this agricultu"
+  },
+  {
+   "id": "ge-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1005,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  An ordinance by a Georgian legal entity cannot be published in the Croatian Official Gazette. Georgia and Croatia are separate countries with distinct official publication systems."
+  },
+  {
+   "id": "ge-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1834,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This document pertains to Turkish banking regulations, not Georgian law. Georgia has its own separate banking regulatory framework under the National Bank of Georgia, not Turkish legislatio"
+  },
+  {
+   "id": "ge-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1351,
+   "verdict": false,
+   "correct": true,
+   "raw": "# Answer: **False**  The case citation format and date structure don't align with standard Georgian Supreme Court decision nomenclature. The designation appears malformed for official Georgian judicia"
+  }
+ ]
+}

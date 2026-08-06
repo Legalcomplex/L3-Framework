@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Madagascar — Source-Grounded Citation Reliability (MG)",
+ "country": "MG",
+ "jurisdiction": "Madagascar",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:18:37.105222+00:00",
+ "results": [
+  {
+   "id": "mg-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2061,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Madagascar's Ministry of Justice does not maintain a publicly verifiable jurisprudence database matching this citation; the reference appears fabricated."
+  },
+  {
+   "id": "mg-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2247,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation's authenticity or its publication via Juricaf without access to reliable confirming records."
+  },
+  {
+   "id": "mg-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2370,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date (2026) is future/implausible, and no verifiable \"Madagascar National Legislation Center\" publisher exists; likely fabricated citation."
+  },
+  {
+   "id": "mg-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 8537,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date is in the future (2026), making this a fabricated citation that cannot represent an actual published decision."
+  },
+  {
+   "id": "mg-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1991,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. \"Conseil de mise en état\" is not a recognized Malagasy legal source; the citation appears fabricated without verifiable database existence."
+  },
+  {
+   "id": "mg-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1987,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific identifier's authenticity; the details may be fabricated, and I shouldn't confirm unverified bibliographic claims."
+  },
+  {
+   "id": "mg-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 3007,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This appears to be a fabricated citation; the identifier format and specific database entry cannot be verified as authentic."
+  },
+  {
+   "id": "mg-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1982,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier ends in 162 while the cited decision number is 161, creating an inconsistency between the two."
+  },
+  {
+   "id": "mg-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1484,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Madagascar has no institution called \"Madagascar National Legislation Center\"; official texts are published via the Journal Officiel."
+  },
+  {
+   "id": "mg-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2490,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Decisions labeled \"HCC\" are issued by Madagascar's Haute Cour Constitutionnelle, not Mauritius's Supreme Court; jurisdictions differ."
+  },
+  {
+   "id": "mg-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2043,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Madagascar lacks a publicly accessible, official Ministry of Justice jurisprudence database; this citation appears fabricated with unverifiable publication details."
+  },
+  {
+   "id": "mg-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1977,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Tanzania's Attorney General's Office would not publish Madagascar's court decisions; each jurisdiction maintains separate official legal publication systems."
+  }
+ ]
+}

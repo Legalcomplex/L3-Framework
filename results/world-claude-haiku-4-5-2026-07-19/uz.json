@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Uzbekistan — Source-Grounded Citation Reliability (UZ)",
+ "country": "UZ",
+ "jurisdiction": "Uzbekistan",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:46:50.992299+00:00",
+ "results": [
+  {
+   "id": "uz-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1561,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The publication date (2025-12-30) is in the future, making this claim implausible. Current official Uzbek legislation cannot be dated beyond the present."
+  },
+  {
+   "id": "uz-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1891,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The title describes a specific liquidation proceeding action, not a general normative legal act suitable for departmental registry publication in December 2000."
+  },
+  {
+   "id": "uz-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1578,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The citation is incomplete and improperly formatted. It lacks the decision number, proper legislative reference structure, and verifiable publication details required for official Uzbek Con"
+  },
+  {
+   "id": "uz-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2857,
+   "verdict": true,
+   "correct": true,
+   "raw": "# Evaluation: **Unable to Determine (Insufficient Evidence)**  The claim cannot be verified as True or False with available information. The cited source (regulation.gov.uz) and publication date are p"
+  },
+  {
+   "id": "uz-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1481,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The publication date 2025-12-29 is in the future and therefore impossible. Official legal documents cannot be published on dates that have not yet occurred."
+  },
+  {
+   "id": "uz-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1700,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This appears to be a decree title, but the specific registry attribution and date cannot be verified against official Uzbekistan Ministry of Justice records without access to primary docume"
+  },
+  {
+   "id": "uz-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1562,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The publication date (2026-12-30) is in the future, making this claim impossible. Official legal sources cannot be published before the current date."
+  },
+  {
+   "id": "uz-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2177,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This document title is in Russian and concerns bankruptcy liquidation procedures, but Adilet is Kazakhstan's legal system, not Uzbekistan's. The jurisdiction mismatch makes this claim incorrect"
+  },
+  {
+   "id": "uz-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1249,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The citation format is incomplete and malformed. The decision number \"12\" lacks a year, and the title fragment cuts off mid-sentence, preventing verification of authentic publication by the"
+  },
+  {
+   "id": "uz-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1046,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Adilet Legal Information System is Kazakhstan's official legal database, not Uzbekistan's. This document would belong in Uzbekistan's legal system, making the source attribution incorre"
+  },
+  {
+   "id": "uz-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1152,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The publication date (2026-12-29) is in the future, which is impossible for an official legal document. This appears to be a data entry error or fabricated source."
+  },
+  {
+   "id": "uz-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1234,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The title appears to be a decree or resolution, but the cited source (Departmental Registry) and 1999 date cannot be verified without access to official Uzbekistan Ministry of Justice archives."
+  }
+ ]
+}

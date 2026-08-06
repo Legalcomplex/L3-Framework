@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — U.S. Virgin Islands — Source-Grounded Citation Reliability (VI)",
+ "country": "VI",
+ "jurisdiction": "U.S. Virgin Islands",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:05:24.843160+00:00",
+ "results": [
+  {
+   "id": "vi-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2371,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific case citation exists. I have no reliable record of this particular decision, docket, or publication details in my training data."
+  },
+  {
+   "id": "vi-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2558,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific case citation exists; I lack reliable access to confirm this particular decision's publication details."
+  },
+  {
+   "id": "vi-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2043,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific docket identifier, case name, and date combination against actual Virgin Islands Supreme Court records or databases."
+  },
+  {
+   "id": "vi-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2118,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific case citation; I have no reliable record of this decision's existence, docket details, or publication status."
+  },
+  {
+   "id": "vi-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2278,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation exists; I have no reliable record of this particular case, date, or exact holding."
+  },
+  {
+   "id": "vi-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2052,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify specific case docket numbers correspond to particular case names/dates without access to the actual USVI Superior Court records database."
+  },
+  {
+   "id": "vi-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 3065,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify specific docket identifiers against actual USVI Supreme Court records; this citation appears fabricated or unconfirmed and should be independently verified."
+  },
+  {
+   "id": "vi-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2263,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify specific case numbers, party names, or dates for USVI Superior Court opinions without access to that database."
+  },
+  {
+   "id": "vi-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1840,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific citation exists; I have no reliable record confirming this exact case name, date, and publication detail."
+  },
+  {
+   "id": "vi-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2058,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific case citation exists in USVI Superior Court records; the case details appear potentially fabricated or unconfirmed."
+  },
+  {
+   "id": "vi-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1766,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The U.S. Virgin Islands is a U.S. territory, not the British Virgin Islands; BVI Commercial Court Judgments cannot be the source for this V.I. case."
+  },
+  {
+   "id": "vi-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1623,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The U.S. Virgin Islands is not part of Bermuda's jurisdiction; Bermuda Supreme Court Judgments would not publish V.I. court decisions."
+  }
+ ]
+}

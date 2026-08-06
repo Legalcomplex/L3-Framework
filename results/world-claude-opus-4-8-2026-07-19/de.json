@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Germany — Source-Grounded Citation Reliability (DE)",
+ "country": "DE",
+ "jurisdiction": "Germany",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:11:16.613228+00:00",
+ "results": [
+  {
+   "id": "de-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2194,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 21.10.2025 is in the future relative to verifiable records; this citation cannot be confirmed as genuine."
+  },
+  {
+   "id": "de-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2987,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 27.01.2026 is in the future; such a decision cannot yet exist or be published."
+  },
+  {
+   "id": "de-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 6524,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. That BJNR identifier corresponds to the Straßenverkehrs-Ordnung (StVO) 1970, not the cited 1971 Besoldungsvereinheitlichungsgesetz; identifier and title mismatch."
+  },
+  {
+   "id": "de-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2449,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The docket format \"1 BvR 2281/22\" is plausible, but I cannot verify this specific decision exists; unconfirmed citation."
+  },
+  {
+   "id": "de-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2217,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The full title suggests a real IVS law, but the 2026 publication date and NeuRIS portal attribution appear fabricated."
+  },
+  {
+   "id": "de-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1990,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-01-15 is in the future; no such decision can currently exist, making verification impossible."
+  },
+  {
+   "id": "de-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2265,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The date 21.10.2025 is in the future relative to verifiability; also ECLI dates must correspond to actual decided cases."
+  },
+  {
+   "id": "de-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2233,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The date 2026-01-27 is in the future relative to verifiable records; this ECLI cannot be confirmed as genuine."
+  },
+  {
+   "id": "de-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2442,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Bundesbesoldungsgesetz reform era fits, but this specific title and exact 1973-03-18 date appear fabricated or inaccurate."
+  },
+  {
+   "id": "de-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1417,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. German Federal Constitutional Court (BVerfG) decisions are published through official German sources, not Isle of Man Judgments Online."
+  },
+  {
+   "id": "de-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1629,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Germany's federal legal information portal is \"Gesetze im Internet,\" not \"NeuRIS Rechtsinformationsportal\"; the cited source appears fabricated."
+  },
+  {
+   "id": "de-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2231,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. German BGH decisions are published in German official sources, not the Luxembourg Administrative Tribunal, an entirely unrelated foreign body."
+  }
+ ]
+}

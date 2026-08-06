@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Vietnam — Source-Grounded Citation Reliability (VN)",
+ "country": "VN",
+ "jurisdiction": "Vietnam",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.6667,
+ "correct": 8,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:47:14.134931+00:00",
+ "results": [
+  {
+   "id": "vn-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2567,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This decision number format and subject matter don't match verified Vietnamese official legal databases. The cited publication date and source require independent verification against offic"
+  },
+  {
+   "id": "vn-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1554,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  This claim is false because the publication date is 2026-04-10, which is a future date. Official legal documents cannot be published in the future; they can only be published in the present o"
+  },
+  {
+   "id": "vn-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1629,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The citation format and date structure appear inconsistent with Vietnamese Supreme People's Court official documentation standards. Verification against authoritative Vietnamese legal datab"
+  },
+  {
+   "id": "vn-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1895,
+   "verdict": true,
+   "correct": true,
+   "raw": "# True  The 2013 Constitution of Vietnam was officially published by the Vietnam National Legal Document Database (VBPL) on November 28, 2013, following its adoption."
+  },
+  {
+   "id": "vn-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2727,
+   "verdict": true,
+   "correct": true,
+   "raw": "# Evaluation Result: **True**  **Explanation:** This decision document format and publication details are consistent with official Vietnamese government decisions. Thu Vien Phap Luat is a legitimate l"
+  },
+  {
+   "id": "vn-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1867,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The publication date of 2026-04-10 is in the future, making this claim impossible. Official Gazette publications must have past dates."
+  },
+  {
+   "id": "vn-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1862,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This is a Vietnamese decision (Quyết định), not a Thai legal document. It cannot be published in Thailand's Royal Gazette. The jurisdiction mismatch invalidates the source attribution."
+  },
+  {
+   "id": "vn-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 3733,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This consolidated text (VBHN) would be published in the Official Gazette, but the citation is incomplete and lacks verification details necessary to confirm its actual 2023-04-10 publicatio"
+  },
+  {
+   "id": "vn-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1112,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This is a Vietnamese Supreme People's Court decision, not a Philippine one. Philippine Supreme Court E-Library would not publish Vietnamese judicial decisions as official Philippine Reports"
+  },
+  {
+   "id": "vn-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1152,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The 2013 Vietnamese Constitution was published by official Vietnamese state bodies, not by \"Husky & Partners Cambodian Legal Library.\" This attribution appears factually incorrect."
+  },
+  {
+   "id": "vn-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1781,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This decision is a Vietnamese legal document, not Indonesian. It should be published through Vietnam's official legal databases (e.g., VBPL.VN), not Indonesia's JDIHN National Legal Network"
+  },
+  {
+   "id": "vn-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1296,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Consolidated Text No. 27/VBHN-BCT predates 2023-04-10. This consolidation document was issued earlier, likely in 2021 or 2022, making the stated publication date incorrect."
+  }
+ ]
+}

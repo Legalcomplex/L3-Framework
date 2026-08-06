@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Zimbabwe — Source-Grounded Citation Reliability (ZW)",
+ "country": "ZW",
+ "jurisdiction": "Zimbabwe",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:06:09.542581+00:00",
+ "results": [
+  {
+   "id": "zw-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3280,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** No such statute exists as titled; Zimbabwe's actual law is the \"Acquisition of Farm Equipment or Materials Act\" (plural \"Materials\"), Chapter 18:23."
+  },
+  {
+   "id": "zw-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2346,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific bibliographic claim — I have no reliable record confirming this exact document, publication date, or issuing series exists."
+  },
+  {
+   "id": "zw-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2140,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific citation's accuracy—Zimbabwe LII's exact publication details, dates, and holdings for this Act require direct database confirmation, not assumption."
+  },
+  {
+   "id": "zw-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2362,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific circular exists — I lack reliable access to RBZ's actual 2024 exchange control directive numbering and publication records."
+  },
+  {
+   "id": "zw-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2149,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific bibliographic claim's accuracy—exact publication dates, act titles, and source attributions require confirmation against actual official records/databases."
+  },
+  {
+   "id": "zw-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1967,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Monetary Policy Statement is issued as a distinct RBZ policy document, not published under Exchange Control Directives, which is a separate publication series."
+  },
+  {
+   "id": "zw-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2304,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The \"Acquisition of Farm Equipment or Material Act\" is a genuine Zimbabwean statute, but I cannot verify this specific publication date or ZimLII citation detail."
+  },
+  {
+   "id": "zw-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2143,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** St. Helena, Ascension & Tristan da Cunha's legislation portal is unrelated to Zimbabwe; jurisdiction mismatch invalidates this bibliographic source claim entirely."
+  },
+  {
+   "id": "zw-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2645,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** ZimLII is a legal database that republishes/hosts legislation but is not the original publisher; the Act was officially published by the Government of Zimbabwe (Government Gazette/Printer)."
+  },
+  {
+   "id": "zw-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2488,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Exchange Control Circulars are Zimbabwean Reserve Bank instruments, not Zambian National Assembly Acts of Parliament—the publisher attribution is mismatched and implausible."
+  },
+  {
+   "id": "zw-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1755,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** I cannot verify the specific publication date or platform attribution for this Act, as this level of bibliographic detail requires direct database confirmation."
+  },
+  {
+   "id": "zw-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 3257,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Monetary Policy Statement is issued by the Reserve Bank of Zimbabwe, not Lesotho's legal institute (LesLII), which covers Lesotho law only."
+  }
+ ]
+}

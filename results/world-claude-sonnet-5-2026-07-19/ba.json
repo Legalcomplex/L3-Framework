@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Bosnia & Herzegovina — Source-Grounded Citation Reliability (BA)",
+ "country": "BA",
+ "jurisdiction": "Bosnia & Herzegovina",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:49:17.549655+00:00",
+ "results": [
+  {
+   "id": "ba-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2617,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This appears to be a fabricated/unverifiable citation—the date 2026-02-19 is in the future, making authentic official publication impossible to confirm."
+  },
+  {
+   "id": "ba-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 3354,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific decision's existence, exact citation details, date consistency, or publication source without access to the actual database."
+  },
+  {
+   "id": "ba-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2427,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific claim — I lack reliable access to confirm this exact ODLUKA's publication date/issue in Službene novine FBiH for 2024-12-30."
+  },
+  {
+   "id": "ba-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2405,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Zakon o budžetskom sistemu Republike Srpske was published in \"Službeni glasnik Republike Srpske,\" not a separate entity called \"Republika Srpska Legislation.\""
+  },
+  {
+   "id": "ba-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2433,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The date (2026-02-19) is in the future and cannot be verified; I cannot confirm this specific decision's existence or authenticity."
+  },
+  {
+   "id": "ba-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2025,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific case number, party name, and date combination against actual court records, so accuracy cannot be confirmed."
+  },
+  {
+   "id": "ba-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2097,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** I cannot verify this specific case number, date, and content combination exists in the Constitutional Court of Bosnia and Herzegovina's actual published decisions without access to their of"
+  },
+  {
+   "id": "ba-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2031,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific case identifier, judge name, and decision details correspond accurately—fabricated-sounding citation lacks confirmable source verification."
+  },
+  {
+   "id": "ba-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1627,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. TAR is Lithuania's legal database, not Bosnia & Herzegovina's; a B&H government decision would be published in Bosnia's official gazette, not TAR."
+  },
+  {
+   "id": "ba-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2745,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Likumi.lv is Latvia's official legal portal for Latvian legislation; it would not publish Republika Srpska's (Bosnia & Herzegovina) budget system law."
+  },
+  {
+   "id": "ba-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1767,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** I cannot verify this specific decision number, date, and content combination against actual Constitutional Court of Bosnia and Herzegovina records or publications."
+  },
+  {
+   "id": "ba-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1689,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This case number format suggests a specific court record, but I cannot verify this exact identifier-title-date correspondence in BiH judicial databases."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Palestine — Source-Grounded Citation Reliability (PS)",
+ "country": "PS",
+ "jurisdiction": "Palestine",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:01:11.376749+00:00",
+ "results": [
+  {
+   "id": "ps-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2056,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this citation is fabricated/unverifiable; it references a future date (2026), making it impossible to confirm as an actual published decision."
+  },
+  {
+   "id": "ps-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2052,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific citation's accuracy—the exact decision number, year, and date combination may be fabricated or unconfirmed."
+  },
+  {
+   "id": "ps-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2122,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Decree No. 9 of 2020 declaring a state of emergency is a Palestinian presidential decree; DCAF is a secondary aggregator, not the official gazette/publisher."
+  },
+  {
+   "id": "ps-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2669,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-04-13 is in the future, making this citation unverifiable and likely fabricated, as no legitimate ruling can exist yet."
+  },
+  {
+   "id": "ps-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2119,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation's accuracy—case numbers, dates, and details for this Palestinian Supreme Constitutional Court decision require authoritative source confirmation."
+  },
+  {
+   "id": "ps-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2834,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. DCAF is a legal database compiling/hosting laws, not the official publisher; the actual publication is the Palestinian Official Gazette (Al-Waqai Al-Filastiniya)."
+  },
+  {
+   "id": "ps-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2098,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — the source (Saudi Commercial Court Judgments) doesn't match Palestine's Constitutional Court jurisdiction, and the date is future/unverifiable."
+  },
+  {
+   "id": "ps-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2066,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** ADGM Courts (Abu Dhabi Global Market) is a UAE common-law jurisdiction; Arabic-styled \"تفسير\" case citations belong to Palestinian courts, not ADGM."
+  },
+  {
+   "id": "ps-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1790,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** DCAF's database compiles Palestinian security-sector legislation but is not the official gazette; also the 2018 date predates a 2020 decree's publication."
+  },
+  {
+   "id": "ps-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1705,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. DIFC Courts is a Dubai/UAE common-law court for financial disputes, unrelated to Palestine's Court of Cassation or its Arabic-named case decisions."
+  },
+  {
+   "id": "ps-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2380,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This case name/format reflects Palestinian High/Constitutional Court jurisdiction terminology, not Saudi Commercial Court judgments, making the source attribution incorrect."
+  },
+  {
+   "id": "ps-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1659,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. DCAF hosts security-sector legislation databases, but it is not the official publisher of Palestinian law; official gazette (Al-Waqai) publishes it."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Georgia — Source-Grounded Citation Reliability (GE)",
+ "country": "GE",
+ "jurisdiction": "Georgia",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 10,
+ "blocked": 0,
+ "unparsed": 2,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 5,
+ "parse_rate": 0.8333,
+ "passed": false,
+ "timestamp": "2026-07-19T08:13:19.948324+00:00",
+ "results": [
+  {
+   "id": "ge-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1842,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-02-12 is in the future, so this decision cannot yet exist or be published."
+  },
+  {
+   "id": "ge-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2444,
+   "verdict": null,
+   "correct": false,
+   "raw": "I cannot verify this specific citation. The case number format and future-adjacent date suggest fabrication; I lack reliable data to confirm authenticity."
+  },
+  {
+   "id": "ge-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2196,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific Matsne identifier matches that title and date; document numbers require direct database confirmation to authenticate."
+  },
+  {
+   "id": "ge-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2660,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Ordinances are issued by governing bodies, not published via Parliament; Georgian legal acts publish through the Legislative Herald (Matsne)."
+  },
+  {
+   "id": "ge-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2807,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific regulation's exact title, publication channel, or 2022-10-31 date without reliable confirmation of these fabricated-seeming details."
+  },
+  {
+   "id": "ge-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2048,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-01-28 is in the future relative to typical records, and the identifier format cannot be verified."
+  },
+  {
+   "id": "ge-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2121,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This citation appears fabricated; the 2026 date is future/implausible, and I cannot verify this specific case number and party."
+  },
+  {
+   "id": "ge-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2770,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'ბს-1354(კ-25)' does not match 'ბს-701(კ-25)'; the case numbers differ (1354 vs. 701), indicating distinct records."
+  },
+  {
+   "id": "ge-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1711,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Georgian law on agriculture and rural development exists, but I cannot verify this exact publication date on Matsne."
+  },
+  {
+   "id": "ge-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1836,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Georgia (the country) publishes legal acts in the Legislative Herald (Matsne), not Croatia's Narodne novine; jurisdictions mismatch."
+  },
+  {
+   "id": "ge-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2028,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This appears to be Georgian banking regulation misattributed to Turkish Legislation; a Hugging Face dataset isn't an official legal source."
+  },
+  {
+   "id": "ge-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 6997,
+   "verdict": null,
+   "correct": false,
+   "raw": "I cannot verify this specific citation as authentic. The case number format and details appear fabricated; I lack confirmation of genuine existence."
+  }
+ ]
+}

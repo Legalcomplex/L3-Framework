@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Trinidad and Tobago — Source-Grounded Citation Reliability (TT)",
+ "country": "TT",
+ "jurisdiction": "Trinidad and Tobago",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:46:13.871474+00:00",
+ "results": [
+  {
+   "id": "tt-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1574,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The citation lacks essential identifying information. \"1–36 .. Act\" does not specify the actual statute name, making verification against the Trinidad & Tobago Digital Legislative Library imp"
+  },
+  {
+   "id": "tt-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2427,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This act cannot have been published in 2026 as that date is in the future. As of 2024, no such future legislation exists in official records."
+  },
+  {
+   "id": "tt-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1702,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Family Law Act, 2007 (not 2004) is Trinidad and Tobago's primary family law legislation. No \"Family Proceedings Act, 2004\" exists in the official parliamentary records."
+  },
+  {
+   "id": "tt-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1489,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** As of my knowledge cutoff (April 2024), 2026 is a future date. This Act cannot have been published in January 2026, making the claim temporally impossible."
+  },
+  {
+   "id": "tt-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1897,
+   "verdict": true,
+   "correct": true,
+   "raw": "# Answer: **True**  The National Housing Authority Vesting Act, 2004 is a legitimate Act of Parliament from Trinidad and Tobago, validly published through official parliamentary channels in 2004."
+  },
+  {
+   "id": "tt-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1592,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The citation is incomplete and appears truncated at \"Eligibility for Citation\" without a full title. Additionally, the 2026 date is in the future, making current verification impossible."
+  },
+  {
+   "id": "tt-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1680,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The reference is incomplete and imprecise. \"1–36 .. Act\" lacks a proper title, year, and full citation details required for legitimate official legal sources in Trinidad and Tobago."
+  },
+  {
+   "id": "tt-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1809,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Probation of Offenders (Amendment) Act, 2026 cannot exist in 2026—this is a future date. Additionally, Grenada and Trinidad and Tobago are separate jurisdictions."
+  },
+  {
+   "id": "tt-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1565,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Family Proceedings Act, 2004 is Trinidad and Tobago legislation, not Bahamian. It would be published through Trinidad and Tobago's official legal sources, not Bahamas Consolidated Legis"
+  },
+  {
+   "id": "tt-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1420,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Aruba's DWJZ is Aruba's legislation archive, not Trinidad and Tobago's. Trinidad and Tobago legislation appears in its own official gazette and archives, not Aruban repositories."
+  },
+  {
+   "id": "tt-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1153,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The National Housing Authority Vesting Act, 2004 is Trinidad and Tobago legislation, not Sint Maarten legislation. Sint Maarten is a separate Caribbean jurisdiction with distinct legal sources."
+  },
+  {
+   "id": "tt-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1545,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The document title references \"Legal Profession (Eligibility for Citation)\" but lacks completion, and Cayman Islands legislation cannot be official Trinidad and Tobago legal sources."
+  }
+ ]
+}

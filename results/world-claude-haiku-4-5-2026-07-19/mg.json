@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Madagascar — Source-Grounded Citation Reliability (MG)",
+ "country": "MG",
+ "jurisdiction": "Madagascar",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:41:11.369094+00:00",
+ "results": [
+  {
+   "id": "mg-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1351,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Madagascar's Ministry of Justice does not maintain a publicly documented \"Jurisprudence Database\" as an official legal publication source with verifiable 2018 publication records."
+  },
+  {
+   "id": "mg-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 6633,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The citation format is incomplete and lacks proper verification details. JURICAF records require full case identifiers, parties, and publication confirmation that cannot be verified from th"
+  },
+  {
+   "id": "mg-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1294,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The publication date of 2026-01-20 is in the future, making this claim impossible. Official legal documents cannot be published on dates that have not yet occurred."
+  },
+  {
+   "id": "mg-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1864,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  This decision cannot be verified as genuine. The date is in the future (2026), making it impossible for this to be an actual published decision from Madagascar's High Constitutional Court."
+  },
+  {
+   "id": "mg-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1263,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  \"Conseil de mise en état\" is not a recognized Madagascar legal institution or official publication. No such database or source exists in Madagascar's judicial system."
+  },
+  {
+   "id": "mg-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1434,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The identifier format appears inconsistent with standard Juricaf citation conventions. Madagascar's supreme court decisions typically use different structural identifiers that don't precise"
+  },
+  {
+   "id": "mg-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1710,
+   "verdict": false,
+   "correct": true,
+   "raw": "False  I cannot verify this claim as I lack access to Madagascar's Ministry of Justice Jurisprudence Database or its specific case identifiers and records to confirm the accuracy of this bibliographic"
+  },
+  {
+   "id": "mg-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2388,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier contains '162' while the cited decision references '161'—the case numbers do not match, indicating a discrepancy in the bibliographic information."
+  },
+  {
+   "id": "mg-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1501,
+   "verdict": false,
+   "correct": true,
+   "raw": "# Evaluation: False  **Explanation:** The title fragment suggests a ministerial decree, but lacks sufficient identifying information (complete ministry name, decree number, official gazette reference)"
+  },
+  {
+   "id": "mg-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1334,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This decision would be from Madagascar's Constitutional Court (HCC), not Mauritius Supreme Court. The case number format and date indicate a Malagasy source, not Mauritian."
+  },
+  {
+   "id": "mg-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1319,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The \"Conseil de mise en état\" is a French procedural institution not part of Madagascar's legal system, which uses different judicial procedures based on Madagascar's civil law tradition."
+  },
+  {
+   "id": "mg-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 893,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Madagascar's Cour de cassation decisions would be published through Madagascar's official legal system, not Tanzania's Attorney General's Office Management Information System."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Zambia — Source-Grounded Citation Reliability (ZM)",
+ "country": "ZM",
+ "jurisdiction": "Zambia",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:06:04.131467+00:00",
+ "results": [
+  {
+   "id": "zm-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2153,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation exists; Zambia's IBA Act originally dates to 2002, and I lack confirmation of this 2025 amendment's authenticity."
+  },
+  {
+   "id": "zm-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3154,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this appears to be a fabricated or unverifiable citation; Zambian statutory instruments aren't authenticated through Securities Commission website listings dated 2025."
+  },
+  {
+   "id": "zm-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2078,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** In 1954, Zambia (Northern Rhodesia) had no such institute; Zambia LII is a modern digital platform, not an original 1954 publisher."
+  },
+  {
+   "id": "zm-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2744,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** No verifiable record of \"Act No. 9 of 2026\" exists; Zambia's Banking and Financial Services Act currently in force is Act No. 7 of 2017."
+  },
+  {
+   "id": "zm-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2177,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Zambia's Securities (Conduct of Business) Rules are issued as a Statutory Instrument under the Securities Act, not an SEC directive/guideline publication."
+  },
+  {
+   "id": "zm-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2112,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific claim—there's no reliable confirmation of these particular regulations being published on that exact date via ZambiaLII."
+  },
+  {
+   "id": "zm-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2050,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Zambia's Independent Broadcasting Authority Act is Act No. 17 of 2002, not \"2025\"; South Africa Open By-laws does not publish Zambian legislation either."
+  },
+  {
+   "id": "zm-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2798,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Statutory Instruments are published in the Government Gazette under legal authority, not by SEC as a directive/guideline source."
+  },
+  {
+   "id": "zm-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1805,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Zambia (then Northern Rhodesia) legislation would not be authoritatively published via Namibia's Legal Information Institute (NamibLII); this attribution is jurisdictionally mismatched and "
+  },
+  {
+   "id": "zm-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1709,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** ZambiaLII (not Zimbabwe LII) covers Zambian legislation; also, a 2026 Act cannot be verified as it postdates available knowledge/records."
+  },
+  {
+   "id": "zm-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1558,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Statutory Instruments are published in the Government Gazette by the Zambian government, not issued as Securities Commission directives/guidelines."
+  },
+  {
+   "id": "zm-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1615,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Zambia's Access to Information Regulations wouldn't be published by Eswatini's Central Bank; this jurisdiction-publisher mismatch indicates a fabricated bibliographic source."
+  }
+ ]
+}

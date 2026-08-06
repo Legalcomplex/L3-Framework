@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Ecuador — Source-Grounded Citation Reliability (EC)",
+ "country": "EC",
+ "jurisdiction": "Ecuador",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:52:46.031727+00:00",
+ "results": [
+  {
+   "id": "ec-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1983,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific bibliographic claim; there's no reliable way to confirm this acuerdo's existence, content, or publication details independently."
+  },
+  {
+   "id": "ec-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2281,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific citation exists; the identifier, foundation name, and publication details appear fabricated or unconfirmed in official records."
+  },
+  {
+   "id": "ec-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2028,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated/non-verifiable citation—specific personnel commission acuerdos like this aren't typically indexed individually on official registries."
+  },
+  {
+   "id": "ec-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2125,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated or unverifiable citation; I cannot confirm this specific \"Acuerdo 0892\" exists in official Ecuadorian records."
+  },
+  {
+   "id": "ec-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2017,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific claim—I lack access to confirm Acuerdo 0086's exact content, date, or publication source details."
+  },
+  {
+   "id": "ec-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2109,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific bibliographic claim's accuracy—the exact instrument, publication date, and source attribution require official Registro Oficial confirmation, which I lack."
+  },
+  {
+   "id": "ec-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 3075,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific citation's accuracy—the acuerdo number, name, position, or publication date may be fabricated or unconfirmed."
+  },
+  {
+   "id": "ec-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2282,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. \"Querido Diário\" catalogs Brazilian municipal gazettes only; Ecuadorian ministerial acuerdos couldn't have been published there."
+  },
+  {
+   "id": "ec-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2539,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — Ecuadorian Ministerial Agreements (MDT) are published in Ecuador's Registro Oficial, not via Chile's BCN Linked Open Data SPARQL platform."
+  },
+  {
+   "id": "ec-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2452,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** I cannot verify this specific citation—unable to confirm existence, exact date, or content of \"Acuerdo 0892\" from official Ecuadorian sources."
+  },
+  {
+   "id": "ec-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1546,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific \"Acuerdo 0086\" citation's details (source, date, content) without access to official records confirming its actual publication data."
+  },
+  {
+   "id": "ec-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1390,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — I cannot verify this specific bibliographic detail (agreement number, title, source, or date) against actual official records."
+  }
+ ]
+}

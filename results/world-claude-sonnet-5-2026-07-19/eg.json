@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Egypt — Source-Grounded Citation Reliability (EG)",
+ "country": "EG",
+ "jurisdiction": "Egypt",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:52:54.362080+00:00",
+ "results": [
+  {
+   "id": "eg-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2406,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a procedural request/pleading phrase, not an official published judicial decision citation from the Supreme Constitutional Court."
+  },
+  {
+   "id": "eg-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2037,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This ruling actually upheld constitutionality/rejected challenges to these Penal Code articles rather than declaring them unconstitutional as claimed."
+  },
+  {
+   "id": "eg-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2735,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation's accuracy—case numbers, exact articles challenged, and publication details require direct database confirmation for Egyptian court rulings."
+  },
+  {
+   "id": "eg-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2524,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears fabricated/unverifiable—no such consolidated ruling on these specific articles from that exact date is confirmed in official Supreme Constitutional Court records."
+  },
+  {
+   "id": "eg-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2026,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific citation's accuracy—the exact date, case number, and article combination may be fabricated or misattributed to this court decision."
+  },
+  {
+   "id": "eg-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2224,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This text reads as a litigant's petition/request phrasing, not an official published court decision, so the bibliographic claim is invalid."
+  },
+  {
+   "id": "eg-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2194,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This phrasing resembles a litigant's request/pleading, not an official published SCC decision title, making the bibliographic claim unverifiable as stated."
+  },
+  {
+   "id": "eg-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2083,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Supreme Constitutional Court ruled on defamation/insult articles' constitutionality, but this specific citation's date, article combination, or ruling details cannot be verified as accurate"
+  },
+  {
+   "id": "eg-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2145,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This is an Egyptian Supreme Constitutional Court ruling on Penal Code articles; Morocco's Competition Council has no jurisdiction or publishing role over Egyptian constitutional decisions."
+  },
+  {
+   "id": "eg-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1599,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This decision, concerning Egyptian Penal Code and Criminal Procedure articles, belongs to Egypt's Supreme Constitutional Court, not Algeria's Constitutional Court."
+  },
+  {
+   "id": "eg-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1908,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** I cannot verify this specific citation's accuracy—case number, exact date, articles, and ruling details may be fabricated or misattributed to the Egyptian Supreme Constitutional Court."
+  },
+  {
+   "id": "eg-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1481,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This quoted text is a litigant's petition/request phrasing, not an official published judicial decision text issued by the Supreme Constitutional Court itself."
+  }
+ ]
+}

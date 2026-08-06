@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Kazakhstan — Source-Grounded Citation Reliability (KZ)",
+ "country": "KZ",
+ "jurisdiction": "Kazakhstan",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:56:53.240885+00:00",
+ "results": [
+  {
+   "id": "kz-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2095,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — a 2026-03-18 publication citing a decision dated 18 December 2025 references future/unverifiable dates, making the claim implausible or fabricated."
+  },
+  {
+   "id": "kz-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1910,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This decision date (2026-04-30) is in the future, making it impossible to verify or confirm as an actual published source currently."
+  },
+  {
+   "id": "kz-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1937,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this decision has a future date (2026-04-30), which cannot be verified as an actual published official source at this time."
+  },
+  {
+   "id": "kz-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2350,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This is a Government/customs regulation on sugar imports, not a National Bank regulation; Ädilet hosts it, but attribution is wrong."
+  },
+  {
+   "id": "kz-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2147,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The referenced decision dated 18 December 2025 could not have amendments published on 18 March 2026 given citation inconsistencies and unverifiable source details."
+  },
+  {
+   "id": "kz-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2572,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated/unverifiable future-dated case citation; I cannot confirm AIFC Court records match this specific identifier and case."
+  },
+  {
+   "id": "kz-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2043,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Lex.uz publishes Uzbekistan legislation, not Kazakh Atbasar district maslikhat acts; jurisdiction mismatch makes this citation implausible and incorrect."
+  },
+  {
+   "id": "kz-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2185,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier mismatches the case number cited, the date is future/implausible (2026), and details cannot be verified as accurate."
+  },
+  {
+   "id": "kz-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2658,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This decision belongs to the Constitutional Court of Kazakhstan (established 2023), not the former Constitutional Council, which was dissolved before this date."
+  },
+  {
+   "id": "kz-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1620,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — This subject matter (sugar import regulation) falls under government/customs regulatory authority, not National Bank competence, which governs monetary and financial matters."
+  },
+  {
+   "id": "kz-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1829,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Lex.uz publishes Uzbekistan legislation, not Kazakhstan documents; an Atbasar district maslikhat decision would appear on Kazakhstani legal portals (Adilet), not Lex.uz."
+  },
+  {
+   "id": "kz-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1599,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This appears to be a fabricated/unverifiable future-dated case citation; I cannot confirm AIFC Court records match this specific identifier and content."
+  }
+ ]
+}

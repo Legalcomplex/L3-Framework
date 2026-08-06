@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Anguilla — Source-Grounded Citation Reliability (AI)",
+ "country": "AI",
+ "jurisdiction": "Anguilla",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:48:32.014976+00:00",
+ "results": [
+  {
+   "id": "ai-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2970,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This appears to be a fabricated or unverifiable citation; no evidence confirms such specific regulations exist in Anguilla's official 2006 Revised Statutes publication."
+  },
+  {
+   "id": "ai-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2959,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific citation; no such Act appears in confirmed Anguilla legislative records, suggesting likely fabrication."
+  },
+  {
+   "id": "ai-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1982,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific citation's accuracy—Anguilla's actual revised statutes compilation dates and this particular Act's title/existence require authoritative confirmation."
+  },
+  {
+   "id": "ai-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2778,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific citation exists—Anguilla's actual framework is the Utility Token Offering/Innovative Technology legislation, not this named regulation."
+  },
+  {
+   "id": "ai-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1999,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Anguilla's Revised Statutes and Regulations website exists, but I cannot verify this specific title, date, or citation as accurate without source access."
+  },
+  {
+   "id": "ai-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2054,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I have no record of an \"Anguilla Utility Token Offering Act, 2024\" existing; this appears to be a fabricated legislative citation."
+  },
+  {
+   "id": "ai-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2375,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This appears to be a fabricated or unverifiable citation; no such officially recognized instrument is confirmed in Anguilla's legitimate 2008 Revised Statutes."
+  },
+  {
+   "id": "ai-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2205,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Anguilla's legal instruments are not published via \"Bahamas Consolidated Legislation\" — that source is jurisdictionally mismatched and appears fabricated."
+  },
+  {
+   "id": "ai-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 4467,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** I cannot verify this specific citation's accuracy—Anguilla's legislative titles, publication dates, and Revised Statutes details require confirmation from official government sources."
+  },
+  {
+   "id": "ai-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1748,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Anguilla's Digital Asset Business Act/Regulations would be published through Anguilla's own official legal publication system, not Cayman Islands Legislation."
+  },
+  {
+   "id": "ai-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1877,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** I cannot verify this specific citation's accuracy—Anguilla's Revised Statutes' exact publication dates and titles require direct primary source confirmation, not assumption."
+  },
+  {
+   "id": "ai-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1503,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Anguilla legislation is not published via \"Sint Maarten Government Legislation\" — this appears to be a fabricated, non-existent legal source citation."
+  }
+ ]
+}

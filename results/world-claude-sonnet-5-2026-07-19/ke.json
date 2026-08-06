@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Kenya — Source-Grounded Citation Reliability (KE)",
+ "country": "KE",
+ "jurisdiction": "Kenya",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:56:17.536604+00:00",
+ "results": [
+  {
+   "id": "ke-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2062,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify the exact existence, title accuracy, or specific publication date of this regulation via Kenya Law without access to current, authoritative sources confirming these precise "
+  },
+  {
+   "id": "ke-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1953,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated or unverifiable citation with a future date (2026), which cannot be a genuine published Tribunal decision."
+  },
+  {
+   "id": "ke-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2478,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated citation—no verifiable public record confirms this specific decision, date, or party names from the Competition Authority of Kenya."
+  },
+  {
+   "id": "ke-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2466,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific citation's accuracy—case details, tribunal numbering, and dates require confirmation from official Kenya Law Reports/NET records directly."
+  },
+  {
+   "id": "ke-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2907,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Access to Information (General) Regulations were actually published in 2017 (Legal Notice No. 53), not 2023-12-01 via Kenya Law."
+  },
+  {
+   "id": "ke-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2014,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated or unverifiable citation—no such case is confirmed in official Kenya Tax Appeals Tribunal records or databases."
+  },
+  {
+   "id": "ke-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1943,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Accountants (Quality Assurance Review) Regulations relate to Kenya's accountancy profession and would be published in the Kenya Gazette, not Seychelles."
+  },
+  {
+   "id": "ke-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1967,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific citation's existence, exact date, or details—fabricated or unverifiable case citations are common; this appears unconfirmed."
+  },
+  {
+   "id": "ke-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 3341,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This appears to be a fabricated/unverifiable citation—no confirmed record of this specific decision, date, or parties exists in official CAK publications."
+  },
+  {
+   "id": "ke-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2665,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This is a Kenyan case (NEMA is Kenya's environmental authority), so it would be published by Kenya Law, not Mauritius Supreme Court Judgments."
+  },
+  {
+   "id": "ke-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1601,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Access to Information Act regulations were published earlier—the Act commenced 2016, and regulations were gazetted around 2017, not December 2020."
+  },
+  {
+   "id": "ke-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1570,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific citation exists; the case name, date, and details appear fabricated or unverifiable against actual Tax Appeals Tribunal records."
+  }
+ ]
+}

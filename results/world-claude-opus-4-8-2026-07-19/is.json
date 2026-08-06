@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Iceland — Source-Grounded Citation Reliability (IS)",
+ "country": "IS",
+ "jurisdiction": "Iceland",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.6667,
+ "correct": 8,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:15:45.340142+00:00",
+ "results": [
+  {
+   "id": "is-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2493,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. This is the Icelandic Criminal Procedure Act (Lög um meðferð sakamála), No. 88/2008, published in Lagasafn's consolidated legislation."
+  },
+  {
+   "id": "is-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3069,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this regulation exists; the 2026 date is in the future, and I lack confirmation of publication."
+  },
+  {
+   "id": "is-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2256,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify these specific case details, party names, or date; treating this fabricated-seeming citation as accurate would be irresponsible."
+  },
+  {
+   "id": "is-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2044,
+   "verdict": false,
+   "correct": false,
+   "raw": "False (likely). The date 2026-03-18 is in the future relative to verifiable records; this specific decision cannot be confirmed as genuine."
+  },
+  {
+   "id": "is-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2507,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. Act No. 80/2022 (Lög um loftferðir, aviation law) is genuine Icelandic legislation, consolidated and published via Lagasafn."
+  },
+  {
+   "id": "is-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2583,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-03-24 is in the future, making this citation unverifiable and likely fabricated as no such publication exists yet."
+  },
+  {
+   "id": "is-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 10507,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.**  The date 2026-09-01 is implausibly future-dated; Lagasafn consolidations don't yet exist for that date, invalidating this citation's publication claim."
+  },
+  {
+   "id": "is-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2229,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific regulation's existence or publication date; the exact citation appears fabricated without reliable confirmation."
+  },
+  {
+   "id": "is-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1841,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier states '44/2024' but the cited case is 'Mál nr. 44/2023', showing an inconsistent case number."
+  },
+  {
+   "id": "is-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2380,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. \"Úrskurður\" is Icelandic terminology; Iceland's jurisdiction contradicts attribution to Norway's Høyesterett. The claim mismatches jurisdiction, language, and issuing body."
+  },
+  {
+   "id": "is-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2268,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Icelandic laws (Lög nr. 80/2022) are published in Stjórnartíðindi, not Greenland's Nalunaarutit. The stated source is incorrect."
+  },
+  {
+   "id": "is-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1944,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Icelandic regulations use publication numbers and dates in Stjórnartíðindi; this specific title and 2024-03-24 date cannot be verified."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Dominican Republic — Source-Grounded Citation Reliability (DO)",
+ "country": "DO",
+ "jurisdiction": "Dominican Republic",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:11:38.005510+00:00",
+ "results": [
+  {
+   "id": "do-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2104,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The 2026 date is implausibly future-dated, and this citation cannot be verified as a legitimate published official source."
+  },
+  {
+   "id": "do-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2528,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date (2026) is future, indicating this citation is fabricated; such a decision cannot yet exist or be published."
+  },
+  {
+   "id": "do-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2401,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Law 225-20 on Comprehensive Solid Waste Management is the actual Dominican statute; \"Ley-98-25\" and the cited details are fabricated."
+  },
+  {
+   "id": "do-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2691,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Dominican competition authority is PRO-COMPETENCIA, not \"National Competition Commission.\" This citation and title appear fabricated/unverifiable."
+  },
+  {
+   "id": "do-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2405,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific normativa's existence, exact title, publication date, or attribution to SIPEN without reliable confirmation."
+  },
+  {
+   "id": "do-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 4652,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-01-07 is in the future, making this citation implausible and unverifiable as a legitimate published legal source."
+  },
+  {
+   "id": "do-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2454,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This appears to be a fabricated citation; the specific decree text, publisher attribution, and date cannot be verified."
+  },
+  {
+   "id": "do-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2548,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. A Dominican Republic family divorce ruling would not be published by the BVI (British Virgin Islands) Commercial Court."
+  },
+  {
+   "id": "do-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2987,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Dominican Republic's solid waste law is Ley 225-20 (2020), not \"Ley 98-25\"; the cited reference appears fabricated."
+  },
+  {
+   "id": "do-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2195,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Joint Court of Justice (Gemeenschappelijk Hof) serves Dutch Caribbean territories, not the Dominican Republic, a separate sovereign nation."
+  },
+  {
+   "id": "do-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2112,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This appears to be a fabricated citation; I cannot verify this specific resolution, title, or exact publication date exists."
+  },
+  {
+   "id": "do-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2072,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This appears to be a fabricated or unverifiable citation; the specific decree text, source attribution, and date cannot be reliably confirmed."
+  }
+ ]
+}

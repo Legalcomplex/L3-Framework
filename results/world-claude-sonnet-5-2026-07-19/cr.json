@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Costa Rica — Source-Grounded Citation Reliability (CR)",
+ "country": "CR",
+ "jurisdiction": "Costa Rica",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:51:49.422635+00:00",
+ "results": [
+  {
+   "id": "cr-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2787,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The expediente format \"140011170187FA\" doesn't match standard Costa Rican case numbering conventions, and I cannot verify this specific citation's authenticity independently."
+  },
+  {
+   "id": "cr-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2465,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific TSE resolution number, date, and content combination exists in official records—fabricated citations are common, and specificity doesn't confirm accuracy."
+  },
+  {
+   "id": "cr-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1983,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This citation format doesn't match Costa Rica's official case numbering conventions used by Poder Judicial's Jurisprudencia database, appearing fabricated or inaccurate."
+  },
+  {
+   "id": "cr-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2284,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific decision number, date, and content combination exists in TSE's actual resolution records without access to their database."
+  },
+  {
+   "id": "cr-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2041,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The expediente format \"220000100643LA\" doesn't match standard Costa Rican case numbering conventions, and this specific decision cannot be verified."
+  },
+  {
+   "id": "cr-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1991,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify specific TSE resolution numbers, dates, and content correspondences without access to the actual Costa Rican electoral tribunal database records."
+  },
+  {
+   "id": "cr-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2639,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This citation format appears fabricated or unverifiable; Costa Rican expediente numbers and Sala Segunda decisions require verification through official Poder Judicial/Nexus PJ databases direct"
+  },
+  {
+   "id": "cr-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1880,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — the identifier '0024' does not match the cited resolution number '0023-E3-2024'; the numbering is inconsistent, indicating a mismatched citation."
+  },
+  {
+   "id": "cr-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1948,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The date (2025-12-22) is in the future relative to verifiable records, and the expediente format cannot be authenticated as an actual Sala Segunda ruling."
+  },
+  {
+   "id": "cr-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2057,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier \"0002\" would not correspond to a resolution numbered \"0001-E1-2024\"; mismatched identifiers indicate inconsistent, likely fabricated citation data."
+  },
+  {
+   "id": "cr-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1864,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Sala Segunda de la Corte is a Costa Rican court; its rulings are published via Costa Rica's Poder Judicial (Nexus PJ/SCIJ), not Mexico's SCJN platform."
+  },
+  {
+   "id": "cr-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1572,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** TSE (Tribunal Supremo de Elecciones) is Costa Rica's electoral tribunal; its decisions are published via Costa Rican official channels, not Mexico's SCJN platform."
+  }
+ ]
+}

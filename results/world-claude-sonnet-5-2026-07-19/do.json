@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Dominican Republic — Source-Grounded Citation Reliability (DO)",
+ "country": "DO",
+ "jurisdiction": "Dominican Republic",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:52:36.708005+00:00",
+ "results": [
+  {
+   "id": "do-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3330,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — the cited date (2026-01-09) is a future date, making verification impossible and the claim's publication reference unreliable or fabricated."
+  },
+  {
+   "id": "do-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2886,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated or unverifiable citation—future-dated, oddly specific format, and I cannot confirm this source exists."
+  },
+  {
+   "id": "do-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1998,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — Ley 98-25 (if it exists) would date from 2025 per its numbering convention, not 2020, making this citation inaccurate."
+  },
+  {
+   "id": "do-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2744,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific citation exists — \"Resolución núm. FT-04-2015\" and this exact commission name/decision appear fabricated or unconfirmable."
+  },
+  {
+   "id": "do-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2236,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific resolution's existence, title, publication date, or issuing body without access to official current records."
+  },
+  {
+   "id": "do-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1919,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this appears to be a fabricated/unverifiable citation; I cannot confirm such a specific administrative appointment resolution exists in official records."
+  },
+  {
+   "id": "do-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2175,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — I cannot verify this specific resolution's existence, details, or publication date; unable to confirm this precise bibliographic claim's accuracy."
+  },
+  {
+   "id": "do-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1976,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The BVI Commercial Court has no jurisdiction over Dominican Republic family/divorce cases; this decision would appear in Dominican judicial records instead."
+  },
+  {
+   "id": "do-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1569,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Ley 98-25 is a 2025 solid waste law (numbering reflects year), so a 2019 publication date is impossible/inaccurate."
+  },
+  {
+   "id": "do-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1581,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Joint Court of Justice (Gemeenschappelijk Hof) serves Caribbean Dutch territories like Sint Maarten, not the Dominican Republic's legal jurisdiction."
+  },
+  {
+   "id": "do-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1851,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** I cannot verify this specific bibliographic claim's accuracy—I lack reliable access to confirm this exact resolution, date, or publication details from SIPEN's official records."
+  },
+  {
+   "id": "do-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 3136,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — I cannot verify this specific bibliographic claim; it appears fabricated or unverifiable, lacking confirmable details matching real official Dominican legal records."
+  }
+ ]
+}

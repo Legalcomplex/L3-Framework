@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Maldives — Source-Grounded Citation Reliability (MV)",
+ "country": "MV",
+ "jurisdiction": "Maldives",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:42:06.023299+00:00",
+ "results": [
+  {
+   "id": "mv-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1763,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This is a future-dated document (January 8, 2026). As of the knowledge cutoff date, this publication cannot have occurred, making verification impossible."
+  },
+  {
+   "id": "mv-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1734,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The Maldives does not have a \"Capital Market Development Authority.\" The relevant financial regulator is the Maldives Monetary Authority (MMA), which handles capital market oversight."
+  },
+  {
+   "id": "mv-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1708,
+   "verdict": false,
+   "correct": false,
+   "raw": "# Evaluation Result  **False**  The publication date (2025-12-01) is in the future, making this claim temporally impossible. Official legal sources cannot be published on dates that have not yet occur"
+  },
+  {
+   "id": "mv-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1296,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Capital Market Development Authority (CMDA) of Maldives does not typically issue regulations on custodial services. This appears to be an inaccurate attribution of regulatory authority "
+  },
+  {
+   "id": "mv-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1359,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The publication date (2025-12-03) is in the future from the current perspective, making this claim implausible and unverifiable as an official legal source."
+  },
+  {
+   "id": "mv-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1386,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Maldives does not have a \"Capital Market Development Authority\" by that name. The relevant financial regulator is the Maldives Monetary Authority (MMA), established in 2009."
+  },
+  {
+   "id": "mv-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1841,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Pakistan Laws Dataset would not contain Maldivian legislation. This law number format and Dhivehi script indicate a Maldives official source, not a Pakistani legal publication. Attribut"
+  },
+  {
+   "id": "mv-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1553,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The Capital Market Development Authority of Maldives would not typically publish regulations on custodial services institutions. This falls outside their standard regulatory purview over secu"
+  },
+  {
+   "id": "mv-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1675,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Gazette of India (egazette.gov.in) publishes Indian legislation. This document references Maldivian law (Dhivehi script), which would appear in the Maldives Gazette, not India's officia"
+  },
+  {
+   "id": "mv-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1123,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The Capital Market Development Authority (CMDA) was established in 2008 but has limited regulatory scope. This regulation's publication by CMDA on that specific date cannot be verified from a"
+  },
+  {
+   "id": "mv-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1471,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Maldivian law number 25/2025 would be published by the Maldives government printing authority, not Sri Lanka's Department of Government Printing."
+  },
+  {
+   "id": "mv-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1971,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Maldives does not have a \"Capital Market Development Authority.\" The relevant regulatory body is the Maldives Monetary Authority (MMA), which oversees financial regulation."
+  }
+ ]
+}

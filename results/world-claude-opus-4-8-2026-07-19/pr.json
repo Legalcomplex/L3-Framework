@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Puerto Rico — Source-Grounded Citation Reliability (PR)",
+ "country": "PR",
+ "jurisdiction": "Puerto Rico",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:22:57.925796+00:00",
+ "results": [
+  {
+   "id": "pr-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2560,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Ricardo Alegría's birthday is April 14, but this specific law citation cannot be verified as accurately described here."
+  },
+  {
+   "id": "pr-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2220,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The citation lacks verifiable specificity; exact law numbers, dates, and enactment details cannot be confirmed as authentic without official source verification."
+  },
+  {
+   "id": "pr-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2394,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This citation appears fabricated; I cannot verify these specific law numbers, titles, dates, or LexJuris publication details as authentic."
+  },
+  {
+   "id": "pr-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2164,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This citation cannot be verified as authentic; the specific law numbers, articles, and publication date appear fabricated without confirmation."
+  },
+  {
+   "id": "pr-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2526,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated citation; I cannot verify the specific law number, date, or referenced Ley Núm. 114 details."
+  },
+  {
+   "id": "pr-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2225,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific law's existence, number, title, or publication date; likely fabricated citation lacking confirmed authentic sources."
+  },
+  {
+   "id": "pr-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2639,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Puerto Rico laws are not published via Bahamas Consolidated Legislation; that source is fabricated and jurisdictionally inconsistent."
+  },
+  {
+   "id": "pr-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 3574,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Puerto Rico laws are published via LexJuris or the Puerto Rico legislature, not Aruba's DWJZ Legislation Archive."
+  },
+  {
+   "id": "pr-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1600,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Puerto Rico laws are published by Puerto Rico authorities, not \"Laws of Grenada,\" which is an unrelated foreign jurisdiction."
+  },
+  {
+   "id": "pr-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1677,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Puerto Rico laws are published by Puerto Rico authorities, not Turks and Caicos Attorney General; jurisdictional mismatch invalidates this claim."
+  },
+  {
+   "id": "pr-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1887,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Puerto Rico laws are not published via Bermuda Laws Online; official source is LexJuris or Puerto Rico's legislature."
+  },
+  {
+   "id": "pr-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1526,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Puerto Rico laws are published by Puerto Rico authorities, not Saint Lucia's Attorney General—jurisdictional mismatch invalidates this claim."
+  }
+ ]
+}

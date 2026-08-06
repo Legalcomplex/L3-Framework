@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — France — Source-Grounded Citation Reliability (FR)",
+ "country": "FR",
+ "jurisdiction": "France",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:13:00.917762+00:00",
+ "results": [
+  {
+   "id": "fr-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3255,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. This law creating the Contrôleur général des lieux de privation de liberté was published in the Journal officiel on 31 October 2007."
+  },
+  {
+   "id": "fr-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2894,
+   "verdict": true,
+   "correct": true,
+   "raw": "**True.**  The Code de commerce was established by Ordonnance n°2000-912 dated 18 September 2000, published 21 September 2000, containing Article L110-2."
+  },
+  {
+   "id": "fr-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2643,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier format \"26-DCC-43\" is implausible; 2026 decisions wouldn't exist yet, and numbering/dating appear fabricated or inconsistent."
+  },
+  {
+   "id": "fr-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2404,
+   "verdict": false,
+   "correct": false,
+   "raw": "I cannot verify this specific decision as authentic. The details may be fabricated; I'd flag this as likely False without confirmation."
+  },
+  {
+   "id": "fr-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2334,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The ANC was created in 2009, not 1984; a 2023 consolidated version cannot bear a 1984-07-16 publication date."
+  },
+  {
+   "id": "fr-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2333,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific proposition de loi exists with that exact title and date; unable to confirm authenticity."
+  },
+  {
+   "id": "fr-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 4000,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. LEGITEXT identifiers denote consolidated codes/texts; the loi's format suggests a JORFTEXT identifier, and the number likely doesn't match."
+  },
+  {
+   "id": "fr-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 8879,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier LEGIARTI000006219127 cannot be reliably verified as Code de commerce Article L110-2; likely inaccurate matching."
+  },
+  {
+   "id": "fr-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1943,
+   "verdict": true,
+   "correct": false,
+   "raw": "True. The Autorité de la Concurrence publishes merger control decisions concerning acquisitions of businesses, consistent with this described transaction."
+  },
+  {
+   "id": "fr-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2246,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. \"SAN-2025\" indicates a French CNIL sanction decision, not a Luxembourg tribunal; jurisdiction stated is France, contradicting the claimed publisher."
+  },
+  {
+   "id": "fr-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2184,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The ANC was created in 2009, not 1982, so a 2009-established body cannot publish under a 1982 date."
+  },
+  {
+   "id": "fr-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2147,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Fedlex is Switzerland's legal platform; a French \"proposition de loi\" would appear on Légifrance or Assemblée nationale, not Fedlex."
+  }
+ ]
+}

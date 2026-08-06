@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Bermuda — Source-Grounded Citation Reliability (BM)",
+ "country": "BM",
+ "jurisdiction": "Bermuda",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:34:11.667296+00:00",
+ "results": [
+  {
+   "id": "bm-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1480,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The decision date of 6 March 2026 is in the future, making this bibliographic claim implausible. Official court judgments cannot be published before they are decided."
+  },
+  {
+   "id": "bm-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1704,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Admiralty Pilots Act 1925 does not appear as a confirmed official Bermuda statute in standard legal databases or Bermuda Laws Online records."
+  },
+  {
+   "id": "bm-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2326,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  I cannot verify this claim. I have no access to Bermuda Supreme Court judgment databases, their indexing systems, or whether this specific identifier and case exist in official records."
+  },
+  {
+   "id": "bm-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1842,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  This decision cannot exist in 2026 as it is a future date. Additionally, the citation format appears non-standard for Bermuda's Supreme Court reporting conventions."
+  },
+  {
+   "id": "bm-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1561,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Amenities Act 1972 is Bermuda's primary ruinous structures legislation, not an 1950 Act. No verified 1950 Act by this title exists in official records."
+  },
+  {
+   "id": "bm-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2201,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The case date is 2026-03-27, which is a future date. Official court judgments cannot be issued before the present day, making this bibliographic claim impossible."
+  },
+  {
+   "id": "bm-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1866,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The identifier contains \"2025No233\" and date \"050327\" (May 3, 2027), which conflict with the cited judgment's 2026 year and March 6, 2026 date."
+  },
+  {
+   "id": "bm-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1838,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Without access to verify the specific identifier-to-legislation mapping in Bermuda Laws Online's database system, the claim cannot be confirmed as accurate based on available information."
+  },
+  {
+   "id": "bm-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1259,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This decision cannot be verified as a genuine published Bermuda Supreme Court judgment. The future date (2025-03-02) and lack of verifiable citation details suggest this is a fictitious or "
+  },
+  {
+   "id": "bm-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1785,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The case citation indicates it is a Bermuda Supreme Court decision (SC (Bda)), not a BVI Commercial Court judgment. The publisher identification is incorrect."
+  },
+  {
+   "id": "bm-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1300,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The 'Amenities (Control of Ruinous Structures) Act 1950' is Bermudian legislation, not Aruban. Aruba's DWJZ archive would not be the official publisher of Bermuda's laws."
+  },
+  {
+   "id": "bm-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1540,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This decision cannot be verified as an official Bermuda Supreme Court publication. The future date (2025-03-27) and lack of verifiable case citation make authentication impossible."
+  }
+ ]
+}

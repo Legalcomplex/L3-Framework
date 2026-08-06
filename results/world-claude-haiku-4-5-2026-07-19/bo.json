@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Bolivia — Source-Grounded Citation Reliability (BO)",
+ "country": "BO",
+ "jurisdiction": "Bolivia",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:34:19.043268+00:00",
+ "results": [
+  {
+   "id": "bo-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1601,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  This date is in the future relative to the knowledge cutoff (April 2024). I cannot verify publications from November 2025."
+  },
+  {
+   "id": "bo-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1782,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Bolivia's Tribunal Agroambiental was created by Law 741 in 2015 but did not become operational until 2018, making a 2017 decision date implausible."
+  },
+  {
+   "id": "bo-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1483,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The date November 7, 2025 is in the future relative to current reality. This bibliographic claim cannot be verified as an official legal source from Bolivia's Gaceta Oficial."
+  },
+  {
+   "id": "bo-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1544,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Bolivia's Tribunal Agroambiental (Environmental/Agrarian Court) was not established until 2010, but institutional records show it did not issue decisions under the cited nomenclature \"SAN-S"
+  },
+  {
+   "id": "bo-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1997,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  This date is in the future (November 2025). The claim cannot be verified as accurate since we are currently in 2024 and the event has not yet occurred."
+  },
+  {
+   "id": "bo-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 3044,
+   "verdict": true,
+   "correct": true,
+   "raw": "# Evaluation: **TRUE**  Bolivia's Tribunal Agroambiental (Environmental/Agrarian Court) does issue sentencias (decisions) with this nomenclature. The citation format and date are consistent with offic"
+  },
+  {
+   "id": "bo-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1479,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This law cannot exist as of the knowledge cutoff date (April 2024). The cited date (November 2025) is in the future relative to available information."
+  },
+  {
+   "id": "bo-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2052,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This decision cannot be from Peru's OSCE tribunal because the citation format and \"Sentencia Agroambiental Nacional\" designation indicate it is a Bolivian environmental court decision, not "
+  },
+  {
+   "id": "bo-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1182,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Bolivia's laws are not published through Brazil's Planalto Federal Legislation system (REFLEGIS). Bolivia has its own official legal repositories and legislative bodies independent from Bra"
+  },
+  {
+   "id": "bo-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2567,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This decision's designation (SAN-S1) indicates it originates from Bolivia's National Agroenvironmental Court, not Colombia's Procuraduría."
+  },
+  {
+   "id": "bo-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1218,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  This date is in the future (November 7, 2025). As of my knowledge cutoff in April 2024, this law cannot have been published yet. The claim is temporally impossible."
+  },
+  {
+   "id": "bo-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2069,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This decision cannot be from Peru's INDECOPI because the citation format and \"SAN\" prefix indicate it originates from Bolivia's National Agroenvironmental Court, not Peru."
+  }
+ ]
+}

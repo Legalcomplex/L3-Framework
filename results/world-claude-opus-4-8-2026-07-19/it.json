@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Italy — Source-Grounded Citation Reliability (IT)",
+ "country": "IT",
+ "jurisdiction": "Italy",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:15:50.092270+00:00",
+ "results": [
+  {
+   "id": "it-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2343,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Normattiva publishes primary legislation and consolidated texts, not implementing regulations (decreti ministeriali). The specified future date also appears fabricated."
+  },
+  {
+   "id": "it-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1942,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. A 2026 decision cannot be verified as it postdates typical knowledge; the number and citation appear fabricated."
+  },
+  {
+   "id": "it-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2259,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This ECLI format and identifier structure appear fabricated; Italian Consiglio di Stato ECLIs and sentence numbering don't match this pattern."
+  },
+  {
+   "id": "it-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2132,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Ordinanze numbered by year are typically published in the year matching the number; a 2000 decision wouldn't be \"7/2001.\""
+  },
+  {
+   "id": "it-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2323,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. Emilia-Romagna's Demetra database publishes regional legislation; a 1972 provisional budget law for fiscal year 1972 plausibly appears there."
+  },
+  {
+   "id": "it-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2570,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific 1972 Lazio regional law on treasury services; details appear fabricated without reliable confirmation from official sources."
+  },
+  {
+   "id": "it-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2674,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This appears to be a fabricated or unverifiable citation; Normattiva publishes laws, not typically regulations with such vague, incomplete titles."
+  },
+  {
+   "id": "it-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2459,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The ECLI ends in \"502571S\" but the cited sentenza number is 02570/2026, showing an inconsistency; likely fabricated identifier."
+  },
+  {
+   "id": "it-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2805,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The ECLI identifier ends in \"059\" while the cited sentenza number is \"058\"; these mismatched numbers indicate different decisions."
+  },
+  {
+   "id": "it-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2149,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. An \"Ordinanza 7/2001\" numbered for 2001 would be decided/published in 2001, not 2002-12-15; the date is inconsistent."
+  },
+  {
+   "id": "it-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1898,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This is Italian regional legislation (Emilia-Romagna), not Swiss. Fedlex publishes Swiss federal law, an incorrect source."
+  },
+  {
+   "id": "it-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1695,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Regione Lazio is an Italian regional entity; its legislation is published in Italian sources, not Swiss Cantonal Legislation."
+  }
+ ]
+}

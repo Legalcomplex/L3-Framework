@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Liechtenstein — Source-Grounded Citation Reliability (LI)",
+ "country": "LI",
+ "jurisdiction": "Liechtenstein",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:57:10.322148+00:00",
+ "results": [
+  {
+   "id": "li-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2128,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Liechtenstein's Handelsregisterverordnung (HRegV) is officially published via LILEX/LR system, but this exact date/title citation cannot be verified as accurate."
+  },
+  {
+   "id": "li-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2201,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific citation's accuracy—the case number, date, and database attribution may be fabricated or unverifiable from available sources."
+  },
+  {
+   "id": "li-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2050,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify specific Liechtenstein Staatsgerichtshof case identifiers, decision types, or dates without access to authoritative court databases or registries."
+  },
+  {
+   "id": "li-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2037,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific claim—the exact publication date, source system name, and regulation details appear fabricated or unverifiable against official Liechtenstein legal records."
+  },
+  {
+   "id": "li-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2106,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific citation's accuracy—case numbers, dates, and database attributions require confirmation from official Liechtenstein court sources directly."
+  },
+  {
+   "id": "li-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2061,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify specific Liechtenstein Staatsgerichtshof case identifiers, decision types, or dates without access to official court records or databases."
+  },
+  {
+   "id": "li-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2193,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Liechtenstein's official gazette/consolidated law source is LILEX (Landesgesetzblatt/LR system), but this specific date/citation cannot be verified as accurate."
+  },
+  {
+   "id": "li-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2063,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify specific case identifiers against gerichtsentscheide.li's database; this specific citation mapping cannot be confirmed as accurate from available information."
+  },
+  {
+   "id": "li-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1780,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'VGH 2024/131' would refer to its own distinct case number, not the ruling labeled 'VGH 2024/130' — mismatched identifiers."
+  },
+  {
+   "id": "li-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1770,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Liechtenstein publishes legal instruments in its own official gazette (Landesgesetzblatt, LGBl./LR), not in Belgium's Moniteur Belge/Belgisch Staatsblad."
+  },
+  {
+   "id": "li-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1825,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Liechtenstein's official legal source is LILEX/Gerichtsentscheidungen (StGH), not RIS, which is Austria's legal information system, a distinct jurisdiction."
+  },
+  {
+   "id": "li-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2091,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** I cannot verify this specific citation exists—case numbers, dates, and decision types for Liechtenstein Constitutional Court rulings require confirmation from official sources like gerichts"
+  }
+ ]
+}

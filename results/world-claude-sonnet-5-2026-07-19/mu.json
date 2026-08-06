@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Mauritius — Source-Grounded Citation Reliability (MU)",
+ "country": "MU",
+ "jurisdiction": "Mauritius",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:59:02.816150+00:00",
+ "results": [
+  {
+   "id": "mu-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2304,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The date (2026-04-09) is in the future, making this citation unverifiable and almost certainly fabricated or incorrectly recorded."
+  },
+  {
+   "id": "mu-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 5312,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this appears to be a fabricated/future-dated decision; no verifiable record exists, and 2026 postdates current knowledge/verification capability."
+  },
+  {
+   "id": "mu-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2136,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific citation's details (date, docket number \"30\") independently—unverifiable case citations should not be presumed accurate without direct source confirmation."
+  },
+  {
+   "id": "mu-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2064,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-01-30 is in the future and \"2026 SCJ 58\" implies Supreme Court, not FCC Court, jurisdiction reporting."
+  },
+  {
+   "id": "mu-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2235,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.**  The Additional Remuneration Act 2009 predates MauritiusLII's 2017 launch as a platform; while it hosts the Act, \"publication\" implies original enactment, not database indexing."
+  },
+  {
+   "id": "mu-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2166,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this appears to be a fabricated or unverifiable citation; no such Supreme Court Judgment can be confirmed as authentic or existing."
+  },
+  {
+   "id": "mu-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2101,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** I cannot verify this specific citation exists in Mauritius Supreme Court records; I have no reliable database access to confirm this exact case, date, and party names."
+  },
+  {
+   "id": "mu-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2115,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — I cannot verify this specific decision exists; I have no record of this particular Mauritius Competition Commission merger ruling or its details."
+  },
+  {
+   "id": "mu-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1850,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Mauritian Supreme Court decisions are published by Mauritian judicial/legal databases, not Kenya Law, which covers Kenyan jurisprudence exclusively."
+  },
+  {
+   "id": "mu-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1678,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Mauritius Supreme Court decisions (\"SCJ\" citations) are published via Mauritian judiciary sources, not Madagascar's Ministry of Justice, which is a different jurisdiction entirely."
+  },
+  {
+   "id": "mu-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1734,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Additional Remuneration (No. 2) Act 2009 predates 2020; MauritiusLII hosts legislation but didn't \"publish\" it originally—the Government Gazette did in 2009."
+  },
+  {
+   "id": "mu-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1704,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** I cannot verify this specific case citation exists; I have no reliable record of \"Police v H. Balisson\" in Mauritius Supreme Court Judgments for that date."
+  }
+ ]
+}

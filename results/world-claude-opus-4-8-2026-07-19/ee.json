@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Estonia — Source-Grounded Citation Reliability (EE)",
+ "country": "EE",
+ "jurisdiction": "Estonia",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:11:55.943311+00:00",
+ "results": [
+  {
+   "id": "ee-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2591,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. This is a valid Estonian regulation listing mined/abandoned and mineable peatlands, officially published in Riigi Teataja on that date."
+  },
+  {
+   "id": "ee-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2206,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-02-09 is in the future, making this citation impossible to verify as a genuine published source."
+  },
+  {
+   "id": "ee-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2782,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-02-05 is in the future relative to a 2025 identifier, and the case details appear fabricated."
+  },
+  {
+   "id": "ee-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2174,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated citation; I cannot verify such a specific merger decision exists in Konkurentsiamet's records."
+  },
+  {
+   "id": "ee-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2452,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The 2026-01-28 date is future/implausible and cannot be verified; such a specific bibliographic claim appears fabricated without authentic Riigi Teataja confirmation."
+  },
+  {
+   "id": "ee-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2404,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The 2026 date is in the future relative to verifiable records; Estonian laws are officially published via Riigi Teataja, not Riigikogu."
+  },
+  {
+   "id": "ee-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2600,
+   "verdict": true,
+   "correct": false,
+   "raw": "True. This regulation listing mined/abandoned and mineable peatlands was published in Riigi Teataja, Estonia's official state gazette, around 2015."
+  },
+  {
+   "id": "ee-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2376,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. A Riigikogu (Estonian Parliament) resolution would be published in Riigi Teataja, not the Greek Raptarchis legal database."
+  },
+  {
+   "id": "ee-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1713,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The date 2026-02-05 is in the future and inconsistent with a 2025 ECLI identifier; likely fabricated citation."
+  },
+  {
+   "id": "ee-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2602,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Estonia's small economy rarely triggers merger notifications; this specific Zendesk/Qualitista decision appears fabricated—no verifiable record exists in Konkurentsiamet's published decisions."
+  },
+  {
+   "id": "ee-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2480,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Estonian legislation is published via Riigi Teataja, not Romania's Legislative Portal; jurisdictions and official gazettes are mismatched."
+  },
+  {
+   "id": "ee-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1762,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Estonian laws are officially published in Riigi Teataja, not by the Riigikogu directly; the publisher attribution is incorrect."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Nauru — Source-Grounded Citation Reliability (NR)",
+ "country": "NR",
+ "jurisdiction": "Nauru",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:42:44.629325+00:00",
+ "results": [
+  {
+   "id": "nr-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1696,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Sports Act 2026 has not been published as of my knowledge cutoff (April 2024), making claims about 2026 legislation impossible to verify currently."
+  },
+  {
+   "id": "nr-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1863,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This decision cannot be verified as a real published case. The future date (2026) and lack of confirmation in accessible legal databases make this claim unverifiable."
+  },
+  {
+   "id": "nr-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 3168,
+   "verdict": false,
+   "correct": false,
+   "raw": "# Answer: False  **Explanation:** The Nauru Air Corporation (Amendment) Act 2026 cannot exist as of the claim's evaluation date—it is a future-dated document that has not yet been enacted or officiall"
+  },
+  {
+   "id": "nr-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1866,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This decision cannot be verified as a real case. The future date (2026) and the specific citation format suggest this is a hypothetical or fabricated reference that does not correspond to a"
+  },
+  {
+   "id": "nr-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1439,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The certification date (31 March 2026) postdates the publication date (1 March 2026), creating a logical impossibility. Laws cannot be certified after publication."
+  },
+  {
+   "id": "nr-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1603,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The decision is dated 2026, which is in the future. No court decision can be published with a future date as of the current date."
+  },
+  {
+   "id": "nr-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1685,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  I cannot verify this claim. The Sports Act 2026 has not yet occurred (it's currently 2024), and I cannot access or confirm RONLAW database identifiers or their contents."
+  },
+  {
+   "id": "nr-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1495,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The decision cites Nauru Republic Court (NRSC) with a Nauru case number format, indicating it belongs to Nauru's judiciary, not the Marshall Islands'."
+  },
+  {
+   "id": "nr-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1889,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Nauru Air Corporation (Amendment) Act 2026 cannot exist as an official legal source because it is dated January 1, 2026—a future date beyond the current present."
+  },
+  {
+   "id": "nr-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1260,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This decision appears fictional (future date 2026, invented case name). The Open Australian Legal Corpus does not publish Nauru legal decisions; it focuses on Australian law."
+  },
+  {
+   "id": "nr-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1003,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This document claims to be Nauru legislation but cites the Solomon Islands Attorney General Legislation Portal as its source, which is jurisdictionally inconsistent and implausible."
+  },
+  {
+   "id": "nr-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1277,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This decision would be from Nauru's Supreme Court (NRSC), not Australia's Federal Court. The citation format and jurisdiction indicator confirm it belongs to Nauru's legal system, not Austr"
+  }
+ ]
+}

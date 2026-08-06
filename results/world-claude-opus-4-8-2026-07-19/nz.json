@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — New Zealand — Source-Grounded Citation Reliability (NZ)",
+ "country": "NZ",
+ "jurisdiction": "New Zealand",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.4167,
+ "correct": 5,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:21:47.879859+00:00",
+ "results": [
+  {
+   "id": "nz-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2097,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-04-24 is in the future, making this citation impossible to verify as a genuine published determination."
+  },
+  {
+   "id": "nz-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1891,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-04-21 is in the future, making this citation impossible to verify as a genuine published decision."
+  },
+  {
+   "id": "nz-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 4408,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. A 2026-04-24 decision is future-dated relative to verifiable records, so the citation cannot be confirmed as authentic."
+  },
+  {
+   "id": "nz-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2109,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date is in the future (2026), making this citation unverifiable and almost certainly fabricated as described."
+  },
+  {
+   "id": "nz-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 3018,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date (2026) is in the future, and this case name suggests a company liquidation dispute, not an employment matter."
+  },
+  {
+   "id": "nz-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2208,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-04-23 is in the future and cannot be verified; this citation appears fabricated or unverifiable."
+  },
+  {
+   "id": "nz-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 3529,
+   "verdict": true,
+   "correct": false,
+   "raw": "I cannot verify this specific claim as True or False; case details, dates, and citations require checking authoritative NZ legal databases directly."
+  },
+  {
+   "id": "nz-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2607,
+   "verdict": false,
+   "correct": true,
+   "raw": "I cannot verify this specific citation as authentic; I have no reliable record confirming this determination exists. Answer: False."
+  },
+  {
+   "id": "nz-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2870,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. A New Zealand jurisdiction case would not be published by the Marshall Islands Judiciary; also, 2026 date is future/implausible."
+  },
+  {
+   "id": "nz-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1848,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. New Zealand jurisdiction cases wouldn't be published by the Federal Court of Australia, a separate Australian court system entirely."
+  },
+  {
+   "id": "nz-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1975,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. \"BNS Group Limited (In Liquidation) v Zhuo\" concerns liquidation/company matters, indicating High Court jurisdiction, not employment relations."
+  },
+  {
+   "id": "nz-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1843,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific determination's existence or exact date; ERA determinations exist, but I lack reliable confirmation here."
+  }
+ ]
+}

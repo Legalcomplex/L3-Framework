@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Laos — Source-Grounded Citation Reliability (LA)",
+ "country": "LA",
+ "jurisdiction": "Laos",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:56:57.351465+00:00",
+ "results": [
+  {
+   "id": "la-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2182,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific citation exists — Lao regulatory publication details, exact dates, and titles require confirmation from official Lao Securities Commission Office sources direc"
+  },
+  {
+   "id": "la-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2064,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific bibliographic claim's accuracy—unable to confirm the document's existence, exact title, or publication date on that portal."
+  },
+  {
+   "id": "la-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2217,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific citation's accuracy—exact publication dates, translator attribution, and source details require verification against primary official records."
+  },
+  {
+   "id": "la-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2165,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation's accuracy—the precise title, publisher designation, and 2021-06-10 date lack confirmable authoritative sourcing for Laos."
+  },
+  {
+   "id": "la-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2417,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This date is in the future relative to my knowledge, and I cannot verify the existence of this specific decree, its number, or its publication details."
+  },
+  {
+   "id": "la-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2160,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Lao PDR Constitution's amendments occurred in 2003, and UNDP translations are unofficial secondary compilations, not authoritative primary legal publication sources."
+  },
+  {
+   "id": "la-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2945,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** I cannot verify this specific citation's accuracy—precise publication details for Lao regulatory documents require confirmation from official primary sources, not assumed accuracy."
+  },
+  {
+   "id": "la-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2108,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Laos legal instruments are published through Lao official gazette/legal database systems, not Indonesia's JDIHN, which covers only Indonesian regulations."
+  },
+  {
+   "id": "la-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1637,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** I cannot verify the specific publication date, source platform, or translation attribution for this claim without access to authoritative Lao legal databases or UNDP records."
+  },
+  {
+   "id": "la-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1622,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Husky & Partners' legal library specializes in Cambodian law, not Laotian law, making it an implausible or incorrect source for this Laos-related legal document."
+  },
+  {
+   "id": "la-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1742,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This citation refers to a future-dated Lao decree from a Vietnamese legal database, and cannot be verified as an authentic, existing legal source."
+  },
+  {
+   "id": "la-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1940,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Laos's Constitution was amended in 2003 (not the specific 2007-03-20 date claimed), and UNDP translations, while existing, aren't the authoritative official promulgation source—the National"
+  }
+ ]
+}

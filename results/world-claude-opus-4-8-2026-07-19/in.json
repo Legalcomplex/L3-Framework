@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — India — Source-Grounded Citation Reliability (IN)",
+ "country": "IN",
+ "jurisdiction": "India",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:15:18.906343+00:00",
+ "results": [
+  {
+   "id": "in-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2461,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific case exists; the details appear fabricated, and I shouldn't confirm unverified bibliographic claims about legal sources."
+  },
+  {
+   "id": "in-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2045,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-02-03 is in the future, making this citation impossible to verify as a genuine, published decision."
+  },
+  {
+   "id": "in-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2645,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The Appellate Tribunal for Electricity (APTEL) hears appeals against CERC orders and publishes such decisions on Powergrid tariff matters."
+  },
+  {
+   "id": "in-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2421,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific case citation; details like party name \"JHARKIHANDI RAI\" and specifics appear unreliable or fabricated."
+  },
+  {
+   "id": "in-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2744,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears fabricated; CCI doesn't publish such case, and details (parties, numbering, future date) don't match verifiable records."
+  },
+  {
+   "id": "in-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 3272,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation as authentic; the case details, number format, and existence appear unconfirmed and potentially fabricated."
+  },
+  {
+   "id": "in-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2260,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifiers differ: claimed 'CR. WJC/144/2026' does not match cited '/144/2025', indicating a year discrepancy and unverifiable correspondence."
+  },
+  {
+   "id": "in-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2153,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This identifier and case details appear fabricated; I cannot verify such records, and the 2026 date seems implausible."
+  },
+  {
+   "id": "in-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2454,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Powergrid Corporation v. CERC is an Indian tribunal (APTEL) matter; Islamabad High Court is Pakistani, jurisdictionally irrelevant."
+  },
+  {
+   "id": "in-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2808,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The case number \"O.A.\" indicates a Central Administrative Tribunal matter, not a Supreme Court decision; source is fabricated."
+  },
+  {
+   "id": "in-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2241,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The case number \"36/2025\" contradicts the 2023-01-05 date; this citation appears fabricated with inconsistent details and unverifiable parties."
+  },
+  {
+   "id": "in-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2132,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific citation; the format and details appear unreliable, and I shouldn't confirm potentially fabricated bibliographic claims."
+  }
+ ]
+}

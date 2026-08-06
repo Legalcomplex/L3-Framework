@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Denmark — Source-Grounded Citation Reliability (DK)",
+ "country": "DK",
+ "jurisdiction": "Denmark",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:52:27.011409+00:00",
+ "results": [
+  {
+   "id": "dk-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1773,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated or unverifiable citation; I cannot confirm this specific case exists in Domsdatabasen's records with these details."
+  },
+  {
+   "id": "dk-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2405,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this appears to be a fabricated or unverifiable citation; no such bekendtgørelse with that exact title and 2026 date is confirmed on Retsinformation."
+  },
+  {
+   "id": "dk-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2178,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The stated date postdates current knowledge, satsreguleringscirkulærer typically issue before January 1, and this specific circular's existence/date cannot be verified."
+  },
+  {
+   "id": "dk-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1918,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Domsdatabasen contains actual court judgments with case numbers, not prosecutorial charge descriptions; this appears fabricated or unverifiable as stated."
+  },
+  {
+   "id": "dk-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2136,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — the date 2026-04-21 is in the future relative to current knowledge, and case number formats/publication details cannot be verified as accurate."
+  },
+  {
+   "id": "dk-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2268,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify specific Landsskatteretten case identifiers, subjects, or dates; this appears fabricated, and the future date is implausible."
+  },
+  {
+   "id": "dk-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1798,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify specific case identifiers, summaries, or dates in Domsdatabasen without access to the actual database records."
+  },
+  {
+   "id": "dk-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1941,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Finlex is Finland's legal database. A Danish \"Bekendtgørelse\" would be published via Retsinformation.dk, Denmark's official legal information system, not Finlex."
+  },
+  {
+   "id": "dk-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1670,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Danish circulars are published via Retsinformation.dk, not Lovdata (Norway's legal database); also the date postdates current information availability."
+  },
+  {
+   "id": "dk-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1810,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific ECLI identifier, case title, and date combination against actual Domsdatabasen records; fabricated citations are common."
+  },
+  {
+   "id": "dk-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1868,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The decision number \"82/2025\" cannot correspond to a date of 2023-04-21, since a case numbered with year 2025 must postdate that 2023 date."
+  },
+  {
+   "id": "dk-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1702,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** I cannot verify this specific decision's title, date, and issuing body combination exists in Landsskatteretten's records without direct database access confirmation."
+  }
+ ]
+}

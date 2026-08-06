@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — San Marino — Source-Grounded Citation Reliability (SM)",
+ "country": "SM",
+ "jurisdiction": "San Marino",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:24:45.524612+00:00",
+ "results": [
+  {
+   "id": "sm-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2864,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-02-17 is in the future relative to verifiable records; this citation cannot be authentically confirmed."
+  },
+  {
+   "id": "sm-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2089,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation, date, or promulgation formula against San Marino's Bollettino Ufficiale without confirmation."
+  },
+  {
+   "id": "sm-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2434,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The 40-character hexadecimal identifier appears fabricated; I cannot verify this specific SHA-1-style hash corresponds to any authentic San Marino legislation."
+  },
+  {
+   "id": "sm-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1984,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date is in the future (2026); cannot verify a source that hasn't yet been officially published."
+  },
+  {
+   "id": "sm-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1988,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears fabricated; the future date (2026) and specific details cannot be verified as a genuine San Marino law."
+  },
+  {
+   "id": "sm-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2352,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. San Marino's official gazette (Bollettino Ufficiale) was established later; I cannot verify this specific 1979 citation as accurate."
+  },
+  {
+   "id": "sm-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2347,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier appears to be a fabricated SHA-1 hash, and I cannot verify this specific document exists."
+  },
+  {
+   "id": "sm-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2225,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific citation, date, or quoted text against San Marino's Bollettino Ufficiale without reliable confirmation."
+  },
+  {
+   "id": "sm-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2311,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier is an unverifiable hash, and I cannot confirm this specific 2026 law's existence or details."
+  },
+  {
+   "id": "sm-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1658,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. San Marino legal sources aren't published by Jersey Legal Information Board; JerseyLaw serves Jersey, a different jurisdiction entirely."
+  },
+  {
+   "id": "sm-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1869,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Fedlex is Switzerland's legal platform; San Marino laws are published via its own official sources, not Fedlex."
+  },
+  {
+   "id": "sm-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1628,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. RIS (Rechtsinformationssystem) is Austria's legal information system, not San Marino's. San Marino publishes laws through its own official channels."
+  }
+ ]
+}

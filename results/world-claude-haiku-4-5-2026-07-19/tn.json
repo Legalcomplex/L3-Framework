@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Tunisia — Source-Grounded Citation Reliability (TN)",
+ "country": "TN",
+ "jurisdiction": "Tunisia",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:46:03.152043+00:00",
+ "results": [
+  {
+   "id": "tn-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1447,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The identifier format '50712-0017' appears inconsistent with standard Tunisian Court of Cassation citation conventions, which typically include chamber designation and decision numbers sepa"
+  },
+  {
+   "id": "tn-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2350,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The publication date (2025-01-23) is in the future relative to the law's enactment date (2005). JORT cannot publish laws before they are enacted."
+  },
+  {
+   "id": "tn-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1660,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The identifier '60341' alone cannot reliably correspond to a specific 2019 Tunisian Court of Cassation decision without verifiable confirmation from official court databases or publications"
+  },
+  {
+   "id": "tn-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1491,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The date is impossible—July 28, 2025 is a future date from the current perspective. This law cannot have been published before it was enacted."
+  },
+  {
+   "id": "tn-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1920,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The identifier '17073' appears to be a case number, not a complete jurisprudential reference. Without verified access to Tunisia's official Court of Cassation database, the exact date and c"
+  },
+  {
+   "id": "tn-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2964,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Tunisia's JORT (Journal Officiel de la République Tunisienne) does not use \"DCAF\" as a publication identifier. The citation format appears fabricated or contains incorrect institutional ref"
+  },
+  {
+   "id": "tn-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1574,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The identifier '50712-0018' does not match the cited case reference '50712-0017' from 2018-03-26, as the numerical suffixes differ (0018 vs 0017)."
+  },
+  {
+   "id": "tn-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 4202,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The publication date (2026-01-23) is in the future, making this claim impossible. Official legal sources cannot be published in advance of the current date."
+  },
+  {
+   "id": "tn-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1037,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The identifier '60342' does not match the case number '60341' cited in the reference. The numbers are sequential but distinct, indicating different cases."
+  },
+  {
+   "id": "tn-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1445,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The date is impossible—July 28, 2025 is in the future. Additionally, Egyptian Legal Corpus would not be the authoritative source for Tunisian legislation. Tunisia's official gazette is the "
+  },
+  {
+   "id": "tn-src-f05",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1191,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The identifier '17074' does not correspond to case '17073'. The case numbers differ by one digit, indicating these are distinct decisions from the Tunisia Court of Cassation."
+  },
+  {
+   "id": "tn-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2046,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Egyptian Legal Corpus would not publish Tunisian decrees. This document pertains to Tunisia, not Egypt, making Egyptian sources inappropriate for official Tunisian legal publication."
+  }
+ ]
+}

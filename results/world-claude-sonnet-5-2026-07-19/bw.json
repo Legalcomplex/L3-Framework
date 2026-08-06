@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Botswana — Source-Grounded Citation Reliability (BW)",
+ "country": "BW",
+ "jurisdiction": "Botswana",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:50:49.623414+00:00",
+ "results": [
+  {
+   "id": "bw-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 3093,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific case citation exists. NBFIRA (correct acronym) case numbers, dates, and details require direct source verification—unconfirmed citations risk being fabricated."
+  },
+  {
+   "id": "bw-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1962,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date (2026-05-29) is in the future and cannot be verified as an actual official publication; claim is unverifiable/likely fabricated."
+  },
+  {
+   "id": "bw-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2034,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This is not a legitimate official legal source citation—2026 is a future date, and this appears to be a fabricated or unverifiable regulatory document."
+  },
+  {
+   "id": "bw-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 3420,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific case citation exists; NBFIRA case numbers/decisions aren't independently confirmable through reliable public records I have access to."
+  },
+  {
+   "id": "bw-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2245,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific case citation exists; NBFIRA case numbers/decisions aren't reliably indexed in accessible public databases for confirmation."
+  },
+  {
+   "id": "bw-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2394,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific citation — \"NBFIRA\" (not \"NBFIT\") is Botswana's regulatory authority, and no such case reference can be confirmed as authentic."
+  },
+  {
+   "id": "bw-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2226,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** I cannot verify this specific case citation exists; NBFIRA case numbers/dates should be confirmed against official regulatory authority publications before citation."
+  },
+  {
+   "id": "bw-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1931,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This tender description is unrelated to South Africa's Constitutional Court Judgments, which publishes judicial decisions, not procurement tender notices."
+  },
+  {
+   "id": "bw-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1528,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. A \"Retraction and Clarification to Media Houses\" press-type notice is not a Constitutional Court judgment, nor a Botswana source."
+  },
+  {
+   "id": "bw-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1733,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** I cannot verify this specific case citation exists; NBFIRA case numbers/dates require confirmation from official sources, which I lack access to."
+  },
+  {
+   "id": "bw-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2839,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The case number format (NBFIT) and naming convention suggest a Botswana tribunal/regulatory body matter, not South Africa's Constitutional Court, which uses different citation conventions e"
+  },
+  {
+   "id": "bw-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1517,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The case number contains \"2022,\" yet the decision date is stated as 2020-10-13, an internal inconsistency suggesting fabricated or unverifiable citation details."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Australia — Source-Grounded Citation Reliability (AU)",
+ "country": "AU",
+ "jurisdiction": "Australia",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.4167,
+ "correct": 5,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:33:13.242950+00:00",
+ "results": [
+  {
+   "id": "au-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 3038,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  This decision is published by the High Court of Australia, not the Federal Court. \"SPLB v Minister for Immigration & Multicultural & Indigenous Affairs\" [2004] HCA 40 is a High Court judgme"
+  },
+  {
+   "id": "au-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1594,
+   "verdict": true,
+   "correct": true,
+   "raw": "**True**  The Acts Interpretation Act 1901 is a genuine Commonwealth Act published on the Federal Register of Legislation, Australia's official legislation database, with regular updates including Dec"
+  },
+  {
+   "id": "au-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1477,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Police Miscellaneous Amendments Act (No. 2) 2009 is a Tasmanian statute, but the Open Australian Legal Corpus publication date (2016-06-21) represents corpus digitisation, not original "
+  },
+  {
+   "id": "au-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1420,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The Transport Operations (Passenger Transport) Act 1994 (Qld) commenced on 1 October 1994, not 14 September 1994. The publication date claim is incorrect."
+  },
+  {
+   "id": "au-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1756,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Summary Offences Act 1953 is a South Australian statute, but data.sa.gov.au is a contemporary digital repository that did not exist in 1953. The Act was originally published in the Sout"
+  },
+  {
+   "id": "au-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2960,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The claimed act identifier and date cannot be verified against Tasmania's legislation database. As of my knowledge cutoff (April 2024), I cannot confirm legislation from November 2025."
+  },
+  {
+   "id": "au-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1630,
+   "verdict": false,
+   "correct": true,
+   "raw": "# Evaluation Result  **FALSE**  This decision was published by the High Court of Australia, not the Federal Court. SPLB is a High Court matter from 2003, not 2002."
+  },
+  {
+   "id": "au-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1362,
+   "verdict": true,
+   "correct": false,
+   "raw": "**True**  The Acts Interpretation Act 1901 (Cth) is a legitimate Commonwealth legislation source available on the Federal Register of Legislation, Australia's official legislative database."
+  },
+  {
+   "id": "au-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1214,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This act is Tasmanian legislation, not Fijian. Laws.gov.fj publishes Fiji's laws, not Australian state legislation. The jurisdiction is incorrect."
+  },
+  {
+   "id": "au-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1602,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The identifier 'act-1994-044' in Queensland Legislation corresponds to the **Workplace Health and Safety Act 1995**, not the Transport Operations (Passenger Transport) Act 1994."
+  },
+  {
+   "id": "au-src-f05",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1471,
+   "verdict": true,
+   "correct": false,
+   "raw": "# Answer: **True**  The Summary Offences Act 1953 is a genuine South Australian statute with the correct year and identifier format consistent with SA legislation cataloguing systems from that era."
+  },
+  {
+   "id": "au-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1349,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This act cannot be from Tonga's legislation while being evaluated under Australian jurisdiction. Additionally, November 27, 2025 is a future date, making publication impossible."
+  }
+ ]
+}

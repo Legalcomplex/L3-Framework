@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Åland Islands — Source-Grounded Citation Reliability (AX)",
+ "country": "AX",
+ "jurisdiction": "Åland Islands",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:49:08.679123+00:00",
+ "results": [
+  {
+   "id": "ax-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2111,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The provincial ordinance's actual number/date doesn't verifiably match this citation, and Ålex publishes texts, not original 1995-01-01 dates."
+  },
+  {
+   "id": "ax-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2741,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The correct reference system is Finland's Statutes (Suomen säädöskokoelma/Finlands författningssamling), not Åland's own legislation collection, Ålex."
+  },
+  {
+   "id": "ax-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1810,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific citation; it appears fabricated or unconfirmed, as no such Landskapsförordning number/date combination can be reliably confirmed."
+  },
+  {
+   "id": "ax-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2220,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The claim's date is implausible/unverifiable as stated; such Ålandic blanket laws require precise citation verification against Ålex records, not assumed defaults."
+  },
+  {
+   "id": "ax-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2246,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Landskapslagen 2013:75 was adopted/published in 2013, but Ålex entries date to their enactment year, not generically 2013-01-01."
+  },
+  {
+   "id": "ax-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2111,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Åland's legal instruments are numbered sequentially by year, so a 2007:99 act couldn't have been published on 2007-01-01."
+  },
+  {
+   "id": "ax-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2195,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Åland's legislation is Finnish/Åland provincial law published in Ålandstidningens/ Åland's official gazette or Finland's system, not Denmark's Retsinformation database."
+  },
+  {
+   "id": "ax-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2242,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This is Åland legislation (\"Ålands författningssamling,\" ÅFS), not Swedish SFS; Åland has its own separate statute publication series."
+  },
+  {
+   "id": "ax-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1582,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — I cannot verify this specific Åland Islands landskapsförordning citation exists; it appears fabricated or unverifiable against actual Finlex records."
+  },
+  {
+   "id": "ax-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1744,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Åland's legislation (Landskapslag) is published in the Åland lawbook/Ålex database, not Denmark's Retsinformation, which covers Danish law only."
+  },
+  {
+   "id": "ax-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1743,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Åland's Landskapslag is published in Ålands författningssamling, not distributed via Finland's Finlex Open Data/Linked Data service, which covers Finnish national legislation."
+  },
+  {
+   "id": "ax-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1762,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Åland legislation is published in Ålands författningssamling (Åland Statute Book), not Lovdata, which is Norway's official legal database."
+  }
+ ]
+}

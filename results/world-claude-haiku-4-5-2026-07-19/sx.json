@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Sint Maarten — Source-Grounded Citation Reliability (SX)",
+ "country": "SX",
+ "jurisdiction": "Sint Maarten",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:45:24.383900+00:00",
+ "results": [
+  {
+   "id": "sx-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1591,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The ECLI identifier prefix \"NL:OGHACMB\" indicates this is a Dutch (Netherlands) court decision, not a Sint Maarten court. The Joint Court serves multiple jurisdictions but uses Dutch classi"
+  },
+  {
+   "id": "sx-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 5331,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The identifier CVDR141920_3 does not correspond to the Overdrachtsbelastingverordening from 2015-04-17 in Sint Maarten's official legislative collection based on standard cataloging practic"
+  },
+  {
+   "id": "sx-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1504,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The ECLI identifier contains \"OGHACMB\" (Aruba, Curaçao, Sint Maarten, Bonaire), but the date 2026-02-24 is in the future, making this a non-existent official decision document."
+  },
+  {
+   "id": "sx-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1736,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The ECLI identifier indicates this is a decision by the Joint Court of Justice (Gemeenschappelijk Hof), but it serves all four Caribbean territories collectively, not Sint Maarten specifica"
+  },
+  {
+   "id": "sx-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1546,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The ECLI identifier \"NL:OGHACMB\" indicates this decision is published by the Joint Court of Justice itself, not specifically by Sint Maarten alone. It serves all four Caribbean islands coll"
+  },
+  {
+   "id": "sx-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1594,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  I cannot verify this specific identifier against Sint Maarten's official government legislation collection. Without access to the current CVDR database records, I cannot confirm the accurac"
+  },
+  {
+   "id": "sx-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1489,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The ECLI identifier and court name indicate this is a judgment from the Joint Court of Justice for the ABC islands, not a Cayman Islands court decision."
+  },
+  {
+   "id": "sx-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1534,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The identifier format and dating cannot be verified against Sint Maarten's official legislative collection without access to current government repositories. The claim requires direct confirm"
+  },
+  {
+   "id": "sx-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1245,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Gemeenschappelijk Hof van Justitie (Joint Court of Justice) serves Aruba, Curaçao, Sint Maarten, and Bonaire. It is not a Bermuda court, making this attribution incorrect."
+  },
+  {
+   "id": "sx-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1467,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Gemeenschappelijk Hof van Justitie (Joint Court of Justice) serves Aruba, Curaçao, Sint Maarten, and Bonaire—not the Bahamas, which is a separate Caribbean jurisdiction."
+  },
+  {
+   "id": "sx-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1284,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The decision is from the Joint Court of Justice (Gemeenschappelijk Hof), not the BVI Commercial Court. These are distinct judicial institutions in different jurisdictions."
+  },
+  {
+   "id": "sx-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1255,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The specific identifier-to-document correspondence cannot be verified without access to Sint Maarten's official legislative database. The claim requires authentication from authoritative go"
+  }
+ ]
+}

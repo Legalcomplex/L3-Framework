@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Senegal — Source-Grounded Citation Reliability (SN)",
+ "country": "SN",
+ "jurisdiction": "Senegal",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.4167,
+ "correct": 5,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:45:05.269524+00:00",
+ "results": [
+  {
+   "id": "sn-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2839,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The identifier format appears inconsistent with standard Senegalese Supreme Court citation practices, which typically use case numbers rather than sequential date-based identifiers like \"03"
+  },
+  {
+   "id": "sn-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1669,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Constitutional Council (Conseil constitutionnel) is a separate institution from the Supreme Court (Cour suprême) in Senegal's judicial hierarchy. This decision belongs to constitutional cas"
+  },
+  {
+   "id": "sn-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2673,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Code Général des Collectivités Locales was enacted by Law No. 96-06 on March 22, 1996, but it originated from the National Assembly, not the Prime Minister's Office."
+  },
+  {
+   "id": "sn-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1612,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The cited publication date (2024-08-24) postdates the claimed edition date (Juillet/July 2024), which is logically inconsistent for an official document's publication timeline."
+  },
+  {
+   "id": "sn-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1610,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier format appears inconsistent with standard Senegal Supreme Court citation practices, which typically use case numbers rather than sequential numbering like \"47\"."
+  },
+  {
+   "id": "sn-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2017,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The document date (2026-01-01) is in the future and cannot be verified as an actual publication. No official legal source can be retrospectively confirmed from a future date."
+  },
+  {
+   "id": "sn-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1606,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The identifier ends in \"04\" but the citation ends in \"03\". The numeric designators do not match, indicating inconsistent documentation of the same decision."
+  },
+  {
+   "id": "sn-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1825,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The decision is from Senegal's Constitutional Council (Conseil constitutionnel du Sénégal), not Côte d'Ivoire's. The citation explicitly states \"Sénégal\" as the jurisdiction."
+  },
+  {
+   "id": "sn-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1171,
+   "verdict": true,
+   "correct": false,
+   "raw": "**True**  The Code Général des Collectivités Locales is a legitimate Senegalese legislative text on local government organization, properly attributed to the Prime Minister's office with the 1994 publ"
+  },
+  {
+   "id": "sn-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1541,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The document title and publication details are inconsistent with Nigerian sources. \"IINFOCOMPTES\" appears to be a French-language Senegalese publication, not Nigerian NAFDAC material."
+  },
+  {
+   "id": "sn-src-f05",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 3178,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The identifier ends in '51' but the citation ends in '47'. The numerals do not match, indicating inconsistent or incorrect referencing of this Supreme Court decision."
+  },
+  {
+   "id": "sn-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1080,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The document concerns Senegal's mobile telephone pricing index (IPSM), not Mauritanian legal codes. The publisher attribution to Mauritania's MSGG is incorrect."
+  }
+ ]
+}

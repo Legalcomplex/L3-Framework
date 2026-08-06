@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — United States — Source-Grounded Citation Reliability (US)",
+ "country": "US",
+ "jurisdiction": "United States",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:46:44.693880+00:00",
+ "results": [
+  {
+   "id": "us-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1865,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.**  California Labor Code § 510 is a real statute, but the publication date of 2026-04-03 is impossible—it's a future date from the perspective of current knowledge cutoffs and cannot represen"
+  },
+  {
+   "id": "us-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1435,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Caselaw Access Project (Harvard/HuggingFace) publishes court decisions, but this 1973 case citation appears incomplete and cannot be verified as a published decision in standard legal d"
+  },
+  {
+   "id": "us-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1446,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The case identifier '25-60111' does not correspond to a reported decision from April 2026, as that date is in the future and no such case exists in current legal databases."
+  },
+  {
+   "id": "us-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2770,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  This decision cannot be verified as published by the FTC. The future date (2026-03-26) and specific case designation lack corroboration in accessible FTC records or databases."
+  },
+  {
+   "id": "us-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1694,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  A 2026 decision cannot exist in April 2024. Additionally, SCOTUS and Circuit decisions are distinct entities, not jointly published under one label."
+  },
+  {
+   "id": "us-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1869,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This case identifier cannot be verified as authentic. Federal District Court civil actions use format variations by district; 2026 is a future date, making historical verification impossibl"
+  },
+  {
+   "id": "us-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1307,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Labor Code § 510 is a California statute, not a British Columbia law. The citation format and jurisdiction are mismatched."
+  },
+  {
+   "id": "us-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 4945,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier format '72-2704' appears to be a docket number rather than a CAP collection identifier. CAP uses different citation formats for case retrieval."
+  },
+  {
+   "id": "us-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1287,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The identifier format '25-60112' and future date (2026-04-22) are inconsistent with standard US case citation practices and current legal databases."
+  },
+  {
+   "id": "us-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1165,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The FTC's Caremark matter concluded in 2020, not 2023. No decision with this exact title and 2023 date exists in official FTC Decisions and Orders publications."
+  },
+  {
+   "id": "us-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1824,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. SCOTUS and Circuit Courts did not decide this case on that date. \"Oscar Hudspeth, Sr.\" cases are typically district-level proceedings, not appellate decisions published by federal appellate cou"
+  },
+  {
+   "id": "us-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1156,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Tax Court of Canada is a Canadian tribunal, not a U.S. court. Shackleford v. District of Columbia involves a U.S. jurisdiction (Washington, D.C.) and would not be published by a Canadia"
+  }
+ ]
+}

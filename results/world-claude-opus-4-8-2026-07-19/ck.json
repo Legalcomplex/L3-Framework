@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Cook Islands — Source-Grounded Citation Reliability (CK)",
+ "country": "CK",
+ "jurisdiction": "Cook Islands",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 11,
+ "blocked": 0,
+ "unparsed": 1,
+ "errors": [],
+ "accuracy": 0.5455,
+ "correct": 6,
+ "parse_rate": 0.9167,
+ "passed": false,
+ "timestamp": "2026-07-19T08:10:11.561945+00:00",
+ "results": [
+  {
+   "id": "ck-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2413,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Cook Islands Statistics Act dates from 1966, not 2015-16; this citation and portal reference appear fabricated."
+  },
+  {
+   "id": "ck-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2185,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Cook Islands Accommodation Levy Act dates from 1972, not 1978-79; the cited title and date are inaccurate."
+  },
+  {
+   "id": "ck-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3828,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Cook Islands Banking Act was enacted in 2003, not 2011; also, no such portal/date accurately verifies this citation."
+  },
+  {
+   "id": "ck-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2439,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation exists; without access to PacLII records, asserting its authenticity would be unreliable fabrication."
+  },
+  {
+   "id": "ck-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2393,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Cook Islands has no \"Consolidated Legislation Portal\"; legislation appears on PacLII. This citation and title appear fabricated."
+  },
+  {
+   "id": "ck-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1775,
+   "verdict": null,
+   "correct": false,
+   "raw": "I cannot verify this specific citation. Without access to PacLII's database, I cannot confirm whether this decision genuinely exists as described."
+  },
+  {
+   "id": "ck-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2351,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Cook Islands has a Statistics Act 1966, not a \"2015-16\" act; citation and date appear fabricated."
+  },
+  {
+   "id": "ck-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2083,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Accommodation Levy Act 1978-79 is Cook Islands legislation, not Tongan; attributing it to Tonga's Attorney General is incorrect."
+  },
+  {
+   "id": "ck-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2061,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Cook Islands and Fiji are separate jurisdictions; a Cook Islands Banking Act wouldn't be published via Fiji's laws.gov.fj."
+  },
+  {
+   "id": "ck-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1738,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. A Cook Islands High Court (CKHC) decision would be published by Cook Islands courts, not Australia's Federal Court."
+  },
+  {
+   "id": "ck-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1949,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Cook Islands has no \"Trading Hours Act 1993-94\"; this appears fabricated, with an implausible title and citation format."
+  },
+  {
+   "id": "ck-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1796,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The citation \"CKHC\" denotes the Cook Islands High Court, so this decision would be published by Cook Islands Judiciary."
+  }
+ ]
+}

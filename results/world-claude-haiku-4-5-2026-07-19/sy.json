@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Syria — Source-Grounded Citation Reliability (SY)",
+ "country": "SY",
+ "jurisdiction": "Syria",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:45:29.176092+00:00",
+ "results": [
+  {
+   "id": "sy-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1648,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Syria.Law is a private legal database/website, not an official Syrian government publisher. Official Syrian legislation and court decisions are published by government bodies, not commercia"
+  },
+  {
+   "id": "sy-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1623,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The date 2026-04-06 is in the future (beyond current date). No official decree could have been published at a future date. This claim is anachronistic and therefore invalid."
+  },
+  {
+   "id": "sy-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1609,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Syria.Law is a private legal database, not an official Syrian government publisher. Official Syrian judgments are published by the Syrian judiciary or government legal gazette, not commerci"
+  },
+  {
+   "id": "sy-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1394,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This decree cannot be verified as authentic. The date (2026-03-20) is in the future, and no legitimate SANA publication can be confirmed for this claim."
+  },
+  {
+   "id": "sy-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1624,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The \"Council of State Administrative Law\" is not a distinct official legal source in Syria. Syria's administrative law derives from the Constitution and specific legislative decrees, not fr"
+  },
+  {
+   "id": "sy-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1845,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The claim references a future date (2026-02-18) that hasn't occurred yet. Official legal sources cannot be published on dates in the future, making this bibliographic claim invalid and anac"
+  },
+  {
+   "id": "sy-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1750,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  ADGM Courts (Abu Dhabi Global Market) is a UAE jurisdiction established in 2013, not Syria. This 1967 Syrian civil procedure judgment cannot be published by a non-existent entity."
+  },
+  {
+   "id": "sy-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 4787,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The claim contains a typographical error (\"الرئيس الشرع\" should be \"الرئيس\"). Additionally, verification of this specific decree's publication date and official source cannot be confirmed f"
+  },
+  {
+   "id": "sy-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1299,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** DIFC Courts (Dubai International Financial Centre) is a UAE jurisdiction established in 2004, not Syria. This judgment predates DIFC's existence and is Syrian, not Emirati."
+  },
+  {
+   "id": "sy-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1404,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This claim cannot be verified. SANA is Syria's news agency, not an official legal gazette. Presidential decrees require publication in the Official Gazette (al-Jaridah al-Rasmiyyah) for leg"
+  },
+  {
+   "id": "sy-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1219,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The \"Council of State Administrative Law\" is not a recognized official Syrian legal source title. Syrian administrative law sources have different formal designations and publications."
+  },
+  {
+   "id": "sy-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1643,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The claim contains a typo (\"الرئيس الشرع\" instead of \"الرئيس\") and lacks specific decree number verification. Syrian Presidential Decrees require proper documentation codes for authenticati"
+  }
+ ]
+}

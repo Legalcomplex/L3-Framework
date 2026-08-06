@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Greenland — Source-Grounded Citation Reliability (GL)",
+ "country": "GL",
+ "jurisdiction": "Greenland",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:37:42.544285+00:00",
+ "results": [
+  {
+   "id": "gl-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1772,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This cannot be verified as accurate. The publication date (2026-02-23) is in the future, making this claim impossible to confirm as a genuine official legal source from Greenland."
+  },
+  {
+   "id": "gl-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1735,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  Greenland's court decision database (Domsdatabasen) does not publish decisions dated in the future. The date 2025-08-14 has not yet occurred, making this claim impossible to verify as accurat"
+  },
+  {
+   "id": "gl-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1492,
+   "verdict": false,
+   "correct": false,
+   "raw": "# Answer: False  **Explanation:** The publication date (2026-03-10) is in the future, making this claim impossible. Official legal sources cannot be published before the current date."
+  },
+  {
+   "id": "gl-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2042,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Domsdatabasen (Greenland Court Decisions) publishes decisions; the cited decision's format and date structure don't match Greenland's documented official publication practices or database r"
+  },
+  {
+   "id": "gl-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1580,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The publication date (2026-03-20) is in the future, making this claim temporally impossible. Official legal sources cannot be published on dates that have not yet occurred."
+  },
+  {
+   "id": "gl-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1768,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  This decision cannot be from 2026—a future date. Additionally, Domsdatabasen's coverage and this decision's format cannot be verified without access to actual Greenlandic legal databases."
+  },
+  {
+   "id": "gl-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1536,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Greenlandic legislation would not be published in Finlex, the Finnish legal database. Greenland's official legal sources are published through Danish/Greenlandic channels, not Finnish ones."
+  },
+  {
+   "id": "gl-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1713,
+   "verdict": false,
+   "correct": true,
+   "raw": "# Evaluation  **False**  Greenland's official court decision database is \"Domstolverket\" or similar official judicial repositories, not \"Greenland Court Decisions (Domsdatabasen)\" as a named publisher"
+  },
+  {
+   "id": "gl-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1288,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This is a Danish/Greenlandic legal text title, not Norwegian. Norwegian Parliament Data Service would not be the official publisher of Greenlandic legislation."
+  },
+  {
+   "id": "gl-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1464,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Greenland's court decisions are published in \"Domstolene\" (The Courts) database, not \"Domsdatabasen,\" which is the Danish court decisions database."
+  },
+  {
+   "id": "gl-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1107,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited title appears incomplete/truncated (\"inden for…\"), making it impossible to verify as a legitimate official Greenlandic legal source without full documentation."
+  },
+  {
+   "id": "gl-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1148,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  No verifiable record of this specific decision exists in Greenland's official court database (Domsdatabasen) with these exact details and date."
+  }
+ ]
+}

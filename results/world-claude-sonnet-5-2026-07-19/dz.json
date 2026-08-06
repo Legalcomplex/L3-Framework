@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Algeria — Source-Grounded Citation Reliability (DZ)",
+ "country": "DZ",
+ "jurisdiction": "Algeria",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:52:41.505430+00:00",
+ "results": [
+  {
+   "id": "dz-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3371,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Bank of Algeria's Règlement n°2014-01 dated 16 February 2014 actually concerns bank capital adequacy ratios, but exact title/date details require verification against the Journal Officiel."
+  },
+  {
+   "id": "dz-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1939,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The date is inconsistent: 23 Joumada Ethania 1443 AH corresponds to approximately January 26, 2022, not December 15, 2022, per Hijri-Gregorian conversion."
+  },
+  {
+   "id": "dz-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2087,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific case number, decision date, or publication details against actual Algerian Supreme Court records or databases."
+  },
+  {
+   "id": "dz-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2052,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This claim references a future-dated publication (January 2026), which cannot be verified as it postdates my knowledge and current reality."
+  },
+  {
+   "id": "dz-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2843,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Executive decrees are published in Algeria's Official Gazette (Journal Officiel), not by ARPCE, which only issues telecom regulatory decisions, not executive decrees."
+  },
+  {
+   "id": "dz-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2188,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Règlement n°2011-08 (28 Nov 2011) actually concerns capital adequacy/risk management or relates to a different subject; verify exact title against Bank of Algeria's official register."
+  },
+  {
+   "id": "dz-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2135,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This is an Algerian Banque d'Algérie regulation published in Algeria's Journal Officiel; \"Egyptian Legal Corpus\" is not its proper official source."
+  },
+  {
+   "id": "dz-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2662,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The dates are inconsistent—23 Joumada Ethania 1443 corresponds to January 2022, not December 2024, indicating fabricated or erroneous citation details."
+  },
+  {
+   "id": "dz-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1619,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific case number, decision date, and publication date combination as an actual, accurate Algerian Supreme Court citation."
+  },
+  {
+   "id": "dz-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2740,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.**  This claim references a purported future-dated (2026) publication, and pairs an \"Egyptian Legal Corpus\" source with Algeria's Journal Officiel—an implausible, likely fabricated or mismatch"
+  },
+  {
+   "id": "dz-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1857,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Dhou El Hidja 6, 1446 AH corresponds to approximately June 2025, but this is an Algerian decree, not Egyptian—source attribution appears incorrect/mismatched."
+  },
+  {
+   "id": "dz-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1748,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This is a Bank of Algeria regulation, not part of any \"Egyptian Legal Corpus.\" It would be published in Algeria's Official Gazette (Journal Officiel)."
+  }
+ ]
+}

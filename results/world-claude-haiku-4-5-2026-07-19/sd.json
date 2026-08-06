@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Sudan — Source-Grounded Citation Reliability (SD)",
+ "country": "SD",
+ "jurisdiction": "Sudan",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:44:31.366650+00:00",
+ "results": [
+  {
+   "id": "sd-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1653,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  REDRESS is a UK-based human rights organization; Sudan Legal Resources is not an official Sudanese government publisher. Official sources would be the Sudanese Ministry of Justice or offici"
+  },
+  {
+   "id": "sd-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1824,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Central Bank of Sudan does not publish comprehensive annual policy documents with this exact standardized title. Sudanese monetary policies are typically disseminated through scattered "
+  },
+  {
+   "id": "sd-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1919,
+   "verdict": false,
+   "correct": false,
+   "raw": "# Evaluation: False  The Stamp Duty Act, 1986 is a Sudanese legislation, but the \"Sudan Tax Authority (SudanTax)\" as described did not exist as an official publisher in 1986. Sudan's tax administratio"
+  },
+  {
+   "id": "sd-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1799,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  Sudan's 1998 Constitution is the primary constitutional text from this period, not a 1996 act. The claim's source attribution and date require verification against authoritative Sudanese lega"
+  },
+  {
+   "id": "sd-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1645,
+   "verdict": true,
+   "correct": true,
+   "raw": "# Answer: **True**  The Central Bank of Sudan regularly publishes official monetary and operational policies at the beginning of each fiscal year. This 2007 publication date and attribution are consis"
+  },
+  {
+   "id": "sd-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2111,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Sudan's tax legislation from 1986 predates modern institutional naming conventions. The Sudan Tax Authority as currently branded did not exist in 1986; tax administration structures have ev"
+  },
+  {
+   "id": "sd-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1599,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The DraftPress Law (2021) is a Sudanese legal instrument, not a Seychellois one. Sudan and Seychelles are separate countries with distinct legal systems and official gazettes."
+  },
+  {
+   "id": "sd-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1475,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Central Bank of Sudan would publish its own policies through Sudanese government channels, not through Tanzania's Attorney General's Office. The jurisdiction mismatch makes this claim i"
+  },
+  {
+   "id": "sd-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 3001,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.**  The Stamp Duty Act, 1986 is a Kenyan statute, not Sudanese legislation. The claim conflates Kenya's legal framework with Sudan's jurisdiction, making it factually incorrect for Sudan."
+  },
+  {
+   "id": "sd-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1190,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Sudan and Tanzania are separate countries. A Sudanese constitutional act would not be published by Tanzania's Attorney General's Office. The jurisdiction claim is internally contradictory."
+  },
+  {
+   "id": "sd-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1658,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Central Bank of Sudan would publish its policies through official Sudanese government channels, not the Seychelles Official Gazette, which is a separate country's publication."
+  },
+  {
+   "id": "sd-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1944,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Capital Gains Tax Act, 1986 is a Seychelles law, not Sudanese legislation. Sudan and Seychelles are separate jurisdictions with distinct legal systems and official gazettes."
+  }
+ ]
+}

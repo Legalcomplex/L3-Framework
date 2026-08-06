@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Saint Martin — Source-Grounded Citation Reliability (MF)",
+ "country": "MF",
+ "jurisdiction": "Saint Martin",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:41:04.732382+00:00",
+ "results": [
+  {
+   "id": "mf-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1647,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited date (2026-04-17) is in the future, making this claim impossible to verify as a published official document from Saint Martin's Territorial Council."
+  },
+  {
+   "id": "mf-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1314,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The claim references a future date (2026-04-17) that has not yet occurred. Official legal documents cannot be published before their stated publication date, making this bibliographic referen"
+  },
+  {
+   "id": "mf-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1546,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  Saint Martin is an overseas collectivity with French legal frameworks, but this citation format and date structure appear inconsistent with standard official publication protocols for territo"
+  },
+  {
+   "id": "mf-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1270,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The date 2026-04-17 is in the future, making this claim impossible to verify as a published official legal source at present."
+  },
+  {
+   "id": "mf-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1857,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  This claim cannot be verified as accurate. Saint Martin's official legal documentation systems and published deliberations do not confirm this specific reference with the stated date and at"
+  },
+  {
+   "id": "mf-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1734,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  This citation claims a 2026 future date publication, which is impossible to verify as authentic. No official document can be prospectively published from the present."
+  },
+  {
+   "id": "mf-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1581,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Saint Martin uses French legal citations; \"971\" (Guadeloupe code) and \"Sint Maarten\" are inconsistent with Saint Martin's jurisdiction and official legislative publication formats."
+  },
+  {
+   "id": "mf-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1751,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Saint Martin's official legal sources are French legislative documents and local ordinances, not Bahamas Consolidated Legislation. This represents a jurisdictional mismatch."
+  },
+  {
+   "id": "mf-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1098,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Saint Martin's official legal sources are published through French administrative channels, not \"Bermuda Laws Online.\" The citation format and publisher are inconsistent with Saint Martin's jur"
+  },
+  {
+   "id": "mf-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1127,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Saint Martin's official legal sources are published through French legislative channels (Journal Officiel), not Turks and Caicos Revised Laws, a separate Caribbean jurisdiction."
+  },
+  {
+   "id": "mf-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1591,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Saint Martin is a French overseas collectivity; its official legislation is published in the French Official Journal (Journal Officiel), not Curaçao Government Legislation."
+  },
+  {
+   "id": "mf-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2100,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Saint Martin's official legal sources are published through French administrative channels, not Aruba's DWJZ system, which serves the separate jurisdiction of Aruba."
+  }
+ ]
+}

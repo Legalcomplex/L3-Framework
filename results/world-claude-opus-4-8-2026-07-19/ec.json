@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Ecuador — Source-Grounded Citation Reliability (EC)",
+ "country": "EC",
+ "jurisdiction": "Ecuador",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 11,
+ "blocked": 0,
+ "unparsed": 1,
+ "errors": [],
+ "accuracy": 0.5455,
+ "correct": 6,
+ "parse_rate": 0.9167,
+ "passed": false,
+ "timestamp": "2026-07-19T08:11:51.080389+00:00",
+ "results": [
+  {
+   "id": "ec-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1942,
+   "verdict": true,
+   "correct": true,
+   "raw": "I cannot verify this specific claim as True or False without access to Ecuador's official records; treat it as unverified."
+  },
+  {
+   "id": "ec-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1989,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific Acuerdo's existence, number, date, or content without access to authoritative Ecuadorian official records."
+  },
+  {
+   "id": "ec-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2073,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated citation; specific details like the official name, exact date, and content cannot be reliably verified."
+  },
+  {
+   "id": "ec-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 5623,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears fabricated or unverifiable; specific repatriation acuerdos with named individuals aren't reliably documented in oficial.ec, warranting skepticism."
+  },
+  {
+   "id": "ec-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 4025,
+   "verdict": true,
+   "correct": true,
+   "raw": "I cannot verify this specific claim as True or False; I lack reliable access to confirm this exact document's details."
+  },
+  {
+   "id": "ec-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2209,
+   "verdict": true,
+   "correct": true,
+   "raw": "I cannot verify this specific claim as True or False with certainty; I lack reliable access to confirm this document's existence."
+  },
+  {
+   "id": "ec-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2297,
+   "verdict": true,
+   "correct": false,
+   "raw": "I cannot verify this specific claim as True or False; I lack reliable access to confirm this exact document's details and authenticity."
+  },
+  {
+   "id": "ec-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2172,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Querido Diário covers Brazilian municipal gazettes only; Ecuadorian legal acts appear in the Registro Oficial, not Brazilian sources."
+  },
+  {
+   "id": "ec-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2073,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Ecuadorian ministerial agreements (MDT) are published in Ecuador's Registro Oficial, not Chile's BCN Linked Open Data system."
+  },
+  {
+   "id": "ec-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2155,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The masculine \"ciudadano colombiano\" contradicts the female name \"Gloria Yuris Gómez,\" signaling a fabricated or inaccurate citation."
+  },
+  {
+   "id": "ec-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1604,
+   "verdict": true,
+   "correct": false,
+   "raw": "I cannot verify this specific claim as True or False without access to Ecuador's official registry to confirm these details."
+  },
+  {
+   "id": "ec-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1560,
+   "verdict": null,
+   "correct": false,
+   "raw": "I cannot verify this specific claim with confidence. Insufficient reliable knowledge exists to confirm the exact title, date, or publication source authenticity."
+  }
+ ]
+}

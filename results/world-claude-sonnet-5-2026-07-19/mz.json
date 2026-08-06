@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Mozambique — Source-Grounded Citation Reliability (MZ)",
+ "country": "MZ",
+ "jurisdiction": "Mozambique",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:59:22.085588+00:00",
+ "results": [
+  {
+   "id": "mz-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1852,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This appears to be a fabricated or unverifiable citation—the date is in the future, and no such specific decision can be confirmed as authentic."
+  },
+  {
+   "id": "mz-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2030,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Mozambican laws are officially published in the Boletim da República, not a \"Supreme Court Legislation Portal,\" which isn't the official gazette source."
+  },
+  {
+   "id": "mz-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2333,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify unpublished court-internal identifiers or future-dated decisions; no reliable database confirms this specific Mozambique Tribunal Supremo citation exists."
+  },
+  {
+   "id": "mz-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2425,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this citation's accuracy; Mozambique's Supreme Court doesn't function as an official legislative publication portal (that role belongs to Boletim da República)."
+  },
+  {
+   "id": "mz-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2341,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this citation—it references a future date (2026) and lacks a checkable, authentic source, appearing fabricated or unconfirmed."
+  },
+  {
+   "id": "mz-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2158,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This identifier cannot be verified; specific database identifiers like \"cd812dbd6028\" aren't publicly confirmable, and citation details may be fabricated."
+  },
+  {
+   "id": "mz-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2229,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific identifier-to-case correspondence in Mozambique's Supreme Court records; it appears fabricated or unverifiable, including the future-dated 2026 date."
+  },
+  {
+   "id": "mz-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 3000,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This specific identifier-to-law mapping cannot be verified independently; such internal database codes aren't publicly confirmable as accurate citations."
+  },
+  {
+   "id": "mz-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1828,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** I cannot verify this specific citation exists; it appears fabricated or unconfirmed, as I have no reliable record of this exact case."
+  },
+  {
+   "id": "mz-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1712,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Kenya Law (National Council for Law Reporting) publishes Kenyan legislation, not Mozambican law; Mozambican laws appear in Boletim da República."
+  },
+  {
+   "id": "mz-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2997,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This citation appears fabricated/unverifiable — no confirmed record of \"Ac proc. 2024-51\" exists in Tribunal Supremo's official published decisions or databases."
+  },
+  {
+   "id": "mz-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1680,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Mozambique's official gazette is the \"Boletim da República,\" not the Seychelles Official Gazette—an unrelated foreign publication for a different country."
+  }
+ ]
+}

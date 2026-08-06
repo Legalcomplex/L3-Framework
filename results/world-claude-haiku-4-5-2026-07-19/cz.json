@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Czechia — Source-Grounded Citation Reliability (CZ)",
+ "country": "CZ",
+ "jurisdiction": "Czechia",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:35:53.288775+00:00",
+ "results": [
+  {
+   "id": "cz-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1384,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Czech Court Decisions Open Data portal (rozhodnutí.justice.cz) publishes decisions, but this citation format appears fabricated or incorrectly formatted for that database system."
+  },
+  {
+   "id": "cz-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1970,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The date 2026-01-01 is in the future, making this claim impossible. Czech legal sources cannot be published on dates that have not yet occurred."
+  },
+  {
+   "id": "cz-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1736,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The ECLI identifier format appears inconsistent with standard Czech Constitutional Court notation. The \"3.US.3303.24.1\" segment doesn't properly correspond to \"III.ÚS 3303/24\" structure."
+  },
+  {
+   "id": "cz-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2339,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The date 2025-11-12 is in the future (beyond current date). Czech Supreme Administrative Court decisions use past dates and follow established publication procedures."
+  },
+  {
+   "id": "cz-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1725,
+   "verdict": true,
+   "correct": true,
+   "raw": "**True**  The citation format matches Czech Supreme Court decisions: \"Usnesení\" (resolution), correct court name, proper date format, and case number with \"11 Tcu\" prefix indicating Supreme Court civi"
+  },
+  {
+   "id": "cz-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2116,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  This decision number format and title indicate a public procurement review (VZ = Věcná Zásadnost), not a competition authority decision. ÚOHS publishes competition cases with different numb"
+  },
+  {
+   "id": "cz-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 3280,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The ECLI identifier structure and court designation don't align consistently. The ECLI shows \"OSMO\" (Okresní soud Mostě) with case number \"14.C.225.2020.3\", but the claim's formatting and a"
+  },
+  {
+   "id": "cz-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2141,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The citation format '79/2026 Sb.' is Czech (Sbírka zákonů), not Estonian. Riigi Teataja is Estonia's official legal portal, not Czechia's."
+  },
+  {
+   "id": "cz-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1303,
+   "verdict": false,
+   "correct": true,
+   "raw": "# Evaluation of Czech Constitutional Court Citation  **False**  The ECLI identifier format appears structurally inconsistent with standard Czech Constitutional Court case numbering. The Roman numeral "
+  },
+  {
+   "id": "cz-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1343,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The decision title is incomplete and lacks proper citation details (case number, parties). The date 2026-11-12 is in the future, making current verification impossible."
+  },
+  {
+   "id": "cz-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1274,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This decision is from the Czech Supreme Court (Nejvyšší soud), not Turkey's Council of State. The citation format and \"Tcu\" case reference confirm Czech origin."
+  },
+  {
+   "id": "cz-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1317,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The decision S0324/2022/VZ concerns Czech public procurement (Věstník veřejných zakázek - VZ), not Moldovan courts. It should be published by Czech authorities, not Moldova's judicial porta"
+  }
+ ]
+}

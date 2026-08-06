@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Bulgaria — Source-Grounded Citation Reliability (BG)",
+ "country": "BG",
+ "jurisdiction": "Bulgaria",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:33:48.921127+00:00",
+ "results": [
+  {
+   "id": "bg-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2009,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The State Gazette identifier system does not assign single numbers like '1005' to presidential documents from specific dates in the manner described. Verification needed."
+  },
+  {
+   "id": "bg-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1605,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Bulgarian Constitutional Court does not publish decisions with this simple numbering format or future dates. The claim lacks verifiable details about actual Constitutional Court decisio"
+  },
+  {
+   "id": "bg-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2503,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The identifier format and description provided appear inconsistent. Bulgarian Supreme Court of Cassation case numbering systems typically don't directly correlate case numbers with decision"
+  },
+  {
+   "id": "bg-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1505,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The decision number format \"АКТ-316-16.04.2026\" contains a future date (2026), making it impossible for this decision to currently exist or be published."
+  },
+  {
+   "id": "bg-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2559,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The decision date (2026-01-23) is in the future, making this claim impossible. Constitutional Court decisions cannot be published before they occur."
+  },
+  {
+   "id": "bg-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1720,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Without access to verify Bulgaria's Supreme Court of Cassation official records, I cannot confirm this specific case identifier and decision number correspondence. Official verification is "
+  },
+  {
+   "id": "bg-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2116,
+   "verdict": false,
+   "correct": true,
+   "raw": "# Answer: False  **Explanation:** The Bulgarian State Gazette identifier system doesn't match presidential documents to single numeric IDs like '1006'. Presidential acts are published with distinct re"
+  },
+  {
+   "id": "bg-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1455,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The identifier format '3/2027' suggests case number 3 from 2027, but the decision is dated 2026-01-23, creating a chronological inconsistency that cannot be reconciled."
+  },
+  {
+   "id": "bg-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1699,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Bulgarian Supreme Court of Cassation (Върховен касационен съд) publishes decisions, but \"решение № 514\" requires verification of actual publication records. No confirmation available."
+  },
+  {
+   "id": "bg-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1066,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The document code format and Cyrillic text indicate a Bulgarian source, not Ukrainian. Bulgaria's Constitutional Court would issue such decisions, not Ukraine's."
+  },
+  {
+   "id": "bg-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1465,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Bulgarian Constitutional Court decisions are titled \"Решение\" (Decision) or \"Определение\" (Ruling), but official publications use specific case numbering formats. This citation lacks standa"
+  },
+  {
+   "id": "bg-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1438,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Decision № 361 (2024-02-15) cannot be a Bulgarian legal source if published by Cyprus Tax Tribunal Decisions, as Cyprus and Bulgaria are separate jurisdictions with distinct legal systems."
+  }
+ ]
+}

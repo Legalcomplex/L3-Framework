@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Albania — Source-Grounded Citation Reliability (AL)",
+ "country": "AL",
+ "jurisdiction": "Albania",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:06:52.565833+00:00",
+ "results": [
+  {
+   "id": "al-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2433,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026 is in the future, making publication verification impossible. The title also appears incomplete/truncated."
+  },
+  {
+   "id": "al-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2257,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. A decision dated 29.07.2025 cannot have a publication date of 2026-02-25 that precedes internal logic; also unverifiable citation details."
+  },
+  {
+   "id": "al-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2005,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This citation cannot be verified; the 2026 date is future-dated, and the identifier format and title appear fabricated or speculative."
+  },
+  {
+   "id": "al-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2194,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. A decision dated 22.01.2025 cannot be published on 2025-02-28 with internal consistency issues; citation appears unverifiable/fabricated."
+  },
+  {
+   "id": "al-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2039,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-01-28 is in the future and implausible; a 2024 committee decision would not be published then."
+  },
+  {
+   "id": "al-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 4365,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The citation identifier \"vend.mosk.20'26\" is malformed/implausible, and a 2026 date suggests a fabricated, unverifiable source."
+  },
+  {
+   "id": "al-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 3319,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This appears fabricated; a 2026-dated identifier is implausibly future, and I cannot verify this specific Fletorja Zyrtare citation."
+  },
+  {
+   "id": "al-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2539,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The decision title states date 29.07.2025, contradicting the claimed publication date of 2024-02-25, indicating inconsistency."
+  },
+  {
+   "id": "al-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2012,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This appears fabricated; the 2026 date is future-dated, the identifier format is questionable, and the title is incomplete/unverifiable."
+  },
+  {
+   "id": "al-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2267,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Albanian decisions (\"Vendim\") aren't published by Moldova's courts portal; jurisdictions mismatch—Albanian sources would publish Albanian decisions, not Moldovan platforms."
+  },
+  {
+   "id": "al-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2546,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The title is Albanian (Fletorja Zyrtare), but Službeni glasnik BiH is Bosnia-Herzegovina's gazette—wrong jurisdiction; also future date is implausible."
+  },
+  {
+   "id": "al-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1869,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The citation format 'vend.mosk.20'26' is malformed and non-standard; Albanian Constitutional Court decisions don't use this fabricated identifier structure."
+  }
+ ]
+}

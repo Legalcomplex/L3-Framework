@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Benin — Source-Grounded Citation Reliability (BJ)",
+ "country": "BJ",
+ "jurisdiction": "Benin",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:49:55.780652+00:00",
+ "results": [
+  {
+   "id": "bj-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1979,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation exists in Juricaf's database; the case number, date, or publication details may be fabricated or inaccurate."
+  },
+  {
+   "id": "bj-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2011,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This appears to be a fabricated or unverifiable citation; I cannot confirm \"Décision EL-25-002\" exists in Benin's Constitutional Court official records or publications."
+  },
+  {
+   "id": "bj-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2606,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Official Beninese laws are published in the Journal Officiel de la République du Bénin, not a \"Benin LEGIS Legal Database,\" which is not the authoritative gazette source."
+  },
+  {
+   "id": "bj-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2021,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This citation cannot be verified as accurately representing an official Beninese legal source without confirmation from the actual Journal Officiel du Bénin publication records."
+  },
+  {
+   "id": "bj-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2090,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation exists in Juricaf's database; fabricated or unverifiable case numbers/dates are common risks in such claims."
+  },
+  {
+   "id": "bj-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2028,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The date 2026-02-27 is in the future (beyond current knowledge), making verification impossible and the claim likely fabricated or unverifiable."
+  },
+  {
+   "id": "bj-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2210,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier ends in \"89CJS\" but the cited decision number is \"88/CJ-S\" — a mismatch between the identifier and the described document."
+  },
+  {
+   "id": "bj-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2987,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This appears to be a fabricated/unverifiable citation—the date (2026, future) and specific decision number cannot be confirmed as genuine."
+  },
+  {
+   "id": "bj-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2143,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Benin's \"Loi N° 2020-12\" is a Beninese law, not published by Nigeria's NAFDAC, which is a distinct Nigerian regulatory agency."
+  },
+  {
+   "id": "bj-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1506,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Nigerian Communications Commission is a Nigerian regulator with no authority over Benin's laws, which are published in Benin's Journal Officiel."
+  },
+  {
+   "id": "bj-src-f05",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1421,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier references case number \"92CJCM,\" but the claim cites decision \"90/CJ-CM\" — a mismatched case number, indicating inconsistency."
+  },
+  {
+   "id": "bj-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1617,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Decision numbers use the year of issuance (e.g., DCC23-xxx for 2023), so \"DCC26-003\" dated 2023-02-27 is inconsistent and likely fabricated."
+  }
+ ]
+}

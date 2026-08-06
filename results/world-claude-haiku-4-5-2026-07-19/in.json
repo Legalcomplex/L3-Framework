@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — India — Source-Grounded Citation Reliability (IN)",
+ "country": "IN",
+ "jurisdiction": "India",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:38:48.248476+00:00",
+ "results": [
+  {
+   "id": "in-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1760,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The citation format \"CR. WJC/144/2025\" does not match any recognized Indian High Court judgment numbering system. Indian High Courts use standardized case number formats (year, court abbrevia"
+  },
+  {
+   "id": "in-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1360,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The decision date is 2026-02-03, which is in the future. This cannot be a published judgment from the Indian Supreme Court as of now."
+  },
+  {
+   "id": "in-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1922,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Appeal No. 74 of 2008 would be decided by the Appellate Tribunal for Electricity (APTEL), but the 2008 date appears inconsistent with APTEL's establishment timeline and typical case reporti"
+  },
+  {
+   "id": "in-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2006,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Central Administrative Tribunal (CAT) publishes decisions with \"O.A.\" (Original Application) numbers, but this case citation appears fabricated. \"Jharkihandi Rai\" is not a verifiable pa"
+  },
+  {
+   "id": "in-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1583,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The case number format, parties, and 2026 date are inconsistent with CCI's actual case documentation standards and publicly available records. This appears to be a fabricated citation."
+  },
+  {
+   "id": "in-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1791,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The citation format and details don't match CESTAT's standard nomenclature. CESTAT decisions typically use different reference systems and don't follow this exact naming convention for publ"
+  },
+  {
+   "id": "in-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1585,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The identifier '2026' in the case number does not match the year '2025' in the judgment date. Case numbers typically correspond to their filing/registration year, creating an internal inconsi"
+  },
+  {
+   "id": "in-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1749,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The identifier references a 2026 judgment date, which is in the future from any current perspective. Supreme Court judgments cannot be prospectively dated; this appears to be a fabricated or "
+  },
+  {
+   "id": "in-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1191,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This decision concerns India's power sector regulator (CERC) and would be decided by an Indian court, not Pakistan's Islamabad High Court. The jurisdiction mismatch makes this attribution i"
+  },
+  {
+   "id": "in-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1498,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This appears to be an Original Application (O.A.) filed in the Supreme Court, which would be published in official Supreme Court reports or databases, not a \"Supreme Court Online Bulletin.\""
+  },
+  {
+   "id": "in-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1053,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The case number format (36/2025) indicates 2025, contradicting the 2023-01-05 date. This temporal inconsistency suggests the citation is fabricated or contains errors."
+  },
+  {
+   "id": "in-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1203,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The citation format and reference number don't match standard CESTAT judgment documentation. Indian tribunal decisions use distinct case number formats and publication protocols that this e"
+  }
+ ]
+}

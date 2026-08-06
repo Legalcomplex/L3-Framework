@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Zambia — Source-Grounded Citation Reliability (ZM)",
+ "country": "ZM",
+ "jurisdiction": "Zambia",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:47:44.330700+00:00",
+ "results": [
+  {
+   "id": "zm-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1809,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. As of my knowledge cutoff (April 2024), I cannot verify an Act from 2025. No such legislation has been published or confirmed in available Zambian legal databases."
+  },
+  {
+   "id": "zm-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1774,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The citation format is unclear and conflicting. \"S.I No 166 of 1993\" and \"13 of 1994\" appear contradictory. Official Zambian statutory instruments require consistent, singular dating and cl"
+  },
+  {
+   "id": "zm-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1448,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The African War Memorial Fund Act predates Zambia's independence (1964). Zambia Legal Information Institute could not have published it as a Zambian legal source in 1954."
+  },
+  {
+   "id": "zm-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1349,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  This act does not exist. As of my knowledge cutoff (April 2024), no Banking and Financial Services Act numbered 9 of 2026 has been enacted or published by Zambia's National Assembly."
+  },
+  {
+   "id": "zm-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2443,
+   "verdict": false,
+   "correct": false,
+   "raw": "# Answer: False  **Explanation:** The cited publication date (2025-08-20) is in the future and cannot be a valid source date. Additionally, S.I. 168/1993 predates modern ZSEC guideline compilations by"
+  },
+  {
+   "id": "zm-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1833,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  This regulation cannot have been published on 2025-08-29, as that date is in the future relative to current knowledge cutoffs. Additionally, no such regulations are confirmed in accessible "
+  },
+  {
+   "id": "zm-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1443,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Independent Broadcasting Authority Act, 2025 is a Zambian statute, not a South African by-law. Laws.Africa may host it, but attributing it to South Africa's legal system is jurisdiction"
+  },
+  {
+   "id": "zm-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1699,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The citation format is contradictory and confusing, mixing statutory instrument numbers (166 of 1993, 13 of 1994) without clear designation. Standard Zambian legal citations don't combine multi"
+  },
+  {
+   "id": "zm-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 5423,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The African War Memorial Fund Act, 1954 was a Zambian (then Northern Rhodesian) statute, not a Namibian one. Namibia Legal Information Institute would be an inappropriate publisher for this act"
+  },
+  {
+   "id": "zm-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1760,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Banking and Financial Services Act, 2026 is a future-dated legislation (not yet enacted as of my knowledge cutoff in April 2024). Additionally, the claim confuses Zimbabwe Legal Informa"
+  },
+  {
+   "id": "zm-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1165,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The cited source is incorrect. S.I. No 168 of 1993 would be a Statutory Instrument published in the Government Gazette, not through ZSEC's Directives & Guidelines portal."
+  },
+  {
+   "id": "zm-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 4706,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Access to Information Regulations are Zambian legislation, not Eswatini documents. The Central Bank of Eswatini would not publish Zambian regulations. Wrong jurisdiction and source."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Mongolia — Source-Grounded Citation Reliability (MN)",
+ "country": "MN",
+ "jurisdiction": "Mongolia",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:41:33.507769+00:00",
+ "results": [
+  {
+   "id": "mn-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1720,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The title translates to \"On Considering the Law on Air as Repealed.\" Mongolia's Unified Legal Information System does not publish repeal notices as standalone official documents in this format."
+  },
+  {
+   "id": "mn-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1816,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The citation format and case number structure appear inconsistent with Mongolia's official Supreme Court decision nomenclature and published decision formats on shuukh.mn."
+  },
+  {
+   "id": "mn-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 8715,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The date 2026-04-02 is in the future, making this bibliographic claim impossible to verify as an actual published decision from Mongolia's Constitutional Court."
+  },
+  {
+   "id": "mn-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1747,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The claim cannot be verified as accurate. Mongolia's Unified Legal Information System (JUULGAL) does not have publicly accessible records confirming this specific document's publication on 20"
+  },
+  {
+   "id": "mn-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1701,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  This decision originates from a provincial administrative court, not the Supreme Court. The title explicitly indicates it's from Darkhan-Uul aimag's first-instance administrative court, not"
+  },
+  {
+   "id": "mn-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1455,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The cited decision appears to concern non-judicial functions of Mongolia's Supreme Court, which falls outside the Constitutional Court's (Tsets) typical jurisdiction over constitutional mat"
+  },
+  {
+   "id": "mn-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1876,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This appears to be a regulation or decree title (roughly \"On Repealing the Law on Air\"), but cannot be verified as published by Mongolia's Unified Legal Information System on 2015-05-17 wit"
+  },
+  {
+   "id": "mn-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1809,
+   "verdict": false,
+   "correct": true,
+   "raw": "# Answer: False  **Explanation:** The identifier ends in '0053' but the cited decision ends in '0052'—these are different case numbers and cannot correspond to the same decision."
+  },
+  {
+   "id": "mn-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1316,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.**   This decision is Mongolian (dated 2026, Mongolian title), not from Macau. Macau Court Decisions publishes decisions from Macau courts, not Mongolia."
+  },
+  {
+   "id": "mn-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1187,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This Mongolian law title would not be published by a Korean legal information center. KLIC serves Korean legal sources, not Mongolian legislation."
+  },
+  {
+   "id": "mn-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2229,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This decision is from a provincial court (Дархан-Уул аймаг), not the Supreme Court. Provincial court decisions are not typically published on the Supreme Court's official portal."
+  },
+  {
+   "id": "mn-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1554,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This decision concerns Mongolia's Supreme Court and would be published by Mongolian judicial authorities, not Macau Court Decisions, which publishes decisions from Macau's courts."
+  }
+ ]
+}

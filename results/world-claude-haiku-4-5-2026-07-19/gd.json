@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Grenada — Source-Grounded Citation Reliability (GD)",
+ "country": "GD",
+ "jurisdiction": "Grenada",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:37:25.139376+00:00",
+ "results": [
+  {
+   "id": "gd-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1684,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  This claim references a future date (April 10, 2026). As of the knowledge cutoff in April 2024, this publication cannot have been verified as officially published."
+  },
+  {
+   "id": "gd-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1518,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  This claim cannot be verified as accurate. The publication date (2026-03-13) is in the future, making it impossible to confirm this as an actual published official legal source in Grenada."
+  },
+  {
+   "id": "gd-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1555,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  This claim references a future date (May 29, 2026) that has not yet occurred. Official gazettes cannot be published retroactively for dates that haven't transpired, making this claim imposs"
+  },
+  {
+   "id": "gd-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2091,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The publication date (2026-04-11) contradicts the gazette date stated in the identifier (Friday 20th March 2026). These dates are inconsistent and cannot both be correct simultaneously."
+  },
+  {
+   "id": "gd-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2162,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  This publication date is in the future (April 2026). It cannot have been published as a historical record when the current date is in 2024 or earlier. Future documents cannot exist as publi"
+  },
+  {
+   "id": "gd-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1487,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The publication date listed (2026-04-11) contradicts the gazette header date (Friday 27th March 2026), creating an internal inconsistency in the bibliographic record."
+  },
+  {
+   "id": "gd-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1579,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The citation references Bahamas legislation, not Grenada. Grenada and Bahamas are separate Caribbean jurisdictions with distinct legal systems and official gazettes."
+  },
+  {
+   "id": "gd-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1753,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.  The identifier states \"2027\" but the gazette citation claims \"2026.\" These dates are internally inconsistent, making the bibliographic claim unreliable and inaccurate."
+  },
+  {
+   "id": "gd-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1171,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This claim is internally inconsistent. A Grenada legal source cannot be published via \"Bermuda Laws Online,\" as Bermuda and Grenada are separate jurisdictions with distinct legal systems."
+  },
+  {
+   "id": "gd-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 979,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The publication date (2026-04-11) contradicts the gazette header date (Friday 20th March 2026), creating an internal inconsistency in the bibliographic record."
+  },
+  {
+   "id": "gd-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1696,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Grenada's official legislation is published through the Grenada Gazette, not Curaçao Government Legislation. Curaçao is a separate Caribbean jurisdiction with its own legal publishing syste"
+  },
+  {
+   "id": "gd-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1033,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The citation references Cayman Islands legislation, not Grenada. These are separate Caribbean jurisdictions with distinct legal systems and publications."
+  }
+ ]
+}

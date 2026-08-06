@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Qatar — Source-Grounded Citation Reliability (QA)",
+ "country": "QA",
+ "jurisdiction": "Qatar",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.6667,
+ "correct": 8,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:44:01.186447+00:00",
+ "results": [
+  {
+   "id": "qa-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 4927,
+   "verdict": true,
+   "correct": true,
+   "raw": "# Answer: True  **Explanation:** Qatar Al Meezan is Qatar's official legal database that systematically publishes court decisions, including Court of Cassation criminal cases from 2005."
+  },
+  {
+   "id": "qa-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1748,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Qatar Al Meezan was established in 2015, making it impossible for it to have published a 2005 decree. The source attribution contains a chronological impossibility."
+  },
+  {
+   "id": "qa-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1695,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The cited title appears to be explanatory notes on corporate regulations, but Qatar Free Zones Laws is a specific legislative framework with distinct regulations. The publication source and"
+  },
+  {
+   "id": "qa-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1544,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Qatar Financial Centre Court (QFCC), not the Qatar Financial Centre Regulatory Tribunal (QICDRC), would be the appropriate judicial body to publish commercial dispute decisions between "
+  },
+  {
+   "id": "qa-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1547,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Qatar Al Meezan Case Law Database publishes decisions from Qatar's Court of Cassation (محكمة التمييز), but this specific citation lacks verifiable publication confirmation in that datab"
+  },
+  {
+   "id": "qa-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1788,
+   "verdict": true,
+   "correct": true,
+   "raw": "# Evaluation: **True**  Law No. 10 of 1987 concerning Public and Private State Property is a legitimate Qatari legislative source, published by Qatar Al Meezan (the official legislation database) on t"
+  },
+  {
+   "id": "qa-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1928,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This decision is from Qatar's Court of Cassation (محكمة التمييز), not ADGM Courts. ADGM is the Abu Dhabi Global Market court system in the UAE, a different jurisdiction entirely."
+  },
+  {
+   "id": "qa-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 3572,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  ADGM (Abu Dhabi Global Market) is a UAE jurisdiction, not Qatari. This decision by Qatar's Supreme Council for Environment and Natural Reserves cannot originate from ADGM's legal framework."
+  },
+  {
+   "id": "qa-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1133,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  \"ملاحظات توضيحية للوائح التنظيمية للشركات\" (Explanatory Notes on Corporate Regulatory Bylaws) is not an official Qatar Free Zones Laws publication from the stated date."
+  },
+  {
+   "id": "qa-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1939,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Qatar Financial Centre Regulatory Tribunal (QICDRC) case citation format and specific case details cannot be verified as accurate without access to official QFC tribunal records and pub"
+  },
+  {
+   "id": "qa-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1082,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  DIFC Courts operate in Dubai, UAE. This decision is from Qatar's Court of Cassation (محكمة التمييز), a different jurisdiction entirely. Publication attribution is incorrect."
+  },
+  {
+   "id": "qa-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1219,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Law No. 10 of 1987 is a Qatari law, but the DIFC Legal Database catalogs Dubai International Financial Centre laws, not Qatari legislation."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Taiwan — Source-Grounded Citation Reliability (TW)",
+ "country": "TW",
+ "jurisdiction": "Taiwan",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:04:22.045161+00:00",
+ "results": [
+  {
+   "id": "tw-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2261,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The date is inconsistent: a 114年 (2025) case decided as early as January 23, 2025 is implausibly fast for that docket numbering sequence."
+  },
+  {
+   "id": "tw-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2208,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Interpretation No. 748 issuing body was the Council of Grand Justices, not the \"Constitutional Court,\" which was renamed later in 2022 under reforms."
+  },
+  {
+   "id": "tw-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2295,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this is a future-dated (2026) claim; Taiwan Legislative Yuan Gazette records cannot be verified as authentic before actual publication occurs."
+  },
+  {
+   "id": "tw-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2497,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The date (2025-01-23) falls within 114 (ROC year), but I cannot verify this specific case number/content matches actual Judicial Yuan records without database access."
+  },
+  {
+   "id": "tw-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2109,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** In December 2021, Taiwan's interpretation body was the Council of Grand Justices (司法院大法官), not the Constitutional Court, which only began operating in 2022."
+  },
+  {
+   "id": "tw-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2299,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Dates are internally inconsistent/implausible (2026 gazette reporting 115 year events, future-dated), and names/details cannot be verified as accurate."
+  },
+  {
+   "id": "tw-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2124,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '114,台聲,104' should correspond to case number 104, not 103; a mismatched case number indicates incorrect citation."
+  },
+  {
+   "id": "tw-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2023,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The identifier \"Interpretation-806\" corresponds to Constitutional Interpretation No. 806, not No. 805; the number should match the identifier exactly."
+  },
+  {
+   "id": "tw-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1787,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Taiwan's Legislative Yuan agenda items are published via Taiwan's official gazette/LY system, not Macau's Legal Portal database."
+  },
+  {
+   "id": "tw-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1791,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The date mismatch is the issue: a \"114 年度\" (year 2025 ROC) decision cannot have been decided on 2022-01-23, an earlier date."
+  },
+  {
+   "id": "tw-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1799,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.**  Judicial Yuan Constitutional Court Interpretation No. 812 was rendered in 2022 (April 22, 2022), not December 10, 2024, misdating the decision."
+  },
+  {
+   "id": "tw-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1979,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Hong Kong e-Legislation publishes HK statutes only; this Taiwan presidential nomination/legislative consent matter would appear in Taiwan's official Legislative Yuan Gazette instead."
+  }
+ ]
+}

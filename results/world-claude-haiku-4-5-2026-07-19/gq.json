@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Equatorial Guinea — Source-Grounded Citation Reliability (GQ)",
+ "country": "GQ",
+ "jurisdiction": "Equatorial Guinea",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:37:53.670665+00:00",
+ "results": [
+  {
+   "id": "gq-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1457,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No verifiable evidence confirms this specific document's publication in Equatorial Guinea's Official State Gazette on that date. The claim lacks documentary corroboration."
+  },
+  {
+   "id": "gq-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1597,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No verifiable evidence confirms this specific document was published in Equatorial Guinea's Official State Gazette on 2021-04-21. The claim lacks corroborating source documentation."
+  },
+  {
+   "id": "gq-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1779,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Equatorial Guinea's official gazette is the \"Boletín Oficial de la República de Guinea Ecuatorial\" (BORGHGE), not \"Boletín Oficial del Estado.\" Spain uses that terminology."
+  },
+  {
+   "id": "gq-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1670,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  No verifiable record exists of this specific instruction document being published in Equatorial Guinea's Official State Gazette on that date. The claim lacks corroborating evidence."
+  },
+  {
+   "id": "gq-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3194,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The document title references horizontal property governance, but no verifiable record confirms this specific 2021 publication in Equatorial Guinea's official gazette within accessible source"
+  },
+  {
+   "id": "gq-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1615,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The claimed title appears to be a governmental commission name rather than a publishable document. No evidence confirms this specific entity's gazette publication on that date in Equatorial G"
+  },
+  {
+   "id": "gq-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1392,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The claim lacks verifiable specificity. No documented evidence confirms this exact title's publication in Equatorial Guinea's Official Gazette on that specific date."
+  },
+  {
+   "id": "gq-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2170,
+   "verdict": false,
+   "correct": true,
+   "raw": "# Answer: False  **Explanation:** Equatorial Guinea's official gazette is the \"Boletín Oficial de la República de Guinea Ecuatorial\" (BOGE), not \"Boletín Oficial del Estado.\" The title format and date"
+  },
+  {
+   "id": "gq-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1474,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The document title references \"viviendas sociales\" (social housing), which is characteristic of Congo-Brazzaville legislation, not Equatorial Guinea. The jurisdiction mismatch makes this cl"
+  },
+  {
+   "id": "gq-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1072,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Equatorial Guinea is a Spanish-speaking former Spanish colony; Droit Congolais covers Democratic Republic of Congo legislation. The jurisdictions and legal systems are entirely distinct and"
+  },
+  {
+   "id": "gq-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1344,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This appears to be a document title rather than a standalone publication. The Boletín Oficial del Estado publishes laws and decrees, not generic governance guides on horizontal property."
+  },
+  {
+   "id": "gq-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1469,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This document title appears fabricated. Equatorial Guinea's Official Gazette (Boletín Oficial de la República de Guinea Ecuatorial) does not typically publish governmental commission names "
+  }
+ ]
+}

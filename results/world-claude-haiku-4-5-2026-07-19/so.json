@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Somalia — Source-Grounded Citation Reliability (SO)",
+ "country": "SO",
+ "jurisdiction": "Somalia",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:45:09.876118+00:00",
+ "results": [
+  {
+   "id": "so-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1397,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The publication date (2026-04-01) is in the future, making this claim impossible. Official legal documents cannot be published before the current date."
+  },
+  {
+   "id": "so-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1495,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The date format is inconsistent and suspicious. A law numbered \"91-2020\" would logically be published in 2020, not 2020-01-01, suggesting potential fabrication or unreliable documentation."
+  },
+  {
+   "id": "so-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1535,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The cited date (2025-12-01) is in the future, making this claim impossible to verify as a published source in Somalia's Official Gazette."
+  },
+  {
+   "id": "so-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1403,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Somaliland's legal status is disputed; it is not internationally recognized as an independent state, making it not an \"official\" legal source in the conventional jurisdictional sense."
+  },
+  {
+   "id": "so-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1453,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The publication date of April 1, 2026 is in the future, making this claim impossible to verify or authenticate as a legitimate historical legal source."
+  },
+  {
+   "id": "so-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1661,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The citation format and specificity lack verifiable evidence. Somaliland's legal documentation systems remain largely undigitized with limited public accessibility to official compilations fr"
+  },
+  {
+   "id": "so-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1674,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Somalia's legal gazette system and institutional structures are insufficiently documented to verify this specific 2024 publication claim with certainty regarding authenticity and official s"
+  },
+  {
+   "id": "so-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1392,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Somalia and Seychelles are distinct sovereign nations. Somalia's electoral laws would not be published in Seychelles' official gazette."
+  },
+  {
+   "id": "so-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1812,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The title appears to be Somali language text without verifiable documentary evidence of publication by Somalia's Office of the State Attorney General on that specific date."
+  },
+  {
+   "id": "so-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1287,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Somaliland is a self-declared entity separate from Somalia. Tanzania's Attorney General's Office would not be the publisher of Somaliland's legislation; Somaliland's own government would be"
+  },
+  {
+   "id": "so-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 3197,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The claim cannot be verified. Somalia's institutional capacity and official gazette publication records for 2025 cannot be reliably confirmed from available sources."
+  },
+  {
+   "id": "so-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1732,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Kenya Law reports Kenyan legislation. Somaliland is a separate entity with its own legal system. This source would not be published by Kenya's official law reporting body."
+  }
+ ]
+}

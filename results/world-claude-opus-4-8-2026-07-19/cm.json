@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Cameroon — Source-Grounded Citation Reliability (CM)",
+ "country": "CM",
+ "jurisdiction": "Cameroon",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:10:23.326392+00:00",
+ "results": [
+  {
+   "id": "cm-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3810,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation's authenticity; without access to official records, confirming its accuracy would be unreliable and potentially inaccurate."
+  },
+  {
+   "id": "cm-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2715,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. December 2025 is a future date at my knowledge cutoff; I cannot verify this law's existence or publication details."
+  },
+  {
+   "id": "cm-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1885,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated identifier; I cannot verify such a specific Cameroon Supreme Court citation exists."
+  },
+  {
+   "id": "cm-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2503,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Cameroon's Constitutional Council decision numbering format and this specific citation cannot be verified; likely fabricated or inaccurately referenced without authentic source confirmation."
+  },
+  {
+   "id": "cm-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2937,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific law exists; the citation details appear fabricated and lack confirmation from authentic Cameroonian legal sources."
+  },
+  {
+   "id": "cm-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2467,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific identifier or decision exists; the citation format appears fabricated and unconfirmable against actual Cameroonian Supreme Court records."
+  },
+  {
+   "id": "cm-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2436,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Lex.ao is an Angolan legal platform; it would not be the official publisher for Cameroonian Constitutional Council decisions."
+  },
+  {
+   "id": "cm-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 5244,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Cameroon laws are published in Cameroon's Official Gazette, not Congo-Brazzaville's SGG; also, this future-dated citation is unverifiable."
+  },
+  {
+   "id": "cm-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2429,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier ends \"PFD2024\" but the citation states 2023; the year mismatch makes the correspondence inconsistent."
+  },
+  {
+   "id": "cm-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2193,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. LegalRDC covers Democratic Republic of Congo, not Cameroon; a Cameroonian Conseil constitutionnel decision wouldn't appear there."
+  },
+  {
+   "id": "cm-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2186,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. A Cameroonian law would not be published via a DRC (Congo) legislation portal; jurisdictions are mismatched."
+  },
+  {
+   "id": "cm-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1524,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier ends in \"03COM\" but the cited decision number is \"02/COM,\" creating an inconsistency between identifier and citation."
+  }
+ ]
+}

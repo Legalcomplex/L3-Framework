@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Samoa — Source-Grounded Citation Reliability (WS)",
+ "country": "WS",
+ "jurisdiction": "Samoa",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:28:14.526225+00:00",
+ "results": [
+  {
+   "id": "ws-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 6219,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Samoa's alcohol legislation is the Liquor Act 2011; no \"Alcohol Control Act 2020\" exists in that consolidation."
+  },
+  {
+   "id": "ws-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2326,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Samoa's freehold land alienation is governed by the Alienation of Freehold Land Act 1972, but citation details appear fabricated/unverifiable."
+  },
+  {
+   "id": "ws-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2516,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Samoa's Administration Act dates to 1975, but I cannot verify the specific \"Consolidated Laws 2023\" publication details or exact date claimed."
+  },
+  {
+   "id": "ws-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2600,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation's accuracy, including the exact title, publication channel, or date, without authoritative confirmation."
+  },
+  {
+   "id": "ws-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2557,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Allied Health Professions Act 2014 is not a recognized Samoan statute; the citation and publication details appear fabricated."
+  },
+  {
+   "id": "ws-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2755,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Samoa's interpretation statute is the Acts Interpretation Act 2015, but the cited publication details and specific consolidation claim appear unverifiable/fabricated."
+  },
+  {
+   "id": "ws-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2252,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Samoa is not Australian jurisdiction; the Open Australian Legal Corpus covers Australian law, not Samoan legislation."
+  },
+  {
+   "id": "ws-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2741,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The \"Alienation of Freehold Land Act 1972\" is Samoan legislation; RONLAW is Nauru's database, not Samoa's legal source."
+  },
+  {
+   "id": "ws-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1841,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Samoa's legislation is published by the Samoa Attorney General's Office, not Tonga's; jurisdiction and publisher are mismatched."
+  },
+  {
+   "id": "ws-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2523,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Samoa's legislation is published by Samoan authorities, not the Republic of Marshall Islands Judiciary; the publisher attribution is incorrect."
+  },
+  {
+   "id": "ws-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 3731,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Samoa is a sovereign nation with its own legislation; the Federal Register of Legislation is an Australian source, not Samoan."
+  },
+  {
+   "id": "ws-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2419,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Samoa's legislation is published via the Samoa Ministry (paclii.org/ws), not Laws of Fiji, which covers Fijian jurisdiction only."
+  }
+ ]
+}

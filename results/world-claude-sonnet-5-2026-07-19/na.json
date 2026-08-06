@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Namibia — Source-Grounded Citation Reliability (NA)",
+ "country": "NA",
+ "jurisdiction": "Namibia",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:59:26.203582+00:00",
+ "results": [
+  {
+   "id": "na-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2286,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific citation's accuracy—NamibLII's exact publication date and details for this particular Act require direct database confirmation, not assumption."
+  },
+  {
+   "id": "na-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1956,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific case citation, number, and date exist in Namibia eJustice Portal records; fabricated details are likely."
+  },
+  {
+   "id": "na-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2025,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Inspection of Financial Institutions Act 38 of 1984 is a South African statute; the Legal Assistance Centre's Namibia Annotated Statutes did not originally publish it."
+  },
+  {
+   "id": "na-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2192,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific bibliographic claim's details—exact title, date, and source—without access to NAMFISA's official records or database."
+  },
+  {
+   "id": "na-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3043,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** No such \"Abolition of Payment by Cheque Act, 2022\" exists in Namibian law; this citation appears fabricated and unverifiable through legitimate legal sources."
+  },
+  {
+   "id": "na-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2490,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Admiralty Court Act, 1840 is a UK statute; Namibia's legal database (NamibLII) does not originally publish 19th-century British admiralty legislation."
+  },
+  {
+   "id": "na-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2120,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — Eswatini Revenue Service publishes Eswatini tax materials, not Namibian legislation; Namibia's Additional Appropriation Act would appear in the Government Gazette of Namibia."
+  },
+  {
+   "id": "na-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2081,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier stated (04874) does not match the case citation's identifier (04873), so they cannot correspond to the same record."
+  },
+  {
+   "id": "na-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1684,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This Act is South African legislation applied to Namibia's pre-independence legal history; it was not published via Zimbabwe's Reserve Bank Exchange Control Directives."
+  },
+  {
+   "id": "na-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2021,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Laws.Africa (Open By-laws) hosts municipal by-laws, primarily South African; it does not publish Namibian national regulatory notices like FIM Act consultations."
+  },
+  {
+   "id": "na-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2027,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Namibian legislation is officially published in the Government Gazette; NamibLII republishes/hosts materials but is not the official primary source."
+  },
+  {
+   "id": "na-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1903,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** EswatiniLII covers Eswatini legislation, not Namibia; the Admiralty Court Act 1840 is UK legislation, unlikely hosted there for Namibia's jurisdiction."
+  }
+ ]
+}

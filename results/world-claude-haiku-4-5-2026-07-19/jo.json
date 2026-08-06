@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Jordan — Source-Grounded Citation Reliability (JO)",
+ "country": "JO",
+ "jurisdiction": "Jordan",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.4167,
+ "correct": 5,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:39:20.728318+00:00",
+ "results": [
+  {
+   "id": "jo-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1643,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The General Budget Law is typically published by Jordan's Official Gazette (Al-Jarida Al-Rasmiyya), not the Legislation & Opinion Bureau. Publication date also seems imprecise for budget legi"
+  },
+  {
+   "id": "jo-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1516,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Temporary Law No. 15 of 2010 is a legislative act, not a Central Bank circular or regulation. It would be published in Jordan's Official Gazette, not as a Central Bank regulation."
+  },
+  {
+   "id": "jo-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1478,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Jordan Securities Commission publishes instructions on disclosure and accounting standards, but the exact title and 2017 publication date cannot be verified as stated without access to "
+  },
+  {
+   "id": "jo-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1863,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The Jordan Legislation and Opinion Bureau does not publish data protection registry instructions. This document title does not correspond to verified official Jordanian legal sources from tha"
+  },
+  {
+   "id": "jo-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1474,
+   "verdict": false,
+   "correct": false,
+   "raw": "# Answer: **False**  The future publication date (2025-06-13) is implausible for a historical legal source claim. Jordanian laws are published after enactment, not before the current date."
+  },
+  {
+   "id": "jo-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1499,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Central Bank of Jordan's official website and published circulars do not record this specific circular number format or title for that date. Verification impossible without direct CBJ c"
+  },
+  {
+   "id": "jo-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1505,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The ADGM (Abu Dhabi Global Market) is a UAE jurisdiction, not Jordanian. Jordan's budget law would be published through Jordanian official channels, not ADGM."
+  },
+  {
+   "id": "jo-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 3335,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.  The DIFC (Dubai International Financial Centre) is a jurisdiction in the UAE, not Jordan. This law should be published through Jordanian official legal databases, not DIFC's."
+  },
+  {
+   "id": "jo-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1544,
+   "verdict": true,
+   "correct": false,
+   "raw": "# Evaluation  **True**  The Jordan Securities Commission (JSC) does issue regulations and instructions governing listed companies' disclosure, accounting, and auditing standards. This document type al"
+  },
+  {
+   "id": "jo-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1119,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The publication date (2026-03-02) is in the future, making this claim impossible. Official legal documents cannot be published in advance of the current date."
+  },
+  {
+   "id": "jo-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1070,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The publication date (2026-06-13) is in the future, making this claim impossible. Official legal sources cannot be published before the present date."
+  },
+  {
+   "id": "jo-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1417,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This circular originates from Saudi Arabia's SAMA, not Jordan. The claim misrepresents the jurisdiction by attributing a Saudi regulatory document to Jordanian legal sources."
+  }
+ ]
+}

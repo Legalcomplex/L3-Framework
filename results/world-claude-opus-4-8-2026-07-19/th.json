@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Thailand — Source-Grounded Citation Reliability (TH)",
+ "country": "TH",
+ "jurisdiction": "Thailand",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:25:53.416662+00:00",
+ "results": [
+  {
+   "id": "th-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2822,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific decree number, date, or that \"Open Law Data Thailand\" is an official Royal Gazette publisher."
+  },
+  {
+   "id": "th-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2522,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The \"Thailand Royal Gazette OCR Dataset (HuggingFace)\" is not an official legal source; official publication occurs via the Royal Gazette itself."
+  },
+  {
+   "id": "th-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2342,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-04-09 is in the future and cannot correspond to a genuine, already-published enforcement decision."
+  },
+  {
+   "id": "th-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2700,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date (2025-11-21) is in the future relative to verifiable records, and this specific decision cannot be confirmed."
+  },
+  {
+   "id": "th-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2116,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific ministerial regulation's exact title, number, or publication date; \"Open Law Data Thailand\" isn't the authoritative Royal Gazette source."
+  },
+  {
+   "id": "th-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2389,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The \"Thailand Royal Gazette OCR Dataset (HuggingFace)\" is an unofficial third-party compilation, not an authoritative official legal source for citation."
+  },
+  {
+   "id": "th-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 3206,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Thai Royal Decrees are published in the Royal Gazette (ราชกิจจานุเบกษา), not a Cambodian legal library; the source is implausible."
+  },
+  {
+   "id": "th-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2367,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This is a Thai bankruptcy notice published in Thailand's Royal Gazette, not Indonesia's JDIHN legal network system."
+  },
+  {
+   "id": "th-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2426,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The SEC Thailand issues enforcement actions and news releases, not judicial \"Decisions\"; criminal complaints are filed with authorities, not published as decisions."
+  },
+  {
+   "id": "th-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2610,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific decision's existence, date, or publisher; the citation appears fabricated and unverifiable against authentic records."
+  },
+  {
+   "id": "th-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1805,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. A 2567 (2024) ministerial regulation cannot be published on 2022-03-29; the date predates the cited enactment year."
+  },
+  {
+   "id": "th-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 9319,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. A 2568 (2025) case cannot appear in a dataset dated 2023-11-03; the publication date predates the document."
+  }
+ ]
+}

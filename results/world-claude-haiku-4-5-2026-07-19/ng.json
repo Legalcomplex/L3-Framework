@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Nigeria — Source-Grounded Citation Reliability (NG)",
+ "country": "NG",
+ "jurisdiction": "Nigeria",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:42:29.744109+00:00",
+ "results": [
+  {
+   "id": "ng-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 4883,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  NigeriaLII does not publish Supreme Court decisions. The official publisher is the Nigerian Supreme Court Reports (NSCR) or the Federal Ministry of Justice."
+  },
+  {
+   "id": "ng-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1704,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The cited source format appears incorrect. Nigeria's principal legislation is published in the Laws of the Federation of Nigeria (LFN), not \"PLAC.\" Verification needed for accurate publicat"
+  },
+  {
+   "id": "ng-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2731,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The date 2026-03-05 is in the future, making this publication impossible. Additionally, news articles from The Guardian aren't official FCCPC publications."
+  },
+  {
+   "id": "ng-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1948,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The cited date (2025-08-28) is in the future relative to current knowledge. No verifiable NERC publication with this title and date exists in official records."
+  },
+  {
+   "id": "ng-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1410,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The publication date (2026-04-16) is in the future relative to the current date, making this claim temporally impossible and therefore not verifiable as an official legal source."
+  },
+  {
+   "id": "ng-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1569,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** NAFDAC has not published official guidelines with this exact title or date. No verifiable record of such 2025 guidelines exists in accessible Nigerian regulatory documentation."
+  },
+  {
+   "id": "ng-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1789,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The case citation and parties clearly indicate this is a Nigerian Supreme Court decision, not Mali's. The \"SC\" prefix and case numbering format are consistent with Nigeria's Supreme Court, "
+  },
+  {
+   "id": "ng-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1645,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The claim is unverifiable. No reliable evidence confirms that an 'Agricultural and Rural Management Training Institute Act' exists in Nigeria's 1977 Laws of the Federation or its publicatio"
+  },
+  {
+   "id": "ng-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1391,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This is a newspaper article from The Guardian, not an official FCCPC publication. The FCCPC may be the subject, but The Guardian is the publisher, not the FCCPC itself."
+  },
+  {
+   "id": "ng-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1156,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The citation format is inconsistent with Laws.Africa standards. \"EKEDP MYTO JULY 2025\" lacks proper legal document identification, jurisdiction clarity, and authentic publication metadata m"
+  },
+  {
+   "id": "ng-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1224,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The claimed source appears dubious. The SEC typically publishes regulatory notices and market data, not promotional banking industry narratives with specific financial figures as formal publi"
+  },
+  {
+   "id": "ng-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1055,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  NAFDAC has not published an official \"Guidelines on Emergency Use Authorization for Medical Products\" document with that specific title or date. No such regulation exists in Nigeria's offic"
+  }
+ ]
+}

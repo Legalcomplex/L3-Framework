@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Russia — Source-Grounded Citation Reliability (RU)",
+ "country": "RU",
+ "jurisdiction": "Russia",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:01:42.627395+00:00",
+ "results": [
+  {
+   "id": "ru-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2018,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this appears to be a fabricated or unverifiable claim; pravo.gov.ru launched only in 2011, so a 2009 publication date is implausible."
+  },
+  {
+   "id": "ru-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1945,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific case citation exists; case numbers, dates, and details may be fabricated or unconfirmed."
+  },
+  {
+   "id": "ru-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2564,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Federal law drafts and bill discussions aren't published as final legal acts on pravo.gov.ru; only enacted laws appear there officially."
+  },
+  {
+   "id": "ru-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2044,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This case number format (А68-...) indicates an Arbitration Court case, not a general jurisdiction court decision, so classification is inconsistent."
+  },
+  {
+   "id": "ru-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2438,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This is a generic template order title (FGOS VO for unspecified specialty); without specific order number, ministry, and specialty name, verification of publication is impossible."
+  },
+  {
+   "id": "ru-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2206,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Case number \"А62-4716/2025\" format indicates an Arbitrazh (commercial) court case, not General Jurisdiction, creating jurisdictional inconsistency in the claim."
+  },
+  {
+   "id": "ru-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2284,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — this postanovlenie predates pravo.gov.ru's 2011 launch as official publication source; such 2008 acts weren't published there originally."
+  },
+  {
+   "id": "ru-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2386,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier's year (2026) doesn't match the case number cited (А62-4962/2025), and 2026 is a future date."
+  },
+  {
+   "id": "ru-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1962,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — pravo.gov.ru publishes enacted laws and official legal acts, not draft bills or legislative proposals like this Duma bill card."
+  },
+  {
+   "id": "ru-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1641,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — the case number cites year 2026, but the decision date and case year reference 2025, creating an internal inconsistency/mismatch."
+  },
+  {
+   "id": "ru-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1594,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Narodne novine is Croatia's official gazette; a Russian federal educational standard order would be published in Russian official sources, not Croatian publications."
+  },
+  {
+   "id": "ru-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1611,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The case number format \"А62-...\" indicates a Russian Arbitrazh (commercial) court case, not a Georgian Supreme Court decision."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Equatorial Guinea — Source-Grounded Citation Reliability (GQ)",
+ "country": "GQ",
+ "jurisdiction": "Equatorial Guinea",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:13:53.656253+00:00",
+ "results": [
+  {
+   "id": "gq-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2700,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Equatorial Guinea's gazette is \"Boletín Oficial del Estado de Guinea Ecuatorial\"; the cited title and date appear fabricated or unverifiable."
+  },
+  {
+   "id": "gq-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2388,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Equatorial Guinea's official gazette is the \"Boletín Oficial del Estado de Guinea Ecuatorial\" (BOE); this title/date appears fabricated or unverifiable."
+  },
+  {
+   "id": "gq-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2391,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Equatorial Guinea's official gazette is the \"Boletín Oficial del Estado de Guinea Ecuatorial\"; this specific citation cannot be reliably verified."
+  },
+  {
+   "id": "gq-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3553,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Equatorial Guinea's official gazette is the \"Boletín Oficial del Estado de Guinea Ecuatorial\" (BOE-GE); the citation appears fabricated and unverifiable."
+  },
+  {
+   "id": "gq-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2520,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Equatorial Guinea's official gazette is \"Boletín Oficial del Estado de Guinea Ecuatorial,\" and this fabricated citation lacks verifiable legislative authenticity."
+  },
+  {
+   "id": "gq-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2382,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Equatorial Guinea's official gazette is the \"Boletín Oficial del Estado de Guinea Ecuatorial\" (BOE-GE), not Spain's \"Boletín Oficial del Estado.\""
+  },
+  {
+   "id": "gq-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 3512,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Equatorial Guinea's gazette is \"Boletín Oficial del Estado de Guinea Ecuatorial,\" distinct from Spain's BOE; this citation appears fabricated."
+  },
+  {
+   "id": "gq-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2503,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Equatorial Guinea's official gazette is \"Boletín Oficial del Estado de Guinea Ecuatorial\" (BOE-GE); this Spanish-titled construction-limit claim appears fabricated."
+  },
+  {
+   "id": "gq-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1840,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Equatorial Guinea's housing laws are published in its own official gazette, not Congo-Brazzaville's Journal Officiel; jurisdictions differ."
+  },
+  {
+   "id": "gq-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2012,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Equatorial Guinea's legal sources wouldn't be published via a Democratic Republic of Congo portal; jurisdictions and legal systems don't match."
+  },
+  {
+   "id": "gq-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2042,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Equatorial Guinea's official gazette is \"Boletín Oficial del Estado de Guinea Ecuatorial,\" not Spain's BOE; this citation appears fabricated."
+  },
+  {
+   "id": "gq-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2437,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Equatorial Guinea's official gazette is \"Boletín Oficial del Estado de Guinea Ecuatorial\" (BOE-GE), distinct from Spain's \"Boletín Oficial del Estado\"; citation appears conflated."
+  }
+ ]
+}

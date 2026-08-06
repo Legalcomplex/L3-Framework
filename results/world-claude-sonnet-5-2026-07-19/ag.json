@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Antigua and Barbuda — Source-Grounded Citation Reliability (AG)",
+ "country": "AG",
+ "jurisdiction": "Antigua and Barbuda",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:48:25.560253+00:00",
+ "results": [
+  {
+   "id": "ag-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2444,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated/undated future citation with implausible details (\"Editor's Final Draft\"), not a verifiable official Gazette publication."
+  },
+  {
+   "id": "ag-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2162,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This is a generic-sounding citation lacking verifiable specifics; ONDCP AML/CFT libraries typically compile financial laws, not miscellaneous law revision acts like this one."
+  },
+  {
+   "id": "ag-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2338,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated or unverifiable citation—no legitimate gazette labels an issue \"Editor's Final Draft,\" indicating fictitious sourcing."
+  },
+  {
+   "id": "ag-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2088,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This citation cannot be verified; ONDCP AML/CFT regulatory libraries typically compile financial crime laws, not drug misuse amendment acts from 1993."
+  },
+  {
+   "id": "ag-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2635,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this appears to be a fabricated/future-dated citation; official gazette issues aren't published as \"editor's final drafts\" with mismatched dates."
+  },
+  {
+   "id": "ag-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2503,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation's accuracy—act numbers, dates, and publication details require confirmation from official Antigua and Barbuda government legal sources."
+  },
+  {
+   "id": "ag-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 4228,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This citation appears fabricated/inconsistent—Antigua and Barbuda's official gazette isn't published through \"Cayman Islands Legislation,\" a distinct jurisdiction's legislative platform."
+  },
+  {
+   "id": "ag-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2394,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Bahamas Consolidated Legislation would not publish Antigua and Barbuda's Act; this jurisdictional mismatch indicates an incorrect or fabricated bibliographic source citation."
+  },
+  {
+   "id": "ag-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2000,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Antigua and Barbuda gazettes aren't published via Curaçao Government Legislation (Regelingen)—a separate jurisdiction's distinct official publication system entirely."
+  },
+  {
+   "id": "ag-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1639,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This claim is jurisdictionally mismatched—\"Misuse of Drugs Act (Amendment) Act 1993\" cannot be published via \"Laws of Grenada\" while pertaining to Antigua and Barbuda."
+  },
+  {
+   "id": "ag-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 5402,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This citation mixes Antigua and Barbuda's Official Gazette with Saint Lucia's Revised Laws publisher, an implausible, inconsistent, seemingly fabricated bibliographic combination."
+  },
+  {
+   "id": "ag-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1653,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Sint Maarten is a distinct jurisdiction (part of the Kingdom of the Netherlands) with its own legislation, unrelated to Antigua and Barbuda's legal publications."
+  }
+ ]
+}

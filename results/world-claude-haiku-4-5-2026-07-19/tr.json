@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Turkey — Source-Grounded Citation Reliability (TR)",
+ "country": "TR",
+ "jurisdiction": "Turkey",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.6667,
+ "correct": 8,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:46:10.639518+00:00",
+ "results": [
+  {
+   "id": "tr-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1438,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The date \"2025-12-11\" is in the future (beyond current date). Turkish Constitutional Court decisions cannot be legitimately published with future dates. This appears to be a fictitious deci"
+  },
+  {
+   "id": "tr-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1606,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The date 2025-12-22 is in the future, making this claim impossible. Turkish Council of State decisions cannot be published on dates that have not yet occurred."
+  },
+  {
+   "id": "tr-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1455,
+   "verdict": true,
+   "correct": true,
+   "raw": "# Answer: **True**  **Explanation:** This title format matches Turkish legislative naming conventions. The Turkish Legislation System (Mevzuat Bilgi Sistemi) is the official legal database where amend"
+  },
+  {
+   "id": "tr-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1740,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  This law title refers to disaster reconstruction fund legislation, but the cited \"Turkish Legislation (Hugging Face Dataset)\" from 2023-03-21 is not an official Turkish legal source. Offici"
+  },
+  {
+   "id": "tr-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1376,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The decision format and future date (2026-01-21) are inconsistent with Turkish Court of Cassation publication practices. The year 2026 exceeds the current date, making this claim implausibl"
+  },
+  {
+   "id": "tr-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1620,
+   "verdict": true,
+   "correct": true,
+   "raw": "**True.**  This bilateral economic cooperation agreement between Turkey and Kosovo was officially published through Turkey's Ministry of Foreign Affairs Treaties Database on May 28, 2009, following st"
+  },
+  {
+   "id": "tr-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1535,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier format inconsistency (2025/257 vs. E.2025/256, K.2025/246) suggests these are different case references, not corresponding documents."
+  },
+  {
+   "id": "tr-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1589,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.**  The Council of State (Danistay) case numbering system and document identifiers don't match this format. The citation appears fabricated or incorrectly formatted for Turkish administrative "
+  },
+  {
+   "id": "tr-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1582,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The publication date 2025-11-14 is in the future relative to the knowledge cutoff. This cannot be verified as an official Turkish legal source document."
+  },
+  {
+   "id": "tr-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1655,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This law title references disaster reconstruction funding, but Turkish Legislation datasets typically document enacted laws. The specific publication date and source require verification ag"
+  },
+  {
+   "id": "tr-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2467,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The case citation format and docket numbers indicate this is a Turkish Court of Cassation (3rd Civil Chamber) decision, not an Azerbaijani Constitutional Court decision."
+  },
+  {
+   "id": "tr-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1312,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This agreement between Turkey and Kosovo would be published through Turkish official sources (Official Gazette/Resmi Gazete), not the Greek Parliament. The source attribution is incorrect."
+  }
+ ]
+}

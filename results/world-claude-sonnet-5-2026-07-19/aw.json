@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Aruba — Source-Grounded Citation Reliability (AW)",
+ "country": "AW",
+ "jurisdiction": "Aruba",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:49:04.714423+00:00",
+ "results": [
+  {
+   "id": "aw-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 4371,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This citation cannot be verified as accurate; I lack reliable access to confirm this specific Aruba DWJZ Landsverordening archive record's existence and details."
+  },
+  {
+   "id": "aw-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2284,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The ECLI system with \"OGHACMB\" indicates official publication via rechtspraak.nl, not an entity called \"Aruba Court Decisions.\""
+  },
+  {
+   "id": "aw-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 4080,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this appears to be a fabricated or unverifiable citation; I cannot confirm this specific document reference, code, and archive exist as described."
+  },
+  {
+   "id": "aw-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1958,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The ECLI publisher is the Common Court of Justice itself (via rechtspraak.nl); it's not a distinct \"Aruba Court Decisions\" source."
+  },
+  {
+   "id": "aw-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2008,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation's details—publication number, source, and date—without access to authoritative Aruba legal archives."
+  },
+  {
+   "id": "aw-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2130,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify specific ECLI identifiers against actual case records, dates, or court details from memory reliably; this claim requains independent database verification."
+  },
+  {
+   "id": "aw-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1907,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This appears to be a fabricated or unverifiable citation; I cannot confirm this specific document, number, or archive source exists as described."
+  },
+  {
+   "id": "aw-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1971,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifiers differ (BQ0629 vs. BQ0628); a bibliographic claim requires the exact ECLI to match, not a similar neighboring one."
+  },
+  {
+   "id": "aw-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1671,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This citation appears fabricated—no verifiable record exists confirming this specific document code, title, and archive source combination for Aruba's legislation."
+  },
+  {
+   "id": "aw-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1532,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier cited (BQ0636) does not match the ECLI stated in the corresponding description (BQ0635), indicating a mismatch/inconsistency."
+  },
+  {
+   "id": "aw-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1528,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Aruba's official gazette is the Afkondigingsblad van Aruba (AB), a separate publication from Curaçao's own legislative publication system."
+  },
+  {
+   "id": "aw-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1718,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. ECLI:NL:OGHACMB decisions are Dutch Caribbean court rulings published via rechtspraak.nl, not by Cayman Islands' judicial.ky, an unrelated jurisdiction's court system."
+  }
+ ]
+}

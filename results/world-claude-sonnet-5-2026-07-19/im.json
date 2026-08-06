@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Isle of Man — Source-Grounded Citation Reliability (IM)",
+ "country": "IM",
+ "jurisdiction": "Isle of Man",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:55:29.051786+00:00",
+ "results": [
+  {
+   "id": "im-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1953,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific case citation exists in Isle of Man Judgments Online records; the case name, date, and source combination appear unverifiable/fabricated."
+  },
+  {
+   "id": "im-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2009,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — Isle of Man Acts of Tynwald aren't dated generically to 2024-01-01; the actual assent/publication date must match the specific Act's official record."
+  },
+  {
+   "id": "im-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2452,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific citation exists; case names, dates, and details may be fabricated or unconfirmed against actual Isle of Man Judgments Online records."
+  },
+  {
+   "id": "im-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2216,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** No Income Tax Act 2025 (AT 4 of 2025) exists in Isle of Man legislation; this citation appears fabricated or unverifiable against official Tynwald records."
+  },
+  {
+   "id": "im-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2061,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific case citation exists in Isle of Man Judgments Online records; the details appear unconfirmed/potentially fabricated."
+  },
+  {
+   "id": "im-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2082,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This identifier/citation combination cannot be verified as an actual official Isle of Man Tynwald legislation record; it appears fabricated or unconfirmed."
+  },
+  {
+   "id": "im-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1947,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific case citation exists on Isle of Man Judgments Online; the details appear unverifiable/potentially fabricated."
+  },
+  {
+   "id": "im-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1983,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific identifier, act number, and date combination against actual Isle of Man Tynwald legislative records or databases."
+  },
+  {
+   "id": "im-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1638,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** I cannot verify this specific case citation exists; I have no reliable record confirming this exact decision, date, or parties in Isle of Man Judgments."
+  },
+  {
+   "id": "im-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1595,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific identifier-title-date combination against actual Isle of Man Tynwald legislative records or official databases."
+  },
+  {
+   "id": "im-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1653,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Leventhorpe v Chief Constable would be an Isle of Man case, not Gibraltar; gibraltarlaws.gov.gi publishes Gibraltar legislation, not Manx court decisions."
+  },
+  {
+   "id": "im-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2031,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Isle of Man legislation (Statutory Measures/Documents) is published via the Isle of Man Government/Tynwald, not Jersey Legal Information Board, a different jurisdiction's service."
+  }
+ ]
+}

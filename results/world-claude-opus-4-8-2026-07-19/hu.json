@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Hungary — Source-Grounded Citation Reliability (HU)",
+ "country": "HU",
+ "jurisdiction": "Hungary",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:14:50.544721+00:00",
+ "results": [
+  {
+   "id": "hu-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 3151,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier format and future date (2026) are implausible; this appears to be a fabricated, unverifiable citation."
+  },
+  {
+   "id": "hu-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3155,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The 2025-numbered law cited with a 2026 publication date is inconsistent and appears fabricated; unverifiable claim."
+  },
+  {
+   "id": "hu-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2276,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier \"f.5.002/2012/13\" is missing the \"Kö\" prefix; correct Kúria self-government decisions use full \"Köf.\" case-number format."
+  },
+  {
+   "id": "hu-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2419,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The identifier, date (2026, future), and format cannot be verified; this appears fabricated, not a genuine GVH resolution reference."
+  },
+  {
+   "id": "hu-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2279,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2025-12-16 is in the future relative to verifiable records; I cannot confirm this specific submission's authenticity."
+  },
+  {
+   "id": "hu-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2120,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-02-05 is in the future relative to a 2025 case number, making this fabricated and unverifiable."
+  },
+  {
+   "id": "hu-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2348,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier format is implausible: a 2026 date cannot correspond to case number 2018, and details appear fabricated."
+  },
+  {
+   "id": "hu-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2036,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Hungarian law numbering rarely reaches CXXIX (129) so early; a 2025 statute couldn't be published on 2024-01-23."
+  },
+  {
+   "id": "hu-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1650,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The \"Köf.\" prefix indicates a Hungarian Kúria (Curia) local government council decision, not the Serbian Constitutional Court."
+  },
+  {
+   "id": "hu-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1878,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier and 2026 date are implausible/unverifiable; GVH uses different case-numbering formats, and this specific citation cannot be confirmed."
+  },
+  {
+   "id": "hu-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1750,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. \"Benyújtó: Dr. Komáromi Zoltán (DK)\" indicates a Hungarian parliamentary submission, not something published in Croatia's Narodne novine."
+  },
+  {
+   "id": "hu-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2077,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This is a generic descriptive label, not a specific citable decision with a proper case number (e.g., 3XXX/2025)."
+  }
+ ]
+}

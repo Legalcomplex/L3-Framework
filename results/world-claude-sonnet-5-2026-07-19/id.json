@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Indonesia — Source-Grounded Citation Reliability (ID)",
+ "country": "ID",
+ "jurisdiction": "Indonesia",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:55:17.006052+00:00",
+ "results": [
+  {
+   "id": "id-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1974,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific citation; it appears fabricated or unconfirmed, as I have no reliable record of this exact 2025 law's existence."
+  },
+  {
+   "id": "id-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2043,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears fabricated or unverifiable—no confirmed Constitutional Court decision with this exact title and date exists in official published records I can verify."
+  },
+  {
+   "id": "id-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2233,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.**  The correct law on Jakarta's special status is Undang-Undang Nomor 2 Tahun 2024 tentang Daerah Khusus Jakarta (DKJ), enacted around April 2024, not January 1, 2024."
+  },
+  {
+   "id": "id-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2158,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The cited law (UU No. 11/1980 on Bribery) doesn't match \"Hak Keuangan/Administratif,\" suggesting fabricated or inaccurate case details/citation."
+  },
+  {
+   "id": "id-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2045,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** UU No. 5/2024 does not concern \"Kota Banda Aceh\"; Indonesia's legal numbering that year corresponds to different subject matter entirely, not this citation."
+  },
+  {
+   "id": "id-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1946,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This is a generic, undated description (\"Judicial Review of the Criminal Code\") lacking a specific case/decision number, making it unverifiable as an actual citation."
+  },
+  {
+   "id": "id-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2271,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Thu Vien Phap Luat is a Vietnamese legal database, not an official Indonesian government source for publishing Indonesian statutes."
+  },
+  {
+   "id": "id-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2551,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This appears to be a generic/inaccurate case title-date pairing; Constitutional Court decisions require specific case numbers, and this description lacks verifiable specificity to confirm authe"
+  },
+  {
+   "id": "id-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1781,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Indonesian statutes like UU No. 2/2024 (DKJ) are published in Indonesia's official gazette (Lembaran Negara), not Thailand's Royal Gazette system."
+  },
+  {
+   "id": "id-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2003,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This appears fabricated — the date is future-dated (2026), and no such verifiable decision with this exact title exists in Constitutional Court records."
+  },
+  {
+   "id": "id-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1844,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Indonesian statutes are published in the official State Gazette (Lembaran Negara/JDIH), not by a private Cambodian legal library."
+  },
+  {
+   "id": "id-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1770,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This is a generic case-type description, not a verifiable citation—lacking a decision number, applicant name, or specific verifiable case details for confirmation."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — China — Source-Grounded Citation Reliability (CN)",
+ "country": "CN",
+ "jurisdiction": "China",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:51:41.558556+00:00",
+ "results": [
+  {
+   "id": "cn-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2235,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears fabricated or unverifiable—citing a future date (2026-03-20) for an official circular is implausible and cannot be verified as legitimate."
+  },
+  {
+   "id": "cn-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3032,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-04-24 is in the future/unverifiable, and I cannot confirm this specific announcement number, title, and issuance details are accurate."
+  },
+  {
+   "id": "cn-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1903,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. \"SPC Cases on Domestic Violence\" is not an official legal source itself; China Law Translate provides unofficial translations, not authoritative publications."
+  },
+  {
+   "id": "cn-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2241,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** CAIL2018 is a machine-learning research corpus of anonymized case text, not an official legal publisher of court judgments/decisions."
+  },
+  {
+   "id": "cn-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2226,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this is a local Wuhu (芜湖) market supervision penalty decision by a county/district-level bureau, not issued by SAMR nationally."
+  },
+  {
+   "id": "cn-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2710,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — as of early 2025, SPC Guiding Cases had only reached roughly the 190s-200s range; No. 270 with that future date appears fabricated."
+  },
+  {
+   "id": "cn-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2479,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — I cannot verify this specific circular's title, date, or publication details on that source without access to confirm actual database records."
+  },
+  {
+   "id": "cn-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1850,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. There is no \"e-Gov Laws API\" covering Chinese securities regulations; CSRC announcements aren't distributed through that platform or under that version label."
+  },
+  {
+   "id": "cn-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2597,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Japanese Law Translation (MOJ) is Japan's official portal for translating Japanese laws, not Chinese Supreme People's Court materials or documents."
+  },
+  {
+   "id": "cn-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1757,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** CAIL2018 is a machine learning dataset compiling judgments for research, not an official publisher of legal decisions; official sources are courts or China Judgments Online."
+  },
+  {
+   "id": "cn-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1699,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This is a mainland Chinese administrative penalty decision (市场监管处罚) from Wuhu, unrelated to Macau court decisions/judicial rulings."
+  },
+  {
+   "id": "cn-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2790,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. As of the current knowledge cutoff, Guiding Case No. 271 does not exist, and the mismatched numbering/date is fabricated."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Qatar — Source-Grounded Citation Reliability (QA)",
+ "country": "QA",
+ "jurisdiction": "Qatar",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:01:29.984251+00:00",
+ "results": [
+  {
+   "id": "qa-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2179,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.**  I cannot verify this specific citation's accuracy without direct access to Al Meezan's database to confirm the decision number, date, and chamber details match actual records."
+  },
+  {
+   "id": "qa-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3091,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This citation cannot be verified as accurate; details like decision number, issuing authority, year, and Al Meezan publication date require direct confirmation from the official source."
+  },
+  {
+   "id": "qa-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2299,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific bibliographic claim—no reliable record confirms this exact publication title, date, and source combination for Qatar Free Zones Authority regulations."
+  },
+  {
+   "id": "qa-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2256,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.**  The QFC Regulatory Tribunal did not decide this case—such disputes fall under the Qatar International Court and Dispute Resolution Centre (QICDRC), a separate judicial body."
+  },
+  {
+   "id": "qa-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2954,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation's accuracy—case numbers, dates, and database attributions require direct confirmation from Al Meezan's official records."
+  },
+  {
+   "id": "qa-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2204,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Qatar's Al Meezan portal indexes the law's text and metadata, but \"publication\" occurred via the Official Gazette, not Al Meezan itself."
+  },
+  {
+   "id": "qa-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2367,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** ADGM Courts (Abu Dhabi Global Market) is a UAE common-law free zone judicial body; it cannot publish Qatari Court of Cassation criminal decisions."
+  },
+  {
+   "id": "qa-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2110,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. ADGM (Abu Dhabi Global Market) is a UAE financial free zone framework, not Qatar's official gazette or legal publication source."
+  },
+  {
+   "id": "qa-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1645,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** I cannot verify this specific bibliographic claim — I lack reliable access to confirm this exact publication title, date, and source attribution for Qatar Free Zones Authority regulations."
+  },
+  {
+   "id": "qa-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1886,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This citation actually corresponds to a different case; \"Dentons & Co v Bin Omran Trading & Contracting LLC\" does not match [2020] QIC (F) 8 in QICDRC records."
+  },
+  {
+   "id": "qa-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1935,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Qatar's Court of Cassation (محكمة التمييز) criminal rulings are published by Qatari judicial authorities, not DIFC Courts, which is a Dubai/UAE common-law jurisdiction entity."
+  },
+  {
+   "id": "qa-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2598,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** DIFC Legal Database publishes Dubai International Financial Centre laws, not Qatari legislation; Qatar's laws appear on Al Meezan portal."
+  }
+ ]
+}

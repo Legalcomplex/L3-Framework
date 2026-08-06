@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Tanzania — Source-Grounded Citation Reliability (TZ)",
+ "country": "TZ",
+ "jurisdiction": "Tanzania",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:26:48.912452+00:00",
+ "results": [
+  {
+   "id": "tz-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2150,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific act's existence or publication date; Tanzania's laws are typically published in the Gazette by Government Printer."
+  },
+  {
+   "id": "tz-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3242,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Acquisition of Buildings Act relates to 1971, but \"Regulations\" and the 2002 TanzaniaLII date appear fabricated or inaccurate."
+  },
+  {
+   "id": "tz-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2212,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated citation; no such specifically-titled CMSA regulation exists under that name or date."
+  },
+  {
+   "id": "tz-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2463,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Fair Competition Tribunal does not publish a \"Case Digest\"; decisions are issued directly, and citation details appear unverifiable/fabricated."
+  },
+  {
+   "id": "tz-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2762,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Tanzania's Employment and Labour Relations Act (No. 6 of 2004) is official legislation; the cited publisher/date appears fabricated or inaccurate."
+  },
+  {
+   "id": "tz-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2594,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The publication date (2002) contradicts the 1992 regulation title, and TanzLII typically hosts case law, not historical subsidiary legislation."
+  },
+  {
+   "id": "tz-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2263,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Tanzanian legislation is published in the Tanzania Government Gazette, not the Seychelles Official Gazette; wrong jurisdiction cited."
+  },
+  {
+   "id": "tz-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2598,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. TanzLII was established later (around 2007-2008); a 2005-07-31 publication date is anachronistic and likely fabricated metadata."
+  },
+  {
+   "id": "tz-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1694,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Kenya Law publishes Kenyan legal materials, not Tanzanian sources; this citation appears fabricated with implausible publisher-jurisdiction mismatch."
+  },
+  {
+   "id": "tz-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1984,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. A Tanzanian EWURA appeal would be published by Tanzanian authorities, not Madagascar's Ministry of Justice, a different jurisdiction."
+  },
+  {
+   "id": "tz-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1401,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Employment and Labour Relations Act is Act No. 6 of 2004, enacted by Parliament, not published in 2022."
+  },
+  {
+   "id": "tz-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2137,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. TanzLII was established around 2007-2010; a 2004-07-31 publication date predates the institute's existence, making this claim implausible."
+  }
+ ]
+}

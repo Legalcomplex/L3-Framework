@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Romania — Source-Grounded Citation Reliability (RO)",
+ "country": "RO",
+ "jurisdiction": "Romania",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:01:34.185389+00:00",
+ "results": [
+  {
+   "id": "ro-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2178,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The date is inconsistent—May 9, 2025 cannot occur \"on\" 2025-05-01, and this decision number/date combination cannot be verified as an authentic Constitutional Court publication."
+  },
+  {
+   "id": "ro-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2319,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The date is implausible — legislative numbering \"710\" and formal citation style don't match 1864 practices; Portal Legislativ didn't exist historically, only republishes retroactively."
+  },
+  {
+   "id": "ro-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2053,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** ANSPDCP does not appear to have issued a decision with this exact title on this date; this citation cannot be verified and may be fabricated."
+  },
+  {
+   "id": "ro-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2507,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — the decision date (10 December 2025) postdates plausibility for a 2026-03-01 publication verification, and this specific numbered decision cannot be confirmed as authentic."
+  },
+  {
+   "id": "ro-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2187,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The 1864 communal law was promulgated as a decree by Domnitor Cuza; \"Portal Legislativ\" is a modern online database, not an 1864 publication source."
+  },
+  {
+   "id": "ro-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2254,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This date is in the future (2026), so such a decision cannot yet exist or be verifiably published as claimed."
+  },
+  {
+   "id": "ro-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2061,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Romania's official legal source is Monitorul Oficial, not the Moldova National Courts Portal—Romania and Moldova are distinct jurisdictions with separate publication systems."
+  },
+  {
+   "id": "ro-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2024,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. PISRS is Slovenia's official legislation database, not Romania's; Romanian laws are published in Monitorul Oficial, not via a Slovenian source."
+  },
+  {
+   "id": "ro-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1756,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.**  I cannot verify this specific decision's existence, exact title, or publication date. ANSPDCP decisions should be confirmed directly via official Monitorul Oficial or ANSPDCP publications "
+  },
+  {
+   "id": "ro-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2142,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The date is inconsistent: a decision numbered 740 from December 10, 2025 cannot have a publication or issue date of March 1, 2025."
+  },
+  {
+   "id": "ro-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1782,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Romania's laws are published in Monitorul Oficial, not Greece's FEK; a Romanian 1864 communal law couldn't appear in Greece's gazette."
+  },
+  {
+   "id": "ro-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1705,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This is a Romanian GDPR sanction announcement, not a Constitutional Court of Ukraine decision—likely issued by Romania's ANSPDCP data protection authority instead."
+  }
+ ]
+}

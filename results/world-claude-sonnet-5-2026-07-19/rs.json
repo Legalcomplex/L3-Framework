@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Serbia — Source-Grounded Citation Reliability (RS)",
+ "country": "RS",
+ "jurisdiction": "Serbia",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:01:38.715892+00:00",
+ "results": [
+  {
+   "id": "rs-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2202,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The date (2025-12-11) is in the future relative to verifiable records, and I cannot confirm this specific decision number's existence, content, or authenticity."
+  },
+  {
+   "id": "rs-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2132,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Zakon o pečatu državnih i drugih organa was actually published in \"Službeni glasnik RS\" in 2009 (broj 101/2009), not on 2021-01-01."
+  },
+  {
+   "id": "rs-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2423,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This citation appears fabricated—the future date, odd numbering format, and unverifiable case number don't match authentic Serbian Supreme Court publication conventions."
+  },
+  {
+   "id": "rs-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2279,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific identifier, title, and date combination against actual Commissioner records; the future date is also suspicious."
+  },
+  {
+   "id": "rs-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2195,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This citation format appears fabricated or unverifiable—the case number structure, exact date, and specific database naming don't correspond to verifiable Serbian Supreme Court publication "
+  },
+  {
+   "id": "rs-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2124,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such law exists under this title in Serbian legislation, and Serbia's Pravno-informacioni sistem was not operational in 2007."
+  },
+  {
+   "id": "rs-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2417,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — I cannot verify this specific citation (Уж-1222/2022, decided 2024-12-11) exists in actual Constitutional Court records or publications."
+  },
+  {
+   "id": "rs-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2150,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Serbia's official gazette is \"Službeni glasnik RS,\" not Croatia's \"Narodne novine,\" which publishes Croatian legislation, not Serbian laws."
+  },
+  {
+   "id": "rs-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1679,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This citation format appears fabricated—the case number, classification codes, and date combination cannot be verified as an authentic Serbian Supreme Court decision."
+  },
+  {
+   "id": "rs-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2094,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This appears to be a fabricated or unverifiable citation; I cannot confirm this specific identifier corresponds to that document or future-dated decision."
+  },
+  {
+   "id": "rs-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1990,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This citation format (\"Rev 5476-24\") and description mix Serbian/Bosnian court numbering conventions inconsistently, and the source attribution appears fabricated/unverifiable."
+  },
+  {
+   "id": "rs-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2330,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Serbia's Pravno-informacioni sistem (PIS) launched in 2015, not 2008, so this law couldn't have been published there in 2008."
+  }
+ ]
+}

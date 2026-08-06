@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Malta — Source-Grounded Citation Reliability (MT)",
+ "country": "MT",
+ "jurisdiction": "Malta",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:58:57.499571+00:00",
+ "results": [
+  {
+   "id": "mt-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2132,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.**  The Coal (Sale) Ordinance repeal is not verifiably tied to this specific Act or gazette date without official confirmation from Malta's Legislation database."
+  },
+  {
+   "id": "mt-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2171,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This citation appears fabricated—no verifiable MCCAA decision with this exact number, title, and date can be confirmed as genuine."
+  },
+  {
+   "id": "mt-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1852,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this citation exists; it references a future date (2026) and appears to be a fabricated or unverifiable case."
+  },
+  {
+   "id": "mt-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1994,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this date is in the future relative to my knowledge, and the Code of Organization and Civil Procedure predates any such 2026 gazette publication."
+  },
+  {
+   "id": "mt-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2066,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this appears to be a fabricated or unverifiable citation; no such specific MCCAA competition decision reference can be confirmed as genuine."
+  },
+  {
+   "id": "mt-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 3205,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated future-dated decision; I cannot verify its existence, and 2026 postdates my knowledge cutoff."
+  },
+  {
+   "id": "mt-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1986,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Normattiva is Italy's official legal database, not Malta's. Maltese legislation is published via the Malta Legal Code / Ministry for Justice website, not Normattiva."
+  },
+  {
+   "id": "mt-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 3269,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This appears to be a fabricated citation—I cannot verify this specific decision exists, and the future date raises authenticity concerns."
+  },
+  {
+   "id": "mt-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1640,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — I cannot verify this specific decision exists; the case number, party name, and date combination appears fabricated or unconfirmed."
+  },
+  {
+   "id": "mt-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1713,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Code of Organization and Civil Procedure is Maltese legislation (Chapter 12 of the Laws of Malta); Fedlex publishes Swiss federal law, not Maltese statutes."
+  },
+  {
+   "id": "mt-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1637,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Rechtspraak.nl publishes Dutch court decisions only; a Maltese competition authority decision (MCCAA) would not appear there."
+  },
+  {
+   "id": "mt-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1690,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — I cannot verify this specific decision citation exists; case numbers, dates, and party details require direct confirmation from the Arbiter's official register."
+  }
+ ]
+}

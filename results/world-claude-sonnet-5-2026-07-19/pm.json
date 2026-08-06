@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Saint Pierre and Miquelon — Source-Grounded Citation Reliability (PM)",
+ "country": "PM",
+ "jurisdiction": "Saint Pierre and Miquelon",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:00:57.906237+00:00",
+ "results": [
+  {
+   "id": "pm-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2047,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated future-dated notice; I cannot verify such a specific procurement announcement's authenticity or actual publication."
+  },
+  {
+   "id": "pm-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2070,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears fabricated: it references a future date (2026) and overly specific details unverifiable against actual official Journal Officiel publication records."
+  },
+  {
+   "id": "pm-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2031,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this appears to be a fabricated/unverifiable citation; I cannot confirm any such decision exists in the actual Journal Officiel records."
+  },
+  {
+   "id": "pm-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2240,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this appears fabricated; I cannot verify a specific 2026-dated deliberation number, title, or publication details for this obscure local source."
+  },
+  {
+   "id": "pm-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3626,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this is an unverifiable/likely fabricated citation; no such specific legal notice can be confirmed as genuinely published on that date."
+  },
+  {
+   "id": "pm-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1967,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated/unverifiable future-dated citation; no such specific procurement notice can be confirmed as authentic."
+  },
+  {
+   "id": "pm-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2861,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Washington State Legislative Web Services has no jurisdiction over Saint Pierre and Miquelon procurement notices; this source attribution is implausible and fabricated."
+  },
+  {
+   "id": "pm-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2317,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Saint Pierre and Miquelon does not use \"Federal Laws and Regulations (Justice Laws Website),\" which is a Canadian federal legal database, not French."
+  },
+  {
+   "id": "pm-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1987,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The US Code codifies U.S. federal statutes; Saint Pierre and Miquelon's local decisions would appear in French/territorial official publications, not U.S. federal law."
+  },
+  {
+   "id": "pm-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2369,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. British Columbia Laws publishes Canadian provincial legislation; a Saint Pierre and Miquelon deliberation would never appear on that Canadian website."
+  },
+  {
+   "id": "pm-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1593,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific legal notice's existence, publication date, or details—this appears to be an unverifiable or fabricated citation."
+  },
+  {
+   "id": "pm-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1932,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — I cannot verify this specific claim; no reliable record confirms this exact notice, date, or publication details in the Journal Officiel."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Sudan — Source-Grounded Citation Reliability (SD)",
+ "country": "SD",
+ "jurisdiction": "Sudan",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:02:04.368598+00:00",
+ "results": [
+  {
+   "id": "sd-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2318,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. \"DraftPress Law (2021)\" is not a verifiable official Sudanese legal citation; REDRESS bilingual resources aren't authoritative primary publishers of enacted legislation."
+  },
+  {
+   "id": "sd-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2713,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This citation is too vague/generic to verify—lacks specific document title, official gazette reference, or verifiable publication details confirming authenticity."
+  },
+  {
+   "id": "sd-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3170,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific citation's accuracy—Sudan lacks a \"Sudan Tax Authority\" publisher known as \"SudanTax,\" making this bibliographic claim unverifiable and likely fabricated."
+  },
+  {
+   "id": "sd-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2686,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Sudan has no such official \"Constitutional and Administrative Law Act (1996)\" — this appears to be a fabricated or misattributed citation."
+  },
+  {
+   "id": "sd-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3314,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This claim is too vague and generic to verify — no specific document title, official gazette reference, or verifiable publication details are provided to confirm authenticity."
+  },
+  {
+   "id": "sd-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2085,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. There is no verifiable official record confirming a distinct \"Capital Gains Tax Act, 1986\" published by a body called \"Sudan Tax Authority\" in Sudan."
+  },
+  {
+   "id": "sd-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2047,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Sudan's Draft Press Law would not be published in Seychelles' Official Gazette; Sudan uses its own official gazette, not Seychelles'."
+  },
+  {
+   "id": "sd-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1972,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Sudan's official legal sources are not published via Tanzania's Attorney General's Office Management Information System, which serves Tanzania's jurisdiction exclusively."
+  },
+  {
+   "id": "sd-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1754,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Kenya Law (National Council for Law Reporting) publishes Kenyan legislation, not Sudanese law; Sudan's Stamp Duty Act wouldn't be published there."
+  },
+  {
+   "id": "sd-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1647,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This citation mismatches jurisdictions—Sudan's law shouldn't be sourced from Tanzania's Attorney General's Office Management Information System publication."
+  },
+  {
+   "id": "sd-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1638,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Central Bank of Sudan is a Sudanese institution; its policies would be published through Sudanese official channels, not Seychelles' Official Gazette."
+  },
+  {
+   "id": "sd-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1763,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Sudan does not publish laws in the \"Seychelles Official Gazette\" — that is a distinct nation's gazette, unrelated to Sudanese legislation entirely."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Bhutan — Source-Grounded Citation Reliability (BT)",
+ "country": "BT",
+ "jurisdiction": "Bhutan",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:09:21.773859+00:00",
+ "results": [
+  {
+   "id": "bt-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2162,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The precise 2019-01-01 date appears fabricated; I cannot verify this specific BICMA cable TV regulation with that exact publication date."
+  },
+  {
+   "id": "bt-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2303,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Bhutan's Customs Act is from 2000 (amended later); no \"Customs Act 2017\" exists, and citation details appear fabricated."
+  },
+  {
+   "id": "bt-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3233,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Bhutan's Biodiversity Act was enacted in 2003 but published by the National Assembly/relevant ministry, not the Judiciary portal."
+  },
+  {
+   "id": "bt-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2426,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. Bhutan enacted the Environmental Assessment Act in 2000; the Office of Attorney General maintains and publishes official acts online."
+  },
+  {
+   "id": "bt-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2551,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date \"2022-01-01\" appears fabricated/placeholder; I cannot verify this specific title and precise publication details from Bhutan's RMA."
+  },
+  {
+   "id": "bt-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2786,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific regulation title, exact date, or publisher attribution; details appear fabricated or unconfirmed against authoritative Bhutanese sources."
+  },
+  {
+   "id": "bt-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2903,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Bhutanese regulations wouldn't originate from a \"Pakistan Laws Dataset\"; the jurisdictional mismatch signals an unreliable, fabricated source attribution."
+  },
+  {
+   "id": "bt-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2452,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Bhutan's laws are published through Bhutanese channels, not the Maldives Government Gazette; jurisdictions are separate sovereign nations with distinct systems."
+  },
+  {
+   "id": "bt-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1740,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Bhutan is a sovereign nation; its laws are not published in the Gazette of India, an Indian government publication."
+  },
+  {
+   "id": "bt-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1672,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Bhutan's laws are published by Bhutan's own government printing/authorities, not Sri Lanka's Department of Government Printing."
+  },
+  {
+   "id": "bt-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1861,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Bhutanese regulations are published by Royal Monetary Authority of Bhutan, not Sri Lanka's Department of Government Printing."
+  },
+  {
+   "id": "bt-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1728,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Bhutan is a sovereign nation; its regulations are not published in the Gazette of India, which serves India."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Gambia — Source-Grounded Citation Reliability (GM)",
+ "country": "GM",
+ "jurisdiction": "Gambia",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:54:17.869212+00:00",
+ "results": [
+  {
+   "id": "gm-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2017,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific bibliographic claim — no reliable access to Central Bank of The Gambia's exact publication records exists to confirm this citation's accuracy."
+  },
+  {
+   "id": "gm-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2218,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this citation exists in reality; I have no reliable record of this specific Gambian case, its date, or its publication by \"Law Hub Gambia.\""
+  },
+  {
+   "id": "gm-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1922,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this appears to be a routine administrative/operational document (a bills application form), not an authoritative guideline or regulation citation."
+  },
+  {
+   "id": "gm-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2279,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This appears to be a fabricated or unverifiable citation; no authoritative record confirms this case exists in official Gambian law reports or \"Law Hub Gambia\" as a publisher."
+  },
+  {
+   "id": "gm-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1916,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific bibliographic claim—the exact publication details for this CBG Bills Notice cannot be confirmed from available reliable sources."
+  },
+  {
+   "id": "gm-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3529,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The correct title is the \"Women's Act, 2010,\" but it was enacted by Gambia's National Assembly and published in the official Gazette, not \"Law Hub Gambia,\" which is merely a secondary onlin"
+  },
+  {
+   "id": "gm-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2147,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** PLAC (Policy and Legal Advocacy Centre) publishes Nigerian Laws of the Federation, not Gambian legal notices; jurisdiction mismatch makes this citation incorrect."
+  },
+  {
+   "id": "gm-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1865,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Cour des Comptes du Sénégal is a Senegalese state audit institution; it has no jurisdiction to publish Gambian judicial decisions."
+  },
+  {
+   "id": "gm-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1786,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Central Bank of The Gambia's CBG Bills Application Form is a Gambian instrument; Mali's Consolidated Legal Codes (SGG) is not its publisher."
+  },
+  {
+   "id": "gm-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2903,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Gambia's courts fall under its own judiciary system; Senegal's Cour suprême has no jurisdiction over or publication role in Gambian case law."
+  },
+  {
+   "id": "gm-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1615,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Central Bank of The Gambia's bill notices are Gambian official publications, not issued via Benin's LEGIS Legal Database system."
+  },
+  {
+   "id": "gm-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1688,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Women's Act 2010 is a Gambian statute; \"DroitGuinéen — Guinea Legal Reference Platform\" is fabricated and pertains to Guinea, not Gambia's legal system."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Paraguay — Source-Grounded Citation Reliability (PY)",
+ "country": "PY",
+ "jurisdiction": "Paraguay",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:01:25.124737+00:00",
+ "results": [
+  {
+   "id": "py-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2473,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Ley Nº 110 in Paraguay's legal system does not correspond to this expropriation subject matter; law numbers/dates/titles combinations require verification against BACN records, and this pai"
+  },
+  {
+   "id": "py-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2016,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated or unverifiable citation; I cannot confirm this specific case exists in official Paraguay Supreme Court records."
+  },
+  {
+   "id": "py-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2057,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific resolution number, date, and content combination exists in TSJE's official records without direct source access."
+  },
+  {
+   "id": "py-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2021,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this citation appears fabricated; no verifiable CONACOM record matches this specific case number, docket, and date combination."
+  },
+  {
+   "id": "py-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2893,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific law number, title, and publication date combination for Paraguay's legislative record without reliable source access."
+  },
+  {
+   "id": "py-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2051,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific law number, title fragment, and exact publication date combination against actual BACN records with confidence."
+  },
+  {
+   "id": "py-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2061,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Ley Nº 110 predates 1989 legislative numbering typical of that era's expropriation laws, and I cannot verify this specific citation's accuracy without direct source confirmation."
+  },
+  {
+   "id": "py-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2077,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific case citation exists; I lack access to Paraguay's judicial database to confirm this record's authenticity."
+  },
+  {
+   "id": "py-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1996,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** TSJE (Tribunal Superior de Justicia Electoral) is Paraguay's electoral tribunal, not Colombia's Constitutional Court/Datos Abiertos, so attribution is inconsistent."
+  },
+  {
+   "id": "py-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1962,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Paraguay was specified, but Copetrol/TDLC citations concern Chile's competition tribunal, not a Paraguayan jurisdiction or authority—jurisdiction mismatch invalidates the claim."
+  },
+  {
+   "id": "py-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1694,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Paraguayan Law 7323/2024 is a national statute; it cannot be published via Argentina's central bank (BCRA) communications system, an unrelated foreign institution."
+  },
+  {
+   "id": "py-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1754,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific law number, title, and publication date combination from BACN without access to confirm the actual official record's accuracy."
+  }
+ ]
+}

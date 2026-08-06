@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Norway — Source-Grounded Citation Reliability (NO)",
+ "country": "NO",
+ "jurisdiction": "Norway",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 11,
+ "blocked": 0,
+ "unparsed": 1,
+ "errors": [],
+ "accuracy": 0.5455,
+ "correct": 6,
+ "parse_rate": 0.9167,
+ "passed": false,
+ "timestamp": "2026-07-19T08:20:33.188116+00:00",
+ "results": [
+  {
+   "id": "no-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2261,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The citation is dated 2026, a future date relative to verifiable records, making this claim unverifiable and likely fabricated."
+  },
+  {
+   "id": "no-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2582,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Lovvedtak numbering restarts each parliamentary session; December 2025 dating is implausible for Lovvedtak 1 (2025-2026), typically appearing October-November."
+  },
+  {
+   "id": "no-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2397,
+   "verdict": false,
+   "correct": false,
+   "raw": "I cannot verify this specific decision exists. Without access to KFIR's database, I cannot confirm this citation's authenticity. **False** (unverifiable)."
+  },
+  {
+   "id": "no-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2360,
+   "verdict": true,
+   "correct": true,
+   "raw": "I cannot verify this specific claim as True with confidence.  False—I cannot confirm the exact case number, date, or existence of this specific KOFA decision without reliable source access."
+  },
+  {
+   "id": "no-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2835,
+   "verdict": false,
+   "correct": false,
+   "raw": "False.  The case citation format is questionable; the Tribunal (Diskrimineringsnemnda) uses different numbering conventions, and I cannot verify this specific decision exists."
+  },
+  {
+   "id": "no-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2053,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Personvernnemnda's 2003 decisions typically use format like PVN-2003-05, but I cannot verify this specific case details reliably."
+  },
+  {
+   "id": "no-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2811,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Norwegian Supreme Court decisions (HR-prefix) are published by Lovdata/Norges domstoler, not Finland's Finlex, which covers Finnish law."
+  },
+  {
+   "id": "no-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1990,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Lovvedtak (Norwegian parliamentary legislative decisions) are published by Stortinget in Norway, not via Denmark's Retsinformation database."
+  },
+  {
+   "id": "no-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1891,
+   "verdict": null,
+   "correct": false,
+   "raw": "I cannot verify this specific claim. Without access to KFIR's database, I cannot confirm this decision's existence, date, or details as stated."
+  },
+  {
+   "id": "no-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1713,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Identifier '2004/5' cannot correspond to 'KOFA 2004/2'; the case numbers differ, indicating inconsistent or fabricated citation details."
+  },
+  {
+   "id": "no-src-f05",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1719,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '22/164' cannot correspond to 'Sak 22/163'; these are distinct case numbers, indicating a mismatch."
+  },
+  {
+   "id": "no-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2517,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Finlex is Finland's legal database. A Norwegian decision (PVN prefix) would be published in Norwegian sources, not Finlex."
+  }
+ ]
+}

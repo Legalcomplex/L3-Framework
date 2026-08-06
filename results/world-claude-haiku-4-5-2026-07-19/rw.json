@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Rwanda — Source-Grounded Citation Reliability (RW)",
+ "country": "RW",
+ "jurisdiction": "Rwanda",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:44:15.414966+00:00",
+ "results": [
+  {
+   "id": "rw-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2220,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The law is dated 2026, which is in the future. No official legal source could have published legislation from a future date as of the claim's verification point."
+  },
+  {
+   "id": "rw-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1617,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The citation format and reference number structure do not match standard BNR guideline documentation conventions. The specific guideline number and date formatting appear inconsistent with "
+  },
+  {
+   "id": "rw-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2554,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  Rwanda Courts Decisions does not publish decisions dated in the future (2025-12-10). This appears to be a fabricated or hypothetical case citation rather than an official published decision."
+  },
+  {
+   "id": "rw-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1704,
+   "verdict": false,
+   "correct": false,
+   "raw": "# Evaluation: **False**  Rwanda's primary capital market governance framework is the \"Capital Markets Code\" (2011), not a 2024 standalone \"Corporate Governance Code.\" Unable to verify this specific Oc"
+  },
+  {
+   "id": "rw-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1444,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such regulation exists in Rwanda's official legal framework. RURA primarily regulates utilities (energy, water, telecommunications), not motorcycle transport services, which fall under diffe"
+  },
+  {
+   "id": "rw-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1721,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This regulation cannot have been published in January 2026, as that date is in the future relative to current knowledge cutoff (April 2024). The claim is temporally impossible."
+  },
+  {
+   "id": "rw-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1533,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The date 2026 is in the future. This law cannot have been published in 2026. Additionally, Kenya Law reports Kenyan legislation, not Rwandan law."
+  },
+  {
+   "id": "rw-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1584,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The citation format appears inconsistent with standard NBR guideline documentation. The reference number structure and date formatting lack verification against confirmed NBR official publi"
+  },
+  {
+   "id": "rw-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1305,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Rwanda Courts Decisions is not an official legal publisher. Official Rwandan judicial decisions are published through the Rwanda Utilities and Regulatory Authority or official court reposit"
+  },
+  {
+   "id": "rw-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1071,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Rwanda and Tanzania are separate countries. A document published by Tanzania's Attorney General cannot be an official Rwandan legal source, regardless of publication date."
+  },
+  {
+   "id": "rw-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1720,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  RURA primarily regulates utilities (energy, water, telecommunications), not transportation. Motorcycle transport regulation would fall under Rwanda's transport authority, not RURA's mandate"
+  },
+  {
+   "id": "rw-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1015,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Rwanda's legal instruments are published in the Rwanda Official Gazette, not the Seychelles Official Gazette. Seychelles is a separate jurisdiction with its own legal publication system."
+  }
+ ]
+}

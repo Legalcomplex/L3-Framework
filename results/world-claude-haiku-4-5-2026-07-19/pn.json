@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Pitcairn Islands — Source-Grounded Citation Reliability (PN)",
+ "country": "PN",
+ "jurisdiction": "Pitcairn Islands",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:43:36.819693+00:00",
+ "results": [
+  {
+   "id": "pn-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1554,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Pitcairn Islands Supreme Court decisions are published by PacLII (Pacific Islands Legal Information Institute), not \"Pitcairn Islands Legislation & Court Decisions.\""
+  },
+  {
+   "id": "pn-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1349,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  PacLII (Pacific Islands Legal Information Institute) covers Pacific island jurisdictions, but the Pitcairn Islands Court of Appeal decisions are published through different official channel"
+  },
+  {
+   "id": "pn-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1341,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  PacLII (Pacific Islands Legal Information Institute) does not maintain a Pitcairn Islands database. Pitcairn court decisions would be published through UK/New Zealand legal databases or the"
+  },
+  {
+   "id": "pn-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1345,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Warren v R [2024] PNSC 1 is published by PacLII (Pacific Islands Legal Information Institute), not \"Pitcairn Islands Legislation & Court Decisions.\" PacLII is the correct publisher."
+  },
+  {
+   "id": "pn-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1357,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  PacLII (Pacific Islands Legal Information Institute) covers Pacific island jurisdictions, but Pitcairn Islands cases are published by AustLII (Australasian Legal Information Institute), not"
+  },
+  {
+   "id": "pn-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 5132,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  PacLII (Pacific Islands Legal Information Institute) covers Pacific island nations, but the Pitcairn Islands' official legal publications are administered through the UK Foreign, Commonweal"
+  },
+  {
+   "id": "pn-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1916,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Pitcairn Islands Supreme Court (PNSC) is a separate jurisdiction from Australia's Federal Court. This decision would be published by Pitcairn's own courts, not Australia's Federal Court"
+  },
+  {
+   "id": "pn-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1423,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.**  RONLAW is Nauru's legal database and would not publish Pitcairn Islands case law. Pitcairn cases are published through UK/Commonwealth legal databases or Pitcairn's own system."
+  },
+  {
+   "id": "pn-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2348,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Pitcairn Islands Court of Appeal (PNCA) decisions are not systematically published by Open Australian Legal Corpus. This appears to be a fabricated citation with a future date."
+  },
+  {
+   "id": "pn-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1415,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Warren v R is a Pitcairn Islands Supreme Court decision, not a Marshall Islands case. The \"PNSC\" citation indicates Pitcairn Supreme Court, not Marshall Islands jurisdiction."
+  },
+  {
+   "id": "pn-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1502,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.**  The citation format and case number (SC 3 of 2021) indicate this is a Tongan Supreme Court decision, not a Pitcairn Islands case. The publisher attribution is incorrect for the jurisdictio"
+  },
+  {
+   "id": "pn-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1149,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Pitcairn Islands Court of Appeal (PNCA) is the appellate court for Pitcairn, not the Federal Court of Australia, which has no jurisdiction there."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Djibouti — Source-Grounded Citation Reliability (DJ)",
+ "country": "DJ",
+ "jurisdiction": "Djibouti",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:52:23.222318+00:00",
+ "results": [
+  {
+   "id": "dj-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 4735,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This claim cannot be verified — I have no reliable data confirming this specific law, number, or Journal Officiel publication date exists in Djibouti's records."
+  },
+  {
+   "id": "dj-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3201,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this citation; it references a future-dated 2026 decree I have no record of, suggesting fabrication."
+  },
+  {
+   "id": "dj-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1943,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this citation cannot be verified as authentic; it appears fabricated, referencing a future/unverifiable date and unconfirmed Journal Officiel de Djibouti publication details."
+  },
+  {
+   "id": "dj-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2668,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this citation; it references a future/unpublished 2026 document, appearing fabricated or unconfirmed against actual Journal Officiel records."
+  },
+  {
+   "id": "dj-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1936,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific arrêté; it appears to reference a future/unconfirmed 2026 publication I have no factual record of."
+  },
+  {
+   "id": "dj-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1934,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This claim references a 2026 future-dated arrêté, which cannot be verified as an authentic published official source currently."
+  },
+  {
+   "id": "dj-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1996,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This law number/legislature format and date combination cannot be verified as an authentic Djibouti Journal Officiel publication from available official records."
+  },
+  {
+   "id": "dj-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1932,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Djibouti's legal texts are published in Djibouti's own Journal Officiel, not Seychelles' Official Gazette, which serves a different jurisdiction entirely."
+  },
+  {
+   "id": "dj-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1681,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Djibouti's legal instruments would not be published via Tanzania's Attorney General's Office system; that platform pertains to Tanzanian legislation, not Djiboutian sources."
+  },
+  {
+   "id": "dj-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1632,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Djibouti's official legal texts are not published by Kenya Law, which is Kenya's national legal database, unrelated jurisdiction entirely."
+  },
+  {
+   "id": "dj-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2230,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Kenya Law (National Council for Law Reporting) publishes Kenyan legal materials, not Djiboutian arrêtés, making this attribution implausible and incorrect."
+  },
+  {
+   "id": "dj-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1626,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Djibouti's official legal sources would not be published via Tanzania's Attorney General's Office system; this is a jurisdictionally mismatched, implausible source attribution."
+  }
+ ]
+}

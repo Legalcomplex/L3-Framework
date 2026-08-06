@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Australia — Source-Grounded Citation Reliability (AU)",
+ "country": "AU",
+ "jurisdiction": "Australia",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:49:00.340159+00:00",
+ "results": [
+  {
+   "id": "au-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2676,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This case name and citation format appear fabricated or unverifiable; I cannot confirm this specific decision exists in Federal Court records without verified access."
+  },
+  {
+   "id": "au-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1879,
+   "verdict": true,
+   "correct": true,
+   "raw": "**True** — The Acts Interpretation Act 1901 is a genuine Commonwealth statute maintained on the Federal Register of Legislation, with compilations dated accordingly."
+  },
+  {
+   "id": "au-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2048,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This title appears fabricated or unverifiable; I cannot confirm a Tasmanian Act with this exact name, status, and citation details exist."
+  },
+  {
+   "id": "au-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2021,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** While this Act exists in Queensland legislation, I cannot verify the specific publication date claimed without access to confirm official record accuracy."
+  },
+  {
+   "id": "au-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2292,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Summary Offences Act 1953 (SA) is published via the South Australian legislation website (legislation.sa.gov.au), not data.sa.gov.au, which hosts open datasets."
+  },
+  {
+   "id": "au-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1979,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific identifier, act title, and date combination against Tasmania's legislation database; I lack reliable access confirming this exact record exists."
+  },
+  {
+   "id": "au-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 4243,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** SPLB is an unusual/unverifiable citation format; migration cases like this were typically decided by the Federal Magistrates Court or reported differently, requiring verification against Au"
+  },
+  {
+   "id": "au-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2540,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Acts Interpretation Act 1901 exists on the Federal Register of Legislation, but a future date (2025-12-11) cannot verify an actual publication event."
+  },
+  {
+   "id": "au-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1675,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Police Miscellaneous Amendments Act (No. 2) 2009 is Tasmanian legislation; it would appear on Tasmanian legislation databases, not Fiji's laws.gov.fj."
+  },
+  {
+   "id": "au-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1613,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Transport Operations (Passenger Transport) Act 1994 is a real Act, but its assigned number/identifier and exact citation details cannot be verified as stated."
+  },
+  {
+   "id": "au-src-f05",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1637,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Summary Offences Act 1953 exists, but identifier '1953.56' and the exact date 1953-12-17 cannot be verified as accurate without direct source confirmation."
+  },
+  {
+   "id": "au-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1714,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This appears to be a fabricated citation—no such Act or matching source is verifiable in genuine Australian or Tongan legal databases/records."
+  }
+ ]
+}

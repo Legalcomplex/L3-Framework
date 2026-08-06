@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Israel — Source-Grounded Citation Reliability (IL)",
+ "country": "IL",
+ "jurisdiction": "Israel",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.6667,
+ "correct": 8,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:15:05.236057+00:00",
+ "results": [
+  {
+   "id": "il-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2284,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. HuggingFace datasets are unofficial aggregations, not official legal publishers; Israeli case law is officially published through courts/Nevo systems."
+  },
+  {
+   "id": "il-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2736,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Official pikodot (ordinances) are published in Reshumot (official gazette), not via Knesset Data/Hasadna open-source platforms, which are unofficial."
+  },
+  {
+   "id": "il-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2247,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. HCJ 9232/01 \"Noah\" v. Attorney-General (2003) addressed foie gras force-feeding of geese and animal welfare regulations."
+  },
+  {
+   "id": "il-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2540,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. HuggingFace datasets are aggregations, not official publishers; Israeli case law is officially published via courts/Nevo, not datasets."
+  },
+  {
+   "id": "il-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3412,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Post-Mandate consolidated ordinances (נוסח חדש) were published in Dinei Medinat Yisrael, not by Knesset open-source data initiatives."
+  },
+  {
+   "id": "il-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2647,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. HCJ 2150/07 Abu Safiyeh v. Minister of Defense (2009) concerned Route 443 access restrictions for Palestinian residents."
+  },
+  {
+   "id": "il-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2522,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. HuggingFace datasets are aggregations, not official publishers; Israeli case law is officially published via Nevo or court systems."
+  },
+  {
+   "id": "il-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2679,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Israeli legislation is published in official gazettes (Reshumot), not the DIFC Legal Database, which serves Dubai International Financial Centre."
+  },
+  {
+   "id": "il-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2080,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. HCJ 9232/02 is \"Noah\" v. Attorney-General regarding foie gras, but I cannot verify the exact English-translation citation details."
+  },
+  {
+   "id": "il-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2022,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. HuggingFace datasets are third-party aggregations, not official publishers; Israeli case law is officially published through courts/Nevo systems."
+  },
+  {
+   "id": "il-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2696,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Israeli legislation is published in \"רשומות\" (Reshumot), the official gazette, not via any Jordanian bureau. The attribution is fabricated."
+  },
+  {
+   "id": "il-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1653,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. HCJ 2150/07 (not 2150/08) is Abu Safiyeh v. Minister of Defense; the identifier's year digits are incorrect."
+  }
+ ]
+}

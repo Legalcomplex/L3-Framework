@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Kiribati — Source-Grounded Citation Reliability (KI)",
+ "country": "KI",
+ "jurisdiction": "Kiribati",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 11,
+ "blocked": 0,
+ "unparsed": 1,
+ "errors": [],
+ "accuracy": 0.8182,
+ "correct": 9,
+ "parse_rate": 0.9167,
+ "passed": false,
+ "timestamp": "2026-07-19T08:16:28.340812+00:00",
+ "results": [
+  {
+   "id": "ki-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1983,
+   "verdict": true,
+   "correct": true,
+   "raw": "I cannot verify this specific citation as True or False; I lack access to PacLII's database to confirm these details."
+  },
+  {
+   "id": "ki-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 3292,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation; the details appear fabricated, and I have no reliable record confirming its existence."
+  },
+  {
+   "id": "ki-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1879,
+   "verdict": null,
+   "correct": false,
+   "raw": "I cannot verify this specific citation as genuine. Without access to PacLII's database, I cannot confirm this decision exists."
+  },
+  {
+   "id": "ki-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2542,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. PacLII publishes Kiribati Court of Appeal decisions with this citation format (KICA), including case number and date details."
+  },
+  {
+   "id": "ki-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2419,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation; details like the case number format and existence appear fabricated or unverifiable."
+  },
+  {
+   "id": "ki-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2415,
+   "verdict": true,
+   "correct": true,
+   "raw": "Cannot verify as True. I lack reliable access to confirm this specific citation exists in PacLII's Kiribati Court of Appeal database."
+  },
+  {
+   "id": "ki-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2441,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. KICA (Kiribati Court of Appeal) decisions are published by PacLII, not RONLAW, which covers Nauru's jurisdiction."
+  },
+  {
+   "id": "ki-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2773,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. KICA denotes Kiribati Court of Appeal; such judgments are published by Kiribati authorities/PacLII, not Tonga's Attorney General."
+  },
+  {
+   "id": "ki-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1583,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This is a Kiribati Court of Appeal (KICA) decision, published via PacLII, not the Federal Court of Australia."
+  },
+  {
+   "id": "ki-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1676,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. KICA denotes the Kiribati Court of Appeal; this decision is published by Kiribati's Judiciary, not Marshall Islands."
+  },
+  {
+   "id": "ki-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2208,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Open Australian Legal Corpus covers Australian jurisdictions, not Kiribati; this citation appears fabricated with implausible case-number formatting."
+  },
+  {
+   "id": "ki-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2145,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Open Australian Legal Corpus covers Australian jurisdictions, not Kiribati; such cases appear on PacLII, not that corpus."
+  }
+ ]
+}

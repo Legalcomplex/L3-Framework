@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Comoros — Source-Grounded Citation Reliability (KM)",
+ "country": "KM",
+ "jurisdiction": "Comoros",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:16:33.418322+00:00",
+ "results": [
+  {
+   "id": "km-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2960,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The 24 September 2017 date falls on a Sunday, and the suspiciously formatted citation number suggests a fabricated, unverifiable source."
+  },
+  {
+   "id": "km-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2124,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Comoros lacks a functioning official Ministry of Justice legislation database; such precise citations are unverifiable and likely fabricated."
+  },
+  {
+   "id": "km-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2368,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific identifier or decision exists in Juricaf's database; asserting its validity without confirmation risks fabrication."
+  },
+  {
+   "id": "km-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2566,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Comoros lacks a systematic online Ministry of Justice legislation portal; such precise citation and publication claim cannot be verified."
+  },
+  {
+   "id": "km-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3217,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation exists in Juricaf; the source and details appear unreliable without confirmation."
+  },
+  {
+   "id": "km-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2196,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Comoros lacked an online Ministry of Justice legislation portal in 1981; such official digital publication systems didn't exist then."
+  },
+  {
+   "id": "km-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2346,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier ends in \"008\" but the cited case reads \"2017-civil-007\"—these numbers mismatch, indicating inconsistent or fabricated reference details."
+  },
+  {
+   "id": "km-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1896,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Comorian laws are published in the Journal Officiel de l'Union des Comores, not Tanzania's Attorney General's Office."
+  },
+  {
+   "id": "km-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2512,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier ends in '03' but the cited case number is '02', creating an inconsistency between identifier and title."
+  },
+  {
+   "id": "km-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1600,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Comoros laws are published in the Journal Officiel de l'Union des Comores, not the Seychelles Official Gazette."
+  },
+  {
+   "id": "km-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2116,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Comoros Supreme Court is a distinct national institution; its judgments would not be published via Mauritius's court system."
+  },
+  {
+   "id": "km-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2724,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Kenya Law reports Kenyan legislation only; it does not publish Comorian laws, which appear in the Journal Officiel des Comores."
+  }
+ ]
+}

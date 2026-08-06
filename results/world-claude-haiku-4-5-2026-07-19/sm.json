@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — San Marino — Source-Grounded Citation Reliability (SM)",
+ "country": "SM",
+ "jurisdiction": "San Marino",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:45:00.474046+00:00",
+ "results": [
+  {
+   "id": "sm-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2147,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  This regulation cannot have been published on 2026-02-17, as that date is in the future. San Marino's official legislation is published in real-time, not retroactively or prospectively."
+  },
+  {
+   "id": "sm-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1675,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The claim cannot be verified without the specific decree title and number. The format matches San Marino's official legislative style, but the incomplete citation lacks essential identifier"
+  },
+  {
+   "id": "sm-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1780,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  This claim cannot be verified. The date (04/02/2026) is in the future, making it impossible for this legislation to exist in official San Marino records as of now."
+  },
+  {
+   "id": "sm-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1356,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The claim references a future date (February 16, 2026). As of my knowledge cutoff in April 2024, this regulation has not yet been published and cannot be verified as an official source."
+  },
+  {
+   "id": "sm-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1699,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  This law cannot be verified as published in 2026, which is a future date. San Marino's official legislation records do not contain documents from future dates. The claim is temporally impos"
+  },
+  {
+   "id": "sm-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1867,
+   "verdict": true,
+   "correct": true,
+   "raw": "**True**  San Marino's official legislation is published in the Bollettino Ufficiale della Repubblica di San Marino. The citation format and date are consistent with authentic San Marino legislative p"
+  },
+  {
+   "id": "sm-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1749,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The claimed date (17/02/2026) is in the future, making this bibliographic record impossible. Official legislation cannot predate its actual promulgation and publication."
+  },
+  {
+   "id": "sm-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1524,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The phrasing \"We the Captains Regent\" is inconsistent with San Marino's official legislative language, which typically uses \"I the Captain Regent\" (singular) or formal institutional references "
+  },
+  {
+   "id": "sm-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2675,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The date 2026-02-04 is in the future and cannot exist in official San Marino legislation records. This claim references an unrealized future date."
+  },
+  {
+   "id": "sm-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1354,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** San Marino regulations would not be published by Jersey's legal information board. Jersey and San Marino are distinct jurisdictions with separate legal systems and official publications."
+  },
+  {
+   "id": "sm-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1237,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** San Marino's legislation is published in the *Gazzetta Ufficiale della Repubblica di San Marino*, not Fedlex, which is Switzerland's official legislation platform."
+  },
+  {
+   "id": "sm-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 4562,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Rechtsinformationssystem (RIS) is Austria's official legal database. San Marino's laws are published through different official channels, not the Austrian RIS system."
+  }
+ ]
+}

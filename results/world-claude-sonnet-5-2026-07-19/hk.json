@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Hong Kong — Source-Grounded Citation Reliability (HK)",
+ "country": "HK",
+ "jurisdiction": "Hong Kong",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:54:54.511724+00:00",
+ "results": [
+  {
+   "id": "hk-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2569,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Cap. 104 sub. leg. A cannot be verified as an accurate citation without confirmation; Hong Kong e-Legislation formatting requires precise verification of specific subsidiary legislation det"
+  },
+  {
+   "id": "hk-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1934,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific citation's accuracy; Board of Review decisions' details (numbering, date, holding) may be fabricated or unconfirmed."
+  },
+  {
+   "id": "hk-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1806,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation; Hong Kong Competition Tribunal case numbers and dates for 2025 are not reliably confirmed in my training data."
+  },
+  {
+   "id": "hk-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1868,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this claim references a future-dated decision (2026-03-25), which cannot yet exist or be verified as an actual published case."
+  },
+  {
+   "id": "hk-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1935,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific citation's accuracy—case numbers, dates, and rulings should be confirmed directly via official SFAT or Hong Kong e-Legislation/court databases."
+  },
+  {
+   "id": "hk-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2446,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Cap. 101 (Landlord and Tenant Ordinance) has subsidiary legislation, but Hong Kong e-Legislation as a platform did not exist in 1997; it launched much later (2015)."
+  },
+  {
+   "id": "hk-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1909,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Hong Kong's Cap. 104 subsidiary legislation is published via Hong Kong e-Legislation (HKeL), not Macau's Legal Portal, which covers Macau law only."
+  },
+  {
+   "id": "hk-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1868,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — Board of Review decision numbering/date pairing is unverifiable; D12/81 would relate to 1981, not a 1979 decision date."
+  },
+  {
+   "id": "hk-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1588,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific citation; I lack reliable data confirming [2025] HKCT 5 matches this case name and date accurately."
+  },
+  {
+   "id": "hk-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1568,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The date 2026-03-25 is in the future relative to my knowledge, and I cannot verify unpublished/nonexistent citations as authentic."
+  },
+  {
+   "id": "hk-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1503,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The date (2019-04-25) predates the case number's year (2021), an internal inconsistency indicating fabricated or inaccurate citation details."
+  },
+  {
+   "id": "hk-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2558,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Hong Kong's Cap. 101 subsidiary legislation is published via Hong Kong e-Legislation/HKLII, not Korea's KLIC, which covers only Korean law."
+  }
+ ]
+}

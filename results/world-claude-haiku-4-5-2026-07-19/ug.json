@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Uganda — Source-Grounded Citation Reliability (UG)",
+ "country": "UG",
+ "jurisdiction": "Uganda",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:46:30.382940+00:00",
+ "results": [
+  {
+   "id": "ug-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1533,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This regulation cannot have been published on 2025-11-29 as that date is in the future from the current perspective, making the claim temporally impossible."
+  },
+  {
+   "id": "ug-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1675,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Foreign Exchange Amendment Act is a parliamentary statute published in Uganda's official gazette, not through Bank of Uganda's administrative guidelines portal."
+  },
+  {
+   "id": "ug-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1996,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** No evidence supports this document's existence from UERA. The title appears fabricated, and the future date (2026-01-09) makes this claim implausible and unverifiable."
+  },
+  {
+   "id": "ug-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1394,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-04-10 is in the future and cannot be a publication date for an official legal source that currently exists."
+  },
+  {
+   "id": "ug-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1606,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Uganda's statutory law from 1972 would be cited as a statute of Uganda, but this specific title and date cannot be verified as an official legal source in standard Ugandan legal databases."
+  },
+  {
+   "id": "ug-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3049,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  No 'MDI Amendment Act 2023' exists as an official Ugandan legal instrument. Uganda's official legislation is published through Parliament, not the Bank of Uganda, which lacks legislative au"
+  },
+  {
+   "id": "ug-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 3893,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The document claims a Ugandan legal instrument was published by Tanzania's Attorney General's Office. Uganda and Tanzania are separate jurisdictions with distinct legal systems and publishi"
+  },
+  {
+   "id": "ug-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2770,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The Foreign Exchange Amendment Act is a parliamentary statute enacted by Uganda's legislature, not published by Bank of Uganda. Bank of Uganda publishes regulations and guidelines it creates,"
+  },
+  {
+   "id": "ug-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1447,
+   "verdict": false,
+   "correct": true,
+   "raw": "# Answer: **False**  **Explanation:** This document title and publication source don't match Uganda's official legal instruments. The UERA issues tariff orders on regulated electricity matters, but \"A"
+  },
+  {
+   "id": "ug-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1235,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This document pertains to Seychelles jurisdiction, not Uganda. Additionally, the 2026 date is in the future and therefore cannot represent a published source."
+  },
+  {
+   "id": "ug-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1357,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This act does not appear in Uganda's official legislative records. No such statute with this exact title is documented in Uganda's 1970 legislation or Laws.Africa database."
+  },
+  {
+   "id": "ug-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1090,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The MDI Amendment Act 2023 is a Ugandan statute, not Kenyan legislation. Kenya Law reports Kenyan laws, not Uganda's. The source jurisdiction is incorrect."
+  }
+ ]
+}

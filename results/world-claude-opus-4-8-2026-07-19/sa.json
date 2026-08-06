@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Saudi Arabia — Source-Grounded Citation Reliability (SA)",
+ "country": "SA",
+ "jurisdiction": "Saudi Arabia",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:23:55.729568+00:00",
+ "results": [
+  {
+   "id": "sa-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2551,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The Capital Market Law was issued by Royal Decree No. M/30 dated 2/6/1424H, corresponding to July 31, 2003."
+  },
+  {
+   "id": "sa-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 4196,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.**  The Securities Exchanges and Depository Centers Regulations were issued by the Capital Market Authority Board, not published on that specific date."
+  },
+  {
+   "id": "sa-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3372,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-01-01 is future/implausible, and such regulations are typically issued by CMA under different specific titling."
+  },
+  {
+   "id": "sa-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2070,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The 2026-01-01 date is implausible/future-dated, and specific publication details cannot be verified as accurate without authoritative confirmation."
+  },
+  {
+   "id": "sa-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2414,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The CMA published sustainable finance guidelines, but I cannot verify this exact title or the specific May 2025 date."
+  },
+  {
+   "id": "sa-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2492,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such \"Cross-Border Passporting Guide\" exists from Saudi CMA; passporting frameworks are GCC/EU concepts, not Saudi regulatory practice."
+  },
+  {
+   "id": "sa-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2403,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Capital Market Law (Royal Decree M/30) was issued in 2003 (1424H), not 2000, and published in Umm al-Qura."
+  },
+  {
+   "id": "sa-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2158,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No verified CMA regulation by this exact title/date exists; likely conflated or fabricated citation requiring verification against official Saudi CMA sources."
+  },
+  {
+   "id": "sa-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2275,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Saudi laws are published in Umm al-Qura Official Gazette, not DIFC (Dubai) database; jurisdictions and future date are wrong."
+  },
+  {
+   "id": "sa-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2029,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Saudi securities regulations come from the Capital Market Authority, not Israel's Knesset; jurisdictions and sources are entirely mismatched."
+  },
+  {
+   "id": "sa-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2103,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The date (2026-05-01) is in the future, making this citation unverifiable and almost certainly fabricated or inaccurate."
+  },
+  {
+   "id": "sa-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2259,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No such \"Cross-Border Passporting Guide\" exists from Saudi CMA; passporting frameworks are EU concepts, not Saudi regulatory publications."
+  }
+ ]
+}

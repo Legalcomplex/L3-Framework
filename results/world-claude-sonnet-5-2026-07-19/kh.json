@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Cambodia — Source-Grounded Citation Reliability (KH)",
+ "country": "KH",
+ "jurisdiction": "Cambodia",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:56:26.925685+00:00",
+ "results": [
+  {
+   "id": "kh-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1882,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This citation format cannot be verified as accurate without access to Juricaf's actual database records confirming this specific decision's existence and publication details."
+  },
+  {
+   "id": "kh-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2290,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.**  Cambodian statutes are officially published in the Royal Gazette (Preah Reach Kroet/Kram); \"Husky & Partners Cambodian Legal Library\" is not a recognized official government publisher."
+  },
+  {
+   "id": "kh-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2252,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** While the ECCC did issue decisions regarding lawyer accreditation for Khieu Samphan around this period, I cannot verify this specific document's exact title, date, and details without acces"
+  },
+  {
+   "id": "kh-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2209,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific citation's accuracy—the case number, name, and date combination may be fabricated or unverifiable against actual Arbitration Council records."
+  },
+  {
+   "id": "kh-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2065,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated or unverifiable citation; Cambodia's Constitutional Council decisions aren't systematically indexed on Juricaf with that specific format."
+  },
+  {
+   "id": "kh-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2415,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify identifiers from proprietary/private legal databases like \"Husky & Partners\" as this isn't a source I can access or confirm."
+  },
+  {
+   "id": "kh-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1748,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Constitutional Council of Cambodia is Cambodia's own constitutional body, not published by Indonesia's Constitutional Court, a separate foreign institution."
+  },
+  {
+   "id": "kh-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1943,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify unofficial law firm database identifiers—\"husky-5b123abad0a2\" is not a publicly confirmable, standardized citation for this Cambodian law."
+  },
+  {
+   "id": "kh-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1898,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** In 2006, KHIEU Samphan was not yet before the ECCC; he was only charged/arrested in November 2007, so no such 2006 ECCC accreditation decision exists."
+  },
+  {
+   "id": "kh-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2281,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific decision number, date, and party name combination exists in the Arbitration Council's actual database of rulings."
+  },
+  {
+   "id": "kh-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1706,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Philippines Supreme Court E-Library publishes Philippine jurisprudence, not decisions of Cambodia's Constitutional Council, which is an unrelated foreign jurisdiction's institution."
+  },
+  {
+   "id": "kh-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2216,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify proprietary internal identifiers like \"husky-9974e5218bbd\" from an unverifiable private legal database against actual Cambodian legal records."
+  }
+ ]
+}

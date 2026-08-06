@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Algeria — Source-Grounded Citation Reliability (DZ)",
+ "country": "DZ",
+ "jurisdiction": "Algeria",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.6667,
+ "correct": 8,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:11:45.452501+00:00",
+ "results": [
+  {
+   "id": "dz-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2559,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. Bank of Algeria issues prudential regulations including solvency ratio requirements; Règlement 2014-01 addresses bank solvency coefficients, matching described publication."
+  },
+  {
+   "id": "dz-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2104,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Islamic date 23 Joumada Ethania 1443 corresponds to approximately January 26, 2022, not December 15, 2022—dates conflict."
+  },
+  {
+   "id": "dz-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2664,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The citation format is plausible for Algeria's Cour suprême, but the 2024-12-26 publication date contradicts the 2016 decision, appearing fabricated."
+  },
+  {
+   "id": "dz-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3108,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific 2026 future-dated issue's publication details; asserting its existence and exact date lacks reliable confirmation."
+  },
+  {
+   "id": "dz-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2813,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Hijri date 6 Dhou El Hidja 1446 corresponds to 2 June 2025, but verification of publication details is uncertain."
+  },
+  {
+   "id": "dz-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2896,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. This regulation on internal control of banks and financial institutions was issued by Bank of Algeria on that date."
+  },
+  {
+   "id": "dz-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 7442,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Algerian regulations are published in the Journal Officiel, not an \"Egyptian Legal Corpus\"—wrong jurisdiction and implausible official source."
+  },
+  {
+   "id": "dz-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2380,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Hijri date 23 Joumada Ethania 1443 corresponds to approximately January 2022, not December 2024, creating inconsistency."
+  },
+  {
+   "id": "dz-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1850,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The decision date (27-09-2016) contradicts the stated publication date (2021-12-26), showing internal inconsistency in the citation."
+  },
+  {
+   "id": "dz-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1625,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Journal Officiel de la République Algérienne is Algerian, not Egyptian; attributing it to an \"Egyptian Legal Corpus\" is incorrect."
+  },
+  {
+   "id": "dz-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2328,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Algerian decrees are published in the Journal Officiel (JORADP), not an \"Egyptian Legal Corpus\"; also date correspondence appears unverifiable."
+  },
+  {
+   "id": "dz-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1908,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This regulation is Algerian (Banque d'Algérie), published in the Journal Officiel, not sourced from an Egyptian Legal Corpus."
+  }
+ ]
+}

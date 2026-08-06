@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Laos — Source-Grounded Citation Reliability (LA)",
+ "country": "LA",
+ "jurisdiction": "Laos",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:40:05.784343+00:00",
+ "results": [
+  {
+   "id": "la-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1544,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Laos does not have an established securities commission or regulated capital market with published securities business operation decisions in the manner described. The claim lacks verifiabl"
+  },
+  {
+   "id": "la-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1765,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The cited publication details lack sufficient specificity to verify authenticity. Laos's official legal documents require complete decision numbers, issuing authority names, and gazette publi"
+  },
+  {
+   "id": "la-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1668,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Laos's primary court law is the \"Law on the Organization of the People's Courts\" (2011), not a publication simply titled \"Law on the People's Court\" from 2006."
+  },
+  {
+   "id": "la-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3111,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No verifiable evidence confirms this specific document was published by the Lao Securities Commission on that date. Laos's capital market regulatory framework and publication records lack publi"
+  },
+  {
+   "id": "la-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1670,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The date \"20 May 2026\" is in the future (from any current perspective), making this a fictional or speculative document that cannot have been actually published."
+  },
+  {
+   "id": "la-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1617,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The Lao Constitution was amended in 2003, not 2006. The date provided (2006-03-20) does not align with official amendment records for the Lao PDR Constitution."
+  },
+  {
+   "id": "la-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1369,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No verifiable evidence exists of a \"Decision on Securities Business Operation Authorization of Fund Management Companies (Amended)\" published by the Lao Securities Commission Office on 2023-06-"
+  },
+  {
+   "id": "la-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1964,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This decision concerns Laos (as stated in the jurisdiction), not Indonesia. It would not be published through Indonesia's JDIHN National Legal Network, which publishes Indonesian legal docu"
+  },
+  {
+   "id": "la-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1670,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. While Laos does have a People's Court system, there is no widely documented \"Law on the People's Court\" as an official standalone legal instrument published through UNDP translations on that sp"
+  },
+  {
+   "id": "la-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1518,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Husky & Partners is a Cambodian law firm; Laos has separate legal systems and official sources. This document's provenance and authenticity cannot be verified through a Cambodian legal libr"
+  },
+  {
+   "id": "la-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1370,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The date is in the future (2026). No official legal document can have been published on a date that hasn't occurred yet. This claim is temporally impossible."
+  },
+  {
+   "id": "la-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1027,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Lao PDR's Constitution was last amended in 2003, not 2007. The March 2007 date does not correspond to an official constitutional amendment publication."
+  }
+ ]
+}

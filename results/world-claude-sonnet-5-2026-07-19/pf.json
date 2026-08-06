@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — French Polynesia — Source-Grounded Citation Reliability (PF)",
+ "country": "PF",
+ "jurisdiction": "French Polynesia",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:00:24.316827+00:00",
+ "results": [
+  {
+   "id": "pf-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2558,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated or unverifiable future-dated citation—2026 is not yet available, so JOPF publication cannot be confirmed."
+  },
+  {
+   "id": "pf-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2563,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This references a future date (2026), which cannot be verified as an actual published official document at this time."
+  },
+  {
+   "id": "pf-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2125,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated future-dated citation; I cannot verify unpublished 2026 arrêtés, so the claim is unconfirmed."
+  },
+  {
+   "id": "pf-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2918,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — the claim references a future date (16 April 2026) that has not yet occurred, making verification of actual publication impossible."
+  },
+  {
+   "id": "pf-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2240,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — the date (16 April 2026) is in the future relative to current knowledge, so this document cannot be verified as an authentic official publication."
+  },
+  {
+   "id": "pf-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2032,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this claim references a future date (16 April 2026), which cannot yet be verified as an actual published official legal source."
+  },
+  {
+   "id": "pf-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2827,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. RONLAW is Nauru's legal database; French Polynesia's official acts are published in its own Journal Officiel, not a Nauruan source."
+  },
+  {
+   "id": "pf-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2521,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Laws of Fiji publishes Fijian legislation; French Polynesia's official acts appear in Journal Officiel de la Polynésie française (Lexpol), not laws.gov.fj."
+  },
+  {
+   "id": "pf-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1642,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. French Polynesia's official legal acts are published in JOPF, not by the Republic of Marshall Islands Judiciary—an unrelated, fabricated source."
+  },
+  {
+   "id": "pf-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1710,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. French Polynesia's legal texts are published in its own official journal (JOPF), not Australia's Federal Register of Legislation, an unrelated jurisdiction's publication."
+  },
+  {
+   "id": "pf-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2822,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** French Polynesia's official legal texts are published in its own official journal (JOPF), not via the Solomon Islands Attorney General's Legislation Portal, an unrelated jurisdiction."
+  },
+  {
+   "id": "pf-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2707,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Tonga's Attorney General Legislation & Judgments publishes Tongan legal texts, not French Polynesian arrêtés, which appear in Journal Officiel de la Polynésie française."
+  }
+ ]
+}

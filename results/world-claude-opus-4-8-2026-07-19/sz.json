@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Eswatini — Source-Grounded Citation Reliability (SZ)",
+ "country": "SZ",
+ "jurisdiction": "Eswatini",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:25:25.890370+00:00",
+ "results": [
+  {
+   "id": "sz-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1936,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific directive exists; the title, number, and precise publication date appear fabricated without confirmation."
+  },
+  {
+   "id": "sz-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2236,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Income Tax Order 1975 was originally published in the official Government Gazette, not by the Eswatini Revenue Service."
+  },
+  {
+   "id": "sz-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2332,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. EswatiniLII's naming and publication timeline don't reliably confirm this; the 1998 date appears inconsistent with a 1965 Act's original publication."
+  },
+  {
+   "id": "sz-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2496,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The National Payment System vision/strategy documents typically originate from central bank payment divisions, but this specific citation appears fabricated with unverifiable details."
+  },
+  {
+   "id": "sz-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 9086,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Graded Tax Act 1968 predates the Eswatini Revenue Service (established 2011); publication attribution and date are anachronistic."
+  },
+  {
+   "id": "sz-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2997,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Eswatini's Apportionment of Damages Act dates to 1963, not 1970, and the cited publication date appears fabricated or inaccurate."
+  },
+  {
+   "id": "sz-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2344,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The jurisdiction is Eswatini, but the cited publisher is Lesotho Revenue Authority—a mismatched, wrong-country source, making the claim implausible."
+  },
+  {
+   "id": "sz-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1896,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Income Tax Order 1975 is Eswatini (Swaziland) legislation; it would not be published via Lesotho LII."
+  },
+  {
+   "id": "sz-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2059,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The publication date (1996-12-01) doesn't match a 1965 Act; EswatiniLII metadata likely misrepresents the actual commencement or gazette date."
+  },
+  {
+   "id": "sz-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1960,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The jurisdiction is Eswatini, but the source cites the Central Bank of Lesotho—a different country's institution, creating inconsistency."
+  },
+  {
+   "id": "sz-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1815,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Eswatini legislation isn't published by Zambia's Securities and Exchange Commission; that body is unrelated to Eswatini tax law."
+  },
+  {
+   "id": "sz-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1780,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Apportionment of Damages Act dates to 1970, not 1997; the cited publication date appears inaccurate or fabricated."
+  }
+ ]
+}

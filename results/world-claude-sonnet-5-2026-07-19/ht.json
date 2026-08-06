@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Haiti — Source-Grounded Citation Reliability (HT)",
+ "country": "HT",
+ "jurisdiction": "Haiti",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.6667,
+ "correct": 8,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:55:07.849741+00:00",
+ "results": [
+  {
+   "id": "ht-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3013,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific citation's accuracy; fabricated or unverifiable case numbers/details are common, so confirmation from the actual source is required."
+  },
+  {
+   "id": "ht-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2059,
+   "verdict": true,
+   "correct": true,
+   "raw": "**True** — Haiti's Ministry of Economy and Finance regularly publishes the annual Budget Général (Loi de Finances) around fiscal year start dates."
+  },
+  {
+   "id": "ht-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3219,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.**  No verified \"Décret référendaire de 2025\" exists as an authenticated official publication through such an unofficial-sounding \"Répertoire des Lois\" source in Haiti's legal framework."
+  },
+  {
+   "id": "ht-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2129,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated or unverifiable citation; the specific document title, date, and publisher combination cannot be confirmed as authentic."
+  },
+  {
+   "id": "ht-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2150,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific citation's accuracy—the exact date, content, and publication details require confirmation from the actual archival source itself."
+  },
+  {
+   "id": "ht-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2123,
+   "verdict": true,
+   "correct": true,
+   "raw": "**True**  This law establishing general rules for public procurement and public convention contracts was indeed enacted/published on June 12, 2009 in Haiti."
+  },
+  {
+   "id": "ht-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2353,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier's date, format, and reference number don't verifiably match \"RG4948-4415\"—the citation appears fabricated or inconsistent with the stated identifier string."
+  },
+  {
+   "id": "ht-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2880,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Haiti's national budget would be published in Haiti's official gazette (\"Le Moniteur\"), not through Curaçao's government legislation portal—an unrelated jurisdiction entirely."
+  },
+  {
+   "id": "ht-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1698,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Aruba's DWJZ Legislation Archive publishes Aruban legislation, not Haitian decrees; this source pairing is jurisdictionally implausible and fabricated."
+  },
+  {
+   "id": "ht-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1616,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The publication date (1976-10-12) predates the document title referencing \"8 dec 17,\" an inconsistency indicating fabricated or mismatched bibliographic metadata."
+  },
+  {
+   "id": "ht-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1646,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Le Moniteur is Haiti's official gazette, unrelated to \"Laws of Grenada.\" A Haitian publication cannot be issued via a distinct jurisdiction's separate legal series."
+  },
+  {
+   "id": "ht-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2569,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Haitian law would not be published via \"Bahamas Consolidated Legislation\" — that source pertains to the Bahamas, a distinct jurisdiction with its own legal system."
+  }
+ ]
+}

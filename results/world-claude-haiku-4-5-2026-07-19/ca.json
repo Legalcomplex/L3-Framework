@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Canada — Source-Grounded Citation Reliability (CA)",
+ "country": "CA",
+ "jurisdiction": "Canada",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:34:42.207953+00:00",
+ "results": [
+  {
+   "id": "ca-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1571,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  This decision cannot be from 2026 (future date). Additionally, A2AJ Canadian Legal Data is not a recognized official Canadian legal publisher. CanLII is the standard source."
+  },
+  {
+   "id": "ca-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2789,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. British Columbia's official legislation database is \"BC Laws,\" but the \"Administrative Tribunals Appointment and Administration Act\" is a British Columbia statute enacted in 2004, not 2003."
+  },
+  {
+   "id": "ca-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1422,
+   "verdict": false,
+   "correct": false,
+   "raw": "# Answer: **False**  The Agricultural and Rural Development Act (ARDA) was repealed in 1988 and is no longer current federal legislation. The Justice Laws Website only publishes active laws."
+  },
+  {
+   "id": "ca-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1771,
+   "verdict": true,
+   "correct": true,
+   "raw": "# Answer: **True**  The Act respecting equal access to employment in public bodies (Loi sur l'accès à l'égalité en emploi dans les organismes publics) is an official Quebec statute properly published "
+  },
+  {
+   "id": "ca-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1447,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No Supreme Court of Canada decision with this citation exists as of my knowledge cutoff (April 2024). Future dates cannot be verified as real judicial decisions."
+  },
+  {
+   "id": "ca-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1485,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The citation format \"2026 TCC 56\" references a future decision (2026) that cannot currently exist or be verified. No official decision with this identifier can be authenticated at this time"
+  },
+  {
+   "id": "ca-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1581,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** ProSlide Technology Inc. v. Whitewater West Industries Ltd. is a Supreme Court of Canada decision typically published by official sources like CanLII or the Supreme Court's website, not A2A"
+  },
+  {
+   "id": "ca-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1464,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The identifier '03047_02' in British Columbia's Official XML API does not correspond to the Administrative Tribunals Appointment and Administration Act. Verification with BC's official legi"
+  },
+  {
+   "id": "ca-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1466,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** ARDA is a Canadian federal statute (1961), not a Washington State law. Washington's legislative database would not publish Canadian legislation."
+  },
+  {
+   "id": "ca-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1103,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  An Act respecting equal access to employment in public bodies is Canadian legislation, not Californian. California Legislative Information would not publish Canadian federal or provincial s"
+  },
+  {
+   "id": "ca-src-f05",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1113,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This citation cannot be verified as accurate. The year 2026 is in the future, making it impossible to confirm this Supreme Court of Canada decision currently exists or is correctly cited."
+  },
+  {
+   "id": "ca-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1188,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.**  The case citation format and date suggest this is a Federal Court or appellate decision, not a Tax Court of Canada decision. Tax Court decisions have distinct citation formats and reportin"
+  }
+ ]
+}

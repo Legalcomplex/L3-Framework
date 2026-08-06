@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Bermuda — Source-Grounded Citation Reliability (BM)",
+ "country": "BM",
+ "jurisdiction": "Bermuda",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 11,
+ "blocked": 0,
+ "unparsed": 1,
+ "errors": [],
+ "accuracy": 0.4545,
+ "correct": 5,
+ "parse_rate": 0.9167,
+ "passed": false,
+ "timestamp": "2026-07-19T08:08:48.995230+00:00",
+ "results": [
+  {
+   "id": "bm-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2158,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026 is in the future relative to any verifiable record; this citation cannot be confirmed as authentic."
+  },
+  {
+   "id": "bm-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2136,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Bermuda Laws Online doesn't publish 1925-dated content; the title and precise publication date appear fabricated or unverifiable."
+  },
+  {
+   "id": "bm-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2480,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this identifier, case name, or date; the 2026 date is future-dated, and I have no access to confirm."
+  },
+  {
+   "id": "bm-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2018,
+   "verdict": false,
+   "correct": false,
+   "raw": "False: The date 2026 is in the future; this citation refers to a nonexistent decision and cannot be verified."
+  },
+  {
+   "id": "bm-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2466,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such Act exists in Bermuda law; the title appears fabricated, and Bermuda Laws Online postdates 1950 significantly."
+  },
+  {
+   "id": "bm-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2721,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific identifier, case, or a 2026 future-dated judgment; these details appear fabricated and unverifiable."
+  },
+  {
+   "id": "bm-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2434,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier's date component (050327) and citation year [2026] are inconsistent, and this appears to be a fabricated reference."
+  },
+  {
+   "id": "bm-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2853,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific identifier or confirm the existence of an \"Admiralty Pilots Act 1925\" in Bermuda's laws."
+  },
+  {
+   "id": "bm-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2157,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific case exists; the citation appears fabricated, and I should not confirm unverifiable bibliographic claims."
+  },
+  {
+   "id": "bm-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1561,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The citation \"SC (Bda)\" denotes Bermuda's Supreme Court, not the BVI Commercial Court, which is a different jurisdiction."
+  },
+  {
+   "id": "bm-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 3192,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Bermuda legislation is published via Bermuda's official sources, not Aruba's DWJZ archive; jurisdictional mismatch invalidates this citation."
+  },
+  {
+   "id": "bm-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1462,
+   "verdict": null,
+   "correct": false,
+   "raw": "I cannot verify this specific case citation. Without access to Bermuda court records, I cannot confirm its authenticity or existence."
+  }
+ ]
+}

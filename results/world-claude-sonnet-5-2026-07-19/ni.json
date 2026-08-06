@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Nicaragua — Source-Grounded Citation Reliability (NI)",
+ "country": "NI",
+ "jurisdiction": "Nicaragua",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:59:41.134807+00:00",
+ "results": [
+  {
+   "id": "ni-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2114,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific claim—no reliable record confirms this exact decree, date, or publication existing in Nicaragua's official Digesto Jurídico Nicaragüense."
+  },
+  {
+   "id": "ni-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2128,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific Gaceta issue number, date, and content correspondence without access to the actual archive to confirm accuracy."
+  },
+  {
+   "id": "ni-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2265,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — the described publication portal is fictional/unverifiable; official Nicaraguan legal instruments are published in La Gaceta, Diario Oficial, not \"Digesto Jurídico\" as a publication venue."
+  },
+  {
+   "id": "ni-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1993,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific Gaceta issue's exact date, number, and content against actual archival records to confirm authenticity."
+  },
+  {
+   "id": "ni-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2174,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific decree's existence, exact title, or publication date in Nicaragua's Digesto Jurídico database without direct source access."
+  },
+  {
+   "id": "ni-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2259,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific Gaceta issue number, date, and archive citation combination without access to the actual source database."
+  },
+  {
+   "id": "ni-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2748,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific decree's title, date, or publication details in Nicaragua's Digesto Jurídico without access to confirm actual records."
+  },
+  {
+   "id": "ni-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2178,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Nicaragua's official gazette isn't published by Mexico's Orden Jurídico Nacional; that platform hosts Mexican state legislation, a different country's legal repository."
+  },
+  {
+   "id": "ni-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2119,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific legal document's existence, exact date, or publication details in Nicaragua's Digesto Jurídico database with confidence."
+  },
+  {
+   "id": "ni-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1661,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Nicaragua's official gazette would not be published by Honduras's Tribunal Superior de Cuentas—a different country's institution unrelated to Nicaraguan official publications."
+  },
+  {
+   "id": "ni-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1989,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** I cannot verify this specific citation exists in Nicaragua's Digesto Jurídico Nicaragüense database; the precise decree, date, and details appear unverifiable/fabricated."
+  },
+  {
+   "id": "ni-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1515,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Nicaragua's official gazette is published by Nicaragua's government, not Honduras' Tribunal Superior de Cuentas, which is an unrelated institution."
+  }
+ ]
+}

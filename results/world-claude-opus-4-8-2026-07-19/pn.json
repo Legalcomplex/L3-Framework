@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Pitcairn Islands — Source-Grounded Citation Reliability (PN)",
+ "country": "PN",
+ "jurisdiction": "Pitcairn Islands",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 11,
+ "blocked": 0,
+ "unparsed": 1,
+ "errors": [],
+ "accuracy": 0.6364,
+ "correct": 7,
+ "parse_rate": 0.9167,
+ "passed": false,
+ "timestamp": "2026-07-19T08:22:53.807400+00:00",
+ "results": [
+  {
+   "id": "pn-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2509,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation; \"PNSC\" is not a standard Pitcairn court abbreviation, suggesting fabrication."
+  },
+  {
+   "id": "pn-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2183,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation exists; treat as unverified. PacLII hosts Pitcairn cases, but details require independent confirmation."
+  },
+  {
+   "id": "pn-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2568,
+   "verdict": true,
+   "correct": true,
+   "raw": "I cannot verify this specific citation as authentic. Without access to confirm its existence, I cannot assert True.  **False** (unverifiable)."
+  },
+  {
+   "id": "pn-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2453,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation exists; Pitcairn's tiny jurisdiction produces very few decisions, making unconfirmed claims unreliable."
+  },
+  {
+   "id": "pn-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2276,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This citation appears fabricated; I cannot verify its authenticity, and specific details like the case name likely don't exist."
+  },
+  {
+   "id": "pn-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2163,
+   "verdict": null,
+   "correct": false,
+   "raw": "I cannot verify this specific citation as authentic; treating as unverified. Plausible format, but I lack confirmation of its actual existence."
+  },
+  {
+   "id": "pn-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1990,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Pitcairn Islands cases are published by Pitcairn's own courts (e.g., PacLII), not the Federal Court of Australia."
+  },
+  {
+   "id": "pn-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2045,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Pitcairn Islands legal decisions (PNCA = Pitcairn Court of Appeal) are published by PACLII, not Nauru's RONLAW database."
+  },
+  {
+   "id": "pn-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1750,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Open Australian Legal Corpus covers Australian jurisdictions, not Pitcairn Islands; this citation's authenticity and source cannot be verified."
+  },
+  {
+   "id": "pn-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1474,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Pitcairn Islands cases (PNSC) are published by the Pitcairn Islands Supreme Court, not the Marshall Islands Judiciary."
+  },
+  {
+   "id": "pn-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 4443,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Pitcairn Islands cases (PNSC = Pitcairn Supreme Court) aren't published by Tonga's Attorney General; jurisdictions and publishing bodies mismatch."
+  },
+  {
+   "id": "pn-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1504,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Pitcairn Islands cases (PNCA = Pitcairn Court of Appeal) aren't published by the Federal Court of Australia, a separate jurisdiction."
+  }
+ ]
+}

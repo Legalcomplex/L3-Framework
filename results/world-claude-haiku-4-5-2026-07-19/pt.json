@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Portugal — Source-Grounded Citation Reliability (PT)",
+ "country": "PT",
+ "jurisdiction": "Portugal",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:43:47.498265+00:00",
+ "results": [
+  {
+   "id": "pt-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1475,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The decision reference contains inconsistencies inconsistent with Portuguese court citation standards, and the future date (2026) makes current verification impossible."
+  },
+  {
+   "id": "pt-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1380,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The date 2025-07-11 is in the future relative to the current knowledge cutoff. This claim cannot be verified as a historical publication from Portuguese Parliament Open Data."
+  },
+  {
+   "id": "pt-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1644,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The identifier format and date pattern lack verifiable confirmation in publicly available CAAD documentation. The future date (2026-03-02) for a 2025 case reference raises authenticity conc"
+  },
+  {
+   "id": "pt-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1651,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The date 2026-01-01 is in the future relative to the current date, making this a fictional or speculative decision that cannot yet exist or be officially published."
+  },
+  {
+   "id": "pt-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1466,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The case reference format is incorrect. Portuguese Supreme Court decisions use \"Acórdão STJ\" followed by a different citation structure. This format appears fabricated or malformed."
+  },
+  {
+   "id": "pt-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1616,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.**  Portuguese Court of Auditors (Tribunal de Contas) publishes audit reports and decisions, not sentencing decisions. \"Sentença\" denotes judicial court verdicts, issued by courts, not audit b"
+  },
+  {
+   "id": "pt-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1587,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The identifier notation differs in the final segment (P2 vs P1), and DGSI identifiers must match exactly to correspond to the same decision. These are distinct references."
+  },
+  {
+   "id": "pt-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1499,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The truncated title and vague reference lack sufficient specificity to verify as an authentic Portuguese Parliament document from that date without access to complete bibliographic details "
+  },
+  {
+   "id": "pt-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1136,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The identifier '733/2026-T' cannot correspond to a process numbered '733/2025-T' as they contain different year designations (2026 vs 2025), indicating distinct cases."
+  },
+  {
+   "id": "pt-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1018,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Portuguese court decisions (Acordãos) are issued by Portuguese courts, not the German Federal Finance Court (Bundesfinanzhof), which is a German institution."
+  },
+  {
+   "id": "pt-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1150,
+   "verdict": false,
+   "correct": true,
+   "raw": "# Evaluation: FALSE  The citation format and reference number structure do not conform to standard Portuguese Supreme Court (STJ) decision nomenclature and publication protocols for 2025."
+  },
+  {
+   "id": "pt-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1118,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This is a Portuguese court decision (Sentença), not Gibraltarian legislation. It should be published by Portuguese judicial authorities, not gibraltarlaws.gov.gi."
+  }
+ ]
+}

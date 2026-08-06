@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Paraguay — Source-Grounded Citation Reliability (PY)",
+ "country": "PY",
+ "jurisdiction": "Paraguay",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:23:20.959860+00:00",
+ "results": [
+  {
+   "id": "py-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2306,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Paraguayan Ley Nº 110 does not correspond to this expropriation description; the number, date, and content details appear fabricated."
+  },
+  {
+   "id": "py-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2642,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific case citation, docket number, or publication details; treat unverifiable bibliographic claims as unconfirmed."
+  },
+  {
+   "id": "py-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2042,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2023-01-01 is implausible (New Year's holiday); resolution number and details cannot be verified as authentic."
+  },
+  {
+   "id": "py-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1937,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific CONACOM decision's existence or details; fabricated case citations with precise numbers require independent confirmation."
+  },
+  {
+   "id": "py-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3279,
+   "verdict": false,
+   "correct": false,
+   "raw": "I cannot verify this specific law number, title, or publication date against authoritative Paraguayan legal databases with certainty.  False (uncertain): Cannot confirm this exact citation; unverifiab"
+  },
+  {
+   "id": "py-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2198,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The law title appears truncated/incomplete, and I cannot verify this specific law number, date, or BACN publication details."
+  },
+  {
+   "id": "py-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2429,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Ley Nº 110 in Paraguay concerns tax/fiscal matters (impuestos), not expropriation; the described content and date appear fabricated or misattributed."
+  },
+  {
+   "id": "py-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2328,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific case citation exists; the details appear fabricated and unverifiable against actual Paraguayan Supreme Court records."
+  },
+  {
+   "id": "py-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2146,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. TSJE (Tribunal Superior de Justicia Electoral) is a Paraguayan electoral body, not published by Colombia's Constitutional Court source."
+  },
+  {
+   "id": "py-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2243,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Paraguay's competition authority is CONACOM, not Chile's TDLC. Jurisdictional mismatch; the source attribution to a Chilean tribunal is incorrect."
+  },
+  {
+   "id": "py-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1794,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Paraguayan laws are published in the Gaceta Oficial, not Argentina's Central Bank regulations, which govern Argentine banking matters."
+  },
+  {
+   "id": "py-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2316,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The title is truncated/incomplete and the date appears fabricated; I cannot verify this specific law's authentic details from BACN."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Iraq — Source-Grounded Citation Reliability (IQ)",
+ "country": "IQ",
+ "jurisdiction": "Iraq",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:15:29.432643+00:00",
+ "results": [
+  {
+   "id": "iq-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2721,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Law No. 7 of 1992 establishing the Ministry of Awqaf and Islamic Affairs was Kurdistan Region legislation, but the exact date requires verification."
+  },
+  {
+   "id": "iq-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2980,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The title refers to a Council of Ministers law (yasای ئەنجومەنی وەزیران), not Parliament legislation; sources conflict, misattributing the issuing body."
+  },
+  {
+   "id": "iq-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3470,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. In 1992 the Kurdistan Region legislature was the National Assembly, not \"Parliament\"; also the specific January date appears fabricated."
+  },
+  {
+   "id": "iq-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 5877,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated citation; details are unverifiable, and the described law's title, number, and 1992 date lack reliable confirmation."
+  },
+  {
+   "id": "iq-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 4288,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. In 1992 the Kurdistan Region legislature was the Kurdistan National Assembly; the exact date and attribution appear unverified."
+  },
+  {
+   "id": "iq-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2507,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Law No. 13 of 1992 predates the Kurdistan Parliament's first session; early legislation dating and ministry naming here appear inaccurate."
+  },
+  {
+   "id": "iq-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 5257,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This is Kurdistan/Iraqi legislation (Law No. 7 of 1992, Ministry of Awqaf), unrelated to Saudi Arabia's SAMA rulebook."
+  },
+  {
+   "id": "iq-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2443,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Kurdistan Region Council of Ministers law would be published in official Kurdistan gazette, not ADGM (Abu Dhabi) framework."
+  },
+  {
+   "id": "iq-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2795,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This is Kurdistan Regional (Iraq) legislation, published in the official Kurdistan gazette—not DIFC, which governs Dubai's financial center."
+  },
+  {
+   "id": "iq-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2091,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Iraqi Kurdish legislation would not be published through Israel's Knesset Data source; jurisdictions and legislative bodies are incompatible and fabricated."
+  },
+  {
+   "id": "iq-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 3341,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Iraq's legislation is published in its own Official Gazette (al-Waqa'i al-Iraqiyya), not Jordan's Legislation Bureau, especially Kurdistan Region laws."
+  },
+  {
+   "id": "iq-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2058,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Kurdistan Region laws are published in the region's official gazette, not ADGM (Abu Dhabi Global Market), a UAE jurisdiction."
+  }
+ ]
+}

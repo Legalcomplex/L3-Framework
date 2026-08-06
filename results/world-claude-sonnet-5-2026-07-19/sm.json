@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — San Marino — Source-Grounded Citation Reliability (SM)",
+ "country": "SM",
+ "jurisdiction": "San Marino",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:02:37.706196+00:00",
+ "results": [
+  {
+   "id": "sm-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2812,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This claim references a future-dated document (2026), which cannot be verified as an existing official publication at this time."
+  },
+  {
+   "id": "sm-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2054,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This is a generic enactment formula used in many San Marino laws, not a verifiable, specific citation identifying an actual singular official document."
+  },
+  {
+   "id": "sm-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2072,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This identifier format and future-dated law cannot be verified; San Marino's official bulletin uses different referencing, and this appears fabricated/unconfirmed."
+  },
+  {
+   "id": "sm-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2065,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this citation cannot be verified; it references a future/non-existent date and appears to be a fabricated or unconfirmed regulatory instrument."
+  },
+  {
+   "id": "sm-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3037,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this appears to be a fabricated/unverifiable citation; I cannot confirm San Marino issued this specific law on that date."
+  },
+  {
+   "id": "sm-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3813,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific citation's accuracy—law numbers, dates, and titles from San Marino's official gazette require direct source confirmation, not assumption."
+  },
+  {
+   "id": "sm-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2281,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier format described is not a genuine, verifiable San Marino Bollettino Ufficiale reference, and the future date (2026) cannot be authenticated as existing."
+  },
+  {
+   "id": "sm-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2287,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This phrase is standard preamble boilerplate found in many San Marino laws/decrees, not a specific identifiable citation verifiable to that exact date and source."
+  },
+  {
+   "id": "sm-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1695,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier format does not correspond to San Marino's official legislation numbering, and the date is future/unverifiable against actual records."
+  },
+  {
+   "id": "sm-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2468,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** San Marino regulations are published via San Marino's official gazette/institutional sources, not Jersey Legal Information Board, an unrelated foreign jurisdiction's platform."
+  },
+  {
+   "id": "sm-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1707,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Fedlex publishes Swiss federal law, not San Marino legislation; San Marino laws appear on Consiglio Grande e Generale/official gazette sources, not Switzerland's Fedlex."
+  },
+  {
+   "id": "sm-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1611,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. RIS (Rechtsinformationssystem) is Austria's legal information system, not San Marino's; it would not publish San Marino's laws."
+  }
+ ]
+}

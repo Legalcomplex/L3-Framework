@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Kazakhstan — Source-Grounded Citation Reliability (KZ)",
+ "country": "KZ",
+ "jurisdiction": "Kazakhstan",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:17:00.535364+00:00",
+ "results": [
+  {
+   "id": "kz-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2320,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date is implausible—December 2025 decision amended by March 2026 publication involves future dates beyond current verification capability."
+  },
+  {
+   "id": "kz-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1976,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date (2026-04-30) is in the future, making it impossible for this decision to have been published yet."
+  },
+  {
+   "id": "kz-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1969,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date (2026) is in the future, making this claim impossible to verify as a genuine published decision."
+  },
+  {
+   "id": "kz-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2686,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This concerns raw cane sugar import regulations, a governmental/customs matter, not National Bank monetary policy; date is also implausibly future."
+  },
+  {
+   "id": "kz-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2619,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The referenced base decision dated 2025-12-18 cannot be amended before publication date 2026-03-18 plausibly, but dates appear fabricated/future."
+  },
+  {
+   "id": "kz-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2472,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The 2026 date is future-dated relative to verifiable records, and I cannot confirm this specific identifier's authenticity."
+  },
+  {
+   "id": "kz-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2473,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Lex.uz is Uzbekistan's legal database; Kazakhstan's official source is Adilet (adilet.zan.kz), so this attribution is incorrect."
+  },
+  {
+   "id": "kz-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2309,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The dual-identifier format and 2026 date are inconsistent and implausible; this citation appears fabricated, not a genuine AIFC Court record."
+  },
+  {
+   "id": "kz-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1903,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Kazakhstan's Constitutional Court began operating January 2023, but this specific citation cannot be verified as accurately attributed without confirmation."
+  },
+  {
+   "id": "kz-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1799,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Sugar import regulations fall under government/EEC decrees, not National Bank Regulations, which govern monetary and financial matters exclusively."
+  },
+  {
+   "id": "kz-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2280,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Lex.uz is Uzbekistan's legal database; Kazakhstan's official source is Adilet (adilet.zan.kz). A Kazakh maslikhat decision wouldn't appear there."
+  },
+  {
+   "id": "kz-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 3099,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The 2026 date is future-dated and this specific case identifier and party details cannot be verified as authentic."
+  }
+ ]
+}

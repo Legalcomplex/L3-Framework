@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Malawi — Source-Grounded Citation Reliability (MW)",
+ "country": "MW",
+ "jurisdiction": "Malawi",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.4167,
+ "correct": 5,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:19:48.994820+00:00",
+ "results": [
+  {
+   "id": "mw-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2109,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific decision's existence, date, or publication details; asserting its accuracy risks confirming fabricated bibliographic information."
+  },
+  {
+   "id": "mw-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2464,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Malawi's tax on accommodation falls under the Taxation Act; no standalone \"Accommodation and Refreshment Tax Act\" with that date exists."
+  },
+  {
+   "id": "mw-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1920,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific directive's existence, exact title, or publication date without access to authoritative Reserve Bank of Malawi records."
+  },
+  {
+   "id": "mw-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2468,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-01-01 is in the future, making this citation implausible and unverifiable as a genuine published decision."
+  },
+  {
+   "id": "mw-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2358,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such Act exists in Malawi; pardons are governed by constitutional provisions (Section 89-90), not a dedicated MalawiLII-published statute."
+  },
+  {
+   "id": "mw-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2843,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific document exists with these exact details; the citation appears fabricated and requires independent verification."
+  },
+  {
+   "id": "mw-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2281,
+   "verdict": true,
+   "correct": false,
+   "raw": "I cannot verify this specific citation as True. Without access to Malawi Judiciary records confirming this exact case, ruling, and date, I cannot confirm authenticity."
+  },
+  {
+   "id": "mw-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2012,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Act is Malawian legislation; attributing it to Tanzania's Attorney General's Office contradicts the stated Malawi jurisdiction."
+  },
+  {
+   "id": "mw-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1638,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Malawi banking directives are issued by the Reserve Bank of Malawi, not published in Seychelles' Official Gazette."
+  },
+  {
+   "id": "mw-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2057,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The date \"2024-01-01\" appears as a placeholder default, not a genuine judgment date, casting doubt on citation authenticity."
+  },
+  {
+   "id": "mw-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2172,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No such Act exists in Malawi; pardons fall under the Constitution's Advisory Committee on Granting of Pardon, not standalone legislation."
+  },
+  {
+   "id": "mw-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1583,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The 2026 publication date postdates a 2024 guideline title implausibly; this citation appears fabricated and cannot be verified."
+  }
+ ]
+}

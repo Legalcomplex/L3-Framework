@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Palestine — Source-Grounded Citation Reliability (PS)",
+ "country": "PS",
+ "jurisdiction": "Palestine",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:23:03.970864+00:00",
+ "results": [
+  {
+   "id": "ps-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2112,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-03-23 is in the future relative to case number 4/2025, making this citation chronologically impossible and fabricated."
+  },
+  {
+   "id": "ps-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2435,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. This is an interpretive decision by the Palestinian Supreme Constitutional Court, which issues constitutional interpretations (تفسير) as part of its jurisdiction."
+  },
+  {
+   "id": "ps-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1918,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The State of Emergency declaration was Decree No. 1 of 2020, issued March 2020, not Decree No. 9."
+  },
+  {
+   "id": "ps-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 6041,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-04-13 is in the future relative to a 2025 case number, making this citation implausible and fabricated."
+  },
+  {
+   "id": "ps-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2609,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The case numbering is inconsistent—\"2022/1\" paired with \"year 7 judicial\" and vague date \"2022-01-01\" suggests fabricated citation."
+  },
+  {
+   "id": "ps-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3042,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Palestinian cybercrime law is Decree-Law No. 10 of 2018; no verified Decree No. 28 of 2020 amendment exists."
+  },
+  {
+   "id": "ps-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2532,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Palestinian Constitutional Court decisions aren't published by Saudi Commercial Court Judgments; jurisdictional mismatch, plus implausible future 2026 date."
+  },
+  {
+   "id": "ps-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2573,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This is an Arabic Palestinian judicial interpretation decision; ADGM (Abu Dhabi Global Market) Courts operate in English, UAE."
+  },
+  {
+   "id": "ps-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1944,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. A 2020 decree cannot be published on 2018-07-14; the publication date predates the decree by two years."
+  },
+  {
+   "id": "ps-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2142,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Palestinian cassation court decisions aren't published by DIFC Courts, which serves Dubai. Also, the 2026 date is impossible."
+  },
+  {
+   "id": "ps-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2761,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The case citation is Palestinian (قضية قضائية format), not Saudi; a Saudi Commercial Court source cannot publish Palestinian judgments."
+  },
+  {
+   "id": "ps-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1616,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Palestine's cybercrime law is Decree No. 10 of 2018; the cited No. 28 of 2020 amendment appears fabricated."
+  }
+ ]
+}

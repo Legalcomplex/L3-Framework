@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Guernsey — Source-Grounded Citation Reliability (GG)",
+ "country": "GG",
+ "jurisdiction": "Guernsey",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:37:33.509885+00:00",
+ "results": [
+  {
+   "id": "gg-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1986,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** CICRA was dissolved in 2021; its functions transferred to separate GCRA and JCRA. A 2026 publication date is also implausibly future. The reference appears fabricated."
+  },
+  {
+   "id": "gg-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2725,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The date 2025-12-03 is in the future (December 3, 2025). No official legal source can be published on a date that has not yet occurred. This is chronologically impossible."
+  },
+  {
+   "id": "gg-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 3133,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** CICRA's P-003 identifier does not correspond to this title. P-series identifiers in CICRA collections typically designate different regulatory documents, and this 2025 publication date cann"
+  },
+  {
+   "id": "gg-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1750,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  CICRA was dissolved in 2021; its functions transferred to separate Guernsey and Jersey regulators. No decision could be published under a defunct authority in 2026."
+  },
+  {
+   "id": "gg-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2005,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. CICRA ceased to exist in 2011 when GCRA and JCRA became separate independent authorities. The claim's 2026 date and CICRA reference are both implausible."
+  },
+  {
+   "id": "gg-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1689,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2025-12-15 is in the future, making this claim impossible to verify as a current official legal source document."
+  },
+  {
+   "id": "gg-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 4413,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** CICRA is a joint authority comprising GCRA (Guernsey) and JCRA (Jersey). M1731G would be a GCRA-specific decision, not jointly published by CICRA."
+  },
+  {
+   "id": "gg-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1709,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. CICRA comprises the Guernsey Competition and Regulatory Authority (GCRA) and Jersey Competition Regulatory Authority (JCRA) separately; they don't jointly publish individual decisions under uni"
+  },
+  {
+   "id": "gg-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1140,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  CICRA's P-004 identifier cannot be verified as corresponding to this specific 2025 document title through accessible official Guernsey legal databases or CICRA's published regulatory collec"
+  },
+  {
+   "id": "gg-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1404,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  RIS is Austria's official legal database. Guernsey legal sources are published through Guernsey's own official channels, not the Austrian system."
+  },
+  {
+   "id": "gg-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1101,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  \"T1699G - Broadband Retail Market Review\" is a regulatory document, not a judgment. Isle of Man Judgments Online publishes court decisions, not telecom market reviews."
+  },
+  {
+   "id": "gg-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1495,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  I cannot verify this specific CICRA case identifier and details. CICRA's official documentation would be required to confirm whether case C-088 matches this description and date."
+  }
+ ]
+}

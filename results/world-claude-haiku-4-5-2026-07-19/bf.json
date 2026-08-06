@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Burkina Faso — Source-Grounded Citation Reliability (BF)",
+ "country": "BF",
+ "jurisdiction": "Burkina Faso",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.6667,
+ "correct": 8,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:33:45.755891+00:00",
+ "results": [
+  {
+   "id": "bf-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1869,
+   "verdict": true,
+   "correct": true,
+   "raw": "# Answer: **True**  The citation format matches Burkina Faso's Court of Cassation decisions. Juricaf is a recognized database for African court decisions, including Burkinabé courts."
+  },
+  {
+   "id": "bf-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1579,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.**   Burkina Faso experienced a military coup in September 2023, dissolving the National Assembly. No legitimate legislative activity occurred on this date under constitutional processes."
+  },
+  {
+   "id": "bf-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1659,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The identifier format appears inconsistent with standard Juricaf conventions. The claim lacks verifiable confirmation from official Burkina Faso Court of Cassation databases or Juricaf reco"
+  },
+  {
+   "id": "bf-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1761,
+   "verdict": true,
+   "correct": true,
+   "raw": "**True.** This citation format matches official Burkinabè legislative publications. The \"Loi n°044-2023/ALT\" designation and Assemblée Nationale source are authentic institutional references for Burki"
+  },
+  {
+   "id": "bf-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2112,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Juricaf is a non-governmental database of African court decisions, not an official publisher. Official publications come from Burkina Faso's government institutions directly."
+  },
+  {
+   "id": "bf-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1621,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The citation format contains an error. Burkina Faso legislative acts use \"ALT\" (Assemblée Législative de Transition) only during transitional periods, not standard legislative procedures th"
+  },
+  {
+   "id": "bf-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1957,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The identifier format '242024' suggests a 2024 decision, contradicting the claimed 2023-06-01 date. The numbering sequence appears inconsistent with the stated year."
+  },
+  {
+   "id": "bf-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1549,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This law is Burkinabé legislation (indicated by \"n°046-2024/ALT\"), not Nigerian. The Nigerian National Pension Commission would not publish Burkina Faso's national laws."
+  },
+  {
+   "id": "bf-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1053,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The identifier ends in '034' but the cited decision number is '033'. The numeric suffixes do not match, indicating a discrepancy in the bibliographic reference."
+  },
+  {
+   "id": "bf-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2414,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  ARTP (Autorité de Régulation de la Télécommunications) is Senegal's telecom regulator. A Burkina Faso budget law would not be published through Senegalese telecom regulatory documents."
+  },
+  {
+   "id": "bf-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1106,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  A Burkina Faso Court of Cassation decision cannot be published by Liberia's Supreme Court. These are distinct countries with separate judiciaries. The source attribution is incorrect."
+  },
+  {
+   "id": "bf-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1400,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Burkina Faso laws are published through its official gazette (Journal Officiel du Burkina Faso), not Mauritania's legal codes. MSGG is Mauritania's publication authority, not Burkina Faso's"
+  }
+ ]
+}

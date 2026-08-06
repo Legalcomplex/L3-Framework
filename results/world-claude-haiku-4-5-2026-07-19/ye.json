@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Yemen — Source-Grounded Citation Reliability (YE)",
+ "country": "YE",
+ "jurisdiction": "Yemen",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:47:34.648744+00:00",
+ "results": [
+  {
+   "id": "ye-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1664,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The title translates to \"Additional Requirements from External Auditors.\" While plausible as Central Bank guidance, this specific document and publication date cannot be verified as an offi"
+  },
+  {
+   "id": "ye-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1818,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The citation format is inconsistent. A \"قرار جمهوري بالقانون\" (Presidential Decree-Law) should have a single number designation, not dual numbering (32/1991), suggesting potential citation "
+  },
+  {
+   "id": "ye-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2380,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Yemen's legislative institutions have been fragmented since 2015 due to civil conflict. No unified \"House of Representatives Legislative Encyclopedia\" maintained reliable official publicati"
+  },
+  {
+   "id": "ye-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1393,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Central Bank of Yemen has not published official circulars or financial laws since 2015 due to Yemen's ongoing civil conflict and institutional collapse."
+  },
+  {
+   "id": "ye-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3279,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Yemen's political instability since 2015 makes verifying this specific official database publication claim impossible. The cited date and source cannot be reliably confirmed through accessi"
+  },
+  {
+   "id": "ye-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1585,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This claim cannot be verified as accurate. Yemen's legislative institutions have faced severe disruption since 2015, making systematic publication records unreliable during this period."
+  },
+  {
+   "id": "ye-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2084,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This title refers to \"Additional Requirements from External Auditors,\" which is standard banking regulatory content. However, I cannot verify this specific document was published by Yemen's"
+  },
+  {
+   "id": "ye-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1612,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  DIFC (Dubai International Financial Centre) is a UAE jurisdiction. This Yemeni commercial law decree would not be published through DIFC's legal database as its official source."
+  },
+  {
+   "id": "ye-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1958,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The title describes a tax law, but Yemen's legislative output during 2017 was severely disrupted due to ongoing civil conflict, making official publication verification through institutional "
+  },
+  {
+   "id": "ye-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1450,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This appears to be an Arabic financial/banking term about related-party lending. SAMA publishes regulatory documents, but this specific title and publication cannot be verified as an offici"
+  },
+  {
+   "id": "ye-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1767,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This is a Yemeni presidential decree regarding state property law. Yemen would not publish its legislation through Jordan's Legislation & Opinion Bureau. The jurisdiction mismatch makes thi"
+  },
+  {
+   "id": "ye-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1723,
+   "verdict": false,
+   "correct": true,
+   "raw": "# Evaluation: Unable to Verify  **Answer: False**  **Explanation:** Yemen's political instability since 2015 and fragmented governance make verification of this specific legislative source claim impos"
+  }
+ ]
+}

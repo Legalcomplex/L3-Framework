@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Iceland — Source-Grounded Citation Reliability (IS)",
+ "country": "IS",
+ "jurisdiction": "Iceland",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:39:05.864113+00:00",
+ "results": [
+  {
+   "id": "is-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 5681,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The citation format is incorrect. Icelandic legislation uses \"2008:88\" (with colon), not \"2008 nr. 88.\" The date format also appears non-standard for official legislative citations."
+  },
+  {
+   "id": "is-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1825,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The publication date of 2026-03-17 is in the future, making this claim impossible. Official regulations cannot be published on dates that have not yet occurred."
+  },
+  {
+   "id": "is-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1424,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific case identifier and parties from Icelandic Supreme Court records with sufficient certainty to confirm the claim's accuracy."
+  },
+  {
+   "id": "is-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1429,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Yfirskattanefnd (Tax Appeals Board) publishes decisions as \"Ákvörðun,\" not \"Úrskurður.\" Úrskurður denotes Supreme Court rulings, not tax appeals."
+  },
+  {
+   "id": "is-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2433,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  This citation is incomplete and incorrectly formatted. Icelandic legislation citations require the year, number, and date published in the Official Gazette (*Stjórnartídindi*), not Lagasafn's"
+  },
+  {
+   "id": "is-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1439,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  This regulation cannot have been published on 2026-03-24 as that date is in the future. The claim contains an impossible publication date."
+  },
+  {
+   "id": "is-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1585,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The citation format and date appear inconsistent with Lagasafn's standard publication practices. The future date (2026-09-01) is implausible for a 2008 legislation entry."
+  },
+  {
+   "id": "is-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1659,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  This regulation title concerns livestock transport across quarantine lines, but cannot be verified as published on 2024-03-17 through Iceland's official Regulations Collection without access "
+  },
+  {
+   "id": "is-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1312,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The case identifier appears inconsistent—the citation '44/2024' suggests a 2024 case number, but the referenced case shows '44/2023', indicating a different year designation."
+  },
+  {
+   "id": "is-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2114,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The citation format \"Úrskurður nr. 28/2026\" uses Icelandic terminology (\"Úrskurður\" = ruling). This indicates an Icelandic court decision, not a Norwegian Supreme Court decision."
+  },
+  {
+   "id": "is-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1626,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This law is Icelandic legislation (indicated by \"Lög um loftferðir\" - Icelandic title), not Greenlandic. Nalunaarutit publishes Greenlandic laws exclusively."
+  },
+  {
+   "id": "is-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1117,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The citation format appears incomplete and unverifiable. Icelandic regulations require specific regulation numbers (e.g., 123/2024) and proper official publication details that are absent h"
+  }
+ ]
+}

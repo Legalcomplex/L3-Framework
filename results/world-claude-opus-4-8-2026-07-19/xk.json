@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Kosovo — Source-Grounded Citation Reliability (XK)",
+ "country": "XK",
+ "jurisdiction": "Kosovo",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:28:18.927607+00:00",
+ "results": [
+  {
+   "id": "xk-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2153,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-02-27 is in the future, making this citation impossible to verify as a genuine published decision."
+  },
+  {
+   "id": "xk-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2250,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Law No. 02/L-68 on Protection from Natural and Other Disasters dates from 2006, not 2008; details are inconsistent."
+  },
+  {
+   "id": "xk-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2147,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. \"Rregullore RLlB 1 1\" appears malformed/fabricated; I cannot verify this specific regulation, title, or publication date exists authentically."
+  },
+  {
+   "id": "xk-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2047,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific decision's existence; the case number, dates, and details appear fabricated and unverifiable against actual records."
+  },
+  {
+   "id": "xk-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2521,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Law No. 02/L-30 on Waste was adopted in 2006 under UNMIK administration, not published April 2008."
+  },
+  {
+   "id": "xk-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2328,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific regulation's exact title, publication date, or source; details appear fabricated without confirmation."
+  },
+  {
+   "id": "xk-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2815,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The case identifier KI269/25 and future date (2026) cannot be verified; I cannot confirm this specific citation's accuracy."
+  },
+  {
+   "id": "xk-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2042,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Law No. 02/L-68 on Protection from Natural and Other Disasters was adopted around 2006-2007, not published May 2010."
+  },
+  {
+   "id": "xk-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1916,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This citation appears fabricated; \"RLB 11\" format and specific future date (2025-11-01) cannot be verified as authentic."
+  },
+  {
+   "id": "xk-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2350,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier KI185/26 and 2026 date are implausibly future-dated; I cannot verify this case exists, likely fabricated."
+  },
+  {
+   "id": "xk-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1618,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Kosovo laws are published in the Official Gazette of Kosovo, not the Czech e-Sbírka Collection of Laws."
+  },
+  {
+   "id": "xk-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1617,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This is a Kosovo Central Bank regulation in Albanian; it would not be published via Turkey's Mevzuat system."
+  }
+ ]
+}

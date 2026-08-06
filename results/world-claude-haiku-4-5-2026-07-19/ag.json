@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Antigua and Barbuda — Source-Grounded Citation Reliability (AG)",
+ "country": "AG",
+ "jurisdiction": "Antigua and Barbuda",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:32:36.021257+00:00",
+ "results": [
+  {
+   "id": "ag-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1531,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The date \"12th May, 2026\" is in the future relative to the knowledge cutoff (April 2024), making verification impossible. Future publication dates cannot be authenticated."
+  },
+  {
+   "id": "ag-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1825,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Law Revision (Miscellaneous) (Amendments) (No. 3) Act 2000 is a legitimate statute, but attribution to \"ONDCP AML/CFT Regulatory Library\" as publisher is unverifiable and likely inaccur"
+  },
+  {
+   "id": "ag-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1802,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  This date is in the future (May 2026). As of my knowledge cutoff in April 2024, this publication cannot have occurred yet, making the claim impossible to verify."
+  },
+  {
+   "id": "ag-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1743,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The claim conflates distinct entities. ONDCP (Office of National Drug Control Policy) is a US agency, not an Antigua and Barbuda official publisher of that nation's legislation."
+  },
+  {
+   "id": "ag-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1644,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The publication date (2026-04-29) is in the future relative to the gazette issue date (23rd April, 2026), creating a logical inconsistency in the bibliographic claim."
+  },
+  {
+   "id": "ag-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1516,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The publication date (2009-01-01) predates the Act's number designation (No. 11 of 2009), which is internally inconsistent. Official acts are typically published after formal enactment."
+  },
+  {
+   "id": "ag-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1758,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The document's reference to \"No. 30-Extraordinary\" and date of May 12, 2026, indicates Cayman Islands legislation, not Antigua and Barbuda legislation, making the jurisdictional claim incor"
+  },
+  {
+   "id": "ag-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1442,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The cited legislation is from Antigua and Barbuda, not the Bahamas. The Bahamas Consolidated Legislation would not be the official publisher of Antigua and Barbuda laws."
+  },
+  {
+   "id": "ag-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1316,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The document references a future date (May 21, 2026) and cites Curaçao legislation as the source, not Antigua and Barbuda's official legal publications, creating jurisdictional and temporal"
+  },
+  {
+   "id": "ag-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1007,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The act belongs to Antigua and Barbuda's laws, not Grenada's. The jurisdiction stated in the question contradicts the claimed publication source."
+  },
+  {
+   "id": "ag-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1930,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The document cites Saint Lucia's Official Gazette, not Antigua and Barbuda's. The jurisdictions are distinct and separate Caribbean nations with separate legal systems."
+  },
+  {
+   "id": "ag-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2255,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Sint Maarten is a separate jurisdiction from Antigua and Barbuda. Antigua and Barbuda legislation would be published through Antigua and Barbuda's official government sources, not Sint Maar"
+  }
+ ]
+}

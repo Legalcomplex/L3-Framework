@@ -1,0 +1,1429 @@
+{
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "packs": 227,
+ "packs_passed": 206,
+ "items": 2716,
+ "parsed": 2691,
+ "blocked": 0,
+ "accuracy": 0.5262,
+ "by_expected": {
+  "False": {
+   "n": 1349,
+   "accuracy": 0.9763
+  },
+  "True": {
+   "n": 1342,
+   "accuracy": 0.0738
+  }
+ },
+ "by_mutation": {
+  "None": {
+   "n": 1342,
+   "accuracy": 0.0738
+  },
+  "date-shift": {
+   "n": 399,
+   "accuracy": 0.9248
+  },
+  "id-mutation": {
+   "n": 232,
+   "accuracy": 0.9914
+  },
+  "wrong-source": {
+   "n": 718,
+   "accuracy": 1.0
+  }
+ },
+ "by_shape": {
+  "S1-published-via": {
+   "n": 1532,
+   "accuracy": 0.5176
+  },
+  "S2-decision": {
+   "n": 781,
+   "accuracy": 0.4968
+  },
+  "S3-identifier": {
+   "n": 378,
+   "accuracy": 0.6217
+  }
+ },
+ "verdict_distribution": {
+  "False": 2560,
+  "True": 131,
+  "None": 25
+ },
+ "usage": {
+  "in": 357203,
+  "out": 137932,
+  "calls": 2716
+ },
+ "timestamp": "2026-07-19T08:28:42.589760+00:00",
+ "wall_seconds": 1333.6,
+ "per_pack": {
+  "AD": {
+   "accuracy": 0.6667,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "AE": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "AG": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "AI": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "AL": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "AM": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "AO": {
+   "accuracy": 0.5833,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "AR": {
+   "accuracy": 0.5833,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "AS": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 6,
+   "blocked": 0
+  },
+  "AT": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "AU": {
+   "accuracy": 0.75,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "AW": {
+   "accuracy": 0.8333,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "AX": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "AZ": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "BA": {
+   "accuracy": 0.6364,
+   "passed": false,
+   "items": 12,
+   "blocked": 0
+  },
+  "BB": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "BD": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "BE": {
+   "accuracy": 0.5833,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "BF": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "BG": {
+   "accuracy": 0.4167,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "BH": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "BI": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "BJ": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "BL": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "BM": {
+   "accuracy": 0.4545,
+   "passed": false,
+   "items": 12,
+   "blocked": 0
+  },
+  "BN": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "BO": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "BQ": {
+   "accuracy": 0.6667,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "BR": {
+   "accuracy": 0.4167,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "BS": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "BT": {
+   "accuracy": 0.5833,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "BW": {
+   "accuracy": 0.5833,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "BZ": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "CA": {
+   "accuracy": 0.4167,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "CD": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "CF": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "CG": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "CH": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "CI": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "CK": {
+   "accuracy": 0.5455,
+   "passed": false,
+   "items": 12,
+   "blocked": 0
+  },
+  "CL": {
+   "accuracy": 0.4167,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "CM": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "CN": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "CO": {
+   "accuracy": 0.6364,
+   "passed": false,
+   "items": 12,
+   "blocked": 0
+  },
+  "COE": {
+   "accuracy": 0.75,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "CR": {
+   "accuracy": 0.5455,
+   "passed": false,
+   "items": 12,
+   "blocked": 0
+  },
+  "CU": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "CV": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "CW": {
+   "accuracy": 0.4167,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "CY": {
+   "accuracy": 0.5833,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "CZ": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "DE": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "DJ": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "DK": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "DM": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "DO": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "DZ": {
+   "accuracy": 0.6667,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "EC": {
+   "accuracy": 0.5455,
+   "passed": false,
+   "items": 12,
+   "blocked": 0
+  },
+  "EE": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "EG": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "ER": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "ES": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "ET": {
+   "accuracy": 0.4545,
+   "passed": false,
+   "items": 12,
+   "blocked": 0
+  },
+  "EU": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "FI": {
+   "accuracy": 0.6667,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "FJ": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "FK": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "FM": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 10,
+   "blocked": 0
+  },
+  "FO": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "FR": {
+   "accuracy": 0.5833,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "GA": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "GD": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "GE": {
+   "accuracy": 0.5,
+   "passed": false,
+   "items": 12,
+   "blocked": 0
+  },
+  "GG": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "GH": {
+   "accuracy": 0.6667,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "GI": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "GL": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "GM": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "GN": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "GQ": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "GR": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "GT": {
+   "accuracy": 0.4545,
+   "passed": false,
+   "items": 12,
+   "blocked": 0
+  },
+  "GU": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "GW": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "GY": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "HK": {
+   "accuracy": 0.5833,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "HN": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "HR": {
+   "accuracy": 0.4167,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "HT": {
+   "accuracy": 0.5833,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "HU": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "ID": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "IE": {
+   "accuracy": 0.5833,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "IL": {
+   "accuracy": 0.6667,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "IM": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "IN": {
+   "accuracy": 0.5833,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "INTL": {
+   "accuracy": 0.5833,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "IQ": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "IR": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "IS": {
+   "accuracy": 0.6667,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "IT": {
+   "accuracy": 0.5833,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "JE": {
+   "accuracy": 0.6667,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "JM": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "JO": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "JP": {
+   "accuracy": 0.6667,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "KE": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "KG": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "KH": {
+   "accuracy": 0.5833,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "KI": {
+   "accuracy": 0.8182,
+   "passed": false,
+   "items": 12,
+   "blocked": 0
+  },
+  "KM": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "KN": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "KR": {
+   "accuracy": 0.6,
+   "passed": false,
+   "items": 12,
+   "blocked": 0
+  },
+  "KY": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "KZ": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "LA": {
+   "accuracy": 0.5833,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "LB": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "LC": {
+   "accuracy": 0.5833,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "LI": {
+   "accuracy": 0.6667,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "LK": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "LR": {
+   "accuracy": 0.5833,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "LS": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "LT": {
+   "accuracy": 0.5833,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "LU": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "LV": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "LY": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "MA": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "MC": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "MD": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "ME": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "MF": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "MG": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "MH": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "MK": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "ML": {
+   "accuracy": 0.5833,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "MM": {
+   "accuracy": 0.4167,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "MN": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "MO": {
+   "accuracy": 0.4167,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "MR": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "MS": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "MT": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "MU": {
+   "accuracy": 0.4167,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "MV": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "MW": {
+   "accuracy": 0.4167,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "MX": {
+   "accuracy": 0.5833,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "MZ": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "NA": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "NE": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "NG": {
+   "accuracy": 0.5833,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "NI": {
+   "accuracy": 0.5833,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "NL": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "NO": {
+   "accuracy": 0.5455,
+   "passed": false,
+   "items": 12,
+   "blocked": 0
+  },
+  "NR": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "NU": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "NZ": {
+   "accuracy": 0.4167,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "OM": {
+   "accuracy": 0.5833,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "PA": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "PE": {
+   "accuracy": 0.5833,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "PF": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "PG": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "PH": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "PK": {
+   "accuracy": 0.5833,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "PL": {
+   "accuracy": 0.6667,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "PM": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "PN": {
+   "accuracy": 0.6364,
+   "passed": false,
+   "items": 12,
+   "blocked": 0
+  },
+  "PR": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "PS": {
+   "accuracy": 0.5833,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "PT": {
+   "accuracy": 0.4167,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "PW": {
+   "accuracy": 0.5455,
+   "passed": false,
+   "items": 12,
+   "blocked": 0
+  },
+  "PY": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "QA": {
+   "accuracy": 0.6364,
+   "passed": false,
+   "items": 12,
+   "blocked": 0
+  },
+  "RO": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "RS": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "RU": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "RW": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "SA": {
+   "accuracy": 0.5833,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "SB": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "SC": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "SD": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "SE": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "SG": {
+   "accuracy": 0.4167,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "SH": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "SI": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "SK": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "SL": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "SM": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "SN": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "SO": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "SR": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "SS": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "SV": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "SX": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "SY": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "SZ": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "TC": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "TD": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "TG": {
+   "accuracy": 0.5833,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "TH": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "TJ": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "TL": {
+   "accuracy": 0.4167,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "TM": {
+   "accuracy": 0.5833,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "TN": {
+   "accuracy": 0.5455,
+   "passed": false,
+   "items": 12,
+   "blocked": 0
+  },
+  "TO": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "TR": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "TT": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "TV": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "TW": {
+   "accuracy": 0.6667,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "TZ": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "UA": {
+   "accuracy": 0.4167,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "UG": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "UK": {
+   "accuracy": 0.5455,
+   "passed": false,
+   "items": 12,
+   "blocked": 0
+  },
+  "UN": {
+   "accuracy": 0.75,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "US": {
+   "accuracy": 0.5833,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "UY": {
+   "accuracy": 0.5455,
+   "passed": false,
+   "items": 12,
+   "blocked": 0
+  },
+  "UZ": {
+   "accuracy": 0.5833,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "VA": {
+   "accuracy": 0.6667,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "VC": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "VE": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "VG": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "VI": {
+   "accuracy": 0.4545,
+   "passed": false,
+   "items": 12,
+   "blocked": 0
+  },
+  "VN": {
+   "accuracy": 0.5833,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "VU": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "WF": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "WS": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "XK": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "YE": {
+   "accuracy": 0.5455,
+   "passed": false,
+   "items": 12,
+   "blocked": 0
+  },
+  "ZA": {
+   "accuracy": 0.5556,
+   "passed": false,
+   "items": 12,
+   "blocked": 0
+  },
+  "ZM": {
+   "accuracy": 0.5833,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  },
+  "ZW": {
+   "accuracy": 0.5,
+   "passed": true,
+   "items": 12,
+   "blocked": 0
+  }
+ }
+}

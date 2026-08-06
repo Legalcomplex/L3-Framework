@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Curaçao — Source-Grounded Citation Reliability (CW)",
+ "country": "CW",
+ "jurisdiction": "Curaçao",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:52:01.385045+00:00",
+ "results": [
+  {
+   "id": "cw-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1957,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated or unverifiable citation; I cannot confirm this specific \"Aanschrijving\" regarding BBO exists in official Curaçao publications with that date."
+  },
+  {
+   "id": "cw-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1862,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This ECLI cites a future 2026 decision date that cannot yet exist or be verified as an actual published court ruling."
+  },
+  {
+   "id": "cw-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2425,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. CVDR (Centrale Voorziening Decentrale Regelgeving) identifiers are Dutch municipal/provincial registry codes, not applicable to Curaçao's separate legal publication system."
+  },
+  {
+   "id": "cw-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2007,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific ECLI citation exists; fabricated case numbers/details are common, and I lack real-time database access to confirm."
+  },
+  {
+   "id": "cw-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2257,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a Netherlands/Dutch tax administrative circular regarding turnover tax on securities transactions, not authentically verifiable as Curaçao official legislation from that spec"
+  },
+  {
+   "id": "cw-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2647,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This citation refers to a future date (2026), which cannot yet exist in official records, making verification of this specific ECLI impossible currently."
+  },
+  {
+   "id": "cw-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2228,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. CVDR (Centrale Voorziening Decentrale Regelgeving) is a Dutch municipal/provincial regulation database, not a source for Curaçao's national legislation."
+  },
+  {
+   "id": "cw-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2035,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Bermuda Court Judgments (gov.bm) is Bermuda's own judiciary source; Dutch Caribbean ECLI:NL:OGHACMB decisions are published via rechtspraak.nl, not Bermuda's government site."
+  },
+  {
+   "id": "cw-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1735,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. CVDR (Centrale Voorziening Decentrale Regelgeving) identifiers correspond to Dutch municipal/provincial regulations, not Curaçao national legislation sources."
+  },
+  {
+   "id": "cw-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1543,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The ECLI prefix \"NL\" and court name indicate this is a Dutch Caribbean court decision, not published by Bermuda Supreme Court Judgments."
+  },
+  {
+   "id": "cw-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2047,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific bibliographic claim—the title, source, and 2007-10-10 date combination cannot be confirmed as accurate."
+  },
+  {
+   "id": "cw-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2010,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Cayman Islands Court Judgments would never publish a Curaçao ECLI decision; Dutch Caribbean judgments are published via rechtspraak.nl, not judicial.ky."
+  }
+ ]
+}

@@ -1,0 +1,81 @@
+{
+ "pack": "S3 — American Samoa — Source-Grounded Citation Reliability (AS)",
+ "country": "AS",
+ "jurisdiction": "American Samoa",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 6,
+ "items_in_pack": 6,
+ "parsed": 6,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 3,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:48:51.689336+00:00",
+ "results": [
+  {
+   "id": "as-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1724,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** American Samoa Code Annotated is a statutory compilation; case decisions like this are published in the American Samoa Reporter, not ASCA statutes."
+  },
+  {
+   "id": "as-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1727,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific case citation exists; American Samoa case law reporting is limited, and this appears to be a fabricated/unverifiable reference."
+  },
+  {
+   "id": "as-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1855,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific case citation exists; American Samoa case law citations require authentication I cannot confirm, risking fabrication of legal authority."
+  },
+  {
+   "id": "as-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1867,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. American Samoa Code Annotated is a statutory compilation, not a case law reporter; court decisions like this appear in American Samoa Reports, not ASCA."
+  },
+  {
+   "id": "as-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1847,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** American Samoa is a U.S. territory with its own High Court/judiciary; the Republic of Marshall Islands Judiciary is a separate, unrelated foreign jurisdiction entirely."
+  },
+  {
+   "id": "as-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1980,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** American Samoa Code Annotated is a statutory compilation; court decisions like this case would be published in American Samoa Reporter, not the Code Annotated itself."
+  }
+ ]
+}

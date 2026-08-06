@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Bermuda — Source-Grounded Citation Reliability (BM)",
+ "country": "BM",
+ "jurisdiction": "Bermuda",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:50:05.892395+00:00",
+ "results": [
+  {
+   "id": "bm-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2023,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this is a future-dated, unverifiable citation; no such decision could yet exist or be confirmed as published on gov.bm."
+  },
+  {
+   "id": "bm-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2082,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific citation exists; Bermuda Laws Online digitizes legislation but fabricated titles/dates require independent confirmation before being treated as accurate."
+  },
+  {
+   "id": "bm-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2412,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated citation—the identifier format, case name, and future date (2026) cannot be verified as an authentic Bermuda Supreme Court record."
+  },
+  {
+   "id": "bm-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1956,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This appears to be a fabricated/future-dated citation—March 2026 has not occurred yet relative to verifiable records, making verification impossible."
+  },
+  {
+   "id": "bm-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2153,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** No such Bermuda statute exists under this title; Bermuda's legislation naming conventions and subject matter don't match this claimed 1950 act."
+  },
+  {
+   "id": "bm-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2597,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears fabricated—Bermuda Supreme Court judgments don't use this identifier format, and the 2026 date is currently in the future, making verification impossible."
+  },
+  {
+   "id": "bm-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2076,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier's date (2025/050327≈March 2025) and details don't match a 2026 citation—dates are inconsistent and unverifiable, indicating fabrication."
+  },
+  {
+   "id": "bm-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2513,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I have no verifiable access to Bermuda Laws Online's internal database identifiers, so I cannot confirm this specific hash-title-date correspondence claim."
+  },
+  {
+   "id": "bm-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1806,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** I cannot verify this specific case citation exists; fabricated or unverifiable case names/dates risk being hallucinated legal sources, not confirmed Bermuda Supreme Court records."
+  },
+  {
+   "id": "bm-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1776,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The citation \"SC (Bda)\" denotes Bermuda's Supreme Court, not the BVI Commercial Court, so the attribution is incorrect."
+  },
+  {
+   "id": "bm-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1734,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Bermuda's legislation is not published via Aruba's DWJZ Legislation Archive; that source pertains to Aruban/Dutch Caribbean law, not Bermuda's official legal publications."
+  },
+  {
+   "id": "bm-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1513,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific case citation exists; I have no reliable record confirming this exact decision, date, and party names in Bermuda Supreme Court records."
+  }
+ ]
+}

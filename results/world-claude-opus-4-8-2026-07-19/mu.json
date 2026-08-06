@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Mauritius — Source-Grounded Citation Reliability (MU)",
+ "country": "MU",
+ "jurisdiction": "Mauritius",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.4167,
+ "correct": 5,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:19:39.431857+00:00",
+ "results": [
+  {
+   "id": "mu-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2142,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-04-09 is in the future relative to any real published decision, making this claim unverifiable/fabricated."
+  },
+  {
+   "id": "mu-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2146,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-02-11 is in the future relative to any verifiable record, making this citation unverifiable and likely fabricated."
+  },
+  {
+   "id": "mu-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2407,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Mauritius Supreme Court decisions are officially published by the Supreme Court itself; Juricaf/AHJUCAF is merely a database aggregator, not publisher."
+  },
+  {
+   "id": "mu-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2932,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Mauritius has no \"FCC Court\"; SCJ citations denote Supreme Court of Mauritius decisions, not a Financial Crimes Commission publisher."
+  },
+  {
+   "id": "mu-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2422,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Additional Remuneration Act relates to annual wage compensation, but this specific title, number, and MauLII publication date appear fabricated."
+  },
+  {
+   "id": "mu-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2522,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-04-17 is in the future, making this citation implausible and likely fabricated; cannot verify authenticity."
+  },
+  {
+   "id": "mu-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 3137,
+   "verdict": true,
+   "correct": false,
+   "raw": "I cannot verify this specific claim as true or false. Fabricated or unverifiable case citations require caution; I lack reliable confirmation of this decision's existence or publisher."
+  },
+  {
+   "id": "mu-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2194,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific decision exists; the case details, date, and parties appear fabricated without confirmation from authoritative sources."
+  },
+  {
+   "id": "mu-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1883,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Mauritian Supreme Court decisions are published by Mauritius authorities, not Kenya Law, which reports Kenyan case law only."
+  },
+  {
+   "id": "mu-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 3107,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The citation format \"SCJ\" indicates Supreme Court of Judicature of Mauritius; it wouldn't be published by Madagascar's Ministry."
+  },
+  {
+   "id": "mu-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1937,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. MauritiusLII is an unofficial database; official publication is via the Government Gazette, not the legal information institute."
+  },
+  {
+   "id": "mu-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2061,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific case exists; I have no reliable record of this citation, so I shouldn't confirm it."
+  }
+ ]
+}

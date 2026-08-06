@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Botswana — Source-Grounded Citation Reliability (BW)",
+ "country": "BW",
+ "jurisdiction": "Botswana",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:09:28.332366+00:00",
+ "results": [
+  {
+   "id": "bw-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2675,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. NBFIRA is a regulator, not a court; tribunal decisions with \"NBFIT\" numbering likely come from the Financial Institutions Tribunal, separately."
+  },
+  {
+   "id": "bw-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2750,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-05-29 is in the future, making this citation unverifiable and likely fabricated or erroneous."
+  },
+  {
+   "id": "bw-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2173,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-04-18 is in the future, making this citation unverifiable and almost certainly fabricated or erroneous."
+  },
+  {
+   "id": "bw-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2873,
+   "verdict": false,
+   "correct": false,
+   "raw": "False.  Botswana's Non-Bank Financial Institutions Regulatory Authority (NBFIRA) is a regulator, not a tribunal; adjudicative decisions come from the NBFIRA Financial Services Tribunal."
+  },
+  {
+   "id": "bw-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2229,
+   "verdict": true,
+   "correct": true,
+   "raw": "I cannot verify this specific citation as True or False; I lack reliable data on this exact NBFIRA tribunal decision's existence."
+  },
+  {
+   "id": "bw-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2571,
+   "verdict": false,
+   "correct": false,
+   "raw": "False.  Botswana's NBFIRA disputes are typically handled by tribunals; case citations and publishing authority details cannot be verified, so I cannot confirm this."
+  },
+  {
+   "id": "bw-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2482,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. NBFIRA is a regulator, not a court; tribunal decisions would come from the NBFIRA appeals body, not NBFIRA itself."
+  },
+  {
+   "id": "bw-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2569,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Botswana tenders aren't published via South Africa's Constitutional Court; jurisdictions and source types mismatch, plus the future date is implausible."
+  },
+  {
+   "id": "bw-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1829,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The date is in the future (2026), and a Botswana document wouldn't be published via South Africa's Constitutional Court judgments."
+  },
+  {
+   "id": "bw-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 4324,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Botswana's Non-Bank Financial Institutions Regulatory Authority (NBFIRA) is a regulator, not a tribunal or court that publishes numbered decisions."
+  },
+  {
+   "id": "bw-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1510,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Case No. NBFIT-0003/2023 is a Botswana matter (likely a tribunal), not published by South Africa's Constitutional Court."
+  },
+  {
+   "id": "bw-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2439,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The case number references 2022, but the date given is 2020-10-13, an internal inconsistency making this claim unreliable."
+  }
+ ]
+}

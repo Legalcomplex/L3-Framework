@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Myanmar — Source-Grounded Citation Reliability (MM)",
+ "country": "MM",
+ "jurisdiction": "Myanmar",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:58:31.685943+00:00",
+ "results": [
+  {
+   "id": "mm-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2143,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific bibliographic claim—the exact notification, its date, publisher details, and content cannot be confirmed as accurate without access to authoritative primary so"
+  },
+  {
+   "id": "mm-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2327,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific claim; no reliable record confirms this directive's publication via that source on that exact date."
+  },
+  {
+   "id": "mm-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2767,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The citation is vague/unverifiable—generic title, unspecific \"Law No.6\" formatting, and questionable date suggest inaccurate or fabricated bibliographic details."
+  },
+  {
+   "id": "mm-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2074,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This describes a repository hosting/aggregating a document, not an official legal source—draft/abandoned legislation was never enacted or officially promulgated."
+  },
+  {
+   "id": "mm-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2033,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated or unverifiable citation; I cannot confirm this specific notification's existence, exact title, or publication date."
+  },
+  {
+   "id": "mm-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2024,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This is not a verifiable, established provision of Myanmar's official MIC investment law; no confirmed source supports allowing CNY-denominated investments alongside USD."
+  },
+  {
+   "id": "mm-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2235,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This appears to be a fabricated or unverifiable citation; I cannot confirm this specific notification's existence, exact title, or publication date from DICA."
+  },
+  {
+   "id": "mm-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1933,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The date (2026-11-10) is in the future, making verification impossible; no genuine legal source can be dated beyond the current date."
+  },
+  {
+   "id": "mm-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2880,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Myanmar's national legislation is published through Myanmar's own official gazette/legal system, not Indonesia's JDIHN, which covers only Indonesian law."
+  },
+  {
+   "id": "mm-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1719,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Husky & Partners Cambodian Legal Library covers Cambodian law, not Myanmar; a draft, abandoned Myanmar cyber law wouldn't be an official published legal source there."
+  },
+  {
+   "id": "mm-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1700,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This appears to be a fabricated or unverifiable bibliographic claim; no confirmable record exists matching this specific title, source, and exact publication date."
+  },
+  {
+   "id": "mm-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1534,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Myanmar Investment Commission rules do not officially designate CNY as an approved alternative currency alongside USD for MIC investments."
+  }
+ ]
+}

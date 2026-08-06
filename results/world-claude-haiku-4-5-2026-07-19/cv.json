@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Cape Verde — Source-Grounded Citation Reliability (CV)",
+ "country": "CV",
+ "jurisdiction": "Cape Verde",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:35:41.856115+00:00",
+ "results": [
+  {
+   "id": "cv-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1567,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The publication date (2026-04-16) is in the future, making this claim impossible to verify as currently true. Official gazettes cannot publish documents from dates that have not yet occurred."
+  },
+  {
+   "id": "cv-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1679,
+   "verdict": false,
+   "correct": false,
+   "raw": "# Evaluation Result  **False**  The decision identifier format and date structure are inconsistent with Cape Verde's Supreme Court (Supremo Tribunal de Justiça) official publications and documented de"
+  },
+  {
+   "id": "cv-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1691,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  A deliberation from 2025 cannot be published in April 2026 via the Official Gazette. The publication date must precede or coincide with the document's issuance date, not follow it by over a"
+  },
+  {
+   "id": "cv-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2459,
+   "verdict": false,
+   "correct": false,
+   "raw": "# Evaluation Result  **False**  The decision reference format and date structure do not align with standard Cape Verdean Supreme Court (*Supremo Tribunal de Justiça*) official publication conventions "
+  },
+  {
+   "id": "cv-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1766,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** A deliberation from 2025 cannot be published in 2026 via an official gazette with a future date (2026-03-25), creating a chronological impossibility."
+  },
+  {
+   "id": "cv-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1669,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The identifier format '11/2023' typically indicates a decision from 2023, but the specific case details cannot be verified without access to Cape Verde's official Supreme Court database. Th"
+  },
+  {
+   "id": "cv-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1698,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Cape Verde's official gazette is the *Boletim Oficial da República de Cabo Verde*, not Togo's *Journal Officiel*. Togo is a different country."
+  },
+  {
+   "id": "cv-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1618,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '78/2024' indicates a 2024 decision, but the cited document is 'Acórdão 78-2023' from 2023, showing a year mismatch."
+  },
+  {
+   "id": "cv-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2316,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The claim contains an internal contradiction: a 2025 deliberation cannot be published in April 2024. The dates are chronologically impossible and inconsistent."
+  },
+  {
+   "id": "cv-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1393,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The identifier '22/2024' indicates a 2024 decision, but the citation references 'Acórdão 22-2023' with a 2023 date, creating a chronological inconsistency in the claim."
+  },
+  {
+   "id": "cv-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1252,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The claim cannot be verified. Cape Verde's Official Gazette (Boletim Oficial) publication dates and deliberation numbers require confirmation from official governmental sources, which I canno"
+  },
+  {
+   "id": "cv-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1290,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This decision belongs to Cape Verde's Supreme Court of Justice, not Benin's Constitutional Court. The citation format and reference number are inconsistent with Benin's legal publications."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Bahamas — Source-Grounded Citation Reliability (BS)",
+ "country": "BS",
+ "jurisdiction": "Bahamas",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:50:39.049973+00:00",
+ "results": [
+  {
+   "id": "bs-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2124,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this decision has a future date (2026-04-17) and cannot yet be verified or officially published, making the citation unconfirmed."
+  },
+  {
+   "id": "bs-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2018,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No such Bahamian statute exists—there is no \"Access to Affordable Homes (Amendment) Act, 2021\" in Bahamas Consolidated Legislation records."
+  },
+  {
+   "id": "bs-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2214,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Internal database identifiers like \"069bcad08edfb7cd\" cannot be verified as authentic without access to the actual court records system, and the date is implausible."
+  },
+  {
+   "id": "bs-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1932,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** No such Act exists in Bahamian legislation records; \"Agricultural Sales and Services Act, 2023\" is not a recognized or verifiable official statute title."
+  },
+  {
+   "id": "bs-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1920,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This is not a verifiable, actual official publication—likely a fabricated or unconfirmed citation, and 2026 is a future/unverifiable date."
+  },
+  {
+   "id": "bs-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1907,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this citation; the case name, date (future-dated 2026), and source appear fabricated or unconfirmed in official records."
+  },
+  {
+   "id": "bs-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 3117,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** I cannot verify this specific citation exists—I have no reliable record of this case, and fabricated legal citations are a known risk."
+  },
+  {
+   "id": "bs-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2023,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Internal identifiers like '2789df7345070a57' cannot be verified as authentic without access to the actual official Bahamas Consolidated Legislation database system."
+  },
+  {
+   "id": "bs-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1489,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Internal database identifiers aren't independently verifiable, and a 2026 date is currently in the future, making this claim unverifiable."
+  },
+  {
+   "id": "bs-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1679,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Cayman Islands Legislation publishes Cayman Islands law, not Bahamian statutes; this jurisdictional mismatch makes the citation source incorrect and likely fabricated."
+  },
+  {
+   "id": "bs-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1665,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Grenada's laws are published under \"Laws of Grenada,\" but The Bahamas is a distinct jurisdiction; this citation misattributes the source jurisdiction incorrectly."
+  },
+  {
+   "id": "bs-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 6654,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific case citation exists; I have no reliable record of this decision, party name, or exact date in Bahamas Court of Appeal records."
+  }
+ ]
+}

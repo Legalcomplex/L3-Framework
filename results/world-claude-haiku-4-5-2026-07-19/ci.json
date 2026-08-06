@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Côte d'Ivoire — Source-Grounded Citation Reliability (CI)",
+ "country": "CI",
+ "jurisdiction": "Côte d'Ivoire",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:35:04.374764+00:00",
+ "results": [
+  {
+   "id": "ci-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1550,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Laws.Africa/CivLII launched in 2013. A 2000 publication date predates the platform's existence, making this claim historically implausible."
+  },
+  {
+   "id": "ci-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1597,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  No official compilation titled \"Côte d'Ivoire Supreme Court Decisions\" exists as a standard legal publisher. This appears to be an informal or non-standard bibliographic reference without v"
+  },
+  {
+   "id": "ci-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1607,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  This decision cannot be authentic. The cited date is July 15, 2025—a future date from the present. Official legal documents are published after they occur, not before."
+  },
+  {
+   "id": "ci-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1516,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The future publication date (2026-02-28) is implausible for a historical legal document. Official Ivorian legal codes would have past publication dates, not future ones."
+  },
+  {
+   "id": "ci-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1857,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Laws.Africa (CivLII) primarily publishes contemporary legislation and legal materials; this document's official publication status cannot be verified without direct source confirmation from"
+  },
+  {
+   "id": "ci-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1598,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  No official, publicly accessible database titled \"Côte d'Ivoire Supreme Court Decisions\" systematically publishes administrative chamber rulings with standard citation formats in Côte d'Ivo"
+  },
+  {
+   "id": "ci-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1948,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  An accord between Côte d'Ivoire and Mali would be published by Ivorian and/or Malian authorities, not Senegal's Prime Minister Office. The jurisdiction attribution is incorrect."
+  },
+  {
+   "id": "ci-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2060,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Cour des Comptes du Sénégal is Senegal's audit court, not Côte d'Ivoire's supreme court. The decision belongs to Côte d'Ivoire's Cour suprême."
+  },
+  {
+   "id": "ci-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1151,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The decision bears a Côte d'Ivoire court designation (DCC = Cour Constitutionnelle) but is attributed to Mali's Supreme Court, creating an internal jurisdictional contradiction."
+  },
+  {
+   "id": "ci-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1377,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  \"CHAPITRE 4: DISPOSITIONS FINALES\" is a standard section title found in many Ivorian legal codes, not a standalone published document. The claim lacks specificity regarding which law this cha"
+  },
+  {
+   "id": "ci-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1316,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The document title references sanitary approvals (agréments sanitaires), which falls under health ministry jurisdiction, not economy & finance. Additionally, Guinea-Bissau cannot be the pub"
+  },
+  {
+   "id": "ci-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1555,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Liberia Legal Information Institute publishes Liberian legal decisions, not Ivorian ones. This is a Côte d'Ivoire Supreme Court decision."
+  }
+ ]
+}

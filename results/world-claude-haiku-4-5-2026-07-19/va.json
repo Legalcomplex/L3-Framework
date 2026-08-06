@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Vatican City — Source-Grounded Citation Reliability (VA)",
+ "country": "VA",
+ "jurisdiction": "Vatican City",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:46:54.693531+00:00",
+ "results": [
+  {
+   "id": "va-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1902,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Leo XIV does not exist; the papacy has not reached this number. The claim references a fictional future pope and anachronistic date, making it historically impossible."
+  },
+  {
+   "id": "va-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1805,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The 1983 Codex Iuris Canonici contains canons numbered sequentially (1-1752), but \"Canon 2\" specifically does not exist as an official provision in this code."
+  },
+  {
+   "id": "va-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2340,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Pope Leo XIV does not exist. The papal sequence jumped from Leo XIII (1878-1903) directly to Pius X, with no Leo XIV in between or after."
+  },
+  {
+   "id": "va-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1754,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Canon 7 is not a standalone publication; it's a provision within the 1983 Codex Iuris Canonici, not a separately published document."
+  },
+  {
+   "id": "va-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1420,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Laudato si' was published on 18 June 2015, not 24 May 2015. The date in the claim is incorrect for this papal encyclical's official release."
+  },
+  {
+   "id": "va-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1508,
+   "verdict": true,
+   "correct": true,
+   "raw": "**True**  Canon 8 exists in the 1983 Codex Iuris Canonici, promulgated January 25, 1983. It addresses the application of universal laws to particular situations in ecclesiastical governance."
+  },
+  {
+   "id": "va-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1654,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Leo XIV does not exist; the papal succession goes from Leo XIII (died 1903) to Pius X. Additionally, Vatican documents are not published via Dutch legislative portals."
+  },
+  {
+   "id": "va-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1682,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The 1983 Codex Iuris Canonici does not contain a provision titled \"Canon 2.\" Canon law is organized numerically, but \"Canon 2\" specifically does not exist in this code."
+  },
+  {
+   "id": "va-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1285,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Pope Leo XIV does not exist. The papacy proceeded from Leo XIII (1878-1903) directly to Pius X (1903-1914). No such pontiff issued this document."
+  },
+  {
+   "id": "va-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1129,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Canon 7 is not a standalone publication; it's a single provision within the 1983 Code of Canon Law. The Code itself was promulgated January 25, 1983, not 1982."
+  },
+  {
+   "id": "va-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2040,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Laudato si' is a papal encyclical published by the Vatican, not the Dutch Official Gazette (Staatsblad der Nederlanden), which publishes Dutch legislation."
+  },
+  {
+   "id": "va-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 950,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Canon 8 is from the 1983 Codex Iuris Canonici, but the official promulgation date was January 25, 1983, not 1986."
+  }
+ ]
+}

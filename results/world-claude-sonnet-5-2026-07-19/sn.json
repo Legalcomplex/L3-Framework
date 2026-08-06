@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Senegal — Source-Grounded Citation Reliability (SN)",
+ "country": "SN",
+ "jurisdiction": "Senegal",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:02:41.817555+00:00",
+ "results": [
+  {
+   "id": "sn-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1937,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific identifier-citation pairing against actual Senegalese Cour suprême records; it appears fabricated or unconfirmed."
+  },
+  {
+   "id": "sn-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2225,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Conseil constitutionnel is not the Supreme Court (Cour suprême); it's a separate jurisdiction, so this attribution to \"Senegal Supreme Court Decisions\" is incorrect."
+  },
+  {
+   "id": "sn-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2087,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Senegal's Code Général des Collectivités Locales dates from 2013 (Law n°2013-10), not 1996; the 1996 date refers to earlier decentralization laws."
+  },
+  {
+   "id": "sn-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1930,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific publication's existence, exact title, or publication date—no reliable source confirms these precise bibliographic details."
+  },
+  {
+   "id": "sn-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2210,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific identifier corresponds to an actual, confirmed case in official Senegalese Cour suprême records or databases."
+  },
+  {
+   "id": "sn-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3147,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this cites a future-dated (2026) document as already published, which is implausible/unverifiable; likely fabricated or speculative bibliographic entry."
+  },
+  {
+   "id": "sn-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2076,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier suffix \"04\" does not match the cited decision number \"03,\" so they cannot correspond to the same official record."
+  },
+  {
+   "id": "sn-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2423,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Senegalese Constitutional Council's decision would be published by Senegal's own official Constitutional Council reporter, not Côte d'Ivoire's."
+  },
+  {
+   "id": "sn-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1601,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Code Général des Collectivités Locales dates from 2013 (Loi n° 2013-10), not 1994; the date is incorrect."
+  },
+  {
+   "id": "sn-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1789,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** A Senegalese \"IINFOCOMPTES\" publication (likely Cour des Comptes) would not be published by Nigeria's NAFDAC agency, an unrelated regulatory body."
+  },
+  {
+   "id": "sn-src-f05",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1549,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier's numeric suffix \"51\" does not match the cited case number \"47,\" so they cannot refer to the same document."
+  },
+  {
+   "id": "sn-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2021,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Senegal's official publisher is not \"Mauritania Consolidated Legal Codes\"; this mismatched jurisdiction/source name indicates a fabricated bibliographic citation."
+  }
+ ]
+}

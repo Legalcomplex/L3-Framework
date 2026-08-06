@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Guernsey — Source-Grounded Citation Reliability (GG)",
+ "country": "GG",
+ "jurisdiction": "Guernsey",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:53:58.790530+00:00",
+ "results": [
+  {
+   "id": "gg-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2430,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated citation; no verifiable CICRA decision \"M1731G - EQT Group and CICAP Limited\" exists dated 2026-03-03, a future date."
+  },
+  {
+   "id": "gg-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2058,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — CICRA merger reference M1726G is not a verifiable published decision; this appears to be a fabricated citation lacking confirmable official record."
+  },
+  {
+   "id": "gg-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2804,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated identifier; I have no verifiable record confirming CICRA's collection assigns \"P-003\" to that specific 2025 Ports of Jersey document."
+  },
+  {
+   "id": "gg-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2385,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific citation; it appears fabricated, with no evidence CICRA published this merger decision on that date."
+  },
+  {
+   "id": "gg-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1983,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated or unverifiable citation; no such document, decision reference, or dated publication can be confirmed as genuine."
+  },
+  {
+   "id": "gg-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2072,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify fabricated identifiers like \"C-085\" against actual CICRA/GCRA/JCRA records; this specific citation appears unverifiable or invented."
+  },
+  {
+   "id": "gg-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2137,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific merger notice (\"M1731G,\" EQT Group/CICAP Limited) exists in CICRA's actual published records or database."
+  },
+  {
+   "id": "gg-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2728,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This case reference does not correspond to a verifiable CICRA publication; I cannot confirm this specific citation's authenticity or accuracy."
+  },
+  {
+   "id": "gg-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1640,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This appears to be a fabricated citation; no verifiable CICRA/GCRA/JCRA identifier system labels documents like \"P-004\" with that specific title and date."
+  },
+  {
+   "id": "gg-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1517,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Guernsey does not use Austria's Rechtsinformationssystem (RIS); this is an Austrian legal database unrelated to Guernsey's official publication system."
+  },
+  {
+   "id": "gg-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1948,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Guernsey regulatory documents like \"T1699G Broadband Retail Market Review\" wouldn't be published via Isle of Man Judgments Online—a different jurisdiction's court database entirely."
+  },
+  {
+   "id": "gg-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1654,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific identifier, case title, and date combination against actual GCRA/CICRA records, as I lack reliable access."
+  }
+ ]
+}

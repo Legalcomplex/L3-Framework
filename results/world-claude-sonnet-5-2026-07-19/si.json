@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Slovenia — Source-Grounded Citation Reliability (SI)",
+ "country": "SI",
+ "jurisdiction": "Slovenia",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:02:23.722062+00:00",
+ "results": [
+  {
+   "id": "si-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2128,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific citation's accuracy—exact publication dates, act titles, and PISRS records require direct source confirmation, not assumption."
+  },
+  {
+   "id": "si-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2229,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This future-dated decision (26 Nov 2025) cannot be verified as an actual published judgment; the case number/date combination appears fabricated or unconfirmed."
+  },
+  {
+   "id": "si-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2345,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify specific ECLI identifiers, case numbers, and dates correspond accurately without access to the actual database records."
+  },
+  {
+   "id": "si-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2433,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific citation's accuracy—PISRS is a legislation database, not a publication venue; laws are officially published in Uradni list RS."
+  },
+  {
+   "id": "si-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 4096,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears fabricated: the case number references 2025 but the decision date is 2026, and I cannot verify this specific citation exists."
+  },
+  {
+   "id": "si-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2382,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify specific ECLI identifiers, case numbers, and dates correspond accurately without access to the actual Slovenian case law database records."
+  },
+  {
+   "id": "si-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2250,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** I cannot verify this specific bibliographic claim—the exact act, amendment date, and PISRS publication details require direct source confirmation, not assumption."
+  },
+  {
+   "id": "si-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2198,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The ECLI suffix \"16\" doesn't match \"-15\" in the citation; ECLI identifiers must precisely correspond to document numbering, so mismatch indicates error."
+  },
+  {
+   "id": "si-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1711,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The ECLI contains \"II.IPS.360.2010\" but the claim states case number \"II Ips 360/2009\" — the year identifiers are inconsistent/mismatched."
+  },
+  {
+   "id": "si-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2373,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Slovenian laws are published in the Uradni list Republike Slovenije, not Bulgaria's Državен vestnik, which serves Bulgaria's legal publications."
+  },
+  {
+   "id": "si-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1613,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The case number format (1571/2025) is inconsistent with a 2025-01-12 date, and the citation appears fabricated or unverifiable."
+  },
+  {
+   "id": "si-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2491,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** \"X Ips\" designates the Slovenian Supreme Court's civil/commercial docket format, not the Georgian Constitutional Court, which uses different case numbering entirely."
+  }
+ ]
+}

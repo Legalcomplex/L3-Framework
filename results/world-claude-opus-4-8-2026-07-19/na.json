@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Namibia — Source-Grounded Citation Reliability (NA)",
+ "country": "NA",
+ "jurisdiction": "Namibia",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:20:03.994581+00:00",
+ "results": [
+  {
+   "id": "na-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2589,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific Act's existence or publication date on NamibLII with confidence; details appear fabricated."
+  },
+  {
+   "id": "na-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2727,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Namibian judgments are published on NamibLII, not a \"Namibia eJustice Portal\"; this citation source appears fabricated or misattributed."
+  },
+  {
+   "id": "na-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2343,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This is a pre-independence South African law applied to Namibia; the Legal Assistance Centre isn't its official publisher."
+  },
+  {
+   "id": "na-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2384,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific notice, title, or exact date; asserting its authenticity risks fabrication without confirmed NAMFISA records."
+  },
+  {
+   "id": "na-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2731,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Namibian Acts are officially published in the Government Gazette, not NamibLII; NamibLII merely republishes them unofficially without authority."
+  },
+  {
+   "id": "na-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3169,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. In 1840 Namibia was not a British colony or independent state; NamibLII wouldn't publish an 1840 Admiralty Court Act."
+  },
+  {
+   "id": "na-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2296,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Eswatini Revenue Service is Eswatini's tax authority, not Namibia's; it cannot publish Namibian legislation. Jurisdictional mismatch."
+  },
+  {
+   "id": "na-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2042,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier in the claim (…04874) does not match the cited case number (…04873), showing an inconsistency."
+  },
+  {
+   "id": "na-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1891,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This South African-origin Act was published in a Government Gazette, not by Zimbabwe's Reserve Bank—jurisdictionally incorrect source."
+  },
+  {
+   "id": "na-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1738,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Laws.Africa's Open By-laws platform covers South African municipal by-laws, not Namibian FIM Act notices; jurisdiction and source are mismatched."
+  },
+  {
+   "id": "na-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2007,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific citation; the title, date, and publication details appear fabricated, warranting caution against confident confirmation."
+  },
+  {
+   "id": "na-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1628,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Admiralty Court Act 1840 is UK legislation; EswatiniLII covers Eswatini law, not Namibian or Namibian-relevant sources."
+  }
+ ]
+}

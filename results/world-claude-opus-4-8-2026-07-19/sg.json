@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Singapore — Source-Grounded Citation Reliability (SG)",
+ "country": "SG",
+ "jurisdiction": "Singapore",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.4167,
+ "correct": 5,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:24:19.002516+00:00",
+ "results": [
+  {
+   "id": "sg-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1924,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** In 2014, the authority was named \"Competition Commission of Singapore\" (CCS); it was renamed CCCS only in 2018."
+  },
+  {
+   "id": "sg-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2314,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The 2026 decision date and citation cannot be verified; details appear fabricated, so the claim's authenticity is unconfirmed."
+  },
+  {
+   "id": "sg-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2437,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Agency for Science, Technology and Research (A*STAR) was established later; no such 1990 Act exists in Singapore."
+  },
+  {
+   "id": "sg-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2382,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-03-19 is in the future, making this citation unverifiable and likely fabricated as a legal source."
+  },
+  {
+   "id": "sg-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2294,
+   "verdict": false,
+   "correct": false,
+   "raw": "I cannot verify this specific decision's existence, date, or exact penalty figure; treat as False absent confirmation from CCCS official records."
+  },
+  {
+   "id": "sg-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2426,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The SGHC(I) neutral citation denotes court authorship, but law reports are published by SAL/official reporters, not the court itself."
+  },
+  {
+   "id": "sg-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2532,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. In 2012 the regulator was the Competition Commission of Singapore (CCS); it was renamed CCCS only in 2018."
+  },
+  {
+   "id": "sg-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2108,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. SGHC(I) denotes the Singapore International Commercial Court, part of Singapore's judiciary, not Indonesia's Constitutional Court."
+  },
+  {
+   "id": "sg-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2105,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Thu Vien Phap Luat is a Vietnamese legal database, not an official Singapore source; Singapore legislation is published via Singapore Statutes Online."
+  },
+  {
+   "id": "sg-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1801,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. eLitigation is a case filing/management system, not a judgment publisher; Singapore judgments are published via the Supreme Court's website/LawNet."
+  },
+  {
+   "id": "sg-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2104,
+   "verdict": true,
+   "correct": false,
+   "raw": "True. CCCS enforces competition law in Singapore and publishes decisions on anti-competitive conduct like illegal information exchange between remittance providers."
+  },
+  {
+   "id": "sg-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1893,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. SGHC(I) denotes Singapore International Commercial Court decisions, published by Singapore courts, not the Philippines Supreme Court E-Library."
+  }
+ ]
+}

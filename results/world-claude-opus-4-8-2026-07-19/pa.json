@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Panama — Source-Grounded Citation Reliability (PA)",
+ "country": "PA",
+ "jurisdiction": "Panama",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:22:08.763366+00:00",
+ "results": [
+  {
+   "id": "pa-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2519,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The citation format \"Entrada N°244642021\" is malformed and unverifiable; Panama's Supreme Court uses different case numbering conventions, casting doubt."
+  },
+  {
+   "id": "pa-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2362,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The 2026-01-15 date is implausibly future-dated relative to a 2014 decree extension, indicating fabricated or unverifiable bibliographic details."
+  },
+  {
+   "id": "pa-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2386,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific Acuerdo's existence, exact title, date, or publication details without access to authoritative Panamanian regulatory sources."
+  },
+  {
+   "id": "pa-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2178,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The case citation format and expediente numbering appear fabricated; I cannot verify this specific decision exists in Panama's jurisprudence."
+  },
+  {
+   "id": "pa-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2122,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-01-21 is in the future relative to any verifiable publication, and specific details cannot be confirmed."
+  },
+  {
+   "id": "pa-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2663,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific Acuerdo No. 1 (2024) with that exact date and content; fabricated citation details are likely."
+  },
+  {
+   "id": "pa-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2233,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Panama jurisdiction case would not be published by Mexico's SCJN platform; the entities and jurisdictions are mismatched and inconsistent."
+  },
+  {
+   "id": "pa-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2348,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The publication date cannot be verified from the claim alone; a 2014 decree extension likely predates a 2024-01-15 date."
+  },
+  {
+   "id": "pa-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2780,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. A Panama jurisdiction legal source would not be published through Honduras's Tribunal Superior de Cuentas library; jurisdictions mismatch."
+  },
+  {
+   "id": "pa-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1701,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Panama jurisdiction case cannot be published by Mexico's SCJN platform; the jurisdiction and publishing source are mismatched and inconsistent."
+  },
+  {
+   "id": "pa-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2056,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The title references Panama's Tribunal Administrativo de la Función Pública, not Mexican state legislation; the source attribution is incorrect."
+  },
+  {
+   "id": "pa-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2032,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Panama's official legal source is Gaceta Oficial, not Mexico's Orden Jurídico Nacional, which publishes Mexican state legislation only."
+  }
+ ]
+}

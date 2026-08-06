@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Iran — Source-Grounded Citation Reliability (IR)",
+ "country": "IR",
+ "jurisdiction": "Iran",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:15:34.826868+00:00",
+ "results": [
+  {
+   "id": "ir-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2321,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Iran's 2013 Islamic Penal Code exists, but this exact title appears fabricated; the actual code uses different official naming conventions."
+  },
+  {
+   "id": "ir-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2539,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Iran Human Rights Documentation Center compiles human rights materials; it is not an official Iranian legal codes publisher."
+  },
+  {
+   "id": "ir-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2424,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific identifier '3430' corresponds to that document; I lack reliable access to confirm ABC catalog details."
+  },
+  {
+   "id": "ir-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2417,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The Iran Human Rights Documentation Center published English translations of the Islamic Penal Code, including Books I and II."
+  },
+  {
+   "id": "ir-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2735,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Boroumand Center archives Iranian legal texts, but I cannot verify this specific directive's exact title, date, or existence."
+  },
+  {
+   "id": "ir-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2975,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Iran's Islamic Penal Code Book Five (Ta'zirat) was enacted in 1996; the 2013 codification covers Books One through Four."
+  },
+  {
+   "id": "ir-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2421,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific identifier-to-title mapping in the Boroumand Center collection; asserting its accuracy risks fabricating bibliographic details."
+  },
+  {
+   "id": "ir-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2477,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The IHRDC translates Iranian laws but attributing this specific IRIB policy document with that exact citation appears unverifiable and fabricated."
+  },
+  {
+   "id": "ir-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1660,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific identifier '3432' or exact date against the Boroumand Center's catalog; details may be fabricated."
+  },
+  {
+   "id": "ir-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2358,
+   "verdict": true,
+   "correct": false,
+   "raw": "True. The Iran Human Rights Documentation Center published an English translation of the New Islamic Penal Code in 2013."
+  },
+  {
+   "id": "ir-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1943,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Iran's legal sources aren't published via Jordan's Legislation Bureau; that bureau serves Jordan, a separate jurisdiction entirely."
+  },
+  {
+   "id": "ir-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2966,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Iran's Islamic Penal Code is not published via DIFC (Dubai International Financial Centre) database; entirely unrelated jurisdictions."
+  }
+ ]
+}

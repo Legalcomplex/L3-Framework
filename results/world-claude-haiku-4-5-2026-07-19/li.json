@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Liechtenstein — Source-Grounded Citation Reliability (LI)",
+ "country": "LI",
+ "jurisdiction": "Liechtenstein",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.4167,
+ "correct": 5,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:40:21.164233+00:00",
+ "results": [
+  {
+   "id": "li-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1726,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. LILEX is Liechtenstein's official legislation database, but the publication date (2026-02-07) is in the future, making this claim temporally impossible and therefore false."
+  },
+  {
+   "id": "li-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1585,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The official publisher of Liechtenstein court decisions is the Princely Court (Fürstliches Obergericht), not a website domain called \"gerichtsentscheide.li.\""
+  },
+  {
+   "id": "li-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1494,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  Liechtenstein's Constitutional Court (Staatsgerichtshof) uses the case identifier prefix \"StGH,\" not \"VGH.\" VGH typically denotes administrative court decisions, not constitutional ones."
+  },
+  {
+   "id": "li-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1502,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The publication date (2026-02-03) is in the future and therefore impossible. The ordinance from 2011 could not have been published in 2026."
+  },
+  {
+   "id": "li-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1810,
+   "verdict": false,
+   "correct": false,
+   "raw": "# Evaluation: FALSE  The domain \"gerichtsentscheide.li\" does not appear to be an official Liechtenstein court publication. Official Liechtenstein judicial decisions are typically published through the"
+  },
+  {
+   "id": "li-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2099,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The identifier StGH 2024/060 cannot be reliably verified as corresponding to a \"Beschluss\" dated 2025-03-25 without access to official Liechtenstein Constitutional Court records."
+  },
+  {
+   "id": "li-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2050,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The Handelsregisterverordnung (HRV) from February 11, 2003 exists in Liechtenstein law, but I cannot verify the specific LILEX publication date claim of 2025-02-07 without access to current L"
+  },
+  {
+   "id": "li-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1568,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The identifier 'StGH 1998/46' and 'StGH 1998/43' are distinct case numbers. They cannot correspond to the same decision merely differing by reference format."
+  },
+  {
+   "id": "li-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 983,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The identifier VGH 2024/131 and VGH 2024/130 are different case numbers. They cannot correspond to the same judgment, regardless of date."
+  },
+  {
+   "id": "li-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1220,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.**  This ordinance is a Liechtenstein legal instrument, which would be published in the Liechtenstein Law Gazette (Landesgesetzblatt), not the Belgian official journal (Moniteur Belge/Belgisch"
+  },
+  {
+   "id": "li-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1105,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Liechtenstein uses its own legal information system (JUSTIZ.LI), not the Austrian RIS system which primarily serves Austria and some other jurisdictions."
+  },
+  {
+   "id": "li-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1358,
+   "verdict": true,
+   "correct": false,
+   "raw": "# Answer: True  **Explanation:** StGH (Staatsgerichtshof) is Liechtenstein's Constitutional Court. The decision format and date align with official court publication standards for this institution."
+  }
+ ]
+}

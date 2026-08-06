@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Åland Islands — Source-Grounded Citation Reliability (AX)",
+ "country": "AX",
+ "jurisdiction": "Åland Islands",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:33:22.010860+00:00",
+ "results": [
+  {
+   "id": "ax-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1852,
+   "verdict": true,
+   "correct": true,
+   "raw": "# Evaluation: True  **Explanation:** This is a valid Åland Islands regulation from 1995 concerning social care legislation application, properly cited with the correct official legislative publication"
+  },
+  {
+   "id": "ax-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2030,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The citation format and reference number (1991:67) follow Swedish legislative conventions, not Åland's autonomous system. Åland uses separate legislation numbering and publication channels "
+  },
+  {
+   "id": "ax-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2445,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  This appears to be a fictional or future-dated regulation. Åland Islands legislation databases do not contain records of regulations numbered (2025:96) with January 1, 2025 publication dates "
+  },
+  {
+   "id": "ax-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1683,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The citation format and date don't align with Åland's legislative numbering system. Landskapslag typically uses different citation conventions than shown here."
+  },
+  {
+   "id": "ax-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2247,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Åland Legislation publications use the format \"ÅFS\" (Ålands författningssamling), not \"Ålex.\" The citation format and publisher designation don't match official Åland Islands legal document"
+  },
+  {
+   "id": "ax-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2349,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The citation format and date structure are inconsistent with Åland Islands legislation conventions. Ålex uses different formatting standards for provincial ordinances (landskapsförordningar"
+  },
+  {
+   "id": "ax-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1877,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Landskapsförordning (1995:103) is Ålandic legislation published in the Ålandic Legal Gazette (Ålands författningssamling), not the Danish Legislation Database (Retsinformation)."
+  },
+  {
+   "id": "ax-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1800,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Åland Islands has autonomous status with its own legislation system (Åland's Legislation - ÅFS), not Swedish Legislation (SFS). This decree should be published in ÅFS."
+  },
+  {
+   "id": "ax-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1313,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Åland Islands has its own legal database (Åland's legal register) separate from Finlex, which is Finland's national legal database. Åland legislation wouldn't be published via Finlex."
+  },
+  {
+   "id": "ax-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1332,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Åland Islands laws are published through the Åland legislation portal (lagsamling.ax), not Denmark's Retsinformation, which covers Danish law exclusively."
+  },
+  {
+   "id": "ax-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2211,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The cited date (2013-01-01) appears inconsistent with Åland Islands legislation numbering conventions. Åland legal sources require verification through official Ålandic legal databases rath"
+  },
+  {
+   "id": "ax-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2323,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Åland Islands legislation is published through Finnish legal databases (like Finlex), not Lovdata, which is the Norwegian legislation portal."
+  }
+ ]
+}

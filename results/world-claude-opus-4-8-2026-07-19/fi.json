@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Finland — Source-Grounded Citation Reliability (FI)",
+ "country": "FI",
+ "jurisdiction": "Finland",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.6667,
+ "correct": 8,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:12:30.708259+00:00",
+ "results": [
+  {
+   "id": "fi-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3527,
+   "verdict": true,
+   "correct": true,
+   "raw": "I cannot verify this specific claim as True with confidence.  **False** (or unverifiable): I cannot confirm this exact regulation, date, or Finlex publication without access to verify these specific b"
+  },
+  {
+   "id": "fi-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2448,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Nuclear energy oversight falls under ministerial decrees, but I cannot verify this specific title, date, or Finlex Linked Data publication."
+  },
+  {
+   "id": "fi-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2399,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.**  Government bills (Hallituksen esitys, HE) are prepared and submitted by the Government (Valtioneuvosto), not published by Parliament itself."
+  },
+  {
+   "id": "fi-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2654,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. Finlex publishes Finnish administrative court decisions; the citation format matches Hämeenlinnan hallinto-oikeus rulings under Hallinto-oikeudet on Finlex."
+  },
+  {
+   "id": "fi-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2744,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Finnish appellate decisions use formatted numbers (e.g., \"R 24/xxxx\" or diary numbers), not this format; likely fabricated citation."
+  },
+  {
+   "id": "fi-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2146,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific identifier or date; 2026 decisions are future-dated and I lack access to confirm."
+  },
+  {
+   "id": "fi-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 3018,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Danish Retsinformation does not publish Finnish legislation; Finnish statutes appear in Finlex, Finland's official legal database."
+  },
+  {
+   "id": "fi-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 3829,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Nuclear energy oversight in Finland falls under STUK/government decrees, not typically a Työ- ja elinkeinoministeriö ministerial decree; citation appears fabricated."
+  },
+  {
+   "id": "fi-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2139,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Government proposals (Hallituksen esitys) are prepared by the Government/ministries and submitted to Parliament, not published by Eduskunta itself."
+  },
+  {
+   "id": "fi-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1693,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '463/2026' contradicts the cited decision numbered '463/2025' and dated 2025-03-07; year mismatch invalidates the claim."
+  },
+  {
+   "id": "fi-src-f05",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1928,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '103699/2026' conflicts with the cited decision labeled '103699/2025', showing a year mismatch that invalidates the claim."
+  },
+  {
+   "id": "fi-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2659,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. \"MAO\" designates Finland's Market Court (Markkinaoikeus); its decisions aren't published by Denmark's Domsdatabasen. Also, 2026 dates are implausibly future."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Kyrgyzstan — Source-Grounded Citation Reliability (KG)",
+ "country": "KG",
+ "jurisdiction": "Kyrgyzstan",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:39:35.437739+00:00",
+ "results": [
+  {
+   "id": "kg-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1516,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Kyrgyzstan Constitutional Court was established in 1994, but decisions from December 30, 1996 would be documented in official archives, not a standardized \"Decisions\" publication series"
+  },
+  {
+   "id": "kg-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1547,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The decision is dated 2026-05-07, which is in the future. No court decision can be published with a future date, making this claim implausible."
+  },
+  {
+   "id": "kg-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1858,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  A Supreme Court decision cannot be dated March 25, 2026, as this is a future date. The identifier format appears valid, but the date is impossible and suggests either a data entry error or "
+  },
+  {
+   "id": "kg-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 4262,
+   "verdict": false,
+   "correct": false,
+   "raw": "# Evaluation: False  **Explanation:** The date February 5, 1997 predates Kyrgyzstan's Constitutional Court establishment (1994) and early publication records. Official verification required."
+  },
+  {
+   "id": "kg-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1481,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  This decision cannot be published yet—it is dated April 29, 2026, which is in the future. The claim appears to reference a non-existent or fabricated court decision."
+  },
+  {
+   "id": "kg-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1804,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The date 2026-04-02 is in the future, making this claim implausible. Supreme Court decisions cannot be dated prospectively; this appears to be fabricated or contains a typographical error i"
+  },
+  {
+   "id": "kg-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1577,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The decision is dated 1996-12-30, but Kyrgyzstan's Constitutional Court was established in 1994. However, the publisher attribution to \"Kazakhstan Constitutional Court\" is incorrect for a K"
+  },
+  {
+   "id": "kg-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1934,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The identifiers do not match. ГД-319/26-Т6 and ГД-319/26-Т5 are different case numbers, indicating distinct judicial acts from the Talas City Court."
+  },
+  {
+   "id": "kg-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1173,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The identifiers differ in their numerical components (27 vs. 26). While the prefix and date may correspond, the distinct case numbers indicate separate decisions, not the same case."
+  },
+  {
+   "id": "kg-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1285,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Astana International Financial Centre Court was established in 2018 in Kazakhstan, not Kyrgyzstan. A 1997 decision predates this court's existence by 21 years."
+  },
+  {
+   "id": "kg-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1210,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The decision identifier and court name indicate this is a Kyrgyz district court ruling, not an Uzbek constitutional court decision. Different jurisdictions and court levels."
+  },
+  {
+   "id": "kg-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1141,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The decision bears a Kyrgyz court designation format (\"ГД\" = Верховный суд КР/Supreme Court of Kyrgyzstan), not a Tajik constitutional court identifier. The publisher attribution is incorre"
+  }
+ ]
+}

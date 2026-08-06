@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Japan — Source-Grounded Citation Reliability (JP)",
+ "country": "JP",
+ "jurisdiction": "Japan",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.6667,
+ "correct": 8,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:16:07.801053+00:00",
+ "results": [
+  {
+   "id": "jp-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2478,
+   "verdict": true,
+   "correct": true,
+   "raw": "**True.** The Antimonopoly Act (Act No. 54 of 1947, dated April 14, 1947) is officially translated on MOJ's Japanese Law Translation database."
+  },
+  {
+   "id": "jp-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2378,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-02-18 is implausible—it's in the future and cannot correspond to a decided case in databases."
+  },
+  {
+   "id": "jp-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2068,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The JFTC issues cease and desist orders and surcharge payment orders for bid-rigging under Japan's Antimonopoly Act."
+  },
+  {
+   "id": "jp-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1980,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The 裁決事例集 (Collection of Tribunal Decisions) is published by the National Tax Tribunal, which issues 裁決 (adjudications)."
+  },
+  {
+   "id": "jp-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2253,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific translation exists on JLT with that exact date; details appear fabricated or unconfirmed."
+  },
+  {
+   "id": "jp-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2390,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The era \"令和7\" corresponds to 2025, not 2026, so the claimed date year contradicts the identifier's year."
+  },
+  {
+   "id": "jp-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2927,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Japan's Antimonopoly Act (1947) was published in Japan's Official Gazette (Kanpō), not Macau's Boletim Oficial, a different jurisdiction."
+  },
+  {
+   "id": "jp-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2450,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The date 2026-02-18 is in the future relative to a Reiwa 5 (2023) case; the metadata is implausible/unverifiable."
+  },
+  {
+   "id": "jp-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1685,
+   "verdict": true,
+   "correct": false,
+   "raw": "True. The JFTC (Japan Fair Trade Commission) issues cease and desist orders and surcharge payment orders for bid-rigging violations under Antimonopoly Act."
+  },
+  {
+   "id": "jp-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1796,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The date 平4.5.12 corresponds to Heisei 4 (1992), not 1991; the year conversion is incorrect."
+  },
+  {
+   "id": "jp-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1844,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Hong Kong e-Legislation publishes Hong Kong laws, not Japanese statutes; a Japanese Act would appear in official Japanese gazettes."
+  },
+  {
+   "id": "jp-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2090,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The era \"令和7\" corresponds to 2025, not 2026; the claimed date conflicts with the Reiwa year designation."
+  }
+ ]
+}

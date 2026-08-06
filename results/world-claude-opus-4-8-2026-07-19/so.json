@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Somalia — Source-Grounded Citation Reliability (SO)",
+ "country": "SO",
+ "jurisdiction": "Somalia",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:24:54.071902+00:00",
+ "results": [
+  {
+   "id": "so-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2028,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears fabricated; no verifiable record exists of such a law, and the 2026 date is future-dated."
+  },
+  {
+   "id": "so-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2106,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Somaliland is not Somalia; it's a self-declared autonomous region. The citation details also appear fabricated or unverifiable."
+  },
+  {
+   "id": "so-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2259,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2025-12-01 is in the future, and I cannot verify this specific Somali defense-related regulation's existence or publication details."
+  },
+  {
+   "id": "so-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2953,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Somaliland is an unrecognized self-declared state; the \"2004-01-01\" date and citation appear fabricated. Verify against actual Somaliland legislative records."
+  },
+  {
+   "id": "so-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2320,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The 2026 date is in the future, making publication impossible; this citation cannot be verified as a legitimate source."
+  },
+  {
+   "id": "so-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3715,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated citation; no verifiable \"300319F\" police law compilation exists in Somaliland's official legislation records."
+  },
+  {
+   "id": "so-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2273,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No verifiable record exists of this specific census/civil statistics law with these exact publication details; likely fabricated citation."
+  },
+  {
+   "id": "so-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2895,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Somali election laws aren't published in the Seychelles Official Gazette; jurisdictional mismatch makes this bibliographic citation clearly incorrect and implausible."
+  },
+  {
+   "id": "so-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2180,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This appears fabricated; I cannot verify this specific Somali-titled regulation, gazette source, or publication date as authentic."
+  },
+  {
+   "id": "so-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2022,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Somaliland is not Tanzania; a Tanzanian Attorney General's Office would not publish Somaliland's legislation. The attribution is implausible."
+  },
+  {
+   "id": "so-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2123,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific gazette citation or publication date; such precise bibliographic claims about Somali legal sources require caution."
+  },
+  {
+   "id": "so-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1850,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Kenya Law (National Council for Law Reporting) publishes Kenyan legislation, not Somaliland laws; jurisdictions and publishing bodies are incompatible."
+  }
+ ]
+}

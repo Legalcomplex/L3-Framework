@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Côte d'Ivoire — Source-Grounded Citation Reliability (CI)",
+ "country": "CI",
+ "jurisdiction": "Côte d'Ivoire",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:51:24.118552+00:00",
+ "results": [
+  {
+   "id": "ci-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1976,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific bilateral agreement's exact title, date, or publication details on CivLII/Laws.Africa without direct source access."
+  },
+  {
+   "id": "ci-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2919,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific decision citation; Ivorian Supreme Court rulings aren't reliably indexed publicly, so accuracy is unconfirmed."
+  },
+  {
+   "id": "ci-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2058,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific decision number, date, and requester against actual Côte d'Ivoire Constitutional Council records; it appears fabricated."
+  },
+  {
+   "id": "ci-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2284,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a generic chapter title fabricated or unverifiable as a genuine citation; no specific legal instrument or authoritative source confirms it."
+  },
+  {
+   "id": "ci-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2223,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific arrêté's existence, date, or publication source; no reliable record confirms this citation's accuracy."
+  },
+  {
+   "id": "ci-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1878,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation's accuracy—precise details like decision number, date, and chamber require confirmation from official court records."
+  },
+  {
+   "id": "ci-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1826,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — Senegal's Prime Minister Office would not be the official publisher for a bilateral Côte d'Ivoire–Mali cooperation agreement between those two states."
+  },
+  {
+   "id": "ci-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2206,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Cour Suprême, Chambre judiciaire, is a Côte d'Ivoire judicial body; it cannot be published by Senegal's separate Cour des Comptes institution."
+  },
+  {
+   "id": "ci-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1941,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The decision's designation (\"CC\" for Conseil Constitutionnel, \"CI\" for Côte d'Ivoire) contradicts attribution to Mali's Cour Suprême entirely."
+  },
+  {
+   "id": "ci-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1970,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** I cannot verify this specific bibliographic claim—the source, date, and content combination appears fabricated or unverifiable against actual official Ivorian legal publications."
+  },
+  {
+   "id": "ci-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1935,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This arrêté concerns Côte d'Ivoire sanitary agreement regulations, not Guinea-Bissau tax legislation; the source and jurisdiction pairing is implausible and mismatched."
+  },
+  {
+   "id": "ci-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2628,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. LiberLII covers Liberian law, not Côte d'Ivoire; Ivorian Cour suprême decisions would be hosted by Côte d'Ivoire's own legal database, not LiberLII."
+  }
+ ]
+}

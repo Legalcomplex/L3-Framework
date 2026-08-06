@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Switzerland — Source-Grounded Citation Reliability (CH)",
+ "country": "CH",
+ "jurisdiction": "Switzerland",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:51:19.429830+00:00",
+ "results": [
+  {
+   "id": "ch-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1591,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this date is in the future (2026), and the case identifier cannot be verified as an actual published decision at this time."
+  },
+  {
+   "id": "ch-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1807,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.**  This appears to be a fabricated or unverifiable citation. Fedlex publishes federal legislation and official texts, not routine tribunal notifications, and the future date (2026-02-13) is s"
+  },
+  {
+   "id": "ch-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1735,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. SAR 301.112 does not correspond to that title/date; this citation appears fabricated or misattributed within Aargau's systematic collection numbering."
+  },
+  {
+   "id": "ch-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2212,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific bibliographic claim's exact publication date and BSG citation without access to the actual Bernese legal register."
+  },
+  {
+   "id": "ch-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3059,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This law's actual title concerns publication organization, but I cannot verify the exact 2019-01-01 date/SG citation without access to official sources."
+  },
+  {
+   "id": "ch-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1808,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific CAS case number, date, and content combination as an actual, accurate citation without access to verified CAS records."
+  },
+  {
+   "id": "ch-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2218,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. A Zürich Mietgericht (Switzerland) ruling would not appear in DGSI, which publishes only Portuguese Courts of Appeal decisions."
+  },
+  {
+   "id": "ch-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2093,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This describes a court decision/notification from the Federal Administrative Tribunal, not federal legislation; Fedlex publishes legislative texts, not court rulings from Cour VI."
+  },
+  {
+   "id": "ch-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1608,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. SAR 301.115 does not correspond to that ordinance; Aargau's SAR numbering for health-related pilot project provisions differs from this claimed identifier."
+  },
+  {
+   "id": "ch-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1829,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. BSG 832.522 does not match this description; the identifier and title/date combination appears fabricated or misattributed within Bern's actual systematic legal collection numbering."
+  },
+  {
+   "id": "ch-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 4315,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This is actually the \"Publikationsgesetz\" (PublG) of Basel-Stadt; exact title and effective date require verification against official SG records."
+  },
+  {
+   "id": "ch-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1710,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The docket number format resembles CAS (Court of Arbitration for Sport) cases, not typical NeuRIS citations, and Switzerland's NeuRIS is not \"Germany's\" portal."
+  }
+ ]
+}

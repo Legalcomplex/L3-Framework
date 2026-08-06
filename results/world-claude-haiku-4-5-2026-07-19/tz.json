@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Tanzania — Source-Grounded Citation Reliability (TZ)",
+ "country": "TZ",
+ "jurisdiction": "Tanzania",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.4167,
+ "correct": 5,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:46:23.305840+00:00",
+ "results": [
+  {
+   "id": "tz-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1769,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  This act cannot have been published on 2025-06-30, as that date is in the future relative to current knowledge cutoffs. The claim appears to reference a non-existent or speculative document"
+  },
+  {
+   "id": "tz-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1814,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The 'Acquisition of Buildings Regulations, 1971' predates Tanzania Legal Information Institute's establishment. The institute was founded later and could not have originally published 1971 "
+  },
+  {
+   "id": "tz-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1484,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No evidence exists of a \"CMS Foreign Companies Offers Eligibility and Cross Listing Requirements (2003)\" regulation published by Tanzania's Capital Markets and Securities Authority on that date"
+  },
+  {
+   "id": "tz-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1721,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Fair Competition Tribunal is Tanzania's competition authority, but this case citation format and publisher attribution cannot be verified as an official published source in available Ta"
+  },
+  {
+   "id": "tz-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1462,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The Employment and Labour Relations Act is a real Tanzanian statute, but the cited publication date (2025-04-25) is in the future and therefore implausible for verifying this claim."
+  },
+  {
+   "id": "tz-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1758,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The \"Adoption of Children (Fees) Regulations, 1992\" predates Tanzania Legal Information Institute's operations. TANZLII was established later and would not have originally published 1992 re"
+  },
+  {
+   "id": "tz-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1473,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Tanzania and Seychelles are distinct countries with separate legal systems. A Tanzanian law would be published in Tanzania's Official Gazette, not Seychelles'."
+  },
+  {
+   "id": "tz-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1633,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The 'Acquisition of Buildings Regulations, 1971' predates Tanzania Legal Information Institute's establishment. TanzLII was founded in 2005, making this publication date implausible for a 1"
+  },
+  {
+   "id": "tz-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1330,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  CMS is a law firm, not an official legal source publisher. Kenya Law (NCLR) publishes Kenyan legislation, not CMS firm documents. This appears to be a private publication misattributed to a"
+  },
+  {
+   "id": "tz-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1679,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The decision involves Tanzanian parties and EWURA (Tanzania's energy regulator), so it should be published by a Tanzanian legal source, not Madagascar's."
+  },
+  {
+   "id": "tz-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1384,
+   "verdict": true,
+   "correct": false,
+   "raw": "# Answer: **True**  The Employment and Labour Relations Act is a legitimate Tanzanian statute. The Attorney General's Office maintains official legal documentation through their MIS system, making thi"
+  },
+  {
+   "id": "tz-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1466,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The claimed publication date (2004-07-31) likely refers to when Tanzania Legal Information Institute digitized or republished the regulations online, not their original enactment date of 19"
+  }
+ ]
+}

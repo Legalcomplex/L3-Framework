@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Peru — Source-Grounded Citation Reliability (PE)",
+ "country": "PE",
+ "jurisdiction": "Peru",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:43:04.990063+00:00",
+ "results": [
+  {
+   "id": "pe-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1678,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  INDECOPI tribunal decisions are typically published as formal resolutions (resoluciones) with specific numerical designations, not as interrogative questions. The format appears non-standar"
+  },
+  {
+   "id": "pe-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1842,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  TCP (Tribunal de Contrataciones Públicas) is Peru's procurement tribunal, but OSCE is not its publisher. TCP resolutions are published through official government portals, not under an \"OSC"
+  },
+  {
+   "id": "pe-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1432,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The claim references a future date (2025-03-25) that has not yet occurred. El Peruano Digital cannot have published content on a date in the future from the present perspective."
+  },
+  {
+   "id": "pe-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1530,
+   "verdict": true,
+   "correct": true,
+   "raw": "**True**  The JNE (Jurado Nacional de Elecciones) is Peru's official electoral authority that publishes resolutions. The citation format and date are consistent with JNE's official documentation pract"
+  },
+  {
+   "id": "pe-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1716,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  INDECOPI (Peru's intellectual property authority) does not publish decisions with interrogative titles in that format. Decision titles follow formal administrative nomenclature, not colloqu"
+  },
+  {
+   "id": "pe-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1832,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The identifier format and date (2025-09-29) are inconsistent with current OSCE publication timelines. The future date suggests this resolution does not yet exist in official records."
+  },
+  {
+   "id": "pe-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1475,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  INDECOPI's Competition & IP Tribunal issues resolutions on specific cases, not generic procedural guidance documents titled as questions about when remedies are procedent."
+  },
+  {
+   "id": "pe-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1656,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier lists \"TCP-S6\" but the resolution title shows \"TCP-S5\"—these designations do not match, indicating a cataloging error or mislabeling."
+  },
+  {
+   "id": "pe-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1394,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The claim lacks verifiable documentation. The specific document title, regulatory framework, and API publication date cannot be confirmed through standard Peruvian legislative sources or of"
+  },
+  {
+   "id": "pe-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1776,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The identifier mismatch is evident: JNE.2019000014 cannot correspond to a resolution catalogued as JNE.2019000012. The numerical identifiers do not align."
+  },
+  {
+   "id": "pe-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1233,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The title format and phrasing suggest this is a question rather than an official tribunal resolution title. INDECOPI resolutions typically use formal case numbers and decision formats, not inte"
+  },
+  {
+   "id": "pe-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1367,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The resolution number format and date don't match TST (Brazil's labor court). Peru uses different administrative court designations; TCP suggests a Peruvian constitutional body, not Brazilian l"
+  }
+ ]
+}

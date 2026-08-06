@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — South Sudan — Source-Grounded Citation Reliability (SS)",
+ "country": "SS",
+ "jurisdiction": "South Sudan",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:02:58.491817+00:00",
+ "results": [
+  {
+   "id": "ss-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2299,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** South Sudan's Code of Civil Procedure Act dates to 2007 under Sudan-era/transitional arrangements, but precise publisher attribution to \"Ministry of Justice Laws\" cannot be verified reliabl"
+  },
+  {
+   "id": "ss-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2300,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This appears to be a fabricated or unverifiable citation; I cannot confirm the Bank of South Sudan published this specific statistical bulletin table on that exact date."
+  },
+  {
+   "id": "ss-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1990,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. South Sudan's Advocates Act citation format and Ministry of Justice publication details cannot be verified as accurately stated here."
+  },
+  {
+   "id": "ss-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2433,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific claim — no reliable record confirms a \"5.Statistical bulletin table-May\" publication by Bank of South Sudan on that exact date via that source."
+  },
+  {
+   "id": "ss-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2229,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific citation's accuracy; South Sudan's legislative records are poorly digitized, making confirmation of exact publication details unreliable."
+  },
+  {
+   "id": "ss-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2080,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific document exists; Bank of South Sudan's regulatory publications aren't independently confirmable through my training data sources."
+  },
+  {
+   "id": "ss-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 3255,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** South Sudan does not use Tanzania's Attorney General's Office Management Information System; this publication source is jurisdictionally mismatched and incorrect for citation purposes."
+  },
+  {
+   "id": "ss-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2234,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This appears to be a fabricated or unverifiable citation; I cannot confirm such a specific bulletin exists in official Bank of South Sudan records."
+  },
+  {
+   "id": "ss-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1751,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Advocates Act is Kenyan legislation published by Kenya Law/NCLR, not a South Sudan legal source; jurisdiction attribution is incorrect."
+  },
+  {
+   "id": "ss-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1600,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — this appears to be a fabricated or unverifiable citation; no legitimate source can have a 2026 publication date, which is in the future."
+  },
+  {
+   "id": "ss-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1889,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Seychelles Official Gazette publishes Seychelles' laws, not South Sudan's; this Act would appear in South Sudan's own official Gazette instead."
+  },
+  {
+   "id": "ss-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2166,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Bank of South Sudan (BoSS) regulatory documents would not plausibly be published through Madagascar's Ministry of Justice Jurisprudence Database—an unrelated foreign jurisdiction's official"
+  }
+ ]
+}

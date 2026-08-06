@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — U.S. Virgin Islands — Source-Grounded Citation Reliability (VI)",
+ "country": "VI",
+ "jurisdiction": "U.S. Virgin Islands",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 11,
+ "blocked": 0,
+ "unparsed": 1,
+ "errors": [],
+ "accuracy": 0.4545,
+ "correct": 5,
+ "parse_rate": 0.9167,
+ "passed": false,
+ "timestamp": "2026-07-19T08:27:53.400709+00:00",
+ "results": [
+  {
+   "id": "vi-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2071,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific case exists; I have no reliable record of this decision or citation. Treat as unverified."
+  },
+  {
+   "id": "vi-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2287,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Virgin Islands trial court is the \"Superior Court,\" but criminal cases are captioned \"People of the Virgin Islands\"—inconsistent; likely fabricated."
+  },
+  {
+   "id": "vi-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2291,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation; docket details and case names require checking official USVI Supreme Court records."
+  },
+  {
+   "id": "vi-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2528,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific decision's existence, date, or publisher; asserting its authenticity risks confirming fabricated bibliographic details."
+  },
+  {
+   "id": "vi-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2646,
+   "verdict": null,
+   "correct": false,
+   "raw": "I cannot verify this specific citation as authentic; unable to confirm the case, date, or publication details without reliable source access."
+  },
+  {
+   "id": "vi-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2102,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific case identifier, date, and party names correspond accurately without access to authoritative USVI court records."
+  },
+  {
+   "id": "vi-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2128,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific docket number, date, or case name against authoritative USVI Supreme Court records."
+  },
+  {
+   "id": "vi-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2867,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific case identifier, docket number, party names, or date against authoritative USVI court records."
+  },
+  {
+   "id": "vi-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1470,
+   "verdict": true,
+   "correct": false,
+   "raw": "I cannot verify this specific citation. Without access to confirm the case name, date, or reporter, I can't reliably confirm True."
+  },
+  {
+   "id": "vi-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2425,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific citation's authenticity, publication venue, or details; asserting its accuracy risks confirming fabricated bibliographic information."
+  },
+  {
+   "id": "vi-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1836,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The U.S. Virgin Islands falls under U.S. jurisdiction; BVI (British Virgin Islands) Commercial Court is a separate foreign jurisdiction."
+  },
+  {
+   "id": "vi-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2174,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The U.S. Virgin Islands is a U.S. territory; its decisions aren't published by Bermuda's Supreme Court Judgments."
+  }
+ ]
+}

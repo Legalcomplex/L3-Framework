@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Brunei — Source-Grounded Citation Reliability (BN)",
+ "country": "BN",
+ "jurisdiction": "Brunei",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:50:10.267686+00:00",
+ "results": [
+  {
+   "id": "bn-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2021,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this appears to be a fabricated/unverifiable future-dated citation; no legitimate record confirms S 5/2026's actual gazettal details."
+  },
+  {
+   "id": "bn-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2014,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Brunei's Old Age and Disability Pensions Act framework exists, but verifying this exact publication date and format via AGC Laws requires specific confirmation I cannot reliably provide."
+  },
+  {
+   "id": "bn-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1811,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation exists; it appears fabricated or unconfirmed, likely a hallucinated case reference."
+  },
+  {
+   "id": "bn-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2925,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific citation's accuracy — the exact instrument number, schedule details, and date require confirmation against Brunei's official Government Gazette records."
+  },
+  {
+   "id": "bn-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2189,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this appears to be a fabricated/unverifiable citation; no such S 4/2026 order can be confirmed in Brunei's actual Government Gazette records."
+  },
+  {
+   "id": "bn-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1990,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Interpretation and General Clauses Act exists in Brunei's Laws (Cap. 4), but I cannot verify this specific 2014 publication citation's accuracy."
+  },
+  {
+   "id": "bn-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1966,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'S5_2027' mismatches the cited 'S 5/2026' label—inconsistent numbering, and the future date is unverifiable/fabricated."
+  },
+  {
+   "id": "bn-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1800,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Brunei's Old Age and Disability Pensions Act was not published via the Attorney General's Chambers Laws on that specific date claimed."
+  },
+  {
+   "id": "bn-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1606,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — I cannot verify this specific citation; Brunei case reports aren't reliably indexed in my training data, so the claim is unconfirmed."
+  },
+  {
+   "id": "bn-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1721,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Indonesia's JDIHN National Legal Network is Indonesia's own domestic legal database; it does not publish Brunei's AITI orders or S13/2003."
+  },
+  {
+   "id": "bn-src-f05",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2405,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'S4_2027' mismatches the cited 'S 4/2026' designation and date, indicating an inconsistent, likely fabricated bibliographic reference."
+  },
+  {
+   "id": "bn-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1570,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Brunei's Interpretation and General Clauses Act is official legislation of Brunei; it would not be authentically published via a \"Cambodian Legal Library\" source."
+  }
+ ]
+}

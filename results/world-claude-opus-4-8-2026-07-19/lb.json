@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Lebanon — Source-Grounded Citation Reliability (LB)",
+ "country": "LB",
+ "jurisdiction": "Lebanon",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:17:11.856286+00:00",
+ "results": [
+  {
+   "id": "lb-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3446,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This citation lacks essential identifying details (chamber, decision number, parties). Juricaf hosts Lebanese jurisprudence, but verification is impossible."
+  },
+  {
+   "id": "lb-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2077,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Constitutional Council annuls laws through its decisions, not the Parliament; such annulment wouldn't be published as parliamentary approved law."
+  },
+  {
+   "id": "lb-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2081,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific circular's existence, exact title, or publication date; the citation appears fabricated or inaccurate."
+  },
+  {
+   "id": "lb-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2332,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Lebanon's Capital Markets Authority was established by Law No. 161 in 2011, not 2005; this citation is fabricated."
+  },
+  {
+   "id": "lb-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2394,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Juricaf hosts French-language jurisprudence, but this citation lacks verifiable specifics; the truncated reference \"19\" appears fabricated or incomplete."
+  },
+  {
+   "id": "lb-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2274,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Lebanon's 2026 budget/economic classification wouldn't be finalized and published on that date; details appear fabricated and unverifiable against official parliamentary records."
+  },
+  {
+   "id": "lb-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 3613,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier contains date 20210617 (June 17), but the claim states June 16 (2021-06-16), showing inconsistency."
+  },
+  {
+   "id": "lb-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2193,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Lebanese constitutional laws are published in the Official Gazette, not Saudi Arabia's central bank rulebook—jurisdictionally and institutionally incorrect."
+  },
+  {
+   "id": "lb-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2992,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This appears fabricated; \"BCCL Circular No. 1-IEF\" and cited circular numbers/date don't match verifiable Banking Control Commission of Lebanon publications."
+  },
+  {
+   "id": "lb-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2080,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Lebanon's Capital Markets Authority was established by Law No. 161 of 2011, so a 2006 CMA source is impossible."
+  },
+  {
+   "id": "lb-src-f05",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1395,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier ends in \"20\" but the cited decision number is \"19,\" creating an inconsistency between identifier and reference."
+  },
+  {
+   "id": "lb-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2433,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Lebanon's legislative documents come from Majlis al-Nuwab, not Israel's Knesset; the source jurisdiction and publisher are fundamentally mismatched."
+  }
+ ]
+}

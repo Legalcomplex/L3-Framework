@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — India — Source-Grounded Citation Reliability (IN)",
+ "country": "IN",
+ "jurisdiction": "India",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:55:32.951005+00:00",
+ "results": [
+  {
+   "id": "in-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2756,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific case citation exists; I have no reliable access confirming this particular judgment's authenticity or publication."
+  },
+  {
+   "id": "in-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2960,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The date 2026-02-03 is in the future and cannot represent an actual decided/published Supreme Court judgment as claimed."
+  },
+  {
+   "id": "in-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2375,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation's accuracy—case numbers, party names, dates and reporting details require confirmation against official APTEL records/database directly."
+  },
+  {
+   "id": "in-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1937,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.**  I cannot verify this specific citation exists. The case name, number, and details appear fabricated or unverifiable, so I cannot confirm authenticity."
+  },
+  {
+   "id": "in-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2199,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This appears to be a fabricated/unverifiable citation—no such CCI order is traceable, and the future-dated decision (2026-01-05) raises authenticity concerns."
+  },
+  {
+   "id": "in-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1975,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific case citation exists; case numbers, party names, and dates require direct database confirmation to authenticate."
+  },
+  {
+   "id": "in-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2180,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The claim mismatches identifiers—case number \"CR. WJC/144/2026\" cannot correspond to a record actually titled and dated as \"CR. WJC/144/2025.\""
+  },
+  {
+   "id": "in-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2046,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This identifier and case appear fabricated—the citation format, future date (2026), and details cannot be verified as an authentic Supreme Court record."
+  },
+  {
+   "id": "in-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1484,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Powergrid Corporation v. CERC is an Indian Appellate Tribunal for Electricity matter, unrelated to Pakistan's Islamabad High Court jurisdiction entirely."
+  },
+  {
+   "id": "in-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1725,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** \"O.A.\" (Original Application) designates Central Administrative Tribunal matters, not Supreme Court cases; also no such Supreme Court Online Bulletin exists officially."
+  },
+  {
+   "id": "in-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1525,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The date (2023-01-05) cannot precede or mismatch a 2025 case number; this citation appears fabricated or internally inconsistent."
+  },
+  {
+   "id": "in-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1712,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** I cannot verify this specific citation's accuracy—case numbers, dates, and party names require confirmation from official CESTAT records or databases before citing."
+  }
+ ]
+}

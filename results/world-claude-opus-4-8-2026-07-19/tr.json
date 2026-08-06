@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Turkey — Source-Grounded Citation Reliability (TR)",
+ "country": "TR",
+ "jurisdiction": "Turkey",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:26:27.722649+00:00",
+ "results": [
+  {
+   "id": "tr-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2463,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date is in the future relative to typical verification; I cannot confirm this specific decision's authenticity or existence."
+  },
+  {
+   "id": "tr-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2617,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2025-12-22 is in the future and implausible; also such conflict resolution rulings typically involve regional courts, not Danıştay."
+  },
+  {
+   "id": "tr-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2686,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. \"BAZI KANUNLARDA DEĞİŞİKLİK YAPILMASINA DAİR KANUN\" is a generic title used repeatedly; without a law number and Resmî Gazete verification, unconfirmable."
+  },
+  {
+   "id": "tr-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2540,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This is a Hugging Face dataset, not an official Turkish legal source; official publication occurs via Resmî Gazete."
+  },
+  {
+   "id": "tr-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 3189,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The decision number K. 2026/339 dated 2026-01-21 references a future date, making this citation impossible and fabricated."
+  },
+  {
+   "id": "tr-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2423,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Turkish international agreements are officially published in the Resmî Gazete, not the MFA Treaties Database, which lacks official publication authority."
+  },
+  {
+   "id": "tr-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 3155,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Turkish Constitutional Court identifiers use \"E.\" (Esas/case) and \"K.\" (Karar/decision) numbers; '2025/257' cannot inherently correspond to the cited mismatched numbers."
+  },
+  {
+   "id": "tr-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2764,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The date 2025-12-22 is implausible for a citable 2025 decision, and unverifiable specifics suggest a fabricated bibliographic claim."
+  },
+  {
+   "id": "tr-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 3907,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This generic title (\"Law Amending Certain Laws\") lacks a specific law number/date; unverifiable as a distinct official publication."
+  },
+  {
+   "id": "tr-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1818,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Turkish laws are officially published in Resmî Gazete, not a Hugging Face dataset, which is unofficial and non-authoritative."
+  },
+  {
+   "id": "tr-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1969,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The citation \"3. Hukuk Dairesi\" indicates a Turkish Court of Cassation (Yargıtay) civil chamber, not Azerbaijan's Constitutional Court."
+  },
+  {
+   "id": "tr-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1936,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. A Turkey-Kosovo bilateral agreement would be published in Turkey's Resmî Gazete, not the Hellenic Parliament's Greek legal code."
+  }
+ ]
+}

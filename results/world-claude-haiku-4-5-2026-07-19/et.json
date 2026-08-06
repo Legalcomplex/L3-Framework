@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Ethiopia — Source-Grounded Citation Reliability (ET)",
+ "country": "ET",
+ "jurisdiction": "Ethiopia",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:36:43.139868+00:00",
+ "results": [
+  {
+   "id": "et-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1528,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This appears to be a financing agreement (not a court decision), and the citation format doesn't match Ethiopian Federal Supreme Court publications or standard legal documentation protocols"
+  },
+  {
+   "id": "et-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1469,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  Ethiopia's federal courts do not systematically publish tax law decisions as official case law. Tax rulings typically come from the Ethiopian Revenue and Customs Authority, not courts."
+  },
+  {
+   "id": "et-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2076,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Proclamation No. 1051 was not published on 2017-06-05. Ethiopian proclamations are numbered sequentially, and this number does not correspond to publications from that specific date in the "
+  },
+  {
+   "id": "et-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1488,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The date 2025-12-30 is in the future, making this claim invalid. Official legal documents cannot be published on dates that have not yet occurred."
+  },
+  {
+   "id": "et-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2069,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The citation format and specificity provided don't match standard Ethiopian Federal Supreme Court Cassation Decision publication records. Verification requires access to official court databa"
+  },
+  {
+   "id": "et-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1749,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The citation format is unclear and conflates elements inconsistently. The \"RS\" (Senegal) and garbled Amharic text raise authenticity concerns. Verification through official Ethiopian Federa"
+  },
+  {
+   "id": "et-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2072,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The citation format is unclear and appears incomplete. The reference lacks proper standardization, official gazette publication details, or verifiable court documentation consistent with Et"
+  },
+  {
+   "id": "et-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1599,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The specific identifier '14700' and its exact classification cannot be verified without access to the official Ethiopia Federal Courts Case Law database documentation. This appears to be an u"
+  },
+  {
+   "id": "et-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1752,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Proclamation No. 1051 is an Ethiopian legal instrument. It would be published in the Ethiopian Official Gazette (Negarit Gazeta), not the Seychelles Official Gazette. Jurisdiction mismatch."
+  },
+  {
+   "id": "et-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1158,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The identifier format and specific directive title cannot be verified against Ethiopia National Bank's official collection. No authoritative source confirms this exact correspondence exists"
+  },
+  {
+   "id": "et-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1459,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The citation format and details provided do not match standard Ethiopian Federal Supreme Court Cassation Decision publication conventions or accessible records of official decisions from that"
+  },
+  {
+   "id": "et-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1507,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Kenya Law reports Kenyan legislation and treaties. This appears to be an Ethiopian-Senegal agreement that should be published through Ethiopian official sources, not Kenya Law."
+  }
+ ]
+}

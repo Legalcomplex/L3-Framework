@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Peru — Source-Grounded Citation Reliability (PE)",
+ "country": "PE",
+ "jurisdiction": "Peru",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:00:19.077444+00:00",
+ "results": [
+  {
+   "id": "pe-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2215,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this appears to be a generic FAQ-style title, not an actual verifiable INDECOPI Tribunal resolution citation with proper case number."
+  },
+  {
+   "id": "pe-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1985,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated or unverifiable citation; I cannot confirm this specific resolution number, date, and source combination exists officially."
+  },
+  {
+   "id": "pe-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2402,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific claim—without access to real-time official gazette records, I cannot confirm this exact publication, date, or title existed in El Peruano."
+  },
+  {
+   "id": "pe-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1927,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific resolution number, date, and content combination exists in JNE's official records without direct source access."
+  },
+  {
+   "id": "pe-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2477,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This appears to be a fabricated or non-verifiable citation; the descriptive question-style title doesn't match INDECOPI's official resolution-naming conventions and numbering."
+  },
+  {
+   "id": "pe-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2328,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify specific OSCE Tribunal resolution numbers, dates, or identifiers—this appears to be a fabricated or unverifiable citation detail."
+  },
+  {
+   "id": "pe-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 3300,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This appears to be a generic FAQ-style question, not an actual case citation—lacking a resolution number, making verification as a genuine INDECOPI Tribunal decision impossible."
+  },
+  {
+   "id": "pe-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 3003,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier specifies \"S6\" (Sixth Chamber) while the described title references \"S5\" (Fifth Chamber), an internal mismatch indicating inconsistency."
+  },
+  {
+   "id": "pe-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1725,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Peru has a unicameral Congress, not a Chamber of Deputies; Peruvian regulatory norms are published via El Peruano, not a Chamber of Deputies Open Data API."
+  },
+  {
+   "id": "pe-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1559,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'JNE.2019000014' cannot correspond to a resolution labeled with a different internal code 'JNE.2019000012' as stated."
+  },
+  {
+   "id": "pe-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1859,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — this reads like a fabricated/paraphrased title, not an official INDECOPI resolution citation; genuine resolutions carry numbered identifiers, not descriptive question-form titles."
+  },
+  {
+   "id": "pe-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1962,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Tribunal Superior do Trabalho is Brazil's labor court, not Peru's. Also \"TCP\" suggests Tribunal Constitucional Plurinacional (Bolivia), inconsistent with the stated attribution."
+  }
+ ]
+}

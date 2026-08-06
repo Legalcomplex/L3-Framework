@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Uganda — Source-Grounded Citation Reliability (UG)",
+ "country": "UG",
+ "jurisdiction": "Uganda",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.4167,
+ "correct": 5,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:04:35.242588+00:00",
+ "results": [
+  {
+   "id": "ug-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1929,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific citation exists; no confirmed record of this 2025 statutory instrument's publication via that source is available."
+  },
+  {
+   "id": "ug-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2204,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Uganda's Bank of Uganda regulates foreign exchange under statutory instruments, but no such \"Foreign Exchange Amendment Act\" from 2023 is verifiably documented officially."
+  },
+  {
+   "id": "ug-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3777,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This document is a technical procurement/approval list, not a tariff order or decision, and the 2026 date is future/unverifiable."
+  },
+  {
+   "id": "ug-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2103,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this appears to be a fabricated/unverifiable citation; I cannot confirm UCC published this specific 2026 dated consumer guide document."
+  },
+  {
+   "id": "ug-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2045,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Act exists in Uganda's law but the specific publication date \"1972-06-06\" cannot be verified as accurate without direct source confirmation."
+  },
+  {
+   "id": "ug-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2209,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The MDI (Microfinance Deposit-Taking Institutions) Amendment Act would be published in the Uganda Gazette by the Uganda Law Reform Commission/Government Printer, not Bank of Uganda directly"
+  },
+  {
+   "id": "ug-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2818,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Tanzania's Attorney General's system would not publish Ugandan legal instruments; Uganda's Judiciary regulations belong to Uganda's own official gazette/publication channels, not Tanzania's."
+  },
+  {
+   "id": "ug-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2169,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Uganda's Foreign Exchange Act amendments are published in the Uganda Gazette by government printers, not by Bank of Uganda's regulatory guidelines page."
+  },
+  {
+   "id": "ug-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1764,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This appears to be a technical/procurement list, not a tariff order or decision—unlikely genuine ERA publication under that category or date."
+  },
+  {
+   "id": "ug-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1690,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — this is not a plausible Seychelles Official Gazette publication; the title concerns Ugandan consumer/regulatory matters, and the date is unverifiable/future."
+  },
+  {
+   "id": "ug-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1876,
+   "verdict": true,
+   "correct": false,
+   "raw": "**True.**  The Administration of Estates (Small Estates) (Special Provisions) Act is a genuine Ugandan statute, consistent with laws.africa/ULII publication records dating from 1970."
+  },
+  {
+   "id": "ug-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1850,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Kenya Law reports Kenyan legislation; Uganda's MDI Amendment Act would be published by Uganda's official gazette/ULRC, not Kenya's National Council for Law Reporting."
+  }
+ ]
+}

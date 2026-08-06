@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Thailand — Source-Grounded Citation Reliability (TH)",
+ "country": "TH",
+ "jurisdiction": "Thailand",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:03:41.835003+00:00",
+ "results": [
+  {
+   "id": "th-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2501,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Royal Decree No. 782 concerning tax exemptions under the Revenue Code was actually published in 2024, but I cannot verify the specific date (2024-03-21) or exact details without access to t"
+  },
+  {
+   "id": "th-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2330,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this appears to be a fabricated/unverifiable citation; case numbers with future-dated years like 2568 require verification against actual official Royal Gazette records."
+  },
+  {
+   "id": "th-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2125,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This appears to be a fabricated citation with a future date (2026), an implausibly specific personal name, and no verifiable record."
+  },
+  {
+   "id": "th-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1951,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated or unverifiable citation; no such specific decision, date, and publication source can be confirmed as authentic."
+  },
+  {
+   "id": "th-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1912,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific ministerial regulation's existence, exact title, or publication date without access to the actual Royal Gazette database."
+  },
+  {
+   "id": "th-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2818,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — no such HuggingFace \"Thailand Royal Gazette OCR Dataset\" exists as an official legal source; the Royal Gazette is published by the Thai government itself."
+  },
+  {
+   "id": "th-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2380,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Thai royal decrees are published in the Royal Gazette (ราชกิจจานุเบกษา), not a Cambodian legal library source, which is fictitious/irrelevant."
+  },
+  {
+   "id": "th-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2493,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Thai official notices publish via Thailand's Government Gazette (ราชกิจจานุเบกษา), not Indonesia's JDIHN, which serves Indonesian legal documents exclusively."
+  },
+  {
+   "id": "th-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1651,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This appears to be a fabricated or unverifiable citation; no such named individual case is publicly documented in Thai SEC enforcement records."
+  },
+  {
+   "id": "th-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1821,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This appears fabricated; Thailand's Trade Competition Commission doesn't publish rulings under this exact title/format verifiably in official databases."
+  },
+  {
+   "id": "th-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1571,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The date (2022-03-29) precedes the cited B.E. 2567 (2024) ministerial regulation, making the publication date inconsistent and implausible."
+  },
+  {
+   "id": "th-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1984,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.**  The case number references Buddhist Era 2568 (2025 CE), which postdates the claimed dataset publication date of 2023-11-03—a chronological impossibility."
+  }
+ ]
+}

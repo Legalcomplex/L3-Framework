@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Cameroon — Source-Grounded Citation Reliability (CM)",
+ "country": "CM",
+ "jurisdiction": "Cameroon",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:35:23.550048+00:00",
+ "results": [
+  {
+   "id": "cm-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1644,
+   "verdict": true,
+   "correct": true,
+   "raw": "**True**  The citation format correctly identifies a Constitutional Council (Conseil constitutionnel) decision from Cameroon dated February 24, 2020, with reference number 02/CC/SRCER, matching standa"
+  },
+  {
+   "id": "cm-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2252,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This law cannot have been published on 17 December 2025, as that date is in the future relative to the knowledge cutoff in April 2024. The claim is temporally impossible."
+  },
+  {
+   "id": "cm-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1470,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The identifier format does not match standard Cameroon Supreme Court citation conventions. The date components and case number structure appear inconsistent with official judicial documenta"
+  },
+  {
+   "id": "cm-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1521,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The citation format is incorrect. Cameroon's Constitutional Council decisions use the format \"CC/[year]/[number],\" not \"01/CC/CT.\" The date placement and designator are non-standard."
+  },
+  {
+   "id": "cm-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1525,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This law cannot have been published on July 15, 2025, as that date is in the future relative to the knowledge cutoff (April 2024). The claim is temporally impossible."
+  },
+  {
+   "id": "cm-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1563,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The identifier format does not match standard Cameroon Supreme Court citation conventions. The alphanumeric identifier structure appears inconsistent with official Cameroonian legal documen"
+  },
+  {
+   "id": "cm-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1878,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Lex.ao is an Angolan legal platform and would not be the primary publisher of Cameroonian Constitutional Council decisions, which are published by Cameroon's official institutions."
+  },
+  {
+   "id": "cm-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1828,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** A Cameroonian law cannot be published in Congo-Brazzaville's Official Journal. Cameroon has its own Official Journal (Journal Officiel de la République du Cameroun). The source is inconsist"
+  },
+  {
+   "id": "cm-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 7168,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The identifier contains \"2024\" while the cited decision references \"2023.\" The year mismatch indicates these do not correspond to the same legal source document."
+  },
+  {
+   "id": "cm-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1518,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The citation references Cameroon's Constitutional Council (Conseil constitutionnel), but LegalRDC publishes DRC (Democratic Republic of Congo) decisions, not Cameroon's. Wrong jurisdiction."
+  },
+  {
+   "id": "cm-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1426,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The cited law number and format don't match Cameroon's legislative numbering system. Additionally, \"Droit Congolais\" is a Democratic Republic of Congo portal, not a Cameroon legal source."
+  },
+  {
+   "id": "cm-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1128,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The identifier contains \"03COM\" but the citation references \"02/COM\". The case numbers do not match, indicating an inconsistency in the bibliographic claim."
+  }
+ ]
+}

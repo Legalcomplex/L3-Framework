@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Japan — Source-Grounded Citation Reliability (JP)",
+ "country": "JP",
+ "jurisdiction": "Japan",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:39:28.113696+00:00",
+ "results": [
+  {
+   "id": "jp-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1666,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The Antimonopoly Act (Act on Prohibition of Private Monopolization and Maintenance of Fair Trade) was enacted April 14, 1947, and the Ministry of Justice provides official English translations."
+  },
+  {
+   "id": "jp-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 7381,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The identifier format and case type don't align with standard Japanese court case numbering. The year 2026 is also in the future, making this bibliographic claim implausible and inconsisten"
+  },
+  {
+   "id": "jp-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1788,
+   "verdict": true,
+   "correct": true,
+   "raw": "# Answer: True  **Explanation:** The JFTC (Japan Fair Trade Commission) is Japan's official competition authority that regularly publishes cease and desist orders and surcharge payment decisions again"
+  },
+  {
+   "id": "jp-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2144,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The National Tax Tribunal (国税不服審判所) publishes decisions in \"Shinpan Jirei Shū\" (審判事例集), not \"裁決事例集.\" The latter refers to Customs Tariff Bureau decisions."
+  },
+  {
+   "id": "jp-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2028,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The Act on Marine Accident Inquiries was enacted in 1961, not 1947. The 1947 date is incorrect for this specific legislation in Japan."
+  },
+  {
+   "id": "jp-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2088,
+   "verdict": false,
+   "correct": false,
+   "raw": "# Evaluation: **False**  令和7 (Reiwa 7) corresponds to 2025, not 2026. The date 2026-01-28 falls in 令和8, making this identifier-date pairing internally inconsistent."
+  },
+  {
+   "id": "jp-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2092,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This Act is Japan's competition law (enacted 1947), published in Japan's Official Gazette, not Macau's. Macau's official gazette would not publish Japanese domestic legislation."
+  },
+  {
+   "id": "jp-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2460,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The Japanese Courts Case Law Database identifier format and case type appear inconsistent. The Reiwa 5 (2023) timeframe cannot correspond to a 2026 decision date, which is in the future."
+  },
+  {
+   "id": "jp-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1953,
+   "verdict": true,
+   "correct": false,
+   "raw": "**True**  The Japan Fair Trade Commission (JFTC) regularly publishes official cease and desist orders and surcharge payment orders as part of its enforcement authority under Japanese competition law."
+  },
+  {
+   "id": "jp-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1110,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The date format (平4.5.12) corresponds to Heisei 4, May 12, which is **1992, not 1991**. Heisei era began January 1989."
+  },
+  {
+   "id": "jp-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1037,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Act on Marine Accident Inquiries is a Japanese law that would be published through official Japanese legal channels, not Hong Kong e-Legislation, which publishes Hong Kong laws only."
+  },
+  {
+   "id": "jp-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1445,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The case identifier format and date appear implausible. \"令和7(マ)245\" would correspond to 2025, not 2026. Additionally, I cannot verify this specific case exists in the Japanese Courts Case Law"
+  }
+ ]
+}

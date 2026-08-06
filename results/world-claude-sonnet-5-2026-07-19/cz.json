@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Czechia — Source-Grounded Citation Reliability (CZ)",
+ "country": "CZ",
+ "jurisdiction": "Czechia",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:52:09.868473+00:00",
+ "results": [
+  {
+   "id": "cz-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2641,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — Czech district court civil decisions like this aren't published in that open data collection; only higher courts' decisions are systematically published there."
+  },
+  {
+   "id": "cz-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1925,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This claim references a future date (2026-01-01) and a specific collection number that cannot yet be verified as an existing, published legal document."
+  },
+  {
+   "id": "cz-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2639,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific ECLI identifier, case number, and date combination against actual Czech Constitutional Court records; fabricated citations are common."
+  },
+  {
+   "id": "cz-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2297,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific decision exists; the title, date, and details appear fabricated or unconfirmed against actual Supreme Administrative Court records."
+  },
+  {
+   "id": "cz-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1953,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific decision exists with this exact case number, date, and content combination in Nejvyšší soud's official records or databases."
+  },
+  {
+   "id": "cz-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1768,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific decision number, case name, and date correspond to an actual published ÚOHS decision record."
+  },
+  {
+   "id": "cz-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1957,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — I cannot verify this specific ECLI identifier, case details, or date against actual court records; this appears to be a fabricated/unverifiable citation."
+  },
+  {
+   "id": "cz-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1992,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Czech legal acts are published in Sbírka zákonů (Sb.), not Riigi Teataja, which is Estonia's official legal gazette system."
+  },
+  {
+   "id": "cz-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1605,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific ECLI-to-case-number correspondence and date; such fabricated-looking specific citations are commonly incorrect or unverifiable."
+  },
+  {
+   "id": "cz-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2352,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The date 2026-11-12 is in the future, making this citation impossible to verify as an actual published decision currently."
+  },
+  {
+   "id": "cz-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2039,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This is a Czech Supreme Court decision (Nejvyšší soud) resolution, not issued by Turkey's Council of State (Danıştay), an unrelated foreign institution."
+  },
+  {
+   "id": "cz-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1908,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Czech public procurement decisions (ÚOHS, \"S...\" case numbers) are published by the Czech Antitrust Office, not Moldova's national courts portal."
+  }
+ ]
+}

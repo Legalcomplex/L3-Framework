@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Niger — Source-Grounded Citation Reliability (NE)",
+ "country": "NE",
+ "jurisdiction": "Niger",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:20:13.792536+00:00",
+ "results": [
+  {
+   "id": "ne-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2499,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Niger's citation formats and case numbering cannot be verified; this reference appears fabricated with implausible docket structure and details."
+  },
+  {
+   "id": "ne-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2518,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Niger's Cour de cassation does not use French-style docket numbering (25-093-P); that format mimics France's citation system."
+  },
+  {
+   "id": "ne-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2434,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific identifier or ruling; fabricated-looking citations should not be confirmed without authoritative source verification."
+  },
+  {
+   "id": "ne-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2574,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Niger's case citation formats and \"Cout\" suffix appear fabricated; I cannot verify this specific decision exists as described."
+  },
+  {
+   "id": "ne-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2674,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Niger's legal citation formats and official reporting practices cannot verify this specific decision; details appear fabricated or unconfirmed."
+  },
+  {
+   "id": "ne-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2239,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific identifier or case exists; the fabricated-looking format and citation details cannot be reliably confirmed as authentic."
+  },
+  {
+   "id": "ne-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2151,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier ends in \"24042\" but the citation references \"24-041/Civ,\" showing a mismatch between the numbers."
+  },
+  {
+   "id": "ne-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2360,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier ends in \"25094P\" but the cited decision is numbered \"25-093-P,\" showing a clear number mismatch."
+  },
+  {
+   "id": "ne-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2207,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Niger is a Francophone civil law country; its Cour de cassation rulings wouldn't be published via Sierra Leone's archive."
+  },
+  {
+   "id": "ne-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2123,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Niger and Guinea are distinct countries; a Nigerien court decision would not be published in Guinea's Journal Officiel."
+  },
+  {
+   "id": "ne-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1793,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Niger and Nigeria are different countries; Nigerian Electricity Regulatory Commission has no authority over Niger's Cour de cassation decisions."
+  },
+  {
+   "id": "ne-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 7360,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Niger and Côte d'Ivoire are distinct jurisdictions; a Nigerien Cour de cassation decision wouldn't be published via Ivorian CivLII."
+  }
+ ]
+}

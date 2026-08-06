@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Pakistan — Source-Grounded Citation Reliability (PK)",
+ "country": "PK",
+ "jurisdiction": "Pakistan",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:43:21.276109+00:00",
+ "results": [
+  {
+   "id": "pk-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1481,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The identifier format and future date (2026) are inconsistent with established Islamabad High Court judgment documentation systems and cataloging practices in Pakistan."
+  },
+  {
+   "id": "pk-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1586,
+   "verdict": true,
+   "correct": true,
+   "raw": "# Answer: **True**  ## Explanation: The Manoeuvres, Field Firing and Artillery Practice Act, 1938 is a legitimate historical statute from British India, subsequently inherited by Pakistan's legal syst"
+  },
+  {
+   "id": "pk-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 5141,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The decision date (2008-06-05) predates the appeal number year (2009), which is internally inconsistent and suggests unreliable sourcing information."
+  },
+  {
+   "id": "pk-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1530,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  This decision cannot be from 2026 as that date is in the future. Additionally, no verifiable record of this specific case exists in accessible Islamabad High Court databases."
+  },
+  {
+   "id": "pk-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1392,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Mines Maternity Benefit Act, 1941 predates Pakistan's independence (1947). It's a British Indian law, not a Pakistani legislation, despite possible inclusion in datasets."
+  },
+  {
+   "id": "pk-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1835,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** HuggingFace is a machine learning platform, not an official publisher of Pakistani Supreme Court judgments. Official sources are the Supreme Court's own website or government legal database"
+  },
+  {
+   "id": "pk-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1941,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The identifier format and date are inconsistent with Islamabad High Court's actual case numbering system. The year 2027 in the case number predates the judgment date of 2026, which is chron"
+  },
+  {
+   "id": "pk-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2021,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This Act is a Pakistani/Indian colonial legislation from 1938, not published by Maldives Government Gazette. Pakistan adopted it post-independence."
+  },
+  {
+   "id": "pk-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1364,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  HuggingFace is a machine learning platform, not an official publisher of Pakistani court judgments. Official Supreme Court decisions are published by Pakistan's judiciary through authentica"
+  },
+  {
+   "id": "pk-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1193,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The identifier format '2250-2026' suggests a 2026 case, but the claimed date is 2026-01-02, which is in the future from the knowledge cutoff. This cannot be verified."
+  },
+  {
+   "id": "pk-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1119,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Mines Maternity Benefit Act, 1941 is a Pakistani statute, not Indian. Pakistan's official gazette is the Government of Pakistan Gazette, not India's gazette."
+  },
+  {
+   "id": "pk-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1211,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The claim lacks sufficient bibliographic details (case name, parties, citation number) to verify this as an authentic Supreme Court of Pakistan judgment from May 9, 2011."
+  }
+ ]
+}

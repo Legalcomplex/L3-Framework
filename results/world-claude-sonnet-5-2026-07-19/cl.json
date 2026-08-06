@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Chile — Source-Grounded Citation Reliability (CL)",
+ "country": "CL",
+ "jurisdiction": "Chile",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:51:32.546333+00:00",
+ "results": [
+  {
+   "id": "cl-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2075,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — the date 2026-05-07 is in the future and cannot represent an actual verified publication date on BCN Ley Chile."
+  },
+  {
+   "id": "cl-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2251,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This date is a future/implausible retrieval timestamp for BCN's official repository, so the claim's publication verification cannot be considered valid."
+  },
+  {
+   "id": "cl-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1814,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This citation appears fabricated/unverifiable—TDLC decision numbering, case naming conventions, and the specific date don't match verifiable official records."
+  },
+  {
+   "id": "cl-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1863,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears fabricated/unverifiable; I cannot confirm CMF issued this specific \"autoevaluación de principios de conducta de mercado\" norm on that exact date."
+  },
+  {
+   "id": "cl-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1950,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. TDLC (Tribunal de Defensa de la Libre Competencia) issues \"Sentencias,\" not the FNE, which is a separate prosecutorial body, not a court."
+  },
+  {
+   "id": "cl-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1845,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This case name suggests Chilean Tax Court proceedings, but I cannot verify this specific citation's publication details or database accuracy."
+  },
+  {
+   "id": "cl-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2201,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Chilean legal norms are published via Chile's Diario Oficial/BCN LeyChile, not Colombia's Secretaría del Senado, which publishes Colombian legislation only."
+  },
+  {
+   "id": "cl-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1996,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Chilean legislation (Ley 20.370 modifications) is published via Chile's official BCN/Diario Oficial sources, not Uruguay's IMPO Open Data JSON API."
+  },
+  {
+   "id": "cl-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2073,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The date (2021-04-23) doesn't match the case number \"189/2023,\" and TDLC decisions are called \"Sentencias\" numbered sequentially without such date-number mismatches typically occurring legitima"
+  },
+  {
+   "id": "cl-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1574,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This appears to be an NCG (Norma de Carácter General) issued by CMF, but I cannot verify this specific title, date, and content combination independently."
+  },
+  {
+   "id": "cl-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2048,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This decision title indicates TDLC (Tribunal de Defensa de la Libre Competencia), a distinct adjudicative body, not the FNE prosecutorial agency itself."
+  },
+  {
+   "id": "cl-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1733,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This case name suggests a Chilean court/tax tribunal ruling, but I cannot verify the specific citation, date, or publishing body's accuracy without access to official records."
+  }
+ ]
+}

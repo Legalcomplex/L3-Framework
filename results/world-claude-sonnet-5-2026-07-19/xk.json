@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Kosovo — Source-Grounded Citation Reliability (XK)",
+ "country": "XK",
+ "jurisdiction": "Kosovo",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:05:47.488834+00:00",
+ "results": [
+  {
+   "id": "xk-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2041,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific decision's existence, citation details, or 2026 publication date against actual Kosovo Constitutional Court records."
+  },
+  {
+   "id": "xk-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2961,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.**  Kosovo's Law No. 02/L-68 on Protection from Natural and Other Disasters was promulgated in 2008, but the Official Gazette of Kosovo only began regular systematic publication in 2010; earli"
+  },
+  {
+   "id": "xk-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2197,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This claim appears fabricated or unverifiable — Kosovo's central bank regulations aren't cited as \"Rregullore RLlB 1/1,\" and no verifiable 2024-11-01 publication exists."
+  },
+  {
+   "id": "xk-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2043,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this appears to be a fabricated/unverifiable citation; I cannot confirm such a specific decision exists in the Constitutional Court's actual records."
+  },
+  {
+   "id": "xk-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2200,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Law No. 02/L-30 on Waste was promulgated in 2005/2006 under UNMIK administration, not published via Kosovo's Official Gazette on 2008-04-01."
+  },
+  {
+   "id": "xk-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2204,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific regulation title, publisher, and 2024-12-01 date as an actual confirmed CBK official publication record."
+  },
+  {
+   "id": "xk-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2201,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This case number/date combination cannot be verified as authentic; specific Kosovo Constitutional Court case citations require direct database confirmation for accuracy."
+  },
+  {
+   "id": "xk-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2217,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Law No. 02/L-68 on Protection Against Natural and Other Disasters was promulgated/published in 2008, not 2010, per Kosovo's Official Gazette records."
+  },
+  {
+   "id": "xk-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1733,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This citation appears fabricated or unverifiable—Kosovo's Central Bank doesn't formally title regulations this way, and dates/details lack credible sourcing confirmation."
+  },
+  {
+   "id": "xk-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1972,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier KI185/26 would denote a 2026 filing, but the referenced decision date (2025-05-20) precedes case registration implausibly early."
+  },
+  {
+   "id": "xk-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1594,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Kosovo laws are published in the Official Gazette of Kosovo, not e-Sbírka, which is the Czech Republic's legal publication system."
+  },
+  {
+   "id": "xk-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1587,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This is a Kosovo financial institution regulation; it would not be published through Turkey's Mevzuat Bilgi Sistemi, which covers Turkish legislation only."
+  }
+ ]
+}

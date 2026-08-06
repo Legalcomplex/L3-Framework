@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Libya — Source-Grounded Citation Reliability (LY)",
+ "country": "LY",
+ "jurisdiction": "Libya",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:40:48.771330+00:00",
+ "results": [
+  {
+   "id": "ly-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1567,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Libya has not had a monarchy since 1969; this decree's date (1959) predates the current legal system and cannot be a contemporary official source."
+  },
+  {
+   "id": "ly-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1566,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  This document cannot have been published on 2026-05-21 as that date is in the future from the current perspective. Additionally, verification through Libya's official gazette sources is req"
+  },
+  {
+   "id": "ly-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1743,
+   "verdict": true,
+   "correct": true,
+   "raw": "# Answer: **True**  This circular (منشور 19/2023) regarding external auditors approved by Libya's Central Bank is a legitimate official source from the Central Bank of Libya's 2023 publications."
+  },
+  {
+   "id": "ly-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1512,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Constitutional Declaration of 1969 was Libya's official government document, not an academic collection publication. Leiden/Benghazi Academic Collection did not publish official constit"
+  },
+  {
+   "id": "ly-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1706,
+   "verdict": false,
+   "correct": false,
+   "raw": "# Answer: False  **Explanation:** This 1960 decree predates Libya's independence (1951) and the modern legal framework. The DCAF database citation date (2022) doesn't confirm original publication auth"
+  },
+  {
+   "id": "ly-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1878,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This date is in the future (2026). No official document can be published before the current date. This claim is temporally impossible."
+  },
+  {
+   "id": "ly-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1780,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Libya was a republic from 1969 onwards, not a monarchy. A 1959 \"royal decree\" predates the Libyan state's independence (1951) as a kingdom, making this attribution historically implausible."
+  },
+  {
+   "id": "ly-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2676,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This decision cannot be authentic. Libya's calendar year 1447 AH corresponds to 2025-2026 CE, making a May 2026 publication date implausible for a decision about that same Islamic year's ho"
+  },
+  {
+   "id": "ly-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1171,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This circular concerns Libya's Central Bank but Egyptian Legal Corpus focuses on Egyptian law. The source jurisdiction mismatch makes this attribution incorrect."
+  },
+  {
+   "id": "ly-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1927,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Constitutional Declaration of 1969 relates to Libya's post-Revolutionary period, not Egypt. The Egyptian Legal Corpus would not be the appropriate or authoritative source for Libyan con"
+  },
+  {
+   "id": "ly-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2648,
+   "verdict": false,
+   "correct": true,
+   "raw": "# Evaluation Result  **False**  This 1960 decree predates Libya's independence (December 24, 1951) and the DCAF database's modern documentation practices, making this attribution implausible."
+  },
+  {
+   "id": "ly-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1563,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This claim is invalid because the document is dated 2026 (a future date) and references Libya, yet cites an Egyptian Legal Corpus as the source, creating jurisdictional inconsistency."
+  }
+ ]
+}

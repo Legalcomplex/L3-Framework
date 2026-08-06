@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Tunisia — Source-Grounded Citation Reliability (TN)",
+ "country": "TN",
+ "jurisdiction": "Tunisia",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:03:59.598721+00:00",
+ "results": [
+  {
+   "id": "tn-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2018,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify specific Tunisian Court of Cassation case identifiers, citation numbers, or dates without access to authoritative primary sources or databases."
+  },
+  {
+   "id": "tn-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2082,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Tunisia's electronic funds transfer law is Loi n° 2000-83 du 9 août 2000, not the cited 2005-51 reference."
+  },
+  {
+   "id": "tn-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2959,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify specific Tunisian Court of Cassation case identifiers, numbers, or dates without access to an authoritative legal database."
+  },
+  {
+   "id": "tn-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2064,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific law's existence, number, date, or JORT publication—likely a fabricated or unconfirmed citation requiring official verification."
+  },
+  {
+   "id": "tn-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2057,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify specific Tunisian Court of Cassation case identifiers, dates, and chamber details without access to authoritative primary legal databases."
+  },
+  {
+   "id": "tn-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2147,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific decree's existence, number, date, or JORT publication details against actual Tunisian official records."
+  },
+  {
+   "id": "tn-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2077,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '50712-0018' does not match the stated citation ending in '0017'; the suffix discrepancy indicates a mismatched or incorrect reference."
+  },
+  {
+   "id": "tn-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2329,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Tunisia's electronic transfer law is Loi n° 2000-83 du 9 août 2000, not a 2005 law with this title."
+  },
+  {
+   "id": "tn-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1627,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The stated identifier '60342' doesn't match the cited case number '60341'—a mismatch between identifier and decision number indicates a citation error."
+  },
+  {
+   "id": "tn-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1624,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This citation cannot be verified as authentic; Tunisian laws are officially published in JORT, not an Egyptian Legal Corpus dataset."
+  },
+  {
+   "id": "tn-src-f05",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1795,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Identifier '17074' should correspond to its own record; a mismatched citation number '17073' indicates inconsistent, likely erroneous cross-referencing between distinct case identifiers."
+  },
+  {
+   "id": "tn-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1743,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — Tunisian decrees are officially published in JORT (Journal Officiel), not an \"Egyptian Legal Corpus\" dataset, which is not an authoritative source."
+  }
+ ]
+}

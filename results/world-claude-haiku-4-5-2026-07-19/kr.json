@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — South Korea — Source-Grounded Citation Reliability (KR)",
+ "country": "KR",
+ "jurisdiction": "South Korea",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:39:55.718790+00:00",
+ "results": [
+  {
+   "id": "kr-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1781,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The title references a presidential decree (시행령), but no such specific statute exists in South Korean law governing 112 emergency call operations and handling."
+  },
+  {
+   "id": "kr-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1681,
+   "verdict": false,
+   "correct": false,
+   "raw": "# Answer: **False**  **Explanation:** The identifier format and date don't align with CLIS records. Korean case numbers require verification against official CLIS database records for accurate case ma"
+  },
+  {
+   "id": "kr-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 7783,
+   "verdict": false,
+   "correct": false,
+   "raw": "# Evaluation Result: **False**  The identifier format '2026제카0252' contains an impossible date component (2026), predating any legitimate KFTC decision record, making this bibliographic claim unreliab"
+  },
+  {
+   "id": "kr-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1793,
+   "verdict": true,
+   "correct": true,
+   "raw": "# Answer: True  **Explanation:** South Korea's Korea Legislation Research Institute (KLRI) maintains an official Open API providing access to Korean statutes and legislation. The May 18 Democratizatio"
+  },
+  {
+   "id": "kr-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1599,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The title references emergency call management law, but \"119긴급신고의 관리 및 운영에 관한 법률\" is not an actual enacted statute in South Korea's legal system. No such specific law exists."
+  },
+  {
+   "id": "kr-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1644,
+   "verdict": false,
+   "correct": false,
+   "raw": "# Evaluation Result: **False**  The identifier format '2002후321' suggests a 2002 Supreme Court case, but the document title '거절결정(상)' (rejection decision) and 2003 date appear inconsistent with standa"
+  },
+  {
+   "id": "kr-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1926,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The title references a Presidential Decree (시행령) on 112 emergency call operations. While KLIC does provide legal information, the specific publication date and API delivery method cannot be v"
+  },
+  {
+   "id": "kr-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1456,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The identifier format and case type don't align with CLIS documentation standards. Case numbers require verification through official CLIS database rather than assumption of accuracy."
+  },
+  {
+   "id": "kr-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1307,
+   "verdict": true,
+   "correct": false,
+   "raw": "# Evaluation Result: **True**  The KFTC (공정거래위원회) regularly publishes administrative decisions regarding unfair competition and cartel cases. This decision title's format and subject matter align with"
+  },
+  {
+   "id": "kr-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1135,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** South Korean legislation is not published through Hong Kong e-Legislation. South Korean official legal sources are published through Korean government portals like the National Law Informat"
+  },
+  {
+   "id": "kr-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1200,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Macau Legal Portal publishes Macau law. This title refers to South Korean emergency call management legislation, which would be published through South Korean official legal sources, no"
+  },
+  {
+   "id": "kr-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1760,
+   "verdict": false,
+   "correct": true,
+   "raw": "# Evaluation Result: **False**  The identifier '2002후322' in South Korea's CLIS system corresponds to a Supreme Court case (후 = Supreme Court appeal), not a Patent Office rejection decision (거절결정). Th"
+  }
+ ]
+}

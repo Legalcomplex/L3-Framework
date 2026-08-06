@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Papua New Guinea — Source-Grounded Citation Reliability (PG)",
+ "country": "PG",
+ "jurisdiction": "Papua New Guinea",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:43:11.742021+00:00",
+ "results": [
+  {
+   "id": "pg-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2043,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The National Information and Communication Technology Act 2009 was enacted legislation, not a gazette instrument. Gazette instruments are subsidiary instruments, not principal acts."
+  },
+  {
+   "id": "pg-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2344,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No verifiable evidence exists that Papua New Guinea published an 'ICT Equipment Type Approval Rule 2022' through the National ICT Authority Gazette Instruments on this specific date."
+  },
+  {
+   "id": "pg-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2893,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The 'Reference Interconnection Offer Rule, 2012' predates the cited 2017 publication date, creating an internal inconsistency regarding when this instrument was officially published."
+  },
+  {
+   "id": "pg-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1628,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No verifiable evidence exists that Papua New Guinea published this instrument on October 1, 2025, or that this specific title was officially gazette-published by the National ICT Authority."
+  },
+  {
+   "id": "pg-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1754,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Papua New Guinea does not have a documented \"SIM Card Registration Regulation, 2016\" published through the National ICT Authority Gazette on this date in accessible official records."
+  },
+  {
+   "id": "pg-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1403,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No verifiable evidence exists of this specific instrument being published by PNG's National ICT Authority on that date in official gazettes."
+  },
+  {
+   "id": "pg-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2067,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The National Information and Communication Technology Act 2009 would be published in Papua New Guinea's official gazette, not specifically through \"National ICT Authority — Gazette Instruments\""
+  },
+  {
+   "id": "pg-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2337,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The publication date (2020-03-22) predates the rule's title year (2022), creating a temporal impossibility for an official legal instrument."
+  },
+  {
+   "id": "pg-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1831,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The 'Reference Interconnection Offer Rule, 2012' is a Papua New Guinea telecommunications regulation, not an Australian legal source. Open Australian Legal Corpus would not contain PNG legi"
+  },
+  {
+   "id": "pg-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1536,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The claim is jurisdictionally inconsistent—it references Solomon Islands legislation while the jurisdiction specified is Papua New Guinea. These are separate nations with distinct legal sys"
+  },
+  {
+   "id": "pg-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 940,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The SIM Card Registration Regulation, 2016 would be a Papua New Guinea legal instrument, not a Marshall Islands publication. The jurisdictional attribution is incorrect."
+  },
+  {
+   "id": "pg-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1105,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The publication date (2020-03-22) predates the rule's title year (2022), creating a chronological impossibility for this official legal source."
+  }
+ ]
+}

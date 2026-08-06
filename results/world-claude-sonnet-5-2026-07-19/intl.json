@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — International — Source-Grounded Citation Reliability (INTL)",
+ "country": "INTL",
+ "jurisdiction": "International",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:55:36.653149+00:00",
+ "results": [
+  {
+   "id": "intl-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1807,
+   "verdict": true,
+   "correct": true,
+   "raw": "**True.**  The African Charter on Democracy, Elections and Governance was indeed adopted by the African Union on 30 January 2007 in Addis Ababa."
+  },
+  {
+   "id": "intl-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2721,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Constitute Project only covers national constitutions from roughly 1789 onward at country level; Baden, a German state, is not included as it wasn't a sovereign nation-state constitutio"
+  },
+  {
+   "id": "intl-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2793,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. ECOLEX aggregates legal texts but isn't the original official publication source; such orders are officially published in national gazettes, not ECOLEX itself."
+  },
+  {
+   "id": "intl-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1853,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This case citation appears fabricated or unverifiable; the date is in the future, and no Series C No. 587 case is confirmed."
+  },
+  {
+   "id": "intl-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2206,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The ICC case number format 'ICC-01/04-00/00' is malformed/incomplete for a specific decision, and this citation cannot be verified as accurate."
+  },
+  {
+   "id": "intl-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2028,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated/unverifiable future-dated document; I cannot confirm ICC Legal Tools Database published this specific 2026 decision."
+  },
+  {
+   "id": "intl-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1865,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The African Charter on Democracy, Elections and Governance (adopted 2007) is an African Union treaty, not published via Austria's RIS system."
+  },
+  {
+   "id": "intl-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2158,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** LILEX is Liechtenstein's legal database, unrelated to Baden. Baden's 1818 Constitution would be published in German/Baden state legal sources, not LILEX."
+  },
+  {
+   "id": "intl-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1614,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. ECOLEX indexes and links to national/legal texts but is not itself the official publisher; the actual legal source is the issuing national gazette/ministry."
+  },
+  {
+   "id": "intl-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1756,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify a Series C No. 587 case titled \"Manaure Flores et al. v. Venezuela\" with that exact date exists."
+  },
+  {
+   "id": "intl-src-f05",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1830,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. ICC-01/04-01 is the DRC situation number, but this decision's actual case/situation number and date pairing cannot be verified as accurately matched."
+  },
+  {
+   "id": "intl-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1641,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This appears to be a fabricated or non-verifiable citation; no such specific decision title is confirmed in ICC Legal Tools Database records."
+  }
+ ]
+}

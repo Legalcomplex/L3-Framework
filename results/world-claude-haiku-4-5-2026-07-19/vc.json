@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Saint Vincent and the Grenadines — Source-Grounded Citation Reliability (VC)",
+ "country": "VC",
+ "jurisdiction": "Saint Vincent and the Grenadines",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:46:57.881301+00:00",
+ "results": [
+  {
+   "id": "vc-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1715,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The claim references a future publication (2026) that cannot yet exist or be verified as an official source. Official gazettes are published in real-time, not retrospectively created for futu"
+  },
+  {
+   "id": "vc-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2091,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The claim contains inconsistencies. While the Telecommunications (Interconnection) Regulations 2008 exists in SVG, the specific publication date of 2008-01-01 and attributing it solely to the"
+  },
+  {
+   "id": "vc-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1643,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The claim references a 2026 publication date, which is in the future from the present time, making this document impossible to have been published yet."
+  },
+  {
+   "id": "vc-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1366,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The regulation number format and date sequence are inconsistent with Saint Vincent and the Grenadines official legislative numbering systems and publication practices for telecommunications reg"
+  },
+  {
+   "id": "vc-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1425,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** As of my knowledge cutoff in April 2024, I cannot verify publications from 2026. This date is in the future relative to my training data."
+  },
+  {
+   "id": "vc-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1845,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Telecommunications (Numbering) Regulations 2008 would be a statutory instrument published in the official Gazette, not directly by the NTC as a primary publisher."
+  },
+  {
+   "id": "vc-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1393,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Government Gazette of Saint Vincent and the Grenadines cannot be published via \"Laws of Grenada.\" These are separate jurisdictions with distinct legal publication systems."
+  },
+  {
+   "id": "vc-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1540,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Telecommunications (Interconnection) Regulations 2008 No. 60 of 2008 is a Saint Vincent and the Grenadines legal instrument, not a Turks and Caicos Islands publication."
+  },
+  {
+   "id": "vc-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1200,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Saint Vincent and the Grenadines Government Gazette would be published through official SVG channels, not Bermuda Laws Online, which is a jurisdiction-specific database for Bermuda legi"
+  },
+  {
+   "id": "vc-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1296,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Telecommunications (Universal Service Fund) Regulations 2008 No. 45 of 2008 is a Saint Vincent and the Grenadines legal instrument, not Cayman Islands legislation. Different jurisdictio"
+  },
+  {
+   "id": "vc-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1759,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The SVG Government Gazette is Saint Vincent and the Grenadines' official publication. Saint Lucia Revised Laws is a different jurisdiction's legal source and would not publish SVG's gazette"
+  },
+  {
+   "id": "vc-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1574,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Sint Maarten is a separate Caribbean jurisdiction. Saint Vincent and the Grenadines' legislation would be published through its own government sources, not Sint Maarten's."
+  }
+ ]
+}

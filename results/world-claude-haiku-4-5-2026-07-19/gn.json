@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Guinea — Source-Grounded Citation Reliability (GN)",
+ "country": "GN",
+ "jurisdiction": "Guinea",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:37:50.472068+00:00",
+ "results": [
+  {
+   "id": "gn-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1950,
+   "verdict": true,
+   "correct": true,
+   "raw": "# Evaluation  **True**  Juricaf (African Legal Information Portal) systematically archives decisions from African supreme courts, including Guinea's Cour suprême, making this publication claim credibl"
+  },
+  {
+   "id": "gn-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1563,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The title appears incomplete or corrupted (\"A VOCATI\" seems truncated), suggesting a transcription error. This incompleteness makes verification of the official publication claim impossible"
+  },
+  {
+   "id": "gn-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2018,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  This date is in the future (March 2026) and therefore cannot have been published. Official journals can only document past or current legal acts, not future ones."
+  },
+  {
+   "id": "gn-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2343,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No verifiable evidence confirms 'Données caractéristiques du secteur bancaire' as an official BCRG regulatory text published on that specific date in available sources."
+  },
+  {
+   "id": "gn-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1597,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. A \"Décret portant Sceau de l'Etat\" (Decree bearing State Seal) would be published by the executive branch/government, not the Supreme Court, which has no legislative publication authority."
+  },
+  {
+   "id": "gn-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1645,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The identifier format appears structurally plausible for Juricaf, but verification requires access to the actual Juricaf database records for Guinea's Supreme Court to confirm this specific"
+  },
+  {
+   "id": "gn-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2639,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier suffix differs: 'GUINEE-COURSUPREME-20210527-003' ends in '003' while the claimed reference ends in '002', indicating different decisions."
+  },
+  {
+   "id": "gn-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1794,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The title appears incomplete and truncated (\"VOCATI\" suggests missing text). The claim lacks sufficient specificity to verify as a legitimate official Guinean legal source."
+  },
+  {
+   "id": "gn-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1081,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The Journal officiel is Guinea's official gazette, not a Mauritanian central bank publication. The source attribution is incorrect and anachronistic (future date)."
+  },
+  {
+   "id": "gn-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1666,
+   "verdict": false,
+   "correct": true,
+   "raw": "# Evaluation: FALSE  While the Central Bank of Guinea (BCRG) exists and publishes regulatory texts, this specific title cannot be verified as an official BCRG publication from February 2022 without do"
+  },
+  {
+   "id": "gn-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1054,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The \"Décret portant Sceau de l'Etat\" is a Guinean legal instrument, not Beninese legislation. It cannot originate from Benin's National Assembly."
+  },
+  {
+   "id": "gn-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1836,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The identifier ends in \"-10\" but the decision number is \"09\". These numeric suffixes do not match, indicating a discrepancy between the identifier and the bibliographic citation."
+  }
+ ]
+}

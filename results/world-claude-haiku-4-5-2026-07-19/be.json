@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Belgium — Source-Grounded Citation Reliability (BE)",
+ "country": "BE",
+ "jurisdiction": "Belgium",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:33:41.758608+00:00",
+ "results": [
+  {
+   "id": "be-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1630,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The claim is incomplete and cannot be verified as stated. The truncated title (\"et…\") lacks essential information to confirm this law's actual publication in Belgium's official gazette on tha"
+  },
+  {
+   "id": "be-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1720,
+   "verdict": false,
+   "correct": false,
+   "raw": "# Answer: False  **Explanation:** The Vlaamse Codex is a compilation system established later. The 1982 date and legislative title suggest this is an individual decree, not a codified consolidated leg"
+  },
+  {
+   "id": "be-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1566,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.**   The date 2026-01-01 is in the future, making this a fictional source. Additionally, \"Classement sans suite\" decisions are not typical APD/GBA publication formats."
+  },
+  {
+   "id": "be-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1434,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The decision identifier \"N. contra AXA BELGIUM nv\" lacks the specific case number format required for Belgian Court of Cassation decisions, making this citation incomplete and unverifiable "
+  },
+  {
+   "id": "be-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1671,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Council of State (Conseil d'État) is France's highest administrative court, not Belgium's. Belgium's supreme administrative court is the \"Conseil d'État\" but this appears to be a French"
+  },
+  {
+   "id": "be-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1291,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The ECLI identifier format and date (2026-01-22) refer to a future date beyond the current knowledge cutoff, making verification impossible. The claim cannot be authenticated."
+  },
+  {
+   "id": "be-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 4224,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The cited source is Belgian legislation but is attributed to the Italian Official Gazette (Gazzetta Ufficiale). Belgian laws are published in the Belgian Official Gazette (Moniteur Belge), "
+  },
+  {
+   "id": "be-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 3239,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The title 'houdende maatregelen voor een sociaal grondbeleid' appears incomplete or incorrectly cited. Proper Flemish legislative titles require full designation and context for verification "
+  },
+  {
+   "id": "be-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1366,
+   "verdict": false,
+   "correct": true,
+   "raw": "# Answer: False  **Explanation:** Belgium's official legal publication system is the *Moniteur Belge/Belgisch Staatsblad*, not RIS. RIS is Austria's legal information system."
+  },
+  {
+   "id": "be-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1262,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The ECLI identifier format and date (2025-12-04) refer to a future decision that cannot yet exist or be verified in official legal databases as of the current date."
+  },
+  {
+   "id": "be-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1059,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Belgian Council of State (Conseil d'État) is an advisory body, not a court. Decisions numbered as \"Arrêt\" (judgments) are issued by Belgian courts, not the Council of State."
+  },
+  {
+   "id": "be-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1239,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The ECLI identifier format and future date (2026) suggest this is a fabricated or hypothetical citation rather than an authentic Belgian Court of Cassation tax decision record."
+  }
+ ]
+}

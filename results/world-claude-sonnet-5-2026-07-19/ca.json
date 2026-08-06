@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Canada — Source-Grounded Citation Reliability (CA)",
+ "country": "CA",
+ "jurisdiction": "Canada",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:50:57.215221+00:00",
+ "results": [
+  {
+   "id": "ca-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1779,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this decision is dated in the future (2026-03-20), which is impossible for an actual published legal source to verify."
+  },
+  {
+   "id": "ca-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2052,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.**  The correct title is the \"Administrative Tribunals Act\" (or possibly \"Attorney General Statutes Amendment Act\"); no British Columbia statute is officially titled \"Administrative Tribunals "
+  },
+  {
+   "id": "ca-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2599,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. ARDA was repealed/replaced long ago (superseded by other legislation decades past), so it cannot appear as current on Justice Laws in 2026."
+  },
+  {
+   "id": "ca-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2399,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This Act genuinely exists on LégisQuébec, but it dates from 2000/2001 enactment context needs verification—actual title and chapter details require confirmation against the current LégisQué"
+  },
+  {
+   "id": "ca-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2216,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This decision could not be published, as the date (2026-01-30) is in the future; no citation for an unreleased judgment can be verified as authentic."
+  },
+  {
+   "id": "ca-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1772,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This citation refers to a future-dated decision (2026), which cannot be verified as it hasn't occurred yet or doesn't exist."
+  },
+  {
+   "id": "ca-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1864,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific decision, citation, and database attribution combination against actual court records or reliable sources."
+  },
+  {
+   "id": "ca-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2054,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. BC statute identifiers/citations don't map that way verifiably; I cannot confirm this specific chapter number, title, and date correspondence without access."
+  },
+  {
+   "id": "ca-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1580,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Agricultural and Rural Development Act (ARDA) is Canadian federal legislation; it cannot be published via Washington State's legislative services API."
+  },
+  {
+   "id": "ca-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1605,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This is a Quebec statute promoting equal access to employment in public bodies; it would be published through Quebec/Canadian legal sources, not California LegInfo."
+  },
+  {
+   "id": "ca-src-f05",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1825,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This citation is fictitious—2026 SCC 4 cannot be verified, and dates/decisions this far ahead don't reliably exist in official records yet."
+  },
+  {
+   "id": "ca-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1718,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific citation exists—case names, dates, and court records should be confirmed directly through official Tax Court of Canada or CanLII databases."
+  }
+ ]
+}

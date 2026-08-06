@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Iraq — Source-Grounded Citation Reliability (IQ)",
+ "country": "IQ",
+ "jurisdiction": "Iraq",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:38:56.831539+00:00",
+ "results": [
+  {
+   "id": "iq-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1456,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The citation format and dating structure are inconsistent with official Kurdistan Region Parliament legislation records from 1992. The text lacks standard official publication documentation"
+  },
+  {
+   "id": "iq-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1881,
+   "verdict": false,
+   "correct": false,
+   "raw": "# Evaluation Result: **False**  The claim conflates two separate entities. Kurdistan Region Parliament enacts legislation, but this source attributes authorship to the Council of Ministers (Anjumeni W"
+  },
+  {
+   "id": "iq-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2128,
+   "verdict": true,
+   "correct": true,
+   "raw": "# Evaluation: **True**  This law (Law No. 12 of 1992) regarding the Ministry of Justice of the Kurdistan Region of Iraq is a legitimate official legal source from the KRI Parliament from that period."
+  },
+  {
+   "id": "iq-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2002,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  This claim cannot be verified as accurate. The cited legislation predates the Kurdistan Regional Government's formal establishment (1992) and lacks standard Iraqi legal publication documentat"
+  },
+  {
+   "id": "iq-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1625,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  This claim is unlikely accurate. The cited date (1992) predates the establishment of the Kurdistan Regional Government's formal institutional structures and legislative body following the 199"
+  },
+  {
+   "id": "iq-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3236,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Kurdistan Region Parliament did not formally exist in 1992. The Iraqi Kurdistan regional government was established after 1991, with parliament operations beginning in 1992 but legitima"
+  },
+  {
+   "id": "iq-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1618,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This is an Iraqi Kurdish law (1992) regarding the Ministry of Endowments and Islamic Affairs, not a Saudi Central Bank publication. The source attribution is incorrect."
+  },
+  {
+   "id": "iq-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1641,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** ADGM (Abu Dhabi Global Market) is a UAE jurisdiction established in 2013, not Iraq. This document pertains to the Kurdistan Regional Government's Council of Ministers, not ADGM."
+  },
+  {
+   "id": "iq-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1882,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.**   The DIFC (Dubai International Financial Centre) Legal Database covers UAE/Dubai legislation, not Iraqi Kurdish regional laws. This source belongs to Iraq's Kurdistan Region judiciary syst"
+  },
+  {
+   "id": "iq-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2004,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This is an Iraqi Kurdish (Sorani) legal text about protecting foreigners, clearly an Iraqi law. It could not have been published by Israel's Knesset Data—a fundamental jurisdictional imposs"
+  },
+  {
+   "id": "iq-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1668,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This Iraqi Kurdish regulation would be published by Iraqi authorities, not the Jordan Legislation & Opinion Bureau, which is a Jordanian institution outside Iraq's jurisdiction."
+  },
+  {
+   "id": "iq-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1144,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  ADGM (Abu Dhabi Global Market) is a UAE jurisdiction, not Iraqi. This law concerns Kurdistan Regional Government finances and would not be published through ADGM's legal framework."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — North Macedonia — Source-Grounded Citation Reliability (MK)",
+ "country": "MK",
+ "jurisdiction": "North Macedonia",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:18:54.696222+00:00",
+ "results": [
+  {
+   "id": "mk-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2096,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2025-12-24 is implausibly future/specific, and case citation details cannot be verified as authentic without confirmation."
+  },
+  {
+   "id": "mk-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2773,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears fabricated; Macedonian Supreme Court decisions carry case numbers, not descriptive titles, and cannot be verified as authentic."
+  },
+  {
+   "id": "mk-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1777,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-04-02 is in the future, making this bibliographic claim impossible to verify as a genuine published decision."
+  },
+  {
+   "id": "mk-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2377,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2025-12-24 is in the future relative to case number У.бр.243/2024; this citation appears fabricated/unverifiable."
+  },
+  {
+   "id": "mk-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2467,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears fabricated; \"Пред второстепен суд по службена должност\" is a procedural phrase, not a genuine identifiable Supreme Court decision."
+  },
+  {
+   "id": "mk-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 3881,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-04-02 is in the future, making this citation impossible to verify as a genuine published decision."
+  },
+  {
+   "id": "mk-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1958,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. North Macedonia's constitutional cases (У.бр.) are decided by the Constitutional Court, not Greece's Hellenic Court of Audit."
+  },
+  {
+   "id": "mk-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 3714,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This appears fabricated; the title reads as a generic topic description, not an authentic Supreme Court decision citation with proper case number."
+  },
+  {
+   "id": "mk-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1916,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Merger decisions are typically dated by working days; a decision dated April 2, 2023 (Sunday) is suspicious."
+  },
+  {
+   "id": "mk-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2168,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The reference \"У.бр.\" indicates the Constitutional Court of North Macedonia, not Ukraine's Supreme Court; jurisdictions and institutions clearly mismatch."
+  },
+  {
+   "id": "mk-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 10076,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This appears to be a fabricated or unverifiable citation; the vague title and generic phrasing suggest no authentic, identifiable Supreme Court decision."
+  },
+  {
+   "id": "mk-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1617,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific decision's existence, date, or publication details without access to the Commission's official records."
+  }
+ ]
+}

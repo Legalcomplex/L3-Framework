@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Cuba — Source-Grounded Citation Reliability (CU)",
+ "country": "CU",
+ "jurisdiction": "Cuba",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:35:37.968735+00:00",
+ "results": [
+  {
+   "id": "cu-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1336,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This resolution cannot have been published in 2026, as that date is in the future relative to the current date and the claim's verification impossibility."
+  },
+  {
+   "id": "cu-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2159,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This document cannot exist as a reliable official source because it is dated in the future (2026-02-19) relative to the current date, making verification impossible."
+  },
+  {
+   "id": "cu-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1393,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This resolution cannot have been published in 2026, as that date is in the future relative to the current time. The claim is temporally impossible."
+  },
+  {
+   "id": "cu-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1922,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  This resolution cannot have been published in 2026, as that date is in the future. Current verification of such a document is impossible at this time."
+  },
+  {
+   "id": "cu-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3440,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This resolution cannot have been published in February 2026, as that date lies in the future from the perspective of any current evaluation. The claim is temporally impossible."
+  },
+  {
+   "id": "cu-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1564,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  This claim is not verifiable. It references a future date (2026) that hasn't occurred yet, making publication impossible. Additionally, no such agreement can be confirmed in accessible Cuba"
+  },
+  {
+   "id": "cu-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2153,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  A Cuban ministerial resolution cannot be published via Laws of Grenada. Cuba and Grenada are separate nations with distinct legal systems. This claim contains an obvious jurisdictional cont"
+  },
+  {
+   "id": "cu-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1791,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** A Cuban proclama cannot be published via Turks and Caicos legal sources. These are separate jurisdictions with different legal systems and publishing authorities."
+  },
+  {
+   "id": "cu-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1099,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Curaçao is an autonomous country within the Kingdom of the Netherlands, not Cuba. A Cuban Ministry of Justice resolution could not be published through Curaçao's governmental legislation sy"
+  },
+  {
+   "id": "cu-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1703,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Cuba's legal resolutions are published in the Official Gazette (Gaceta Oficial), not through \"Bermuda Laws Online,\" which is a Bermuda-specific legal database unrelated to Cuban legislation"
+  },
+  {
+   "id": "cu-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1222,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  A Cuban Ministry of Energy and Mines resolution cannot be published through Saint Lucia's Attorney General's office. These are separate jurisdictions with distinct legal systems and publish"
+  },
+  {
+   "id": "cu-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1144,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  A Cuban legal instrument cannot be published through Bahamas Consolidated Legislation. The Bahamas has its own separate legal system and jurisdiction; it would not publish Cuban State Counc"
+  }
+ ]
+}

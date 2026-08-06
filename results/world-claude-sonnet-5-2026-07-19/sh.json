@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Saint Helena — Source-Grounded Citation Reliability (SH)",
+ "country": "SH",
+ "jurisdiction": "Saint Helena",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:02:18.974416+00:00",
+ "results": [
+  {
+   "id": "sh-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2000,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific claim's accuracy—I lack reliable access to confirm the exact ordinance title, date, or publication details for Saint Helena legislation."
+  },
+  {
+   "id": "sh-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2197,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific ordinance citation exists; Saint Helena's legislative records from 1895 aren't reliably confirmed in accessible sources."
+  },
+  {
+   "id": "sh-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2635,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific citation exists; Saint Helena's 1944 ordinance details, including exact title and publication source, cannot be confirmed as accurate without access to authori"
+  },
+  {
+   "id": "sh-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2373,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific citation exists. Saint Helena's legal database should be checked directly to confirm this ordinance's actual existence and publication details."
+  },
+  {
+   "id": "sh-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2812,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific ordinance's existence, exact title, or 1940 publication date from Saint Helena's legislative records with confidence."
+  },
+  {
+   "id": "sh-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2127,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific ordinance title, date, and publisher combination exists; the exact citation appears unconfirmed or fabricated."
+  },
+  {
+   "id": "sh-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2229,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Saint Helena's Building Control Ordinance would be published in its own official gazette, not through Zimbabwe's Reserve Bank Exchange Control Directives—an unrelated foreign institution."
+  },
+  {
+   "id": "sh-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2041,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Saint Helena legislation is not published under \"South Africa Open By-laws\"; that platform covers South African municipal by-laws, not Saint Helena's national ordinances."
+  },
+  {
+   "id": "sh-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1710,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Saint Helena's Animals (Diseases) Ordinance would not be published by Namibia's Legal Information Institute; jurisdiction mismatch invalidates this bibliographic claim entirely."
+  },
+  {
+   "id": "sh-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1991,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Saint Helena's Bees Ordinance would not be published by Lesotho's Central Bank—an unrelated foreign institution issuing financial regulations, not agricultural legislation."
+  },
+  {
+   "id": "sh-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1931,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Saint Helena legislation would not be published via Namibia's Financial Institutions Supervisory Authority — an unrelated foreign regulatory body with no jurisdictional connection to Saint "
+  },
+  {
+   "id": "sh-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1586,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Zambia Legal Information Institute publishes Zambian legal materials, not Saint Helena ordinances; this jurisdictional mismatch makes the citation implausible and unverifiable."
+  }
+ ]
+}

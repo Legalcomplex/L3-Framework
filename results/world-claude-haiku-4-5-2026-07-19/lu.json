@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Luxembourg — Source-Grounded Citation Reliability (LU)",
+ "country": "LU",
+ "jurisdiction": "Luxembourg",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:40:41.016843+00:00",
+ "results": [
+  {
+   "id": "lu-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1448,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The claimed publication date is December 19, 2025, which is in the future. No law can be officially published before it is enacted. This date is temporally impossible."
+  },
+  {
+   "id": "lu-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1581,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  Decision 49349 (2026-03-27) cannot be published yet—the date is in the future (March 2026). This appears to be a fictitious or erroneous reference."
+  },
+  {
+   "id": "lu-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1529,
+   "verdict": false,
+   "correct": false,
+   "raw": "# Evaluation: **False**  The identifier format and date structure appear inconsistent with standard Luxembourg court decision cataloging conventions. The future date (2026) is implausible for an offic"
+  },
+  {
+   "id": "lu-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1753,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Luxembourg's Court of Cassation does not use the \"Arrêt N°\" numbering format with future dates. This appears to be a fabricated citation with an implausible 2026 date."
+  },
+  {
+   "id": "lu-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1665,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Luxembourg Competition Authority was restructured in 2014. The decision reference format and dating don't match documented official publications from this authority."
+  },
+  {
+   "id": "lu-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1646,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The date 2025-12-19 is in the future (from the perspective of this knowledge cutoff in April 2024). No law can have been published on a date that hasn't occurred yet."
+  },
+  {
+   "id": "lu-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2134,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** A Luxembourg law (Loi du 19 décembre 2025) cannot be published via German Federal Law (Gesetze im Internet), which is exclusively for German legislation."
+  },
+  {
+   "id": "lu-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1949,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The ECLI identifier ends in '49350', but the claim states it corresponds to '49349'—these are different case numbers that cannot both be correct."
+  },
+  {
+   "id": "lu-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1559,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The identifier JPLBAIL-1323 should correspond to a decision numbered 1323, not 1322. The cited reference shows decision 1322, which is a different case number."
+  },
+  {
+   "id": "lu-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1182,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This decision cannot be from a Swiss court database because Luxembourg uses its own legal system and court structures. The date is also in the future (2026)."
+  },
+  {
+   "id": "lu-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1592,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Decision '2014-AV-05' appears to be a Luxembourg administrative decision format (AV indicating administrative), not a German Federal Labor Court decision, which uses different citation conventi"
+  },
+  {
+   "id": "lu-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1132,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Luxembourg laws are published in the *Mémorial A* (Luxembourg's official gazette), not Normattiva, which is Italy's legal database. The source attribution is incorrect."
+  }
+ ]
+}

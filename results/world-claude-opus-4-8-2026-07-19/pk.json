@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Pakistan — Source-Grounded Citation Reliability (PK)",
+ "country": "PK",
+ "jurisdiction": "Pakistan",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:22:35.963287+00:00",
+ "results": [
+  {
+   "id": "pk-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2525,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation; a 2026 date suggests fabrication, and I lack reliable access to confirm it."
+  },
+  {
+   "id": "pk-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3414,
+   "verdict": true,
+   "correct": true,
+   "raw": "**True.** This is a genuine pre-partition British India statute retained in Pakistan; it exists in the HuggingFace Pakistan Laws Dataset."
+  },
+  {
+   "id": "pk-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2460,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The appeal number \"2009\" cannot logically have a decision date of 2008-06-05, indicating a fabricated or inconsistent citation."
+  },
+  {
+   "id": "pk-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 3132,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-01-02 is in the future, making this citation implausible and unverifiable as a genuine published decision."
+  },
+  {
+   "id": "pk-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2333,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Mines Maternity Benefit Act 1941 is a colonial-era statute; a HuggingFace dataset is not its official publication source."
+  },
+  {
+   "id": "pk-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 3034,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The garbled \"CO-URT\" formatting and vague citation lack verifiable case details (parties, citation number), making this claim unreliable."
+  },
+  {
+   "id": "pk-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2257,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier references year 2027 and date 2026, which are future dates—impossible for an existing official judgment record."
+  },
+  {
+   "id": "pk-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2042,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This is a Pakistani/British India Act; it would appear in the Gazette of India, not Maldives Government Gazette."
+  },
+  {
+   "id": "pk-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1945,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific citation exists in that dataset; unverifiable claims about specific case identifiers should not be confirmed."
+  },
+  {
+   "id": "pk-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1914,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The 2026 date is implausibly future-dated relative to typical records, and I cannot verify this specific identifier's authenticity."
+  },
+  {
+   "id": "pk-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2550,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Mines Maternity Benefit Act, 1941 predates egazette.gov.in (a modern Indian portal); Pakistan inherited it post-1947 independence."
+  },
+  {
+   "id": "pk-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1964,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The garbled title \"SUPREME CO-URT\" indicates OCR/formatting error; bibliographic details appear unreliable and cannot be verified as accurate."
+  }
+ ]
+}

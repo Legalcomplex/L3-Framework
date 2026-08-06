@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Saudi Arabia — Source-Grounded Citation Reliability (SA)",
+ "country": "SA",
+ "jurisdiction": "Saudi Arabia",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:44:19.579401+00:00",
+ "results": [
+  {
+   "id": "sa-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1835,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The Capital Market Law was enacted via Royal Decree No. M/30 in 2003, but it was issued by the Royal Court, not published \"via\" the Capital Market Authority. The CMA implements regulations ba"
+  },
+  {
+   "id": "sa-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1433,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Capital Market Authority (CMA) is the correct regulatory body, but the specific regulation title and date require verification against official CMA sources to confirm accuracy."
+  },
+  {
+   "id": "sa-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1675,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Saudi Capital Market Authority (CMA) does not publish implementing regulations for the Companies Law. The CMA regulates securities markets; company law implementation falls under the Mi"
+  },
+  {
+   "id": "sa-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1786,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Saudi Capital Market Authority (CMA) does regulate securities, but no verifiable official regulation titled \"Rules for Foreign Investment in Securities\" is documented as published on 20"
+  },
+  {
+   "id": "sa-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1769,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Saudi Capital Market Authority (CMA) has not published official guidelines with this specific title and date. This appears to be a fabricated or incorrectly attributed source."
+  },
+  {
+   "id": "sa-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1483,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Saudi Capital Market Authority does not publish documents titled \"Cross-Border Passporting Guide for Investment Funds.\" This appears to be a fabricated or misattributed source with no o"
+  },
+  {
+   "id": "sa-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1939,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Capital Market Law is a Royal Decree (M/30 of 1424 H/2003), not regulations. The Saudi Capital Market Authority publishes implementing regulations separately under different authority."
+  },
+  {
+   "id": "sa-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1816,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Saudi Capital Market Authority (CMA) has not published regulations with this exact title on the specified date. CMA regulations follow established nomenclature and publication protocols"
+  },
+  {
+   "id": "sa-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2727,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The DIFC (Dubai International Financial Centre) is a UAE jurisdiction, not Saudi Arabia. This regulation would fall under Saudi Arabia's Capital Market Authority, not DIFC."
+  },
+  {
+   "id": "sa-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1226,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Israel's Knesset is Israel's legislative body, not Saudi Arabia's. Saudi Arabia has its own investment regulations separate from Israeli law. The jurisdiction mismatch makes this claim inva"
+  },
+  {
+   "id": "sa-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1235,
+   "verdict": false,
+   "correct": true,
+   "raw": "# Answer: **False**  The Saudi Capital Market Authority (CMA) has not published guidelines with this exact title on the specified date. This appears to be a fabricated or incorrectly attributed source"
+  },
+  {
+   "id": "sa-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1676,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** No such official document exists in the Saudi Capital Market Authority's published regulations. The CMA has not issued a \"Cross-Border Passporting Guide for Investment Funds\" as of June 202"
+  }
+ ]
+}

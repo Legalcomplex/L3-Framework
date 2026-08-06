@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Bhutan — Source-Grounded Citation Reliability (BT)",
+ "country": "BT",
+ "jurisdiction": "Bhutan",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:50:44.745867+00:00",
+ "results": [
+  {
+   "id": "bt-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2386,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific citation; Bhutan InfoComm and Media Authority regulations require direct confirmation from official BICMA sources for accuracy."
+  },
+  {
+   "id": "bt-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1970,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Bhutan's Customs Act was enacted in 2017 by Parliament, not merely \"published\" by DRC as routine tax legislation content."
+  },
+  {
+   "id": "bt-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2958,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Bhutan's Biodiversity Act was enacted in 2003, but such compilations are typically issued by the National Assembly/Council or National Council of Bhutan, not solely \"Bhutan Judiciary.\""
+  },
+  {
+   "id": "bt-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 5690,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Environmental Assessment Act of Bhutan was enacted in 2000, but Bhutan's Office of the Attorney General was only established in 2006, making this attribution anachronistic and incorrect"
+  },
+  {
+   "id": "bt-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2123,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific regulation, title, and exact publication date without access to Bhutan's official RMA legal database or gazette records."
+  },
+  {
+   "id": "bt-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2149,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific citation's details (title, publisher, or 2021-01-01 date) against actual BICMA records or official Bhutanese publications."
+  },
+  {
+   "id": "bt-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 3809,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Bhutan's Cable TV regulations are not published via a \"Pakistan Laws Dataset\"; that source is jurisdictionally mismatched and not an official Bhutanese legal publisher."
+  },
+  {
+   "id": "bt-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2553,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Customs Act of Bhutan (2017) is a Bhutanese law published through Bhutan's own official gazette/legislative process, not Maldives Government Gazette."
+  },
+  {
+   "id": "bt-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1658,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Biodiversity Act 2003 is India's legislation published via India's e-Gazette; Bhutan's Biodiversity Act would be published through Bhutan's own official gazette, not India's."
+  },
+  {
+   "id": "bt-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1748,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Bhutan's Environmental Assessment Act (2000) would be published by Bhutanese authorities (e.g., National Assembly/Gazette), not Sri Lanka's Department of Government Printing—an unrelated ju"
+  },
+  {
+   "id": "bt-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1833,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Bhutan's official legal publications are issued by Bhutanese authorities (e.g., Royal Monetary Authority, Government Gazette of Bhutan), not Sri Lanka's Department of Government Printing."
+  },
+  {
+   "id": "bt-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2619,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Bhutan's legal instruments are published in the Kuensel or Bhutan Government Gazette, not India's e-Gazette, which serves India's jurisdiction only."
+  }
+ ]
+}

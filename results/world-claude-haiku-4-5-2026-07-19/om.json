@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Oman — Source-Grounded Citation Reliability (OM)",
+ "country": "OM",
+ "jurisdiction": "Oman",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:42:54.621431+00:00",
+ "results": [
+  {
+   "id": "om-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2375,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The date 2025-08-25 is in the future (from the current perspective), making this claim impossible to verify as an official historical publication."
+  },
+  {
+   "id": "om-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2371,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The date format is inconsistent. The Hijri year 1394 corresponds to 1974 CE, but the specific day/month pairing (27 March) cannot be verified against the Hijri calendar conversion without a"
+  },
+  {
+   "id": "om-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1458,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The claimed regulation cannot be verified as a documented official source from Oman's Capital Market Authority with the specified title and date (2023-09-21). No reliable evidence confirms th"
+  },
+  {
+   "id": "om-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2412,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Oman Legal Database (qanoon.om) primarily publishes legislative decrees and official legislation. Supreme Committee COVID-19 decisions are typically issued through official government circu"
+  },
+  {
+   "id": "om-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1441,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  This claim is unreliable because it references a future date (2026) and no established \"Financial Services Authority\" with that specific decision exists in Oman's current regulatory framewo"
+  },
+  {
+   "id": "om-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2517,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The claim contains an internal inconsistency. Royal Decree 21/74 references the year 74 (1974), but the cited publication date of May 14, 1974, predates typical Omani legislative documentat"
+  },
+  {
+   "id": "om-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2285,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Oman Decrees Portal (decree.om) publishes official decrees and regulations. Labour authorisation regulations in Oman are typically issued through the Ministry of Labour, not primarily v"
+  },
+  {
+   "id": "om-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1816,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The cited date (1976-03-27) contradicts the Hijri year 1394, which corresponds to 1974-1975 CE, creating a chronological inconsistency in the bibliographic claim."
+  },
+  {
+   "id": "om-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1533,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This regulation would be issued by Oman's regulatory authorities (State General Reserve Fund or Central Bank of Oman), not Jordan's Legislation & Opinion Bureau, which lacks jurisdiction ov"
+  },
+  {
+   "id": "om-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1109,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This decision pertains to Oman's Supreme Committee for COVID-19, not Saudi Arabia's central bank (SAMA). The source attribution is jurisdictionally and institutionally incorrect."
+  },
+  {
+   "id": "om-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1427,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This decision cannot originate from Israel's Knesset regarding Omani financial regulation. Oman has its own regulatory authorities; Israel's legislative data would not be an official Omani "
+  },
+  {
+   "id": "om-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1207,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The date 1972-05-14 predates Oman's official legal gazette establishment. Royal Decrees from this period lack verified Qanoon publication records."
+  }
+ ]
+}

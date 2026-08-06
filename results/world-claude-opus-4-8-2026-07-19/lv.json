@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Latvia — Source-Grounded Citation Reliability (LV)",
+ "country": "LV",
+ "jurisdiction": "Latvia",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:17:52.948845+00:00",
+ "results": [
+  {
+   "id": "lv-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2694,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Panel (kolēģija) decisions on accepting/rejecting applications aren't published as official case law; the Constitutional Court publishes judgments, not admission decisions."
+  },
+  {
+   "id": "lv-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2916,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. Such Cabinet award/recognition decisions (Atzinības raksts) are official acts published on Likumi.lv, Latvia's official legal portal, plausibly dated 1999-12-29."
+  },
+  {
+   "id": "lv-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2561,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The ECLI structure cannot be verified as authentic; specific case identifier and date correspondence appear fabricated without confirmable source documentation."
+  },
+  {
+   "id": "lv-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 6963,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This decision is dated in the future (2026), so it cannot yet exist or be published as claimed."
+  },
+  {
+   "id": "lv-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2919,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Constitutional Court panel (kolēģija) decisions on accepting/rejecting applications are procedural rulings, not officially published like judgments in official gazette."
+  },
+  {
+   "id": "lv-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2216,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Likumi.lv publishes laws and regulations; such an amendment/repeal notation to a Prime Minister's order appears fabricated or misattributed."
+  },
+  {
+   "id": "lv-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2141,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This is a Latvian Constitutional Court (Satversmes tiesa) decision, published by Latvia, not Croatian courts on odluke.sudovi.hr."
+  },
+  {
+   "id": "lv-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 3396,
+   "verdict": true,
+   "correct": false,
+   "raw": "**True.** Such Cabinet award decisions (\"Atzinības raksts\") are official acts routinely published on Likumi.lv, Latvia's authoritative legal portal, dated accordingly.  Note: Without verifying the spe"
+  },
+  {
+   "id": "lv-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1689,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The ECLI structure appears plausible, but I cannot verify this specific identifier corresponds to the claimed case without authoritative confirmation."
+  },
+  {
+   "id": "lv-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1761,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Latvia's Competition Council decisions typically cite a specific case number and date; this citation lacks verifiable details, likely fabricated."
+  },
+  {
+   "id": "lv-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2297,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This is a Latvian Constitutional Court (Satversmes tiesa) collegium decision, published by Latvia's court, not Georgia's."
+  },
+  {
+   "id": "lv-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2140,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. A Latvian Prime Minister's order cannot appear in the Hellenic Parliament's Greek Legal Code; jurisdictions and publication sources are mismatched."
+  }
+ ]
+}

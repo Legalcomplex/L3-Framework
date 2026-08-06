@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Mexico — Source-Grounded Citation Reliability (MX)",
+ "country": "MX",
+ "jurisdiction": "Mexico",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:42:12.529461+00:00",
+ "results": [
+  {
+   "id": "mx-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1340,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Código Fiscal de la Federación is a federal law, not state legislation. It should be published through federal official sources, not classified as state legislation."
+  },
+  {
+   "id": "mx-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1829,
+   "verdict": false,
+   "correct": false,
+   "raw": "# Evaluation: **False**  The date 2025-08-13 is in the future (beyond current date). No judicial decision can be published with a prospective date, making this claim implausible."
+  },
+  {
+   "id": "mx-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1563,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  This law was enacted in 2016, not 2022. The date 2022-07-04 likely reflects a recent reform or publication date, not the original enactment date."
+  },
+  {
+   "id": "mx-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1873,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This law does not exist as a currently published statute in Jalisco's official legislation. Jalisco lacks a dedicated \"Ley de Responsabilidad Patrimonial\" as a standalone law."
+  },
+  {
+   "id": "mx-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1847,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The IFT (Instituto Federal de Telecomunicaciones) was dissolved in 2023 and merged into IFETEL's successor entity. A 2025 resolution cannot originate from a defunct institution."
+  },
+  {
+   "id": "mx-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2076,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The identifier '45/2025' cannot be verified as a legitimate official legal source from Poder Judicial del Estado de Jalisco without access to their actual case registry system and current rec"
+  },
+  {
+   "id": "mx-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1607,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Código Fiscal de la Federación is a Mexican federal tax code, not a Honduran document. Honduras' TSC (Tribunal Superior de Cuentas) would not be the official publisher of Mexican legisl"
+  },
+  {
+   "id": "mx-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1496,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The SCJN (Supreme Court of Justice of the Nation) does not publish decisions under the identifier format \"Sentencia 233251\" through official open data platforms. This identifier lacks stand"
+  },
+  {
+   "id": "mx-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1190,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The LEY DE RESPONSABILIDADES ADMINISTRATIVAS is a Mexico City law, not a Honduran document. Honduras TSC would not be the official publisher of Mexican legislation."
+  },
+  {
+   "id": "mx-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1227,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This law does not exist as a currently published statute in Jalisco's official legislation. Jalisco has not enacted a law with this specific title as of the verification date."
+  },
+  {
+   "id": "mx-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1097,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The resolution number format \"P/IFT/100925/309\" and the specific date don't match standard IFT resolution numbering conventions. IFT resolutions typically follow different formatting patterns"
+  },
+  {
+   "id": "mx-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1082,
+   "verdict": false,
+   "correct": true,
+   "raw": "# Answer: **False**  The identifier '45/2026' cannot correspond to a case from 2025-07-03, as 2026 is a future year that postdates the document's creation date."
+  }
+ ]
+}

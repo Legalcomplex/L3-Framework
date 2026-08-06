@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Cayman Islands — Source-Grounded Citation Reliability (KY)",
+ "country": "KY",
+ "jurisdiction": "Cayman Islands",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:16:55.111438+00:00",
+ "results": [
+  {
+   "id": "ky-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2634,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-03-18 is in the future relative to any verifiable record; this citation cannot be authenticated as genuine."
+  },
+  {
+   "id": "ky-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2084,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Cayman Islands Legislation source cannot predate a 1997 Revision; a 1964 publication date for it is chronologically impossible."
+  },
+  {
+   "id": "ky-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2383,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-04-16 is in the future relative to any verifiable record; this citation cannot be confirmed as authentic."
+  },
+  {
+   "id": "ky-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2533,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Cayman Islands legal system uses \"Law\" (later \"Act\") revisions, but no such 1963 Interpretation Law citation exists."
+  },
+  {
+   "id": "ky-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2545,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-03-31 is in the future; a judgment cannot be published before it exists. Claim is unverifiable/fabricated."
+  },
+  {
+   "id": "ky-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 6132,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. A \"1995 Revision\" cannot have been published in 1961; the revision date postdates the claimed publication year, making it chronologically impossible."
+  },
+  {
+   "id": "ky-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2536,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This is a future-dated citation (2026); I cannot verify it, and the specific details appear fabricated without authoritative confirmation."
+  },
+  {
+   "id": "ky-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1956,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Cayman Islands legal system began around 1963, but a \"1997 Revision\" dated citation cannot originate from 1963."
+  },
+  {
+   "id": "ky-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1896,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The date is in the future relative to verifiable records; I cannot confirm this specific 2026 citation exists."
+  },
+  {
+   "id": "ky-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1715,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Cayman Islands and Sint Maarten are separate jurisdictions; Cayman legislation wouldn't be published through Sint Maarten's government."
+  },
+  {
+   "id": "ky-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2160,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific decision exists; anonymized trust cases occur, but I cannot confirm this exact citation without reliable sources."
+  },
+  {
+   "id": "ky-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2360,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Cayman Islands Companies Law is Cayman legislation, not Bahamian; attributing it to Bahamas Consolidated Legislation (1961) is incorrect."
+  }
+ ]
+}

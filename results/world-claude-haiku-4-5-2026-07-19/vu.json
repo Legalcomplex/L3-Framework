@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Vanuatu — Source-Grounded Citation Reliability (VU)",
+ "country": "VU",
+ "jurisdiction": "Vanuatu",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:47:18.670612+00:00",
+ "results": [
+  {
+   "id": "vu-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1759,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  This decision cannot be verified as authentic. The date is in the future (2026), and courts.gov.vu's actual publication records cannot confirm this specific case exists or was decided by th"
+  },
+  {
+   "id": "vu-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1569,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  This bill cannot be verified as published. No official record of a \"Public Land Transport Am Act\" bill exists in Vanuatu Parliament's documented legislation as of January 2025."
+  },
+  {
+   "id": "vu-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1609,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The title appears corrupted (\"de modificative\" is grammatically incorrect French), and no verifiable record exists of this law in Vanuatu's official legislative databases or the VFSC collection"
+  },
+  {
+   "id": "vu-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 4531,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The Insurance Regulation Order No.16 of 2006 would typically be published through Vanuatu's official government gazette or legislative authority, not specifically through Reserve Bank prudent"
+  },
+  {
+   "id": "vu-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1587,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The decision date is April 10, 2026—a future date. No court decision can be published from a time that has not yet occurred. This claim is temporally impossible."
+  },
+  {
+   "id": "vu-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1502,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The claim lacks specificity—no actual Act number is provided (\"Act No. of 2025\" is incomplete), making it impossible to verify as a legitimate official Vanuatu legal source citation."
+  },
+  {
+   "id": "vu-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 3590,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The claim cannot be verified. Vanuatu's judiciary database (courts.gov.vu) is not publicly accessible for independent verification of this specific case identifier and details."
+  },
+  {
+   "id": "vu-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1618,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Vanuatu is not a federal Australian state. The Federal Register of Legislation publishes Australian federal and state laws, not Vanuatu legislation, which is independent."
+  },
+  {
+   "id": "vu-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1459,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** \"Loi No.19 de 2013\" appears to be French legislation, not Vanuatu law. Vanuatu's official laws are published in English and Bislama, not French."
+  },
+  {
+   "id": "vu-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1161,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier references \"Insurance Regulation Order No.16 of 2007\" but the claim states \"No.16 of 2006\" — the years do not match, indicating an inconsistency."
+  },
+  {
+   "id": "vu-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1354,
+   "verdict": false,
+   "correct": true,
+   "raw": "# Evaluation: False  **Explanation:** Vanuatu's official court database (courts.gov.vu) does not maintain comprehensive public judgment records. This decision cannot be verified as officially publishe"
+  },
+  {
+   "id": "vu-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1124,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Open Australian Legal Corpus contains Australian legislation, not Vanuatu laws. Vanuatu has its own distinct legal system and legislative publications separate from Australia."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Yemen — Source-Grounded Citation Reliability (YE)",
+ "country": "YE",
+ "jurisdiction": "Yemen",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 11,
+ "blocked": 0,
+ "unparsed": 1,
+ "errors": [],
+ "accuracy": 0.5455,
+ "correct": 6,
+ "parse_rate": 0.9167,
+ "passed": false,
+ "timestamp": "2026-07-19T08:28:24.459312+00:00",
+ "results": [
+  {
+   "id": "ye-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2564,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated citation; no verifiable record confirms this specific title, date, or publication through Yemen's Central Bank."
+  },
+  {
+   "id": "ye-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2344,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Yemen's Commercial Law is Law No. 32 of 1991, but the January 1, 1991 date and database attribution appear fabricated."
+  },
+  {
+   "id": "ye-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2709,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This title concerns production/consumption/services taxes, but the specific attribution to that publication venue and 2018 date cannot be verified."
+  },
+  {
+   "id": "ye-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2523,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific circular's title, exact date, or publication through Central Bank of Yemen; details appear unconfirmed."
+  },
+  {
+   "id": "ye-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2674,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The citation format is plausible, but the exact January 1, 1996 publication date appears fabricated; verification against official gazette is needed."
+  },
+  {
+   "id": "ye-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3114,
+   "verdict": null,
+   "correct": false,
+   "raw": "I cannot verify this specific claim with certainty. The title concerns an agricultural/fisheries production fund, but publication details require confirmation from primary Yemeni legal sources."
+  },
+  {
+   "id": "ye-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2361,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This appears to be a fabricated citation; no verifiable record confirms this specific circular, title, or publication date exists."
+  },
+  {
+   "id": "ye-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2544,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Yemeni republican laws are published in the official Gazette (الجريدة الرسمية), not the DIFC Legal Database, which covers Dubai."
+  },
+  {
+   "id": "ye-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2347,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Yemen lacks an official \"House of Representatives Legislative Encyclopedia\"; this attribution and specific 2017 publication date appear fabricated or unverifiable."
+  },
+  {
+   "id": "ye-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1940,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The jurisdiction is Yemen, but SAMA is Saudi Arabia's central bank, creating a jurisdictional mismatch that invalidates the claim."
+  },
+  {
+   "id": "ye-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2207,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Jordan Legislation & Opinion Bureau publishes Jordanian law, not Yemeni legislation; Yemeni sources would publish this decree."
+  },
+  {
+   "id": "ye-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2981,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Yemeni laws are issued by the President via the Official Gazette, not \"published\" by Parliament's Legislative Encyclopedia on specific dates."
+  }
+ ]
+}

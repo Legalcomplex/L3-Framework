@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Mauritania — Source-Grounded Citation Reliability (MR)",
+ "country": "MR",
+ "jurisdiction": "Mauritania",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:41:41.594348+00:00",
+ "results": [
+  {
+   "id": "mr-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1580,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Mauritania's Supreme Court decisions are not systematically published through Juricaf with consistent dating and numbering that matches this format. Publication is irregular."
+  },
+  {
+   "id": "mr-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1645,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** MSGG (Mauritania's official gazette) publishes laws and decrees, not consolidated legal codes. The 'Code de l'aviation civile 2018' would be a separate codified text, not MSGG publication."
+  },
+  {
+   "id": "mr-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1949,
+   "verdict": false,
+   "correct": false,
+   "raw": "# Evaluation: **False**  The instruction number format and dating are inconsistent with Mauritanian Central Bank (BCM) official numbering conventions for banking regulations from that period."
+  },
+  {
+   "id": "mr-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2010,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Juricaf is a database that archives court decisions, but the citation format and date specificity (02/05/2024) cannot be verified as an official Mauritanian Supreme Court publication withou"
+  },
+  {
+   "id": "mr-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1765,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Mauritania's primary fisheries legislation is the Maritime Fisheries Code. No verified evidence exists of an official \"Code de la pêche et de l'aquaculture dans les eaux continentales 2019\""
+  },
+  {
+   "id": "mr-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2013,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Law 2011-052 on debt recovery would be published in Mauritania's official journal (Journal Officiel), not by the Central Bank's banking regulations database."
+  },
+  {
+   "id": "mr-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1631,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier format suggests a different dating convention (20231129) than the case citation format (42/2023), indicating potential inconsistency in the Juricaf reference system."
+  },
+  {
+   "id": "mr-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2242,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Code de l'aviation civile 2018 is a Mauritanian legal document. Guinea-Bissau's National People's Assembly could not have published Mauritania's aviation code."
+  },
+  {
+   "id": "mr-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1830,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This document appears to reference Mauritanian legal material but is attributed to a Côte d'Ivoire legal database, creating a jurisdictional mismatch that undermines credibility."
+  },
+  {
+   "id": "mr-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1211,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The identifier format contains '122025' which appears inconsistent with the case number '12/2024'. The date components also seem misaligned with standard Juricaf citation conventions."
+  },
+  {
+   "id": "mr-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1239,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This code is a Mauritanian legal instrument, not a Gambian one. Law Hub Gambia would not be the official publisher of Mauritania's fishing and aquaculture legislation."
+  },
+  {
+   "id": "mr-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1300,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Loi 2011-052 is a Mauritanian law on debt recovery. It could not be published by Nigeria's NAFDAC, which is a Nigerian agency with no authority over Mauritanian legislation."
+  }
+ ]
+}

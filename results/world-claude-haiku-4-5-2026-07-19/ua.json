@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Ukraine — Source-Grounded Citation Reliability (UA)",
+ "country": "UA",
+ "jurisdiction": "Ukraine",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.4167,
+ "correct": 5,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:46:26.483770+00:00",
+ "results": [
+  {
+   "id": "ua-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1692,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The date 2025-12-22 is in the future (from the current perspective of 2024). Constitutional Court decisions cannot be published with future dates, making this claim implausible."
+  },
+  {
+   "id": "ua-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1701,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The Unified State Register of Court Decisions (ЄДРСР) was established in 2010. Decision 134/2-2006 from 2006 predates this register's creation and could not have been published by it."
+  },
+  {
+   "id": "ua-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1343,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This document cannot have been published on 2026-02-26, as that date is in the future. The claim contains an impossible publication date."
+  },
+  {
+   "id": "ua-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1854,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The date 2025-12-30 is in the future (beyond current date). Court decisions cannot be published before they occur. This appears to be a fictional or incorrectly dated reference."
+  },
+  {
+   "id": "ua-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1862,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The date 2025-12-31 is in the future (from current perspective) and cannot represent a past decision publication. Additionally, the citation format appears non-standard for HACC official de"
+  },
+  {
+   "id": "ua-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1469,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The publication date (2026-05-27) is in the future, making this claim impossible. Official regulatory acts cannot be published before the current date."
+  },
+  {
+   "id": "ua-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1850,
+   "verdict": true,
+   "correct": false,
+   "raw": "**True**  The Constitutional Court of Ukraine publishes its decisions (ухвали) in official form. The citation format and date are consistent with authentic CCU institutional output."
+  },
+  {
+   "id": "ua-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 3171,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Decision 134/2-2006 from June 1, 2006, originates from Ukraine's legal system, not Turkey's Council of State (Daniştay). The numbering format and date align with Ukrainian administrative de"
+  },
+  {
+   "id": "ua-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1097,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The citation is incomplete and unverifiable. The ellipsis prevents confirmation of the actual law's title, date of publication, or Verkhovna Rada session number."
+  },
+  {
+   "id": "ua-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1156,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The identifier ends in '25' but the case reference ends in '24'. The dates and case numbers don't align consistently for the same official document."
+  },
+  {
+   "id": "ua-src-f05",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1284,
+   "verdict": false,
+   "correct": true,
+   "raw": "# Evaluation Result: **False**  **Explanation:** The High Anti-Corruption Court of Ukraine (HACC) was established in 2019. A case identifier with \"2025-12-31\" date appears to reference future proceedi"
+  },
+  {
+   "id": "ua-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1161,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This document is Ukrainian legislation (indicated by Cyrillic text and \"Національного банку України\"), not Lithuanian. TAR publishes Lithuanian legal acts only."
+  }
+ ]
+}

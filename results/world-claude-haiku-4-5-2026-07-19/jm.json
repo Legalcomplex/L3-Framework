@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Jamaica — Source-Grounded Citation Reliability (JM)",
+ "country": "JM",
+ "jurisdiction": "Jamaica",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:39:17.380475+00:00",
+ "results": [
+  {
+   "id": "jm-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1685,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The decision is dated 2026-03-13, which is in the future. No court judgment can be published from a date that has not yet occurred."
+  },
+  {
+   "id": "jm-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1836,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The decision date is in the future (2026), making this claim implausible. Current official Jamaican Supreme Court judgments cannot be published from future dates."
+  },
+  {
+   "id": "jm-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2639,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Jamaica FSC has not published a guideline with this exact title and date. No publicly available official record confirms this specific 2024 guideline was issued on 2025-02-18."
+  },
+  {
+   "id": "jm-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1678,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Jamaica's Constitution is the primary governing document adopted in 1962 at independence. Proclamation No. 20/2022 would not constitute the Constitution itself; it likely addresses a specif"
+  },
+  {
+   "id": "jm-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1474,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The decision date (2026-03-27) is in the future, making this claim impossible. Court decisions cannot be published before they occur. This appears to be a fabricated citation."
+  },
+  {
+   "id": "jm-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1254,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  I cannot verify this claim as the judgment date (2026-03-06) is in the future, making it impossible to confirm this citation exists in the Jamaica Supreme Court database."
+  },
+  {
+   "id": "jm-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1805,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No verifiable Jamaica Court of Appeal judgment under this case name and date appears in official Jamaica legal databases or published reports."
+  },
+  {
+   "id": "jm-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1272,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The case identifier references a 2026 decision, which is a future date and cannot exist in currently available legal databases or archives."
+  },
+  {
+   "id": "jm-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1152,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.**  This document is attributed to Aruba (a constituent country of the Kingdom of the Netherlands), not Jamaica. Jamaica would not publish guidelines through Aruba's legislative archive."
+  },
+  {
+   "id": "jm-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1156,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Constitution of Jamaica is a Jamaican legal document, not a Sint Maarten publication. Sint Maarten is a separate Caribbean jurisdiction with its own distinct legal framework."
+  },
+  {
+   "id": "jm-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1114,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Jamaica Court of Appeal does not publish decisions under the title \"Jamaica Court of Appeal Judgments\" as an official publisher designation. Court decisions are typically published thro"
+  },
+  {
+   "id": "jm-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1221,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The case identifier references a 2026 date, which is in the future. Current records cannot document cases from future years, making this claim impossible to verify as accurate."
+  }
+ ]
+}

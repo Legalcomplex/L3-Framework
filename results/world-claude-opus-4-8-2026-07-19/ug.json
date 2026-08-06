@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Uganda — Source-Grounded Citation Reliability (UG)",
+ "country": "UG",
+ "jurisdiction": "Uganda",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:26:59.841980+00:00",
+ "results": [
+  {
+   "id": "ug-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2351,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Regulations are statutory instruments, not Acts; they would be published under Statutory Instruments, not Uganda Acts, undermining this citation's accuracy."
+  },
+  {
+   "id": "ug-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2538,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Foreign exchange primary legislation is enacted by Parliament and published in the Uganda Gazette, not by Bank of Uganda."
+  },
+  {
+   "id": "ug-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3169,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Uganda's electricity regulator is called the Electricity Regulatory Authority (ERA), not \"Uganda Electricity Regulatory Authority\"; the future date is also implausible."
+  },
+  {
+   "id": "ug-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2378,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date (2026) is in the future, and this appears to be a guide/publication, not a Decisions & Rulings category."
+  },
+  {
+   "id": "ug-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 6413,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The Administration of Estates (Small Estates) (Special Provisions) Act is a Cap in Uganda's Laws, not dated 1972-06-06."
+  },
+  {
+   "id": "ug-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2491,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. In Uganda, Acts are published in the Uganda Gazette via the government, not by Bank of Uganda; date appears fabricated."
+  },
+  {
+   "id": "ug-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2526,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The jurisdiction is Uganda, but the claimed publisher is Tanzania's Attorney General's Office, creating an inconsistent, unreliable citation."
+  },
+  {
+   "id": "ug-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2766,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Foreign exchange primary legislation (Foreign Exchange Act 2004) is enacted by Parliament, not published by Bank of Uganda."
+  },
+  {
+   "id": "ug-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1743,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Uganda's electricity regulator is the Electricity Regulatory Authority (ERA), not \"Uganda Electricity Regulatory Authority\"; this citation appears fabricated."
+  },
+  {
+   "id": "ug-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1711,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Uganda's consumer guides would be published via Ugandan authorities (e.g., UCC), not the Seychelles Official Gazette. Jurisdictional mismatch."
+  },
+  {
+   "id": "ug-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1665,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This is the Cap 156 Act, but the 1970-06-06 date and publication details appear inaccurate or unverifiable without confirmation."
+  },
+  {
+   "id": "ug-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1709,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Kenya Law (NCLR) is Kenya's official reporting body; it does not publish Ugandan legislation, which uses Uganda's Gazette."
+  }
+ ]
+}

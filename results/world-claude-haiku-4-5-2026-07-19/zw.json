@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Zimbabwe — Source-Grounded Citation Reliability (ZW)",
+ "country": "ZW",
+ "jurisdiction": "Zimbabwe",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:47:48.689307+00:00",
+ "results": [
+  {
+   "id": "zw-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1690,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  No such act exists in Zimbabwe's legislation. The claim appears to reference a non-existent statute with an implausibly specific publication date format."
+  },
+  {
+   "id": "zw-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1598,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Reserve Bank of Zimbabwe's Exchange Control Directives are regulatory instruments addressing foreign currency management, not cybersecurity guidelines. This document type and publicatio"
+  },
+  {
+   "id": "zw-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1542,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Zimbabwe gained independence on April 18, 1980. An Act dated October 10, 1980, is plausible, but verification through Zimbabwe Legal Information Institute is required to confirm authenticity."
+  },
+  {
+   "id": "zw-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2588,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** No verifiable evidence confirms this specific circular's existence, publication date, or content in Zimbabwe's official Reserve Bank records as of April 8, 2024."
+  },
+  {
+   "id": "zw-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2627,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Zimbabwe's independence was December 1980; legislation from 1983 would exist, but this specific act title and publication details cannot be verified from available official Zimbabwean legal"
+  },
+  {
+   "id": "zw-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1468,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Monetary Policy Statement is published by the Reserve Bank of Zimbabwe's Monetary Policy Committee, not through Exchange Control Directives, which are separate regulatory instruments."
+  },
+  {
+   "id": "zw-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2106,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. No verifiable evidence exists of an 'Acquisition of Farm Equipment or Material Act' in Zimbabwe's official legislation or Zimbabwe Legal Information Institute records from that date."
+  },
+  {
+   "id": "zw-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1385,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Saint Helena, Ascension & Tristan da Cunha is a British Overseas Territory, not a Zimbabwean jurisdiction. This document cannot be an official Zimbabwean legal source."
+  },
+  {
+   "id": "zw-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2964,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Zimbabwe gained independence on April 18, 1980. An African Development Bank membership act in October 1983 is plausible, but verification through official Zimbabwean legislative records is requ"
+  },
+  {
+   "id": "zw-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 994,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Exchange Control Circular No. 3 of 2024 would be a Zimbabwean Reserve Bank instrument, not a Zambian parliamentary act. Different jurisdictions."
+  },
+  {
+   "id": "zw-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1288,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  The African Development Fund (Zimbabwe) Act was not published by Zimbabwe Legal Information Institute in 1980. ZimLII is a modern digital legal database established much later than 1980."
+  },
+  {
+   "id": "zw-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 960,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Monetary Policy Statement 2024 is a Reserve Bank of Zimbabwe document, not a Lesotho Legal Information Institute publication. Wrong jurisdiction and publisher."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Montenegro — Source-Grounded Citation Reliability (ME)",
+ "country": "ME",
+ "jurisdiction": "Montenegro",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:41:01.046086+00:00",
+ "results": [
+  {
+   "id": "me-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2206,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The date 2025-05-05 is in the future. This decision cannot have been published yet, making the claim about an actual official legal source invalid."
+  },
+  {
+   "id": "me-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2023,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Supreme Court of Montenegro (Vrhovni Sud CG) decisions are officially published through the Court's own portal and official legal databases, not through a third-party site called \"Sudov"
+  },
+  {
+   "id": "me-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1431,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The publication date of 2026-02-16 is in the future, making this claim impossible. Official gazettes publish current legal documents, not future ones."
+  },
+  {
+   "id": "me-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1422,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. No verifiable evidence exists that Montenegro Central Bank published a \"Decision on Open Market Operations\" regulation on January 1, 2011. Cannot confirm this specific official source."
+  },
+  {
+   "id": "me-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1800,
+   "verdict": true,
+   "correct": true,
+   "raw": "**True**  The Constitutional Court of Montenegro (Ustavni sud Crne Gore) is the authorized body to decide constitutional complaints (ustavna žalba) and publishes such decisions. The reference format a"
+  },
+  {
+   "id": "me-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1975,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The identifier 'Kr-S 4/2011' cannot be reliably verified as corresponding to that specific Supreme Court decision without access to official Sudovi.me database records. Citation verification "
+  },
+  {
+   "id": "me-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1648,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier U-III br.374/26 cannot correspond to a case numbered U-III br.374/25, as sequential case numbers denote different proceedings, not the same matter."
+  },
+  {
+   "id": "me-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1480,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The case identifiers don't match: 'Kž-I 12/2012' differs from 'Kž-I 12/2011' in year designation, and the dates (2012 vs 2011-04-18) are inconsistent with the claimed correspondence."
+  },
+  {
+   "id": "me-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1316,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This specific public call document is not verifiable as an official publication in the Službeni list Crne Gore on 2024-02-16. The claim lacks sufficient sourcing documentation."
+  },
+  {
+   "id": "me-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1154,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Central Bank of Montenegro, not Ukraine's Verkhovna Rada, would issue decisions on open market operations for Montenegro's monetary policy."
+  },
+  {
+   "id": "me-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1306,
+   "verdict": false,
+   "correct": true,
+   "raw": "# Evaluation  **False**  The decision reference format and dating (2025 case number with 2023 date) contain internal inconsistencies that cast doubt on this being a verified official Constitutional Co"
+  },
+  {
+   "id": "me-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1050,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  ЄДРСР is Ukraine's unified register. Montenegro's court decisions are published in Montenegro's official gazette and court registries, not Ukrainian systems."
+  }
+ ]
+}

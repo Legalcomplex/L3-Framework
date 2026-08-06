@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Mali — Source-Grounded Citation Reliability (ML)",
+ "country": "ML",
+ "jurisdiction": "Mali",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:18:59.568776+00:00",
+ "results": [
+  {
+   "id": "ml-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3034,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Mali's Customs Code dates to Law No. 01-075 (2001), but \"Mali Consolidated Legal Codes (SGG)\" citation appears fabricated; verify actual official source."
+  },
+  {
+   "id": "ml-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2570,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation's authenticity; Mali's Cour suprême decisions aren't reliably documented in accessible databases to confirm accuracy."
+  },
+  {
+   "id": "ml-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2692,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This describes a news/training event announcement, not jurisprudence (case law); it's misclassified as an official legal source category."
+  },
+  {
+   "id": "ml-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2451,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Mali's artisanat sector is regulated by later texts; no \"Code de l'artisanat 1995\" exists as cited. Citation appears fabricated."
+  },
+  {
+   "id": "ml-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2253,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation exists; without access to Mali's Supreme Court records, authenticity remains unconfirmed and unverifiable."
+  },
+  {
+   "id": "ml-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2493,
+   "verdict": true,
+   "correct": true,
+   "raw": "I cannot verify this specific citation as True or False without access to authoritative Mali legal databases; insufficient information to confirm."
+  },
+  {
+   "id": "ml-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 4867,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Mali's Code des douanes would be published by Malian authorities, not the Nigerian Communications Commission, which is unrelated to Mali."
+  },
+  {
+   "id": "ml-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2046,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier ends in 194 while the cited case number is 193, showing a mismatch between reference and record."
+  },
+  {
+   "id": "ml-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2805,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The 2026 date is in the future, making this citation impossible to verify as a legitimately published source."
+  },
+  {
+   "id": "ml-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2063,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Mali's Code de l'artisanat would be published through Malian official sources, not Nigeria's food and drug agency."
+  },
+  {
+   "id": "ml-src-f05",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2069,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier ends in '072' while the cited decision number is '071'—these numeric references don't match, indicating inconsistency."
+  },
+  {
+   "id": "ml-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2233,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. A Malian decision would be published by Mali's Cour suprême, not Senegal's; jurisdictions and their courts don't match."
+  }
+ ]
+}

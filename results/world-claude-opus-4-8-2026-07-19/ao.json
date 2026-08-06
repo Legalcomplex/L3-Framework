@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Angola — Source-Grounded Citation Reliability (AO)",
+ "country": "AO",
+ "jurisdiction": "Angola",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:07:04.355028+00:00",
+ "results": [
+  {
+   "id": "ao-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2539,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Angola's tax incentives are governed by the Código dos Benefícios Fiscais (Decreto Legislativo Presidencial), not Lei n.º 8/22; citation appears fabricated."
+  },
+  {
+   "id": "ao-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2715,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. \"Norma Regulamentar\" is issued by regulatory bodies (e.g., ARSEG), not standard official publication format; Lex.ao attribution appears unverifiable/fabricated."
+  },
+  {
+   "id": "ao-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1987,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Angola's Constitutional Court cannot have issued a 2026-dated decision that has already occurred; this citation appears fabricated."
+  },
+  {
+   "id": "ao-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1956,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-04-17 is in the future, making this citation implausible and unverifiable as a genuine published decision."
+  },
+  {
+   "id": "ao-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2634,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. Angola's new Penal Code was enacted as Lei n.º 38/20, dated 11 November 2020, replacing the colonial-era code."
+  },
+  {
+   "id": "ao-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2274,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific regulation's existence or Lex.ao's publication details; official Angolan legal sources are Diário da República."
+  },
+  {
+   "id": "ao-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2496,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Angola's tax incentives are governed by the Código dos Benefícios Fiscais, but the cited law number and details appear fabricated."
+  },
+  {
+   "id": "ao-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 3179,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. \"Norma Regulamentar\" is issued by regulatory bodies (e.g., ARSEG), but citation details appear unverifiable; publisher/date claim lacks reliable confirmation."
+  },
+  {
+   "id": "ao-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 3669,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier '1076/2027' conflicts with the cited 'Acórdão N.º 1076/2026'; mismatched years indicate an inconsistent, likely fabricated citation."
+  },
+  {
+   "id": "ao-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2115,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The date 2026-04-17 is in the future, making this citation impossible to verify as a genuine, existing decision."
+  },
+  {
+   "id": "ao-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1741,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Angola's Penal Code (Lei n.º 38/20) was published in Angola's Diário da República, not Cameroon's official acts."
+  },
+  {
+   "id": "ao-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2148,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Angola's regulatory norms are published in Diário da República, not a Congolese (DRC) legal portal covering different jurisdiction."
+  }
+ ]
+}

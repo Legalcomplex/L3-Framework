@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Isle of Man — Source-Grounded Citation Reliability (IM)",
+ "country": "IM",
+ "jurisdiction": "Isle of Man",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:38:45.161953+00:00",
+ "results": [
+  {
+   "id": "im-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 3696,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This case cannot be verified as published by Isle of Man Judgments Online. The database does not contain publicly accessible records for this specific 2006 decision with these company names"
+  },
+  {
+   "id": "im-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1397,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The citation format is non-standard. Isle of Man legislation uses \"Act of Tynwald\" designations, not \"AT\" abbreviations in this manner."
+  },
+  {
+   "id": "im-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1502,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Isle of Man Judgments Online does not contain decisions from 2006. The database's coverage begins from 2007 onwards, making this 2006 decision unavailable there."
+  },
+  {
+   "id": "im-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1542,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  AT 4 of 2025 does not appear to be a valid Income Tax Act citation for Isle of Man as of January 1, 2025. The reference format seems incorrect or the Act does not exist."
+  },
+  {
+   "id": "im-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1604,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  Isle of Man Judgments Online does not appear to be the official publisher of Manx court decisions. The official repository is the Isle of Man legislation website or courts."
+  },
+  {
+   "id": "im-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1340,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The identifier format 'PRINCIPAL/2025-SM01' and designation 'SM 1 of 2025' are inconsistent with standard Isle of Man legislative cataloguing conventions for Acts of Tynwald."
+  },
+  {
+   "id": "im-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1475,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Isle of Man Judgments Online does not publish decisions from 2005. The database's coverage begins in 2006, predating this February 2005 decision."
+  },
+  {
+   "id": "im-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1510,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The identifier format and legislative numbering system for Isle of Man Acts does not reliably correspond to the claimed reference without official verification from the Tynwald Legislature'"
+  },
+  {
+   "id": "im-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1304,
+   "verdict": false,
+   "correct": true,
+   "raw": "# Answer: **False**  The case citation format and date provided don't match Isle of Man Judgments Online's standard recording practices. No verifiable record of this specific case exists in that repos"
+  },
+  {
+   "id": "im-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1500,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The identifier format 'PRINCIPAL/2025-0009' does not match standard Isle of Man legislative citation conventions. AT 4 of 2025 would typically use different reference numbering."
+  },
+  {
+   "id": "im-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1026,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  LEVENTHORPE v THE CHIEF CONSTABLE is an Isle of Man case, not Gibraltar. It should be published by Isle of Man official legal sources, not gibraltarlaws.gov.gi."
+  },
+  {
+   "id": "im-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1423,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Isle of Man has its own legal information system (Manx legislation); Jersey Legal Information Board would not publish Isle of Man measures."
+  }
+ ]
+}

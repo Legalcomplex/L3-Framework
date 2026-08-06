@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Zambia — Source-Grounded Citation Reliability (ZM)",
+ "country": "ZM",
+ "jurisdiction": "Zambia",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:28:35.224554+00:00",
+ "results": [
+  {
+   "id": "zm-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3414,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Zambia's Independent Broadcasting Authority Act dates to 2002 (Act No. 17 of 2002); the cited 2025 Act appears fabricated."
+  },
+  {
+   "id": "zm-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2396,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Statutory Instruments in Zambia are published in the Government Gazette by the government printer, not issued by SEC directives/guidelines."
+  },
+  {
+   "id": "zm-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2399,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Zambia (formerly Northern Rhodesia) gained independence in 1964; ZambiaLII didn't exist in 1954, and this citation appears fabricated."
+  },
+  {
+   "id": "zm-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2403,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Zambia's Banking and Financial Services Act is Act No. 7 of 2017; no verified 2026 Act No. 9 exists."
+  },
+  {
+   "id": "zm-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1987,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Statutory Instruments in Zambia are published in the Government Gazette, not issued by SEC as directives/guidelines."
+  },
+  {
+   "id": "zm-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2603,
+   "verdict": true,
+   "correct": true,
+   "raw": "I cannot verify this claim as True or False with confidence; I lack reliable data confirming this specific regulation's existence or publication date."
+  },
+  {
+   "id": "zm-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2911,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Zambia's IBA Act dates to 2002 (amended 2010/2017), not 2025; Laws.Africa/Open By-laws covers South African municipal by-laws, not Zambian legislation."
+  },
+  {
+   "id": "zm-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 3929,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Statutory Instruments in Zambia are published in the Government Gazette, not via SEC Directives & Guidelines; also the citation appears malformed."
+  },
+  {
+   "id": "zm-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2245,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The African War Memorial Fund Act is Zambian legislation; it would appear on Zambia Legal Information Institute (ZambiaLII), not Namibia's."
+  },
+  {
+   "id": "zm-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2366,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Zambian legislation appears on Zambia Legal Information Institute (ZambiaLII), not Zimbabwe's; also this 2026 Act citation appears fabricated/unverifiable."
+  },
+  {
+   "id": "zm-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2105,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Statutory Instruments in Zambia are published by government, not the Securities Commission; and the 1993/2022 details appear inconsistent."
+  },
+  {
+   "id": "zm-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1874,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Zambian subsidiary legislation is published via Government Gazette/statutory instruments, not the Central Bank of Eswatini, which serves a different jurisdiction entirely."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Kyrgyzstan — Source-Grounded Citation Reliability (KG)",
+ "country": "KG",
+ "jurisdiction": "Kyrgyzstan",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:16:19.087000+00:00",
+ "results": [
+  {
+   "id": "kg-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2940,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. In 1996, Kyrgyzstan had no separate Constitutional Court; constitutional review belonged to the Constitutional Court established under the 1993 Constitution—verification uncertain."
+  },
+  {
+   "id": "kg-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 5693,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated citation; I cannot verify the case number, court, or database as authentic Kyrgyz sources."
+  },
+  {
+   "id": "kg-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 3152,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The 2026 date is future/implausible, and this specific identifier format and case cannot be verified as authentic."
+  },
+  {
+   "id": "kg-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 3078,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. In 1997, Kyrgyzstan had a Constitutional Court, but this citation lacks verifiable details; the claim cannot be confirmed."
+  },
+  {
+   "id": "kg-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2728,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-04-29 is in the future, making this citation impossible to verify as a genuine published decision."
+  },
+  {
+   "id": "kg-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2014,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This citation cannot be verified; the 2026 date is future-dated, and the specific identifier and details appear fabricated."
+  },
+  {
+   "id": "kg-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2253,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Kyrgyzstan and Kazakhstan are separate jurisdictions; a Kyrgyz source wouldn't be published by Kazakhstan's Constitutional Court body."
+  },
+  {
+   "id": "kg-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2328,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'ГД-319/26-Т6' cannot correspond to a case labeled 'ГД-319/26-Т5'; the identifiers differ, and the details appear fabricated."
+  },
+  {
+   "id": "kg-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2121,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier ВСЧ404-0247/27-УД does not match the cited ВСЧ404-0247/26-УД; also, this appears to be fabricated."
+  },
+  {
+   "id": "kg-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1965,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Astana International Financial Centre Court is a Kazakhstani institution, not Kyrgyz, and was established in 2018."
+  },
+  {
+   "id": "kg-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2216,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Tüp District Court is in Kyrgyzstan, not Uzbekistan, and district court decisions aren't published by any Constitutional Court."
+  },
+  {
+   "id": "kg-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2844,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Kyrgyzstan Supreme Court (Верховный суд КР) decision cannot be published by Tajikistan's Constitutional Court; they are separate national institutions."
+  }
+ ]
+}

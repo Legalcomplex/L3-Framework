@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Rwanda — Source-Grounded Citation Reliability (RW)",
+ "country": "RW",
+ "jurisdiction": "Rwanda",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:23:51.049261+00:00",
+ "results": [
+  {
+   "id": "rw-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2064,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This law is dated in the future (2026); I cannot verify a specific unpublished law with fabricated numbering and date."
+  },
+  {
+   "id": "rw-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2786,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific guideline number, date, or publication details; fabricated-looking citation requires authoritative confirmation before acceptance."
+  },
+  {
+   "id": "rw-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2051,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2025-12-10 is in the future and cannot be verified; this appears to be a fabricated citation."
+  },
+  {
+   "id": "rw-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2482,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific publication date or exact title; details appear fabricated and require confirmation from official CMA sources."
+  },
+  {
+   "id": "rw-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2479,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific regulation's existence or exact publication date; details appear fabricated and require confirmation from official RURA sources."
+  },
+  {
+   "id": "rw-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2476,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears fabricated—a future-dated citation with unverifiable specifics; I cannot confirm such regulation or publication details exist."
+  },
+  {
+   "id": "rw-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2030,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Kenya Law reports Kenyan legislation only; Rwandan laws are published in the Official Gazette of Rwanda."
+  },
+  {
+   "id": "rw-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2975,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The publication date (2022-07-31) predates the guidelines' stated issuance date (05/06/2023), making the bibliographic claim chronologically impossible."
+  },
+  {
+   "id": "rw-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2066,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific decision's existence, date, or publisher; fabricated case citations require independent confirmation from official Rwandan sources."
+  },
+  {
+   "id": "rw-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1655,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Rwanda's Capital Market corporate governance would be published by Rwanda's authorities, not Tanzania's Attorney General's Office."
+  },
+  {
+   "id": "rw-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1676,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific regulation, title, or exact 2023-05-28 publication date; details appear fabricated or unconfirmed."
+  },
+  {
+   "id": "rw-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1943,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Rwandan CMA regulations are published in Rwanda's Official Gazette, not Seychelles' Gazette; the jurisdictional publication source is incorrect."
+  }
+ ]
+}

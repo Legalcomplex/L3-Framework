@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Bolivia — Source-Grounded Citation Reliability (BO)",
+ "country": "BO",
+ "jurisdiction": "Bolivia",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:08:58.427435+00:00",
+ "results": [
+  {
+   "id": "bo-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2202,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date is in the future relative to verifiable records; I cannot confirm this law number, publication, or content authenticity."
+  },
+  {
+   "id": "bo-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2706,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The citation format appears fabricated; Bolivia's Tribunal Agroambiental uses different numbering conventions, and this specific decision cannot be reliably verified."
+  },
+  {
+   "id": "bo-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3417,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific law number, date, or publication. Claims about future/recent legislation require authoritative confirmation I lack."
+  },
+  {
+   "id": "bo-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2193,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation's authenticity, format, or publication details without access to Bolivia's official Tribunal Agroambiental records."
+  },
+  {
+   "id": "bo-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 4307,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific law number, date, or publication details; the claim appears fabricated and lacks confirmable evidence."
+  },
+  {
+   "id": "bo-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2711,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. While the Tribunal Agroambiental exists in Bolivia, I cannot verify this specific citation's exact identifier and details as authentic."
+  },
+  {
+   "id": "bo-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 3267,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Querido Diário covers Brazilian municipal gazettes only, not Bolivian national laws; it cannot be the source for Bolivian legislation."
+  },
+  {
+   "id": "bo-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2708,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Agroambiental court is Bolivian; a Peruvian OSCE procurement tribunal cannot publish Bolivian agro-environmental jurisprudence. Wrong jurisdiction entirely."
+  },
+  {
+   "id": "bo-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2986,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Bolivian laws are not published through Brazil's Planalto portal (REFLEGIS); that source handles Brazilian federal legislation, not Bolivian."
+  },
+  {
+   "id": "bo-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2017,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. A Bolivian Agroambiental (agro-environmental) tribunal decision cannot be published by Colombia's Procuraduría; wrong country and wrong institution entirely."
+  },
+  {
+   "id": "bo-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1761,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific law or publication claim; Bolivia lacks a \"Chamber of Deputies Open Data API\" as described."
+  },
+  {
+   "id": "bo-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1948,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This is a Bolivian Sentencia Agroambiental Nacional from the Tribunal Agroambiental of Bolivia, not Peru's INDECOPI competition/IP tribunal."
+  }
+ ]
+}

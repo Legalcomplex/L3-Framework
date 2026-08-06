@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Poland — Source-Grounded Citation Reliability (PL)",
+ "country": "PL",
+ "jurisdiction": "Poland",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.6667,
+ "correct": 8,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:22:42.441965+00:00",
+ "results": [
+  {
+   "id": "pl-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2241,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific regulation's existence or publication date; the citation appears fabricated and requires independent confirmation via ISAP."
+  },
+  {
+   "id": "pl-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2996,
+   "verdict": true,
+   "correct": true,
+   "raw": "**True** (with caveat)  The Constitutional Tribunal (Trybunał Konstytucyjny) issues \"postanowienie\" (orders) in P-series cases; however, exact case number and date require verification against OTK rec"
+  },
+  {
+   "id": "pl-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 6474,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-03-19 is in the future relative to any verifiable record; this citation cannot be authenticated as genuine."
+  },
+  {
+   "id": "pl-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2171,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. In 1987 Poland had no Constitutional Tribunal case \"K 1/87\"; also SAOS aggregates court decisions, not officially publishing them."
+  },
+  {
+   "id": "pl-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2280,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The signature \"V KK 137/16\" follows the Supreme Court's format (KK = Izba Karna), indicating a criminal cassation ruling."
+  },
+  {
+   "id": "pl-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2174,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This citation lacks a verifiable Dziennik Ustaw item number and appears fabricated; the vague title cannot be independently confirmed."
+  },
+  {
+   "id": "pl-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2266,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Polish regulations are published in Dziennik Ustaw, not Slovenia's PISRS database, which covers Slovenian legislation only."
+  },
+  {
+   "id": "pl-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2326,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier \"P 54/15\" cannot match \"P 54/14\"—the year suffixes differ (15 versus 14), indicating inconsistent case numbers."
+  },
+  {
+   "id": "pl-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2311,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Identifier 'III FSK 142/27' does not match the cited case 'III FSK 142/26'; the numbers differ, and dates appear fabricated."
+  },
+  {
+   "id": "pl-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1738,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The signature \"K 1/87\" indicates a 1987 case, contradicting the stated 1984 date; this inconsistency invalidates the claim."
+  },
+  {
+   "id": "pl-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2594,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. \"V KK 137/16\" is a Polish Supreme Court (Sąd Najwyższy) criminal chamber case, not from Georgia's Constitutional Court."
+  },
+  {
+   "id": "pl-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2055,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Poland publishes legal acts in Dziennik Ustaw, not the Czech e-Sbírka; wrong publication source for a Polish rozporządzenie."
+  }
+ ]
+}

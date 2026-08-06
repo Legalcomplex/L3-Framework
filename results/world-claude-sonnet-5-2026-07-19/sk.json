@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Slovakia — Source-Grounded Citation Reliability (SK)",
+ "country": "SK",
+ "jurisdiction": "Slovakia",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:02:28.428923+00:00",
+ "results": [
+  {
+   "id": "sk-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2332,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this cites a future-dated 2026 promulgation that cannot be verified as an actual existing Zbierka zákonov publication at present."
+  },
+  {
+   "id": "sk-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2799,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Decisions with \"ÚS\" case number designation (I. ÚS 123/2010) belong to the Constitutional Court (Ústavný súd), not the Supreme Court of Slovakia."
+  },
+  {
+   "id": "sk-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1864,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this decision date is in the future (2026), so it cannot yet be verifiably published or confirmed as an official existing source."
+  },
+  {
+   "id": "sk-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3117,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific claim; it references a future/unconfirmed 2026 publication date, which I cannot authenticate against actual Zbierka zákonov records."
+  },
+  {
+   "id": "sk-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2297,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This decision on \"postavenie poškodeného v priestupkovom konaní\" concerns administrative offense proceedings, typically falling under Constitutional Court or lower administrative court juri"
+  },
+  {
+   "id": "sk-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2458,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this claim; it references a future-dated decision, and I have no reliable record of this specific document's existence."
+  },
+  {
+   "id": "sk-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2083,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify specific Zbierka zákonov identifiers or their exact content—this appears to be a fabricated/unverifiable future-dated citation."
+  },
+  {
+   "id": "sk-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2594,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. \"I. ÚS\" designates Ústavný súd (Constitutional Court) filings, not Najvyšší súd; also the date precedes the decision's registration number."
+  },
+  {
+   "id": "sk-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1599,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — I cannot verify this specific decision exists in Slovakia's Antimonopoly Office (PMÚ) official records; details appear unverifiable or fabricated."
+  },
+  {
+   "id": "sk-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2618,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — I cannot verify this specific identifier, date, and document title combination against actual Slovak Zbierka zákonov records for 2026, a future/unverifiable publication."
+  },
+  {
+   "id": "sk-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1647,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This is a Slovak-language legal matter concerning the status of an injured party in misdemeanor proceedings, unrelated to Turkey's Constitutional Court."
+  },
+  {
+   "id": "sk-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1607,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Georgia's Supreme Court wouldn't publish this; the entity name/context suggests a Slovak trademark/patent office decision, not Georgian judiciary."
+  }
+ ]
+}

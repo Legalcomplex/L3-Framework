@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Council of Europe — Source-Grounded Citation Reliability (CoE)",
+ "country": "COE",
+ "jurisdiction": "Council of Europe",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:52:14.024801+00:00",
+ "results": [
+  {
+   "id": "coe-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2168,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a fabricated or unverifiable citation; CODICES catalogs constitutional court decisions, not scandal-related \"suspicion based reporting\" matters like this."
+  },
+  {
+   "id": "coe-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1914,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** HUDOC is the ECHR's own database; German translations/summaries by N.P. Engel Verlag are a separate commercial publisher, not HUDOC's official publication."
+  },
+  {
+   "id": "coe-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1784,
+   "verdict": true,
+   "correct": true,
+   "raw": "True. The European Interim Agreement on Social Security Schemes Relating to Old Age, Invalidity and Survivors, ETS No. 12, was signed 11 December 1953 in Paris."
+  },
+  {
+   "id": "coe-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1990,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — HUDOC-ESC hosts European Committee of Social Rights decisions, but a specific unverifiable 2025 decision citation cannot be confirmed as authentic."
+  },
+  {
+   "id": "coe-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2108,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This decision date is in the future (March 2026), so it cannot yet exist as a published official HUDOC-EXEC document."
+  },
+  {
+   "id": "coe-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1932,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** CODICES is a Venice Commission database aggregating constitutional case-law, but it is not the \"official\" original publisher of national court decisions like this Spanish one."
+  },
+  {
+   "id": "coe-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2965,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This decision is not a Venice Commission CODICES constitutional case; the title/date/source combination does not match known CODICES entries."
+  },
+  {
+   "id": "coe-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1972,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This ECLI likely corresponds to the Court's actual judgment text itself, not specifically a German translation summary published by N. P. Engel Verlag."
+  },
+  {
+   "id": "coe-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1536,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The European Interim Agreement (ETS No. 12) is a Council of Europe treaty, not Isle of Man domestic Tynwald legislation."
+  },
+  {
+   "id": "coe-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2233,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. HUDOC-ESC covers European Committee of Social Rights collective complaint decisions, but dissenting opinions/dates/names must match actual verified case records precisely."
+  },
+  {
+   "id": "coe-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1532,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Committee of Ministers decisions on ECtHR execution (Sejdić and Finci group) are published by the Council of Europe, not JerseyLaw."
+  },
+  {
+   "id": "coe-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1690,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The identifier \"ESP-1996-1-003\" denotes a Spanish decision (ESP), not Portuguese, so DGSI's court source attribution is mismatched and incorrect."
+  }
+ ]
+}

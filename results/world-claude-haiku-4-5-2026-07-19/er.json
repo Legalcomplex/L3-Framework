@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Eritrea — Source-Grounded Citation Reliability (ER)",
+ "country": "ER",
+ "jurisdiction": "Eritrea",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:36:36.315429+00:00",
+ "results": [
+  {
+   "id": "er-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1857,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Eritrea Official Gazette did not begin publication until 1991 following independence, but the Library of Congress Collection containing Eritrean gazettes typically starts from 1994 onwa"
+  },
+  {
+   "id": "er-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1602,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The claim contains implausible specificity. No verifiable evidence confirms this regulation's publication in the Library of Congress Eritrean Gazette collection on that exact date."
+  },
+  {
+   "id": "er-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3440,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Eritrea's Official Gazette numbering and dating conventions do not align with this format. The proclamation number and publication date combination appears inconsistent with verified Eritre"
+  },
+  {
+   "id": "er-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1697,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.**   Eritrea's official gazette publications are difficult to independently verify through Library of Congress collections. The specific proclamation details and publication date cannot be rel"
+  },
+  {
+   "id": "er-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1623,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Eritrea Official Gazette Library of Congress Collection does not systematically document loan proclamations from October 1997, and verification cannot be established through standard ar"
+  },
+  {
+   "id": "er-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1874,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** Eritrea's official gazette is the \"Negarit Gazeta,\" not \"Eritrea Official Gazette.\" The citation format and dating structure appear inconsistent with standard Eritrean legal publication pra"
+  },
+  {
+   "id": "er-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1569,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  A proclamation by Eritrea's government would be published in Eritrea's Official Gazette, not Seychelles' Official Gazette. Seychelles is a separate country with its own legal publications."
+  },
+  {
+   "id": "er-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1763,
+   "verdict": false,
+   "correct": true,
+   "raw": "# False  Eritrea and Tanzania are separate countries. An Eritrean regulation would not be published through Tanzania's Attorney General's Office. This appears to be a misattribution of jurisdiction."
+  },
+  {
+   "id": "er-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1964,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Kenya Law reports Kenyan legislation. This proclamation belongs to Eritrea's legal system and would be published through Eritrean official sources, not Kenya's."
+  },
+  {
+   "id": "er-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1357,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Eritrean Civil Aviation Proclamation would be published by Eritrean authorities, not Tanzania's Attorney General's Office, making this source attribution incorrect."
+  },
+  {
+   "id": "er-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1241,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.**  A proclamation from Eritrea's government would be published through Eritrean official channels, not Tanzania's Attorney General's Office. The attribution is jurisdictionally incorrect."
+  },
+  {
+   "id": "er-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1164,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Eritrean environmental law would be published through Eritrea's official channels, not Tanzania's Attorney General's Office. The attribution to Tanzania is factually incorrect."
+  }
+ ]
+}

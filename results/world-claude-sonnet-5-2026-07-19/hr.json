@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Croatia — Source-Grounded Citation Reliability (HR)",
+ "country": "HR",
+ "jurisdiction": "Croatia",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:55:03.125515+00:00",
+ "results": [
+  {
+   "id": "hr-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2656,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This citation format doesn't match verifiable Croatian court decision records; I cannot confirm this specific decision's existence or accuracy on odluke.sudovi.hr."
+  },
+  {
+   "id": "hr-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1957,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The date 2026-02-25 is in the future relative to available verification, making this citation unverifiable and likely fabricated or inaccurate."
+  },
+  {
+   "id": "hr-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 3172,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This identifier cannot be verified as accurate; it references a future-dated 2026 gazette issue, which is not yet an established, verifiable public record."
+  },
+  {
+   "id": "hr-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2042,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific decision number, date, or content exists in the Croatian High Administrative Court's actual published records."
+  },
+  {
+   "id": "hr-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2091,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific decision number, date, and content exist in Vrhovni sud's official database without direct access."
+  },
+  {
+   "id": "hr-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2311,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this appears to be a fabricated/future-dated entry (2026), which cannot be verified as an actual existing AZTN decision record."
+  },
+  {
+   "id": "hr-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2833,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The case number format \"Ovrv-88340/2024-6 - OGSZG\" indicates a Croatian court (OGSZG = Općinski građanski sud u Zagrebu), not the Latvian Constitutional Court."
+  },
+  {
+   "id": "hr-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2556,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** I cannot verify this specific case number, date, and outcome combination against actual Croatian Constitutional Court records; the citation may be fabricated or inaccurate."
+  },
+  {
+   "id": "hr-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2668,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This identifier appears fabricated or unverifiable; I cannot confirm a 2026 Narodne novine issue containing this specific law, as future/undated."
+  },
+  {
+   "id": "hr-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1865,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** \"Rješenje\" and case number format \"Su-Uzp\" are Croatian legal terminology/court practice, not Moldovan; Croatia uses its own court portal, not Moldova's Instanțe de judecată system."
+  },
+  {
+   "id": "hr-src-f05",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2829,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify specific ECLI identifiers, case numbers, or decision dates from Croatian Supreme Court records without access to the actual database."
+  },
+  {
+   "id": "hr-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1836,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This case number format and matter (UP/I with Croatian companies) belongs to Croatian bodies like AZTN/HAKOM, not Montenegro's Constitutional Court."
+  }
+ ]
+}

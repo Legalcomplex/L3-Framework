@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Monaco — Source-Grounded Citation Reliability (MC)",
+ "country": "MC",
+ "jurisdiction": "Monaco",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:40:54.791879+00:00",
+ "results": [
+  {
+   "id": "mc-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1659,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The date is in the future (March 5, 2026). No court decision can be published before it occurs, making this claim impossible and therefore false."
+  },
+  {
+   "id": "mc-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1747,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The date is in the future (January 21, 2026). No official legal document can have been published on a date that has not yet occurred. This claim cannot be verified as authentic."
+  },
+  {
+   "id": "mc-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2563,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The identifier references a future date (April 9, 2026). No official court decision can exist from a date that has not yet occurred. This is a fictitious or hypothetical case."
+  },
+  {
+   "id": "mc-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2205,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.**   The date is January 21, 2026—a future date. As of now, this document cannot have been published. The claim is temporally impossible."
+  },
+  {
+   "id": "mc-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1464,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This citation references a future date (February 2026) that has not yet occurred. Official legal sources cannot be published before their decision date materializes."
+  },
+  {
+   "id": "mc-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1349,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The claimed publication date (21 January 2026) is in the future relative to the present, making this bibliographic claim impossible to verify as an actual published legal source."
+  },
+  {
+   "id": "mc-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1526,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The decision date of March 5, 2026 is in the future, making this claim impossible to verify as a current official legal source in Juricaf."
+  },
+  {
+   "id": "mc-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1905,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  A Monégasque sovereign decision (Décision Souveraine) would be published in Monaco's official journal (Journal de Monaco), not on UK Legislation, which exclusively publishes British and Nor"
+  },
+  {
+   "id": "mc-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1338,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This identifier references a future date (April 9, 2026). As of 2024, this decision cannot exist in official court records, making the bibliographic claim impossible."
+  },
+  {
+   "id": "mc-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1471,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  An Ordonnance Souveraine (Monegasque sovereign ordinance) would be published in the Journal de Monaco, not Portugal's Diário da República. Wrong official gazette."
+  },
+  {
+   "id": "mc-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1491,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Monaco has no \"Tribunal Suprême\" with that case citation format. The claim misattributes a Monegasque court decision to an Irish tax authority, which is jurisdictionally impossible."
+  },
+  {
+   "id": "mc-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1450,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Monaco is an independent sovereign state with its own legal system. Monégasque legislation would not be published via UK Legislation, which publishes only United Kingdom laws."
+  }
+ ]
+}

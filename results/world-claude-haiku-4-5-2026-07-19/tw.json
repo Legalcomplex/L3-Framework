@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Taiwan — Source-Grounded Citation Reliability (TW)",
+ "country": "TW",
+ "jurisdiction": "Taiwan",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.6667,
+ "correct": 8,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:46:20.146309+00:00",
+ "results": [
+  {
+   "id": "tw-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2027,
+   "verdict": true,
+   "correct": true,
+   "raw": "# Answer: True  **Explanation:** This citation format matches Taiwan's Supreme Court docket system. The \"最高法院\" (Supreme Court), year designation \"114年度\" (2025), case type \"台聲字\" (civil ruling), and num"
+  },
+  {
+   "id": "tw-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2830,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Taiwan's constitutional review body is the Constitutional Court, but it issues \"Interpretations\" (釋字), not \"Decisions.\" The correct citation format is \"Constitutional Interpretation No. 805"
+  },
+  {
+   "id": "tw-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1560,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The publication date of 2026-04-27 is in the future (beyond the current date). This is an impossible date for an already-published official document."
+  },
+  {
+   "id": "tw-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1631,
+   "verdict": true,
+   "correct": true,
+   "raw": "# Answer: **True**  **Explanation:** This decision citation follows Taiwan's standard format (Supreme Court, year 114, civil ruling type). Taiwan Judicial Yuan Judgment Search is the official reposito"
+  },
+  {
+   "id": "tw-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1655,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Taiwan's Constitutional Court was abolished in 2019. Constitutional interpretations ceased being issued after that date. No valid interpretation numbered 812 exists from 2021."
+  },
+  {
+   "id": "tw-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1651,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.**  The date 2026-05-05 is in the future relative to the current time. This cannot be an official published source as it has not yet occurred."
+  },
+  {
+   "id": "tw-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1390,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The identifier format is inconsistent. '114,台聲,104' would suggest case number 104, but the judgment cited shows case number 103, creating a mismatch."
+  },
+  {
+   "id": "tw-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1494,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The identifier numbering is inconsistent. \"Interpretation-806\" should correspond to Constitutional Interpretation No. 806, not No. 805, as sequential numbering typically matches."
+  },
+  {
+   "id": "tw-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1161,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This is a Taiwan legislative meeting agenda, not a Macau legal document. The Macau Legal Portal would not publish Taiwan Legislative Yuan proceedings as official Macau legal sources."
+  },
+  {
+   "id": "tw-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1419,
+   "verdict": false,
+   "correct": true,
+   "raw": "# Evaluation: FALSE  **Explanation:** The decision number format (114年度) indicates 2025, not 2022. The date and year are internally inconsistent with Taiwan's judicial calendar system."
+  },
+  {
+   "id": "tw-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1266,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Taiwan's Constitutional Court was abolished in 2019. The Constitutional Interpretation system ended then; no new interpretations have been issued since."
+  },
+  {
+   "id": "tw-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1210,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.**   This document concerns Taiwan's Prosecutor-General appointment, not Hong Kong law. Hong Kong e-Legislation would not be the official publisher of Taiwan's presidential nominations."
+  }
+ ]
+}

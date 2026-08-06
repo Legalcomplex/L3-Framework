@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Spain — Source-Grounded Citation Reliability (ES)",
+ "country": "ES",
+ "jurisdiction": "Spain",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:53:02.201349+00:00",
+ "results": [
+  {
+   "id": "es-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1905,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** An \"Orden\" dated April 1, 2020 would be published in the BOE some days later, not on the exact same date as enactment."
+  },
+  {
+   "id": "es-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2407,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.**  I cannot verify this specific citation. AEPD resolution numbers/dates should be confirmed directly via AEPD's official database, as I cannot confirm unpublished or unindexed specific case "
+  },
+  {
+   "id": "es-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1969,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this cites a future date (2026), which cannot yet be an official published source; it cannot be verified as authentic."
+  },
+  {
+   "id": "es-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1980,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific citation's accuracy against actual BOPV records; the exact resolution, date, and publication details require direct source confirmation."
+  },
+  {
+   "id": "es-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2214,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This is a future/undated hypothetical decree; I cannot verify its existence or actual DOGC publication, so the claim is unconfirmed."
+  },
+  {
+   "id": "es-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2876,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify specific ECLI identifiers against actual Tribunal Constitucional records; this specific citation may be fabricated or inaccurate."
+  },
+  {
+   "id": "es-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2204,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Spanish \"Orden APA\" ministerial orders are published in Spain's Boletín Oficial del Estado (BOE), not the Portuguese Parliament's Open Data portal."
+  },
+  {
+   "id": "es-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2231,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. AEPD identifiers correspond to specific single procedures; \"00311\" would not match a document explicitly labeled \"PD-00310-2025\" — mismatched numbers."
+  },
+  {
+   "id": "es-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1940,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. LILEX is not a real/official Spanish gazette; it appears fabricated (and LILEX name references Liechtenstein, not Spain)."
+  },
+  {
+   "id": "es-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1696,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Spain publishes official legal sources in the BOE or regional bulletins (e.g., BOPV), not the Italian Gazzetta Ufficiale, which serves Italy."
+  },
+  {
+   "id": "es-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1888,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. A Catalan-language \"Decret\" is Catalonia/Andorra-type regional legislation; the Isle of Man's Tynwald Acts is an implausible, mismatched publication source."
+  },
+  {
+   "id": "es-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1618,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — the ECLI number (49) doesn't match the cited \"Auto 47/2025,\" indicating a mismatch between the identifier and the document title/date given."
+  }
+ ]
+}

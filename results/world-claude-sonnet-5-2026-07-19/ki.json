@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Kiribati — Source-Grounded Citation Reliability (KI)",
+ "country": "KI",
+ "jurisdiction": "Kiribati",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:56:31.214134+00:00",
+ "results": [
+  {
+   "id": "ki-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2357,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific citation exists; PacLII case numbers, party names, and dates require direct database confirmation, which I lack."
+  },
+  {
+   "id": "ki-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2360,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This citation appears fabricated—I cannot verify this specific case exists in PacLII's Kiribati Court of Appeal decisions database with these exact details."
+  },
+  {
+   "id": "ki-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1918,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation exists in PacLII's Kiribati Court Decisions database; the case details may be fabricated or unconfirmed."
+  },
+  {
+   "id": "ki-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2215,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific citation exists; PacLII hosts Kiribati decisions, but this exact case/date/number combination is unconfirmed."
+  },
+  {
+   "id": "ki-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1941,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This citation appears fabricated; I cannot verify a Kiribati Court of Appeal decision matching that case name, number, and date on PacLII."
+  },
+  {
+   "id": "ki-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2565,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation's accuracy; it may be fabricated or inaccurate, as I lack access to confirm details."
+  },
+  {
+   "id": "ki-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2513,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. RONLAW covers Nauru's legislation, not Kiribati case law; Kiribati Court of Appeal decisions belong to PacLII or Kiribati-specific databases instead."
+  },
+  {
+   "id": "ki-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2842,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Kiribati Court of Appeal decisions aren't published by Tonga's Attorney General; this citation mismatches jurisdictions and appears fabricated or misattributed entirely."
+  },
+  {
+   "id": "ki-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1867,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Kiribati Court of Appeal decisions (KICA) are not published by the Federal Court of Australia; that citation indicates Kiribati's own court system."
+  },
+  {
+   "id": "ki-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1648,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Kiribati Court of Appeal decisions are published by Kiribati's judiciary, not the Republic of Marshall Islands, an entirely separate Pacific jurisdiction."
+  },
+  {
+   "id": "ki-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1594,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This citation appears fabricated; no verifiable KICA case matches this exact style, number, and date in the Corpus."
+  },
+  {
+   "id": "ki-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1926,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific citation exists — I have no reliable record of this case or its details in Kiribati Court of Appeal reporting."
+  }
+ ]
+}

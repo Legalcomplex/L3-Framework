@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — British Virgin Islands — Source-Grounded Citation Reliability (VG)",
+ "country": "VG",
+ "jurisdiction": "British Virgin Islands",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:27:48.868780+00:00",
+ "results": [
+  {
+   "id": "vg-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1792,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date (2026) is in the future, making this claim impossible to verify as a genuine published decision."
+  },
+  {
+   "id": "vg-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1787,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-03-26 is in the future, making this citation implausible or fabricated; no such decision could yet exist."
+  },
+  {
+   "id": "vg-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2068,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-03-26 is in the future relative to a 2025 case number, making this citation implausible and unverifiable."
+  },
+  {
+   "id": "vg-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1952,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date (2026) is in the future, making this claim impossible to verify as a genuine published decision."
+  },
+  {
+   "id": "vg-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2757,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific case citation, date, or party names; asserting authenticity without reliable confirmation risks fabrication."
+  },
+  {
+   "id": "vg-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2132,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-02-12 is implausible for a 2023-numbered case; citation details cannot be verified as authentic."
+  },
+  {
+   "id": "vg-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1984,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The date 2026-09-02 is implausibly future-dated, and I cannot verify this specific case citation as authentic."
+  },
+  {
+   "id": "vg-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2311,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Cannot verify this specific case, date, or publisher; BVI Commercial Court citation details appear fabricated or unconfirmed against reliable sources."
+  },
+  {
+   "id": "vg-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1994,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific case exists; the citation details appear fabricated, and I lack reliable confirmation of authenticity."
+  },
+  {
+   "id": "vg-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2196,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The jurisdiction is British Virgin Islands, but the claim cites Bermuda Supreme Court Judgments; also the date is implausibly future."
+  },
+  {
+   "id": "vg-src-f05",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2151,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific case citation, party names, or date; treat unconfirmed BVI Commercial Court references as unreliable without authoritative confirmation."
+  },
+  {
+   "id": "vg-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 5017,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. A British Virgin Islands case would be published by BVI courts, not the Bahamas Supreme Court—different jurisdictions entirely."
+  }
+ ]
+}

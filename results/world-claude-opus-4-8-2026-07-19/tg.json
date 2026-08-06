@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Togo — Source-Grounded Citation Reliability (TG)",
+ "country": "TG",
+ "jurisdiction": "Togo",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:25:41.702464+00:00",
+ "results": [
+  {
+   "id": "tg-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 5075,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific identifier's authenticity or accuracy against Juricaf's actual database without access to confirm its existence."
+  },
+  {
+   "id": "tg-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2589,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific arrêté's existence or publication date in Togo's Journal Officiel without reliable confirmation, risking fabrication."
+  },
+  {
+   "id": "tg-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2147,
+   "verdict": true,
+   "correct": true,
+   "raw": "I cannot verify this specific decision's authenticity with certainty. Without access to Togo's official constitutional court records, I cannot confirm True."
+  },
+  {
+   "id": "tg-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2457,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific identifier's authenticity or exact correspondence without access to Juricaf's database; unverifiable claim."
+  },
+  {
+   "id": "tg-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2378,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific decree exists; the citation appears fabricated, lacking confirmable details in Togo's official records."
+  },
+  {
+   "id": "tg-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2433,
+   "verdict": false,
+   "correct": false,
+   "raw": "I cannot verify this specific citation as authentic. Without access to Togo's official records, I default to False—unconfirmed."
+  },
+  {
+   "id": "tg-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2299,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific identifier or decision exists; fabricated-looking identifiers should not be confirmed without authoritative source verification."
+  },
+  {
+   "id": "tg-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2294,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The jurisdiction is Togo, but the cited source is Mali's SGG legal codes—jurisdictional mismatch renders this claim inconsistent."
+  },
+  {
+   "id": "tg-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2359,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Togo's jurisdiction indicates a national court/authority, not Nigeria's SEC; the publisher attribution to a Nigerian body is inconsistent."
+  },
+  {
+   "id": "tg-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1933,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific identifier or decision exists; the identifier format and case details cannot be confirmed reliably."
+  },
+  {
+   "id": "tg-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1946,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The jurisdiction is Togo, but the source cited is Côte d'Ivoire Legal Information (CivLII), a mismatched jurisdiction."
+  },
+  {
+   "id": "tg-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2199,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Togo's Constitutional Court decisions are published by Togolese official sources, not Law Hub Gambia, a Gambian jurisdiction."
+  }
+ ]
+}

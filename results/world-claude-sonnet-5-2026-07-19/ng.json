@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Nigeria — Source-Grounded Citation Reliability (NG)",
+ "country": "NG",
+ "jurisdiction": "Nigeria",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:59:37.012498+00:00",
+ "results": [
+  {
+   "id": "ng-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1940,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation's accuracy—case details, suit number, and NigeriaLII publication should be independently confirmed before relying on it."
+  },
+  {
+   "id": "ng-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2303,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation's accuracy—exact publication dates and source details require confirmation against official Nigerian government gazettes or PLAC records."
+  },
+  {
+   "id": "ng-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2202,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This is a news article title from The Guardian, not an official FCCPC publication; the attribution and future date are implausible/incorrect."
+  },
+  {
+   "id": "ng-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1996,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation exists — I have no reliable record confirming \"EKEDP MYTO JULY 2025\" was actually published by NERC on that date."
+  },
+  {
+   "id": "ng-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2205,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this appears to be a fabricated or unverifiable future-dated claim; no such official SEC Nigeria publication can be confirmed."
+  },
+  {
+   "id": "ng-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2982,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific citation exists; NAFDAC guideline titles, dates, and publication details require confirmation from official sources before citation."
+  },
+  {
+   "id": "ng-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2410,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The case involves Nigerian parties and citation format (SC.373/2015), indicating Nigerian Supreme Court jurisdiction, not Mali."
+  },
+  {
+   "id": "ng-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1987,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Agricultural and Rural Management Training Institute Act's actual establishment/commencement date differs from 1977-02-01, making this citation unverifiable/inaccurate."
+  },
+  {
+   "id": "ng-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1793,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This describes a Guardian news article about a disagreement, not an official FCCPC publication—the FCCPC isn't its publisher/source."
+  },
+  {
+   "id": "ng-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1959,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This citation appears fabricated/nonsensical—\"EKEDP MYTO JULY 2025\" is not a recognizable official Nigerian legal source or publication."
+  },
+  {
+   "id": "ng-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1540,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Nigerian banking recapitalisation (₦4.65 trillion) was announced by the Central Bank of Nigeria in 2024, not SEC in 2023."
+  },
+  {
+   "id": "ng-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1877,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** I cannot verify this specific citation's accuracy—exact publication date, title wording, and details require confirmation from NAFDAC's official records or gazette."
+  }
+ ]
+}

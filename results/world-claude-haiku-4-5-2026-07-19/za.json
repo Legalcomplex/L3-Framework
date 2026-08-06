@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — South Africa — Source-Grounded Citation Reliability (ZA)",
+ "country": "ZA",
+ "jurisdiction": "South Africa",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:47:37.552830+00:00",
+ "results": [
+  {
+   "id": "za-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1390,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Constitutional Court of South Africa does not have a reported judgment with this title and date. This appears to be a fabricated or incorrectly cited case reference."
+  },
+  {
+   "id": "za-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1746,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  SASCA decisions are published by SAFLII, but the citation format with \"2025 (3) SA…\" incomplete and duplicate case numbers suggests incomplete or incorrectly formatted bibliographic informa"
+  },
+  {
+   "id": "za-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1467,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The identifier format and date structure don't align with standard South African Competition Tribunal citation conventions. Unable to verify this specific case record exists with those exac"
+  },
+  {
+   "id": "za-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1741,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.**  The decision is dated 2026-01-30, which is in the future. No official legal source can publish decisions from dates that have not yet occurred."
+  },
+  {
+   "id": "za-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2294,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The by-law likely predates 2022. Laws.Africa provides republication dates, not original enactment dates. The 2022 date reflects when Laws.Africa published it, not the by-law's original adop"
+  },
+  {
+   "id": "za-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1438,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** South Africa Open Gazettes was established in 2014, making it impossible for it to publish a gazette dated February 2012."
+  },
+  {
+   "id": "za-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1572,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  CCT184/24 cannot be verified as corresponding to this case with the provided information. The future date (2025-05-06) and lack of accessible confirmation make verification impossible."
+  },
+  {
+   "id": "za-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1503,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The case citation indicates this is a South African Supreme Court of Appeal (ZASCA) decision. The Namibia eJustice Portal would not be the official publisher of South African judicial decis"
+  },
+  {
+   "id": "za-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1324,
+   "verdict": false,
+   "correct": true,
+   "raw": "# Evaluation: FALSE  The reference format and date structure are inconsistent with official South African Competition Tribunal decision citations, which typically follow standardized case number forma"
+  },
+  {
+   "id": "za-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1022,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The identifier 'LM168Dec26' cannot correspond to a case dated 2026-01-30, as that date is in the future. Current records cannot include cases from 2026."
+  },
+  {
+   "id": "za-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1280,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The by-law title and date appear plausible, but Laws.Africa's 2024-02-14 publication date likely represents a digital upload/update rather than original publication, requiring verification "
+  },
+  {
+   "id": "za-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1395,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The North West Provincial Gazette is a South African official publication. It cannot be published by the Central Bank of Eswatini, which is a separate country's institution."
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Guyana — Source-Grounded Citation Reliability (GY)",
+ "country": "GY",
+ "jurisdiction": "Guyana",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:38:10.616319+00:00",
+ "results": [
+  {
+   "id": "gy-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1577,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The date is in the future (April 18, 2026). Official Gazette publications document past events, not future ones. This document cannot have been published on a future date."
+  },
+  {
+   "id": "gy-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1422,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The citation format is malformed and conflates two distinct regulations. The \"Litter Enforcement Regulations 2013\" and \"Hazardous Wastes Regulations\" are separate instruments, not a single "
+  },
+  {
+   "id": "gy-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1586,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The publication date is in the future (April 11, 2026). Official Gazettes document cannot be published before the current date, making this claim temporally impossible."
+  },
+  {
+   "id": "gy-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1866,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The \"Volume 3 Mining EIA guidelines\" is not an official regulatory instrument. It appears to be a guidance document, not regulations formally published by Guyana's EPA on that date."
+  },
+  {
+   "id": "gy-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1803,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The date is in the future (April 17, 2026). No official gazette can be published on a date that has not yet occurred. This claim describes a non-existent document."
+  },
+  {
+   "id": "gy-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1770,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The publication date (2022-11-04) postdates the volume's designation as \"2004,\" creating an internal inconsistency that cannot be verified as authentic without additional documentary evidence"
+  },
+  {
+   "id": "gy-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1593,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Extraordinary Gazettes are official Guyana publications. Chile BCN Linked Open Data would not be the appropriate source for Guyana government notices, as BCN is Chile's legislative library."
+  },
+  {
+   "id": "gy-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1686,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The citation format is malformed and inconsistent. \"AG.1Hazardous_Wastes_Regulations\" appears to be incorrectly concatenated, and no reliable evidence confirms this specific 2013 regulation"
+  },
+  {
+   "id": "gy-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 3435,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Extraordinary Gazettes from Guyana would be published in the Official Gazette of Guyana, not Brazil's Planalto Federal Legislation system (REFLEGIS), which is Brazil's official legal databa"
+  },
+  {
+   "id": "gy-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1102,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** No verified record exists of \"Volume 3 Mining EIA guidelines\" as an official EPA publication. Guyana's environmental regulatory documents require confirmation through official governmental "
+  },
+  {
+   "id": "gy-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1399,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Querido Diário archives Brazilian municipal gazettes exclusively. A Guyanese Home Affairs document would not be published through this Brazilian platform."
+  },
+  {
+   "id": "gy-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1036,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The publication date (2021-11-04) postdates the document title (2004), making simultaneous publication impossible. The claim contains a chronological inconsistency."
+  }
+ ]
+}

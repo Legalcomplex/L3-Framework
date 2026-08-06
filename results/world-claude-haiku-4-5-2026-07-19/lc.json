@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Saint Lucia — Source-Grounded Citation Reliability (LC)",
+ "country": "LC",
+ "jurisdiction": "Saint Lucia",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:40:18.216099+00:00",
+ "results": [
+  {
+   "id": "lc-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2221,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The dates conflict. A publication from January 26, 2004 cannot have a publication date of January 1, 2004. The source date predates the claimed content date."
+  },
+  {
+   "id": "lc-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1734,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  Saint Lucia's legislative records do not confirm publication of \"Act No. 11 of 2025\" on this date. Official verification through Saint Lucia's parliamentary database is required."
+  },
+  {
+   "id": "lc-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 9559,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This is a future-dated document (2026) that cannot have been published in the past. As of now, 2026 has not occurred, making this claim impossible to verify as a published source."
+  },
+  {
+   "id": "lc-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1787,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** The Financial Services Regulatory Authority Act 2011 is primary legislation enacted by Saint Lucia's Parliament, not published by the Authority itself on that date."
+  },
+  {
+   "id": "lc-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1763,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Saint Lucia Government Legislation Portal primarily publishes Acts, Statutory Instruments, and Proclamations—not collective agreements. Collective agreements are typically registered se"
+  },
+  {
+   "id": "lc-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1714,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date \"March 29, 2004\" does not match the Government Gazette publication date of March 1, 2004. These are different dates separated by 28 days."
+  },
+  {
+   "id": "lc-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1775,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The date \"January 26, 2004\" cannot be published through Bahamas Consolidated Legislation, as that source pertains to the Bahamas, not Saint Lucia's jurisdiction."
+  },
+  {
+   "id": "lc-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1314,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Act No. 11 of 2025 is a Saint Lucia statute, not Cayman Islands legislation. The publisher attribution is jurisdictionally incorrect."
+  },
+  {
+   "id": "lc-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1322,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Saint Lucia's legislation is published through the Saint Lucia Government website and official gazette, not Aruba's DWJZ archive. This represents an incorrect source attribution."
+  },
+  {
+   "id": "lc-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 5962,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Financial Services Regulatory Authority Act 2011 is a Saint Lucian statute, not Curaçao legislation. Curaçao Government Legislation would not be the correct publisher source."
+  },
+  {
+   "id": "lc-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1152,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. A collective agreement between Saint Lucia's government and civil service association would be published under Saint Lucia's laws, not Grenada's laws. Different jurisdictions have separate lega"
+  },
+  {
+   "id": "lc-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1037,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Sint Maarten is a separate jurisdiction from Saint Lucia. Sint Maarten Government Legislation would not be an official legal source for Saint Lucian laws, making this claim invalid."
+  }
+ ]
+}

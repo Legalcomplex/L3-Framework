@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Nicaragua — Source-Grounded Citation Reliability (NI)",
+ "country": "NI",
+ "jurisdiction": "Nicaragua",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:42:34.653173+00:00",
+ "results": [
+  {
+   "id": "ni-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3295,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Nicaragua Digesto Juridico is not an official legislative database. Official Nicaraguan legal sources are published through La Gaceta (Official Journal) or direct legislative repositories."
+  },
+  {
+   "id": "ni-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1666,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The Biblioteca Enrique Bolaños is a library archive, not the official publisher of Nicaragua's Gaceta. The Gaceta is published directly by the Nicaraguan government as the official gazette."
+  },
+  {
+   "id": "ni-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1957,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  This appears to be an administrative resolution granting legal personality to a religious association, not a legislative act suitable for a legislative database. Registration/personality do"
+  },
+  {
+   "id": "ni-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1772,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The Biblioteca Enrique Bolaños is Nicaragua's national library, not the Official Gazette Archive. The Official Gazette is published by the government's official publishing authority, not main"
+  },
+  {
+   "id": "ni-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1488,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** This appears to be a specific administrative resolution rather than a general legislative document published through Nicaragua's official legal database system."
+  },
+  {
+   "id": "ni-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1626,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The Biblioteca Enrique Bolaños is a research library, not the official publisher of Nicaragua's Gaceta. The official gazette is published by the government directly, not archived retrospectiv"
+  },
+  {
+   "id": "ni-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1566,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Nicaragua Digesto Jurídico is a legal database/compilation, not a publisher. Legislative decrees are published in La Gaceta, Nicaragua's official gazette, not through a digesto."
+  },
+  {
+   "id": "ni-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1616,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Gaceta - Diario Oficial de Nicaragua is Nicaragua's official gazette, not a Mexican legal source. Mexico Orden Juridico Nacional would not be the publisher of Nicaraguan official documents."
+  },
+  {
+   "id": "ni-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 3415,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Nicaragua Digesto Juridico is not an official legislative database. Official Nicaraguan laws are published in La Gaceta, the country's official gazette."
+  },
+  {
+   "id": "ni-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1215,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Gaceta Diario Oficial is Nicaragua's official gazette. Honduras TSC Virtual Library is a Honduran institution and would not be the official publisher of Nicaraguan legal documents."
+  },
+  {
+   "id": "ni-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2481,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.**  The claim lacks verifiable details. Nicaragua Digesto Jurídico is a legitimate legal database, but the specific document title, date, and publication cannot be confirmed without direct dat"
+  },
+  {
+   "id": "ni-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1360,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.**  The Gaceta Diario Oficial is Nicaragua's official gazette, not a Honduras publication. Honduras TSC Virtual Library would not be the official publisher of Nicaraguan legal documents."
+  }
+ ]
+}

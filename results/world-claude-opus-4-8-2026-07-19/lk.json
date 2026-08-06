@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Sri Lanka — Source-Grounded Citation Reliability (LK)",
+ "country": "LK",
+ "jurisdiction": "Sri Lanka",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:17:25.720459+00:00",
+ "results": [
+  {
+   "id": "lk-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1931,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific 2026 Act exists; the future date and precise citation details cannot be confirmed reliably."
+  },
+  {
+   "id": "lk-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1823,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-03-23 is in the future, making this citation impossible to verify as a genuine published decision."
+  },
+  {
+   "id": "lk-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2418,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The New Law Reports (NLR) is the authoritative official reporter; CommonLII merely republishes decisions digitally, not the official publisher."
+  },
+  {
+   "id": "lk-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2757,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.**  An Act is primary legislation passed by Parliament, not published via a regulatory commission; regulations are subordinate legislation."
+  },
+  {
+   "id": "lk-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2199,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific 2026 Act exists; the citation appears fabricated and lacks confirmation from authentic Sri Lankan legal sources."
+  },
+  {
+   "id": "lk-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2753,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-03-26 is in the future, making this citation implausible and unverifiable as a legitimate decided case."
+  },
+  {
+   "id": "lk-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2183,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Sri Lanka publishes legislation via its own Government Gazette (documents.gov.lk), not the Gazette of India, which serves India."
+  },
+  {
+   "id": "lk-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2062,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The date 2026-03-23 is in the future, making this citation impossible to verify as a legitimate existing decision."
+  },
+  {
+   "id": "lk-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1956,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Sri Lankan cases (NLR, LKSC) are decided by Sri Lankan courts, not Islamabad High Court, which is Pakistani."
+  },
+  {
+   "id": "lk-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2140,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The PUCSL Act No. 35 of 2002 is Sri Lankan legislation; a Pakistan-labeled dataset is an incorrect, unreliable source citation."
+  },
+  {
+   "id": "lk-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2013,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The jurisdiction is Sri Lanka, but the source cited is the Maldives Government Gazette—a mismatch making this claim unreliable."
+  },
+  {
+   "id": "lk-src-f06",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1890,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The date 2026-03-26 is in the future, making this citation implausible and likely fabricated or incorrectly recorded."
+  }
+ ]
+}

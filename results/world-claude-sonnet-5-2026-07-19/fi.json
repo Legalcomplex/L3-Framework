@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Finland — Source-Grounded Citation Reliability (FI)",
+ "country": "FI",
+ "jurisdiction": "Finland",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:53:17.665360+00:00",
+ "results": [
+  {
+   "id": "fi-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2483,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific regulation's existence, exact title, or publication date on Finlex without access to real-time database verification."
+  },
+  {
+   "id": "fi-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2605,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This is a plausible-sounding but unverifiable fabricated citation; I cannot confirm this specific decree's existence, number, or Finlex publication date."
+  },
+  {
+   "id": "fi-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 4057,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Hallituksen esitykset are issued by the Government (Valtioneuvosto/Finlex), not \"published by\" Eduskunta, which merely processes them."
+  },
+  {
+   "id": "fi-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1961,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Finlex publishes selected/anonymized administrative court decisions, but individual case numbers/dates cannot be verified as genuinely existing published entries without database access."
+  },
+  {
+   "id": "fi-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1814,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — this appears to be a fabricated citation; I cannot verify such a specific decision number/date exists in Finlex's actual database."
+  },
+  {
+   "id": "fi-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1913,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This claim references a future date (2026) that hasn't occurred yet, making verification impossible and the citation unreliable."
+  },
+  {
+   "id": "fi-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1988,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Denmark Retsinformation publishes Danish law, not Finnish regulations. Finnish statutes like this appear in Finlex, Finland's official legal database, not Danish sources."
+  },
+  {
+   "id": "fi-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 5417,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. This appears to be a fabricated or unverifiable specific citation; I cannot confirm this exact decree's existence, date, or Finlex publication details."
+  },
+  {
+   "id": "fi-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1892,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Government proposals (HE) are submitted by the Government to Eduskunta, not \"published via\" Eduskunta; Eduskunta merely receives/processes them, and I cannot verify this specific document's"
+  },
+  {
+   "id": "fi-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1868,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier includes \"463/2026,\" but the cited decision's identifier is \"463/2025,\" creating a mismatch inconsistent with the claim."
+  },
+  {
+   "id": "fi-src-f05",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2284,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier year (2026) mismatches the decision's stated year (2025) and date, indicating an inconsistent or fabricated citation reference."
+  },
+  {
+   "id": "fi-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1637,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. MAO decisions are Finnish Market Court rulings; Finland's own database publishes them, not Denmark's Domsdatabasen, and the date is future/unverifiable."
+  }
+ ]
+}

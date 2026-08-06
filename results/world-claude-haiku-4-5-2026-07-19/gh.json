@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Ghana — Source-Grounded Citation Reliability (GH)",
+ "country": "GH",
+ "jurisdiction": "Ghana",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:37:36.518746+00:00",
+ "results": [
+  {
+   "id": "gh-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1539,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The Aircraft Accident and Incident Investigation and Prevention Bureau Act, 2020 is not an official Ghanaian legislation. Ghana's aviation safety investigations are governed by different stat"
+  },
+  {
+   "id": "gh-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1248,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The Bank of Ghana has not published an official \"Draft Open Banking Directive for Regulated Financial Institutions 201224\" as of the date claimed. This appears to be a fabricated or misattr"
+  },
+  {
+   "id": "gh-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2601,
+   "verdict": true,
+   "correct": true,
+   "raw": "# True  The Community Water and Sanitation Agency Act, 1998 (Act 564) is a genuine Ghanaian parliamentary act, officially published through Ghana's legislative database with the correct year and act n"
+  },
+  {
+   "id": "gh-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2049,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  Ghana Parliament has not published an \"Environmental Protection Bill, 2024\" as of July 29, 2024. No verifiable record exists of this specific bill in official parliamentary repositories."
+  },
+  {
+   "id": "gh-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1629,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Act 754 (2013) is a Parliamentary Act, not a regulation or decision issued by the National Communications Authority (NCA). Parliamentary Acts are published through Ghana's official legislative "
+  },
+  {
+   "id": "gh-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2031,
+   "verdict": false,
+   "correct": false,
+   "raw": "# Evaluation: FALSE  The Alternative Dispute Resolution Act, 2010 (ADRА) was enacted in Ghana but GhaLII was not established until 2011, making the 2010-05-31 publication date impossible."
+  },
+  {
+   "id": "gh-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1588,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Ghana's Aircraft Accident and Incident Investigation and Prevention Bureau Act, 2020 would be published by Ghana's Parliament, not Burkina Faso's Assemblée Nationale, as they are separate count"
+  },
+  {
+   "id": "gh-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1541,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The publication date (2026-12-20) is in the future, making this claim temporally impossible. Official directives cannot be published in advance of the current date."
+  },
+  {
+   "id": "gh-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1068,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Act 564 is Ghanaian legislation. Sierra Leone Legal Information Institute would not be the official publisher of Ghana's acts, which are published by Ghana's government."
+  },
+  {
+   "id": "gh-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1298,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Environmental Protection Bill, 2024 cannot originate from Nigeria's National Pension Commission. Ghana and Nigeria are separate countries; this represents a jurisdictional mismatch and sour"
+  },
+  {
+   "id": "gh-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1248,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The Communications Service Tax (Amendment) Act, 2013 (Act 754) is Ghanaian legislation. It cannot have been published via Nigeria's Laws of the Federation (PLAC), which publishes Nigerian l"
+  },
+  {
+   "id": "gh-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1414,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The Alternative Dispute Resolution Act, 2010 is a Ghanaian law. Guinea's Journal Officiel would not be the official publication venue for Ghanaian legislation."
+  }
+ ]
+}

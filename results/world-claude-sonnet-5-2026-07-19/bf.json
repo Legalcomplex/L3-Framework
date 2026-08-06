@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Burkina Faso — Source-Grounded Citation Reliability (BF)",
+ "country": "BF",
+ "jurisdiction": "Burkina Faso",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:49:38.502468+00:00",
+ "results": [
+  {
+   "id": "bf-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2130,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific citation exists; Juricaf's Burkina Faso holdings are limited, and I lack confirmation of this exact decision's authenticity."
+  },
+  {
+   "id": "bf-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2069,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — Burkina Faso's legislature since 2022 is the Assemblée législative de transition (ALT), not the Assemblée Nationale, making the attribution inconsistent."
+  },
+  {
+   "id": "bf-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2547,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify specific Juricaf identifiers or case citations, as such precise bibliographic details risk being fabricated or hallucinated information."
+  },
+  {
+   "id": "bf-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2800,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — I cannot verify this specific citation's existence or accuracy; Burkina Faso's legislature was the ALT (post-coup transitional body), but exact details are unconfirmed."
+  },
+  {
+   "id": "bf-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2006,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Burkina Faso's Cour de cassation citations aren't verifiable this way; the specific decision number/date combination cannot be confirmed as genuine Juricaf record."
+  },
+  {
+   "id": "bf-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2246,
+   "verdict": false,
+   "correct": false,
+   "raw": "False — Burkina Faso's legislature since 2022 is the Assemblée législative de transition (ALT), not the Assemblée Nationale, making this attribution inconsistent/unverifiable."
+  },
+  {
+   "id": "bf-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2291,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. I cannot verify this specific Juricaf identifier, case number, and date combination without access to the actual database record."
+  },
+  {
+   "id": "bf-src-f02",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2088,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Burkina Faso legislation would be published in its own Journal Officiel; Nigeria's National Pension Commission has no jurisdictional authority over Burkina Faso's legal publications."
+  },
+  {
+   "id": "bf-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1713,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier ends in \"034,\" but the described citation references decision number \"033,\" creating a mismatched, inconsistent bibliographic reference."
+  },
+  {
+   "id": "bf-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1727,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** ARTP is Senegal's telecom regulator, unrelated to Burkina Faso's budget law; this legal text would properly appear in Burkina Faso's official Journal Officiel, not that source."
+  },
+  {
+   "id": "bf-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1699,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** Burkina Faso's Cour de cassation decisions would not be published by Liberia's Supreme Court Opinions site; that source covers Liberian judiciary matters only."
+  },
+  {
+   "id": "bf-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1706,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Burkina Faso legislation is published in its own Journal Officiel; \"Mauritania Consolidated Legal Codes (MSGG)\" is not a genuine Burkinabè official publication source."
+  }
+ ]
+}

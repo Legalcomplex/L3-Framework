@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Slovenia — Source-Grounded Citation Reliability (SI)",
+ "country": "SI",
+ "jurisdiction": "Slovenia",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:24:28.192796+00:00",
+ "results": [
+  {
+   "id": "si-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3141,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific act's existence or publication date; official Slovenian laws are published in Uradni list, not PISRS."
+  },
+  {
+   "id": "si-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2540,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2025-11-26 is future/implausible for citation, and citation details cannot be verified as authentic Slovenian case law."
+  },
+  {
+   "id": "si-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2282,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific ECLI identifier, case number, or date correspond correctly without access to authoritative Slovenian database records."
+  },
+  {
+   "id": "si-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2217,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False.** I cannot verify this specific amendment's existence or exact publication date; official Slovenian laws are published in Uradni list, not PISRS."
+  },
+  {
+   "id": "si-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2220,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-01-12 is in the future relative to plausible verification, and the case number appears incomplete/fabricated."
+  },
+  {
+   "id": "si-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2341,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Without access to verify this specific ECLI identifier and decision details, I cannot confirm the exact date or document accuracy."
+  },
+  {
+   "id": "si-src-f01",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2448,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. PISRS is a consolidated legislation database; official publication of Slovenian laws occurs in Uradni list Republike Slovenije."
+  },
+  {
+   "id": "si-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 3114,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The document number suffix mismatches: ECLI ends in \".16\" but the cited judgment is \"-15,\" indicating inconsistency."
+  },
+  {
+   "id": "si-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2328,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The ECLI year (2009) contradicts the case number in identifier (360/2010), showing an internal inconsistency in the citation."
+  },
+  {
+   "id": "si-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1634,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Slovenian laws are published in Uradni list Republike Slovenije, not the Bulgarian State Gazette (Държавен вестник)."
+  },
+  {
+   "id": "si-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1638,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The case number format appears incomplete (missing final digits), and the date/number combination cannot be verified as authentic."
+  },
+  {
+   "id": "si-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1923,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. \"X Ips\" designates Slovenian Supreme Court administrative cases, not Georgian Constitutional Court; jurisdiction and issuing body are clearly mismatched."
+  }
+ ]
+}

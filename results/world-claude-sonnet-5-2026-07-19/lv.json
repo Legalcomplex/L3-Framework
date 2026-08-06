@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Latvia — Source-Grounded Citation Reliability (LV)",
+ "country": "LV",
+ "jurisdiction": "Latvia",
+ "model": "claude-sonnet-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:57:35.291958+00:00",
+ "results": [
+  {
+   "id": "lv-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2339,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Panel (kolēģija) decisions on application admissibility are typically not officially published; only accepted cases' judgments/decisions are formally published by the Constitutional Court."
+  },
+  {
+   "id": "lv-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2241,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This appears to be a specific administrative order/decree unlikely traceable as an exact publication record; I cannot verify this precise citation's accuracy independently."
+  },
+  {
+   "id": "lv-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 1985,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify fabricated ECLI identifiers against actual Latvian Supreme Court records; specific case details require official database confirmation."
+  },
+  {
+   "id": "lv-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1969,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False** — the date (2026-03-23) is in the future, making this claim unverifiable and likely fabricated or erroneous as an actual published decision."
+  },
+  {
+   "id": "lv-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2494,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Constitutional Court panel (kolēģija) decisions on application admissibility are typically not published individually with such specific formal case citations for that date/number."
+  },
+  {
+   "id": "lv-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 3069,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Likumi.lv is a private legal database, not an official publication source; official Latvian legal acts are published in Latvijas Vēstnesis."
+  },
+  {
+   "id": "lv-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 2022,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Latvia's Constitutional Court decisions are published by Latvian sources, not Croatia's odluke.sudovi.hr, which covers only Croatian court rulings."
+  },
+  {
+   "id": "lv-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2996,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** This appears to be a minor administrative order/individual act, unlikely to have that exact publication venue, date, or verifiable indexing on Likumi.lv as stated."
+  },
+  {
+   "id": "lv-src-f03",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2082,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — I cannot verify this specific ECLI identifier corresponds to that exact case in Senāts' database; fabricated/unconfirmed citation details are likely."
+  },
+  {
+   "id": "lv-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1636,
+   "verdict": false,
+   "correct": true,
+   "raw": "False — I cannot verify this specific decision exists; Latvia's Competition Council publishes merger decisions, but this exact citation cannot be confirmed as accurate."
+  },
+  {
+   "id": "lv-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1467,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Latvijas Republikas Satversmes tiesa is Latvia's Constitutional Court, not the Georgian Supreme Court, which is unrelated entirely."
+  },
+  {
+   "id": "lv-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2100,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** A Latvian legal act (Ministru prezidenta rīkojums) would be published in Latvijas Vēstnesis, not a Greek parliamentary legal code source."
+  }
+ ]
+}

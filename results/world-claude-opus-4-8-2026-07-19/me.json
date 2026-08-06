@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Montenegro — Source-Grounded Citation Reliability (ME)",
+ "country": "ME",
+ "jurisdiction": "Montenegro",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:18:23.479630+00:00",
+ "results": [
+  {
+   "id": "me-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2021,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific decision number and date exist; fabricated case citations are common, so independent verification is required."
+  },
+  {
+   "id": "me-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2561,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation's authenticity; case number format and publication details appear unverifiable, possibly fabricated."
+  },
+  {
+   "id": "me-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2125,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date 2026-02-16 is in the future, making this specific publication claim unverifiable and almost certainly fabricated."
+  },
+  {
+   "id": "me-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2835,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation; Montenegro uses the euro without its own monetary policy, making such operations implausible."
+  },
+  {
+   "id": "me-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 3907,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific case number, date, or existence; asserting its authenticity risks fabrication without reliable source confirmation."
+  },
+  {
+   "id": "me-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2841,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. I cannot verify this specific citation's accuracy; fabricated identifiers, dates, or document types are common risks without direct source confirmation."
+  },
+  {
+   "id": "me-src-f01",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1953,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifiers 'U-III br.374/26' and 'U-III br.374/25' differ in year suffix, so they cannot correspond to the same case."
+  },
+  {
+   "id": "me-src-f02",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 3162,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The identifier 'Kž-I 12/2012' contradicts the cited decision 'Kž-I 12/2011' and its 2011 date; year mismatch invalidates the claim."
+  },
+  {
+   "id": "me-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 2546,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Public calls for Prosecutorial Council members are typically published by Parliament/relevant bodies, not the Official Gazette, and specifics unverifiable."
+  },
+  {
+   "id": "me-src-f04",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1977,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. A Montenegrin monetary regulation would not be published via Ukraine's Verkhovna Rada; jurisdictions and official gazettes are mismatched."
+  },
+  {
+   "id": "me-src-f05",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 1721,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The case number \"U-III br.284/25\" indicates year 2025, which conflicts with the stated 2023-04-10 date, showing inconsistency."
+  },
+  {
+   "id": "me-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 1999,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The Unified State Register of Court Decisions (ЄДРСР) is Ukraine's system, not Montenegro's. Montenegrin court decisions use different official publication sources."
+  }
+ ]
+}

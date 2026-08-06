@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Finland — Source-Grounded Citation Reliability (FI)",
+ "country": "FI",
+ "jurisdiction": "Finland",
+ "model": "claude-haiku-4-5",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5833,
+ "correct": 7,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T07:36:54.351987+00:00",
+ "results": [
+  {
+   "id": "fi-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1913,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  This document title is in Swedish and refers to a 2025 Government Decree. Finland's official legal database Finlex publishes Finnish and Swedish texts, but this specific decree cannot be ve"
+  },
+  {
+   "id": "fi-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 1742,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The citation is incomplete and truncated mid-title. A complete, verifiable Finlex reference requires the full decree number (asetus nro) and complete title to confirm official publication sta"
+  },
+  {
+   "id": "fi-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2098,
+   "verdict": true,
+   "correct": true,
+   "raw": "**True**  This is a legitimate Finnish legislative source. \"Hallituksen esitys\" (Government Bill) regarding amendments to the Keva Act would be an official Parliament document from the stated date."
+  },
+  {
+   "id": "fi-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1530,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The decision date is 2025-03-07, which is in the future. No court decision can be published from a date that hasn't occurred yet, making this claim implausible."
+  },
+  {
+   "id": "fi-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 1989,
+   "verdict": false,
+   "correct": false,
+   "raw": "**False**  The decision number format and date appear fabricated. Finnish appellate court decisions use different citation conventions, and a 2025 decision cannot yet exist as a historical published r"
+  },
+  {
+   "id": "fi-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S3-identifier",
+   "latency_ms": 2171,
+   "verdict": false,
+   "correct": false,
+   "raw": "# False  The identifier '12/2026' would typically denote a case from 2026, but Finland's Market Court decisions use the format MAO followed by the year and sequential number (e.g., MAO:12/2026 means t"
+  },
+  {
+   "id": "fi-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 1649,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  This document title is in Swedish, not Danish. Denmark Retsinformation publishes Danish laws, not Finnish or Swedish legislation. Finland uses its own legal databases."
+  },
+  {
+   "id": "fi-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1603,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The citation is incomplete and truncated (ends with \"…\"), making it impossible to verify as a proper bibliographic reference. Complete titles are required for accurate source identification"
+  },
+  {
+   "id": "fi-src-f03",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S1-published-via",
+   "latency_ms": 1081,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The date 2025-10-06 is in the future. As of the knowledge cutoff date, this document cannot have been published yet. The claim is temporally impossible."
+  },
+  {
+   "id": "fi-src-f04",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 2162,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False.** The identifier in the claim is '463/2026', but the actual Finlex record shows '463/2025'. The year designation does not match."
+  },
+  {
+   "id": "fi-src-f05",
+   "expected": false,
+   "mutation": "id-mutation",
+   "shape": "S3-identifier",
+   "latency_ms": 1730,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  The identifier contains a year mismatch: '103699/2026' differs from '103699/2025'. The claim incorrectly states the case number year as 2026 when the actual decision is from 2025."
+  },
+  {
+   "id": "fi-src-f06",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S2-decision",
+   "latency_ms": 5770,
+   "verdict": false,
+   "correct": true,
+   "raw": "**False**  Finland's administrative court decisions use format \"KHO:20XX/XXX\" or \"HAO:20XX/XXX\", not \"MAO:12/2026\". MAO format is Danish, not Finnish."
+  }
+ ]
+}

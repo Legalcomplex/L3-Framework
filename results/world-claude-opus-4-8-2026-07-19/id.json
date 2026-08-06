@@ -1,0 +1,141 @@
+{
+ "pack": "S3 — Indonesia — Source-Grounded Citation Reliability (ID)",
+ "country": "ID",
+ "jurisdiction": "Indonesia",
+ "model": "claude-opus-4-8",
+ "endpoint": "anthropic",
+ "sampled": null,
+ "items_run": 12,
+ "items_in_pack": 12,
+ "parsed": 12,
+ "blocked": 0,
+ "unparsed": 0,
+ "errors": [],
+ "accuracy": 0.5,
+ "correct": 6,
+ "parse_rate": 1.0,
+ "passed": true,
+ "timestamp": "2026-07-19T08:14:55.296141+00:00",
+ "results": [
+  {
+   "id": "id-src-t01",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2790,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. This citation appears fabricated; I cannot verify a UU No. 2/2025 with these specific details or exact publication date."
+  },
+  {
+   "id": "id-src-t02",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2418,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. The date \"2024-01-01\" is implausible as a decision date (New Year's holiday); this citation lacks a verifiable case number."
+  },
+  {
+   "id": "id-src-t03",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2838,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. UU No. 2 Tahun 2024 concerns Daerah Khusus Ibukota Jakarta, enacted April 2024, not January 1; details are inaccurate."
+  },
+  {
+   "id": "id-src-t04",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2649,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. UU No. 11/1980 concerns Bribery (Tindak Pidana Suap), not financial/administrative rights; the conflated title appears fabricated or inaccurate."
+  },
+  {
+   "id": "id-src-t05",
+   "expected": true,
+   "mutation": null,
+   "shape": "S1-published-via",
+   "latency_ms": 2634,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. UU No. 5/2024 does not concern Banda Aceh; the title and date appear fabricated or incorrectly attributed."
+  },
+  {
+   "id": "id-src-t06",
+   "expected": true,
+   "mutation": null,
+   "shape": "S2-decision",
+   "latency_ms": 2462,
+   "verdict": false,
+   "correct": false,
+   "raw": "False. Indonesia's Criminal Code (KUHP) is statute law, not subject to constitutional review of this type; the date and citation appear fabricated."
+  },
+  {
+   "id": "id-src-f01",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 3321,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Thu Vien Phap Luat is a Vietnamese legal database, not an Indonesian official source; Indonesian laws appear in Lembaran Negara."
+  },
+  {
+   "id": "id-src-f02",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2188,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The stated date (2021-01-01) is suspicious—New Year's Day—and no specific decision number is provided, making verification impossible."
+  },
+  {
+   "id": "id-src-f03",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2049,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Indonesian laws are published in Lembaran Negara, not Thailand's Royal Gazette; jurisdiction and publication source are incorrect."
+  },
+  {
+   "id": "id-src-f04",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2091,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. The date 2026-01-01 is in the future, making this citation implausible or fabricated; no such decision could yet exist."
+  },
+  {
+   "id": "id-src-f05",
+   "expected": false,
+   "mutation": "wrong-source",
+   "shape": "S1-published-via",
+   "latency_ms": 2174,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Indonesian laws are published in Lembaran Negara, not a Cambodian legal library; this citation source is implausible and fabricated."
+  },
+  {
+   "id": "id-src-f06",
+   "expected": false,
+   "mutation": "date-shift",
+   "shape": "S2-decision",
+   "latency_ms": 2112,
+   "verdict": false,
+   "correct": true,
+   "raw": "False. Indonesia's Constitutional Court reviews laws against the Constitution, but the KUHP (Criminal Code) predates it, complicating jurisdiction; date/citation appears fabricated."
+  }
+ ]
+}
